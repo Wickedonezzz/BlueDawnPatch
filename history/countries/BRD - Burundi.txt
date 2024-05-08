@@ -1,0 +1,61 @@
+﻿capital = 769
+
+oob = "BRD_2000"
+set_air_oob = "BRD_2000_air"
+
+set_convoys = 0
+
+recruit_character = BRD_pierre_buyoya
+recruit_character = BRD_occupation_authority
+
+add_ideas = BRD_tutsi_dominance
+add_ideas = BRD_civil_war
+
+add_ideas = hidden_army_extra_volunteers
+
+add_ideas = usa_aligned_nation
+
+set_technology = {
+	infantry_weapons_1960 = 1
+	mbt_tank_1960 = 1
+	towed_artillery_1960 = 1
+	ifv_tank_1970 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_air_weapons_1960 = 1
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 10
+	fascism = 56
+	communism = 0
+	neutrality = 34
+}
+
+
+
+diplomatic_relation = {
+	country = RCK
+	relation = military_access
+}
+
+diplomatic_relation = {
+	country = RGO
+	relation = military_access
+}
+
+diplomatic_relation = {
+	country = RWA
+	relation = military_access
+}
+
+diplomatic_relation = {
+	country = UGA
+	relation = military_access
+}

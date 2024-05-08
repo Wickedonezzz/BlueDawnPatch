@@ -1,0 +1,180 @@
+scripted_gui = {
+
+	indian_tsunami_decision_ui = {
+		window_name = "indian_tsunami_decision_ui_window"
+		context_type = decision_category
+
+		visible = {
+			has_country_flag = indian_tsunami_helper
+		}
+
+		effects = {
+			btn_aid_country_1_click = {
+				if = {
+					limit = {
+						has_country_flag = INDTSU_support_country_1
+					}
+					clr_country_flag =  INDTSU_support_country_1
+				}
+				if = {
+					limit = {
+						has_country_flag = INDTSU_support_country_2
+					}
+					clr_country_flag =  INDTSU_support_country_2
+				}
+				if = {
+					limit = {
+						has_country_flag = INDTSU_support_country_3
+					}
+					clr_country_flag =  INDTSU_support_country_3
+				}
+				if = {
+					limit = {
+						has_country_flag = INDTSU_support_country_4
+					}
+					clr_country_flag =  INDTSU_support_country_4
+				}
+				if = {
+					limit = {
+						has_country_flag = INDTSU_support_country_5
+					}
+					clr_country_flag =  INDTSU_support_country_5
+				}
+				set_country_flag = INDTSU_support_country_1
+			}
+			btn_aid_country_2_click = {
+				if = {
+					limit = {
+						has_country_flag = INDTSU_support_country_1
+					}
+					clr_country_flag =  INDTSU_support_country_1
+				}
+				if = {
+					limit = {
+						has_country_flag = INDTSU_support_country_2
+					}
+					clr_country_flag =  INDTSU_support_country_2
+				}
+				if = {
+					limit = {
+						has_country_flag = INDTSU_support_country_3
+					}
+					clr_country_flag =  INDTSU_support_country_3
+				}
+				if = {
+					limit = {
+						has_country_flag = INDTSU_support_country_4
+					}
+					clr_country_flag =  INDTSU_support_country_4
+				}
+				if = {
+					limit = {
+						has_country_flag = INDTSU_support_country_5
+					}
+					clr_country_flag =  INDTSU_support_country_5
+				}
+				set_country_flag = INDTSU_support_country_2
+			}
+			btn_aid_country_3_click = {
+				if = {
+					limit = {
+						has_country_flag = INDTSU_support_country_1
+					}
+					clr_country_flag =  INDTSU_support_country_1
+				}
+				if = {
+					limit = {
+						has_country_flag = INDTSU_support_country_2
+					}
+					clr_country_flag =  INDTSU_support_country_2
+				}
+				if = {
+					limit = {
+						has_country_flag = INDTSU_support_country_3
+					}
+					clr_country_flag =  INDTSU_support_country_3
+				}
+				if = {
+					limit = {
+						has_country_flag = INDTSU_support_country_4
+					}
+					clr_country_flag =  INDTSU_support_country_4
+				}
+				if = {
+					limit = {
+						has_country_flag = INDTSU_support_country_5
+					}
+					clr_country_flag =  INDTSU_support_country_5
+				}
+				set_country_flag = INDTSU_support_country_3
+			}
+			btn_aid_country_4_click = {
+				if = {
+					limit = {
+						has_country_flag = INDTSU_support_country_1
+					}
+					clr_country_flag =  INDTSU_support_country_1
+				}
+				if = {
+					limit = {
+						has_country_flag = INDTSU_support_country_2
+					}
+					clr_country_flag =  INDTSU_support_country_2
+				}
+				if = {
+					limit = {
+						has_country_flag = INDTSU_support_country_3
+					}
+					clr_country_flag =  INDTSU_support_country_3
+				}
+				if = {
+					limit = {
+						has_country_flag = INDTSU_support_country_4
+					}
+					clr_country_flag =  INDTSU_support_country_4
+				}
+				if = {
+					limit = {
+						has_country_flag = INDTSU_support_country_5
+					}
+					clr_country_flag =  INDTSU_support_country_5
+				}
+				set_country_flag = INDTSU_support_country_4
+			}
+			btn_aid_country_5_click = {
+				if = {
+					limit = {
+						has_country_flag = INDTSU_support_country_1
+					}
+					clr_country_flag =  INDTSU_support_country_1
+				}
+				if = {
+					limit = {
+						has_country_flag = INDTSU_support_country_2
+					}
+					clr_country_flag =  INDTSU_support_country_2
+				}
+				if = {
+					limit = {
+						has_country_flag = INDTSU_support_country_3
+					}
+					clr_country_flag =  INDTSU_support_country_3
+				}
+				if = {
+					limit = {
+						has_country_flag = INDTSU_support_country_4
+					}
+					clr_country_flag =  INDTSU_support_country_4
+				}
+				if = {
+					limit = {
+						has_country_flag = INDTSU_support_country_5
+					}
+					clr_country_flag =  INDTSU_support_country_5
+				}
+				set_country_flag = INDTSU_support_country_5
+			}
+		}
+	}
+	
+}

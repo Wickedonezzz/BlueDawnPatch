@@ -1,0 +1,5969 @@
+on_actions = {
+	
+	### SCRIPTED PEACE DEALS ###
+	
+	### FROM is the country that wins the war and the tag listed below is the country that wins it ###
+	### ROOT is the county that loses the war and the tag below should the country that loses ###
+	
+	on_capitulation = {
+		effect = {	
+					## IRAQ WARS ##
+					
+					## IRAQ VS KUWAIT - IRAQ WINS OVER KUWAIT ##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = IRQ
+							}
+							ROOT = {
+								original_tag = KUW
+							}
+						}
+
+						IRQ = {
+							white_peace = ROOT
+						}
+
+						IRQ = {
+							transfer_state = 656
+						}
+					 
+					}
+					
+					## IRAQ VS SYRIA - IRAQ WINS OVER SYRIA ##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = IRQ
+							}
+							ROOT = {
+								original_tag = SYR
+							}
+						}
+						
+						IRQ = {
+							white_peace = ROOT
+
+						}
+						
+						IRQ = {
+							news_event = {id = old_times_news.153}						
+							puppet = SYR
+						}
+						SYR = {
+							retire_character  = SYR_maher_al_assad
+							remove_alignments = yes
+							set_cosmetic_tag = SYR_occupation_zone_puppet
+							transfer_state = 554
+							transfer_state = 677
+							transfer_state = 680
+							transfer_state = 908
+							add_popularity = {
+								ideology = fascism
+								popularity = -0.45
+							}
+							set_politics = {
+								ruling_party = fascism
+								elections_allowed = no
+							}
+							add_country_leader_role = {
+								character = SYR_ali_al-majid
+								promote_leader = yes
+								country_leader = {
+									ideology = nationalist_military_junta
+									expire = "2050.1.1.1"
+									traits = { }
+								}
+							}
+						}
+					}
+					
+					## IRAQ VS SYRIA - SYRIA WINS OVER IRAQ ##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = SYR
+							}
+							ROOT = {
+								original_tag = IRQ
+							}
+						}
+						
+						SYR = {
+							white_peace = ROOT
+
+						}
+						
+						SYR = {
+							news_event = {id = old_times_news.152}
+							annex_country = {
+							target = IRQ
+							transfer_troops = no
+							}
+							set_cosmetic_tag = SYR_uar_cosmetic
+						}
+					}
+					
+					## IRAQ VS IRAN - IRAQ WINS OVER IRAN ##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = IRQ
+							}
+							ROOT = {
+								original_tag = PER
+							}
+						}
+
+						IRQ = {
+							white_peace = ROOT
+						}
+
+						IRQ = {
+							transfer_state = 413
+							transfer_state = 421
+							puppet = PER
+						}
+						
+						PER = {
+							set_cosmetic_tag = PER_iraq_puppet
+							add_popularity = {
+								ideology = fascism
+								popularity = -0.5
+							}
+							set_politics = {
+								ruling_party = fascism
+								elections_allowed = no
+							}
+							remove_ideas = hidden_army_debuff_big
+						}
+						news_event = { id = old_times_news.16 }
+					}
+					
+					## IRAQ VS IRAN - IRAN WINS OVER IRAQ ##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = PER
+							}
+							ROOT = {
+								original_tag = IRQ
+							}
+						}
+
+						PER = {
+							white_peace = ROOT
+						}
+						
+						PER = {
+							puppet = IRQ
+							puppet = KUR
+							puppet = SYR
+							country_event = {id = per.1}
+							create_faction = "Islamic Axis"
+						}
+						
+						KUR = { 
+						transfer_state = 925
+						set_cosmetic_tag = KUR_islam_emirite
+							set_politics = {
+								ruling_party = paternal_autocracy
+								last_election = "1936.1.1"
+								election_frequency = 48
+								elections_allowed = no
+							}
+							set_popularities = {
+								paternal_autocracy = 35
+								social_democracy = 15
+								socialism = 50
+							}
+						}
+						
+						IRQ = {
+							set_cosmetic_tag = IRQ_iran_puppet
+							load_focus_tree = generic_focus
+							set_politics = {
+								ruling_party = paternal_autocracy
+								last_election = "1936.1.1"
+								election_frequency = 48
+								elections_allowed = no
+							}
+							set_popularities = {
+								paternal_autocracy = 40
+								fascism = 30
+								democratic = 10
+								socialism = 20
+							}
+							
+							set_party_name = {
+								ideology = paternal_autocracy
+								name = IRQ_unbanned_paternal_autocracy_party
+								long_name = IRQ_unbanned_paternal_autocracy_party_long
+							}
+							outlaw_socialism = yes
+							outlaw_nationalism = yes
+							remove_ideas = hidden_army_debuff_big
+						}
+						
+						SYR = {
+							set_cosmetic_tag = SYR_iran_puppet
+							set_politics = {
+								ruling_party = paternal_autocracy
+								last_election = "1936.1.1"
+								election_frequency = 48
+								elections_allowed = no
+							}						
+							set_popularities = {
+								paternal_autocracy = 40
+								democratic = 10
+								socialism = 50
+							}
+							
+							transfer_state = 908
+							transfer_state = 680
+							transfer_state = 677
+							transfer_state = 554
+							remove_alignments = yes
+						}
+						
+
+					}
+					
+					## HEZBOLLAH VS LEBANON - HEZBOLLAH WINS OVER LEBANON ##
+					if = {   
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = HZB
+									original_tag = PER		
+								}							
+							}
+							ROOT = {
+								original_tag = LEB
+							}
+						}
+
+						HZB = {
+							white_peace = ROOT
+						}
+						
+						HZB = {
+						annex_country = { target = LEB }
+						set_cosmetic_tag = HZB_lebanon
+						}
+
+					}		
+
+					## IRAN VS ISRAEL - IRAN WINS OVER ISRAEL ##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = PER
+							}
+							ROOT = {
+								original_tag = ISR
+							}
+						}
+
+						FROM = {
+							white_peace = ROOT
+						}
+						
+						HZB = {
+						transfer_state = 954
+						}
+						
+						PAL = {
+							transfer_state = 920
+							transfer_state = 919
+							transfer_state = 454
+							transfer_state = 914
+							transfer_state = 948
+							transfer_state = 997
+							transfer_state = 998
+						}
+						
+						SYR = {
+							transfer_state = 947
+
+						}
+						
+						PER = {
+							puppet = PAL
+						}
+						PAL = {
+							set_cosmetic_tag = PAL_iran_puppet
+							set_politics = {
+								ruling_party = paternal_autocracy
+								last_election = "1936.1.1"
+								election_frequency = 48
+								elections_allowed = no
+							}	
+							set_popularities = {
+									socialism = 30
+									paternal_autocracy = 50
+									neutrality = 0
+									fascism = 20
+							}
+							remove_alignments = yes
+						}
+					}						
+					
+					## IRAQ VS JORDAN - IRAQ WINS OVER JORDAN ##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = IRQ
+							}
+							ROOT = {
+								original_tag = JOR
+							}
+						}
+						
+						IRQ = {
+							white_peace = ROOT
+
+						}
+						
+						if = {
+						limit = {IRQ = {has_completed_focus = IRQ_greater_iraq}}
+							IRQ = {
+								puppet = JOR
+							}
+							JOR = {
+								set_cosmetic_tag = JOR_iraq_puppet
+								set_popularities = {
+									socialism = 30
+									paternal_autocracy = 20
+									neutrality = 10
+									fascism = 40
+								}
+							}
+						}
+						
+						else_if = {
+						limit = {IRQ = {has_completed_focus = IRQ_proclaim_uar}}
+							IRQ = {
+								annex_country = {
+								target = JOR
+								transfer_troops = no
+								}
+							}
+						
+						}
+
+					}
+					
+					## IRAQ VS LEBANON - IRAQ WINS OVER LEBANON ##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = IRQ
+							}
+							ROOT = {
+								original_tag = LEB
+							}
+						}
+						
+						IRQ = {
+							white_peace = ROOT
+
+						}
+						
+						if = {
+						limit = {IRQ = {has_completed_focus = IRQ_greater_iraq}}
+							IRQ = {
+								puppet = LEB
+							}
+
+							LEB = {
+								set_cosmetic_tag = LEB_iraq_puppet
+								transfer_state = 553
+								transfer_state = 953
+								set_popularities = {
+									socialism = 30
+									paternal_autocracy = 40
+									fascism = 30
+								}
+							}
+						}
+						
+						else_if = {
+						limit = {IRQ = {has_completed_focus = IRQ_proclaim_uar}}
+							IRQ = {
+								annex_country = {
+								target = LEB
+								transfer_troops = no
+								}
+							}
+						
+						}
+					}
+					
+					## IRAQ VS ISRAEL - IRAQ WINS OVER ISRAEL ##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = IRQ
+							}
+							ROOT = {
+								original_tag = ISR
+							}
+						}
+						
+						ISR = {
+							end_puppet = PAL
+						}
+						
+						IRQ = {
+							white_peace = ROOT
+							puppet = PAL
+						}
+						
+						PAL = {
+							remove_alignments = yes
+							set_cosmetic_tag = PAL_integration_zone
+							transfer_state = 920
+							transfer_state = 919
+							transfer_state = 454
+							transfer_state = 914
+							transfer_state = 948
+							transfer_state = 997
+							transfer_state = 998
+							set_popularities = {
+								socialism = 5
+								paternal_autocracy = 40
+								neutrality = 10
+								fascism = 45
+							}
+							retire_ideology_leader = fascism
+							promote_character = PAL_rakad_salem
+								set_party_name = {
+									ideology = fascism
+									name = baath_party
+									long_name = baath_party_long
+								}
+								
+								set_party_name = {
+									ideology = socialism
+									name = baath_party
+									long_name = baath_party_long
+								}
+						}
+						
+						if = {
+						limit = {IRQ = {has_completed_focus = IRQ_greater_iraq}}
+							LEB = {
+								transfer_state = 954
+							}							
+						}
+						else_if = {
+							limit = {IRQ = {has_completed_focus = IRQ_proclaim_uar}}
+							IRQ = {
+								transfer_state = 954
+							}
+						}
+					}
+					
+					## IRAQ VS KURDISTAN - IRAQ WINS OVER KURDISTAN ##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = IRQ
+							}
+							ROOT = {
+								original_tag = KUR
+							}
+						}
+						
+						IRQ = {
+							white_peace = ROOT
+							annex_country = { target = KUR }						
+						}
+					
+						
+						
+					}
+
+					## IRAQ VS KURDISTAN - KURDISTAN ""WINS"" OVER IRAQ ##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = KUR
+							}
+							ROOT = {
+								original_tag = IRQ
+							}
+						}
+						
+						IRQ = {
+							white_peace = ROOT
+							annex_country = { target = KUR }						
+						}
+					
+						
+						
+					}
+					
+					## IRAQ VS SAUDI - IRAQ WINS OVER SAUDI ##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = BGD
+							}
+							ROOT = {
+								original_tag = SAU
+								
+							}
+						}
+						
+						BGD = {
+							white_peace = ROOT
+						}
+						
+						if = {
+						limit = {BGD = {has_completed_focus = IRQ_greater_iraq}}
+							BGD = {
+								puppet = SAU
+							}
+
+							SAU = {
+								remove_alignments = yes
+								set_cosmetic_tag = SAU_iraq_puppet
+
+								set_popularities = {
+									socialism = 25
+									paternal_autocracy = 50
+									fascism = 25
+								}
+								
+								set_party_name = {
+									ideology = fascism
+									name = baath_party
+									long_name = baath_party_long
+								}
+								
+								set_party_name = {
+									ideology = socialism
+									name = baath_party
+									long_name = baath_party_long
+								}								
+								
+							}
+							
+							if = {
+								limit = {YEM = {is_puppet_of = SAU}}
+								end_puppet = YEM
+								
+								BGD = {
+									puppet = YEM
+								}
+
+								YEM = {
+									set_cosmetic_tag = YEM_iraq_puppet
+									retire_ideology_leader = fascism
+									set_popularities = {
+										socialism = 20
+										democratic = 5
+										neutrality = 15
+										liberalism = 15
+										paternal_autocracy = 20
+										fascism = 25
+									}
+									transfer_state = 293
+									transfer_state = 659
+									
+									set_party_name = {
+										ideology = fascism
+										name = baath_party
+										long_name = baath_party_long
+									}
+									
+									set_party_name = {
+										ideology = socialism
+										name = baath_party
+										long_name = baath_party_long
+									}
+									
+								}
+							}
+							
+						}
+						
+						else_if = {
+							BGD = {
+								annex_country = {
+								target = SAU
+								transfer_troops = no
+								}
+							}
+							if = {
+								limit = {YEM = {is_puppet_of = SAU}}
+								annex_country = {
+								target = YEM
+								transfer_troops = no
+								}								
+							}
+						}
+
+					}
+					
+					## IRAQ VS EGYPT - IRAQ WINS OVER EGYPT ##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = BGD
+							}
+							ROOT = {
+								original_tag = EGY
+								
+							}
+						}
+						
+						BGD = {
+							white_peace = ROOT
+						}
+						
+						if = {
+						limit = {BGD = {has_completed_focus = IRQ_greater_iraq}}
+							BGD = {
+								puppet = EGY
+							}
+
+							EGY = {
+								remove_alignments = yes
+								set_cosmetic_tag = EGY_iraq_puppet
+								retire_ideology_leader = fascism
+								promote_character = EGY_baath
+								set_popularities = {
+									socialism = 45
+									democratic = 30
+									fascism = 25
+								}
+								
+								set_party_name = {
+									ideology = fascism
+									name = baath_party
+									long_name = baath_party_long
+								}
+								
+								set_party_name = {
+									ideology = socialism
+									name = baath_party
+									long_name = baath_party_long
+								}								
+								
+							}
+						}
+						
+						else_if = {
+							BGD = {
+								annex_country = {
+								target = EGY
+								transfer_troops = no
+								}
+							}
+						
+						}
+						
+					}
+					
+					## IRAQ VS YEMEN - IRAQ WINS OVER YEMEN ##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = BGD
+							}
+							ROOT = {
+								OR = {
+									original_tag = YEM
+									original_tag = DYR
+								}	
+							}
+						}
+						
+						BGD = {
+							white_peace = ROOT
+						}
+
+						if = {
+						limit = {BGD = {has_completed_focus = IRQ_greater_iraq}}
+							BGD = {
+								puppet = YEM
+							}
+
+							YEM = {
+								set_cosmetic_tag = YEM_iraq_puppet
+								retire_ideology_leader = fascism
+								set_popularities = {
+									socialism = 20
+									democratic = 5
+									neutrality = 15
+									liberalism = 15
+									paternal_autocracy = 20
+									fascism = 25
+								}
+								transfer_state = 293
+								transfer_state = 659
+								
+								set_party_name = {
+									ideology = fascism
+									name = baath_party
+									long_name = baath_party_long
+								}
+								
+								set_party_name = {
+									ideology = socialism
+									name = baath_party
+									long_name = baath_party_long
+								}
+								
+							}
+						}
+						
+						else_if = {
+							BGD = {
+								white_peace = ROOT
+								annex_country = { target = YEM }						
+							}	
+							
+							BGD = {
+								white_peace = ROOT
+								annex_country = { target = DYR }						
+							}
+						
+						}
+						
+					}
+					
+					## IRAQ VS OMAN - IRAQ WINS OVER OMAN ##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = BGD
+							}
+							ROOT = {
+								original_tag = OMA
+								
+							}
+						}
+						
+						BGD = {
+							white_peace = ROOT
+						}	
+						
+						if = {
+						limit = {BGD = {has_completed_focus = IRQ_greater_iraq}}
+							BGD = {
+								puppet = OMA
+							}
+
+							OMA = {
+								remove_alignments = yes
+								set_cosmetic_tag = OMA_iraq_puppet
+
+								set_popularities = {
+									socialism = 15
+									fascism = 15
+									paternal_autocracy = 35
+									neutrality = 25
+								}
+								
+								set_party_name = {
+									ideology = fascism
+									name = baath_party
+									long_name = baath_party_long
+								}
+								
+								set_party_name = {
+									ideology = socialism
+									name = baath_party
+									long_name = baath_party_long
+								}
+								
+							}
+						}
+						
+						else_if = {
+							BGD = {
+								annex_country = {
+								target = OMA
+								transfer_troops = no
+								}
+							}
+						
+						}
+						
+					}
+	
+					## IRAQ VS UAE - IRAQ WINS OVER UAE ##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = BGD
+							}
+							ROOT = {
+								original_tag = UAE
+								
+							}
+						}
+						
+						BGD = {
+							white_peace = ROOT
+						}	
+						
+						if = {
+						limit = {BGD = {has_completed_focus = IRQ_greater_iraq}}
+						
+							SAU = {
+								annex_country = {
+								target = UAE
+								transfer_troops = no
+								}
+							}
+						}
+						
+						else_if = {
+							BGD = {
+								annex_country = {
+								target = UAE
+								transfer_troops = no
+								}
+							}
+						
+						}
+						
+					}
+	
+	
+					## IRAQ VS QATAR - IRAQ WINS OVER QATAR ##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = BGD
+							}
+							ROOT = {
+								original_tag = QAT
+								
+							}
+						}
+						
+						BGD = {
+							white_peace = ROOT
+						}	
+						
+						if = {
+						limit = {BGD = {has_completed_focus = IRQ_greater_iraq}}
+						
+							SAU = {
+								annex_country = {
+								target = QAT
+								transfer_troops = no
+								}
+							}
+						}
+						
+						else_if = {
+							BGD = {
+								annex_country = {
+								target = QAT
+								transfer_troops = no
+								}
+							}
+						
+						}
+						
+					}
+					
+					## IRAQ VS BAHRAIN - IRAQ WINS OVER BAHRAIN ##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = BGD
+							}
+							ROOT = {
+								original_tag = BHR
+								
+							}
+						}
+						
+						BGD = {
+							white_peace = ROOT
+						}	
+						
+						if = {
+						limit = {BGD = {has_completed_focus = IRQ_greater_iraq}}
+						
+							BGD = {
+								annex_country = {
+								target = BHR
+								transfer_troops = no
+								}
+							}
+						}
+						
+						else_if = {
+							BGD = {
+								annex_country = {
+								target = BHR
+								transfer_troops = no
+								}
+							}
+						
+						}
+						
+					}
+					
+					### BAATH CIVIL WAR##
+					
+					## GREEN UAR VS SAUDI ARABIA - GREEN UAR WINS ##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = DYR
+							}
+							ROOT = {
+								original_tag = SAU
+								
+							}
+						}
+						
+						DYR = {
+							white_peace = ROOT
+						}	
+						
+						DYR = {
+							annex_country = {
+								target = SAU
+								transfer_troops = no
+							}
+						}
+					}					
+
+					## GREEN UAR VS OMAN - GREEN UAR WINS ##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = DYR
+							}
+							ROOT = {
+								original_tag = OMA
+								
+							}
+						}
+						
+						DYR = {
+							white_peace = ROOT
+						}	
+						
+						DYR = {
+							annex_country = {
+								target = OMA
+								transfer_troops = no
+							}
+						}
+						
+					}
+
+					## GREEN UAR VS UAE - GREEN UAR WINS ##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = DYR
+							}
+							ROOT = {
+								original_tag = UAE
+								
+							}
+						}
+						
+						DYR = {
+							white_peace = ROOT
+						}	
+						
+						DYR = {
+							annex_country = {
+								target = UAE
+								transfer_troops = no
+							}
+						}
+						
+					}
+
+					## GREEN UAR VS IRAQ - GREEN UAR WINS ##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = DYR
+							}
+							ROOT = {
+								original_tag = BGD
+								
+							}
+						}
+						
+						DYR = {
+							white_peace = ROOT
+						}	
+						
+						DYR = {
+							annex_country = {
+								target = BGD
+								transfer_troops = no
+							}
+							annex_country = {
+								target = SYR
+								transfer_troops = no
+							}	
+						}						
+					}					
+
+					## GREEN UAR VS JORDAN - GREEN UAR WINS ##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = DYR
+							}
+							ROOT = {
+								original_tag = JOR
+								
+							}
+						}
+						
+						DYR = {
+							white_peace = ROOT
+						}	
+						
+						DYR = {
+							annex_country = {
+								target = JOR
+								transfer_troops = no
+							}
+						}						
+					}	
+
+					## GREEN UAR VS LEBANON - GREEN UAR WINS ##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = DYR
+							}
+							ROOT = {
+								original_tag = LEB
+								
+							}
+						}
+						
+						DYR = {
+							white_peace = ROOT
+						}	
+						
+						DYR = {
+							annex_country = {
+								target = LEB
+								transfer_troops = no
+							}
+						}						
+					}	
+
+					## SAUDI ARABIA VS BGD IRAN SYRIA IRAQ - SAUDI ARABIA WINS ##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = SAU
+							}
+							ROOT = {
+								original_tag = BGD
+								
+							}
+						}
+						
+						SAU = {
+							white_peace = ROOT
+						}	
+						
+						end_puppet = PER
+						end_puppet = KUR
+							
+						SAU = {
+						puppet = IRQ
+						puppet = SYR
+						puppet = PER
+						}
+						
+
+						
+						SYR = {		
+							set_politics = {
+								ruling_party = liberalism
+							}							
+							set_popularities = {
+								liberalism = 35
+								democratic = 20
+								fascism = 10
+								social_democracy = 35
+							}
+							
+							transfer_state = 908
+							transfer_state = 680
+							transfer_state = 677
+							transfer_state = 554
+							
+							transfer_state = 908
+							
+							release = IRQ
+							set_cosmetic_tag = SYR
+							
+							remove_alignments = yes
+						}
+
+						IRQ = {
+							set_cosmetic_tag = IRQ_kingdom
+							load_focus_tree = generic_focus
+							
+							promote_character = IRQ_sharif_hussein
+							
+							set_popularities = {
+								paternal_autocracy = 35
+								fascism = 5
+								communism = 15
+								democratic = 20
+								socialism = 25
+							}
+							
+							set_party_name = {
+								ideology = paternal_autocracy
+								name = IRQ_unbanned_paternal_autocracy_alt_party
+								long_name = IRQ_unbanned_paternal_autocracy_alt_party_long
+							}
+							transfer_state = 925
+							transfer_state = 676
+							transfer_state = 291
+							transfer_state = 675
+							transfer_state = 924
+							
+							release = KUW
+						}
+
+						PER = {
+							transfer_state = 413
+							transfer_state = 421
+							
+							dismantle_faction = yes
+							
+							retire_ideology_leader = paternal_autocracy
+							promote_character = PER_reza_pahlavi
+							set_politics = {
+								ruling_party = paternal_autocracy
+							}							
+							set_popularities = {
+								liberalism = 25
+								democratic = 30
+								neutrality = 10
+								paternal_autocracy = 30
+								social_democracy = 5
+							}
+							drop_cosmetic_tag = yes
+							set_cosmetic_tag = PER_kingdom
+							remove_ideas = PER_home_of_islam_rev
+						}
+
+					}
+
+					## SAUDI ARABIA VS QATAR/BAHRAIN - SAUDI ARABIA WINS ##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = SAU
+							}
+							ROOT = {
+								OR = {
+									original_tag = QAT
+									original_tag = BHR
+								}	
+							}
+						}
+						
+						SAU = {
+							white_peace = ROOT
+						}	
+								
+						SAU = {
+							annex_country = {
+								target = QAT
+								transfer_troops = no
+							}						
+							annex_country = {
+								target = BHR
+								transfer_troops = no
+							}	
+						}
+					}
+
+					## SAUDI ARABIA VS JORDAN - SAUDI ARABIA WINS ##
+					if = {   
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = SAU
+									original_tag = PER
+								}	
+							}
+							ROOT = {
+								original_tag = JOR	
+							}
+						}
+						
+						SAU = {
+							white_peace = ROOT
+						}	
+						
+						PAL = {
+							annex_country = {
+								target = JOR
+								transfer_troops = no
+							}						
+						}
+					}
+					
+					## ARAB STATE VS ISRAEL - ISRAEL WINS ##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = ISR
+							}
+							ROOT = {
+								OR = {
+									original_tag = BGD
+									original_tag = DYR									
+								}									
+							}
+						}
+						
+						ISR = {
+							white_peace = ROOT
+							annex_country = {
+								target = PAL
+								transfer_troops = no
+							}
+	
+							transfer_state = 553
+							transfer_state = 953
+							transfer_state = 455						
+						}	
+
+					}	
+
+					## ARAB STATE VS ISRAEL - ARAB STATE WINS ##
+					if = {   
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = DYR	
+									original_tag = SYR
+								}	
+							}
+							ROOT = {
+								original_tag = ISR
+							}
+						}
+						
+						FROM = {
+							white_peace = ROOT
+							annex_country = {
+								target = PAL
+								transfer_troops = no
+							}
+							annex_country = {
+								target = ISR
+								transfer_troops = no
+							}							
+						}	
+
+						
+					}
+					
+					### USSR WARS ###
+					
+					### USSR VS ESTONIA - USSR WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = SOV
+							}
+							ROOT = {
+								original_tag = EST
+							}
+						}
+
+						SOV = {
+							white_peace = ROOT
+						}
+
+						SOV = {
+							annex_country = {
+							target = EST
+							transfer_troops = no
+							}
+						}
+						
+					}
+					
+					### USSR VS LATVIA - USSR WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = SOV
+							}
+							ROOT = {
+								original_tag = LAT
+							}
+						}
+
+						SOV = {
+							white_peace = ROOT
+						}
+						
+						SOV = {
+							annex_country = {
+							target = LAT
+							transfer_troops = no
+							}
+						}
+						
+					}
+					
+					### USSR VS LITHUENIA - USSR WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = SOV
+							}
+							ROOT = {
+								original_tag = LIT
+							}
+						}
+
+						SOV = {
+							white_peace = ROOT
+						}
+
+						SOV = {
+							annex_country = {
+							target = LIT
+							transfer_troops = no
+							}
+						}
+						
+					}
+					
+					### USSR VS UKRAINE - USSR WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = SOV
+							}
+							ROOT = {
+								original_tag = UKR
+							}
+						}
+
+						SOV = {
+							white_peace = ROOT
+						}
+
+						SOV = {
+							annex_country = {
+							target = UKR
+							transfer_troops = no
+							}
+							country_event = {id = ussr_rebel_ukr.2}
+						}
+						
+					}
+					
+					### USSR VS CHECHENS / CHECHENYA - USSR WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = SOV
+							}
+							ROOT = {
+								original_tag = CIN
+							}
+						}
+
+						SOV = {
+							white_peace = ROOT
+						}
+
+						SOV = {
+							annex_country = {
+							target = CIN
+							transfer_troops = no
+							}
+						}
+						
+					}
+					
+					### USSR VS ARMENIA - USSR WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = SOV
+							}
+							ROOT = {
+								original_tag = ARM
+							}
+						}
+
+						SOV = {
+							white_peace = ROOT
+						}
+
+						SOV = {
+							annex_country = {
+							target = ARM
+							transfer_troops = no
+							}
+						}
+						
+					}
+					
+					### USSR VS AZERBAIJAN - USSR WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = SOV
+							}
+							ROOT = {
+								original_tag = AZR
+							}
+						}
+
+						SOV = {
+							white_peace = ROOT
+						}
+
+						SOV = {
+							annex_country = {
+							target = AZR
+							transfer_troops = no
+							}
+						}
+						
+					}
+					
+					### USSR VS FINLAND - USSR WINS ###
+					if = {   
+						limit = {						
+							FROM = {
+								OR = {
+									original_tag = SOV
+									is_ally_with = SOV
+								}	
+							}
+							ROOT = {
+								original_tag = FIN
+							}
+						}
+
+						SOV = {
+							white_peace = ROOT
+						}
+						
+						if = {
+							limit = {
+								SOV = {has_government = fascism}
+							}
+							
+							SOV = {
+								annex_country = {
+								target = FIN
+								transfer_troops = no
+								}
+							}
+						}					
+						else_if = {
+						
+							SOV = {
+								puppet = FIN
+								if = {
+									limit = {NOT = {has_completed_focus = SOV_put_solver}}
+									country_event = {id = ussr.90 days = 160}
+								}
+								
+							}
+							
+							FIN = {
+							set_cosmetic_tag = FIN_com_puppet
+								set_popularities = {
+									communism = 35
+									paternal_autocracy = 65
+								}
+							}
+						}
+						
+					}
+					
+					### USSR VS ALBANIA - USSR WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = SOV
+									is_ally_with = SOV
+								}	
+							}
+							ROOT = {
+								original_tag = ALB
+							}
+						}
+
+						SOV = {
+							white_peace = ALB
+						}
+						
+						if = {
+							limit = {
+								SOV = {has_government = fascism}
+							}
+							
+							SOV = {
+								annex_country = {
+								target = ALB
+								transfer_troops = no
+								}
+							}
+						}					
+						else_if = {
+						
+							SOV = {
+								puppet = ALB
+							}
+							
+							ALB = {
+							set_cosmetic_tag = ALB_com_puppet
+								set_popularities = {
+									social_democracy = 15
+									liberalism = 5
+									reformed_communism = 5
+									socialism = 20
+									communism = 55
+									
+								}
+							}
+						}
+						
+					}
+					
+					### USSR VS CROATIA - USSR WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = SOV
+									is_ally_with = SOV
+								}	
+							}
+							ROOT = {
+								original_tag = CRO
+							}
+						}
+
+						SOV = {
+							white_peace = CRO
+						}
+
+						if = {
+							limit = {
+								SOV = {has_government = fascism}
+							}
+							
+							SOV = {
+								annex_country = {
+								target = CRO
+								transfer_troops = no
+								}
+							}
+						}					
+						else_if = {
+							
+							YUG = {
+								annex_country = {
+									target = CRO
+									transfer_troops = no
+								}
+							}
+						
+						}
+
+					}
+
+					### USSR VS SLOVENIA - USSR WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = SOV
+									is_ally_with = SOV
+								}	
+							}
+							ROOT = {
+								original_tag = SLV
+							}
+						}
+
+						SOV = {
+							white_peace = SLV
+						}
+						
+						if = {
+							limit = {
+								SOV = {has_government = fascism}
+							}
+							
+							SOV = {
+								annex_country = {
+								target = SLV
+								transfer_troops = no
+								}
+							}
+						}					
+						else_if = {
+							
+							YUG = {
+								annex_country = {
+									target = SLV
+									transfer_troops = no
+								}
+							}
+						
+						}
+						
+					}					
+					
+					### USSR VS YUGOSLAVIA - USSR WINS ###
+					if = {   
+						limit = {
+							NOT = {has_global_flag = anti_yug_coalition_formed}
+							FROM = {
+								OR = {
+									original_tag = SOV
+									is_ally_with = SOV
+								}	
+							}
+							ROOT = {
+								original_tag = YUG
+							}
+						}
+
+						SOV = {
+							white_peace = YUG
+						}
+
+						if = {
+							limit = {
+								SOV = {has_government = fascism}
+							}
+							
+							SOV = {
+								annex_country = {
+								target = YUG
+								transfer_troops = no
+								}
+							}
+						}					
+						else_if = {
+							
+							SOV = {
+								puppet = YUG
+							}
+							
+							YUG = {
+							retire_country_leader = yes
+							promote_character = YUG_joska
+							set_cosmetic_tag = YUG_com_puppet
+								set_popularities = {
+									socialism = 30
+									reformed_communism = 20
+									communism = 50
+								}
+								set_party_name = {
+									ideology = communism
+									name = YUG_communism_SKJ_party
+									long_name = YUG_communism_SKJ_party_long
+								}
+								set_party_name = {
+									ideology = reformed_communism
+									name = YUG_reformed_communism
+									long_name = YUG_reformed_communism_long									
+								}		
+								set_party_name = {
+									ideology = socialism
+									name = YUG_socialism_SKJ_party
+									long_name = YUG_socialism_SKJ_party_long
+								}
+							}
+						
+						}
+
+						
+					}
+					
+					### USSR VS BOSNIA - USSR WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = SOV
+									is_ally_with = SOV
+								}	
+							}
+							ROOT = {
+								original_tag = BOS
+							}
+						}
+
+						SOV = {
+							white_peace = BOS
+						}
+
+						if = {
+							limit = {
+								SOV = {has_government = fascism}
+							}
+							
+							SOV = {
+								annex_country = {
+								target = BOS
+								transfer_troops = no
+								}
+							}
+						}					
+						else_if = {
+							
+							YUG = {
+								annex_country = {
+									target = BOS
+									transfer_troops = no
+								}
+							}
+						
+						}
+		
+					}								
+
+					### USSR VS SRPSKA - USSR WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = SOV
+									is_ally_with = SOV
+								}	
+							}
+							ROOT = {
+								original_tag = SRP
+							}
+						}
+
+						SOV = {
+							white_peace = SRP
+						}
+
+						if = {
+							limit = {
+								SOV = {has_government = fascism}
+							}
+							
+							SOV = {
+								annex_country = {
+								target = SRP
+								transfer_troops = no
+								}
+							}
+						}					
+						else_if = {
+							
+							YUG = {
+								annex_country = {
+									target = SRP
+									transfer_troops = no
+								}
+							}
+						
+						}
+						
+					}	
+
+					### USSR VS HERZOGONIA - USSR WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = SOV
+									is_ally_with = SOV
+								}	
+							}
+							ROOT = {
+								original_tag = HRZ
+							}
+						}
+
+						SOV = {
+							white_peace = HRZ
+						}
+
+						if = {
+							limit = {
+								SOV = {has_government = fascism}
+							}
+							
+							SOV = {
+								annex_country = {
+								target = HRZ
+								transfer_troops = no
+								}
+							}
+						}					
+						else_if = {
+							
+							YUG = {
+								annex_country = {
+									target = HRZ
+									transfer_troops = no
+								}
+							}
+						
+						}
+						
+					}					
+
+					### USSR VS MONTENEGRO - USSR WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = SOV
+									is_ally_with = SOV
+								}	
+							}
+							ROOT = {
+								original_tag = MNT
+							}
+						}
+
+						SOV = {
+							white_peace = MNT
+						}
+
+						if = {
+							limit = {
+								SOV = {has_government = fascism}
+							}
+							
+							SOV = {
+								annex_country = {
+								target = MNT
+								transfer_troops = no
+								}
+							}
+						}					
+						else_if = {
+							
+							YUG = {
+								annex_country = {
+									target = MNT
+									transfer_troops = no
+								}
+							}
+						
+						}
+						
+					}	
+
+					### USSR VS KOSOVO - USSR WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = SOV
+									is_ally_with = SOV
+								}	
+							}
+							ROOT = {
+								original_tag = KOS
+							}
+						}
+
+						SOV = {
+							white_peace = KOS
+						}
+
+						if = {
+							limit = {
+								SOV = {has_government = fascism}
+							}
+							
+							SOV = {
+								annex_country = {
+								target = KOS
+								transfer_troops = no
+								}
+							}
+						}					
+						else_if = {
+							
+							YUG = {
+								annex_country = {
+									target = KOS
+									transfer_troops = no
+								}
+							}
+						
+						}
+						
+					}	
+
+					### USSR VS MACEDONIA - USSR WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = SOV
+									is_ally_with = SOV
+								}	
+							}
+							ROOT = {
+								original_tag = MAC
+							}
+						}
+
+						SOV = {
+							white_peace = MAC
+						}
+
+						if = {
+							limit = {
+								SOV = {has_government = fascism}
+							}
+							
+							SOV = {
+								annex_country = {
+								target = MAC
+								transfer_troops = no
+								}
+							}
+						}					
+						else_if = {
+							
+							YUG = {
+								annex_country = {
+									target = MAC
+									transfer_troops = no
+								}
+							}
+						
+						}
+						
+					}	
+
+					### USSR VS VOJVODINA - USSR WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = SOV
+									is_ally_with = SOV
+								}	
+							}
+							ROOT = {
+								original_tag = VOJ
+							}
+						}
+
+						SOV = {
+							white_peace = VOJ
+						}
+
+						if = {
+							limit = {
+								SOV = {has_government = fascism}
+							}
+							
+							SOV = {
+								annex_country = {
+								target = VOJ
+								transfer_troops = no
+								}
+							}
+						}					
+						else_if = {
+							
+							YUG = {
+								annex_country = {
+									target = VOJ
+									transfer_troops = no
+								}
+							}
+						
+						}
+						
+					}	
+
+					### USSR VS SERBIA - USSR WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = SOV
+									is_ally_with = SOV
+								}	
+							}
+							ROOT = {
+								original_tag = SER
+							}
+						}
+
+						SOV = {
+							white_peace = SER
+						}
+
+						if = {
+							limit = {
+								SOV = {has_government = fascism}
+							}
+							
+							SOV = {
+								annex_country = {
+								target = SER
+								transfer_troops = no
+								}
+							}
+						}					
+						else_if = {
+							
+							YUG = {
+								annex_country = {
+									target = SER
+									transfer_troops = no
+								}
+							}
+						
+						}
+						
+					}
+					
+					### USSR VS ENGLAND / UNITED KINGDOM - USSR WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = SOV
+							}
+							ROOT = {
+								original_tag = ENG
+							}
+						}
+
+						SOV = {
+							white_peace = ENG
+						}
+
+						if = {
+							limit = {
+								SOV = {has_government = fascism}
+							}
+							
+							SOV = {
+								annex_country = {
+								target = ENG
+								transfer_troops = no
+								}
+							}
+						}					
+						else_if = {
+
+							SOV = {
+								puppet = ENG
+							}
+							
+							ENG = {
+							set_cosmetic_tag = ENG_com_puppet
+							}
+						
+						}
+
+						
+					}
+					
+					### USSR VS IRELAND - USSR WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = SOV
+							}
+							ROOT = {
+								original_tag = IRE
+							}
+						}
+
+						SOV = {
+							white_peace = IRE
+						}
+
+						if = {
+							limit = {
+								SOV = {has_government = fascism}
+							}
+							
+							SOV = {
+								annex_country = {
+								target = IRE
+								transfer_troops = no
+								}
+							}
+						}					
+						else_if = {
+
+							SOV = {
+								puppet = IRE
+							}
+							
+							IRE = {
+							set_cosmetic_tag = IRE_com_puppet
+							transfer_state = 119
+							}
+						
+						}
+
+						
+					}
+					
+					### USSR VS AUSTRIA - USSR WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = SOV
+							}
+							ROOT = {
+								original_tag = AUS
+							}
+						}
+
+						SOV = {
+							white_peace = AUS
+						}
+
+						SOV = {
+							puppet = AUS
+						}
+						
+						AUS = {
+						set_cosmetic_tag = AUS_com_puppet
+						}
+						
+						ROOT = {
+						add_ideas = ussr_aligned_nation
+							if = {
+								limit = {
+									has_idea = usa_aligned_nation
+	
+								}
+								remove_ideas = usa_aligned_nation
+
+							}
+							
+							else_if = {
+								limit = {
+									has_idea = china_aligned_nation
+	
+								}
+								remove_ideas = china_aligned_nation
+
+							}
+						}
+						
+					}
+					
+					### USSR VS SWITZERLAND - USSR WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = SOV
+							}
+							ROOT = {
+								original_tag = SWI
+							}
+						}
+
+						SOV = {
+							white_peace = SWI
+						}
+
+						SOV = {
+							puppet = SWI
+						}
+						
+						SWI = {
+						set_cosmetic_tag = SWI_com_puppet
+						}
+						
+						ROOT = {
+						add_ideas = ussr_aligned_nation
+							if = {
+								limit = {
+									has_idea = usa_aligned_nation
+	
+								}
+								remove_ideas = usa_aligned_nation
+
+							}
+							
+							else_if = {
+								limit = {
+									has_idea = china_aligned_nation
+	
+								}
+								remove_ideas = china_aligned_nation
+
+							}
+						}
+						
+					}
+					
+					### USSR VS SWEDEN - USSR WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = SOV
+							}
+							ROOT = {
+								original_tag = SWE
+							}
+						}
+
+						SOV = {
+							white_peace = SWE
+						}
+
+
+						if = {
+							limit = {
+								SOV = {has_government = fascism}
+							}
+							
+							SOV = {
+								annex_country = {
+								target = SWE
+								transfer_troops = no
+								}
+							}
+						}					
+						else_if = {
+
+							SOV = {
+								puppet = SWE
+							}
+							
+							SWE = {
+							set_cosmetic_tag = SWE_com_puppet
+								set_politics = {
+									ruling_party = communism
+									elections_allowed = no
+								}
+								set_popularities = {
+									social_democracy = 30
+									democratic = 20
+									liberalism = 10
+									socialism = 10
+									communism = 30
+								
+								}
+							}
+							
+						
+						}
+
+					}
+					
+					### USSR VS ICELAND - USSR WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = SOV
+							}
+							ROOT = {
+								original_tag = ICE
+							}
+						}
+
+						SOV = {
+							white_peace = ICE
+						}
+
+						if = {
+							limit = {
+								SOV = {has_government = fascism}
+							}
+							
+							SOV = {
+								annex_country = {
+								target = ICE
+								transfer_troops = no
+								}
+							}
+						}					
+						else_if = {
+
+							SOV = {
+								puppet = ICE
+							}
+							
+							ICE = {
+							set_cosmetic_tag = ICE_com_puppet
+							}					
+						
+						}
+						
+					}
+					
+					### USSR VS CHINA - USSR WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = SOV
+							}
+							ROOT = {
+								original_tag = PRC
+							}
+						}
+
+						SOV = {
+							white_peace = PRC
+						}
+							
+						every_country = {
+							remove_ideas = china_aligned_nation
+						}
+						
+						if = {
+							limit = {
+								SOV = {has_government = fascism}
+							}
+							
+							SOV = {
+								annex_country = {
+								target = PRC
+								transfer_troops = no
+								}
+							}
+							
+						}					
+						else_if = {
+
+							SOV = {
+								puppet = PRC
+							}
+							
+							PRC = {
+							set_cosmetic_tag = PRC_com_puppet
+							}
+							
+							MAN = {
+							transfer_state = 761
+							transfer_state = 714
+							transfer_state = 715
+							transfer_state = 717
+							transfer_state = 328
+							transfer_state = 716
+							transfer_state = 610
+							transfer_state = 609	
+							transfer_state = 745	
+									
+							}
+							
+							SOV = {
+								puppet = MAN
+							}
+							
+							MAN = {
+								set_popularities = {
+									reformed_communism = 45
+									paternal_autocracy = 5
+									communism = 50
+								}
+							}
+							PRC = {
+								remove_ideas = nation_status_superpower
+							}				
+							
+						}
+						
+					}
+					
+					### USSR VS USA - USSR WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = SOV
+							}
+							ROOT = {
+								original_tag = USA
+							}
+						}
+
+						SOV = {
+							white_peace = USA
+						}
+						
+						every_country = {
+							remove_ideas = usa_aligned_nation
+						}						
+						
+						if = {
+							limit = {
+								SOV = {has_government = fascism}
+							}
+							
+							SOV = {
+								annex_country = {
+								target = USA
+								transfer_troops = no
+								}
+							}				
+							
+						}
+						
+						else_if = {
+							SOV = {
+								puppet = USA
+							}
+							
+							USA = {
+							set_cosmetic_tag = USA_com_puppet
+							remove_ideas = nation_status_superpower
+							}						
+						}
+						
+					}
+					
+					### USSR VS USA - USA N NATO WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = USA
+									is_in_faction_with = USA
+								}
+							}
+							ROOT = {
+								original_tag = SOV
+							}
+						}
+
+						USA = {
+							white_peace = SOV
+						}
+						
+						end_puppet = POL
+						POL = {
+							set_politics = {
+								ruling_party = social_democracy
+								last_election = "1998.9.8"
+								election_frequency = 36
+								elections_allowed = no
+							}
+							set_popularities = {
+								democratic = 25
+								social_democracy = 47
+								fascism = 13
+								communism = 5
+								neutrality = 10
+							}
+							drop_cosmetic_tag = yes
+						}
+						end_puppet = SLO
+						SLO = {
+							set_politics = {
+								ruling_party = social_democracy
+								last_election = "1930.11.9"
+								election_frequency = 48
+								elections_allowed = no
+							}
+
+							set_popularities = {
+								communism = 3
+								reformed_communism = 0
+								social_democracy = 32
+								liberalism = 0
+								democratic = 20
+								neutrality = 32
+								paternal_autocracy = 10 #hungarian minority 
+								fascism = 3 #SLOTA HOLY SHIT SLOTA PARTY
+							}
+							drop_cosmetic_tag = yes
+							transfer_state = 664
+							transfer_state = 70
+							transfer_state = 71
+						}
+						end_puppet = HUN
+						HUN = {
+							set_politics = {
+								ruling_party = democratic
+								last_election = "2000.3.31"
+								election_frequency = 48
+								elections_allowed = no #elections by events
+							}
+							set_popularities = {
+								democratic = 30
+								socialism = 10
+								social_democracy = 30
+								liberalism = 10
+								fascism = 7
+								paternal_autocracy = 3
+								communism = 4
+								neutrality = 6
+							}
+							drop_cosmetic_tag = yes
+						}
+						end_puppet = ROM
+						ROM = {
+							set_politics = {
+								ruling_party = social_democracy
+								last_election = "1930.11.9"
+								election_frequency = 48
+								elections_allowed = no
+							}
+
+							set_popularities = {
+								communism = 0
+								reformed_communism = 0
+								neutrality = 7 #hungarians
+								social_democracy = 35
+								liberalism = 15
+								democratic = 10
+								neutrality = 6
+								paternal_autocracy = 0
+								fascism = 27
+							}
+							drop_cosmetic_tag = yes
+						}
+						end_puppet = BUL
+						BUL = {
+							set_politics = {
+								ruling_party = democratic
+								last_election = "1930.11.9"
+								election_frequency = 48
+								elections_allowed = no
+							}
+
+							set_popularities = {
+								communism = 0
+								liberalism = 20
+								social_democracy = 36
+								paternal_autocracy = 5
+								democratic = 35
+								neutrality = 4
+								fascism = 0
+							}
+							drop_cosmetic_tag = yes
+						}
+						end_puppet = FIN
+						FIN = {
+							set_politics = {
+								ruling_party = social_democracy
+								last_election = "1930.11.9"
+								election_frequency = 48
+								elections_allowed = no
+							}
+
+							set_popularities = {
+								communism = 0
+								liberalism = 30
+								social_democracy = 29
+								paternal_autocracy = 0
+								democratic = 31
+								neutrality = 0
+								fascism = 10
+							}
+							drop_cosmetic_tag = yes
+						}			
+						USA = { add_to_faction = POL }
+						USA = { add_to_faction = SLO }
+						USA = { add_to_faction = HUN }
+						USA = { add_to_faction = ROM }
+						USA = { add_to_faction = BUL }
+						USA = { add_to_faction = FIN }
+						
+						if = {
+							limit = {YUG = {is_in_faction_with = SOV}}
+							end_puppet = YUG
+							YUG = {
+								set_politics = {
+									ruling_party = liberalism
+									last_election = "1991.5.3"
+									election_frequency = 36
+									elections_allowed = no
+								}
+								
+								set_popularities = {
+									liberalism = 34
+									social_democracy = 15 
+									democratic = 15
+									fascism = 16
+									paternal_autocracy = 5
+									reformed_communism = 15
+									communism = 0
+								}
+								drop_cosmetic_tag = yes
+								set_cosmetic_tag = YUG
+							}
+							end_puppet = ALB
+							ALB = {
+								set_politics = {
+									ruling_party = socialism
+								}
+								set_popularities = {
+									communism = 0
+									reformed_communism = 5
+									socialism = 40
+									liberalism = 15
+									democratic = 25
+									neutrality = 0
+									fascism = 15
+								}
+								drop_cosmetic_tag = yes
+							}
+							USA = { add_to_faction = YUG }
+							USA = { add_to_faction = ALB }
+						}				
+
+						if = {
+							limit = {CZE = {is_in_faction_with = SOV}}
+							end_puppet = CZE
+							CZE = {
+								set_politics = {
+									ruling_party = democratic
+									last_election = "1930.11.9"
+									election_frequency = 48
+									elections_allowed = no
+								}
+
+								set_popularities = {
+									communism = 15
+									reformed_communism = 0
+									social_democracy = 37
+									liberalism = 13
+									democratic = 25
+									neutrality = 0
+									paternal_autocracy = 0
+									fascism = 10
+								}
+								drop_cosmetic_tag = yes
+							}
+							USA = { add_to_faction = CZE }
+						}
+						
+						every_country = {
+							remove_ideas = ussr_aligned_nation
+						}						
+						
+							
+						SOV = {
+							dismantle_faction = yes
+							remove_ideas = nation_status_superpower
+							
+							release = UKR							
+							release = EST
+							release = LIT
+							release = LAT							
+							release = GEO
+							release = AZR
+							release = ARM
+							release = KAZ
+							release = UZB
+							release = KYR
+							release = TMS
+							release = TAJ
+							release = BLR
+							release = MOL
+						}	
+						
+						USA = { add_to_faction = UKR }
+						USA = { add_to_faction = EST }
+						USA = { add_to_faction = LIT }
+						USA = { add_to_faction = LAT }						
+						USA = { add_to_faction = GEO }
+						USA = { add_to_faction = AZR }
+						USA = { add_to_faction = ARM }
+						USA = { add_to_faction = KAZ }
+						USA = { add_to_faction = UZB }
+						USA = { add_to_faction = KYR }
+						USA = { add_to_faction = TMS }
+						USA = { add_to_faction = TAJ }
+						USA = { add_to_faction = BLR }
+						USA = { add_to_faction = MOL }
+						
+						RPR = {
+							annex_country = {
+								target = SOV
+								transfer_troops = yes
+							}
+							SOV = {
+								every_core_state = {
+									add_core_of = RPR
+								}
+							}
+						}
+						USA = { add_to_faction = RPR }
+							
+							
+						MON = {	
+							add_ideas = china_aligned_nation
+							remove_ideas = MON_split
+						}
+						
+						set_nationality = {
+							target_country = UKR
+							character = UCR_viktor_yushchenko
+						}
+						UKR = {
+							transfer_state = 137
+							set_politics = {
+								ruling_party = liberalism
+								last_election = "1936.1.1"
+								election_frequency = 48
+								elections_allowed = no
+							}
+							set_popularities = {
+								fascism = 12
+								liberalism  = 39
+								democratic = 21
+								neutrality = 13
+								social_democracy = 15
+							}
+						}
+						
+						GEO = {
+							set_politics = {
+								ruling_party = social_democracy
+								elections_allowed = no
+								last_election = "2000.12.17"
+								election_frequency = 48
+							}
+						}
+						
+						UZB = {
+							set_politics = {
+								ruling_party = paternal_autocracy
+								elections_allowed = no
+							}
+						}
+						
+						KAZ = {
+							set_politics = {
+								ruling_party = paternal_autocracy
+								elections_allowed = no
+							}
+						}					
+
+						TMS = {
+							set_politics = {
+								ruling_party = paternal_autocracy
+								elections_allowed = no
+							}
+						}
+						
+						EST= {
+							set_politics = {
+								ruling_party = liberalism
+								elections_allowed = no
+								long_name = EST_liberalism_1_party_long
+								name = EST_liberalism_1_party
+							}
+							set_popularities = {
+								social_democracy = 25
+								liberalism = 40
+								democratic = 25
+								fascism = 10
+							}
+						}					
+					
+						KYR = {
+							set_politics = {
+								ruling_party = democratic
+							}	
+							set_popularities = {
+								liberalism = 10
+								democratic = 30
+								neutrality = 15
+								paternal_autocracy = 25
+								fascism = 10
+								social_democracy = 10	
+							}
+						}
+					
+					}
+					
+						##RYZHKOV##
+					### USSR VS POLAND - USSR WINS ###
+					if = {   
+						limit = {						
+							FROM = {
+								original_tag = SOV
+								has_government = reformed_communism
+							}
+							ROOT = {
+								original_tag = POL
+							}
+						}
+
+						SOV = {
+							white_peace = ROOT
+						}
+						
+							
+						SOV = {
+							puppet = POL
+						}
+						
+						POL = {
+							set_cosmetic_tag = POL_com_puppet
+							set_party_name = {
+								ideology = communism
+								name = POL_communism_restored_party
+								long_name = POL_communism_restored_party_long
+							}
+							set_party_name = {
+								ideology = reformed_communism
+								name = POL_reformed_communism_restored_party
+								long_name = POL_reformed_communism_restored_party_long
+							}
+							set_politics = {
+								ruling_party = reformed_communism
+								elections_allowed = no
+								last_election = "2000.12.17"
+								election_frequency = 48
+							}	
+							set_popularities = {
+								communism = 45
+								reformed_communism = 50
+								socialism = 5
+							}
+						}
+						
+					}
+
+					### USSR VS HUNGARY - USSR WINS ###
+					if = {   
+						limit = {						
+							FROM = {
+								original_tag = SOV
+								has_government = reformed_communism
+							}
+							ROOT = {
+								original_tag = HUN
+							}
+						}
+
+						SOV = {
+							white_peace = ROOT
+						}
+						
+							
+						SOV = {
+							puppet = HUN
+						}
+						
+						HUN = {
+							set_cosmetic_tag = HUN_com_puppet
+							set_politics = {
+								ruling_party = socialism
+								elections_allowed = no
+								last_election = "2000.12.17"
+								election_frequency = 48
+							}	
+							set_popularities = {
+								communism = 15
+								reformed_communism = 15
+								socialism = 45
+								social_democracy = 15
+								liberalism = 10
+							}
+						}
+						
+					}
+					
+					### YUGOSLAVIA WARS ###
+					
+					### YUGOSLAVIA VS CROATIA - YUGOSLAVIA WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = YUG
+							}
+							ROOT = {
+								original_tag = CRO
+							}
+						}
+
+						YUG = {
+							white_peace = CRO
+						}
+	
+						YUG = {
+							annex_country = {
+							target = CRO
+							transfer_troops = no
+							}
+						}
+						
+					}
+					
+					### YUGOSLAVIA VS CROATIA - CROATIA WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = CRO
+							}
+							ROOT = {
+								original_tag = YUG
+							}
+						}
+
+						CRO = {
+							white_peace = YUG
+							transfer_state = 910
+							transfer_state = 804	
+							add_state_core = 804
+							if = {
+								limit = {has_government = neutrality}
+								transfer_state = 959
+								transfer_state = 960
+								transfer_state = 961
+								transfer_state = 104
+								
+							}
+							else_if = {
+								limit = {NOT = {has_government = neutrality}}
+								BOS = {
+									set_cosmetic_tag = BOS_win
+									transfer_state = 959
+									transfer_state = 960
+									transfer_state = 961
+									transfer_state = 104 
+									
+									set_politics = {
+										ruling_party = social_democracy
+										elections_allowed = no
+									}
+										
+									set_popularities = {
+										social_democracy = 30
+										fascism = 15
+										neutrality = 15
+										democratic = 30
+										liberalism = 10
+										paternal_autocracy = 0 
+										reformed_communism = 0
+											
+									}
+								}
+							}
+
+						}
+						
+						SLV = {
+							white_peace = YUG
+						}
+	
+						YUG = {
+							country_event = {id = yug.25 days = 2}
+							set_country_flag = yug_defeated
+						}
+						
+					}					
+					
+					### YUGOSLAVIA VS SLOVENIA - YUGOSLAVIA WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = YUG
+							}
+							ROOT = {
+								original_tag = SLV
+							}
+						}
+
+						YUG = {
+							white_peace = SLV
+						}
+	
+						YUG = {
+							annex_country = {
+							target = SLV
+							transfer_troops = no
+							}
+							news_event = {id = old_times_news.176}
+						}
+						
+					}
+					
+					### YUGOSLAVIA VS ALBANIA - YUGOSLAVIA WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = YUG
+							}
+							ROOT = {
+								original_tag = ALB
+							}
+						}
+						
+						### COMMUNIST YUGOSLAVIA ###
+						if = {
+							limit = {
+								YUG = {
+									has_government = communism
+								}
+							}
+							
+							
+							YUG = {
+								white_peace = ALB
+							}
+		
+							YUG = {
+								annex_country = {
+								target = ALB
+								transfer_troops = no
+								}
+							}
+								44 = {
+									add_dynamic_modifier = {
+										modifier = YUG_heavy_autonomy
+									}
+								}
+								805 = {
+									add_dynamic_modifier = {
+										modifier = YUG_heavy_autonomy
+									}
+								}
+							
+						}
+						
+						### NATIONALIST YUGOSLAVIA ###
+						if = {
+							limit = {
+								YUG = {
+								has_government = fascism
+								}
+							}
+							
+							
+							YUG = {
+								white_peace = ALB
+							}
+		
+							YUG = {
+								annex_country = {
+								target = ALB
+								transfer_troops = no
+								}
+							}
+						}
+					}
+					
+					### YUGOSLAVIA VS BOSNIA - YUGOSLAVIA WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = YUG
+							}
+							ROOT = {
+								original_tag = BOS
+							}
+						}
+
+						YUG = {
+							white_peace = BOS
+						}
+	
+						YUG = {
+							add_days_mission_timeout = {
+								mission = yug_timer_clock_uprising
+								days = 25
+							}
+							annex_country = {
+							target = BOS
+							transfer_troops = no
+							}
+						}
+						
+					}
+					
+					### YUGOSLAVIA VS KOSOVA - YUGOSLAVIA WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = YUG
+							}
+							ROOT = {
+								original_tag = KOS
+							}
+						}
+
+						YUG = {
+							white_peace = KOS
+						}
+	
+						YUG = {
+							add_days_mission_timeout = {
+								mission = yug_timer_clock_uprising
+								days = 25
+							}						
+							annex_country = {
+							target = KOS
+							transfer_troops = no
+							}
+						}
+						
+					}
+					
+					### YUGOSLAVIA VS MACEDONIA - YUGOSLAVIA WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = YUG
+							}
+							ROOT = {
+								original_tag = MAC
+							}
+						}
+
+						YUG = {
+							white_peace = MAC
+						}
+	
+						YUG = {
+							add_days_mission_timeout = {
+								mission = yug_timer_clock_uprising
+								days = 25
+							}						
+							annex_country = {
+							target = MAC
+							transfer_troops = no
+							}
+						}
+						
+					}
+					
+					### YUGOSLAVIA VS HERZOGONIA - YUGOSLAVIA WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = YUG
+							}
+							ROOT = {
+								original_tag = HRZ
+							}
+						}
+
+						YUG = {
+							white_peace = HRZ
+						}
+	
+						YUG = {
+							add_days_mission_timeout = {
+								mission = yug_timer_clock_uprising
+								days = 25
+							}						
+							annex_country = {
+							target = HRZ
+							transfer_troops = no
+							}
+						}
+						
+					}					
+					
+					### YUGOSLAVIA VS SEPERATISTS - YUGOSLAVIA LOSES this is here if the seperatists somehow cap yugoslavia early - durango### 
+					if = {   
+						limit = {
+							FROM = {
+								OR = {
+								original_tag = BOS
+								original_tag = KOS
+								original_tag = MAC
+								original_tag = HRZ
+								}
+							}
+							ROOT = {
+								original_tag = YUG
+							}
+						}
+
+						BOS = {
+							white_peace = YUG
+						}
+						KOS = {
+							white_peace = YUG
+						}
+						HRZ = {
+							white_peace = YUG
+						}
+						MAC = {
+							white_peace = YUG
+						}					
+						YUG = {
+							remove_mission = yug_timer_clock_uprising
+							country_event = {id = yug_rebel.8}
+						}
+						
+					}
+					
+					### YUGOSLAVIA VS BULGARIA - YUGOSLAVIA WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = YUG
+							}
+							ROOT = {
+								original_tag = BUL
+							}
+						}
+
+						YUG = {
+							white_peace = ROOT
+						}
+	
+						YUG = {
+							annex_country = {
+							target = BUL
+							transfer_troops = no
+							}
+						}
+						
+					}
+
+					### UN VS YUGOSLAVIA - UN WINS ###
+					if = {   
+						limit = {
+							has_global_flag = yug_un_int
+							FROM = {
+								OR = {
+									original_tag = USA
+									is_ally_with = USA
+									original_tag = SOV
+									is_ally_with = SOV
+								}
+							}
+							ROOT = {
+								original_tag = YUG
+							}
+						}
+
+						every_country = {
+							white_peace = YUG
+						}
+						
+						YUG = {
+							load_focus_tree = generic_focus
+							set_cosmetic_tag = YUG_un
+							give_military_access = USA
+							give_military_access = GER
+							give_military_access = FRA
+							give_military_access = ITA
+							if = {
+								limit = {has_global_flag = anti_yug_coalition_formed}
+								give_military_access = SOV
+							}
+							set_party_name = {
+								ideology = neutrality
+								name = YUG_neutrality_un_party
+								long_name = YUG_neutrality_un_party_long
+							}
+							set_politics = {
+								ruling_party = neutrality
+							}
+							set_popularities = {
+								neutrality = 45
+								socialism = 25
+								liberalism = 25
+								fascism = 5
+							}
+							release = ALB
+							release = BUL
+							clr_global_flag = yug_un_int
+							clr_global_flag = anti_yug_coalition_formed
+							set_global_flag = anti_yug_coalition_formed_2 #used for event shit
+							set_country_flag = yug_defeated
+						}
+						USA = {country_event = {id = yug_seselj.18 days = 365}}
+					}
+					
+					### BOSNIA WARS ###
+					
+					### HERZOGONIA DEFEATED ###
+					if = {   
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = BOS
+									original_tag = SRP
+								}	
+							}
+							ROOT = {
+								original_tag = HRZ
+							}
+						}
+
+						FROM = {
+							white_peace = ROOT
+						}
+	
+						FROM = {
+							annex_country = {
+							target = HRZ
+							transfer_troops = no
+							}
+						}
+						
+					}		
+					
+					### BOSNIA DEFEATED ###
+					if = {   
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = HRZ
+									original_tag = SRP
+								}	
+							}
+							ROOT = {
+								original_tag = BOS
+							}
+						}
+
+						FROM = {
+							white_peace = ROOT
+						}
+	
+						FROM = {
+							annex_country = {
+							target = BOS
+							transfer_troops = no
+							}
+						}
+						
+					}		
+
+					### SRPSKA DEFEATED ###
+					if = {   
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = HRZ
+									original_tag = BOS
+								}	
+							}
+							ROOT = {
+								original_tag = HRZ
+							}
+						}
+
+						FROM = {
+							white_peace = ROOT
+						}
+	
+						FROM = {
+							annex_country = {
+							target = SRP
+							transfer_troops = no
+							}
+						}
+						
+					}	
+					
+					### SOUTH AFRICA WARS ###
+					
+					### SOUTH AFRICA VS ANC - SOUTH AFRICA WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = SAF
+							}
+							ROOT = {
+								original_tag = ANC
+							}
+						}
+
+						SAF = {
+							white_peace = ROOT
+						}
+	
+						SAF = {
+							annex_country = {
+							target = ANC
+							transfer_troops = no
+							}
+							country_event = saf.24
+						}
+						
+						USA = {
+						proxy_war_won_by_USA = yes
+						}
+						
+					}
+					
+					### SOUTH AFRICA VS ANC - ANC WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = ANC
+									original_tag = ZIM
+									original_tag = MZB
+								}
+							}
+							ROOT = {
+								original_tag = SAF
+							}
+						}
+
+						SAF = {
+							white_peace = FROM
+						}
+	
+						ANC = {
+							annex_country = {
+							target = SAF
+							transfer_troops = no
+							}
+						}
+						
+						SOV = {
+						proxy_war_won_by_SOV = yes
+						}
+						
+					}
+					
+					### SOUTH AFRICA VS ZIMBABWE - SOUTH AFRICA WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = ANC
+							}
+							ROOT = {
+								original_tag = ZIM
+							}
+						}
+
+						SAF = {
+							white_peace = ROOT
+						}
+	
+						SAF = {
+							annex_country = {
+							target = ZIM
+							transfer_troops = no
+							}
+						}
+						
+					}
+					
+					### SOUTH AFRICA VS MOZAMBIQUE - SOUTH AFRICA WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = ANC
+							}
+							ROOT = {
+								original_tag = MZB
+							}
+						}
+
+						SAF = {
+							white_peace = ROOT
+						}
+	
+						SAF = {
+							annex_country = {
+							target = MZB
+							transfer_troops = no
+							}
+						}
+						
+					}
+
+					##SOUTH AFRICA COLLAPSE##
+					
+					### FIFTH COMMANDO DIVISION FCD DEFEATED  ###
+					if = {   
+						limit = {
+							ROOT = {
+								original_tag = FCD
+							}
+						}
+
+						FROM = {
+							white_peace = FCD
+						}
+	
+						FROM = {
+							annex_country = {
+							target = FCD
+							transfer_troops = no
+							}
+						}
+						
+					}
+
+					### south african nat front SNF DEFEATED ###
+					if = {   
+						limit = {
+							ROOT = {
+								original_tag = SNF
+							}
+						}
+
+						FROM = {
+							white_peace = SNF
+						}
+	
+						FROM = {
+							annex_country = {
+							target = SNF
+							transfer_troops = no
+							}
+						}
+						
+					}
+
+
+					### boers DEFEATED ###
+					if = {   
+						limit = {
+							ROOT = {
+								original_tag = BFS
+							}
+						}
+
+						FROM = {
+							white_peace = BFS
+						}
+	
+						FROM = {
+							annex_country = {
+							target = BFS
+							transfer_troops = no
+							}
+						}
+						
+					}
+
+					
+					### SOUTH AFRICA DEFEATED ###
+					if = {   
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = FCD
+									original_tag = BFS
+									original_tag = SNF
+								}	
+							}
+							ROOT = {
+								original_tag = SAF
+							}
+						}
+
+						FROM = {
+							white_peace = ROOT
+						}
+	
+						FROM = {
+							annex_country = {
+							target = SAF
+							transfer_troops = no
+							}
+						}
+						
+					}
+					
+					### SRI LANKA CIVIL WAR ###
+					
+					### LTTE VS SRI LANKA - LTTE WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = TAM
+							}
+							ROOT = {
+								original_tag = SRL
+							}
+						}
+
+						TAM = {
+							white_peace = ROOT
+						}
+	
+						TAM = {
+							set_cosmetic_tag = TAM_won
+							puppet = SRL
+						}
+						
+						
+						SRL = {
+							set_politics = {
+								ruling_party = socialism
+								last_election = "1936.1.1"
+								election_frequency = 48
+								elections_allowed = yes
+							}
+							set_cosmetic_tag = SRL_lost
+							set_popularities = {
+								democratic = 0
+								fascism = 30
+								socialism = 70
+								neutrality = 0
+							}
+							replace_alignment_to_SOV = yes
+						}
+						
+						SOV = {
+						proxy_war_won_by_SOV = yes
+						}
+					}
+					
+					### LTTE VS SRI LANKA - SRI LANKA WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = SRL
+							}
+							ROOT = {
+								original_tag = TAM
+							}
+						}
+
+						SRL = {
+							white_peace = ROOT
+						}
+	
+						SRL = {
+							annex_country = {
+							target = TAM
+							transfer_troops = no
+							}
+						}
+						
+						USA = {
+						proxy_war_won_by_USA = yes
+						}
+						
+					}
+					
+					### ERITREAN WAR OF INDEPENDENCE ###
+					
+					### ETHIOPIA VS ERITREA - ETHIOPIA WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = ETH
+							}
+							ROOT = {
+								original_tag = ERI
+							}
+						}
+
+						ETH = {
+							white_peace = ROOT
+						}
+	
+						ETH = {
+							annex_country = {
+							target = ERI
+							transfer_troops = no
+							}
+							
+							if = {
+								limit = {has_country_flag = eth_weridwali_fails}
+							}
+							else_if = {
+								limit = {NOT = {has_country_flag = eth_weridwali_fails}}
+								news_event = {id = old_times_news.40}
+
+							}
+						}
+						
+						SOV = {
+						proxy_war_won_by_SOV = yes
+						}
+						
+					}
+					
+					### ETHIOPIA VS REBELS - ETHIOPIA WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = ETH
+							}
+							ROOT = {
+								original_tag = ETV
+							}
+						}
+
+						ETH = {
+							white_peace = ROOT
+						}
+	
+						ETH = {
+							annex_country = {
+							target = ETV
+							transfer_troops = no
+							}
+						}
+						
+					}
+					
+					### ETHIOPIA VS ERITREA AND REBELS - REBELS WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								OR = {
+								original_tag = ETV
+								original_tag = ERI
+								}
+							}
+							ROOT = {
+								original_tag = ETH
+							}
+						}
+
+						FROM = {
+							white_peace = ROOT
+						}
+						
+						ERI = {
+							transfer_state = 842
+							set_cosmetic_tag = ERI_won
+						}
+						
+						ETV = {
+							annex_country = {
+							target = ETH
+							transfer_troops = no
+							}
+							set_cosmetic_tag = ETV_transition_gov
+							set_cosmetic_tag = ETV_postwar_flag		
+
+							add_state_core = 839
+							add_state_core = 843
+							add_state_core = 842
+							add_state_core = 837
+							add_state_core = 838
+							add_state_core = 902
+							add_state_core = 841
+							add_state_core = 840
+							add_state_core = 271
+							add_state_core = 836
+							add_state_core = 835
+							
+							news_event = {id = old_times_news.55}
+							set_portraits = {
+								character = ETV_collective_leadership
+								civilian = { large ="gfx/leaders/Africa/ETV_collective_leadership_win.dds" }
+							}
+							
+							replace_alignment_to_PRC = yes
+							
+						}
+						
+					}
+					
+					### ETHIOPIA VS SOMALIA - ETHIOPIA WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = ETH
+							}
+							ROOT = {
+								original_tag = SOM
+							}
+						}
+
+						ETH = {
+							white_peace = ROOT
+						}
+	
+						ETH = {
+							annex_country = {
+							target = SOM
+							transfer_troops = no
+							}
+							
+						}
+						
+					}					
+
+					### ETHIOPIA VS SOMALIA - SOMALIA WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = SOM
+							}
+							ROOT = {
+								original_tag = ETH
+							}
+						}
+
+						SOM = {
+							white_peace = ETH
+						}
+	
+						SOM = {
+							transfer_state = 835
+							transfer_state = 836						
+						}
+						
+					}	
+						
+					### ETHIOPIA VS DJIBOUTI - ETHIOPIA WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = ETH
+							}
+							ROOT = {
+								original_tag = DJI
+							}
+						}
+
+						ETH = {
+							white_peace = DJI
+						}
+	
+						ETH = {
+							annex_country = {
+							target = DJI
+							transfer_troops = no
+							}
+							
+						}
+						
+					}	
+
+					### ETHIOPIA VS SOMALILAND - ETHIOPIA WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = ETH
+							}
+							ROOT = {
+								original_tag = SML
+							}
+						}
+
+						ETH = {
+							white_peace = SML
+						}
+	
+						ETH = {
+							annex_country = {
+							target = SML
+							transfer_troops = no
+							}
+							
+						}
+						
+					}	
+					
+					### SECOND CONGO WAR ###
+					
+					### RCD - K VS Congo - RCD - K  WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = RCK
+							}
+							ROOT = {
+								original_tag = COG
+							}
+						}
+
+						RCK = {
+							white_peace = ROOT
+							white_peace = ANG
+							white_peace = NMB
+							white_peace = ZIM
+						}
+						
+						RGO = {
+							white_peace = COG
+							white_peace = ANG
+							white_peace = NMB
+							white_peace = ZIM
+						}
+						
+						UGA = {
+							white_peace = COG
+							white_peace = ANG
+							white_peace = NMB
+							white_peace = ZIM
+						}
+						
+						RWA = {
+							white_peace = COG
+							white_peace = ANG
+							white_peace = NMB
+							white_peace = ZIM
+						}
+						
+						BRD = {
+							white_peace = COG
+							white_peace = ANG
+							white_peace = NMB
+							white_peace = ZIM
+						}
+	
+						RCK = {
+							annex_country = {
+							target = COG
+							transfer_troops = no
+							}
+						}
+						
+						
+					}
+						
+					### RCD - K VS Congo - Congo WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = COG
+							}
+							ROOT = {
+								original_tag = RCK
+							}
+						}
+
+						COG = {
+							white_peace = ROOT
+						}
+	
+						COG = {
+							annex_country = {
+							target = RCK
+							transfer_troops = no
+							}
+						}
+						
+						UGA = {
+	
+							country_event = {id = uganda.1 days = 5}
+
+						}
+						
+					}
+					
+					### RCD - G VS Congo - RCD - G WINS ###
+					
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = RGO
+								
+							}
+							ROOT = {
+								original_tag = COG
+							}
+						}
+						
+						RGO = {
+							white_peace = ROOT
+							white_peace = ANG
+							white_peace = NMB
+							white_peace = ZIM
+						}
+						
+						RCK = {
+							white_peace = COG
+							white_peace = ANG
+							white_peace = NMB
+							white_peace = ZIM
+						}
+						
+						UGA = {
+							white_peace = COG
+							white_peace = ANG
+							white_peace = NMB
+							white_peace = ZIM
+						}
+						
+						RWA = {
+							white_peace = COG
+							white_peace = ANG
+							white_peace = NMB
+							white_peace = ZIM
+						}
+						
+						BRD = {
+							white_peace = COG
+							white_peace = ANG
+							white_peace = NMB
+							white_peace = ZIM
+						}
+						
+						RGO = {
+							annex_country = {
+							target = COG
+							transfer_troops = no
+							}
+						}
+						
+					}
+					
+					### RCD - G VS Congo - Congo WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = COG
+							}
+							ROOT = {
+								original_tag = RGO
+							}
+						}
+
+						COG = {
+							white_peace = RGO
+						}
+	
+						COG = {
+							annex_country = {
+							target = RGO
+							transfer_troops = no
+							}
+						}
+						
+					}
+					
+					### Uganda VS Congo - Congo WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = COG
+							}
+							ROOT = {
+								original_tag = UGA
+							}
+						}
+
+						COG = {
+							white_peace = ROOT
+						}
+	
+						COG = {
+							puppet = UGA
+						}
+						
+						UGA = {
+						retire_country_leader = yes
+						promote_character = UGA_occupation_authority
+							set_politics = {
+								ruling_party = neutrality
+								last_election = "1936.1.1"
+								election_frequency = 48
+								elections_allowed = yes
+							}
+							set_cosmetic_tag = UGA_occupied
+							set_popularities = {
+								democratic = 10
+								fascism = 30
+								communism = 0
+								neutrality = 60
+							}
+							replace_alignment_to_SOV = yes
+						
+						}
+					}
+					
+					### Rwanda VS Congo - Congo WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = COG
+							}
+							ROOT = {
+								original_tag = RWA
+							}
+						}
+
+						COG = {
+							white_peace = RWA
+						}
+	
+						COG = {
+							puppet = RWA
+						}
+						
+						RWA = {
+						retire_country_leader = yes
+						promote_character = RWA_occupation_authority
+							set_politics = {
+								ruling_party = neutrality
+								last_election = "1936.1.1"
+								election_frequency = 48
+								elections_allowed = yes
+							}
+							set_cosmetic_tag = RWA_occupied
+							set_popularities = {
+								democratic = 0
+								fascism = 20
+								communism = 24
+								neutrality = 56
+							}
+							replace_alignment_to_SOV = yes
+						
+						}
+						
+					}
+					
+					### Burundi VS Congo - Congo WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = COG
+							}
+							ROOT = {
+								original_tag = BRD
+							}
+						}
+
+						COG = {
+							white_peace = BRD
+						}
+	
+						COG = {
+							puppet = BRD
+						}
+						
+						BRD = {
+						retire_country_leader = yes
+						promote_character = BRD_occupation_authority
+							set_politics = {
+								ruling_party = neutrality
+								last_election = "1936.1.1"
+								election_frequency = 48
+								elections_allowed = yes
+							}
+							set_cosmetic_tag = BRD_occupied
+							set_popularities = {
+								democratic = 10
+								fascism = 10
+								communism = 20
+								neutrality = 60
+							}
+							replace_alignment_to_SOV = yes
+						
+						}
+						
+					}
+					
+					### RCD - K VS RCD - G - RCD - K WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = RCK
+									original_tag = UGA
+								}
+							}
+							ROOT = {
+								OR = {
+									original_tag = RGO
+									original_tag = RWA
+									original_tag = BRD
+								}
+							}
+						}
+
+						RCK = {
+							white_peace = ROOT
+						}
+	
+						RCK = {
+							annex_country = {
+							target = RGO
+							transfer_troops = no
+							}
+						}
+						
+							COG = {
+								white_peace = RGO
+								white_peace = RWA
+								white_peace = BRD
+							}
+							
+							ANG = {
+								white_peace = RGO
+								white_peace = RWA
+								white_peace = BRD
+							}
+							
+							NMB = {
+								white_peace = RGO
+								white_peace = RWA
+								white_peace = BRD
+							}
+							
+							ZIM = {
+								white_peace = RGO
+								white_peace = RWA
+								white_peace = BRD
+							}
+							
+							RCK = {
+								white_peace = RGO
+								white_peace = RWA
+								white_peace = BRD
+							}
+							
+							UGA = {
+								white_peace = RGO
+								white_peace = RWA
+								white_peace = BRD
+							}
+						
+							BRD = {
+								dismantle_faction = yes
+							}
+							
+						
+					}
+					
+					### RCD - K VS RCD - G - RCD - G WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = RGO
+									original_tag = RWA
+									original_tag = BRD
+								}
+							}
+							ROOT = {
+								OR = {
+									original_tag = RCK
+									original_tag = UGA
+								}
+							}
+						}
+
+						RGO = {
+							white_peace = ROOT
+						}
+	
+						RGO = {
+							annex_country = {
+							target = RCK
+							transfer_troops = no
+							}
+						}
+							
+							
+							ANG = {
+								white_peace = RCK
+								white_peace = UGA
+							}
+							
+							NMB = {
+								white_peace = RCK
+								white_peace = UGA
+							}
+							
+							ZIM = {
+								white_peace = RCK
+								white_peace = UGA
+							}
+							
+							
+							UGA = {
+	
+							country_event = {id = uganda.1 days = 5}
+
+							}
+							
+						
+					}
+					
+					### Angola VS UNITA - Angola WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = ANG
+							}
+							ROOT = {
+								original_tag = UNI
+							}
+						}
+
+						ANG = {
+							white_peace = ROOT
+						}
+	
+						ANG = {
+							annex_country = {
+							target = UNI
+							transfer_troops = no
+							}
+							news_event = {id = old_times_news.91 days = 1}
+						}
+						
+						SOV = {
+						proxy_war_won_by_SOV = yes
+						}
+						
+					}
+					
+					### Angola VS UNITA - UNITA WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = UNI
+							}
+							ROOT = {
+								original_tag = ANG
+							}
+						}
+
+						UNI = {
+							white_peace = ROOT
+						}
+	
+						UNI = {
+							annex_country = {
+							target = ANG
+							transfer_troops = no
+							}
+							news_event = {id = old_times_news.92 days = 1}
+						}
+						
+						
+						
+						UNI = {
+							white_peace = ZIM
+							white_peace = NMB
+							white_peace = COG
+							
+							set_cosmetic_tag = UNI_rep
+						}		
+						
+						USA = {
+						proxy_war_won_by_USA = yes
+						}
+						
+					}
+					
+					### Sudan VS South Sudan - SUDAN WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = SUD
+							}
+							ROOT = {
+								original_tag = SPL
+							}
+						}
+
+						SUD = {
+							white_peace = SPL
+						}
+	
+						SUD = {
+							annex_country = {
+							target = SPL
+							transfer_troops = no
+							}
+						}
+						SPL = {
+							every_core_state = {
+								remove_core_of = SPL
+							}	
+						}						
+					}
+
+					### Sudan VS Darfur - SUDAN WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = SUD
+							}
+							ROOT = {
+								original_tag = DAR
+							}
+						}
+
+						SUD = {
+							white_peace = DAR
+						}
+	
+						SUD = {
+							annex_country = {
+							target = DAR
+							transfer_troops = no
+							}
+						}
+						
+					}
+					
+					### Sudan VS South Sudan - South Sudan WINS ###
+					if = {   
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = SPL
+									original_tag = DAR
+								}	
+							}
+							ROOT = {
+								original_tag = SUD
+							}
+						}
+
+						SPL = {
+							white_peace = SUD
+						}
+	
+	
+						SPL = {
+							annex_country = {
+							target = SUD
+							transfer_troops = no
+							}
+							annex_country = {
+							target = DAR
+							transfer_troops = yes
+							}							
+							add_popularity = {
+							ideology = democratic
+							popularity = 0.25
+							}							
+							add_popularity = {
+							ideology = paternal_autocracy
+							popularity = 0.10
+							}
+							add_popularity = {
+							ideology = liberalism
+							popularity = 0.15
+							}		
+							add_popularity = {
+							ideology = social_democracy
+							popularity = 0.10
+							}								
+						}
+						
+						SPL = {
+							set_capital = {
+							  state = 551
+							  remember_old_capital = no
+							}
+							set_cosmetic_tag = SPL_confed_of_sudan
+
+						}
+						
+						SUD = {
+							every_core_state = {
+								remove_core_of = SUD
+							}	
+						}
+					}
+					
+						## SECOND INTIFADA ISRAEL VS PALESTINE ##
+						
+					## ISRAEL VS PALESTINE - PALESTINE WINS AGAINST ISRAEL ##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = PAL
+							}
+							ROOT = {
+								original_tag = ISR
+							}
+						}
+
+						PAL = {
+							white_peace = ROOT
+						}
+
+						PAL = {
+							remove_ideas = PAL_secret_build_up
+							remove_ideas = PAL_second_intifada
+							annex_country = {
+							target = ISR
+							transfer_troops = no
+							}
+						}
+					 
+					}
+					
+					## ISRAEL VS PALESTINE - ISRAEL WINS AGAINST PALESTINE ##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = ISR
+							}
+							ROOT = {
+								original_tag = PAL
+							}
+						}
+
+						ISR = {
+							white_peace = ROOT
+						}
+
+						ISR = {
+							remove_ideas = ISR_zionist_volunteers
+							annex_country = {
+							target = PAL
+							transfer_troops = no
+							}
+							remove_state_core = 914
+						}
+					 
+					}
+					
+					## TALIBAN AFGHANISTAN VS NORTHERN ALLIANCE ##
+					
+					## TALIBAN AFGHANISTAN VS NORTHERN ALLIANCE - TALIBAN AFGHANISTAN WINS##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = AFG
+							}
+							ROOT = {
+								original_tag = NRO
+							}
+						}
+
+						AFG = {
+							white_peace = ROOT
+						}
+
+						AFG = {
+							annex_country = {
+							target = NRO
+							transfer_troops = no
+							}
+							news_event = {id = old_times_news.52 days = 1}
+						}
+					 
+					}
+					
+					## TALIBAN AFGHANISTAN VS NORTHERN ALLIANCE - NORTHERN ALLIANCE (WITHOUT USA HELP) WINS##
+					if = {   
+						limit = {
+							FROM = {
+								original_tag = NRO
+							}
+							ROOT = {
+								original_tag = AFG
+							}
+						}
+
+						NRO = {
+							white_peace = {
+								tag = ROOT
+								message = NRO_wins_AFG_peace_message
+							}
+						}
+
+						NRO = {
+							set_cosmetic_tag = NRO_afghanistan
+							annex_country = {
+							target = AFG
+							transfer_troops = no
+							}
+							set_capital = {
+								state = 267
+								remember_old_capital = no
+							}
+							add_state_core = 267
+							add_state_core = 415
+							country_event = {id = northern_alliance.1 days = 1}
+							news_event = {id = old_times_news.53 days = 1}
+							add_ideas = NRO_taliban_insurgency
+						}
+						
+					 
+					}
+					
+						## INDOCHINA WAR ##
+					
+					## VIETNAM, LAOS, C. CAMBODIA VS THAILAND, K. CAMBODIA ##
+					
+					## communist cambodia dies ##
+					if = {   
+						limit = {
+							FROM = {
+								OR = {
+								original_tag = MAL
+								original_tag = SIA
+								original_tag = CMK
+								}
+							}
+							ROOT = {
+								original_tag = CAM
+							}
+						}
+
+						CMK = {
+							annex_country = {
+							target = CAM
+							transfer_troops = no
+							}
+
+						}
+					
+						
+						SIA = {
+							add_to_variable = {indochina_war_thailand_wins_var = 1}
+						}
+							
+						if = {
+							limit = {
+								SIA = {
+								check_variable = {indochina_war_thailand_wins_var = 2}	
+								}
+							}
+							SIA = {
+								dismantle_faction = yes
+								white_peace = VIN
+							}	
+							CMK = {
+								white_peace = VIN
+							}
+							MAL = {
+								white_peace = VIN
+							}
+							news_event = { id = old_times_news.98}					
+
+						}
+					 
+					}
+	
+					## laos dies ##
+					if = {   
+						limit = {
+							FROM = {
+								OR = {
+								original_tag = MAL
+								original_tag = SIA
+								original_tag = CMK
+								}
+							}
+							ROOT = {
+								original_tag = LAO
+							}
+						}
+
+						FROM = {
+							white_peace = {
+								tag = LAO
+							}
+						}
+
+						SIA = {
+							annex_country = {
+							target = LAO
+							transfer_troops = no
+							}
+
+						}
+						
+					
+						
+						SIA = {
+							add_to_variable = {indochina_war_thailand_wins_var = 1}
+						}
+
+							if = {
+							limit = {
+								SIA = {
+								check_variable = {indochina_war_thailand_wins_var = 2}	
+								}						
+							}
+							SIA = {
+								dismantle_faction = yes
+								white_peace = VIN
+							}	
+							CMK = {
+								white_peace = VIN
+							}
+							MAL = {
+								white_peace = VIN
+							}
+							news_event = { id = old_times_news.98}
+						}
+						
+					 
+					}
+					## VN dies ##
+					if = {   
+						limit = {
+							FROM = {
+								OR = {
+								original_tag = MAL
+								original_tag = SIA
+								original_tag = CMK
+								}
+							}
+							ROOT = {
+								original_tag = VIN
+							}
+						}
+
+						FROM = {
+							white_peace = {
+								tag = VIN
+							}
+						}
+
+						SIA = {
+							annex_country = {
+							target = LAO
+							transfer_troops = no
+							}
+                          dismantle_faction = yes
+						  white_peace = {
+								tag = ROOT
+							}
+						}
+						CMK = {
+							annex_country = {
+							target = CAM
+							transfer_troops = no
+							}
+                        white_peace = {
+								tag = ROOT
+							}
+						}
+						MAL = {
+							white_peace = {
+								tag = ROOT
+							}
+						}
+						news_event = { id = old_times_news.98}
+					}
+	
+					## kingdom cambodia dies ##
+					if = {   
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = VIN
+									original_tag = LAO
+									original_tag = CAM
+								}
+							}
+							ROOT = {
+								original_tag = CMK
+							}
+						}
+
+						CAM = {
+							annex_country = {
+							target = CMK
+							transfer_troops = no
+							}
+
+						}
+						
+						LAO = { add_to_faction = CAM }
+					 
+					}
+					
+					## thailand dies ##
+					if = {   
+						limit = {
+							FROM = {
+								OR = {
+								original_tag = VIN
+								original_tag = LAO
+								original_tag = CAM
+								}
+
+							}
+							ROOT = {
+								original_tag = SIA
+							}
+						}
+
+						LAO = {
+							white_peace = {
+								tag = ROOT
+							}
+							white_peace = MAL
+							dismantle_faction = yes
+						}
+						
+						VIN = {
+							white_peace = {
+								tag = ROOT
+							}
+							dismantle_faction = yes
+							white_peace = MAL
+						}
+						
+						CAM = {
+							white_peace = MAL
+							white_peace = {
+								tag = ROOT
+							}
+							annex_country = {
+								target = CMK
+								transfer_troops = no
+								}
+							dismantle_faction = yes
+						}
+
+						if = {
+							limit = { 
+								SIA = {
+								owns_state = 670
+								owns_state = 917
+								} 
+							}
+							LAO = {
+								transfer_state = 670
+								transfer_state = 917
+							}
+						}
+	
+						SIA = {
+							set_cosmetic_tag = SIA_communist
+							give_military_access = VIN
+							give_military_access = LAO
+							give_military_access = CAM
+							dismantle_faction = yes
+							set_politics = {
+								ruling_party = reformed_communism
+								elections_allowed = no
+							}
+							add_popularity = {
+							ideology = reformed_communism
+							popularity = 29
+							} 
+							remove_ideas = SIA_asean
+							remove_ideas = SIA_rama_IX
+							remove_ideas = SIA_army_question 
+						    retire_character = SIA_Surayud_Chulanont
+							retire_character = SIA_Sonthi_Boonyaratglin
+							retire_character = SIA_Songkitti_Jaggabatara
+							 retire_character =  SIA_Saprang_Kalayanamitr
+							 retire_character =  SIA_Chaiyasit_Shinawatra 
+							
+						}
+						
+						TNS = {
+							transfer_state = 869
+                            add_state_core = 869
+							add_state_core = 289
+							add_state_core = 868
+							add_state_core = 724
+							add_ideas = SIA_rama_IX
+						}
+						
+						PTN = {
+							transfer_state = 974
+						}
+						
+						RTA = {
+							transfer_state = 724
+							add_state_core = 724
+							add_state_core = 869
+							add_state_core = 289
+							add_state_core = 868
+
+						}
+						news_event = { id = old_times_news.97}
+					 
+					}
+
+		## NORTH YEMEN VS SOUTH YEMEN - NORTH YEMEN WINS ##
+		if = {   
+			limit = {
+				FROM = {
+					OR = {
+						original_tag = YEM
+						original_tag = SAU 
+					}	
+				}
+				ROOT = {
+					original_tag = DYR
+				}
+			}
+
+			SAU = {
+				white_peace = DYR
+				white_peace = EGY
+				dismantle_faction = yes
+			}
+
+			YEM = {
+				white_peace = DYR
+				white_peace = EGY
+				annex_country = { target = DYR }
+			}
+		}
+		## NORTH YEMEN VS SOUTH YEMEN - SOUTH YEMEN WINS ##
+		if = {   
+			limit = {
+				FROM = {
+					original_tag = DYR
+				}
+				ROOT = {
+					original_tag = YEM
+				}
+			}
+
+			EGY = {
+				white_peace = YEM
+				white_peace = SAU
+				dismantle_faction = yes
+			}
+
+			DYR = {
+				white_peace = YEM
+				white_peace = SAU
+				annex_country = { target = YEM }
+				set_country_flag = DYR_won_civil_war
+
+				country_event = {
+					id = yemen.2
+					days = 62
+					hours = 14
+				}
+
+			}
+
+			SAU = {
+				dismantle_faction = yes
+			}
+
+
+		}
+		## NORTH YEMEN VS SOUTH YEMEN - SOUTH YEMEN WINS - CASE 2 ##
+		if = {   
+			limit = {
+				FROM = {
+					OR = {
+						original_tag = DYR
+						original_tag = EGY
+					}
+				}
+				ROOT = {
+					original_tag = SAU
+				}
+				NOT = {has_global_flag = great_middle_east_war}
+			}
+
+			EGY = {
+				white_peace = YEM
+				white_peace = SAU
+				dismantle_faction = yes
+			}
+
+			DYR = {
+				white_peace = YEM
+				white_peace = SAU
+				annex_country = { target = YEM }
+				set_country_flag = DYR_won_civil_war
+
+				country_event = {
+					id = yemen.2
+					days = 62
+					hours = 14
+				}
+
+			}
+
+			SAU = {
+				dismantle_faction = yes
+			}
+
+
+		}
+		
+		## SOVIET CIVIL WAR ##
+		
+		## UKRAINE CIVIL WAR ##
+	
+		## UKRAINE SSR GETS CLAPPED ##
+		if = {   
+			limit = {
+				FROM = {
+					OR = {
+						original_tag = UCR
+						original_tag = OUN
+					}	
+				}
+				ROOT = {
+					original_tag = UKR
+				}
+			}
+			
+			FROM = {
+				white_peace = UKR
+			}
+	
+			FROM = {
+				annex_country = { 
+					target = UKR 
+				}
+				
+			}
+			
+			ROOT = {
+				every_core_state = {
+					remove_core_of = ROOT
+					add_core_of = FROM
+				}
+			}
+		}
+
+		## UKRAINE RADA REPUBLICANS GETS CLAPPED ##
+		if = {   
+			limit = {
+				FROM = {
+					OR = {
+						original_tag = UKR
+						original_tag = OUN
+					}	
+				}
+				ROOT = {
+					original_tag = UCR
+				}
+			}
+			
+			FROM = {
+				white_peace = UCR
+			}
+			
+			FROM = {
+				annex_country = { 
+					target = UCR 
+				}
+				
+			}
+			
+			ROOT = {
+				every_core_state = {
+					remove_core_of = ROOT
+					add_core_of = FROM
+				}
+			}
+			
+		}
+
+		## UKRAINE OUN GETS CLAPPED ##
+		if = {   
+			limit = {
+				FROM = {
+					OR = {
+						original_tag = UCR
+						original_tag = UKR
+					}	
+				}
+				ROOT = {
+					original_tag = OUN
+				}
+			}
+			
+			FROM = {
+				white_peace = OUN
+			}
+			
+			FROM = {
+				annex_country = { 
+					target = OUN
+				}
+				
+			}
+			
+			ROOT = {
+				every_core_state = {
+					remove_core_of = ROOT
+					add_core_of = FROM
+				}
+			}
+			
+		}
+
+		## UKRAINE DONBASS GETS CLAPPED ##
+		if = {   
+			limit = {
+				FROM = {
+					OR = {
+						original_tag = UCR
+						original_tag = OUN
+					}	
+				}
+				ROOT = {
+					original_tag = DPR
+				}
+			}
+			
+			FROM = {
+				white_peace = DPR
+			}
+			
+			FROM = {
+				annex_country = { 
+					target = DPR
+				}
+				
+			}
+			
+			ROOT = {
+				every_core_state = {
+					remove_core_of = ROOT
+					add_core_of = FROM
+				}
+			}
+			
+		}
+		
+		## MOSCOW CIVIL WAR - MOSCOW W##
+		
+		# MOSCOW VS MOSKVA KGB #
+		if = {   
+			limit = {
+				FROM = {
+					original_tag = SOV
+				}
+				ROOT = {
+					original_tag = TFM
+				}
+			}
+			
+			FROM = {
+				white_peace = TFM
+			}
+	
+			FROM = {
+				annex_country = { 
+					target = TFM
+					transfer_troops = yes
+				}
+				
+			}
+			
+			ROOT = {
+				every_core_state = {
+					remove_core_of = ROOT
+				}
+			}
+		}		
+		
+		# MOSCOW VS LENINGRAD KGB - MOSCOW W#
+		if = {   
+			limit = {
+				FROM = {
+					original_tag = SOV
+				}
+				ROOT = {
+					original_tag = TFL
+				}
+			}
+			
+			FROM = {
+				white_peace = TFL
+			}
+	
+			FROM = {
+				annex_country = { 
+					target = TFL
+					transfer_troops = yes
+				}
+				
+			}
+			
+			ROOT = {
+				every_core_state = {
+					remove_core_of = ROOT
+				}
+			}
+		}
+
+		# MOSCOW VS KGB - KGB W#
+		if = {   
+			limit = {
+				FROM = {
+					OR = {
+						original_tag = TFL
+						original_tag = TFM
+					}	
+				}
+				ROOT = {
+					original_tag = TFL
+				}
+			}
+			
+			FROM = {
+				white_peace = SOV
+			}
+	
+			TFM = {
+				annex_country = { 
+					target = TFL
+					transfer_troops = no
+				}
+				annex_country = { 
+					target = SOV
+					transfer_troops = no
+				}				
+				delete_units = {
+					division_template = "Bronetankovaya Diviziya"
+					disband = yes
+				}
+				delete_units = {
+					division_template = "Motostrelkovaya Diviziya"
+					disband = yes
+				}
+				delete_units = {
+					division_template = "Tyazhelaya Artilleriyskaya Diviziya"
+					disband = yes
+				}
+				load_oob = SOV_cw
+			}
+			
+			ROOT = {
+				every_core_state = {
+					remove_core_of = ROOT
+					add_core_of = TFM
+				}
+			}
+		}
+
+		# MONRACHISTS VS RUTSKOY - RUTSKOY W#
+		if = {   
+			limit = {
+				FROM = {
+					original_tag = RSF
+				}
+				ROOT = {
+					original_tag = SMC
+				}
+			}
+			
+			FROM = {
+				white_peace = SMC
+			}
+	
+			FROM = {
+				annex_country = { 
+					target = SMC
+					transfer_troops = yes
+				}
+				
+			}
+
+			FROM = {
+				country_event = {id = ussr_cw.2}
+			}
+			
+			ROOT = {
+				every_core_state = {
+					remove_core_of = ROOT
+				}
+			}
+		}
+
+		# MONRACHISTS VS RUTSKOY - MONRACHISTS W#
+		if = {   
+			limit = {
+				FROM = {
+					original_tag = SMC
+				}
+				ROOT = {
+					original_tag = RSF
+				}
+			}
+			
+			FROM = {
+				white_peace = RSF
+			}
+	
+			FROM = {
+				annex_country = { 
+					target = RSF
+					transfer_troops = yes
+				}
+				
+			}
+			
+			ROOT = {
+				every_core_state = {
+					remove_core_of = ROOT
+				}
+			}
+		}
+		
+		# NAVALNY VS DUGIN - NAVALNY W W#
+		if = {   
+			limit = {
+				FROM = {
+					original_tag = RPR
+				}
+				ROOT = {
+					original_tag = SOE
+				}
+			}
+			
+			FROM = {
+				white_peace = SOE
+			}
+	
+			FROM = {
+				annex_country = { 
+					target = SOE
+					transfer_troops = no
+				}
+				load_oob = SOE_cw
+				
+			}
+			
+			ROOT = {
+				every_core_state = {
+					remove_core_of = ROOT
+					add_core_of = FROM
+				}
+			}
+		}		
+
+		# NAVALNY VS DUGIN - DUGIN W W#
+		if = {   
+			limit = {
+				FROM = {
+					original_tag = SOE
+				}
+				ROOT = {
+					original_tag = RPR
+				}
+			}
+			
+			FROM = {
+				white_peace = RPR
+			}
+	
+			FROM = {
+				annex_country = { 
+					target = RPR
+					transfer_troops = no
+				}
+				load_oob = RPR_cw
+				
+			}
+			
+			ROOT = {
+				every_core_state = {
+					remove_core_of = ROOT
+					add_core_of = FROM
+				}
+			}
+		}
+
+		# BELARUS DIES #
+		if = {   
+			limit = {
+				FROM = {
+					OR = {
+						original_tag = SOE				
+						original_tag = RPR
+						original_tag = TSM
+						original_tag = TFL
+						original_tag = SOV
+					}
+				}
+				ROOT = {
+					original_tag = BLR
+				}
+			}
+			
+			FROM = {
+				white_peace = BLR
+			}
+	
+			FROM = {
+				annex_country = { 
+					target = BLR
+					transfer_troops = no
+				}
+				
+			}
+			
+			ROOT = {
+				every_core_state = {
+					remove_core_of = ROOT
+					add_core_of = FROM
+				}
+			}
+		}
+
+		# MOLDOVA DIES #
+		if = {   
+			limit = {
+				FROM = {
+					OR = {
+						original_tag = SOE				
+						original_tag = TSM
+						original_tag = TFL
+						original_tag = SOV
+						original_tag = OUN
+					}
+				}
+				ROOT = {
+					original_tag = MOL
+				}
+			}
+			
+			FROM = {
+				white_peace = MOL
+			}
+	
+			FROM = {
+				annex_country = { 
+					target = MOL
+					transfer_troops = no
+				}
+				
+			}
+			
+			ROOT = {
+				every_core_state = {
+					remove_core_of = ROOT
+					add_core_of = FROM
+				}
+			}
+		}
+		
+		# CRIMEA DIES #
+		if = {   
+			limit = {
+				FROM = {
+					OR = {
+						original_tag = SOE				
+						original_tag = RPR
+						original_tag = TSM
+						original_tag = TFL
+						original_tag = SOV
+						original_tag = OUN
+					}
+				}
+				ROOT = {
+					original_tag = TFK
+				}
+			}
+			
+			FROM = {
+				white_peace = TFK
+			}
+	
+			FROM = {
+				annex_country = { 
+					target = TFK
+					transfer_troops = no
+				}
+				
+			}
+			
+			ROOT = {
+				every_core_state = {
+					remove_core_of = ROOT
+					add_core_of = FROM
+				}
+			}
+		}		
+
+		
+		# MOSCOW VS DUGIN NAVALNY - MOSCOW W #
+		if = {   
+			limit = {
+				FROM = {
+					original_tag = SOV
+				}
+				ROOT = {
+					OR = {
+						original_tag = RPR
+						original_tag = SOE
+					}
+				}
+			}
+			
+			FROM = {
+				white_peace = ROOT
+			}
+	
+			FROM = {
+				annex_country = { 
+					target = ROOT
+					transfer_troops = no
+				}
+				
+			}
+			
+			ROOT = {
+				every_core_state = {
+					remove_core_of = ROOT
+					add_core_of = FROM
+				}
+			}
+		}
+
+		
+		# MOSCOW VS DUGIN NAVALNY - DUGIN NAVALNY W #
+		if = {   
+			limit = {
+				FROM = {
+					OR = {
+						original_tag = RPR
+						original_tag = SOE
+					}
+				}
+				ROOT = {
+					original_tag = SOV
+				}
+			}
+			
+			FROM = {
+				white_peace = ROOT
+			}
+	
+			FROM = {
+				annex_country = { 
+					target = SOV
+					transfer_troops = no
+				}
+				
+			}
+			
+			ROOT = {
+				every_core_state = {
+					remove_core_of = ROOT
+					add_core_of = FROM
+				}
+			}
+		}
+	
+		# SIERRA VS RUF - SIERRA W #
+		if = {   
+			limit = {
+				FROM = {
+					original_tag = SIE
+				}
+				ROOT = {
+					original_tag = RUF
+				}
+			}
+			
+			FROM = {
+				white_peace = ROOT
+			}
+	
+			FROM = {
+				annex_country = { 
+					target = RUF
+					transfer_troops = no
+				}
+				
+			}
+			
+			ROOT = {
+				every_core_state = {
+					remove_core_of = ROOT
+				}
+			}
+		}
+
+		# SIERRA VS RUF - RUF W #
+		if = {   
+			limit = {
+				FROM = {
+					original_tag = RUF
+				}
+				ROOT = {
+					original_tag = SIE
+				}
+			}
+			
+			FROM = {
+				white_peace = ROOT
+			}
+	
+			FROM = {
+				set_cosmetic_tag = RUF_win
+				retire_country_leader = yes
+				promote_character = RUF_foday_sankoh
+				annex_country = { 
+					target = SIE
+					transfer_troops = no
+				}
+				set_capital = {
+					state = 700
+					remember_old_capital = no
+				}
+			}
+			
+			ROOT = {
+				every_core_state = {
+					remove_core_of = ROOT
+				}
+			}
+		}
+	
+			# LIBERIA VS LURD - LIBERIA W #
+		if = {   
+			limit = {
+				FROM = {
+					original_tag = LIB
+				}
+				ROOT = {
+					original_tag = LUR
+				}
+			}
+			
+			FROM = {
+				white_peace = ROOT
+			}
+	
+			FROM = {
+				annex_country = { 
+					target = LUR
+					transfer_troops = no
+				}
+
+			}
+			
+			ROOT = {
+				every_core_state = {
+					remove_core_of = ROOT
+				}
+			}
+		}
+
+			# LIBERIA VS LURD - LURD W #
+		if = {   
+			limit = {
+				FROM = {
+					OR = {
+						original_tag = LUR
+						original_tag = SIE
+					}
+				}
+				ROOT = {
+					original_tag = LIB
+				}
+			}
+			
+			FROM = {
+				white_peace = ROOT
+			}
+	
+			LUR = {
+				set_cosmetic_tag = LUR_win
+				annex_country = { 
+					target = LIB
+					transfer_troops = no
+				}
+				add_ideas = west_africa_ECOWAS
+				country_event = {id = west_africa.3 days = 45}
+			}
+			
+			ROOT = {
+				every_core_state = {
+					remove_core_of = ROOT
+				}
+			}
+		}
+
+			# HUNGARY VS SLOVAKIA - HUNGARY W #
+		if = {   
+			limit = {
+				FROM = {
+					original_tag = HUN
+				}
+				ROOT = {
+					original_tag = SLO
+				}
+			}
+			
+			FROM = {
+				white_peace = ROOT
+			}
+	
+			FROM = {
+				annex_country = { 
+					target = SLO
+					transfer_troops = no
+				}
+				remove_state_claim = 664				
+				add_state_core = 664
+			}
+			
+		}
+
+		#great asian war#
+
+			# EATO VS North korea - EATO W #
+		if = {   
+			limit = {
+				FROM = {
+					OR = {
+						original_tag = JAP
+						original_tag = SKR
+						original_tag = CHI
+					}
+				}
+				ROOT = {
+					original_tag = KOR
+				}
+			}
+			
+			FROM = {
+				white_peace = ROOT
+			}
+	
+			SKR = {
+				white_peace = PRC
+				annex_country = {
+					target = KOR
+					transfer_troops = no
+				}
+				country_event = {id = skr_mod.1 days = 3}
+			}
+			CHI = {
+				white_peace = PRC
+			}
+			JAP = {
+				white_peace = PRC
+			}	
+			JAP = {
+				dismantle_faction = yes
+			}
+			CHI = {
+				dismantle_faction = yes
+			}	
+			SKR = {
+				dismantle_faction = yes
+			}	
+			PRC = {
+				dismantle_faction = yes
+			}
+			KOR = {
+				dismantle_faction = yes
+			}				
+		}
+
+			# Prc and north korea VS South korea - prc and north korea W #
+		if = {   
+			limit = {
+				FROM = {
+					OR = {
+						original_tag = PRC
+						original_tag = KOR
+					}
+				}
+				ROOT = {
+					original_tag = SKR
+				}
+			}
+			
+			FROM = {
+				white_peace = ROOT
+			}
+	
+			KOR = {
+				white_peace = JAP
+				white_peace = CHI
+				puppet = SKR
+				country_event = {id = kor_mod.5 days = 365}
+			}
+			PRC = {
+				white_peace = SKR
+				white_peace = JAP
+				white_peace = CHI				
+			}
+			SKR = {
+				set_popularities = {
+					communism = 35
+					paternal_autocracy = 25
+					social_democracy = 10
+					democratic = 20
+					liberalism = 20
+				}
+				set_cosmetic_tag = SKR_KOR_puppet
+				outlaw_social_democracy = yes
+				outlaw_paternal_autocracy = yes
+				outlaw_conservatism = yes
+				outlaw_liberalism = yes
+			}
+			JAP = {
+				dismantle_faction = yes
+			}
+			CHI = {
+				dismantle_faction = yes
+			}	
+			SKR = {
+				dismantle_faction = yes
+			}	
+			PRC = {
+				dismantle_faction = yes
+			}
+			KOR = {
+				dismantle_faction = yes
+			}	
+			
+		}
+	
+		####YUGOSLAV COLLAPSE##
+		### ANARKIDDIE DEFEATED ###
+		if = {   
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = SER
+							original_tag = VOJ
+						}	
+					}
+					ROOT = {
+						original_tag = YUG
+						YUG = {has_government = anarchism}
+					}
+				}
+
+				FROM = {
+					white_peace = ROOT
+				}
+	
+				FROM = {
+					annex_country = {
+					target = YUG
+					transfer_troops = no
+				}
+			}
+						
+		}				
+		### VOJVODINA DEFEATED ###
+		if = {   
+			limit = {
+				FROM = {
+					OR = {
+						original_tag = SER
+						original_tag = YUG
+					}	
+				}
+				ROOT = {
+					original_tag = VOJ
+				}
+			}
+
+			FROM = {
+				white_peace = ROOT
+			}
+
+			FROM = {
+				annex_country = {
+				target = VOJ
+				transfer_troops = no
+			}
+		}
+						
+		}		
+		##SERBIA DEFEATED##
+		if = {   
+			limit = {
+				FROM = {
+					OR = {
+						original_tag = VOJ
+						original_tag = YUG
+					}	
+				}
+				ROOT = {
+					original_tag = SER
+				}
+			}
+
+			FROM = {
+				white_peace = ROOT
+			}
+	
+			FROM = {
+				annex_country = {
+				target = SER
+				transfer_troops = no
+				}
+			}
+						
+		}	
+		
+		##MACEDONIA DEFEATED##
+		if = {   
+			limit = {
+				FROM = {
+					original_tag = KOS
+				}
+				ROOT = {
+					original_tag = MAC
+				}
+			}
+
+			FROM = {
+				white_peace = ROOT
+			}
+	
+			FROM = {
+				annex_country = {
+					target = MAC
+					transfer_troops = no
+				}
+			}
+						
+		}	
+
+		##KOSOVO DEFEATED##
+		if = {   
+			limit = {
+				FROM = {
+					original_tag = MAC
+				}
+				ROOT = {
+					original_tag = KOS
+				}
+			}
+
+			FROM = {
+				white_peace = ROOT
+			}
+	
+			KOS = {
+				set_cosmetic_tag = KOS_win
+				set_politics = {
+					ruling_party = democratic
+					last_election = "1991.5.3"
+					election_frequency = 36
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 20
+					fascism = 20
+					social_democracy = 10
+					paternal_autocracy = 30 
+					liberalism = 20
+					
+				}
+			}
+						
+		}		
+	}
+}

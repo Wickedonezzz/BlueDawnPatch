@@ -1,0 +1,186 @@
+characters = {
+
+	## Leaders ##
+
+	FRA_jacques_chirac = {
+		name = "Jacques Chirac"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/Jacques_Chirac.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	FRA_lionel_jospin = {
+		name = "Lionel Jospin"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/lionel_jospin.png"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	FRA_le_pen = {
+		name = "Jean-Marie Le Pen"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/le_pen.png"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	FRA_arlette_laguiller = {
+		name = "Arlette Laguiller"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/Arlette_Laguiller.png"
+			}
+		}
+		country_leader = {
+			ideology = democratic_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}	
+	
+	FRA_bayrou = {
+		name = "François Bayrou"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/bayrou.png"
+			}
+		}
+		country_leader = {
+			ideology = liberalism_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}	
+
+	FRA_marie_buffet = {
+		name = "Marie Buffet"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/Marie_buffet.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	## Generals ##
+
+	FRA_bruno_cuche = {
+		name = "Bruno Cuche"
+		portraits = {
+			army = {
+				large = "gfx/leaders/FRA/Bruno_Cuche.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	FRA_jean_georgelin = {
+		name = "Jean Louis Georgelin"
+		portraits = {
+			army = {
+				large = "gfx/leaders/FRA/Jean_Georgelin.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	FRA_pierre_grandchamp = {
+		name = "Pierre Garrigou Grandchamp"
+		portraits = {
+			army = {
+				large = "gfx/leaders/FRA/Pierre_Grandchamp.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	## Admirals ##
+
+	FRA_alain_coldefy = {
+		name = "Alain Coldefy"
+		portraits = {
+			army = {
+				large = "gfx/leaders/FRA/Alain_Coldefy.png"
+			}
+		}
+		navy_leader={
+			traits={ }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=2
+			legacy_id=-1
+		}
+	}
+	FRA_alain_dainville = {
+		name = "Alain Oudot de Dainville"
+		portraits = {
+			army = {
+				large = "gfx/leaders/FRA/Alain_Dainville.png"
+			}
+		}
+		navy_leader={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+
+}

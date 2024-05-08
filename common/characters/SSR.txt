@@ -1,0 +1,18 @@
+characters = {
+
+	SSR_viktor_anpilov = {
+		name = "Viktor Anpilov"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/post_putin/Viktor_Anpilov.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

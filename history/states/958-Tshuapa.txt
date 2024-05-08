@@ -1,0 +1,25 @@
+
+state={
+	id=958
+	name="STATE_958"
+
+	history={
+		buildings = {
+			infrastructure = 2
+
+		}
+		owner = RGO
+		add_core_of = COG
+		add_core_of = RGO
+		add_core_of = RCK
+
+	}
+
+	provinces={
+		7219 8016 13394 13395 13404 
+	}
+	manpower=1013560
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

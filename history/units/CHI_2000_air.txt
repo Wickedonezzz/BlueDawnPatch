@@ -1,0 +1,87 @@
+﻿air_wings = {
+	# Land Wings #
+	524 = {
+		# Fighters -- Mirage 2000, Ching-Kuo, F-5, F-16
+		fighter_equipment_3 =  { # Ching-Kuo #
+			owner = "CHI" 
+			creator = CHI
+			amount = 49
+		}
+		fighter_equipment_3 =  { # Ching-Kuo #
+			owner = "CHI" 
+			creator = CHI
+			amount = 40
+		}
+		fighter_equipment_2 =  { # F-16 #
+			owner = "CHI" 
+			creator = USA
+			amount = 46
+		}
+		fighter_equipment_2 =  { # Mirage 2000 #
+			owner = "CHI" 
+			creator = FRA
+			amount = 31
+		}
+		fighter_equipment_2 =  { # Mirage 2000 #
+			owner = "CHI" 
+			creator = FRA
+			amount = 27
+		}
+		fighter_equipment_0 =  { # F-5 #
+			owner = "CHI" 
+			creator = USA
+			amount = 50
+		}
+		fighter_equipment_0 =  { # F-5 #
+			owner = "CHI" 
+			creator = USA
+			amount = 50
+		}
+
+		# Transports -- C-130
+		transport_plane_equipment_1 =  { # C-130 #
+			owner = "CHI" 
+			creator = USA
+			amount = 14
+		}
+	}
+	970 = {
+		# Fighters -- F-5, F-16
+		fighter_equipment_2 =  { # F-16 #
+			owner = "CHI" 
+			creator = USA
+			amount = 40
+		}
+		fighter_equipment_2 =  { # F-16 #
+			owner = "CHI" 
+			creator = USA
+			amount = 40
+		}
+		fighter_equipment_0 =  { # F-5 #
+			owner = "CHI" 
+			creator = USA
+			amount = 50
+		}
+		fighter_equipment_0 =  { # F-5 #
+			owner = "CHI" 
+			creator = USA
+			amount = 50
+		}
+	}
+	955 = {
+		# Fighters -- Ching-Kuo
+		fighter_equipment_3 =  { # Ching-Kuo #
+			owner = "CHI" 
+			creator = CHI
+			amount = 39
+		}
+	}
+	956 = {
+		# Transports -- C-130
+		transport_plane_equipment_1 =  { # C-130 #
+			owner = "CHI" 
+			creator = USA
+			amount = 5
+		}
+	}
+}

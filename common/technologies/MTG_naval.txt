@@ -1,0 +1,2844 @@
+technologies = {
+
+# Submarines
+
+	attack_submarine_hull_1960 = {
+
+		enable_equipments = {
+			attack_submarine_hull_1
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = attack_submarine_hull_1980
+			research_cost_coeff = 1
+		}
+
+		research_cost = 7
+
+		start_year = 1960
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 1 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 4
+				is_major = yes
+			}
+			modifier = {
+				factor = 6
+				tag = SOV
+			}
+			modifier = {
+				factor = 6
+				tag = GER
+			}
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_submarine
+			mod_cat_attack_submarine
+		}
+
+	}
+
+	attack_submarine_hull_1980 = {
+
+		enable_equipments = {
+			attack_submarine_hull_2
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = attack_submarine_hull_1990
+			research_cost_coeff = 1
+		}
+
+		research_cost = 7
+
+		start_year = 1980
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 7 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 4
+				is_major = yes
+			}
+			modifier = {
+				factor = 6
+				tag = SOV
+			}
+			modifier = {
+				factor = 6
+				tag = GER
+			}
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_submarine
+			mod_cat_attack_submarine
+		}
+
+	}
+
+	attack_submarine_hull_1990 = {
+
+		enable_equipments = {
+			attack_submarine_hull_3
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = attack_submarine_hull_2000
+			research_cost_coeff = 1
+		}
+
+		research_cost = 7
+
+		start_year = 1990
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 13 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 6
+				tag = SOV
+			}
+			modifier = {
+				factor = 6
+				tag = GER
+			}
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_submarine
+			mod_cat_attack_submarine
+		}
+
+	}
+
+	attack_submarine_hull_2000 = {
+
+		enable_equipments = {
+			attack_submarine_hull_4
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = attack_submarine_hull_2010
+			research_cost_coeff = 1
+		}
+
+		research_cost = 7
+
+		start_year = 2000
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 19 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 6
+				tag = SOV
+			}
+			modifier = {
+				factor = 6
+				tag = GER
+			}
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_submarine
+			mod_cat_attack_submarine
+		}
+
+	}
+
+	attack_submarine_hull_2010 = {
+
+		enable_equipments = {
+			attack_submarine_hull_5
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = attack_submarine_hull_2020
+			research_cost_coeff = 1
+		}
+
+		research_cost = 7
+
+		start_year = 2010
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 25 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 6
+				tag = SOV
+			}
+			modifier = {
+				factor = 6
+				tag = GER
+			}
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				date < "2003.1.1"
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_submarine
+			mod_cat_attack_submarine
+		}
+
+	}
+
+	attack_submarine_hull_2020 = {
+
+		enable_equipments = {
+			attack_submarine_hull_6
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		research_cost = 7
+
+		start_year = 2020
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 31 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 6
+				tag = SOV
+			}
+			modifier = {
+				factor = 6
+				tag = GER
+			}
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				date < "2013.1.1"
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_submarine
+			mod_cat_attack_submarine
+		}
+
+	}
+
+	cruise_submarine_hull_1960 = {
+
+		enable_equipments = {
+			cruise_submarine_hull_1
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = cruise_submarine_hull_1980
+			research_cost_coeff = 1
+		}
+
+		research_cost = 8
+
+		start_year = 1960
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 1 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 1
+				is_major = yes
+			}
+			modifier = {
+				add = 5
+				tag = SOV
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_submarine
+			mod_cat_cruise_submarine
+		}
+
+	}
+
+	cruise_submarine_hull_1980 = {
+
+		enable_equipments = {
+			cruise_submarine_hull_2
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = cruise_submarine_hull_2000
+			research_cost_coeff = 1
+		}
+
+		research_cost = 8
+
+		start_year = 1980
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 7 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 1
+				is_major = yes
+			}
+			modifier = {
+				add = 5
+				tag = SOV
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_submarine
+			mod_cat_cruise_submarine
+		}
+
+	}
+
+	cruise_submarine_hull_2000 = {
+
+		enable_equipments = {
+			cruise_submarine_hull_3
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = cruise_submarine_hull_2020
+			research_cost_coeff = 1
+		}
+
+		research_cost = 8
+
+		start_year = 2000
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 19 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 1
+				is_major = yes
+			}
+			modifier = {
+				add = 5
+				tag = SOV
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_submarine
+			mod_cat_cruise_submarine
+		}
+
+	}
+
+	cruise_submarine_hull_2020 = {
+
+		enable_equipments = {
+			cruise_submarine_hull_4
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		research_cost = 8
+
+		start_year = 2020
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 31 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 1
+				is_major = yes
+			}
+			modifier = {
+				add = 5
+				tag = SOV
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				date < "2010.1.1"
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_submarine
+			mod_cat_cruise_submarine
+		}
+
+	}
+
+	ballistic_submarine_hull_1960 = {
+
+		enable_equipments = {
+			ballistic_submarine_hull_1
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = ballistic_submarine_hull_1980
+			research_cost_coeff = 1
+		}
+
+		research_cost = 8
+
+		start_year = 1960
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 1 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+			modifier = {
+				add = 4
+				tag = SOV
+			}
+			modifier = {
+				add = 4
+				tag = USA
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_submarine
+			mod_cat_ballistic_submarine
+		}
+
+	}
+
+	ballistic_submarine_hull_1980 = {
+
+		enable_equipments = {
+			ballistic_submarine_hull_2
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = ballistic_submarine_hull_2000
+			research_cost_coeff = 1
+		}
+
+		research_cost = 8
+
+		start_year = 1980
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 7 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+			modifier = {
+				add = 4
+				tag = SOV
+			}
+			modifier = {
+				add = 4
+				tag = USA
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_submarine
+			mod_cat_ballistic_submarine
+		}
+
+	}
+
+	ballistic_submarine_hull_2000 = {
+
+		enable_equipments = {
+			ballistic_submarine_hull_3
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = ballistic_submarine_hull_2020
+			research_cost_coeff = 1
+		}
+
+		research_cost = 8
+
+		start_year = 2000
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 19 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+			modifier = {
+				add = 4
+				tag = SOV
+			}
+			modifier = {
+				add = 4
+				tag = USA
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_submarine
+			mod_cat_ballistic_submarine
+		}
+
+	}
+
+	ballistic_submarine_hull_2020 = {
+
+		enable_equipments = {
+			ballistic_submarine_hull_4
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		research_cost = 8
+
+		start_year = 2020
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 31 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+			modifier = {
+				add = 4
+				tag = SOV
+			}
+			modifier = {
+				add = 4
+				tag = USA
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				date < "2010.1.1"
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_submarine
+			mod_cat_ballistic_submarine
+		}
+
+	}
+
+# Corvettes
+
+	corvette_hull_1960 = {
+
+		enable_equipments = {
+			corvette_hull_1
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = corvette_hull_1980
+			research_cost_coeff = 1
+		}
+
+		research_cost = 6
+
+		start_year = 1960
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 1 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 4
+				is_major = yes
+			}
+			modifier = {
+				factor = 0.5
+				tag = USA
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_corvette
+			mod_cat_surface
+		}
+
+	}
+
+	corvette_hull_1980 = {
+
+		enable_equipments = {
+			corvette_hull_2
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = corvette_hull_1990
+			research_cost_coeff = 1
+		}
+
+		research_cost = 6
+
+		start_year = 1980
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 7 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 4
+				is_major = yes
+			}
+			modifier = {
+				factor = 0.5
+				tag = USA
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_corvette
+			mod_cat_surface
+		}
+
+	}
+
+	corvette_hull_1990 = {
+
+		enable_equipments = {
+			corvette_hull_3
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = corvette_hull_2000
+			research_cost_coeff = 1
+		}
+
+		research_cost = 6
+
+		start_year = 1990
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 13 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 4
+				is_major = yes
+			}
+			modifier = {
+				factor = 0.5
+				tag = USA
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_corvette
+			mod_cat_surface
+		}
+
+	}
+
+	corvette_hull_2000 = {
+
+		enable_equipments = {
+			corvette_hull_4
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = corvette_hull_2010
+			research_cost_coeff = 1
+		}
+
+		research_cost = 6
+
+		start_year = 2000
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 19 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 4
+				is_major = yes
+			}
+			modifier = {
+				factor = 0.5
+				tag = USA
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_corvette
+			mod_cat_surface
+		}
+
+	}
+
+	corvette_hull_2010 = {
+
+		enable_equipments = {
+			corvette_hull_5
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = corvette_hull_2020
+			research_cost_coeff = 1
+		}
+
+		research_cost = 6
+
+		start_year = 2010
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 25 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 4
+				is_major = yes
+			}
+			modifier = {
+				factor = 0.5
+				tag = USA
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				date < "2003.1.1"
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_corvette
+			mod_cat_surface
+		}
+
+	}
+
+	corvette_hull_2020 = {
+
+		enable_equipments = {
+			corvette_hull_6
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		research_cost = 6
+
+		start_year = 2020
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 31 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 4
+				is_major = yes
+			}
+			modifier = {
+				factor = 0.5
+				tag = USA
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				date < "2013.1.1"
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_corvette
+			mod_cat_surface
+		}
+
+	}
+
+# Destroyers
+
+	destroyer_hull_1960 = {
+
+		enable_equipments = {
+			destroyer_hull_1
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = destroyer_hull_1980
+			research_cost_coeff = 1
+		}
+
+		research_cost = 7
+
+		start_year = 1960
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 1 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_destroyer
+			mod_cat_surface
+		}
+
+	}
+
+	destroyer_hull_1980 = {
+
+		enable_equipments = {
+			destroyer_hull_2
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = destroyer_hull_1990
+			research_cost_coeff = 1
+		}
+
+		research_cost = 7
+
+		start_year = 1980
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 7 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_destroyer
+			mod_cat_surface
+		}
+
+	}
+
+	destroyer_hull_1990 = {
+
+		enable_equipments = {
+			destroyer_hull_3
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = destroyer_hull_2000
+			research_cost_coeff = 1
+		}
+
+		research_cost = 7
+
+		start_year = 1990
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 13 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_destroyer
+			mod_cat_surface
+		}
+
+	}
+
+	destroyer_hull_2000 = {
+
+		enable_equipments = {
+			destroyer_hull_4
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = destroyer_hull_2010
+			research_cost_coeff = 1
+		}
+
+		research_cost = 7
+
+		start_year = 2000
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 19 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_destroyer
+			mod_cat_surface
+		}
+
+	}
+
+	destroyer_hull_2010 = {
+
+		enable_equipments = {
+			destroyer_hull_5
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = destroyer_hull_2020
+			research_cost_coeff = 1
+		}
+
+		research_cost = 7
+
+		start_year = 2010
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 25 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				date < "2003.1.1"
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_destroyer
+			mod_cat_surface
+		}
+
+	}
+
+	destroyer_hull_2020 = {
+
+		enable_equipments = {
+			destroyer_hull_6
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		research_cost = 7
+
+		start_year = 2020
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 31 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				date < "2013.1.1"
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_destroyer
+			mod_cat_surface
+		}
+
+	}
+
+# Cruisers
+
+	cruiser_hull_1960 = {
+
+		enable_equipments = {
+			cruiser_hull_1
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = cruiser_hull_1980
+			research_cost_coeff = 1
+		}
+
+		research_cost = 8
+
+		start_year = 1960
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 1 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				tag = USA
+			}
+			modifier = {
+				add = 2
+				tag = SOV
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_cruiser
+			mod_cat_surface
+		}
+
+	}
+
+	cruiser_hull_1980 = {
+
+		enable_equipments = {
+			cruiser_hull_2
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		research_cost = 8
+
+		start_year = 1980
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 7 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				tag = USA
+			}
+			modifier = {
+				add = 2
+				tag = SOV
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_cruiser
+			mod_cat_surface
+		}
+
+	}
+
+# Carriers
+
+	carrier_hull_1960 = {
+
+		enable_equipments = {
+			carrier_hull_1
+		}
+
+		enable_equipment_modules = {
+			ship_carrier_flat
+			ship_carrier_skijump
+			ship_carrier_hangar_1
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = carrier_hull_1980
+			research_cost_coeff = 1
+		}
+
+		research_cost = 10
+
+		start_year = 1960
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 1 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+			modifier = {
+				add = 4
+				tag = USA
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_carrier
+			mod_cat_surface
+		}
+
+	}
+
+	carrier_hull_1980 = {
+
+		enable_equipments = {
+			carrier_hull_2
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = carrier_hull_2000
+			research_cost_coeff = 1
+		}
+
+		research_cost = 10
+
+		start_year = 1980
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 7 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+			modifier = {
+				add = 4
+				tag = USA
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_carrier
+			mod_cat_surface
+		}
+
+	}
+
+	carrier_hull_2000 = {
+
+		enable_equipments = {
+			carrier_hull_3
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = carrier_hull_2020
+			research_cost_coeff = 1
+		}
+
+		research_cost = 10
+
+		start_year = 2000
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 19 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+			modifier = {
+				add = 4
+				tag = USA
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_carrier
+			mod_cat_surface
+		}
+
+	}
+
+	carrier_hull_2020 = {
+
+		enable_equipments = {
+			carrier_hull_4
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		research_cost = 10
+
+		start_year = 2020
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 31 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+			modifier = {
+				add = 4
+				tag = USA
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				date < "2010.1.1"
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_carrier
+			mod_cat_surface
+		}
+
+	}
+
+# Amphibious Warfare
+
+	naval_transport_1960 = {
+
+		transport_capacity = -0.2
+		naval_invasion_capacity = 10
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = naval_transport_1980
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+
+		start_year = 1960
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 1 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 4
+				tag = USA
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+
+	}
+
+	naval_transport_1980 = {
+
+		transport_capacity = -0.1
+		invasion_preparation = -0.15
+		amphibious_invasion = 0.1
+		amphibious_invasion_defence = 0.1
+		naval_invasion_capacity = 20
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = naval_transport_2000
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+
+		start_year = 1980
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 7 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 4
+				tag = USA
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+
+	}
+
+	naval_transport_2000 = {
+
+		transport_capacity = -0.1
+		invasion_preparation = -0.15
+		amphibious_invasion = 0.1
+		amphibious_invasion_defence = 0.1
+		naval_invasion_capacity = 30
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = naval_transport_2020
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+
+		start_year = 2000
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 19 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+
+	}
+
+	naval_transport_2020 = {
+
+		transport_capacity = -0.1
+		invasion_preparation = -0.15
+		amphibious_invasion = 0.1
+		amphibious_invasion_defence = 0.1
+		naval_invasion_capacity = 40
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		research_cost = 2.5
+
+		start_year = 2020
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 31 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				date < "2010.1.1"
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+
+	}
+
+	amphibious_hull_1960 = {
+
+		enable_equipments = {
+			amphibious_hull_1
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+			has_dlc = "No Step Back"
+		}
+
+		path = {
+			leads_to_tech = amphibious_hull_1980
+			research_cost_coeff = 1
+		}
+
+		research_cost = 9
+
+		start_year = 1960
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 1 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 1
+				is_major = yes
+			}
+			modifier = {
+				add = 3
+				tag = USA
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_amphibious_ship
+		}
+
+	}
+
+	amphibious_hull_1980 = {
+
+		enable_equipments = {
+			amphibious_hull_2
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+			has_dlc = "No Step Back"
+		}
+
+		path = {
+			leads_to_tech = amphibious_hull_2000
+			research_cost_coeff = 1
+		}
+
+		research_cost = 9
+
+		start_year = 1980
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 7 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 1
+				is_major = yes
+			}
+			modifier = {
+				add = 3
+				tag = USA
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_amphibious_ship
+		}
+
+	}
+
+	amphibious_hull_2000 = {
+
+		enable_equipments = {
+			amphibious_hull_3
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+			has_dlc = "No Step Back"
+		}
+
+		path = {
+			leads_to_tech = amphibious_hull_2020
+			research_cost_coeff = 1
+		}
+
+		research_cost = 9
+
+		start_year = 2000
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 19 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 1
+				is_major = yes
+			}
+			modifier = {
+				add = 3
+				tag = USA
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_amphibious_ship
+		}
+
+	}
+
+	amphibious_hull_2020 = {
+
+		enable_equipments = {
+			amphibious_hull_4
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+			has_dlc = "No Step Back"
+		}
+
+		research_cost = 9
+
+		start_year = 2020
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 31 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 1
+				is_major = yes
+			}
+			modifier = {
+				add = 3
+				tag = USA
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				date < "2010.1.1"
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_amphibious_ship
+		}
+
+	}
+
+# Operations
+
+	naval_training_1960 = {
+
+		navy_org_factor = 0.1
+		naval_accidents_chance = -0.3
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = naval_training_1980
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = early_carrier_operations
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+
+		start_year = 1960
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 1 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+			modifier = {
+				add = 2
+				tag = USA
+			}
+			modifier = {
+				add = 2
+				has_navy_size = {
+					size > 20
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+
+	}
+
+	naval_training_1980 = {
+
+		navy_org_factor = 0.1
+		spotting_chance = 0.1
+		positioning = 0.1
+		naval_coordination = 0.1
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = naval_training_2000
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+
+		start_year = 1980
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 7 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+			modifier = {
+				add = 2
+				tag = USA
+			}
+			modifier = {
+				add = 2
+				has_navy_size = {
+					size > 20
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+
+	}
+
+	naval_training_2000 = {
+
+		spotting_chance = 0.1
+		positioning = 0.1
+		naval_coordination = 0.1
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = naval_training_2020
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+
+		start_year = 2000
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 19 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+			modifier = {
+				add = 2
+				tag = USA
+			}
+			modifier = {
+				add = 2
+				has_navy_size = {
+					size > 20
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+
+	}
+
+	naval_training_2020 = {
+
+		spotting_chance = 0.1
+		positioning = 0.1
+		naval_coordination = 0.1
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		research_cost = 3
+
+		start_year = 2020
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 31 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+			modifier = {
+				add = 2
+				tag = USA
+			}
+			modifier = {
+				add = 2
+				has_navy_size = {
+					size > 20
+				}
+			}
+			modifier = {
+				factor = 0
+				date < "2010.1.1"
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+
+	}
+
+	early_carrier_operations = {
+
+		sortie_efficiency = 0.15
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = modern_carrier_operations
+			research_cost_coeff = 1
+		}
+
+		research_cost = 4
+
+		start_year = 1960
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 1 y = 3 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				tag = USA
+			}
+			modifier = {
+				add = 2
+				has_navy_size = { type = carrier size > 0 }
+			}
+			modifier = {
+				add = 3
+				has_navy_size = { type = carrier size > 2 }
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+
+	}
+
+	modern_carrier_operations = {
+
+		sortie_efficiency = 0.15
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		research_cost = 4
+
+		start_year = 2000
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 1 y = 21 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				tag = USA
+			}
+			modifier = {
+				add = 2
+				has_navy_size = { type = carrier size > 0 }
+			}
+			modifier = {
+				add = 3
+				has_navy_size = { type = carrier size > 2 }
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+
+	}
+
+# Damage Control
+
+	damage_training_1960 = {
+
+		naval_critical_effect_factor = -0.1
+		navy_casualty_on_hit = -0.05
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = damage_training_1980
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = damage_design_1970
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+
+		start_year = 1960
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 1 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+			modifier = {
+				add = 2
+				tag = USA
+			}
+			modifier = {
+				add = 1
+				has_navy_size = {
+					size > 20
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+
+	}
+
+	damage_design_1970 = {
+
+		critical_receive_chance = -0.1
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = damage_design_1990
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+
+		start_year = 1970
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 1 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+			modifier = {
+				add = 2
+				tag = USA
+			}
+			modifier = {
+				add = 1
+				has_navy_size = {
+					size > 20
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+
+	}
+
+	damage_training_1980 = {
+
+		naval_critical_effect_factor = -0.1
+		navy_casualty_on_hit = -0.05
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = damage_training_2000
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+
+		start_year = 1980
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 7 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+			modifier = {
+				add = 2
+				tag = USA
+			}
+			modifier = {
+				add = 1
+				has_navy_size = {
+					size > 20
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+
+	}
+
+	damage_design_1990 = {
+
+		critical_receive_chance = -0.1
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = damage_design_2010
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+
+		start_year = 1990
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 1 y = 13 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+			modifier = {
+				add = 2
+				tag = USA
+			}
+			modifier = {
+				add = 1
+				has_navy_size = {
+					size > 20
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+
+	}
+
+	damage_training_2000 = {
+
+		naval_critical_effect_factor = -0.1
+		navy_casualty_on_hit = -0.05
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		path = {
+			leads_to_tech = damage_training_2020
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = damage_design_2010
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+
+		start_year = 2000
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 19 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+			modifier = {
+				add = 2
+				tag = USA
+			}
+			modifier = {
+				add = 1
+				has_navy_size = {
+					size > 20
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+
+	}
+
+	damage_design_2010 = {
+
+		critical_receive_chance = -0.1
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		research_cost = 2.5
+
+		start_year = 2010
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 1 y = 25 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+			modifier = {
+				add = 2
+				tag = USA
+			}
+			modifier = {
+				add = 1
+				has_navy_size = {
+					size > 20
+				}
+			}
+			modifier = {
+				factor = 0
+				date < "2004.1.1"
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+
+	}
+
+	damage_training_2020 = {
+
+		naval_critical_effect_factor = -0.1
+		navy_casualty_on_hit = -0.05
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		research_cost = 2.5
+
+		start_year = 2020
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 31 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+			modifier = {
+				add = 2
+				tag = USA
+			}
+			modifier = {
+				add = 1
+				has_navy_size = {
+					size > 20
+				}
+			}
+			modifier = {
+				factor = 0
+				date < "2014.1.1"
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+
+	}
+
+# Hidden
+
+	battlecruiser_hull_1980 = {
+
+		enable_equipments = {
+			battlecruiser_hull_1
+		}
+
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+
+		start_year = 1980
+
+		ai_will_do = {
+		}
+
+	}
+
+	battleship_hull_1940 = {
+
+		enable_equipments = {
+			battleship_hull_1
+		}
+
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+
+		start_year = 1940
+
+		ai_will_do = {
+		}
+
+	}
+
+}

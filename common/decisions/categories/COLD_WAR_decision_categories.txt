@@ -1,0 +1,19 @@
+### INFLUENCE NORTH KOREA ###
+
+sov_cold_war_command = {
+	icon = GFX_decision_prc_vs_sov
+	
+	
+	allowed = {
+		original_tag = SOV
+	}
+	
+	visible = {
+		original_tag = SOV
+	}
+
+	priority = 0
+
+}
+
+

@@ -1,0 +1,28 @@
+indian_tsunami_category_request_aid = {
+	icon = GFX_decision_category_generic_economy
+	picture = GFX_decision_cat_picture_indian_tsunami
+	
+	allowed = {
+	}
+	
+	visible = {
+		has_country_flag = indian_tsunami_victim
+	}
+	priority = 1
+}
+
+indian_tsunami_category_provide_aid = {
+	icon = GFX_decision_category_generic_economy
+	picture = GFX_decision_cat_picture_indian_tsunami
+	
+	allowed = {
+	}
+	
+	visible = {
+		has_country_flag = indian_tsunami_helper
+	}
+
+	scripted_gui = indian_tsunami_decision_ui
+
+	priority = 1
+}

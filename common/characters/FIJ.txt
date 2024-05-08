@@ -1,0 +1,18 @@
+characters = {
+
+	FIJ_ratu_sir_kamisese_mara = {
+		name = "Ratu Sir Kamisese Mara"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FIJ/ratu_sir_kamisese_mara.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

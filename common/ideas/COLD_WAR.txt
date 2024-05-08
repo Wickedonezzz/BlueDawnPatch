@@ -1,0 +1,135 @@
+ideas = {
+	
+	country = {
+		
+		cold_war_soviet_offensive = {
+			name = cold_war_soviet_offensive_name
+
+			removal_cost = -1
+
+			picture = cold_war_soviet_offensive_or_defensive_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				army_attack_factor = 0.075
+				ai_focus_aggressive_factor = 0.75
+				
+			}
+		}
+		
+		cold_war_increased_volunteers = {
+			name = cold_war_increased_volunteers_name
+
+			removal_cost = -1
+
+			picture = cold_war_soviet_offensive_or_defensive_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				send_volunteer_size = 2
+			}
+		}
+		
+		cold_war_comecon = {
+			name = cold_war_comecon_name
+
+			removal_cost = -1
+
+			picture = cold_war_comecon_icon
+
+			allowed = {
+				NOT = {has_war_with = SOV}
+			}
+
+			modifier = {
+				production_speed_buildings_factor = 0.04
+				line_change_production_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+
+			}
+		}
+		
+		idea_got_nuked = {
+			name = idea_got_nuked_name
+
+			removal_cost = -1
+
+			#picture = cold_war_comecon_icon
+
+			allowed = {
+			}
+
+			modifier = {
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				army_morale_factor = -0.1
+				army_org_regain = -0.1
+
+
+			}
+			
+		}
+	}
+
+	hidden_ideas = {
+	
+		usa_aligned_nation = {
+				
+			name = usa_aligned_nation_name
+
+			removal_cost = -1
+
+			picture =  bruh_nothing
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+			}	
+
+		}
+		
+		ussr_aligned_nation = {
+				
+			name = ussr_aligned_nation_name
+
+			removal_cost = -1
+
+			picture =  bruh_nothing
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+			}	
+
+		}
+			
+		china_aligned_nation = {
+				
+			name = china_aligned_nation_name
+
+			removal_cost = -1
+
+			picture =  bruh_nothing
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+			}	
+
+		}
+	
+	
+	}
+}

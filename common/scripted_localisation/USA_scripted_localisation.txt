@@ -1,0 +1,441 @@
+defined_text = {
+	name = USA_party_attitude_republican
+	text = {
+		trigger = {
+			check_variable = { usa_republican_attitude_value = -2 }
+		}
+		localization_key = USA_loc_key_attitude_hostile
+	}
+	text = {
+		trigger = {
+			check_variable = { usa_republican_attitude_value = -1 }
+		}
+		localization_key = USA_loc_key_attitude_unfriendly
+	}
+	text = {
+		trigger = {
+			check_variable = { usa_republican_attitude_value = 0 }
+		}
+		localization_key = USA_loc_key_attitude_neutral
+	}
+	text = {
+		trigger = {
+			check_variable = { usa_republican_attitude_value = 1 }
+		}
+		localization_key = USA_loc_key_attitude_friendly
+	}
+	text = {
+		trigger = {
+			check_variable = { usa_republican_attitude_value = 2 }
+		}
+		localization_key = USA_loc_key_attitude_loyal
+	}
+}
+defined_text = {
+	name = USA_party_attitude_democratic
+	text = {
+		trigger = {
+			check_variable = { usa_democratic_attitude_value = -2 }
+		}
+		localization_key = USA_loc_key_attitude_hostile
+	}
+	text = {
+		trigger = {
+			check_variable = { usa_democratic_attitude_value = -1 }
+		}
+		localization_key = USA_loc_key_attitude_unfriendly
+	}
+	text = {
+		trigger = {
+			check_variable = { usa_democratic_attitude_value = 0 }
+		}
+		localization_key = USA_loc_key_attitude_neutral
+	}
+	text = {
+		trigger = {
+			check_variable = { usa_democratic_attitude_value = 1 }
+		}
+		localization_key = USA_loc_key_attitude_friendly
+	}
+	text = {
+		trigger = {
+			check_variable = { usa_democratic_attitude_value = 2 }
+		}
+		localization_key = USA_loc_key_attitude_loyal
+	}
+}
+defined_text = {
+	name = USA_party_attitude_reform
+	text = {
+		trigger = {
+			check_variable = { usa_reform_attitude_value = -2 }
+		}
+		localization_key = USA_loc_key_attitude_hostile
+	}
+	text = {
+		trigger = {
+			check_variable = { usa_reform_attitude_value = -1 }
+		}
+		localization_key = USA_loc_key_attitude_unfriendly
+	}
+	text = {
+		trigger = {
+			check_variable = { usa_reform_attitude_value = 0 }
+		}
+		localization_key = USA_loc_key_attitude_neutral
+	}
+	text = {
+		trigger = {
+			check_variable = { usa_reform_attitude_value = 1 }
+		}
+		localization_key = USA_loc_key_attitude_friendly
+	}
+	text = {
+		trigger = {
+			check_variable = { usa_reform_attitude_value = 2 }
+		}
+		localization_key = USA_loc_key_attitude_loyal
+	}
+}
+defined_text = {
+	name = USA_government_type
+	text = {
+		trigger = {
+			check_variable = { usa_government_type_value = 0 }
+		}
+		localization_key = USA_loc_key_majority_government
+	}
+	text = {
+		trigger = {
+			check_variable = { usa_government_type_value = 1 }
+		}
+		localization_key = USA_loc_key_coalition_government
+	}
+}
+defined_text = {
+	name = USA_government_ruling_party
+	# Majority #
+	text = {
+		trigger = {
+			check_variable = { usa_government_ruling_party_value = 0 }
+		}
+		localization_key = USA_loc_key_ruling_party_conservative
+	}
+	text = {
+		trigger = {
+			check_variable = { usa_government_ruling_party_value = 1 }
+		}
+		localization_key = USA_loc_key_ruling_party_democratic
+	}
+	text = {
+		trigger = {
+			check_variable = { usa_government_ruling_party_value = 2 }
+		}
+		localization_key = USA_loc_key_ruling_party_reform
+	}
+
+	# 2-Party Coalition #
+	text = {
+		trigger = {
+			check_variable = { usa_government_ruling_party_value = 3 }
+		}
+		localization_key = USA_loc_key_ruling_party_conservative_democratic
+	}
+	text = {
+		trigger = {
+			check_variable = { usa_government_ruling_party_value = 4 }
+		}
+		localization_key = USA_loc_key_ruling_party_conservative_reform
+	}
+	text = {
+		trigger = {
+			check_variable = { usa_government_ruling_party_value = 5 }
+		}
+		localization_key = USA_loc_key_ruling_party_democratic_reform
+	}
+
+	# 3-Party Coalition #
+	text = {
+		trigger = {
+			check_variable = { usa_government_ruling_party_value = 6 }
+		}
+		localization_key = USA_loc_key_ruling_party_all
+	}
+}
+
+defined_text = {
+	name = USA_bush_visiting_armenia_focus
+	text = {
+		trigger = {
+			OR = {
+				ARM = {is_subject = yes }
+				NOT = { country_exists = ARM }
+			}
+		}
+		localization_key = USA_bush_visiting_armenia_focus_armenia_ded_loc_key
+	}
+	text = {
+		trigger = {
+			OR = {
+				ARM = {is_subject = no }
+				country_exists = ARM
+			}
+		}
+		localization_key = USA_bush_visiting_armenia_focus_armenia_alive_loc_key
+	}
+}
+defined_text = {
+	name = USA_pop_support_percantage
+	text = {
+		trigger = {
+			check_variable = { USA_pop_support_variable < 2 }
+		}
+		localization_key = USA_loc_key_lower_then_25
+	}
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					check_variable = { USA_pop_support_variable > 2 }
+					check_variable = { USA_pop_support_variable < 3 }
+				}
+				check_variable = { USA_pop_support_variable = 2 }
+			}
+		}
+		localization_key = USA_loc_key_between_25_50
+	}
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					check_variable = { USA_pop_support_variable > 3 }
+					check_variable = { USA_pop_support_variable < 4 }
+				}
+				check_variable = { USA_pop_support_variable = 3 }
+			}
+		}
+		localization_key = USA_loc_key_between_50_75
+	}
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					check_variable = { USA_pop_support_variable > 4 }
+					check_variable = { USA_pop_support_variable < 5 }
+				}
+				check_variable = { USA_pop_support_variable = 4 }
+			}
+		}
+		localization_key = USA_loc_key_between_75_100
+	}
+	text = {
+		trigger = {
+			check_variable = { USA_pop_support_variable = 5 }
+		}
+		localization_key = USA_loc_key_100
+	}
+}
+defined_text = {
+	name = USA_warhawk_support_percantage
+	text = {
+		trigger = {
+			check_variable = { warhawk_support_variable < 2 }
+		}
+		localization_key = USA_loc_key_lower_then_25
+	}
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					check_variable = { warhawk_support_variable > 2 }
+					check_variable = { warhawk_support_variable < 3 }
+				}
+				check_variable = { warhawk_support_variable = 2 }
+			}
+		}
+		localization_key = IRQ_loc_key_between_25_50
+	}
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					check_variable = { warhawk_support_variable > 3 }
+					check_variable = { warhawk_support_variable < 4 }
+				}
+				check_variable = { warhawk_support_variable = 3 }
+			}
+		}
+		localization_key = USA_loc_key_between_50_75
+	}
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					check_variable = { warhawk_support_variable > 4 }
+					check_variable = { warhawk_support_variable < 5 }
+				}
+				check_variable = { warhawk_support_variable = 4 }
+			}
+		}
+		localization_key = USA_loc_key_between_75_100
+	}
+	text = {
+		trigger = {
+			check_variable = { warhawk_support_variable = 5 }
+		}
+		localization_key = USA_loc_key_100
+	}
+}
+defined_text = {
+	name = USA_WS_support_percantage
+	text = {
+		trigger = {
+			check_variable = { kurd_resistance_variable < 2 }
+		}
+		localization_key = USA_loc_key_lower_then_25
+	}
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					check_variable = { kurd_resistance_variable > 2 }
+					check_variable = { kurd_resistance_variable < 3 }
+				}
+				check_variable = { kurd_resistance_variable = 2 }
+			}
+		}
+		localization_key = USA_loc_key_between_25_50
+	}
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					check_variable = { kurd_resistance_variable > 3 }
+					check_variable = { kurd_resistance_variable < 4 }
+				}
+				check_variable = { kurd_resistance_variable = 3 }
+			}
+		}
+		localization_key = USA_loc_key_between_50_75
+	}
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					check_variable = { kurd_resistance_variable > 4 }
+					check_variable = { kurd_resistance_variable < 5 }
+				}
+				check_variable = { kurd_resistance_variable = 4 }
+			}
+		}
+		localization_key = USA_loc_key_between_75_100
+	}
+	text = {
+		trigger = {
+			check_variable = { kurd_resistance_variable = 5 }
+		}
+		localization_key = USA_loc_key_100
+	}
+}
+defined_text = {
+	name = USA_hrg_resistance_percantage
+	text = {
+		trigger = {
+			check_variable = { HRG_resistance_variable < 2 }
+		}
+		localization_key = USA_loc_key_lower_then_25
+	}
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					check_variable = { HRG_resistance_variable > 2 }
+					check_variable = { HRG_resistance_variable < 3 }
+				}
+				check_variable = { HRG_resistance_variable = 2 }
+			}
+		}
+		localization_key = USA_loc_key_between_25_50
+	}
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					check_variable = { HRG_resistance_variable > 3 }
+					check_variable = { HRG_resistance_variable < 4 }
+				}
+				check_variable = { HRG_resistance_variable = 3 }
+			}
+		}
+		localization_key = USA_loc_key_between_50_75
+	}
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					check_variable = { HRG_resistance_variable > 4 }
+					check_variable = { HRG_resistance_variable < 5 }
+				}
+				check_variable = { HRG_resistance_variable = 4 }
+			}
+		}
+		localization_key = USA_loc_key_between_75_100
+	}
+	text = {
+		trigger = {
+			check_variable = { HRG_resistance_variable = 5 }
+		}
+		localization_key = USA_loc_key_100
+	}
+}
+defined_text = {
+	name = USA_mic_support
+	text = {
+		trigger = {
+			check_variable = { mic_support_variable < 2 }
+		}
+		localization_key = USA_loc_key_lower_then_25
+	}
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					check_variable = { mic_support_variable > 2 }
+					check_variable = { mic_support_variable < 3 }
+				}
+				check_variable = { mic_support_variable = 2 }
+			}
+		}
+		localization_key = USA_loc_key_between_25_50
+	}
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					check_variable = { mic_support_variable > 3 }
+					check_variable = { mic_support_variable < 4 }
+				}
+				check_variable = { mic_support_variable = 3 }
+			}
+		}
+		localization_key = USA_loc_key_between_50_75
+	}
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					check_variable = { mic_support_variable > 4 }
+					check_variable = { mic_support_variable < 5 }
+				}
+				check_variable = { mic_support_variable = 4 }
+			}
+		}
+		localization_key = USA_loc_key_between_75_100
+	}
+	text = {
+		trigger = {
+			check_variable = { mic_support_variable = 5 }
+		}
+		localization_key = USA_loc_key_100
+	}
+}

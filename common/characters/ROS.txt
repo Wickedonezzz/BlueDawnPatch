@@ -1,0 +1,18 @@
+characters = {
+
+	ROS_iyad_ag_ghaly = {
+		name = "Iyad Ag Ghaly"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Africa/Iyad_Ag_Ghaly.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

@@ -1,0 +1,33 @@
+
+state={
+	id=962
+	name="STATE_962"
+	
+	state_category = small_island
+
+	history={
+		owner = VAN
+		add_core_of = VAN
+		victory_points = {
+			12120 1
+		}
+		buildings = {
+			infrastructure = 1
+			1237 = {
+				naval_base = 1
+			}
+			4247 = {
+				naval_base = 1
+			}
+		}
+
+	}
+
+	provinces={
+		1237 4247 12120
+	}
+	manpower=192000
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}

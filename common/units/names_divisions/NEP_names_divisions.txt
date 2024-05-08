@@ -1,0 +1,36 @@
+﻿NEP_INF_01 = 
+{
+	name = "Royal Guard Divisions"
+
+	for_countries = { NEP }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry_unit" }
+
+	fallback_name = "%d Royal Guard Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st Royal Guard Division" }
+		2 = { "2nd Royal Guard Division" }
+		3 = { "3rd Royal Guard Division" }
+		4 = { "4th Royal Guard Division" }
+		5 = { "5th Royal Guard Division" }
+		6 = { "6th Royal Guard Division" }
+		7 = { "7th Royal Guard Division" }
+		8 = { "8th Royal Guard Division" }
+		9 = { "9th Royal Guard Division" }
+		10 = { "10th Royal Guard Division" }
+		11 = { "11th Royal Guard Division" }
+		12 = { "12th Royal Guard Division" }
+		13 = { "13th Royal Guard Division" }
+		14 = { "14th Royal Guard Division" }
+		15 = { "15th Royal Guard Division" }
+		16 = { "16th Royal Guard Division" }
+		17 = { "17th Royal Guard Division" }
+		18 = { "18th Royal Guard Division" }
+		19 = { "19th Royal Guard Division" }
+	}
+}

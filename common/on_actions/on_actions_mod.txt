@@ -1,0 +1,1026 @@
+on_actions = {
+	
+	
+	on_startup =  {
+
+		effect = {
+			SOV = {	
+				country_event = {id = ussr_intro.1}	
+			}
+		}
+
+		effect = {
+			SAF = {	
+				country_event = {id = saf.4}	
+			}
+		}
+		
+
+		effect = {
+			USA = {	
+				country_event = {id = usa_intro.1}
+			}
+		}
+		effect = {
+			every_country = {
+		  if = {
+                    limit = {
+                        has_idea = volunteer_only 
+                    }
+                    add_ideas = reservist_very_small_1
+                }
+		   if = {
+                    limit = {
+                        has_idea = disarmed_nation
+                    }
+                    add_ideas = no_reservist_1
+                }
+			if = {
+                    limit = {
+                        has_idea = limited_conscription
+                    }
+                    add_ideas = reservist_small_1
+					}
+			if = {
+                    limit = {
+                        has_idea = extensive_conscription
+                    }
+                    add_ideas = reservist_medium_1
+                }
+			if = {
+                    limit = {
+                        has_idea = service_by_requirement
+                    }
+                    add_ideas = reservist_large_1
+                }
+			
+			
+		}
+			
+		}
+
+		effect = {
+			if = {
+				every_country = {
+					limit = {
+						NOT = { has_government = democratic }
+					}
+					USA = {
+						add_opinion_modifier = { target = PREV modifier = USA_misdirected_foreign_policy_opinion }
+					}
+				}
+			}
+		}
+		
+
+		#effect = {
+		#	if = {
+		#		every_country = {
+		#		limit = {is_ai = yes
+		#		NOT = { tag = SOV }
+		#		NOT = { tag = JAP }
+		#		NOT = { tag = SAF }
+		#		}
+		#
+		#		country_event = { id = ai_mod.1 }
+		#
+		#}
+		#		}
+		#}
+
+		effect = {
+			VIN = {	
+				country_event = {id = vin_intro.1}	
+			}
+		}
+		
+		effect = {
+			ETH = {
+			news_event = {id = old_times_news.39 days = 1}
+			}
+		}
+		
+		effect = {
+			ERI = {
+			news_event = {id = eritrea_mod.1 days = 2}
+			}
+		}		
+
+		effect = {
+			YUG = {
+				country_event = {id = yug_terror_attack.1 days = 1}
+			}
+			104 = {
+				add_dynamic_modifier = {
+					modifier = YUG_rebels_5
+				}
+				set_state_flag = yug_state_division_5
+			}
+			959 = {
+				add_dynamic_modifier = {
+					modifier = YUG_rebels_5
+				}
+				set_state_flag = yug_state_division_5
+			}
+			960 = {
+				add_dynamic_modifier = {
+					modifier = YUG_rebels_4
+				}
+				set_state_flag = yug_state_division_4
+			}
+			961 = {
+				add_dynamic_modifier = {
+					modifier = YUG_rebels_4
+				}
+				set_state_flag = yug_state_division_4
+			}			
+			804 = {
+				add_dynamic_modifier = {
+					modifier = YUG_rebels_5
+				}
+				set_state_flag = yug_state_division_5
+			}
+			802 = {
+				add_dynamic_modifier = {
+					modifier = YUG_rebels_5
+				}
+				set_state_flag = yug_state_division_5
+			}
+				if = {
+					limit = {has_dlc = "La Resistance"}
+					YUG = {
+						add_trait = {
+							 character = YUG_radomir_markovic
+							 slot = political_advisor
+							 trait = head_of_secret_police_lar
+						}
+					}
+				}
+				else_if = {
+					YUG = {
+						add_trait = {
+							 character = YUG_radomir_markovic
+							 slot = political_advisor
+							 trait = head_of_secret_police
+						}
+					}	
+				}
+		}
+		
+		effect = {
+			885 = {
+				add_dynamic_modifier = {
+					modifier = SPL_concentrated_defence
+				}
+			}		
+			884 = {
+				add_dynamic_modifier = {
+					modifier = SPL_concentrated_defence
+				}
+			}						
+		}
+
+		effect = {
+			966 = {
+				add_dynamic_modifier = {
+					modifier = SOV_irradiated_region
+				}
+			}		
+			967 = {
+				add_dynamic_modifier = {
+					modifier = SOV_irradiated_region
+				}
+			}						
+		}		
+		
+		effect = {
+			1001 = {
+				add_dynamic_modifier = {
+					modifier = kashmir_conflict
+				}
+			}		
+			1002 = {
+				add_dynamic_modifier = {
+					modifier = kashmir_conflict
+				}
+			}						
+		}
+
+		effect = {	
+			set_global_flag = reddusk_welcome_gui_flag
+		}
+		
+		
+		## USA Congress Mechanics ##
+
+		effect = {
+			USA = {
+				# Total Senate & House Numbers #
+				set_variable = {
+					var = usa_senate_total_num
+					value = 100
+				}
+				set_variable = {
+					var = usa_house_total_num
+					value = 435
+				}
+				set_variable = {
+					var = usa_senate_support_num
+					value = 54
+				}
+				set_variable = {
+					var = usa_house_support_num
+					value = 197
+				}
+				clamp_variable = {
+					var = usa_senate_support_num
+					min = 0
+					max = usa_senate_total_num
+				}
+				clamp_variable = {
+					var = usa_house_support_num
+					min = 0
+					max = usa_house_total_num
+				}
+
+				# Party Senate & House Numbers #
+				set_variable = {
+					var = usa_senate_republican_num
+					value = 52
+				}
+				clamp_variable = {
+					var = usa_senate_republican_num
+					min = 0
+					max = usa_senate_total_num
+				}
+				set_variable = {
+					var = usa_senate_democratic_num
+					value = 32
+				}
+				clamp_variable = {
+					var = usa_senate_democratic_num
+					min = 0
+					max = usa_senate_total_num
+				}
+				set_variable = {
+					var = usa_senate_reform_num
+					value = 16
+				}
+				clamp_variable = {
+					var = usa_senate_reform_num
+					min = 0
+					max = usa_senate_total_num
+				}
+				set_variable = {
+					var = usa_senate_independent_num
+					value = 0
+				}
+				clamp_variable = {
+					var = usa_senate_independent_num
+					min = 0
+					max = usa_senate_total_num
+				}
+
+				set_variable = {
+					var = usa_house_republican_num
+					value = 159
+				}
+				clamp_variable = {
+					var = usa_house_republican_num
+					min = 0
+					max = usa_house_total_num
+				}
+				set_variable = {
+					var = usa_house_democratic_num
+					value = 150
+				}
+				clamp_variable = {
+					var = usa_house_democratic_num
+					min = 0
+					max = usa_house_total_num
+				}
+				set_variable = {
+					var = usa_house_reform_num
+					value = 126
+				}
+				clamp_variable = {
+					var = usa_house_reform_num
+					min = 0
+					max = usa_house_total_num
+				}
+				set_variable = {
+					var = usa_house_independent_num
+					value = 0
+				}
+				clamp_variable = {
+					var = usa_house_independent_num
+					min = 0
+					max = usa_house_total_num
+				}
+
+				# Party Attiudes #
+				set_variable = {
+					var = usa_republican_attitude_value
+					value = 2
+				}
+				clamp_variable = {
+					var = usa_republican_attitude_value
+					min = -2
+					max = 2
+				}
+				set_variable = {
+					var = usa_democratic_attitude_value
+					value = -2
+				}
+				clamp_variable = {
+					var = usa_democratic_attitude_value
+					min = -2
+					max = 2
+				}
+				set_variable = {
+					var = usa_reform_attitude_value
+					value = -1
+				}
+				clamp_variable = {
+					var = usa_reform_attitude_value
+					min = -2
+					max = 2
+				}
+
+				# Current Government Type #
+				set_variable = {
+					var = usa_government_type_value
+					value = 0
+				}
+				clamp_variable = {
+					var = usa_government_type_value
+					min = 0
+					max = 1
+				}
+
+				# Current Ruling Party #
+				set_variable = {
+					var = usa_government_ruling_party_value
+					value = 0
+				}
+				clamp_variable = {
+					var = usa_government_ruling_party_value
+					min = 0
+					max = 6
+				}
+			}
+		}
+
+		## IRQ Faction Mechanics ##
+
+		effect = {
+			IRQ = {
+				set_variable = {
+					var = irq_faction_kdp_popularity_value
+					value = 3
+				}
+				set_variable = {
+					var = irq_faction_kdp_political_value
+					value = 3
+				}
+				set_variable = {
+					var = irq_faction_kdp_military_value
+					value = 4
+				}
+				set_variable = {
+					var = irq_faction_kdp_stance_value
+					value = 1
+				}
+
+				set_variable = {
+					var = irq_faction_puk_popularity_value
+					value = 3
+				}
+				set_variable = {
+					var = irq_faction_puk_political_value
+					value = 2
+				}
+				set_variable = {
+					var = irq_faction_puk_military_value
+					value = 3
+				}
+				set_variable = {
+					var = irq_faction_puk_stance_value
+					value = 2
+				}
+
+				set_variable = {
+					var = irq_faction_kwp_popularity_value
+					value = 1
+				}
+				set_variable = {
+					var = irq_faction_kwp_political_value
+					value = 2
+				}
+				set_variable = {
+					var = irq_faction_kwp_military_value
+					value = 3
+				}
+				set_variable = {
+					var = irq_faction_kwp_stance_value
+					value = 0
+				}
+
+				set_variable = {
+					var = irq_faction_unity_value
+					value = 2
+				}
+			}
+		}
+	}
+
+			
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					tag = IRQ
+					FROM = { tag = ISR }  #FROM is the war target 
+				}
+				news_event = {id = old_times_news.77}
+			}
+		}
+	}
+
+	on_daily_SOV = {
+		effect = {
+
+			if = {
+				limit = { 
+				check_variable = {
+					Reformists_influence < 59
+				}
+				NOT = { check_variable = { 
+				 Reformists_influence > 60
+				}
+			}
+			}
+			
+			set_variable = {
+			var = modifiers_for_PP
+			value = 0
+			} 
+			set_variable = {
+				var = modifiers_for_STAB
+				value = 0
+			}
+			set_variable = {
+				var = modifiers_for_ideology_reformed
+				value = 0
+			}
+		}
+			if = {
+				limit = { 
+				check_variable = {
+					Reformists_influence > 59
+				}
+				NOT = { check_variable = { 
+					 Reformists_influence > 69 
+					}
+				}
+			}
+			set_variable = {
+			var = modifiers_for_PP
+			value = -0.02
+			} 
+			set_variable = {
+				var = modifiers_for_STAB
+				value = 0.025
+			}
+			set_variable = {
+				var = modifiers_for_ideology_reformed
+				value = 0.01 
+			}
+		}
+		else_if = {
+			limit = { 
+			check_variable = {
+				Reformists_influence > 69
+			}
+			NOT = { check_variable = { 
+				 Reformists_influence > 79 
+				}
+			}
+		}
+		set_variable = {
+		var = modifiers_for_PP
+		value = -0.04
+		} 
+		set_variable = {
+			var = modifiers_for_STAB
+			value = 0.05
+		}
+		set_variable = {
+			var = modifiers_for_ideology_reformed
+			value = 0.025
+		}
+	}
+	else_if = {
+		limit = { 
+		check_variable = {
+			Reformists_influence > 79
+		}
+		NOT = { check_variable = { 
+			 Reformists_influence > 89 
+			}
+		}
+	}
+	set_variable = {
+	var = modifiers_for_PP
+	value = -0.06
+	} 
+	set_variable = {
+		var = modifiers_for_STAB
+		value = 0.075
+	}
+	set_variable = {
+		var = modifiers_for_ideology_reformed
+		value = 0.04
+				}
+			}
+			
+		else_if = {
+				limit = { 
+				check_variable = {
+					Reformists_influence > 89
+				}
+				NOT = { check_variable = { 
+					 Reformists_influence > 101 
+					}
+				}
+			}
+			set_variable = {
+			var = modifiers_for_PP
+			value = -0.08
+			} 
+			set_variable = {
+				var = modifiers_for_STAB
+				value = 0.095
+			}
+			set_variable = {
+				var = modifiers_for_ideology_reformed
+				value = 0.05
+			}
+		}
+		else_if = {
+			limit = { 
+			check_variable = {
+				Reformists_influence > 99
+			}
+			NOT = { check_variable = { 
+				 Reformists_influence > 101 
+				}
+			}
+		}
+		set_variable = {
+		var = modifiers_for_PP
+		value = -0.1
+		} 
+		set_variable = {
+			var = modifiers_for_STAB
+			value = 0.1
+		}
+		set_variable = {
+			var = modifiers_for_ideology_reformed
+			value = 0.075
+		}
+	}
+	else_if = {
+		limit = { 
+		check_variable = {
+			Reformists_influence > 101
+			}
+		}
+		set_variable = {
+	var = Reformists_influence
+	value = 100
+		}
+	}
+		if = {
+			limit = { 
+			check_variable = {
+				Conservatives_influence > 59
+			}
+			NOT = { check_variable = { 
+				Conservatives_influence > 69 
+				}
+			}
+		}
+		set_variable = {
+		var = modifiers_for_PP
+		value = 0.02
+		} 
+		set_variable = {
+			var = modifiers_for_STAB
+			value = -0.025
+		}
+		set_variable = {
+			var = communism_power
+			value = 0.01 
+		}
+	}
+	else_if = {
+		limit = { 
+		check_variable = {
+			Conservatives_influence > 69
+		}
+		NOT = { check_variable = { 
+			Conservatives_influence > 79 
+			}
+		}
+	}
+	set_variable = {
+	var = modifiers_for_PP
+	value = 0.04
+	} 
+	set_variable = {
+		var = modifiers_for_STAB
+		value = -0.05
+	}
+	set_variable = {
+		var = communism_power
+		value = 0.025
+	}
+}
+else_if = {
+	limit = { 
+	check_variable = {
+		Conservatives_influence > 79
+	}
+	NOT = { check_variable = { 
+		Conservatives_influence > 89 
+		}
+	}
+}
+set_variable = {
+var = modifiers_for_PP
+value = 0.06
+} 
+set_variable = {
+	var = modifiers_for_STAB
+	value = -0.075
+}
+set_variable = {
+	var = communism_power
+	value = 0.04
+			}
+		}
+		
+	else_if = {
+			limit = { 
+			check_variable = {
+				Conservatives_influence > 89
+			}
+			NOT = { check_variable = { 
+				Conservatives_influence > 101 
+				}
+			}
+		}
+		set_variable = {
+		var = modifiers_for_PP
+		value = 0.08
+		} 
+		set_variable = {
+			var = modifiers_for_STAB
+			value = -0.095
+		}
+		set_variable = {
+			var = communism_power
+			value = 0.05
+		}
+	}
+	else_if = {
+		limit = { 
+		check_variable = {
+			Conservatives_influence > 99
+		}
+		NOT = { check_variable = { 
+			 Conservatives_influence > 101 
+			}
+		}
+	}
+	set_variable = {
+	var = modifiers_for_PP
+	value = 0.1
+	} 
+	set_variable = {
+		var = modifiers_for_STAB
+		value = -0.1
+	}
+	set_variable = {
+		var = communism_power 
+		value = 0.075
+	}
+}
+else_if = {
+	limit = { 
+	check_variable = {
+		Conservatives_influence > 101
+	}
+	}
+set_variable = {
+var = Conservatives_influence
+value = 100
+			}
+			}
+		}
+	}
+
+	on_nuke_drop = {
+		effect = {
+			#set_victory_points = { # I tried to make it so a nuke wipes out a victoy point but it doesnt work - durangoose
+			#	province = FROM
+			#	value = 0
+			#}
+			#set_province_name = { id = FROM name = "dead city" }
+			FROM = {
+				owner = { 		
+					add_timed_idea = {
+					idea = idea_got_nuked
+					days = 150
+					} 
+				}
+			}
+		}
+		
+	}
+	
+	##alignment fix stuff##
+	
+	on_monthly = {
+		
+		effect = {
+			if = {
+				limit = {
+					FROM = {is_in_faction_with = SOV}
+					NOT = {has_idea = ussr_aligned_nation}
+				}
+				replace_alignment_to_SOV = yes
+			}
+
+			if = {
+				limit = {
+					FROM = {is_in_faction_with = USA}
+					NOT = {has_idea = usa_aligned_nation}
+				}
+				replace_alignment_to_USA = yes
+			}
+
+			if = {
+				limit = {
+					FROM = {is_in_faction_with = PRC}
+					NOT = {has_idea = china_aligned_nation}				
+				}
+				replace_alignment_to_PRC = yes
+			}			
+		}
+
+
+	}
+	
+	on_monthly_YUG = {
+		effect = {
+			if = {
+				limit = {YUG = {has_completed_focus = YUG_seselj_restructuring_the_state}}
+					YUG = {	
+						clamp_variable = {
+							var = YUG_radicalization_var
+							min = 0
+							max = 100
+						}					
+						add_to_variable = {YUG_radicalization_var = YUG_monthly_radicalization_var}
+						clamp_variable = {
+							var = YUG_radicalization_var
+							min = 0
+							max = 100
+						}
+						if = {
+							limit = {check_variable = {YUG_radicalization_var > 29}}
+							country_event = {id = yug_seselj.8 days = 3}
+						}
+						if = {
+							limit = {check_variable = {YUG_radicalization_var > 49}}
+							country_event = {id = yug_seselj.9 days = 6}
+						}
+						if = {
+							limit = {check_variable = {YUG_radicalization_var > 69}}
+							country_event = {id = yug_seselj.10 days = 9}
+						}
+					}
+			}
+		}
+	}
+	
+	### SCRIPTED PEACE DEALS ###
+	
+	### FROM is the country that wins the war and the tag listed below is the country that wins it ###
+	### ROOT is the county that loses the war and the tag below should the country that loses ###
+	
+	on_release_as_puppet = {
+		effect = {	
+			## COLD WAR ALIGNMENT CHANGES ##
+
+			## USSR ALIGNMENT ##
+			if = {   
+				limit = {
+					FROM = {
+						original_tag = SOV
+					}
+					ROOT = {
+					}
+				}
+				ROOT = {
+					replace_alignment_to_SOV = yes
+				}
+			}
+					
+			## USA ALIGNMENT ##
+			if = {   
+				limit = {
+					FROM = {
+						original_tag = USA
+					}
+					ROOT = {
+					}
+				}
+
+				ROOT = {
+					replace_alignment_to_USA = yes
+				}
+					 
+			}
+					
+			## CHINA ALIGNMENT ##
+			if = {   
+				limit = {
+					FROM = {
+						original_tag = PRC
+					}
+					ROOT = {
+					}
+				}
+				ROOT = {
+					replace_alignment_to_PRC = yes
+				}
+			 
+			}
+					
+		}
+
+	}
+	
+	on_daily_VIN = {
+		effect = {
+			if = {
+				limit = {
+					has_active_mission = VIN_fight_against_poverty_mission_deadline
+					OR = { check_variable = { vin_poverty_rate < 16 } check_variable = { vin_poverty_rate = 16 } }
+				}
+				set_country_flag = VIN_eradicating_poverty_completed
+				remove_mission = VIN_fight_against_poverty_mission_deadline
+				
+				if = {
+					limit = {
+						has_idea = VIN_socialist_society_4
+					}
+					swap_ideas = {
+						remove_idea = VIN_socialist_society_4
+						add_idea = VIN_socialist_society_fighting_poverty_1
+					}
+				}
+				if = {
+					limit = {
+						has_idea = VIN_socialist_society_3
+					}
+					swap_ideas = {
+						remove_idea = VIN_socialist_society_3
+						add_idea = VIN_socialist_society_fighting_poverty_1
+					}
+				}
+			}
+		}
+	}
+	#on_daily_VIN = {
+	#	
+	#	effect = {
+	#		if = {
+	#			limit = {
+	#				has_country_flag = { flag = vin_developing_essential_infrastructure_flag days < 31 }
+	#			}
+	#			VIN_poverty_rate_daily_change_10_flat = yes
+	#		}
+	#		else = {
+	#			clr_country_flag = vin_developing_essential_infrastructure_flag
+	#		}
+	#	}
+	#	effect = {
+	#		if = {
+	#			limit = {
+	#				has_country_flag = { flag = vin_support_production_development_and_economic_restructuring_flag days < 101 }
+	#			}
+	#			VIN_poverty_rate_daily_change_12 = yes
+	#		}	
+	#		else = {
+	#			clr_country_flag = vin_support_production_development_and_economic_restructuring_flag
+	#		}
+	#	}
+	#	effect = {
+	#		if = {
+	#			limit = {
+	#				has_country_flag = { flag = vin_local_staff_training_flag days < 81 }
+	#			}
+	#			VIN_poverty_rate_daily_change_5 = yes
+	#		}
+	#		else = {
+	#			clr_country_flag = vin_local_staff_training_flag
+	#		}
+	#	}
+	#	effect = {
+	#		if = {
+	#			limit = {
+	#				has_country_flag = { flag = vin_improve_and_expand_public_services_flag days < 101 }
+	#			}
+	#			VIN_poverty_rate_daily_change_10 = yes
+	#		}
+	#		else = {
+	#			clr_country_flag = vin_improve_and_expand_public_services_flag
+	#		}
+	#	}
+	#	effect = {
+	#		if = {
+	#			limit = {
+	#				has_country_flag = { flag = vin_social_housing_project_flag days < 51 }
+	#			}
+	#			VIN_poverty_rate_daily_change_10 = yes
+	#		}
+	#		else = {
+	#			clr_country_flag = vin_social_housing_project_flag
+	#		}
+	#	}
+	#	effect = {
+	#		if = {
+	#			limit = {
+	#				has_country_flag = { flag = vin_job_security_and_income_for_employees_flag days < 181 }
+	#			}
+	#			VIN_poverty_rate_daily_change_12 = yes
+	#		}	
+	#		else = {
+	#			clr_country_flag = vin_job_security_and_income_for_employees_flag
+	#		}
+	#	}
+	#	effect = {	
+	#		if = {
+	#			limit = {
+	#				has_country_flag = { flag = vin_open_vocational_training_center_flag days < 121 }
+	#			}
+	#			VIN_poverty_rate_daily_change_12 = yes
+	#		}	
+	#		else = {
+	#			clr_country_flag = vin_open_vocational_training_center_flag
+	#		}
+	#	}
+	#	effect = {
+	#		if = {
+	#			limit = {
+	#				has_country_flag = { flag = vin_increase_common_salary_flag days < 301 }
+	#			}
+	#			VIN_poverty_rate_daily_change_15 = yes
+	#		}	
+	#		else = {
+	#			clr_country_flag = vin_increase_common_salary_flag
+	#		}
+	#	}
+	#	effect = {
+	#		if = {
+	#			limit = {
+	#				has_country_flag = { flag = vin_increase_minimum_wage_flag days < 81 }
+	#			}
+	#			VIN_poverty_rate_daily_change_10 = yes
+	#		}	
+	#		else = {
+	#			clr_country_flag = vin_increase_minimum_wage_flag
+	#		}
+	#	}
+	#		
+	#	
+	#}
+	on_monthly_VIN = {
+		
+		effect = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = VIN_eradicating_poverty_completed }
+				}
+				VIN_poverty_rate_monthly_change_reset = yes
+			}		
+		}
+		
+	}
+	
+	
+}

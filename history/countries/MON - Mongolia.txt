@@ -1,0 +1,52 @@
+﻿capital = 330
+
+set_technology = {
+	infantry_weapons_1960 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_air_weapons_1960 = 1
+	tech_support = 1
+	tech_motorised_1960 = 1
+	tech_train_1960 = 1
+	mbt_tank_1960 = 1
+	ifv_tank_1970 = 1
+	apc_tank_1960 = 1
+	spaa_tank_1960 = 1
+	towed_artillery_1960 = 1
+	heli_transport_1960 = 1
+	heli_attack_1970 = 1
+	support_tech_engineers_1960 = 1
+	support_tech_militarypolice_1960 = 1
+	support_tech_hospital_1960 = 1
+	support_tech_maintenance_1960 = 1
+	support_tech_logistics_1960 = 1
+	support_tech_recon_1960 = 1
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		recon_vehicle_1960 = 1
+	}
+}
+set_oob = "MON_2000"
+set_air_oob = "MON_2000_air"
+
+recruit_character = MON_nambaryn_enkhbayar
+
+add_ideas = MON_split
+
+add_ideas = ussr_aligned_nation
+
+add_ideas = limited_conscription
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	communism = 68
+        reformed_communism = 32
+}

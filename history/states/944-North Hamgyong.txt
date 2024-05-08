@@ -1,0 +1,29 @@
+state={
+	id=944
+	name="STATE_944"
+	history={
+		owner = KOR
+		add_core_of = KOR
+		add_core_of = SKR
+		buildings = {
+			industrial_complex = 2
+			arms_factory = 3
+			infrastructure = 3
+		}
+		victory_points = {
+			6822 5
+		}
+	}
+	resources = {
+		steel = 16
+		aluminium = 5
+		tungsten = 9
+	}
+	provinces={
+		898 906 959 3803 3852 3860 3904 6822 6922 6944 6963 9899 11878 13427 13428 13429 13431
+	}
+	manpower=693453
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=large_town
+}

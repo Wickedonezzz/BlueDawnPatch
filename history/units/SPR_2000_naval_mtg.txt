@@ -1,0 +1,69 @@
+units = {
+	fleet = {
+		name = "Flota Mediterranea"
+		naval_base = 10024 # Cartagena #
+		task_force = {
+			name = "Flota de superficie del Mediterráneo"
+			location = 10024 # Cartagena #
+			ship = { name = "Descubierta" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = SPR version_name = "Descubierta Class" } } }
+			ship = { name = "Diana" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = SPR version_name = "Descubierta Class" } } }
+			ship = { name = "Infanta Elena" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = SPR version_name = "Descubierta Class" } } }
+			ship = { name = "Infanta Cristina" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = SPR version_name = "Descubierta Class" } } }
+		}
+		task_force = {
+			name = "Flota de submarinos del Mediterráneo"
+			location = 10024 # Cartagena #
+			ship = { name = "Delfín" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = SPR creator = FRA version_name = "Daphne Class" } } }
+			ship = { name = "Tonina" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = SPR creator = FRA version_name = "Daphne Class" } } }
+			ship = { name = "Marsopa" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = SPR creator = FRA version_name = "Daphne Class" } } }
+			ship = { name = "Narval" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = SPR creator = FRA version_name = "Daphne Class" } } }
+			ship = { name = "Galerna" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = SPR creator = FRA version_name = "Agosta Class" } } }
+			ship = { name = "Siroco" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = SPR creator = FRA version_name = "Agosta Class" } } }
+			ship = { name = "Mistral" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = SPR creator = FRA version_name = "Agosta Class" } } }
+			ship = { name = "Tramontana" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = SPR creator = FRA version_name = "Agosta Class" } } }
+		}
+	}
+	fleet = {
+		name = "Flota del Atlántico"
+		naval_base = 1048 # Rota #
+		task_force = {
+			name = "Flota de portaaviones del Atlántico"
+			location = 1048 # Rota #
+			ship = { name = "Príncipe de Asturias" definition = carrier equipment = { carrier_hull_2 = { amount = 1 owner = SPR version_name = "Principe de Asturias Class" } } }
+
+			ship = { name = "Santa María" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = SPR version_name = "Santa Maria Class" } } }
+			ship = { name = "Victoria" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = SPR version_name = "Santa Maria Class" } } }
+			ship = { name = "Numancia" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = SPR version_name = "Santa Maria Class" } } }
+			ship = { name = "Reina Sofía" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = SPR version_name = "Santa Maria Class" } } }
+			ship = { name = "Navarra" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = SPR version_name = "Santa Maria Class" } } }
+			ship = { name = "Canarias" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = SPR version_name = "Santa Maria Class" } } }
+		}
+		task_force = {
+			name = "Flota de Patrulla del Atlántico"
+			location = 758 # Ferrol #
+			ship = { name = "Baleares" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = SPR version_name = "Baleares Class" } } }
+			ship = { name = "Andalucía" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = SPR version_name = "Baleares Class" } } }
+			ship = { name = "Cataluña" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = SPR version_name = "Baleares Class" } } }
+			ship = { name = "Asturias" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = SPR version_name = "Baleares Class" } } }
+			ship = { name = "Extremadura" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = SPR version_name = "Baleares Class" } } }
+
+			ship = { name = "Cazadora" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = SPR version_name = "Descubierta Class" } } }
+			ship = { name = "Vencedora" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = SPR version_name = "Descubierta Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+	# Destroyers #
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_hull_4
+			creator = "SPR" 
+			version_name = "Alvaro de Bazan Class"
+		}
+		name = "Álvaro de Bazán"
+		requested_factories = 1
+		progress = 0.17
+		amount = 1
+	}
+}

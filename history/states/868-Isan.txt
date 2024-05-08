@@ -1,0 +1,35 @@
+
+state={
+	id=868
+	name="STATE_868"
+	resources={
+		rubber=32.000
+		oil=1.000
+	}
+
+	history={
+		owner = SIA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			air_base = 3
+
+		}
+		victory_points = {
+			10438 5 
+		}
+		victory_points = {
+			12360 3 
+		}
+		add_core_of = SIA
+
+	}
+
+	provinces={
+		1357 1535 1548 4511 4582 7516 7601 10384 10425 10438 12195 12264 12360 12373 12388 12402 12417 12431 13534 13535 13544 13545 13546 13547 13548 13549 13553 13554 13556 13557 13558 
+	}
+	manpower=18590000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

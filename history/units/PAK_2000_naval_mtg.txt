@@ -1,0 +1,58 @@
+units = {
+	fleet = {
+		name = "Pakistan Fleet"
+		naval_base = 3456 # Islamabad #
+		task_force = {
+			name = "Pakistan Surface Fleet"
+			location = 3456 # Islamabad #
+			ship = { name = "PNS Zulfiquar" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PAK creator = ENG version_name = "Leander Class" } } }
+			ship = { name = "PNS Shamsher" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PAK creator = ENG version_name = "Leander Class" } } }
+			ship = { name = "PNS Tariq" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PAK creator = ENG version_name = "Amazon Class" } } }
+			ship = { name = "PNS Babur" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PAK creator = ENG version_name = "Amazon Class" } } }
+			ship = { name = "PNS Khaibar" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PAK creator = ENG version_name = "Amazon Class" } } }
+			ship = { name = "PNS Badr" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PAK creator = ENG version_name = "Amazon Class" } } }
+			ship = { name = "PNS Tippu Sultan" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PAK creator = ENG version_name = "Amazon Class" } } }
+			ship = { name = "PNS Shah Jahan" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PAK creator = ENG version_name = "Amazon Class" } } }
+		}
+		task_force = {
+			name = "Pakistan Submarine Fleet"
+			location = 3456 # Islamabad #
+			ship = { name = "PNS Khalid" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PAK creator = FRA version_name = "Agosta 90B Class" } } }
+			ship = { name = "PNS Hashmat" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PAK creator = FRA version_name = "Agosta Class" } } }
+			ship = { name = "PNS Hurmat" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PAK creator = FRA version_name = "Agosta Class" } } }
+			ship = { name = "PNS Hangor" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PAK creator = FRA version_name = "Daphne Class" } } }
+			ship = { name = "PNS Shushuk" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PAK creator = FRA version_name = "Daphne Class" } } }
+			ship = { name = "PNS Mangro" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PAK creator = FRA version_name = "Daphne Class" } } }
+			ship = { name = "PNS Ghazi" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PAK creator = FRA version_name = "Daphne Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+	# Attack Submarine #
+	add_equipment_production = {
+		equipment = {
+			type = attack_submarine_hull_1
+			creator = "FRA" 
+			version_name = "Agosta 90B Class"
+		}
+		name = "PNS Saad"
+		requested_factories = 1
+		progress = 0.02
+		amount = 1
+	}
+
+	if = {
+		limit = { has_dlc = "Death or Dishonor" }
+		FRA = {
+			create_production_license = {
+				target = PAK
+				equipment = {
+					type = attack_submarine_hull_1
+					version_name = "Agosta 90B Class"
+				}
+				cost_factor = 0
+			}
+		}
+	}
+}

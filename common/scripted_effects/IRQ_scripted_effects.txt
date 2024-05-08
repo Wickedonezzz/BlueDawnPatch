@@ -1,0 +1,227 @@
+IRQ_recalc_kurd_resistance_bar_frames = {
+
+	set_temp_variable = { kurd_progress_temp = kurd_resistance_variable }
+	if = {
+		limit = { check_variable = { kurd_progress_temp > 0 } }
+		clamp_temp_variable = { # Forces the variable to be between 1 and 5, so it cannot go below or above that #
+			var = kurd_progress_temp
+			min = 1
+			max = 5 # Basically how many different possible loading bar images you will have #
+		}
+	}
+	else = {
+		set_temp_variable = { kurd_progress_temp = 1 } # If variable is less than 1, set it to 1 #
+	}
+	set_variable = { current_kurd_resistance_bar_frame = kurd_progress_temp } # frame will be whatever the temp variable is, e.g. if temp = 3, then game will load up the 3rd frame, i.e. 3rd image #
+
+}
+
+IRQ_improve_the_economic_union_idea = {
+
+	if = {
+		limit = {
+			NOT = {
+				has_idea = IRQ_middle_east_economic_union_1
+				has_idea = IRQ_middle_east_economic_union_2
+				has_idea = IRQ_middle_east_economic_union_3
+				has_idea = IRQ_middle_east_economic_union_4
+				has_idea = IRQ_middle_east_economic_union_5
+				has_idea = IRQ_middle_east_economic_union_6
+			
+			}
+		}
+		add_ideas = IRQ_middle_east_economic_union_1
+	}
+
+	else_if = {
+		limit = {has_idea = IRQ_middle_east_economic_union_1}
+		swap_ideas = {
+		remove_idea = IRQ_middle_east_economic_union_1
+		add_idea = IRQ_middle_east_economic_union_2
+		}
+	}
+	
+	else_if = {
+		limit = {has_idea = IRQ_middle_east_economic_union_2}
+		swap_ideas = {
+		remove_idea = IRQ_middle_east_economic_union_2
+		add_idea = IRQ_middle_east_economic_union_3
+		}
+	}
+	
+	else_if = {
+		limit = {has_idea = IRQ_middle_east_economic_union_3}
+		swap_ideas = {
+		remove_idea = IRQ_middle_east_economic_union_3
+		add_idea = IRQ_middle_east_economic_union_4
+		}
+	}
+	
+	else_if = {
+		limit = {has_idea = IRQ_middle_east_economic_union_4}
+		swap_ideas = {
+		remove_idea = IRQ_middle_east_economic_union_4
+		add_idea = IRQ_middle_east_economic_union_5
+		}
+	}
+	
+	else_if = {
+		limit = {has_idea = IRQ_middle_east_economic_union_5}
+		swap_ideas = {
+		remove_idea = IRQ_middle_east_economic_union_5
+		add_idea = IRQ_middle_east_economic_union_6
+		}
+	}
+	
+	else_if = {
+		limit = {has_idea = IRQ_middle_east_economic_union_6}	
+		add_offsite_building = { type = industrial_complex level = 1 }
+
+	}
+}
+
+IRQ_improve_the_economic_union_idea_for_puppets = {
+
+	if = {
+		limit = {
+			NOT = {
+				has_idea = IRQ_middle_east_economic_union_puppet_1
+				has_idea = IRQ_middle_east_economic_union_puppet_2
+				has_idea = IRQ_middle_east_economic_union_puppet_3
+				has_idea = IRQ_middle_east_economic_union_puppet_4
+				has_idea = IRQ_middle_east_economic_union_puppet_5
+				has_idea = IRQ_middle_east_economic_union_puppet_6
+			
+			}
+		}
+		add_ideas = IRQ_middle_east_economic_union_puppet_1
+	}
+
+	else_if = {
+		limit = {has_idea = IRQ_middle_east_economic_union_puppet_1}
+		swap_ideas = {
+		remove_idea = IRQ_middle_east_economic_union_puppet_1
+		add_idea = IRQ_middle_east_economic_union_puppet_2
+		}
+	}
+	
+	else_if = {
+		limit = {has_idea = IRQ_middle_east_economic_union_puppet_2}
+		swap_ideas = {
+		remove_idea = IRQ_middle_east_economic_union_puppet_2
+		add_idea = IRQ_middle_east_economic_union_puppet_3
+		}
+	}
+	
+	else_if = {
+		limit = {has_idea = IRQ_middle_east_economic_union_puppet_3}
+		swap_ideas = {
+		remove_idea = IRQ_middle_east_economic_union_puppet_3
+		add_idea = IRQ_middle_east_economic_union_puppet_4
+		}
+	}
+	
+	else_if = {
+		limit = {has_idea = IRQ_middle_east_economic_union_puppet_4}
+		swap_ideas = {
+		remove_idea = IRQ_middle_east_economic_union_puppet_4
+		add_idea = IRQ_middle_east_economic_union_puppet_5
+		}
+	}
+	
+	else_if = {
+		limit = {has_idea = IRQ_middle_east_economic_union_puppet_5}
+		swap_ideas = {
+		remove_idea = IRQ_middle_east_economic_union_puppet_5
+		add_idea = IRQ_middle_east_economic_union_puppet_6
+		}
+	}
+	
+	else_if = {
+		limit = {has_idea = IRQ_middle_east_economic_union_puppet_6}	
+		add_offsite_building = { type = industrial_complex level = 1 }
+
+	}
+}
+
+IRQ_recalc_iraq_nofly_zone_map_frames = {
+
+	if = {
+		limit = {
+			AND = {
+				check_variable = { irq_region_1_airspace_value = 2 }
+				check_variable = { irq_region_2_airspace_value = 2 }
+				check_variable = { irq_region_3_airspace_value = 2 }
+				check_variable = { irq_region_4_airspace_value = 2 }
+			}
+		}
+		set_variable = { current_iraq_nofly_zone_map_frame = 1 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				NOT = { check_variable = { irq_region_1_airspace_value = 2 } }
+				check_variable = { irq_region_2_airspace_value = 2 }
+				NOT = { check_variable = { irq_region_3_airspace_value = 2 } }
+				NOT = { check_variable = { irq_region_4_airspace_value = 2 } }
+			}
+		}
+		set_variable = { current_iraq_nofly_zone_map_frame = 2 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { irq_region_1_airspace_value = 2 }
+				check_variable = { irq_region_2_airspace_value = 2 }
+				NOT = { check_variable = { irq_region_3_airspace_value = 2 } }
+				NOT = { check_variable = { irq_region_4_airspace_value = 2 } }
+			}
+		}
+		set_variable = { current_iraq_nofly_zone_map_frame = 3 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { irq_region_1_airspace_value = 2 }
+				check_variable = { irq_region_2_airspace_value = 2 }
+				check_variable = { irq_region_3_airspace_value = 2 }
+				NOT = { check_variable = { irq_region_4_airspace_value = 2 } }
+			}
+		}
+		set_variable = { current_iraq_nofly_zone_map_frame = 4 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				NOT = { check_variable = { irq_region_1_airspace_value = 2 } }
+				check_variable = { irq_region_2_airspace_value = 2 }
+				check_variable = { irq_region_3_airspace_value = 2 }
+				NOT = { check_variable = { irq_region_4_airspace_value = 2 } }
+			}
+		}
+		set_variable = { current_iraq_nofly_zone_map_frame = 5 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				NOT = { check_variable = { irq_region_1_airspace_value = 2 } }
+				check_variable = { irq_region_2_airspace_value = 2 }
+				check_variable = { irq_region_3_airspace_value = 2 }
+				check_variable = { irq_region_4_airspace_value = 2 }
+			}
+		}
+		set_variable = { current_iraq_nofly_zone_map_frame = 6 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				NOT = { check_variable = { irq_region_1_airspace_value = 2 } }
+				NOT = { check_variable = { irq_region_2_airspace_value = 2 } }
+				NOT = { check_variable = { irq_region_3_airspace_value = 2 } }
+				NOT = { check_variable = { irq_region_4_airspace_value = 2 } }
+			}
+		}
+		set_variable = { current_iraq_nofly_zone_map_frame = 7 }
+	}
+
+}

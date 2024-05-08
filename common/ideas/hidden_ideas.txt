@@ -1,0 +1,130 @@
+ideas = {
+
+	hidden_ideas = {
+
+		nation_status_superpower = {
+				
+			name = nation_status_superpower_name
+
+			removal_cost = -1
+
+			#picture =
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+			}	
+
+		}
+
+		hidden_army_buff_core = {
+				
+			name = hidden_army_buff_name
+
+			removal_cost = -1
+
+			#picture =
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				army_core_attack_factor = 0.5
+				army_core_defence_factor = 0.5
+				surrender_limit = 1.0
+
+			}	
+
+		}
+		
+		hidden_army_extra_volunteers = {
+				
+			name = hidden_army_extra_volunteers_name
+
+			removal_cost = -1
+
+			#picture =
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				send_volunteer_size = 5
+				
+			}	
+
+		}		
+		
+		hidden_extra_surrender_limit = {
+				
+			name = hiddenextra_surrender_limit_name
+
+			removal_cost = -1
+
+			#picture =
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				surrender_limit = 1.0
+				
+			}	
+
+		}				
+
+		hidden_be_aggressive = {
+				
+			name = hidden_be_aggressive_name
+
+			removal_cost = -1
+
+			#picture =
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				ai_focus_aggressive_factor = 1.0
+				
+			}	
+
+		}	
+		
+		hidden_army_debuff_big = {
+	
+			name = hidden_army_debuff_big_name
+
+			removal_cost = -1
+
+			#picture =
+
+			allowed = {
+				always = no
+			}
+				
+			available = {
+				has_war = yes
+			}
+				
+			modifier = {
+				army_core_attack_factor = -2.0
+				army_core_defence_factor = -2.0
+				army_attack_factor = -2.0
+				army_defence_factor = -2.0			
+				surrender_limit = -0.4
+				attrition = 3.0
+
+			}	
+
+		}
+
+	}
+
+}

@@ -1,0 +1,14 @@
+units = {
+	fleet = {
+		name = "Al'ustul Almaghribiu"
+		naval_base = 7069 # Rabat #
+		task_force = {
+			name = "Al'ustul Almaghribiu Alsathiu"
+			location = 7069 # Rabat #
+			ship = { name = "Lieutenant-Colonel Errahmani" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = MOR creator = SPR version_name = "Descubierta Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

@@ -1,0 +1,40 @@
+﻿capital = 279
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+
+	set_technology = {
+		destroyer_hull_1960 = 1
+		attack_submarine_hull_1960 = 1
+	}
+}
+
+set_convoys = 20
+
+recruit_character = CHL_ricardo_lagos
+
+set_politics = {
+	ruling_party = social_democracy
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 4
+	reformed_communism = 0
+	social_democracy = 48
+	liberalism = 1
+	democratic = 47
+	neutrality = 0
+	paternal_autocracy = 0
+	fascism = 0
+}
+
+# Naval Variants #
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "CHL_2000_naval_mtg"
+}

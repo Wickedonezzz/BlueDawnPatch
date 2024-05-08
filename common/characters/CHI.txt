@@ -1,0 +1,60 @@
+characters = {
+
+	CHI_lee_teng = {
+		name = "Lee Teng Hui"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHI/Lee_Teng_hui.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism 
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	CHI_lien_chan = {
+		name = "Lien Chan"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHI/lien_chan.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism 
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	CHI_Hau_Pei_tsun = {
+		name = "Hau Pei-tsun"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHI/Hau_Pei_tsun.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism 
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	CHI_chen_shui_bian = {
+		name = "Chen Shui-bian"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHI/chen_shui_bian.png"
+			}
+		}
+		country_leader = {
+			ideology = liberalism_sub 
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

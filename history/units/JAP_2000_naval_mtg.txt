@@ -1,0 +1,217 @@
+units = {
+	fleet = {
+		name = "Nihonkai Kantai"
+		naval_base = 1136 # Maizuru #
+		task_force = {
+			name = "Maidzuru Jieitai minakami kantai"
+			location = 1136 # Maizuru #
+			ship = { name = "JDS Myoko" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = JAP version_name = "Kongo Class" } } }
+			ship = { name = "JDS Abukuma" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = JAP version_name = "Abukuma Class" } } }
+			ship = { name = "JDS Mineyuki" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = JAP version_name = "Hatsuyuki Class" } } }
+			ship = { name = "JDS Hamayuki" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = JAP version_name = "Hatsuyuki Class" } } }
+			ship = { name = "JDS Asagiri" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = JAP version_name = "Asagiri Class" } } }
+			ship = { name = "JDS Setogiri" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = JAP version_name = "Asagiri Class" } } }
+			ship = { name = "JDS Takatsuki" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = JAP version_name = "Takatsuki Class" } } }
+			ship = { name = "JDS Kikuzuki" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = JAP version_name = "Takatsuki Class" } } }
+			ship = { name = "JDS Haruna" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = JAP version_name = "Haruna Class" } } }
+		}
+		task_force = {
+			name = "Ominato Jieitai minakami kantai"
+			location = 9859 # Ominato #
+			ship = { name = "JDS Yudachi" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = JAP version_name = "Murasame Class" } } }
+			ship = { name = "JDS Jintsu" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = JAP version_name = "Abukuma Class" } } }
+			ship = { name = "JDS Chikuma" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = JAP version_name = "Abukuma Class" } } }
+			ship = { name = "JDS Ishikari" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = JAP version_name = "Ishikari Class" } } }
+			ship = { name = "JDS Yubari" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = JAP version_name = "Yubari Class" } } }
+			ship = { name = "JDS Yubetsu" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = JAP version_name = "Yubari Class" } } }
+			ship = { name = "JDS Hamagiri" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = JAP version_name = "Asagiri Class" } } }
+		}
+	}
+	fleet = {
+		name = "Taiheiyōkantai"
+		naval_base = 1092 # Kure #
+		task_force = {
+			name = "Kure Jieitai minakami kantai"
+			location = 1092 # Kure #
+			ship = { name = "JDS Yamayuki" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = JAP version_name = "Hatsuyuki Class" } } }
+			ship = { name = "JDS Matsuyuki" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = JAP version_name = "Hatsuyuki Class" } } }
+			ship = { name = "JDS Setoyuki" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = JAP version_name = "Hatsuyuki Class" } } }
+			ship = { name = "JDS Shimayuki" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = JAP version_name = "Hatsuyuki Class" } } }
+			ship = { name = "JDS Umigiri" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = JAP version_name = "Asagiri Class" } } }
+			ship = { name = "JDS Yoshino" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = JAP version_name = "Chikugo Class" } } }
+			ship = { name = "JDS Kumano" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = JAP version_name = "Chikugo Class" } } }
+			ship = { name = "JDS Noshiro" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = JAP version_name = "Chikugo Class" } } }
+			ship = { name = "JDS Akigumo" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = JAP version_name = "Yamagumo Class" } } }
+			ship = { name = "JDS Yugumo" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = JAP version_name = "Yamagumo Class" } } }
+			ship = { name = "JDS Hiei" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = JAP version_name = "Haruna Class" } } }
+		}
+		task_force = {
+			name = "Kure Jieitai sensuikan-tai"
+			location = 1092 # Kure #
+			ship = { name = "JDS Oyashio" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = JAP version_name = "Oyashio Class" } } }
+			ship = { name = "JDS Michishio" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = JAP version_name = "Oyashio Class" } } }
+			ship = { name = "JDS Okishio" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = JAP version_name = "Yushio Class" } } }
+			ship = { name = "JDS Nadashio" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = JAP version_name = "Yushio Class" } } }
+			ship = { name = "JDS Hamashio" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = JAP version_name = "Yushio Class" } } }
+			ship = { name = "JDS Akishio" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = JAP version_name = "Yushio Class" } } }
+			ship = { name = "JDS Harushio" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = JAP version_name = "Harushio Class" } } }
+			ship = { name = "JDS Natsushio" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = JAP version_name = "Harushio Class" } } }
+			ship = { name = "JDS Hayashio" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = JAP version_name = "Harushio Class" } } }
+			ship = { name = "JDS Arashio" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = JAP version_name = "Harushio Class" } } }
+			ship = { name = "JDS Wakashio" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = JAP version_name = "Harushio Class" } } }
+			ship = { name = "JDS Fuyushio" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = JAP version_name = "Harushio Class" } } }
+			ship = { name = "JDS Asashio" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = JAP version_name = "Harushio Class" } } }
+		}
+		task_force = {
+			name = "Yokosuka Jieitai minakami kantai"
+			location = 9998 # Yokosuka #
+			ship = { name = "JDS Murasame" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = JAP version_name = "Murasame Class" } } }
+			ship = { name = "JDS Kirishima" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = JAP version_name = "Kongo Class" } } }
+			ship = { name = "JDS Hatsuyuki" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = JAP version_name = "Hatsuyuki Class" } } }
+			ship = { name = "JDS Shirayuki" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = JAP version_name = "Hatsuyuki Class" } } }
+			ship = { name = "JDS Sawayuki" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = JAP version_name = "Hatsuyuki Class" } } }
+			ship = { name = "JDS Hatakaze" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = JAP version_name = "Hatakaze Class" } } }
+			ship = { name = "JDS Yamagiri" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = JAP version_name = "Asagiri Class" } } }
+			ship = { name = "JDS Yugiri" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = JAP version_name = "Asagiri Class" } } }
+			ship = { name = "JDS Amagiri" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = JAP version_name = "Asagiri Class" } } }
+			ship = { name = "JDS Teshio" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = JAP version_name = "Chikugo Class" } } }
+			ship = { name = "JDS Tachikaze" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = JAP version_name = "Tachikaze Class" } } }
+			ship = { name = "JDS Shirane" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = JAP version_name = "Shirane Class" } } }
+		}
+		task_force = {
+			name = "Yokosuka Jieitai sensuikan-tai"
+			location = 9998 # Yokosuka #
+			ship = { name = "JDS Takeshio" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = JAP version_name = "Yushio Class" } } }
+			ship = { name = "JDS Yukishio" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = JAP version_name = "Yushio Class" } } }
+			ship = { name = "JDS Sachishio" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = JAP version_name = "Yushio Class" } } }
+		}
+	}
+	fleet = {
+		name = "Higashishinakai Kantai"
+		naval_base = 9950 # Sasebo #
+		task_force = {
+			name = "Sasebo Jieitai minakami kantai"
+			location = 9950 # Sasebo #
+			ship = { name = "JDS Harusame" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = JAP version_name = "Murasame Class" } } }
+			ship = { name = "JDS Kirisame" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = JAP version_name = "Murasame Class" } } }
+			ship = { name = "JDS Kongo" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = JAP version_name = "Kongo Class" } } }
+			ship = { name = "JDS Chokai" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = JAP version_name = "Kongo Class" } } }
+			ship = { name = "JDS Oyodo" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = JAP version_name = "Abukuma Class" } } }
+			ship = { name = "JDS Sendai" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = JAP version_name = "Abukuma Class" } } }
+			ship = { name = "JDS Tone" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = JAP version_name = "Abukuma Class" } } }
+			ship = { name = "JDS Isoyuki" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = JAP version_name = "Hatsuyuki Class" } } }
+			ship = { name = "JDS Haruyuki" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = JAP version_name = "Hatsuyuki Class" } } }
+			ship = { name = "JDS Asayuki" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = JAP version_name = "Hatsuyuki Class" } } }
+			ship = { name = "JDS Shimakaze" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = JAP version_name = "Hatakaze Class" } } }
+			ship = { name = "JDS Sawagiri" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = JAP version_name = "Asagiri Class" } } }
+			ship = { name = "JDS Asakaze" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = JAP version_name = "Tachikaze Class" } } }
+			ship = { name = "JDS Sawakaze" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = JAP version_name = "Tachikaze Class" } } }
+			ship = { name = "JDS Kurama" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = JAP version_name = "Shirane Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+	# Destroyers #
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_hull_3
+			creator = "JAP" 
+			version_name = "Murasame Class"
+		}
+		name = "JDS Inazuma"
+		requested_factories = 1
+		progress = 0.93
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_hull_3
+			creator = "JAP" 
+			version_name = "Murasame Class"
+		}
+		name = "JDS Samidare"
+		requested_factories = 1
+		progress = 0.91
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_hull_3
+			creator = "JAP" 
+			version_name = "Murasame Class"
+		}
+		name = "JDS Ikazuchi"
+		requested_factories = 1
+		progress = 0.61
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_hull_3
+			creator = "JAP" 
+			version_name = "Murasame Class"
+		}
+		name = "JDS Ariake"
+		requested_factories = 1
+		progress = 0.22
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_hull_3
+			creator = "JAP" 
+			version_name = "Murasame Class"
+		}
+		name = "JDS Akebono"
+		requested_factories = 1
+		progress = 0.07
+		amount = 1
+	}
+
+	# Attack Submarine #
+	add_equipment_production = {
+		equipment = {
+			type = attack_submarine_hull_3
+			creator = "JAP" 
+			version_name = "Oyashio Class"
+		}
+		name = "JDS Uzushio"
+		requested_factories = 1
+		progress = 0.95
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = attack_submarine_hull_3
+			creator = "JAP" 
+			version_name = "Oyashio Class"
+		}
+		name = "JDS Makishio"
+		requested_factories = 1
+		progress = 0.69
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = attack_submarine_hull_3
+			creator = "JAP" 
+			version_name = "Oyashio Class"
+		}
+		name = "JDS Isoshio"
+		requested_factories = 1
+		progress = 0.45
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = attack_submarine_hull_3
+			creator = "JAP" 
+			version_name = "Oyashio Class"
+		}
+		name = "JDS Narushio"
+		requested_factories = 1
+		progress = 0.19
+		amount = 1
+	}
+}

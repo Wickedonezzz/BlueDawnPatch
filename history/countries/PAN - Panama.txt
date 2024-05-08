@@ -1,0 +1,26 @@
+﻿capital = 304
+
+#oob = "PAN_1936"
+
+set_war_support = 0.1
+set_convoys = 10
+
+recruit_character = PAN_mireya_moscoso
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 0
+	reformed_communism = 0
+	social_democracy = 37
+	liberalism = 19
+	democratic = 44
+	neutrality = 0
+	paternal_autocracy = 0
+	fascism = 0
+}

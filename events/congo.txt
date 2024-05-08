@@ -1,0 +1,660 @@
+add_namespace = congo
+add_namespace = uganda
+
+#raid RCD - Goma ?#
+country_event = {
+	id = congo.1
+	title = congo.1.t
+	desc = congo.1.d
+	picture = GFX_report_event_spark
+	
+	trigger = {
+	date > 2000.4.15
+	original_tag = RCK
+	country_exists = RCK
+	country_exists = RGO
+	}
+
+	fire_only_once = yes
+
+		#yes#
+	option = {
+		name = congo.1.a
+		RGO = {
+		country_event = {id = congo.2 days = 1}
+		add_stability = -0.05
+		}
+		army_experience = 15
+		ai_chance = {
+		factor = 100
+		}
+	}
+}
+
+#RCD - Kisangani raids our bases !#
+country_event = {
+	id = congo.2
+	title = congo.2.t
+	desc = congo.2.d
+	picture = GFX_report_event_spark
+	
+	is_triggered_only = yes
+	
+		#enough is enough#
+	option = {
+		name = congo.2.a
+
+		news_event = {id = old_times_news.20}
+
+		army_experience = 15
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+		
+		RGO = {
+			swap_ideas = {
+			remove_idea = RCD_tensions
+			add_idea = RGO_RCD_war
+			}
+			
+			declare_war_on = {
+				target = RCK
+				type = topple_government
+			}
+		
+		}
+		
+		RCK = {
+			swap_ideas = {
+			remove_idea = RCD_tensions
+			add_idea = RCK_RCD_war
+			}
+
+		}
+		
+		
+				
+		
+		ai_chance = {
+		factor = 100
+		}
+	}
+}	
+	
+	#rebels defeated#
+	country_event = {
+		id = congo.3
+		title = congo.3.t
+		desc = congo.3.d
+		picture = GFX_report_event_spark
+			
+		trigger = {
+		original_tag = COG
+		has_war = no
+			295 = {
+			is_controlled_by = COG
+			}
+		
+			538 = {
+			is_controlled_by = COG
+			}
+			
+			718 = {
+			is_controlled_by = COG
+			}
+			
+			932 = {
+			is_controlled_by = COG
+			}
+			
+			929 = {
+			is_controlled_by = COG
+			}
+			
+			931 = {			
+			is_controlled_by = COG
+			}
+			
+			930 = {			
+			is_controlled_by = COG
+			}
+			
+			933 = {			
+			is_controlled_by = COG
+			}
+
+		
+		}
+
+		fire_only_once = yes
+
+		#yay#
+		option = {
+			name = congo.3.a
+			retire_ideology_leader = socialism			
+			add_country_leader_role = {
+				character = COG_laurent
+				promote_leader = yes
+				country_leader = {
+					ideology = revolutionary_socialism
+				}
+			}
+			set_politics = {
+				ruling_party = socialism
+			}
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.15
+			}
+			add_stability = 0.50
+			
+			SOV = {
+				proxy_war_won_by_SOV = yes
+			}
+			
+			COG = {
+				dismantle_faction = yes  
+			}
+			
+			news_event = {id = old_times_news.21}
+			
+			annex_country = {
+			target = RGO
+			transfer_troops = no
+			}
+			
+			annex_country = {
+			target = RCK
+			transfer_troops = no
+			}
+			
+			
+			295 = {
+			remove_core_of = RCK
+			remove_core_of = RGO
+			remove_core_of = COG
+			}
+		
+			538 = {
+			remove_core_of = RCK
+			remove_core_of = RGO
+			remove_core_of = COG
+			}
+			
+			718 = {
+			remove_core_of = RCK
+			remove_core_of = RGO
+			remove_core_of = COG
+			}
+			
+			932 = {
+			remove_core_of = RCK
+			remove_core_of = RGO
+			remove_core_of = COG
+			}
+			
+			929 = {
+			remove_core_of = RCK
+			remove_core_of = RGO
+			remove_core_of = COG
+			}
+			
+			931 = {			
+			remove_core_of = RCK
+			remove_core_of = RGO
+			remove_core_of = COG
+			}
+			
+			930 = {			
+			remove_core_of = RCK
+			remove_core_of = RGO
+			remove_core_of = COG
+			}
+			
+			933 = {			
+			remove_core_of = RCK
+			remove_core_of = RGO
+			remove_core_of = COG
+			}
+			
+
+			COG = {
+				dismantle_faction = yes
+				white_peace = UGA
+				white_peace = RWA
+				white_peace = BRD
+			}
+							
+			ANG = {
+				dismantle_faction = yes
+				white_peace = UGA
+				white_peace = RWA
+				white_peace = BRD
+			}
+							
+			NMB = {
+				dismantle_faction = yes
+				white_peace = UGA
+				white_peace = RWA
+				white_peace = BRD
+			}
+				
+			ZIM = {
+				dismantle_faction = yes
+				white_peace = UGA
+				white_peace = RWA
+				white_peace = BRD
+			}
+							
+			BRD = {
+			dismantle_faction = yes
+			}
+			
+			UGA = {
+			dismantle_faction = yes
+			}
+							
+		}
+	}
+	
+	#congo gov defeated as RCD - K#
+	country_event = {
+		id = congo.4
+		title = congo.4.t
+		desc = congo.4.d
+		picture = GFX_report_event_spark
+			
+		trigger = {
+		original_tag = RCK
+			295 = {
+			is_controlled_by = RCK
+			}
+		
+			538 = {
+			is_controlled_by = RCK
+			}
+			
+			718 = {
+			is_controlled_by = RCK
+			}
+			
+			932 = {
+			is_controlled_by = RCK
+			}
+			
+			929 = {
+			is_controlled_by = RCK
+			}
+			
+			931 = {			
+			is_controlled_by = RCK
+			}
+			
+			930 = {			
+			is_controlled_by = RCK
+			}
+			
+			933 = {			
+			is_controlled_by = RCK
+			}
+
+		}
+
+		fire_only_once = yes
+
+		#yay#
+		option = {
+			name = congo.4.a
+			add_stability = 0.50
+			
+			set_cosmetic_tag = RCD_won
+			
+			USA = {
+				proxy_war_won_by_USA = yes
+			}
+			
+			news_event = {id = old_times_news.22}
+			
+			annex_country = {
+			target = RGO
+			transfer_troops = no
+			}
+			
+			annex_country = {
+			target = COG
+			transfer_troops = no
+			}
+			
+			295 = {
+			remove_core_of = RCK
+			remove_core_of = RGO
+			remove_core_of = COG
+			}
+		
+			538 = {
+			remove_core_of = RCK
+			remove_core_of = RGO
+			remove_core_of = COG
+			}
+			
+			718 = {
+			remove_core_of = RCK
+			remove_core_of = RGO
+			remove_core_of = COG
+			}
+			
+			932 = {
+			remove_core_of = RCK
+			remove_core_of = RGO
+			remove_core_of = COG
+			}
+			
+			929 = {
+			remove_core_of = RCK
+			remove_core_of = RGO
+			remove_core_of = COG
+			}
+			
+			931 = {			
+			remove_core_of = RCK
+			remove_core_of = RGO
+			remove_core_of = COG
+			}
+			
+			930 = {			
+			remove_core_of = RCK
+			remove_core_of = RGO
+			remove_core_of = COG
+			}
+			
+			933 = {			
+			remove_core_of = RCK
+			remove_core_of = RGO
+			remove_core_of = COG
+			}
+			
+			COG = {
+				dismantle_faction = yes
+				white_peace = UGA
+				white_peace = RWA
+				white_peace = BRD
+			}
+							
+			ANG = {
+				dismantle_faction = yes
+				white_peace = UGA
+				white_peace = RWA
+				white_peace = BRD
+			}
+							
+			NMB = {
+				dismantle_faction = yes
+				white_peace = UGA
+				white_peace = RWA
+				white_peace = BRD
+			}
+				
+			ZIM = {
+				dismantle_faction = yes
+				white_peace = UGA
+				white_peace = RWA
+				white_peace = BRD
+			}
+							
+			BRA = {
+			dismantle_faction = yes
+				white_peace = UGA
+			}
+			
+			RWA = {
+				white_peace = UGA
+			}
+			
+			UGA = {
+			dismantle_faction = yes
+			}
+							
+		}
+	}
+	
+	#congo gov defeated as RCD - G#
+	country_event = {
+		id = congo.5
+		title = congo.5.t
+		desc = congo.5.d
+		picture = GFX_report_event_spark
+			
+		trigger = {
+		original_tag = RGO
+			295 = {
+			is_controlled_by = RGO
+			}
+		
+			538 = {
+			is_controlled_by = RGO
+			}
+			
+			718 = {
+			is_controlled_by = RGO
+			}
+			
+			932 = {
+			is_controlled_by = RGO
+			}
+			
+			929 = {
+			is_controlled_by = RGO
+			}
+			
+			931 = {			
+			is_controlled_by = RGO
+			}
+			
+			930 = {			
+			is_controlled_by = RGO
+			}
+			
+			933 = {			
+			is_controlled_by = RGO
+			}
+			
+		}
+
+		fire_only_once = yes
+
+		#yay#
+		option = {
+			name = congo.5.a
+			add_stability = 0.50
+			set_cosmetic_tag = RCD_won
+			
+			USA = {
+				proxy_war_won_by_USA = yes
+			}
+			
+			news_event = {id = old_times_news.23}
+			annex_country = {
+			target = RCK
+			transfer_troops = no
+			}
+			
+			annex_country = {
+			target = COG
+			transfer_troops = no
+			}
+			
+			295 = {
+			remove_core_of = RCK
+			remove_core_of = RGO
+			remove_core_of = COG
+			}
+		
+			538 = {
+			remove_core_of = RCK
+			remove_core_of = RGO
+			remove_core_of = COG
+			}
+			
+			718 = {
+			remove_core_of = RCK
+			remove_core_of = RGO
+			remove_core_of = COG
+			}
+			
+			932 = {
+			remove_core_of = RCK
+			remove_core_of = RGO
+			remove_core_of = COG
+			}
+			
+			929 = {
+			remove_core_of = RCK
+			remove_core_of = RGO
+			remove_core_of = COG
+			}
+			
+			931 = {			
+			remove_core_of = RCK
+			remove_core_of = RGO
+			remove_core_of = COG
+			}
+			
+			930 = {			
+			remove_core_of = RCK
+			remove_core_of = RGO
+			remove_core_of = COG
+			}
+			
+			933 = {			
+			remove_core_of = RCK
+			remove_core_of = RGO
+			remove_core_of = COG
+			}
+			
+			COG = {
+				dismantle_faction = yes
+				white_peace = UGA
+				white_peace = RWA
+				white_peace = BRD
+			}
+							
+			ANG = {
+				dismantle_faction = yes
+				white_peace = UGA
+				white_peace = RWA
+				white_peace = BRD
+			}
+							
+			NMB = {
+				dismantle_faction = yes
+				white_peace = UGA
+				white_peace = RWA
+				white_peace = BRD
+			}
+				
+			ZIM = {
+				dismantle_faction = yes
+				white_peace = UGA
+				white_peace = RWA
+				white_peace = BRD
+			}
+							
+			BRD = {
+			dismantle_faction = yes
+				white_peace = UGA
+			}
+			
+			RWA  = {
+				white_peace = UGA
+			}
+			
+			UGA = {
+			dismantle_faction = yes
+			}
+							
+		}
+	}
+	
+##fall of the regime
+country_event = {
+	id = uganda.1
+	title = uganda.1.t
+	desc = uganda.1.d
+	picture = GFX_report_event_spark
+	
+	is_triggered_only = yes
+
+	#kony trolls over the nation of Uganda, causing irreversible damage#
+	option = {
+		name = uganda.1.a 
+		add_stability = -0.05
+		news_event = {id = old_times_news.50 days = 2}
+		retire_country_leader = no
+		promote_character = UGA_kony
+		set_cosmetic_tag = UGA_kony_trollface
+		swap_ideas = {
+			remove_idea = UGA_increasing_authoritarianism
+			add_idea = UGA_extreme_authoritarianism
+		}
+		set_party_name = {
+			ideology = paternal_autocracy
+			long_name = UGA_neutrality_party_kony_long
+			name = UGA_neutrality_party_kony
+		}
+		
+		set_politics = {
+			ruling_party = paternal_autocracy
+			elections_allowed = yes
+			last_election = "2000.12.17"
+			election_frequency = 48
+		}
+		
+		add_popularity = {
+			ideology = paternal_autocracy
+			popularity = 0.30
+		}
+		
+		add_ideas = UGA_konys_cult
+		add_ideas = UGA_an_army_of_criminals
+		remove_ideas = usa_aligned_nation
+		army_experience = 15
+		ai_chance = {
+		factor = 50
+		}
+	}
+	
+	#ISIS wannabes trolls over the nation of Uganda, causing irreversible damage#
+	option = {
+		name = uganda.1.b 
+		add_stability = -0.15
+		#news_event = {id = old_times_news.50 days = 2}
+		retire_country_leader = yes
+		promote_character = UGA_jamil_mukulu
+		set_cosmetic_tag = UGA_islam_time
+		swap_ideas = {
+			remove_idea = UGA_increasing_authoritarianism
+			add_idea = UGA_extreme_authoritarianism_islamists
+		}
+		set_politics = {
+			ruling_party = paternal_autocracy
+			elections_allowed = no
+			last_election = "2000.12.17"
+			election_frequency = 48
+		}
+		
+		set_popularities = {
+				paternal_autocracy = 55
+				neutrality = 35
+				democratic = 10
+		}
+		add_ideas = UGA_forced_sharia
+		add_ideas = UGA_minority_rule
+		add_ideas = UGA_an_army_of_criminals
+		remove_ideas = usa_aligned_nation
+		army_experience = 15
+		ai_chance = {
+		factor = 50
+		}
+	}
+}

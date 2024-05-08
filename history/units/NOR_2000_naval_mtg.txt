@@ -1,0 +1,32 @@
+units = {
+	fleet = {
+		name = "Atlanterhavsflaten"
+		naval_base = 122 # Bergen #
+		task_force = {
+			name = "Atlantisk Overflateflate"
+			location = 122 # Bergen #
+			ship = { name = "HNoMS Bergen" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = NOR version_name = "Oslo Class" } } }
+			ship = { name = "HNoMS Trondheim" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = NOR version_name = "Oslo Class" } } }
+			ship = { name = "HNoMS Stavanger" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = NOR version_name = "Oslo Class" } } }
+			ship = { name = "HNoMS Narvik" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = NOR version_name = "Oslo Class" } } }
+		}
+		task_force = {
+			name = "Atlantisk Ubatflate"
+			location = 122 # Bergen #
+			ship = { name = "HNoMS Ula" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = NOR version_name = "Ula Class" } } }
+			ship = { name = "HNoMS Utvær" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = NOR version_name = "Ula Class" } } }
+			ship = { name = "HNoMS Ulthaug" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = NOR version_name = "Ula Class" } } }
+			ship = { name = "HNoMS Uredd" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = NOR version_name = "Ula Class" } } }
+			ship = { name = "HNoMS Utsira" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = NOR version_name = "Ula Class" } } }
+			ship = { name = "HNoMS Utstein" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = NOR version_name = "Ula Class" } } }
+			ship = { name = "HNoMS Kobben" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = NOR version_name = "Kobben Class" } } }
+			ship = { name = "HNoMS Kunna" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = NOR version_name = "Kobben Class" } } }
+			ship = { name = "HNoMS Skolpen" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = NOR version_name = "Kobben Class" } } }
+			ship = { name = "HNoMS Stord" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = NOR version_name = "Kobben Class" } } }
+			ship = { name = "HNoMS Svenner" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = NOR version_name = "Kobben Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

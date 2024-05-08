@@ -1,0 +1,66 @@
+scripted_gui = {
+
+	usa_decision_ui_homefront_gui = {
+		window_name = "usa_decision_ui_homefront_window"
+		context_type = player_context
+
+		visible = {
+			original_tag = USA
+		}
+	}
+
+	triggers = {
+		USA_populace_icon_visible = {
+			#has_country_flag = 
+		}
+		
+		USA_wall_street_icon_visible = {
+			#has_country_flag = 
+		}
+		
+		USA_human_rights_watch_icon_visible = {
+			#has_country_flag = 
+		}
+	
+		USA_mic_icon_visible = {
+			#has_country_flag = 
+		}
+
+
+	open_USA_homefront_gui = {
+		window_name = "open_USA_homwfront_GUI_window"
+		context_type = player_context
+		parent_window_token = politics_tab
+	
+		visible = {
+			original_tag = USA
+		}
+	
+		effects = {
+			open_open_USA_icon_gui_click = {
+				if = {
+					limit = { has_country_flag = open_USA_homefront_gui }
+					clr_country_flag = open_USA_homefront_gui
+				}
+				else_if = {
+				set_country_flag = open_USA_homefront_gui
+				}
+	close_USA_homefront_gui = {
+		window_name = "open_USA_homwfront_GUI_window"
+		context_type = player_context
+		parent_window_token = politics_tab
+	
+		visible = {
+			original_tag = USA
+		}
+	
+		effects = {
+			close_USA_homefront_icon_gui_click = {
+				if = {
+					limit = { has_country_flag = close_USA_homefront_gui }
+					clr_country_flag = close_USA_homefront_gui
+				}
+				else_if = {
+				set_country_flag = close_USA_homefront_gui
+				}
+}

@@ -1,0 +1,25 @@
+state={
+	id=991
+	name="STATE_991"
+	history={
+		owner = LIB
+		add_core_of = LIB
+		add_core_of = LUR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+
+		}
+		victory_points = {
+			13507 3 
+		}
+	}	
+	provinces={
+		13506 13507 13510 13515 
+	}
+	manpower=754000
+	state_category=city	
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

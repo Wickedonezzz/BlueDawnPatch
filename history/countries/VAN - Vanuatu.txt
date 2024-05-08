@@ -1,0 +1,20 @@
+﻿capital = 962
+
+##oob = ""
+
+recruit_character = VAN_barak_sope
+
+set_convoys = 20
+
+set_politics = {
+	ruling_party = social_democracy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	liberalism = 30
+	socialism = 25
+	social_democracy = 41
+	democratic = 4
+}

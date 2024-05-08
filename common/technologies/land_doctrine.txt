@@ -1,0 +1,982 @@
+technologies = {
+	
+	guerilla_warfare = {
+		doctrine_name = "GUERILLA_WARFARE_DOCTRINE"
+		
+		xp_research_type = army
+		xp_unlock_cost = 100
+		xor = { cyber_warfare } 
+
+		path = {
+			leads_to_tech = irregular_units 
+			research_cost_coeff = 1
+		}
+		
+		max_dig_in = 10
+		dig_in_speed = 10
+		terrain_penalty_reduction = 0.2
+
+		doctrine = yes	
+		research_cost = 2.25
+		
+		categories = {
+			land_doctrine
+			mod_cat_guerilla_warfare
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
+	
+	irregular_units = {
+
+		xp_research_type = army
+		xp_unlock_cost = 100
+
+		militia_unit = {
+			soft_attack = 0.15
+			max_organisation = 15
+			defense = 0.15
+		}
+			
+		path = {
+			leads_to_tech = popular_support
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 4.5
+		
+		categories = {
+			land_doctrine
+			mod_cat_guerilla_warfare
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
+
+	popular_support = {
+
+		xp_research_type = army
+		xp_unlock_cost = 100
+		
+		coordination_bonus = 0.02
+		conscription = 0.05
+		out_of_supply_factor = -0.2
+		
+		path = {
+			leads_to_tech = infantry_support
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = resistance_operations
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 4.5
+		
+		categories = {
+			land_doctrine
+			mod_cat_guerilla_warfare
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
+	
+	infantry_support = {
+		xor = {resistance_operations}
+		
+		xp_research_type = army
+		xp_unlock_cost = 100
+
+		category_all_infantry = {
+			soft_attack = 0.05
+			defense = 0.05
+			max_organisation = 5
+		}
+		
+		path = {
+			leads_to_tech = concentrated_defence
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 4.5
+		
+		categories = {
+			land_doctrine
+			mod_cat_guerilla_warfare
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = -2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
+
+	concentrated_defence = {
+		
+		xp_research_type = army
+		xp_unlock_cost = 100
+
+		max_dig_in = 10
+		category_all_infantry = {
+			defense = 0.10
+		}
+		
+		path = {
+			leads_to_tech = organized_retreat
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 4.5
+		
+		categories = {
+			land_doctrine
+			mod_cat_guerilla_warfare
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = -2 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
+	
+	resistance_operations = {
+		xor = {infantry_support}
+		
+		xp_research_type = army
+		xp_unlock_cost = 100
+		
+		resistance_damage_to_garrison_on_our_occupied_states = 0.25
+		resistance_growth_on_our_occupied_states = 0.25 
+
+		path = {
+			leads_to_tech = behind_the_lines
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 4.5
+		
+		categories = {
+			land_doctrine
+			mod_cat_guerilla_warfare
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
+
+	behind_the_lines = {
+		
+		xp_research_type = army
+		xp_unlock_cost = 100
+
+		supply_consumption_factor = -0.10
+		attrition = -0.20
+		
+		path = {
+			leads_to_tech = organized_retreat
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 4.5
+		
+		categories = {
+			land_doctrine
+			mod_cat_guerilla_warfare
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 2 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
+
+
+	organized_retreat = {
+		
+		xp_research_type = army
+		xp_unlock_cost = 100
+
+		category_all_infantry = {
+			soft_attack = 0.20
+			default_morale = 0.30
+			
+		}	
+		dig_in_speed = 10
+		land_reinforce_rate = 0.10
+		
+		path = {
+			leads_to_tech = insurgent_offensive
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 4.5
+		
+		categories = {
+			land_doctrine
+			mod_cat_guerilla_warfare
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
+
+	insurgent_offensive = {
+		
+		xp_research_type = army
+		xp_unlock_cost = 100
+
+		category_all_infantry = {
+			soft_attack = 0.20
+		}
+		
+		no_supply_grace	= 48
+		resistance_damage_to_garrison_on_our_occupied_states = 0.15
+		
+		path = {
+			leads_to_tech = arms_smuggling
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 4.5
+		
+		categories = {
+			land_doctrine
+			mod_cat_guerilla_warfare
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 0 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
+
+	arms_smuggling = {
+		
+		xp_research_type = army
+		xp_unlock_cost = 100
+		
+		equipment_capture_factor = 0.5
+		
+		path = {
+			leads_to_tech = aggressive_mobility
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = terror_tactics
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 4.5
+		
+		categories = {
+			land_doctrine
+			mod_cat_guerilla_warfare
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 0 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
+
+	aggressive_mobility = {
+		xor = {terror_tactics}
+		
+		xp_research_type = army
+		xp_unlock_cost = 100
+		
+		category_all_infantry = {
+			soft_attack = 0.05
+			max_organisation = 5
+		}
+		
+		out_of_supply_factor = -0.48
+		army_speed_factor = 0.2
+		
+		path = {
+			leads_to_tech = coordinated_offensives
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 4.5
+		
+		categories = {
+			land_doctrine
+			mod_cat_guerilla_warfare
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 2 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
+
+	terror_tactics = {
+		xor = {aggressive_mobility}
+		
+		xp_research_type = army
+		xp_unlock_cost = 100
+		
+		stability_factor = -0.20
+		category_all_infantry = {
+			soft_attack = 0.10
+		}
+		resistance_damage_to_garrison_on_our_occupied_states = 0.30
+		resistance_growth_on_our_occupied_states = 0.30 
+		
+		path = {
+			leads_to_tech = coordinated_offensives
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 4.5
+		
+		categories = {
+			land_doctrine
+			mod_cat_guerilla_warfare
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = -2 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
+
+	coordinated_offensives = {
+		
+		xp_research_type = army
+		xp_unlock_cost = 100
+		
+		coordination_bonus = 0.05
+		category_all_infantry = {
+			soft_attack = 0.10
+		}
+		
+		path = {
+			#leads_to_tech = arms_smuggling
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 4.5
+		
+		categories = {
+			land_doctrine
+			mod_cat_guerilla_warfare
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 0 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
+
+	#cyber warfare#
+
+	cyber_warfare = {
+		doctrine_name = "CYBER_WARFARE_DOCTRINE"
+		
+		xp_research_type = army
+		xp_unlock_cost = 100
+		xor = { guerilla_warfare } 
+
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = extensive_training
+		}
+		
+		planning_speed = 0.05
+		research_speed_factor = 0.04
+
+		doctrine = yes	
+		research_cost = 2.25
+		
+		categories = {
+			land_doctrine
+			mod_cat_cyber_warfare
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
+
+	extensive_training = {
+		
+		xp_research_type = army
+		xp_unlock_cost = 100
+
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = improve_cyber_structure
+		}
+		
+		planning_speed = 0.10
+		minimum_training_level = -0.1
+		training_time_factor = -0.10
+
+		doctrine = yes	
+		research_cost = 2.25
+		
+		categories = {
+			land_doctrine
+			mod_cat_cyber_warfare
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
+
+	improve_cyber_structure = {
+		
+		xp_research_type = army
+		xp_unlock_cost = 100
+
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = hire_red_teamers
+		}
+
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = spread_propaganda
+		}
+		
+		army_speed_factor = 0.05
+		category_all_infantry = {
+			max_organisation = 0.10
+		}
+
+		doctrine = yes	
+		research_cost = 2.25
+		
+		categories = {
+			land_doctrine
+			mod_cat_cyber_warfare
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
+
+ 	hire_red_teamers = {
+		
+		xp_research_type = army
+		xp_unlock_cost = 100
+
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = collaborative_planning
+		}
+		
+		max_command_power = 50
+		max_command_power_mult = 0.3 
+		
+		xor = { spread_propaganda }
+
+		doctrine = yes	
+		research_cost = 2.25
+		
+		categories = {
+			land_doctrine
+			mod_cat_cyber_warfare
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
+
+
+	collaborative_planning = {
+		
+		xp_research_type = army
+		xp_unlock_cost = 100
+
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = strategic_information_warfare
+		}
+
+		max_planning = 15
+		category_all_infantry = {
+			max_organisation = 10
+		}
+		
+
+		doctrine = yes	
+		research_cost = 2.25
+		
+		categories = {
+			land_doctrine
+			mod_cat_cyber_warfare
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 2 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
+
+	spread_propaganda = {
+		
+		xp_research_type = army
+		xp_unlock_cost = 100
+
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = tech_warfare_integration
+		}
+
+		xor = { hire_red_teamers }
+		
+		resistance_target = -0.25
+		army_morale = 15
+		
+
+		doctrine = yes	
+		research_cost = 2.25
+		
+		categories = {
+			land_doctrine
+			mod_cat_cyber_warfare
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = -2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
+
+	tech_warfare_integration = {
+		
+		xp_research_type = army
+		xp_unlock_cost = 100
+
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = strategic_information_warfare
+		}
+
+		army_attack_factor = 0.1
+		planning_speed = 0.10
+
+		
+
+		doctrine = yes	
+		research_cost = 2.25
+		
+		categories = {
+			land_doctrine
+			mod_cat_cyber_warfare
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = -2 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
+
+	strategic_information_warfare = {
+		
+		xp_research_type = army
+		xp_unlock_cost = 100
+
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = drone_supply
+		}
+
+		intel_network_gain = 1
+		coordination_bonus = 0.5
+
+		doctrine = yes	
+		research_cost = 2.25
+		
+		categories = {
+			land_doctrine
+			mod_cat_cyber_warfare
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
+
+	drone_supply = {
+		
+		xp_research_type = army
+		xp_unlock_cost = 100
+		supply_consumption_factor = -0.1
+
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = battle_planning
+		}
+
+		out_of_supply_factor = -0.24
+		no_supply_grace	= 24
+		
+
+		doctrine = yes	
+		research_cost = 2.25
+		
+		categories = {
+			land_doctrine
+			mod_cat_cyber_warfare
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 0 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
+
+	battle_planning = {
+		
+		xp_research_type = army
+		xp_unlock_cost = 100
+		supply_consumption_factor = -0.1
+
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = advanced_tech
+		}
+		
+		category_all_infantry = {
+		max_organisation = 10
+		}
+		max_planning = 15
+		planning_speed = 0.15
+
+		doctrine = yes	
+		research_cost = 2.25
+		
+		categories = {
+			land_doctrine
+			mod_cat_cyber_warfare
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 0 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
+
+	advanced_tech = {
+		
+		xp_research_type = army
+		xp_unlock_cost = 100
+		supply_consumption_factor = -0.1
+
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = fast_gains
+		}
+
+		research_speed_factor = 0.15
+		offence = 0.05
+
+		
+
+		doctrine = yes	
+		research_cost = 2.25
+		
+		categories = {
+			land_doctrine
+			mod_cat_cyber_warfare
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 0 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
+
+	fast_gains = {
+		
+		xp_research_type = army
+		xp_unlock_cost = 100
+		supply_consumption_factor = -0.1
+
+		path = {
+			research_cost_coeff = 1
+		}
+
+		research_speed_factor = 0.1
+		army_speed_factor = 0.1
+		offence = 0.10
+
+		doctrine = yes	
+		research_cost = 2.25
+		
+		categories = {
+			land_doctrine
+			mod_cat_cyber_warfare
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 0 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
+
+}

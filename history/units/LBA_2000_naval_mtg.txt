@@ -1,0 +1,19 @@
+units = {
+	fleet = {
+		name = "Al'ustul Alliybiu"
+		naval_base = 1149 # Tripoli #
+		task_force = {
+			name = "Al'ustul Alliybiu Alsathiu"
+			location = 1149 # Tripoli #
+			ship = { name = "Al Hani" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = LBA creator = SOV version_name = "Koni II Class (Pr. 1159TR)" } } }
+			ship = { name = "Al Kyrdabian" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = LBA creator = SOV version_name = "Koni II Class (Pr. 1159TR)" } } }
+
+			ship = { name = "Ean Mara" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = LBA creator = SOV version_name = "Nanuchka II Class (Pr. 1234E)" } } }
+			ship = { name = "Ean Al Gazala" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = LBA creator = SOV version_name = "Nanuchka II Class (Pr. 1234E)" } } }
+			ship = { name = "Ean Zaara" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = LBA creator = SOV version_name = "Nanuchka II Class (Pr. 1234E)" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

@@ -1,0 +1,296 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "indian_tsunami_decision_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 900 }
+
+		instantTextBoxType = {
+			name ="aid_header"
+			position = { x = 20 y = 20 }
+			font = "hoi_24header"
+			text = "INDTSU_aid_header"
+			format = center
+			maxHeight = 24
+		}
+		instantTextBoxType = {
+			name ="aid_header_description"
+			position = { x = 20 y = 45 }
+			font = "hoi_16mbs"
+			text = "INDTSU_aid_header_description"
+			format = center
+		}
+		instantTextBoxType = {
+			name ="aid_current_support"
+			position = { x = 20 y = 120 }
+			font = "hoi_16mbs"
+			text = "INDTSU_aid_current_support"
+			format = center
+		}
+
+		instantTextBoxType = {
+			name ="influence_header"
+			position = { x = 270 y = 20 }
+			font = "hoi_24header"
+			text = "INDTSU_influence_header"
+			format = center
+			maxHeight = 24
+		}
+		instantTextBoxType = {
+			name ="influence_header_description"
+			position = { x = 270 y = 45 }
+			font = "hoi_16mbs"
+			text = "INDTSU_influence_header_description"
+			format = center
+		}
+
+		iconType = {
+			name = "icon_indian_tsunami_influence_table"
+			spriteType = "GFX_indian_tsunami_influence_table"
+			position = { x = 20 y = 145 }
+		}
+		instantTextBoxType = {
+			name ="table_number_box_row_1_column_1"
+			position = { x = 174 y = 185 }
+			font = "hoi_18mbs"
+			text = "INDTSU_number_box_row_1_column_1"
+			format = center
+		}
+		instantTextBoxType = {
+			name ="table_number_box_row_2_column_1"
+			position = { x = 174 y = 221 }
+			font = "hoi_18mbs"
+			text = "INDTSU_number_box_row_2_column_1"
+			format = center
+		}
+		instantTextBoxType = {
+			name ="table_number_box_row_3_column_1"
+			position = { x = 174 y = 257 }
+			font = "hoi_18mbs"
+			text = "INDTSU_number_box_row_3_column_1"
+			format = center
+		}
+		instantTextBoxType = {
+			name ="table_number_box_row_4_column_1"
+			position = { x = 174 y = 293 }
+			font = "hoi_18mbs"
+			text = "INDTSU_number_box_row_4_column_1"
+			format = center
+		}
+		instantTextBoxType = {
+			name ="table_number_box_row_5_column_1"
+			position = { x = 174 y = 329 }
+			font = "hoi_18mbs"
+			text = "INDTSU_number_box_row_5_column_1"
+			format = center
+		}
+		instantTextBoxType = {
+			name ="table_number_box_row_1_column_2"
+			position = { x = 220 y = 185 }
+			font = "hoi_18mbs"
+			text = "INDTSU_number_box_row_1_column_2"
+			format = center
+		}
+		instantTextBoxType = {
+			name ="table_number_box_row_2_column_2"
+			position = { x = 220 y = 221 }
+			font = "hoi_18mbs"
+			text = "INDTSU_number_box_row_2_column_2"
+			format = center
+		}
+		instantTextBoxType = {
+			name ="table_number_box_row_3_column_2"
+			position = { x = 220 y = 257 }
+			font = "hoi_18mbs"
+			text = "INDTSU_number_box_row_3_column_2"
+			format = center
+		}
+		instantTextBoxType = {
+			name ="table_number_box_row_4_column_2"
+			position = { x = 220 y = 293 }
+			font = "hoi_18mbs"
+			text = "INDTSU_number_box_row_4_column_2"
+			format = center
+		}
+		instantTextBoxType = {
+			name ="table_number_box_row_5_column_2"
+			position = { x = 220 y = 329 }
+			font = "hoi_18mbs"
+			text = "INDTSU_number_box_row_5_column_2"
+			format = center
+		}
+		instantTextBoxType = {
+			name ="table_number_box_row_1_column_3"
+			position = { x = 266 y = 185 }
+			font = "hoi_18mbs"
+			text = "INDTSU_number_box_row_1_column_3"
+			format = center
+		}
+		instantTextBoxType = {
+			name ="table_number_box_row_2_column_3"
+			position = { x = 266 y = 221 }
+			font = "hoi_18mbs"
+			text = "INDTSU_number_box_row_2_column_3"
+			format = center
+		}
+		instantTextBoxType = {
+			name ="table_number_box_row_3_column_3"
+			position = { x = 266 y = 257 }
+			font = "hoi_18mbs"
+			text = "INDTSU_number_box_row_3_column_3"
+			format = center
+		}
+		instantTextBoxType = {
+			name ="table_number_box_row_4_column_3"
+			position = { x = 266 y = 293 }
+			font = "hoi_18mbs"
+			text = "INDTSU_number_box_row_4_column_3"
+			format = center
+		}
+		instantTextBoxType = {
+			name ="table_number_box_row_5_column_3"
+			position = { x = 266 y = 329 }
+			font = "hoi_18mbs"
+			text = "INDTSU_number_box_row_5_column_3"
+			format = center
+		}
+		instantTextBoxType = {
+			name ="table_number_box_row_1_column_4"
+			position = { x = 312 y = 185 }
+			font = "hoi_18mbs"
+			text = "INDTSU_number_box_row_1_column_4"
+			format = center
+		}
+		instantTextBoxType = {
+			name ="table_number_box_row_2_column_4"
+			position = { x = 312 y = 221 }
+			font = "hoi_18mbs"
+			text = "INDTSU_number_box_row_2_column_4"
+			format = center
+		}
+		instantTextBoxType = {
+			name ="table_number_box_row_3_column_4"
+			position = { x = 312 y = 257 }
+			font = "hoi_18mbs"
+			text = "INDTSU_number_box_row_3_column_4"
+			format = center
+		}
+		instantTextBoxType = {
+			name ="table_number_box_row_4_column_4"
+			position = { x = 312 y = 293 }
+			font = "hoi_18mbs"
+			text = "INDTSU_number_box_row_4_column_4"
+			format = center
+		}
+		instantTextBoxType = {
+			name ="table_number_box_row_5_column_4"
+			position = { x = 312 y = 329 }
+			font = "hoi_18mbs"
+			text = "INDTSU_number_box_row_5_column_4"
+			format = center
+		}
+		instantTextBoxType = {
+			name ="table_number_box_row_1_column_5"
+			position = { x = 358 y = 185 }
+			font = "hoi_18mbs"
+			text = "INDTSU_number_box_row_1_column_5"
+			format = center
+		}
+		instantTextBoxType = {
+			name ="table_number_box_row_2_column_5"
+			position = { x = 358 y = 221 }
+			font = "hoi_18mbs"
+			text = "INDTSU_number_box_row_2_column_5"
+			format = center
+		}
+		instantTextBoxType = {
+			name ="table_number_box_row_3_column_5"
+			position = { x = 358 y = 257 }
+			font = "hoi_18mbs"
+			text = "INDTSU_number_box_row_3_column_5"
+			format = center
+		}
+		instantTextBoxType = {
+			name ="table_number_box_row_4_column_5"
+			position = { x = 358 y = 293 }
+			font = "hoi_18mbs"
+			text = "INDTSU_number_box_row_4_column_5"
+			format = center
+		}
+		instantTextBoxType = {
+			name ="table_number_box_row_5_column_5"
+			position = { x = 358 y = 329 }
+			font = "hoi_18mbs"
+			text = "INDTSU_number_box_row_5_column_5"
+			format = center
+		}
+
+		buttonType = {
+			name = "btn_aid_country_1"
+			spriteType = "GFX_scripted_decision_button"
+			position = { x = 22 y = 185 }
+		}
+		buttonType = {
+			name = "btn_aid_country_2"
+			spriteType = "GFX_scripted_decision_button"
+			position = { x = 22 y = 221 }
+		}
+		buttonType = {
+			name = "btn_aid_country_3"
+			spriteType = "GFX_scripted_decision_button"
+			position = { x = 22 y = 257 }
+		}
+		buttonType = {
+			name = "btn_aid_country_4"
+			spriteType = "GFX_scripted_decision_button"
+			position = { x = 22 y = 293 }
+		}
+		buttonType = {
+			name = "btn_aid_country_5"
+			spriteType = "GFX_scripted_decision_button"
+			position = { x = 22 y = 329 }
+		}
+		instantTextBoxType = {
+			name ="aid_country_list"
+			position = { x = 50 y = 185 }
+			font = "hoi_18mbs"
+			text = "INDTSU_aid_country_list"
+			format = left
+		}
+
+		instantTextBoxType = {
+			name ="tsunami_scripted_gui_description"
+			position = { x = 15 y = 380 }
+			font = "hoi_16mbs"
+			text = "INDTSU_tsunami_scripted_gui_description"
+			maxWidth = 230
+			format = center
+		}
+
+		instantTextBoxType = {
+			name ="country_influence_list"
+			position = { x = 265 y = 375 }
+			font = "hoi_16mbs"
+			text = "INDTSU_country_influence_list"
+			maxWidth = 220
+			format = left
+		}
+
+		instantTextBoxType = {
+			name ="recovery_header"
+			position = { x = 20 y = 650 }
+			font = "hoi_24header"
+			text = "INDTSU_recovery_header"
+			format = center
+			maxHeight = 24
+		}
+		instantTextBoxType = {
+			name ="aid_recovery_description"
+			position = { x = 20 y = 675 }
+			font = "hoi_16mbs"
+			text = "INDTSU_recovery_header_description"
+			format = center
+		}
+
+	}
+}

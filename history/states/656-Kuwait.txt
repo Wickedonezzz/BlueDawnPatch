@@ -1,0 +1,30 @@
+state={
+	id=656
+	name="STATE_656"
+	manpower = 2045000
+	
+	state_category = town
+	
+	history={
+		add_core_of = KUW
+		owner = KUW
+		victory_points = {
+			13303 3
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 4
+			arms_factory = 2
+			air_base = 6
+			13303 = {
+				naval_base = 4
+			}
+		}
+
+	}
+	provinces={
+		8085 13303 13304
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,5891 @@
+add_namespace = yug
+add_namespace = yug_rebel
+add_namespace = yug_hidden
+add_namespace = yug_intro
+add_namespace = yug_news
+add_namespace = yug_terror_attack
+add_namespace = yug_start
+add_namespace = yug_stambolic
+add_namespace = yug_milosevic
+add_namespace = yug_seselj
+add_namespace = yug_post_defeat
+
+add_namespace = yug_foreign_policy
+add_namespace = yug_flavour
+
+add_namespace = bos
+add_namespace = cro
+add_namespace = kos
+add_namespace = hrz
+add_namespace = mac
+
+#terror attack trigger# #funny idea I had in 1 am - durangoose
+country_event = {
+	id = yug_terror_attack.1
+	title = yug_terror_attack.1.t
+	desc = yug_terror_attack.1.d
+	picture = GFX_report_event_YUG_bossnia
+	
+	is_triggered_only = yes
+	
+	hidden = yes
+	
+	option = {
+		name = yug_terror_attack.1.a
+		trigger = {
+			NOT = {has_country_flag = yug_no_more_terror_attacks}
+		}
+			random_list = {
+				25 = {
+					country_event = {id = yug_terror_attack.2} #car bomb
+				}
+				25 = {
+					country_event = {id = yug_terror_attack.3} #bomb explodes near mil factory
+				}
+				25 = {
+					country_event = {id = yug_terror_attack.4} #fighting with rebel forces
+				}
+				25 = {
+					country_event = {id = yug_terror_attack.5} #local politician kidnapped by rebels. They demand money in exchange for the release of the politician
+				}
+			}
+	}
+	
+	option = {
+		name = yug_terror_attack.1.b #this is here so an error doesnt pop up bc there isnt any options when terror attacks stop
+		trigger = {
+			has_country_flag = yug_no_more_terror_attacks
+		}
+		add_stability = 0.01
+	}
+}
+
+#terror attack - car bomb explodes in a street#
+country_event = {
+	id = yug_terror_attack.2
+	title = yug_terror_attack.2.t
+	desc = yug_terror_attack.2.d
+	picture = GFX_report_event_YUG_bossnia
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = yug_terror_attack.2.a
+		add_stability = -0.02
+		random_owned_state = {
+			add_manpower = -32
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+		if = {
+			limit = {has_completed_focus = YUG_stambolic_a_new_yugoslavia}
+			add_to_variable = {yug_regime_ethnic_tensions_strength = 15}	
+			custom_effect_tooltip = yug_regime_ethnic_tensions_strength_increases_by_15
+		}
+		hidden_effect = {
+		country_event = {id = yug_terror_attack.1 days = 45}
+		}
+	}
+}
+
+#terror attack - bomb explodes near military factory#
+country_event = {
+	id = yug_terror_attack.3
+	title = yug_terror_attack.3.t
+	desc = yug_terror_attack.3.d
+	picture = GFX_report_event_YUG_bossnia
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = yug_terror_attack.3.a
+		add_war_support = -0.02
+		add_stability = -0.02		
+			add_popularity = {
+				ideology = paternal_autocracy
+				popularity = 0.025
+			}
+		random_owned_state = {
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 1
+			}
+			
+		}
+		if = {
+			limit = {has_completed_focus = YUG_stambolic_a_new_yugoslavia}
+			add_to_variable = {yug_regime_ethnic_tensions_strength = 15}	
+			custom_effect_tooltip = yug_regime_ethnic_tensions_strength_increases_by_15
+		}
+		hidden_effect = {
+		country_event = {id = yug_terror_attack.1 days = 45}
+		}
+	}
+}
+
+#terror attack - fighting with rebel forces#
+country_event = {
+	id = yug_terror_attack.4
+	title = yug_terror_attack.4.t
+	desc = yug_terror_attack.4.d
+	picture = GFX_report_event_YUG_bossnia
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = yug_terror_attack.4.a
+		add_stability = -0.02		
+		add_manpower = -300
+		BOS = {
+			add_manpower = -242
+		}
+			add_popularity = {
+				ideology = paternal_autocracy
+				popularity = 0.05
+			}
+		if = {
+			limit = {has_completed_focus = YUG_stambolic_a_new_yugoslavia}
+			add_to_variable = {yug_regime_ethnic_tensions_strength = 15}	
+			custom_effect_tooltip = yug_regime_ethnic_tensions_strength_increases_by_15
+		}	
+		hidden_effect = {
+		country_event = {id = yug_terror_attack.1 days = 45}
+		}
+	}
+}
+
+#terror attack - local politician kidnapped by rebels#
+country_event = {
+	id = yug_terror_attack.5
+	title = yug_terror_attack.5.t
+	desc = yug_terror_attack.5.d
+	picture = GFX_report_event_YUG_bossnia
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = yug_terror_attack.5.a #we aint giving money to rebels, send the Milicija
+		add_stability = -0.05	
+		army_experience = 5
+		random_owned_state = {
+		add_manpower = -1
+		}
+		BOS = {
+			add_manpower = -3
+		}
+		if = {
+			limit = {has_completed_focus = YUG_stambolic_a_new_yugoslavia}
+			add_to_variable = {yug_regime_ethnic_tensions_strength = 15}	
+			custom_effect_tooltip = yug_regime_ethnic_tensions_strength_increases_by_15
+		}
+		hidden_effect = {
+		country_event = {id = yug_terror_attack.1 days = 45}
+		}
+	}
+	
+	option = {
+		name = yug_terror_attack.5.b #give them the money
+		add_political_power = -50
+		hidden_effect = {
+		country_event = {id = yug_terror_attack.1 days = 45}
+		}
+	}	
+}
+
+#All Quite in Bosnia#
+country_event = {
+	id = yug.1
+	title = yug.1.t
+	desc = yug.1.d
+	picture = GFX_report_event_YUG_bossnia
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = yug.1.a
+		
+	}
+}
+#Slobo is funni#
+country_event = {
+	id = yug.2
+	title = yug.2.t
+	desc = yug.2.d
+	picture = GFX_report_event_YUG_slobo
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = yug.2.a
+	}
+}
+#Sad#
+country_event = {
+	id = yug.3
+	title = yug.3.t
+	desc = yug.3.d
+	picture = GFX_report_event_YUG_depressed
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = yug.3.a
+		set_country_flag = yug_opened_the_power_struggle_gui
+		custom_effect_tooltip = "This will open the Power Struggle UI that you can access through your country screen"
+	}
+}
+#CONGRESS#
+country_event = {
+	id = yug.4
+	title = yug.4.t
+	desc = yug.4.d
+	picture = GFX_report_event_YUG_SKJ_meeting
+	
+	is_triggered_only = yes
+	
+	#Congress approves Milosevic's next term #
+	option = {
+	name = yug.4.a
+		trigger = {
+			OR = {
+			reformed_communism > party_popularity@communism
+			socialism > party_popularity@communism
+			fascism > party_popularity@communism
+			}
+		}
+		country_event = {id = yug.17}
+		ai_chance = {
+		factor = 55
+		}
+
+	}
+	#Congress doesnt approve Milosevic's next term #
+	option = {
+		name = yug.4.b
+		trigger = {
+			AND = {
+				communism > party_popularity@reformed_communism
+				communism > party_popularity@socialism
+				communism > party_popularity@fascism
+			}	
+		}
+		custom_effect_tooltip = yug_increase_stambolic_pop_10
+			hidden_effect = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.1
+				}
+			}
+				add_political_power = -150
+				country_event = {id = yug.5}
+		ai_chance = {
+		factor = 55
+
+		}		
+
+	}
+}
+
+#Stambolic "disappears"#
+country_event = {
+	id = yug.17
+	title = yug.17.t
+	desc = yug.17.d
+	picture = GFX_report_event_YUG_SKJ_meeting
+	
+	is_triggered_only = yes
+	
+	#hmmm#
+	option = {
+	name = yug.17.a
+		107 = {
+			add_manpower = -1
+		}
+		load_focus_tree = yug_milosevic_focus
+		set_country_flag = yug_power_struggle_ended
+			custom_effect_tooltip = yug_decrease_stambolic_pop_20
+			hidden_effect = {
+				add_popularity = {
+					ideology = communism
+					popularity = -0.2
+				}
+			}
+			promote_character = YUG_seselj
+			set_party_name = {
+				ideology = communism
+				name = YUG_communism_seselj_party
+				long_name = YUG_communism_seselj_party_long
+			}
+	}
+
+}
+
+#Congress declared null#
+country_event = {
+	id = yug.5
+	title = yug.5.t
+	desc = yug.5.d
+	picture = GFX_report_event_YUG_SKJ_meeting
+	
+	is_triggered_only = yes
+	
+	#bruh#
+	option = {
+	name = yug.5.a
+		add_stability = -0.10
+		add_war_support = 0.10
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+		set_country_flag = yug_power_struggle_ended			
+		country_event = {id = yug.6 days = 3}
+		news_event = {id = old_times_news.71}
+	}
+
+}
+
+#Milosevic Ousted#
+country_event = {
+	id = yug.6
+	title = yug.6.t
+	desc = yug.6.d
+	picture = GFX_report_event_YUG_SKJ_meeting
+	
+	is_triggered_only = yes
+	
+	#lmao#
+	option = {
+	name = yug.6.a
+			retire_country_leader = yes
+			promote_character = YUG_stambolic
+			load_focus_tree = yug_stambolic_communist_focus
+			add_popularity = {
+				ideology = reformed_communism
+				popularity = -1.0
+			}
+			set_politics = {
+				ruling_party = communism
+
+			}
+			set_party_name = {
+				ideology = communism
+				long_name = YUG_communism_NJL_party_long
+				name = YUG_communism_NJL_party
+			}
+			country_event = {id = yug.18 days = 3}
+			news_event = {id = old_times_news.72}
+	}
+
+}
+
+#increased instability#
+country_event = {
+	id = yug.18
+	title = yug.18.t
+	desc = yug.18.d
+	picture = GFX_report_event_YUG_SKJ_meeting
+	
+	is_triggered_only = yes
+	
+	#hmmm#
+	option = {
+	name = yug.18.a
+		country_event = {id=yug_start.4 days = 3}
+		add_stability = -0.05
+		add_political_power = -50
+		
+		YUG = {
+		remove_state_core = 104
+		remove_state_core = 804
+		remove_state_core = 802
+		remove_state_core = 959
+		remove_state_core = 960
+		remove_state_core = 961
+
+		}
+
+	
+		104 = {
+				start_resistance = BOS
+				add_resistance = 25
+				add_compliance = 15
+
+		}
+		
+		959 = {
+				start_resistance = BOS
+				add_resistance = 10
+				add_compliance = 45
+
+		}
+
+		960 = {
+				start_resistance = BOS
+				add_resistance = 10
+				add_compliance = 55
+
+		}
+
+		961 = {
+				start_resistance = BOS
+				add_resistance = 25
+				add_compliance = 24
+
+		}
+		
+		804 = {
+				start_resistance = BOS
+				start_resistance = HRZ
+				add_resistance = 30
+				add_compliance = 10
+		}
+		
+		802 = {
+				start_resistance = KOS
+				add_resistance = 35
+				add_compliance = 10
+		}
+	}
+
+}
+
+#economic crash#
+country_event = {
+	id = yug_start.4
+	title = yug_start.4.t
+	desc = yug_start.4.d
+	picture = GFX_report_event_YUG_SKJ_meeting
+	
+	is_triggered_only = yes
+	
+	#hmmm#
+	option = {
+	name = yug_start.4.a
+		add_stability = -0.15
+		country_event = {id = yug_start.5 days = 3}
+		
+		YUG_worsen_economic_health = yes
+		
+		swap_ideas = {
+			remove_idea = YUG_yugoslav_mode_of_socialism
+			add_idea = YUG_yugoslav_mode_of_socialism_collapse
+		}
+		
+	}
+
+}
+
+#temporary loans#
+country_event = {
+	id = yug_start.5
+	title = yug_start.5.t
+	desc = yug_start.5.d
+	picture = GFX_report_event_YUG_SKJ_meeting
+	
+	is_triggered_only = yes
+	
+	#hmmm#
+	option = {
+	name = yug_start.5.a
+		add_stability = 0.10
+		
+		add_to_variable = {YUG_debt_owe_var = 1}
+		custom_effect_tooltip = yug_our_debts_will_increase_1_bil
+		
+		add_timed_idea = {
+			idea = YUG_temporary_loans
+			days = 200
+		}
+		
+	}
+
+}
+
+#slobodon's(milosevic) 2 year plan#
+country_event = {
+	id = yug.7
+	title = yug.7.t
+	desc = yug.7.d
+	picture = GFX_report_event_YUG_SKJ_meeting
+	
+	is_triggered_only = yes
+	
+	#We need loc#
+	option = {
+	name = yug.7.a
+		
+	}
+
+}
+
+#Not So United Production#
+country_event = {
+	id = yug.8
+	title = yug.8.t
+	desc = yug.8.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#We need loc#
+	option = {
+	name = yug.8.a
+		
+	}
+
+}
+
+#Joska's protest#
+country_event = {
+	id = yug.9
+	title = yug.9.t
+	desc = yug.9.d
+	picture = GFX_report_event_YUG_SKJ_meeting
+	
+	is_triggered_only = yes
+	
+	#We need loc#
+	option = {
+	name = yug.9.a
+		
+	}
+
+}
+
+#time for action#
+country_event = {
+	id = yug.10
+	title = yug.10.t
+	desc = yug.10.d
+	picture = GFX_report_event_YUG_depressed
+	
+	is_triggered_only = yes
+	
+	#operation A#
+	option = {
+	name = yug.10.a
+		custom_effect_tooltip = YUG_you_will_get_the_idea_after_completing_the_focus
+		show_ideas_tooltip = YUG_operation_soko
+		set_country_flag = operation_soko_flag
+	}
+	
+	#operation B#
+	option = {
+	name = yug.10.b
+		custom_effect_tooltip = YUG_you_will_get_the_idea_after_completing_the_focus	
+		show_ideas_tooltip = YUG_operation_gvozdena_ruka
+		set_country_flag = operation_gvozdena_ruka_flag
+		
+	}	
+
+}
+
+#brotherhood and unity forever#
+country_event = {
+	id = yug.11
+	title = yug.11.t
+	desc = yug.11.d
+	picture = GFX_report_event_YUG_SKJ_meeting
+	
+	is_triggered_only = yes
+	
+	#We need loc#
+	option = {
+	name = yug.11.a
+		remove_ideas = YUG_broken_brotherhood
+		remove_ideas = YUG_broken_brotherhood_2
+	}
+
+}
+
+#two coalition parties
+country_event = {
+	id = yug_start.1
+	title = yug_start.1.t
+	desc = yug_start.1.d
+	picture = GFX_report_event_YUG_SKJ_meeting
+	
+	is_triggered_only = yes
+	
+	#coop closely with natcoms#
+	option = {
+	name = yug_start.1.a
+		custom_effect_tooltip = yug_increase_natcom_pop_5
+		hidden_effect = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+		}
+	}
+	
+	#coop closely with socialists#
+	option = {
+	name = yug_start.1.b
+		custom_effect_tooltip = yug_increase_socialist_pop_5
+		hidden_effect = {
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+		}
+		custom_effect_tooltip = yug_increase_milosevic_pop_5
+		hidden_effect = {
+			add_popularity = {
+				ideology = reformed_communism
+				popularity = 0.05
+			}
+		}		
+	}
+
+}
+
+#draft a new consitiution?
+country_event = {
+	id = yug_start.2
+	title = yug_start.2.t
+	desc = yug_start.2.d
+	picture = GFX_report_event_YUG_SKJ_meeting
+	
+	is_triggered_only = yes
+	
+	#go with the natcom plan giving serbia sr more power#
+	option = {
+	name = yug_start.2.a
+		custom_effect_tooltip = yug_increase_natcom_pop_5
+		hidden_effect = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+		}
+		custom_effect_tooltip = yug_increase_milosevic_pop_5
+		hidden_effect = {
+			add_popularity = {
+				ideology = reformed_communism
+				popularity = 0.05
+			}
+		}
+		add_stability = -0.10
+		ai_chance = {
+		factor = 25
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+				rule = YUG_paths_selection
+				option = YUG_SESELJ_PATH_CHOSEN
+				}
+			}
+		}
+	}
+	
+	#go with the socialist plan giving the central presidency more power#
+	option = {
+	name = yug_start.2.b
+		custom_effect_tooltip = yug_increase_socialist_pop_5
+		hidden_effect = {
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+		}
+		custom_effect_tooltip = yug_increase_milosevic_pop_5
+		hidden_effect = {
+			add_popularity = {
+				ideology = reformed_communism
+				popularity = 0.05
+			}
+		}
+		add_political_power = 50
+		ai_chance = {
+		factor = 15
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+				rule = YUG_paths_selection
+				option = YUG_MILOSEVIC_PATH_CHOSEN
+				}
+			}
+		}
+	}
+
+	#it gets rejected#
+	option = {
+	name = yug_start.2.c
+		custom_effect_tooltip = yug_decrease_milosevic_pop_25
+		hidden_effect = {
+			add_popularity = {
+				ideology = reformed_communism
+				popularity = -0.025
+			}
+		}
+		custom_effect_tooltip = yug_increase_stambolic_pop_5
+		hidden_effect = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}		
+		add_political_power = -25
+		ai_chance = {
+		factor = 35
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+				rule = YUG_paths_selection
+				option = YUG_STAMBOLIC_PATH_CHOSEN
+				}
+			}
+		}
+	}
+
+}
+
+#status of the SRs
+country_event = {
+	id = yug_start.3
+	title = yug_start.3.t
+	desc = yug_start.3.d
+	picture = GFX_report_event_yugo_6_republics
+	
+	is_triggered_only = yes
+	
+	#SRs shouldnt mess with the policy of Belgrade#
+	option = {
+	name = yug_start.3.a
+		custom_effect_tooltip = yug_increase_natcom_pop_5
+		hidden_effect = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+		}
+		custom_effect_tooltip = yug_increase_milosevic_pop_5
+		hidden_effect = {
+			add_popularity = {
+				ideology = reformed_communism
+				popularity = 0.05
+			}
+		}
+		add_stability = -0.15
+		BOS = {
+		add_manpower = 7500
+		}
+		KOS = {
+		add_manpower = 7500
+		}
+		ai_chance = {
+		factor = 25
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+				rule = YUG_paths_selection
+				option = YUG_SESELJ_PATH_CHOSEN
+				}
+			}
+		}		
+	}
+	
+	#SRs should have power in some policies#
+	option = {
+	name = yug_start.3.b
+		custom_effect_tooltip = yug_increase_socialist_pop_5
+		hidden_effect = {
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}
+		}
+		custom_effect_tooltip = yug_increase_milosevic_pop_5
+		hidden_effect = {
+			add_popularity = {
+				ideology = reformed_communism
+				popularity = 0.05
+			}
+		}
+		add_political_power = -50
+		add_stability = 0.05
+		ai_chance = {
+		factor = 25
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+				rule = YUG_paths_selection
+				option = YUG_MILOSEVIC_PATH_CHOSEN
+				}
+			}
+		}
+	}
+
+	#SRs should have equal power in policy making#
+	option = {
+	name = yug_start.3.c
+		custom_effect_tooltip = yug_increase_stambolic_pop_10
+		hidden_effect = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.10
+			}
+		}		
+		add_political_power = -50
+		add_stability = 0.15
+		ai_chance = {
+		factor = 30
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+				rule = YUG_paths_selection
+				option = YUG_STAMBOLIC_PATH_CHOSEN
+				}
+			}
+		}
+	}
+
+}
+###GENERAL STUFF###
+
+#trait improvement#
+country_event = {
+	id = yug.19
+	title = yug.19.t
+	desc = yug.19.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	trigger = {
+		OR = {
+			has_country_flag = yug_karadzic_employed
+			has_country_flag = yug_vucic_employed
+		}	
+	}
+	
+	is_triggered_only = yes
+	
+	#epico#
+	option = {
+	name = yug.19.a
+		if = {
+			limit = {has_country_flag = yug_karadzic_employed}
+			remove_trait = {
+				character = YUG_radovan_karadzic
+				slot = political_advisor
+				trait = nationalist
+			}
+			add_trait = {
+				character = YUG_radovan_karadzic
+				slot = political_advisor
+				trait = nationalist_2
+			}			
+			set_country_flag = karadzic_trait_improved
+		}
+		if = {
+			limit = {has_country_flag = yug_vucic_employed}
+			remove_trait = {
+				character = YUG_borka_vucic
+				slot = political_advisor
+				trait = banker
+			}
+			add_trait = {
+				character = YUG_borka_vucic
+				slot = political_advisor
+				trait = banker_2
+			}			
+			set_country_flag = vucic_trait_improved
+		}		
+	}
+
+}
+
+#Herzogavia anti-terrorist operation#
+country_event = {
+	id = yug.20
+	title = yug.20.t
+	desc = yug.20.d
+	picture = GFX_report_event_YUG_bossnia
+	
+	trigger = {
+		original_tag = YUG
+		date > 2000.02.16
+	}
+	
+	fire_only_once = yes
+	
+	#ok!#
+	option = {
+	name = yug.20.a
+		add_popularity = {
+			ideology = reformed_communism
+			popularity = 0.02
+		}
+		army_experience = 15
+		add_manpower = -64
+		HRZ = {
+			add_manpower = -50
+		}
+		804 = {
+			set_demilitarized_zone = yes
+			YUG_improve_rebel_situation = yes
+		}		
+	}
+
+}
+
+#nationalist march in Belgrade#
+country_event = {
+	id = yug.21
+	title = yug.21.t
+	desc = yug.21.d
+	
+	trigger = {
+		original_tag = YUG
+		date > 2000.05.16
+	}
+	
+	fire_only_once = yes
+	
+	#seselj moment#
+	option = {
+	name = yug.21.a
+		custom_effect_tooltip = yug_decrease_milosevic_pop_5
+		custom_effect_tooltip = yug_increase_natcom_pop_10
+		hidden_effect = {
+			add_popularity = {
+				ideology = reformed_communism
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+			}		
+		}
+		add_stability = -0.04
+		ai_chance = {
+			factor = 25
+		}
+	}
+	
+	#supress them!#
+	option = {
+	name = yug.21.b
+		custom_effect_tooltip = yug_decrease_milosevic_pop_5
+		custom_effect_tooltip = yug_decrease_natcom_pop_3		
+		hidden_effect = {
+			add_popularity = {
+				ideology = reformed_communism
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.03
+			}		
+		}
+		add_political_power = -50
+		ai_chance = {
+		factor = 35
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+				rule = YUG_paths_selection
+				option = YUG_STAMBOLIC_PATH_CHOSEN
+				}
+			}
+		}
+	}
+}
+
+#anti-seperatist operation#
+country_event = {
+	id = yug.22
+	title = yug.22.t
+	desc = yug.22.d
+	
+	is_triggered_only = yes
+	
+	#yugo moment#
+	option = {
+	name = yug.22.a
+		army_experience = 50
+		add_popularity = {
+			ideology = paternal_autocracy
+			popularity = -0.15
+		}		
+		add_stability = 0.15
+		news_event = {id = old_times_news.146}
+		hidden_effect = {
+			if = {
+				limit = {has_government = fascism}
+				country_event = {id = yug.24 days = 15}
+			}
+			else_if = {
+				country_event = {id = yug.23 days = 15}
+			}
+		}
+	}
+
+}
+
+#Assembly of Yugoslavia bombed#
+country_event = {
+	id = yug.23
+	title = yug.23.t
+	desc = yug.23.d
+	
+	is_triggered_only = yes
+	
+	#yugo moment#
+	option = {
+	name = yug.23.a
+		news_event = {id = old_times_news.147}	
+		add_political_power = -50
+		add_stability = -0.05
+		unlock_decision_category_tooltip = yug_deal_with_uprisings
+		set_country_flag = yug_anti_terrorist_time	
+		custom_effect_tooltip = yug_uprising_will_happen_in_45_days
+	}
+
+}
+
+#Assination attempt on seselj#
+country_event = {
+	id = yug.24
+	title = yug.24.t
+	desc = yug.24.d
+	
+	is_triggered_only = yes
+	
+	#yugo moment#
+	option = {
+	name = yug.24.a
+		news_event = {id = old_times_news.148}	
+		add_political_power = -100
+		add_stability = -0.10
+		
+	}
+
+}
+
+#Total Collapse#
+country_event = {
+	id = yug.25
+	title = yug.25.t
+	desc = yug.25.d
+	
+	is_triggered_only = yes
+	
+	#bruh moment#
+	option = {
+	name = yug.25.a
+		set_global_flag = yug_total_collapse
+		custom_effect_tooltip = yug_game_over
+		release = MNT
+		release = MAC
+		release = KOS
+		YUG = {
+			set_nationality = {
+				target_country = VOJ
+				character = YUG_nenad_canak
+			}
+		}
+		
+		VOJ = {
+			transfer_state = 45
+			transfer_state = 764
+			
+			add_country_leader_role = {
+				character = YUG_nenad_canak
+				promote_leader = yes
+				country_leader = {
+					ideology = social_democracy_sub
+					expire = "2050.1.1.1"
+					traits = { autonomist }
+				}
+			}			
+		}
+		
+		KOS = {
+			declare_war_on = {
+				target = MAC
+				type = annex_everything
+			}	
+		}
+		
+		if = {
+			limit = {has_government = fascism} #scenario if seselj is leader - gets killed, cw between anarchists in belgrade vs ncpy
+			kill_country_leader = yes
+			YUG = {
+				set_cosmetic_tag = YUG_anarchy
+				load_focus_tree = generic_focus
+				set_politics = {
+					ruling_party = anarchism
+					elections_allowed = no
+				}
+				set_popularities = {
+					anarchism = 55
+					socialism = 44
+				}
+			}
+			YUG = {
+				set_nationality = {
+					target_country = SER
+					character = YUG_branko_kitanovic
+				}
+			}			
+			SER = {
+				set_cosmetic_tag = YUG_new_com_cosmetic
+				transfer_state = 108
+				transfer_state = 803
+				declare_war_on = {
+					target = YUG
+					type = annex_everything
+				}	
+				declare_war_on = {
+					target = VOJ
+					type = annex_everything
+				}
+
+				
+				set_party_name = {
+					ideology = communism
+					name = YUG_communism_NCPY_party
+					long_name = YUG_communism_NCPY_party_long
+				}
+				set_politics = {
+					ruling_party = communism
+					last_election = "1991.5.3"
+					election_frequency = 36
+					elections_allowed = no
+				}
+				
+				set_popularities = {
+					communism = 54
+					socialism = 26
+					fascism = 20
+					paternal_autocracy = 0
+					reformed_communism = 0
+					
+				}
+					
+			}		
+			
+		}
+		else = { ##anarchist belgrade vs arkan serbia
+			YUG = {
+				set_cosmetic_tag = YUG_anarchy
+				load_focus_tree = generic_focus
+				set_politics = {
+					ruling_party = anarchism
+					elections_allowed = no
+				}
+				set_popularities = {
+					anarchism = 55
+					socialism = 44
+				}
+			}
+			YUG = {
+				set_nationality = {
+					target_country = SER
+					character = YUG_arkan
+				}
+			}					
+			SER = {
+				set_cosmetic_tag = YUG_greater_serbia_cosmetic
+				add_country_leader_role = {
+					character = YUG_arkan
+					promote_leader = yes
+					country_leader = {
+						ideology = military_junta
+						expire = "2050.1.1.1"
+					}
+				}							
+				transfer_state = 108
+				transfer_state = 803
+				declare_war_on = {
+					target = YUG
+					type = annex_everything
+				}	
+				declare_war_on = {
+					target = VOJ
+					type = annex_everything
+				}					
+				set_politics = {
+					ruling_party = paternal_autocracy
+					elections_allowed = no
+				}				
+				set_popularities = {
+					fascism = 50
+					paternal_autocracy = 50
+					reformed_communism = 0
+					
+				}
+					
+			}				
+		}
+	}
+
+}
+
+#backa war - we win#
+country_event = {
+	id = yug.26
+	title = yug.26.t
+	desc = yug.26.d
+	
+	is_triggered_only = yes
+	
+	#yugo moment#
+	option = {
+	name = yug.26.a
+		add_stability = 0.10
+		add_war_support = 0.10
+		add_political_power = 100
+		CRO = {
+			add_war_support = -0.1
+			add_stability = -0.1
+			add_manpower = -5000			
+		}
+	}
+
+}
+
+#backa war - we lost#
+country_event = {
+	id = yug.27
+	title = yug.27.t
+	desc = yug.27.d
+	
+	is_triggered_only = yes
+	
+	#yugo moment#
+	option = {
+	name = yug.27.a
+		add_war_support = -0.20
+		add_stability = -0.20
+		add_manpower = -5000
+		CRO = {
+			add_stability = 0.20
+			add_war_support = 0.20
+			add_political_power = 100			
+			remove_ideas = CRO_aftermath_of_the_krajina_war
+			transfer_state = 910
+		}		
+	}
+
+}
+#STAMBOLIC#
+
+#The Army Coup#
+country_event = {
+	id = yug_stambolic.1
+	title = yug_stambolic.1.t
+	desc = yug_stambolic.1.d
+	picture = GFX_report_event_YUG_bossnia
+	
+	is_triggered_only = yes
+	
+	#We need loc#
+	option = {
+	name = yug_stambolic.1.a
+		custom_effect_tooltip = yug_game_over
+		YUG = {
+		add_political_power = -300
+		add_stability = -0.30
+		remove_ideas = YUG_what_are_we_2
+		
+			set_politics = {
+				ruling_party = fascism
+				last_election = "1991.5.3"
+				election_frequency = 36
+				elections_allowed = no
+			}
+			retire_ideology_leader = fascism
+			add_country_leader_role = {
+			  character = YUG_ratko_mladic
+			  promote_leader = yes
+			  country_leader = {
+				ideology = fascism_ideology
+				expire = "2050.1.1.1"
+				traits = { }
+			  }
+			}
+			
+			set_party_name = {
+				ideology = fascism
+				name = YUG_fascism_junta_party
+				long_name = YUG_fascism_junta_party_long				
+			}
+			
+			set_popularities = {
+				democratic = 10
+				fascism = 40
+				communism = 20
+				paternal_autocracy = 30 
+				reformed_communism = 0
+				
+			}
+			load_focus_tree = generic_focus
+		}
+		country_event = { id = yug_rebel.0 days = 30} 
+
+	}
+
+}
+
+#A New Coalition#
+country_event = {
+	id = yug_stambolic.2
+	title = yug_stambolic.2.t
+	desc = yug_stambolic.2.d
+	picture = GFX_report_event_yugo_6_republics
+	
+	is_triggered_only = yes
+	
+	#We need loc#
+	option = {
+	name = yug_stambolic.2.a
+		add_popularity = {
+			ideology = communism
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = reformed_communism
+			popularity = 0.10
+		}
+		add_popularity = {
+			ideology = socialism
+			popularity = 0.15
+		}
+		add_popularity = {
+			ideology = social_democracy
+			popularity = 0.10
+		}
+	}
+
+}
+
+#negotiating with rebels#
+country_event = {
+	id = yug_stambolic.3
+	title = yug_stambolic.3.t
+	desc = yug_stambolic.3.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#ok #
+	option = {
+	name = yug_stambolic.3.a
+		country_event = {id = yug_stambolic.4 days = 2}			
+
+	}
+
+}
+
+#negotiating with rebels - autonomy#
+country_event = {
+	id = yug_stambolic.4
+	title = yug_stambolic.4.t
+	desc = yug_stambolic.4.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#sure #
+	option = {
+	name = yug_stambolic.4.a
+		add_political_power = -25
+		set_country_flag = yug_promised_increased_autonomy
+		add_to_variable = {yug_rebel_negotiations = 1}
+		country_event = {id = yug_stambolic.5 days = 2}			
+		ai_chance = { 
+		base = 35
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+				rule = YUG_rebel_negotiation_paths_selection
+				option = YUG_NEGOTIATIONS_SUCCEED_CHOSEN
+				}
+			}
+		}	
+		
+	}
+	
+	#nope #
+	option = {
+	name = yug_stambolic.4.b
+		add_stability = -0.04
+		subtract_from_variable = {yug_rebel_negotiations = 1}
+		country_event = {id = yug_stambolic.5 days = 2}			
+		ai_chance = { 
+		base = 15
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+				rule = YUG_rebel_negotiation_paths_selection
+				option = YUG_NEGOTIATIONS_FAIL_CHOSEN
+				}
+			}
+		}	
+	}
+
+}
+
+#negotiating with rebels - amnesty#
+country_event = {
+	id = yug_stambolic.5
+	title = yug_stambolic.5.t
+	desc = yug_stambolic.5.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#sure #
+	option = {
+	name = yug_stambolic.5.a
+		custom_effect_tooltip = yug_you_will_get_generals_if_this_succeeds	
+		set_country_flag = yug_amnesty
+		add_political_power = -50
+		add_stability = -0.05
+		add_manpower = 2500
+		subtract_from_variable = {yug_regime_popularity_strength = 1}
+		custom_effect_tooltip = yug_regime_popularity_strength_decreases_by_1
+		add_to_variable = {yug_rebel_negotiations = 1}
+		country_event = {id = yug_stambolic.6 days = 2}			
+		ai_chance = { 
+		base = 35
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+				rule = YUG_rebel_negotiation_paths_selection
+				option = YUG_NEGOTIATIONS_SUCCEED_CHOSEN
+				}
+			}
+		}	
+	}
+	
+	#nope #
+	option = {
+	name = yug_stambolic.5.b
+		add_political_power = 75
+		
+		subtract_from_variable = {yug_rebel_negotiations = 1}
+		country_event = {id = yug_stambolic.6 days = 2}			
+		ai_chance = { 
+		base = 25
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+				rule = YUG_rebel_negotiation_paths_selection
+				option = YUG_NEGOTIATIONS_FAIL_CHOSEN
+				}
+			}
+		}	
+	}
+
+}
+
+#negotiating with rebels - political prisoners#
+country_event = {
+	id = yug_stambolic.6
+	title = yug_stambolic.6.t
+	desc = yug_stambolic.6.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#sure #
+	option = {
+	name = yug_stambolic.6.a
+		add_stability = 0.05
+		add_political_power = -150
+		subtract_from_variable = {yug_regime_popularity_strength = 2}
+		custom_effect_tooltip = yug_regime_popularity_strength_decreases_by_2
+		
+		add_to_variable = {yug_rebel_negotiations = 1}
+		country_event = {id = yug_stambolic.7 days = 2}	
+		ai_chance = { 
+		base = 30
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+				rule = YUG_rebel_negotiation_paths_selection
+				option = YUG_NEGOTIATIONS_SUCCEED_CHOSEN
+				}
+			}		
+		}			
+	}
+	
+	#nope #
+	option = {
+	name = yug_stambolic.6.b
+		add_political_power = 50
+		subtract_from_variable = {yug_rebel_negotiations = 1}
+		country_event = {id = yug_stambolic.7 days = 2}
+		ai_chance = { 
+		base = 10
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+				rule = YUG_rebel_negotiation_paths_selection
+				option = YUG_NEGOTIATIONS_FAIL_CHOSEN
+				}
+			}
+		}			
+	}
+
+}
+
+#negotiating with rebels - POWs#
+country_event = {
+	id = yug_stambolic.7
+	title = yug_stambolic.7.t
+	desc = yug_stambolic.7.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#sure #
+	option = {
+	name = yug_stambolic.7.a
+		add_stability = -0.05
+		add_manpower = -5000
+		add_to_variable = {yug_rebel_negotiations = 1}
+		
+		country_event = {id = yug_stambolic.8 days = 5}
+		ai_chance = { 
+		base = 20
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+				rule = YUG_rebel_negotiation_paths_selection
+				option = YUG_NEGOTIATIONS_SUCCEED_CHOSEN
+				}
+			}
+		}			
+	}
+	
+	#nope #
+	option = {
+	name = yug_stambolic.7.b
+		add_political_power = 50
+		add_stability = 0.15
+			add_to_variable = {yug_regime_popularity_strength = 1}
+			custom_effect_tooltip = yug_regime_popularity_strength_increases_by_1
+		subtract_from_variable = {yug_rebel_negotiations = 1}
+		
+		country_event = {id = yug_stambolic.8 days = 5}			
+		ai_chance = { 
+		base = 35
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+				rule = YUG_rebel_negotiation_paths_selection
+				option = YUG_NEGOTIATIONS_FAIL_CHOSEN
+				}
+			}
+		}	
+		
+	}
+
+}
+
+#negotiating with rebels - results#
+country_event = {
+	id = yug_stambolic.8
+	title = yug_stambolic.8.t
+	desc = yug_stambolic.8.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#bruh #
+	option = {
+	name = yug_stambolic.8.a
+		trigger = {
+			check_variable = {yug_rebel_negotiations < 2}			
+		}
+		add_war_support = 0.05
+		set_country_flag = yug_neg_fail
+	}
+	
+	#wholesome 100 reddit nation #
+	option = {
+	name = yug_stambolic.8.b
+		trigger = { 
+			OR = {
+				check_variable = {yug_rebel_negotiations > 2}
+				check_variable = {yug_rebel_negotiations = 2}
+			}	
+		}
+		add_stability = 0.10
+		set_country_flag = yug_neg_win
+		news_event = {id = old_times_news.96}
+		YUG_stop_the_terror_attacks = yes
+		YUG_remove_rebel_activity = yes 
+		if = {
+			limit = {has_country_flag = yug_amnesty}
+			BOS = {
+				set_nationality = {
+					target_country = YUG
+					character = BOS_sefer_halilovic
+				}
+				set_nationality = {
+					target_country = YUG
+					character = BOS_sakib_mahmuljin
+				}				
+			}
+			HRZ = {
+				set_nationality = {
+					target_country = YUG
+					character = HRZ_Milivoj_Petkovic
+				}			
+			}
+			KOS = {
+				set_nationality = {
+					target_country = YUG
+					character = KOS_sylejman_selimi
+				}					
+				set_nationality = {
+					target_country = YUG
+					character = KOS_gezim_ostreni
+				}				
+				set_nationality = {
+					target_country = YUG
+					character = KOS_muhamet_xhemajli
+				}								
+			}
+		}
+		if = {
+			limit = {has_country_flag = yug_promised_increased_autonomy}
+			104 = {
+				add_dynamic_modifier = {
+					modifier = YUG_increased_autonomy
+				}
+			}
+			804 = {
+				add_dynamic_modifier = {
+					modifier = YUG_increased_autonomy
+				}
+			}
+			802 = {
+				add_dynamic_modifier = {
+					modifier = YUG_increased_autonomy
+				}
+			}
+			45 = {
+				add_dynamic_modifier = {
+					modifier = YUG_increased_autonomy
+				}
+			}
+		}
+	}
+
+}
+
+#whatiscommunism.yu launched#
+country_event = {
+	id = yug_stambolic.9
+	title = yug_stambolic.9.t
+	desc = yug_stambolic.9.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#hell yeah #
+	option = {
+	name = yug_stambolic.9.a
+		add_political_power = 50
+	}
+
+}
+
+#socialists coup#
+country_event = {
+	id = yug_stambolic.10
+	title = yug_stambolic.10.t
+	desc = yug_stambolic.10.d
+	picture = GFX_report_event_yug_party_session
+	
+	is_triggered_only = yes
+	
+	#hell yeah #
+	option = {
+	name = yug_stambolic.10.a
+		retire_country_leader = yes
+		promote_character = {
+			character = YUG_joska
+		}
+		set_politics = {
+			ruling_party = socialism
+		}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.10
+			}
+			add_to_variable = {yug_regime_popularity_strength = 2}
+			custom_effect_tooltip = yug_regime_popularity_strength_increases_by_2
+		country_event = {id = yug_stambolic.11}
+	}
+
+}
+
+#what to do with Joska#
+country_event = {
+	id = yug_stambolic.11
+	title = yug_stambolic.11.t
+	desc = yug_stambolic.11.d
+	picture = GFX_report_event_yug_party_session
+	
+	is_triggered_only = yes
+	
+	#let him stay m8#
+	option = {
+	name = yug_stambolic.11.a
+		add_political_power = 25
+		add_stability = 0.05
+	}
+	
+	#nahh, force him into retirement#
+	option = {
+	name = yug_stambolic.11.b
+		add_political_power = -100
+		add_stability = -0.15
+		set_country_flag = yug_joska_has_been_forced_into_retirement
+		custom_effect_tooltip = yug_you_will_no_longer_get_couped
+		set_country_flag = yug_you_will_no_longer_get_couped
+	}	
+
+}
+
+#Joska coups the socialists#
+country_event = {
+	id = yug_stambolic.12
+	title = yug_stambolic.12.t
+	desc = yug_stambolic.12.d
+	picture = GFX_report_event_yug_party_session
+	
+	is_triggered_only = yes
+	
+	#rip bozos#
+	option = {
+	name = yug_stambolic.12.a
+		retire_country_leader = yes
+		set_politics = {
+			ruling_party = communism
+		}
+			add_popularity = {
+				ideology = socialism
+				popularity = -0.15
+			}
+			add_to_variable = {yug_regime_popularity_strength = 2}
+			custom_effect_tooltip = yug_regime_popularity_strength_increases_by_2			
+		custom_effect_tooltip = yug_you_will_no_longer_get_couped
+		set_country_flag = yug_you_will_no_longer_get_couped
+	}
+
+}
+
+#industrialization campaign focus#
+country_event = {
+	id = yug_stambolic.13
+	title = yug_stambolic.13.t
+	desc = yug_stambolic.13.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			country_event = {id = yug_stambolic.14 days = 365}
+		}
+	}
+	
+	#military
+	option = {
+	name = yug_stambolic.13.a
+		swap_ideas = {
+			remove_idea = YUG_industrialization_campaigns_nothing
+			add_idea = YUG_industrialization_campaigns_military_fac
+		}
+	}
+	#civilian
+	option = {
+	name = yug_stambolic.13.b
+		swap_ideas = {
+			remove_idea = YUG_industrialization_campaigns_nothing
+			add_idea = YUG_industrialization_campaigns_civilian_fac
+		}
+	}
+	#construction speed
+	option = {
+	name = yug_stambolic.13.c
+		swap_ideas = {
+			remove_idea = YUG_industrialization_campaigns_nothing
+			add_idea = YUG_industrialization_campaigns_construction
+		}
+	}
+}
+
+#industrialization campaign focus - 2#
+country_event = {
+	id = yug_stambolic.14
+	title = yug_stambolic.13.t
+	desc = yug_stambolic.13.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			country_event = {id = yug_stambolic.14 days = 365}
+			remove_ideas = YUG_industrialization_campaigns_military_fac
+			remove_ideas = YUG_industrialization_campaigns_civilian_fac
+			remove_ideas = YUG_industrialization_campaigns_construction
+			add_ideas = YUG_industrialization_campaigns_nothing
+		}
+	}
+	
+	#military #
+	option = {
+	name = yug_stambolic.13.a
+		swap_ideas = {
+			remove_idea = YUG_industrialization_campaigns_nothing
+			add_idea = YUG_industrialization_campaigns_military_fac
+		}
+	}
+	#civilian #
+	option = {
+	name = yug_stambolic.13.b
+		swap_ideas = {
+			remove_idea = YUG_industrialization_campaigns_nothing
+			add_idea = YUG_industrialization_campaigns_civilian_fac
+		}
+	}
+	#construction speed #
+	option = {
+	name = yug_stambolic.13.c
+		swap_ideas = {
+			remove_idea = YUG_industrialization_campaigns_nothing
+			add_idea = YUG_industrialization_campaigns_construction
+		}
+	}
+}
+
+#"Titograd"#
+country_event = {
+	id = yug_stambolic.15
+	title = yug_stambolic.15.t
+	desc = yug_stambolic.15.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#i love tito!!#
+	option = {
+	name = yug_stambolic.15.a
+		set_province_name = { id = 9809 name = "Titograd" }
+	}
+
+}
+
+#Yugoslav Liberation Committee#
+country_event = {
+	id = yug_stambolic.16
+	title = yug_stambolic.16.t
+	desc = yug_stambolic.16.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#real titochads stand up#
+	option = {
+	name = yug_stambolic.16.a
+	news_event = {id = old_times_news.121}
+	if = {
+		limit = {has_dlc = "By Blood Alone"}
+		send_embargo = CRO
+		send_embargo = SLV
+	}
+	else_if = {
+		YUG = {
+			add_opinion_modifier = {
+			target = CRO 
+			modifier = embargo 
+			}
+		}
+		YUG = {
+			add_opinion_modifier = {
+			target = SLV 
+			modifier = embargo 
+			}
+		}		
+	}
+		YUG = {
+			add_opinion_modifier = { target = CRO modifier = large_decrease }
+		}
+		
+		YUG = {
+			add_opinion_modifier = { target = SLV modifier = large_decrease }
+		}		
+	}
+
+}
+
+#A balkan superpower#
+country_event = {
+	id = yug_stambolic.17
+	title = yug_stambolic.17.t
+	desc = yug_stambolic.17.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#tito wouldve been proud#
+	option = {
+	name = yug_stambolic.17.a
+
+	}
+}
+
+#Annexing parts of greece#
+country_event = {
+	id = yug_stambolic.18
+	title = yug_stambolic.18.t
+	desc = yug_stambolic.18.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	trigger = {
+		original_tag = YUG
+		is_in_faction_with = SOV
+		GRE = {is_puppet_of = SOV}
+		has_completed_focus = YUG_stambolic_greater_yugoslav_idea
+	}
+	
+	fire_only_once = yes
+	
+	#ask the sobiets#
+	option = {
+	name = yug_stambolic.18.a
+		add_state_claim = 184
+		add_state_claim = 731
+	}
+}
+
+#USSR - Yugo wants to annex parts of greece#
+country_event = {
+	id = yug_stambolic.19
+	title = yug_stambolic.19.t
+	desc = yug_stambolic.19.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#sure why not#
+	option = {
+	name = yug_stambolic.19.a
+		YUG = {
+			transfer_state = 184
+			transfer_state = 731
+		}
+		GRE = {
+			add_stability = -0.10
+			add_popularity = {
+				ideology = communism
+				popularity = -0.15
+			}
+		}
+		
+		ai_chance = { 
+			base = 99
+		}
+	}
+	
+	#declined#
+	option = {
+	name = yug_stambolic.19.a
+
+
+		ai_chance = { 
+			base = 0
+		}
+	}
+	
+}
+
+#negotiating for bulgaria - start#
+country_event = {
+	id = yug_foreign_policy.1
+	title = yug_foreign_policy.1.t
+	desc = yug_foreign_policy.1.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#lets try this#
+	option = {
+	name = yug_foreign_policy.1.a
+		SOV = {
+		country_event = {id = yug_foreign_policy.2 days = 2}		
+		}
+	}
+
+}
+
+#negotiating for bulgaria - ussr gets the event#
+country_event = {
+	id = yug_foreign_policy.2
+	title = yug_foreign_policy.2.t
+	desc = yug_foreign_policy.2.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+
+	#rejected#
+	option = {
+	name = yug_foreign_policy.2.a
+		trigger = {
+			NOT = {
+				YUG = {is_in_faction_with = SOV}
+			}
+		}
+		
+		YUG = {
+		country_event = {id = yug_foreign_policy.3 days = 2}		
+		}
+		
+		ai_chance = { 
+		base = 0
+		}
+	}
+
+	#demand acces to resources#
+	option = {
+	name = yug_foreign_policy.2.b
+		trigger = {
+			NOT = {
+				YUG = {is_in_faction_with = SOV}
+			}
+		}
+	
+		YUG = {
+		country_event = {id = yug_foreign_policy.5 days = 2}		
+		}
+		
+		ai_chance = { 
+		base = 35
+		}
+	}
+	
+	#demand an alliance#
+	option = {
+	name = yug_foreign_policy.2.c
+		trigger = {
+			NOT = {
+				YUG = {is_in_faction_with = SOV}
+			}
+		}
+		
+		YUG = {
+		country_event = {id = yug_foreign_policy.8 days = 2}		
+		}
+		ai_chance = { 
+		base = 35
+		}
+	}
+	
+	#Yugoslavs are our allies anyways, lets give it to them#
+	option = {
+	name = yug_foreign_policy.2.de
+		trigger = {
+			YUG = {is_in_faction_with = SOV}
+		}
+	
+		SOV = {
+		country_event = {id = yug_foreign_policy.11 days = 2}		
+		}
+		ai_chance = { 
+		base = 99
+		}
+	}
+
+}
+
+#negotiating for bulgaria - we are not getting bulgaria#
+country_event = {
+	id = yug_foreign_policy.3
+	title = yug_foreign_policy.3.t
+	desc = yug_foreign_policy.3.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#bruh#
+	option = {
+	name = yug_foreign_policy.3.a
+		add_political_power = -50
+		ai_chance = { 
+		base = 35
+		}
+	}
+	
+	#ok lets kill bulgaria anyways#
+	option = {
+	name = yug_foreign_policy.3.b
+		add_political_power = -150
+		add_stability = -0.10
+		declare_war_on = {
+			type = annex_everything
+			target = BUL
+		}
+		custom_effect_tooltip = yug_heres_how_you_win_against_bulgaria
+		SOV = {
+		country_event = {id = yug_foreign_policy.4 days = 2}		
+		}
+		ai_chance = { 
+		base = 35
+		}
+	}
+}
+
+#negotiating for bulgaria - yugoslavia declares war#
+country_event = {
+	id = yug_foreign_policy.4
+	title = yug_foreign_policy.4.t
+	desc = yug_foreign_policy.4.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#bruhh#
+	option = {
+	name = yug_foreign_policy.4.a
+		
+		custom_effect_tooltip = yug_heres_how_you_win_against_bulgaria
+	}
+}
+
+#negotiating for bulgaria - ussr wants resources#
+country_event = {
+	id = yug_foreign_policy.5
+	title = yug_foreign_policy.5.t
+	desc = yug_foreign_policy.5.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#sure#
+	option = {
+	name = yug_foreign_policy.5.a
+		SOV = {
+		country_event = {id = yug_foreign_policy.6 days = 2}		
+		}
+		ai_chance = { 
+		base = 45
+		}
+		
+	}
+	#no#
+	option = {
+	name = yug_foreign_policy.5.a		
+		add_political_power = -50
+		SOV = {
+		country_event = {id = yug_foreign_policy.7 days = 2}		
+		}		
+		ai_chance = { 
+		base = 15
+		}
+	}
+}
+
+#negotiating for bulgaria - yugoslavia accepts resource rights#
+country_event = {
+	id = yug_foreign_policy.6
+	title = yug_foreign_policy.6.t
+	desc = yug_foreign_policy.6.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#epic#
+	option = {
+	name = yug_foreign_policy.6.a
+		YUG = {
+			annex_country = {
+				target = BUL
+				transfer_troops = yes
+			}
+			country_event = {id = yug_foreign_policy.10}
+		}	
+			give_resource_rights = {
+				receiver = SOV
+				state = 48
+			}	
+			give_resource_rights = {
+				receiver = SOV
+				state = 212
+			}	
+			give_resource_rights = {
+				receiver = SOV
+				state = 105
+			}	
+			give_resource_rights = {
+				receiver = SOV
+				state = 106
+			}	
+	}
+}
+
+#negotiating for bulgaria - yugoslavia declines#
+country_event = {
+	id = yug_foreign_policy.7
+	title = yug_foreign_policy.7.t
+	desc = yug_foreign_policy.7.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#their loss#
+	option = {
+	name = yug_foreign_policy.7.a
+		YUG = {
+		country_event = {id = yug_foreign_policy.3 days = 2}		
+		}
+		ai_chance = { 
+		base = 5
+		}		
+	}
+	
+	#lets try this again#
+	option = {
+	name = yug_foreign_policy.7.b
+		SOV = {
+		country_event = {id = yug_foreign_policy.2 days = 2}		
+		}	
+		ai_chance = { 
+		base = 15
+		}		
+	}	
+}
+
+#negotiating for bulgaria - ussr wants alliance#
+country_event = {
+	id = yug_foreign_policy.8
+	title = yug_foreign_policy.8.t
+	desc = yug_foreign_policy.8.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#yup#
+	option = {
+	name = yug_foreign_policy.8.a
+		add_political_power = -100
+		SOV = {
+		country_event = {id = yug_foreign_policy.9 days = 2}		
+		}		
+		ai_chance = { 
+		base = 15
+		}	
+	}
+	
+	#nah#
+	option = {
+	name = yug_foreign_policy.8.b
+		add_stability = 0.02
+		SOV = {
+		country_event = {id = yug_foreign_policy.7 days = 2}		
+		}		
+		ai_chance = { 
+		base = 35
+		}	
+	}	
+}
+
+#negotiating for bulgaria - yugoslavia accepts alliance#
+country_event = {
+	id = yug_foreign_policy.9
+	title = yug_foreign_policy.9.t
+	desc = yug_foreign_policy.9.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#very epic#
+	option = {
+	name = yug_foreign_policy.9.a
+		add_political_power = 100
+		SOV = { add_to_faction = YUG }
+		YUG = {
+			replace_alignment_to_SOV = yes
+			annex_country = {
+				target = BUL
+				transfer_troops = yes
+			}
+			country_event = {id = yug_foreign_policy.10}
+		}
+		
+	}
+		
+}
+
+#negotiating for bulgaria - success#
+country_event = {
+	id = yug_foreign_policy.10
+	title = yug_foreign_policy.10.t
+	desc = yug_foreign_policy.10.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#very epic#
+	option = {
+	name = yug_foreign_policy.10.a
+		add_political_power = 100
+		add_stability = 0.15
+		add_opinion_modifier = {
+			target = SOV
+			modifier = huge_increase
+		}
+		SOV = {
+			add_opinion_modifier = {
+				target = YUG
+				modifier = huge_increase
+			}	
+		}		
+			48 = {
+				add_dynamic_modifier = {
+					modifier = YUG_heavy_autonomy
+				}
+			}
+			212 = {
+				add_dynamic_modifier = {
+					modifier = YUG_heavy_autonomy
+				}
+			}
+			801 = {
+				add_dynamic_modifier = {
+					modifier = YUG_heavy_autonomy
+				}
+			}
+			211 = {
+				add_dynamic_modifier = {
+					modifier = YUG_heavy_autonomy
+				}
+			}
+			77 = {
+				add_dynamic_modifier = {
+					modifier = YUG_heavy_autonomy
+				}
+			}			
+	}
+		
+}
+
+#negotiating for bulgaria - USSR just hands it over since yugoslavia is in their alliance#
+country_event = {
+	id = yug_foreign_policy.11
+	title = yug_foreign_policy.11.t
+	desc = yug_foreign_policy.11.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#very epic#
+	option = {
+	name = yug_foreign_policy.11.a
+		add_political_power = 100
+		add_stability = 0.15
+		YUG = {
+			annex_country = {
+				target = BUL
+				transfer_troops = yes
+			}
+		}
+		add_opinion_modifier = {
+			target = SOV
+			modifier = huge_increase
+		}
+		SOV = {
+			add_opinion_modifier = {
+				target = YUG
+				modifier = huge_increase
+			}	
+		}
+			48 = {
+				add_dynamic_modifier = {
+					modifier = YUG_heavy_autonomy
+				}
+			}
+			212 = {
+				add_dynamic_modifier = {
+					modifier = YUG_heavy_autonomy
+				}
+			}
+			801 = {
+				add_dynamic_modifier = {
+					modifier = YUG_heavy_autonomy
+				}
+			}
+			211 = {
+				add_dynamic_modifier = {
+					modifier = YUG_heavy_autonomy
+				}
+			}
+			77 = {
+				add_dynamic_modifier = {
+					modifier = YUG_heavy_autonomy
+				}
+			}
+		
+		
+	}
+		
+}
+
+#foreign policy debate#
+country_event = {
+	id = yug_foreign_policy.12
+	title = yug_foreign_policy.12.t
+	desc = yug_foreign_policy.12.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#join USSR#
+	option = {
+	name = yug_foreign_policy.12.a
+		trigger = {
+			NOT = {has_global_flag = ussr_putin_collapse}
+			SOV = {
+				NOT = {has_completed_focus = SOV_put_conspiracy}
+			}
+		}
+		SOV = { 
+		add_to_faction = YUG 
+		country_event = {id = yug_foreign_policy.13}
+		}
+		news_event = {id = old_times_news.68}
+		YUG = {
+			replace_alignment_to_SOV = yes
+		}
+		
+	}
+	
+	#lets stay neutral instead#
+	option = {
+	name = yug_foreign_policy.12.b
+		add_political_power = 25
+		add_stability = 0.05
+		add_to_variable = {yug_regime_popularity_strength = 2}
+		custom_effect_tooltip = yug_regime_popularity_strength_increases_by_2
+	}
+	
+}
+
+#USSR - Yugoslavia joins us#
+country_event = {
+	id = yug_foreign_policy.13
+	title = yug_foreign_policy.13.t
+	desc = yug_foreign_policy.13.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#very very nice#
+	option = {
+	name = yug_foreign_policy.13.a
+		add_political_power = 100
+		
+		
+	}
+		
+}
+
+## MILOSEVIC ##
+
+#NYL disbands#
+country_event = {
+	id = yug_milosevic.4
+	title = yug_milosevic.4.t
+	desc = yug_milosevic.4.d
+	picture = GFX_report_event_YUG_slobo
+	
+	is_triggered_only = yes
+	
+	#pog#
+	option = {
+	name = yug_milosevic.4.a
+		add_stability = -0.05
+		add_political_power = 50
+		country_event = {id = yug_milosevic.1 days = 5}
+	}
+	
+}
+
+#seselj wants more positions#
+country_event = {
+	id = yug_milosevic.1
+	title = yug_milosevic.1.t
+	desc = yug_milosevic.1.d
+	picture = GFX_report_event_YUG_slobo
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			country_event = {id = yug_milosevic.2 days = 5}
+		}
+	}
+	
+	#sure why not#
+	option = {
+	name = yug_milosevic.1.a
+		add_stability = 0.05
+		add_political_power = 25
+		set_country_flag = seselj_got_positions
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+
+		ai_chance = {
+		factor = 25
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+				rule = YUG_paths_selection
+				option = YUG_SESELJ_PATH_CHOSEN
+				}
+			}
+		}
+		
+	}
+	
+	#nah bro we dont need you anymore anyways#
+	option = {
+	name = yug_milosevic.1.b
+		add_stability = -0.10		
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		ai_chance = {
+		factor = 40
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+				rule = YUG_paths_selection
+				option = YUG_MILOSEVIC_PATH_CHOSEN
+				}
+			}
+		}
+	}	
+}
+
+#sus troop movements#
+country_event = {
+	id = yug_milosevic.2
+	title = yug_milosevic.2.t
+	desc = yug_milosevic.2.d
+	picture = GFX_report_event_YUG_slobo
+	
+	is_triggered_only = yes
+	
+	#wtf is going on m8#
+	option = {
+	name = yug_milosevic.2.a
+		add_stability = -0.05
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		107 = {
+		set_demilitarized_zone = yes
+		}
+		
+	}
+}
+
+#belgrade pustch#
+country_event = {
+	id = yug_milosevic.3
+	title = yug_milosevic.3.t
+	desc = yug_milosevic.3.d
+	picture = GFX_report_event_YUG_slobo
+	
+	is_triggered_only = yes
+	
+	#welp, we lost#
+	option = {
+	name = yug_milosevic.3.a
+		trigger = {
+			has_country_flag = seselj_got_positions
+		}
+		add_stability = -0.05
+		load_focus_tree = yug_nationalist_seselj_focus
+			set_politics = {
+				ruling_party = communism
+			}
+		107 = {
+		set_demilitarized_zone = no
+		}			
+		country_event = {id=yug.18}
+		every_unit_leader = {
+			limit = {
+				NOT = {
+					OR = {
+						has_trait = serbian
+						has_trait = montenegrin
+					}
+				}
+			}
+			retire = yes
+		}
+		news_event = {id = old_times_news.108}
+		
+	}
+	
+	#welp, seselj lost#
+	option = {
+	name = yug_milosevic.3.b
+		trigger = {
+			NOT = {has_country_flag = seselj_got_positions}
+		}
+		add_stability = -0.05
+		country_event = {id = yug_milosevic.5 days = 2}
+		107 = {
+		set_demilitarized_zone = no
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.10
+		}
+		country_event = {id=yug.18}
+		news_event = {id = old_times_news.110}		
+	}
+}
+
+#PCPoY (seselj party) dealt with #
+country_event = {
+	id = yug_milosevic.5
+	title = yug_milosevic.5.t
+	desc = yug_milosevic.5.d
+	picture = GFX_report_event_YUG_slobo
+	
+	is_triggered_only = yes
+	
+	#epico#
+	option = {
+	name = yug_milosevic.5.a
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.10
+		}	
+			set_party_name = {
+				ideology = communism
+				name = YUG_communism_SKJ_party
+				long_name = YUG_communism_SKJ_party_long
+			}
+			retire_ideology_leader = communism
+			promote_character = YUG_joska
+
+	}
+	
+}
+
+#Milosevic's health worsens#
+country_event = {
+	id = yug_milosevic.6
+	title = yug_milosevic.6.t
+	desc = yug_milosevic.6.d
+	picture = GFX_report_event_YUG_slobo
+	
+	trigger = {
+		original_tag = YUG
+		has_completed_focus = YUG_milosevic_renewed_mandate
+		date > 2002.05.30
+	}
+	
+	fire_only_once = yes
+	
+	#bruh#
+	option = {
+	name = yug_milosevic.6.a
+		set_country_flag = yug_milosevic_worsened_health
+	}
+	
+}
+
+#Finding a succesor#
+country_event = {
+	id = yug_milosevic.7
+	title = yug_milosevic.7.t
+	desc = yug_milosevic.7.d
+	picture = GFX_report_event_YUG_slobo
+	
+	is_triggered_only = yes
+	
+	#the wife#
+	option = {
+	name = yug_milosevic.7.a
+		add_stability = -0.05
+		add_popularity = {
+			ideology = communism
+			popularity = 0.20
+		}
+		set_politics = {
+			ruling_party = communism
+		}
+		retire_ideology_leader = communism
+		remove_country_leader_role = {
+			character = YUG_markovic
+			ideology = revolutionary_socialism
+		}
+		add_country_leader_role = {
+			character = YUG_markovic
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism_leninism
+				expire = "1965.1.1.1"
+				traits = { }
+			}
+		}
+		swap_ideas = {
+			remove_idea = YUG_reformed_consitution
+			add_idea = YUG_reformed_consitution_com
+		}
+	}
+
+	#the close associate#
+	option = {
+	name = yug_milosevic.7.b
+		add_political_power = 100
+		add_country_leader_role = {
+			character = YUG_momir_bulatovic
+			promote_leader = yes
+			country_leader = {
+				ideology = market_socialism
+				expire = "1965.1.1.1"
+				traits = { }
+			}
+		}
+	}
+
+	#the racist#
+	option = {
+	name = yug_milosevic.7.c
+		add_stability = -0.10
+		trigger = {
+			has_completed_focus = YUG_milosevic_integrate_pcpoy_remmants
+		}
+		add_country_leader_role = {
+			character = YUG_radovan_karadzic
+			promote_leader = yes
+			country_leader = {
+				ideology = market_socialism
+			}
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.15
+		}
+
+	}
+	
+}
+
+#abolishment of bosnia#
+country_event = {
+	id = yug_milosevic.8
+	title = yug_milosevic.8.t
+	desc = yug_milosevic.8.d
+	picture = GFX_report_event_YUG_slobo
+	
+	is_triggered_only = yes
+	
+	#epic troll#
+	option = {
+	name = yug_milosevic.8.a
+		
+	}
+	
+}
+
+#rise of the national faction#
+country_event = {
+	id = yug_milosevic.9
+	title = yug_milosevic.9.t
+	desc = yug_milosevic.9.d
+	picture = GFX_report_event_YUG_slobo
+	
+	is_triggered_only = yes
+	
+	#interesting#
+	option = {
+	name = yug_milosevic.9.a
+		set_party_name = {
+			ideology = fascism
+			name = YUG_fascism_SKJ_party
+			long_name = YUG_fascism_SKJ_party_long
+		}
+		add_country_leader_role = {
+			character = YUG_radovan_karadzic
+			promote_leader = yes
+			country_leader = {
+			ideology = fascism_ideology
+			traits = {nationalist}
+			}
+		}
+	}
+	
+}
+
+#the great progress campaign#
+country_event = {
+	id = yug_milosevic.10
+	title = yug_milosevic.10.t
+	desc = yug_milosevic.10.d
+	picture = GFX_report_event_YUG_slobo
+	
+	is_triggered_only = yes
+	
+	#wholesome#
+	option = {
+	name = yug_milosevic.10.a
+		add_political_power = 150
+	}
+	
+}
+
+#yugoslav computer time#
+country_event = {
+	id = yug_milosevic.11
+	title = yug_milosevic.11.t
+	desc = yug_milosevic.11.d
+	
+	is_triggered_only = yes
+	
+	#wholesome#
+	option = {
+	name = yug_milosevic.11.a
+		hidden_effect = {
+			country_event = {id = yug_milosevic.12 days = 150}
+		}
+	}
+	
+}
+
+#yugoslav computer finished#
+country_event = {
+	id = yug_milosevic.12
+	title = yug_milosevic.12.t
+	desc = yug_milosevic.12.d
+	
+	is_triggered_only = yes
+	
+	#great#
+	option = {
+	name = yug_milosevic.12.a
+		add_stability = 0.05
+	}
+	
+}
+
+#yugoslav nuclear program#
+country_event = {
+	id = yug_milosevic.13
+	title = yug_milosevic.13.t
+	desc = yug_milosevic.13.d
+	
+	is_triggered_only = yes
+	
+	#great#
+	option = {
+	name = yug_milosevic.13.a
+		news_event = {id = old_times_news.160}
+	}
+	
+}
+
+#the national security and unity law#
+country_event = {
+	id = yug_milosevic.14
+	title = yug_milosevic.14.t
+	desc = yug_milosevic.14.d
+	picture = GFX_report_event_YUG_slobo
+	
+	is_triggered_only = yes
+	
+	#wholesome#
+	option = {
+	name = yug_milosevic.14.a
+		add_political_power = 100
+	}
+	
+}
+
+#milosevic dies#
+country_event = {
+	id = yug_milosevic.15
+	title = yug_milosevic.15.t
+	desc = yug_milosevic.15.d
+	picture = GFX_report_event_YUG_slobo
+	
+	trigger = {
+		original_tag = YUG
+		date > 2007.09.10
+		has_country_leader = {
+			character = YUG_slobodan_milošević
+			ruling_only = yes
+		}
+	}
+	
+	fire_only_once = yes
+	
+	#adopt juche#
+	option = {
+	name = yug_milosevic.15.a
+		add_political_power = -50
+		add_stability = -0.15
+		kill_country_leader = yes
+		promote_character = YUG_marko_milosevic
+	}
+	
+}
+
+#SESELJ#
+
+#strikes #
+country_event = {
+	id = yug_seselj.1
+	title = yug_seselj.1.t
+	desc = yug_seselj.1.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#bruh#
+	option = {
+	name = yug_seselj.1.a
+		add_political_power = -100
+		add_stability = -0.10
+		104 = {
+			add_manpower = -13
+		}
+		804 = {
+			add_manpower = -5
+		}		
+		802 = {
+			add_manpower = -10
+		}		
+		add_timed_idea = {
+			idea = YUG_strikes
+			days = 100
+		}
+	}
+	
+}
+
+#military auth established in the north#
+country_event = {
+	id = yug_seselj.2
+	title = yug_seselj.2.t
+	desc = yug_seselj.2.d
+	picture = GFX_report_event_YUG_bossnia
+	
+	is_triggered_only = yes
+	
+	#bruh#
+	option = {
+	name = yug_seselj.2.a
+		add_stability = 0.01
+		puppet = CRO
+		CRO = {
+			if = {
+				limit = {
+					YUG = {has_completed_focus = YUG_seselj_embracing_serbian_ultranationalism}
+				}
+				set_cosmetic_tag = CRO_yug_puppet
+			}
+			else_if = {
+				set_cosmetic_tag = CRO_yug_puppet_1			
+			}
+			add_country_leader_role = {
+				character = CRO_mladic
+				promote_leader = yes
+				country_leader = {
+					ideology = nationalist_military_junta
+				}
+			}
+			set_party_name = {
+				ideology = fascism
+				name = CRO_yug_occupation_party
+				long_name = CRO_yug_occupation_party_long
+				
+			}
+			set_party_name = {
+				ideology = paternal_autocracy
+				name = CRO_yug_occupation_party
+				long_name = CRO_yug_occupation_party_long
+				
+			}
+			set_party_name = {
+				ideology = liberalism
+				name = CRO_united_front_party
+				long_name = CRO_united_front_party_long
+				
+			}
+			set_party_name = {
+				ideology = democratic
+				name = CRO_united_front_party
+				long_name = CRO_united_front_party_long
+				
+			}			
+			set_politics = {
+			ruling_party = fascism
+			}
+			set_popularities = {
+				liberalism = 45
+				democratic = 10
+				neutrality = 5
+				fascism = 20
+				paternal_autocracy = 20
+			}
+			remove_ideas = CRO_aftermath_of_the_krajina_war
+			transfer_state = 103
+			remove_state_core = 103
+			transfer_state = 109
+			remove_state_core = 109
+			transfer_state = 852
+			remove_state_core = 852
+			transfer_state = 736
+			remove_state_core = 736
+			transfer_state = 853
+			remove_state_core = 853
+			transfer_state = 102
+			remove_state_core = 102				
+		}
+	}
+	
+}
+
+# repopulation program
+country_event = {
+	id = yug_seselj.3
+	title = yug_seselj.3.t
+	desc = yug_seselj.3.d
+	#picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#have sex please#
+	option = {
+	name = yug_seselj.3.a
+		add_stability = -0.05
+		add_political_power = 50
+	}
+	
+}
+
+# "Fair" elections
+country_event = {
+	id = yug_seselj.4
+	title = yug_seselj.4.t
+	desc = yug_seselj.4.d
+	#picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#cool#
+	option = {
+	name = yug_seselj.4.a
+		add_political_power = 1
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.01
+		}
+	}
+	
+}
+
+# mass protests
+country_event = {
+	id = yug_seselj.5
+	title = yug_seselj.5.t
+	desc = yug_seselj.5.d
+	#picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#not cool#
+	option = {
+	name = yug_seselj.5.a
+		add_stability = -0.30
+		104 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+			add_manpower = -304			
+		}
+		804 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+			add_manpower = -204			
+		}
+		802 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+			add_manpower = -264				
+		}
+		105 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}		
+			add_manpower = -28
+		}
+		106 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+			add_manpower = -125				
+		}
+		961 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+			add_manpower = -142			
+		}	
+	}
+	
+}
+
+# big reveal
+country_event = {
+	id = yug_seselj.6
+	title = yug_seselj.6.t
+	desc = yug_seselj.6.d
+	#picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#cool#
+	option = {
+	name = yug_seselj.6.a
+		add_stability = -0.10
+		remove_ideas = YUG_after_tito
+			add_country_leader_trait = serbian_ultranationalist
+	}
+	
+}
+
+
+#Joska's End#
+country_event = {
+	id = yug.14
+	title = yug.14.t
+	desc = yug.14.d
+	
+	is_triggered_only = yes
+	
+	#We need loc#
+	option = {
+	name = yug.14.a
+		kill_ideology_leader = communism
+		hidden_effect = {
+			country_event = {id = yug_seselj.7 days = 2}
+		}
+	}
+
+}
+
+# founding of the new SKJ
+country_event = {
+	id = yug_seselj.7
+	title = yug_seselj.7.t
+	desc = yug_seselj.7.d
+	#picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#nuisance#
+	option = {
+	name = yug_seselj.7.a
+		add_stability = -0.10
+		add_political_power = -40
+		promote_character = YUG_branko_kitanovic
+		set_party_name = {
+			ideology = communism
+			name = outlawed_party
+			long_name = YUG_communism_NCPY_party_long
+		}
+		107 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}	
+	}
+	
+}
+
+
+# effect of radicalization >30 - businesses vandalized
+country_event = {
+	id = yug_seselj.8
+	title = yug_seselj.8.t
+	desc = yug_seselj.8.d
+	#picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	fire_only_once = no 
+	
+	immediate = {
+		hidden_effect = { #this is how it randomizes the city name each time - durangoose
+			random_list = {
+				20 = {
+					set_variable = {YUG_city_chooser_var = 1}
+					set_country_flag = sarajevo_chosen
+				}
+				10 = {
+					set_variable = {YUG_city_chooser_var = 2}
+					set_country_flag = banja_luka_chosen
+				}	
+				20 = {
+					set_variable = {YUG_city_chooser_var = 3}
+					set_country_flag = pris_chosen
+				}
+				10 = {
+					set_variable = {YUG_city_chooser_var = 4}
+					set_country_flag = novi_sad_chosen
+				}	
+				10 = {
+					set_variable = {YUG_city_chooser_var = 5}
+					set_country_flag = mostar_chosen
+				}
+				20 = {
+					set_variable = {YUG_city_chooser_var = 6}
+					set_country_flag = zagreb_chosen
+				}	
+				10 = {
+					set_variable = {YUG_city_chooser_var = 7}
+					set_country_flag = ljub_chosen
+				}					
+			}
+		}
+	}
+	
+	#nuisance#
+	option = {
+	name = yug_seselj.8.a
+		add_political_power = -25
+		add_stability = -0.05
+		if = {
+			limit = {has_country_flag = sarajevo_chosen}
+			104 = {
+				add_manpower = -20
+			}
+			clr_country_flag = sarajevo_chosen
+		}
+		if = {
+			limit = {has_country_flag = banja_luka_chosen}
+			959 = {
+				add_manpower = -20
+			}
+			clr_country_flag = banja_luka_chosen
+		}
+		if = {
+			limit = {has_country_flag = pris_chosen}
+			802 = {
+				add_manpower = -20
+			}
+			clr_country_flag = pris_chosen
+		}
+		if = {
+			limit = {has_country_flag = novi_sad_chosen}
+			45 = {
+				add_manpower = -20
+			}
+			clr_country_flag = novi_sad_chosen
+		}
+		if = {
+			limit = {has_country_flag = mostar_chosen}
+			804 = {
+				add_manpower = -20
+			}
+			clr_country_flag = mostar_chosen
+		}
+		if = {
+			limit = {has_country_flag = zagreb_chosen}
+			109 = {
+				add_manpower = -20
+			}
+			clr_country_flag = zagreb_chosen
+		}
+		if = {
+			limit = {has_country_flag = ljub_chosen}
+			853 = {
+				add_manpower = -20
+			}
+			clr_country_flag = ljub_chosen
+		}		
+	}
+	
+}
+
+# effect of radicalization >50 - clashes end deadly
+country_event = {
+	id = yug_seselj.9
+	title = yug_seselj.9.t
+	desc = yug_seselj.9.d
+	#picture = GFX_report_event_YUG_yugoslavia_flag
+
+	immediate = {
+		hidden_effect = { #this is how it randomizes the city name each time - durangoose
+			random_list = {
+				20 = {
+					set_variable = {YUG_city_chooser_var = 1}
+					set_country_flag = sarajevo_chosen
+				}
+				10 = {
+					set_variable = {YUG_city_chooser_var = 2}
+					set_country_flag = banja_luka_chosen
+				}	
+				20 = {
+					set_variable = {YUG_city_chooser_var = 3}
+					set_country_flag = pris_chosen
+				}
+				10 = {
+					set_variable = {YUG_city_chooser_var = 4}
+					set_country_flag = novi_sad_chosen
+				}	
+				10 = {
+					set_variable = {YUG_city_chooser_var = 5}
+					set_country_flag = mostar_chosen
+				}
+				20 = {
+					set_variable = {YUG_city_chooser_var = 6}
+					set_country_flag = zagreb_chosen
+				}	
+				10 = {
+					set_variable = {YUG_city_chooser_var = 7}
+					set_country_flag = ljub_chosen
+				}					
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	#nuisance#
+	option = {
+	name = yug_seselj.9.a
+		add_political_power = -50
+		if = {
+			limit = {has_country_flag = sarajevo_chosen}
+			104 = {
+				add_manpower = -120
+			}
+			clr_country_flag = sarajevo_chosen
+		}
+		if = {
+			limit = {has_country_flag = banja_luka_chosen}
+			959 = {
+				add_manpower = -120
+			}
+			clr_country_flag = banja_luka_chosen
+		}
+		if = {
+			limit = {has_country_flag = pris_chosen}
+			802 = {
+				add_manpower = -120
+			}
+			clr_country_flag = pris_chosen
+		}
+		if = {
+			limit = {has_country_flag = novi_sad_chosen}
+			45 = {
+				add_manpower = -120
+			}
+			clr_country_flag = novi_sad_chosen
+		}
+		if = {
+			limit = {has_country_flag = mostar_chosen}
+			804 = {
+				add_manpower = -120
+			}
+			clr_country_flag = mostar_chosen
+		}
+		if = {
+			limit = {has_country_flag = zagreb_chosen}
+			109 = {
+				add_manpower = -120
+			}
+			clr_country_flag = zagreb_chosen
+		}
+		if = {
+			limit = {has_country_flag = ljub_chosen}
+			853 = {
+				add_manpower = -120
+			}
+			clr_country_flag = ljub_chosen
+		}	
+		
+	}
+	
+}
+
+# effect of radicalization >70 - massacre
+country_event = {
+	id = yug_seselj.10
+	title = yug_seselj.10.t
+	desc = yug_seselj.10.d
+	#picture = GFX_report_event_YUG_yugoslavia_flag
+
+	immediate = {
+		hidden_effect = { #this is how it randomizes the city name each time - durangoose
+			random_list = {
+				20 = {
+					set_variable = {YUG_city_chooser_var = 1}
+					set_country_flag = sarajevo_chosen
+				}
+				10 = {
+					set_variable = {YUG_city_chooser_var = 2}
+					set_country_flag = banja_luka_chosen
+				}	
+				20 = {
+					set_variable = {YUG_city_chooser_var = 3}
+					set_country_flag = pris_chosen
+				}
+				10 = {
+					set_variable = {YUG_city_chooser_var = 4}
+					set_country_flag = novi_sad_chosen
+				}	
+				10 = {
+					set_variable = {YUG_city_chooser_var = 5}
+					set_country_flag = mostar_chosen
+				}
+				20 = {
+					set_variable = {YUG_city_chooser_var = 6}
+					set_country_flag = zagreb_chosen
+				}	
+				10 = {
+					set_variable = {YUG_city_chooser_var = 7}
+					set_country_flag = ljub_chosen
+				}					
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	#nuisance#
+	option = {
+	name = yug_seselj.10.a
+		add_stability = -0.10
+		if = {
+			limit = {has_country_flag = sarajevo_chosen}
+			104 = {
+				add_manpower = -2524
+			}
+			clr_country_flag = sarajevo_chosen
+		}
+		if = {
+			limit = {has_country_flag = banja_luka_chosen}
+			959 = {
+				add_manpower = -2524
+			}
+			clr_country_flag = banja_luka_chosen
+		}
+		if = {
+			limit = {has_country_flag = pris_chosen}
+			802 = {
+				add_manpower = -2524
+			}
+			clr_country_flag = pris_chosen
+		}
+		if = {
+			limit = {has_country_flag = novi_sad_chosen}
+			45 = {
+				add_manpower = -2524
+			}
+			clr_country_flag = novi_sad_chosen
+		}
+		if = {
+			limit = {has_country_flag = mostar_chosen}
+			804 = {
+				add_manpower = -2524
+			}
+			clr_country_flag = mostar_chosen
+		}
+		if = {
+			limit = {has_country_flag = zagreb_chosen}
+			109 = {
+				add_manpower = -2824
+			}
+			clr_country_flag = zagreb_chosen
+		}
+		if = {
+			limit = {has_country_flag = ljub_chosen}
+			853 = {
+				add_manpower = -2524
+			}
+			clr_country_flag = ljub_chosen
+		}			
+	}
+	
+}
+
+# effect of radicalization >90 - final massacre
+country_event = {
+	id = yug_seselj.11
+	title = yug_seselj.11.t
+	desc = yug_seselj.11.d
+	#picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	trigger = {
+		original_tag = YUG
+		check_variable = {YUG_radicalization_var > 89}
+		has_completed_focus = YUG_seselj_intensify_anti_terrorist_programs
+	}
+	fire_only_once = yes
+	
+	#nuisance#
+	option = {
+	name = yug_seselj.11.a
+		852 = {
+			add_manpower = -13204
+		}
+		country_event = {id = yug_seselj.13 days = 2}
+	}
+	
+}
+
+# investigation team escapes to italy
+country_event = {
+	id = yug_seselj.13
+	title = yug_seselj.13.t
+	desc = yug_seselj.13.d
+	#picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	#worrying#
+	option = {
+	name = yug_seselj.13.a
+		news_event = {id = old_times_news.162}
+		USA = {country_event = {id = yug_seselj.14 days = 3}}
+		annex_country = {
+			target = CRO
+			transfer_troops = yes
+		}		
+		set_global_flag = yug_un_int
+		hidden_effect = {
+			CRO = {
+				set_cosmetic_tag = CRO
+				add_state_core = 852
+				add_state_core = 103
+				add_state_core = 163
+				add_state_core = 964
+				add_state_core = 109
+				add_state_core = 963
+				add_state_core = 910
+			}
+		}
+	}
+	
+}
+
+# usa - un intervention
+country_event = {
+	id = yug_seselj.14
+	title = yug_seselj.14.t
+	desc = yug_seselj.14.d
+	#picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	#indeed we shall invade yugo with ussr#
+	option = {
+	name = yug_seselj.14.a
+		trigger = {
+			NOT = {
+				SOV = {
+					has_country_leader = {
+						character = SOV_dmitry_yazov
+						ruling_only = yes
+					}
+				}
+			}	
+		}
+		SOV = {country_event = {id = yug_seselj.15}}
+	}
+
+	#indeed we shall invade yugo without ussr#
+	option = {
+	name = yug_seselj.14.b
+		trigger = {
+			SOV = {
+				has_country_leader = {
+					character = SOV_dmitry_yazov
+					ruling_only = yes
+				}
+			}
+		}
+		news_event = {id = old_times_news.163 days = 2}
+	}
+	
+}
+
+# sov - un intervention, formation of coalition
+country_event = {
+	id = yug_seselj.15
+	title = yug_seselj.15.t
+	desc = yug_seselj.15.d
+	#picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	#this reminds me of ww2#
+	option = {
+	name = yug_seselj.15.a
+		news_event = {id = old_times_news.163}
+		set_global_flag = anti_yug_coalition_formed
+	}
+	
+}
+
+# invasion time
+country_event = {
+	id = yug_seselj.16
+	title = yug_seselj.16.t
+	desc = yug_seselj.16.d
+	#picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#this reminds me of ww2#
+	option = {
+	name = yug_seselj.16.a
+		USA = {
+			declare_war_on = {
+				type = annex_everything
+				target = YUG
+			}		
+		}
+		
+		if = {
+			limit = {has_global_flag = anti_yug_coalition_formed}
+			SOV = {
+				declare_war_on = {
+					type = annex_everything
+					target = YUG
+				}
+			}
+			news_event = {id = old_times_news.164}
+		}
+		else = {
+			news_event = {id = old_times_news.165}
+		}
+	}
+	
+}
+
+# coup
+country_event = {
+	id = yug_seselj.12
+	title = yug_seselj.12.t
+	desc = yug_seselj.12.d
+	#picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#markovic#
+	option = {
+	name = yug_seselj.12.a
+		trigger = {
+			NOT = {
+				has_country_leader = {
+					character = YUG_radomir_markovic
+					ruling_only = yes
+				}
+				has_country_flag = markovic_was_already_leader
+			}
+		}	
+		retire_country_leader = yes
+		add_country_leader_role = {
+			character = YUG_radomir_markovic
+			promote_leader = yes
+			country_leader = {
+				ideology = ultranationalism
+			}
+		}		
+		add_to_variable = {YUG_nationalist_leader_change_count = 1}
+		set_country_flag = markovic_was_already_leader
+		YUG_increase_nat_support = yes
+		YUG_increase_radicalization_5 = yes
+		set_variable = {YUG_radicalization_var = 35}		
+	}
+	#nikolic#
+	option = {
+	name = yug_seselj.12.b
+		trigger = {
+			NOT = {
+				has_country_leader = {
+					character = YUG_tomislav_nikolic
+					ruling_only = yes
+				}
+				has_country_flag = nikolic_was_already_leader
+			}
+		}
+		retire_country_leader = yes
+		add_country_leader_role = {
+			character = YUG_tomislav_nikolic
+			promote_leader = yes
+			country_leader = {
+				ideology = ultranationalism
+			}
+		}
+		add_to_variable = {YUG_nationalist_leader_change_count = 1}
+		set_country_flag = nikolic_was_already_leader
+		YUG_increase_nat_support = yes
+		YUG_increase_radicalization_5 = yes
+		set_variable = {YUG_radicalization_var = 35}		
+	}
+	#pavle#
+	option = {
+	name = yug_seselj.12.c
+		trigger = {
+			has_country_flag = abolished_secularism
+			NOT = {
+				has_country_leader = {
+					character = YUG_pavle
+					ruling_only = yes
+				}
+				has_country_flag = pavle_was_already_leader
+			}			
+		}
+		retire_country_leader = yes
+		add_country_leader_role = {
+			character = YUG_pavle
+			promote_leader = yes
+			country_leader = {
+				ideology = ultranationalism
+			}
+		}
+		add_to_variable = {YUG_nationalist_leader_change_count = 1}
+		set_country_flag = pavle_was_already_leader
+		YUG_increase_nat_support = yes
+		YUG_increase_radicalization_5 = yes
+		set_variable = {YUG_radicalization_var = 35}
+		
+	}	
+}
+
+# IMF nopes out
+country_event = {
+	id = yug_seselj.17
+	title = yug_seselj.17.t
+	desc = yug_seselj.17.d
+	#picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#good, fuck off.#
+	option = {
+	name = yug_seselj.17.a
+		add_political_power = -100		
+		set_country_flag = yug_paid_all_the_debts_in_full
+		clr_country_flag = yug_imf_time
+		set_variable = {yug_economic_health_var = 0}
+	}
+
+}
+
+
+#New National State#
+country_event = {
+	id = yug.15
+	title = yug.15.t
+	desc = yug.15.d
+	picture = GFX_report_event_YUG_bossnia
+	
+	is_triggered_only = yes
+	
+	#We need loc#
+	option = {
+	name = yug.15.a
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.10
+		}
+		add_war_support = 0.15
+		if = {
+			limit = {
+				has_completed_focus = YUG_seselj_embracing_serbian_ultranationalism
+			}
+			set_cosmetic_tag = YUG_greater_serbia_cosmetic
+		}
+	}
+
+}
+
+#The Albanian Issue#
+country_event = {
+	id = yug.16
+	title = yug.16.t
+	desc = yug.16.d
+	picture = GFX_report_event_YUG_bossnia
+	
+	is_triggered_only = yes
+	
+	#We need loc#
+	option = {
+	name = yug.16.a
+
+	}
+
+}
+
+# future of UN yugoslavia
+country_event = {
+	id = yug_seselj.18
+	title = yug_seselj.18.t
+	desc = yug_seselj.18.d
+	#picture = GFX_report_event_YUG_yugoslavia_flag
+	
+	is_triggered_only = yes
+	
+	#dissolve yugo into seperate countries#
+	option = {
+	name = yug_seselj.18.a
+		if = {
+			limit = {
+				NOT = {has_global_flag = anti_yug_coalition_formed_2}
+				NOT = {has_country_flag = ussr_decline_plan_1}
+			}
+			YUG = {
+				release = MNT
+				release = KOS				
+				release = SER
+				release = BOS
+				release = CRO
+				release = SLV
+				release = MAC
+			}
+			BOS = {
+				set_cosmetic_tag = BOS_win
+			}
+			KOS = {
+				set_cosmetic_tag = KOS_win
+			}			
+		}
+		else_if = {
+			SOV = {country_event = {id = yug_seselj.19}}
+		}
+		set_country_flag = yug_un_chose_1
+	}
+
+	#divide yugo into pro-us and pro-ussr zones#
+	option = {
+	name = yug_seselj.18.b
+		trigger = {
+			has_global_flag = anti_yug_coalition_formed_2
+			NOT = {has_country_flag = ussr_decline_plan_2}
+		}
+		SOV = {country_event = {id = yug_seselj.20}}
+		set_country_flag = yug_un_chose_2
+	}
+
+	#let yugoslavia stay in one piece#
+	option = {
+	name = yug_seselj.18.c
+		trigger = {
+			NOT = {has_global_flag = anti_yug_coalition_formed_2}
+		}
+		end_puppet = YUG
+				YUG = {
+					set_politics = {
+						ruling_party = liberalism
+						last_election = "1991.5.3"
+						election_frequency = 36
+						elections_allowed = no
+					}
+					
+					set_popularities = {
+						liberalism = 34
+						social_democracy = 15 
+						democratic = 15
+						fascism = 16
+						paternal_autocracy = 5
+						reformed_communism = 15
+						communism = 0
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = YUG
+				}
+		USA = {add_to_faction = YUG} 		
+	}
+
+}
+
+#ussr - usa wants to dissolve yugo into multiple countries#
+country_event = {
+	id = yug_seselj.19
+	title = yug_seselj.19.t
+	desc = yug_seselj.19.d
+	picture = GFX_report_event_YUG_bossnia
+	
+	is_triggered_only = yes
+	
+	#okay#
+	option = {
+	name = yug_seselj.19.a
+		USA = {country_event = {id = yug_seselj.21}}
+		ai_chance = { 
+		base = 200
+		}
+	}
+
+	#no#
+	option = {
+	name = yug_seselj.19.b
+		trigger = {
+			NOT = {check_variable = {yug_un_future = 1}}
+		}		
+		add_to_variable = {yug_un_future = 1}
+		USA = {set_country_flag = ussr_decline_plan_1}
+		USA = {country_event = {id = yug_seselj.18}}
+		ai_chance = { 
+		base = 0
+		}
+	}
+
+}
+
+#ussr - usa wants to dissolve yugo into pro-us and pro-ussr#
+country_event = {
+	id = yug_seselj.20
+	title = yug_seselj.20.t
+	desc = yug_seselj.20.d
+	picture = GFX_report_event_YUG_bossnia
+	
+	is_triggered_only = yes
+	
+	#okay#
+	option = {
+	name = yug_seselj.20.a
+		USA = {country_event = {id = yug_seselj.21}}
+		ai_chance = { 
+		base = 200
+		}
+	}
+
+	#no#
+	option = {
+	name = yug_seselj.20.b
+		trigger = {
+			NOT = {check_variable = {yug_un_future = 1}}
+		}
+		add_to_variable = {yug_un_future = 1}
+		USA = {
+		set_country_flag = ussr_decline_plan_2
+		}
+		USA = {country_event = {id = yug_seselj.18}}
+		
+		ai_chance = { 
+		base = 0
+		}
+	}
+
+}
+
+#usa - ussr agrees!#
+country_event = {
+	id = yug_seselj.21
+	title = yug_seselj.21.t
+	desc = yug_seselj.21.d
+	picture = GFX_report_event_YUG_bossnia
+	
+	is_triggered_only = yes
+	
+	#okay#
+	option = {
+	name = yug_seselj.21.a
+		if = {
+			limit = {has_country_flag = yug_un_chose_1}
+			YUG = {
+				release = MNT
+				release = SER
+				release = BOS
+				release = KOS
+				release = CRO
+				release = SLV
+				release = MAC
+			}
+			BOS = {
+				set_cosmetic_tag = BOS_win
+			}
+			KOS = {
+				set_cosmetic_tag = KOS_win
+			}			
+		}
+		if = {
+			limit = {has_country_flag = yug_un_chose_2}
+			end_puppet = YUG
+			SOV = {puppet = YUG}
+			YUG = {
+				release = SLV
+				release = CRO
+			}
+			BOS = {
+				transfer_state = 104
+				transfer_state = 804
+				transfer_state = 961
+			}
+			USA = { add_to_faction = SLV }
+			USA = { add_to_faction = CRO }
+			USA = { add_to_faction = BOS }
+			
+							YUG = {
+							retire_country_leader = yes
+							promote_character = YUG_joska
+							set_cosmetic_tag = YUG_com_puppet
+								set_popularities = {
+									socialism = 30
+									reformed_communism = 20
+									communism = 50
+								}
+								set_party_name = {
+									ideology = communism
+									name = YUG_communism_SKJ_party
+									long_name = YUG_communism_SKJ_party_long
+								}
+								set_party_name = {
+									ideology = reformed_communism
+									name = YUG_reformed_communism
+									long_name = YUG_reformed_communism_long									
+								}		
+								set_party_name = {
+									ideology = socialism
+									name = YUG_socialism_SKJ_party
+									long_name = YUG_socialism_SKJ_party_long
+								}
+							}			
+		}		
+		ai_chance = { 
+		base = 200
+		}
+	}
+
+
+}
+
+## UPRISING STUFF##
+
+
+### FOCUSED ON BOSNIA / BOSNIA REBELS FIRST ###
+
+#uprising event for bosnia#
+country_event = {
+	id = bos.1
+	title = bos.1.t
+	desc = bos.1.d
+	picture = GFX_report_event_YUG_bossnia
+	
+	is_triggered_only = yes
+	
+	#FORWARD#
+	option = {
+	name = bos.1.a
+		set_country_flag = bos_uprising_started
+		set_country_flag = yug_mass_rebellions
+		load_oob = "BOS_rebellion"
+		YUG = {country_event = {days = 3 id = yug_rebel.3}}
+		YUG = {country_event = {days = 2 id = yug_rebel.10}}
+		if = {
+			limit = {
+				check_variable = {
+					YUG.bosnia_fight_strength > 74
+				}
+			}	
+				add_ideas = BOS_indepandance_war_fighter_experience			
+		}
+		
+		else_if = {
+			limit = {
+				check_variable = {
+					YUG.bosnia_fight_strength < 60
+					YUG.bosnia_fight_strength > 40
+				}
+			
+			}
+			add_ideas = BOS_indepandance_war_fighter_experience_2
+			
+		}
+
+		else_if = {
+			limit = {
+				check_variable = {
+					YUG.bosnia_fight_strength < 41
+				}
+			}
+			add_ideas = BOS_indepandance_war_fighter_experience_3
+		}
+
+			104 = {
+				if = {
+					limit = {has_state_flag = yug_state_division_1}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+				}
+				if = {
+					limit = {has_state_flag = yug_state_division_2}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}					
+				}		
+				if = {
+					limit = {has_state_flag = yug_state_division_3}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}					
+				}	
+				if = {
+					limit = {has_state_flag = yug_state_division_4}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}		
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}					
+				}				
+				if = {
+					limit = {has_state_flag = yug_state_division_5}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}		
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}					
+				}				
+			}
+			959 = {
+				if = {
+					limit = {has_state_flag = yug_state_division_1}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+				}
+				if = {
+					limit = {has_state_flag = yug_state_division_2}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}					
+				}		
+				if = {
+					limit = {has_state_flag = yug_state_division_3}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}					
+				}	
+				if = {
+					limit = {has_state_flag = yug_state_division_4}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}		
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}					
+				}				
+				if = {
+					limit = {has_state_flag = yug_state_division_5}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}		
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}					
+				}				
+			}
+			961 = {
+				if = {
+					limit = {has_state_flag = yug_state_division_1}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+				}
+				if = {
+					limit = {has_state_flag = yug_state_division_2}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}					
+				}		
+				if = {
+					limit = {has_state_flag = yug_state_division_3}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}					
+				}	
+				if = {
+					limit = {has_state_flag = yug_state_division_4}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}		
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}					
+				}				
+				if = {
+					limit = {has_state_flag = yug_state_division_5}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}		
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}					
+				}				
+			}
+			960 = {
+				if = {
+					limit = {has_state_flag = yug_state_division_1}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+				}
+				if = {
+					limit = {has_state_flag = yug_state_division_2}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}					
+				}		
+				if = {
+					limit = {has_state_flag = yug_state_division_3}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}					
+				}	
+				if = {
+					limit = {has_state_flag = yug_state_division_4}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}		
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}					
+				}				
+				if = {
+					limit = {has_state_flag = yug_state_division_5}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}		
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = BOS
+					}					
+				}				
+			}						
+
+	}
+
+}
+
+#uprising event for kosovo#
+country_event = {
+	id = kos.1
+	title = kos.1.t
+	desc = kos.1.d
+	picture = GFX_report_event_YUG_bossnia
+	
+	is_triggered_only = yes
+	
+	#FORWARD#
+	option = {
+	name = kos.1.a
+		add_ideas = KOS_albania_support
+		load_oob = "KOS_rebellion"
+		
+			802 = {
+				if = {
+					limit = {has_state_flag = yug_state_division_1}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = KOS
+					}
+				}
+				if = {
+					limit = {has_state_flag = yug_state_division_2}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = KOS
+					}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = KOS
+					}					
+				}		
+				if = {
+					limit = {has_state_flag = yug_state_division_3}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = KOS
+					}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = KOS
+					}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = KOS
+					}					
+				}	
+				if = {
+					limit = {has_state_flag = yug_state_division_4}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = KOS
+					}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = KOS
+					}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = KOS
+					}		
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = KOS
+					}					
+				}				
+				if = {
+					limit = {has_state_flag = yug_state_division_5}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = KOS
+					}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = KOS
+					}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = KOS
+					}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = KOS
+					}		
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = KOS
+					}					
+				}				
+			}
+		
+		if = {
+			limit = {
+					check_variable = {
+						YUG.albania_fight_strength > 74
+					}
+			
+			}
+		add_ideas = BOS_indepandance_war_fighter_experience
+			
+		}
+		
+		else_if = {
+			limit = {
+				check_variable = {
+					YUG.albania_fight_strength < 60
+					YUG.albania_fight_strength > 40
+				}
+			
+			}
+			add_ideas = BOS_indepandance_war_fighter_experience_2
+		}
+
+		else_if = {
+			limit = {
+				check_variable = {
+					YUG.albania_fight_strength < 41
+				}
+			}
+			add_ideas = BOS_indepandance_war_fighter_experience_3
+		}
+
+	}
+
+}
+
+#manual bosnia war trigger#
+country_event = {
+	id = yug_rebel.0
+	title = yug_rebel.0.t
+	desc = yug_rebel.0.d
+	picture = GFX_report_event_YUG_depressed
+	
+	is_triggered_only = yes
+
+	
+	#oh shit#
+	option = {
+	name = yug_rebel.0.a
+		country_event = { id = yug_rebel.1} 
+		set_country_flag = bos_uprising_started
+		BOS = {
+			transfer_state = 104
+			declare_war_on = {
+				type = annex_everything
+				target = YUG
+			}
+			country_event ={id = bos.1}
+		}
+	}
+
+}
+
+#manual bosnia war trigger#
+country_event = {
+	id = yug_rebel.0
+	title = yug_rebel.0.t
+	desc = yug_rebel.0.d
+	picture = GFX_report_event_YUG_depressed
+	
+	is_triggered_only = yes
+
+	
+	#oh shit#
+	option = {
+	name = yug_rebel.0.a
+		country_event = { id = yug_rebel.1} 
+		set_country_flag = bos_uprising_started
+		BOS = {
+			transfer_state = 104
+			declare_war_on = {
+				type = annex_everything
+				target = YUG
+			}
+			country_event ={id = bos.1}
+		}
+	}
+
+}
+
+#mass uprisings across the country#
+country_event = {
+	id = yug_rebel.1
+	title = yug_rebel.1.t
+	desc = yug_rebel.1.d
+	picture = GFX_report_event_YUG_depressed
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+		set_nationality = {
+			target_country = BOS
+			character = YUG_atif_dudakovic
+		}
+		remove_trait = {
+			character = YUG_atif_dudakovic
+			trait = bosnian
+		}
+		activate_decision = yug_lines_solidify
+		YUG_remove_rebel_activity = yes
+		YUG_remove_deportations = yes		
+		load_oob = "YUG_srpska_volunteers"
+		
+			if = {
+				limit = {
+					has_country_flag = yug_repop_focus_taken_extra_srpska_vol
+				}
+				959 = {
+					create_unit = {
+					division = "name = \"Bosnian Serb Volunteers\" division_template = \"Bosnian Serb Volunteers\" start_experience_factor = 0.35 start_equipment_factor = 1"
+					owner = YUG
+					}
+					
+					create_unit = {
+					division = "name = \"Bosnian Serb Volunteers\" division_template = \"Bosnian Serb Volunteers\" start_experience_factor = 0.35 start_equipment_factor = 1"
+					owner = YUG
+					}
+									
+				}
+			}
+		}
+	}
+	
+	#oh shit#
+	option = {
+	name = yug_rebel.1.a
+	news_event = {id = yug_news.1}
+			add_manpower = -3500
+			add_political_power = -50
+			set_country_flag = yug_mass_rebellions
+			CRO = {
+			country_event = {id = cro.1}
+			}
+	}
+	
+	#actually ima go to bosnia#
+	option = {
+	name = yug_rebel.1.b
+		news_event = {id = yug_news.1}
+			add_manpower = -3500
+			add_political_power = -50
+			set_country_flag = yug_mass_rebellions
+			CRO = {
+			country_event = {id = cro.1}
+			}
+	BOS = {change_tag_from = YUG }	
+	
+	}
+
+}
+
+
+#seizeing osijek event for croatia#
+country_event = {
+	id = cro.1
+	title = cro.1.t
+	desc = cro.1.d
+	picture = GFX_report_event_YUG_bossnia
+	
+	is_triggered_only = yes
+	
+	#oh hell yeah#
+	option = {
+	name = cro.1.a
+	add_political_power = 50
+	add_war_support = 0.05
+
+		YUG = {
+
+			country_event = {id = yug_rebel.2}
+			
+		}
+		
+	}
+
+}
+
+#CROATIA TRIES SEIZING BACKA event for yugoslavia#
+country_event = {
+	id = yug_rebel.2
+	title = yug_rebel.2.t
+	desc = yug_rebel.2.d
+	picture = GFX_report_event_YUG_croatia_takes_land
+	
+	is_triggered_only = yes
+	
+	
+	#we wont give up without a fight#
+	option = {
+	name = yug_rebel.2.a
+	add_political_power = 25
+	add_war_support = 0.05
+		start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 963
+				num_provinces = 3
+				on_win = yug.27 #cro win
+				on_lose = yug.26 #yug win
+				modifier = 0.1
+				dig_in_factor = 0
+				terrain_factor = 0
+			}	
+			defender = {
+				state = 910
+				num_provinces = 3
+				on_win = yug.26 #yug win
+				on_lose = yug.27 #cro win
+			}
+		}
+	
+		hidden_effect = {
+			country_event = {days = 5 id = yug_rebel.4}
+		}
+	}	
+	
+	#have it
+	option = {
+	name = yug_rebel.2.b
+	add_war_support = -0.1
+	add_manpower = 5000
+	CRO = {
+		add_war_support = 0.1
+		add_stability = 0.1
+		remove_ideas = CRO_aftermath_of_the_krajina_war
+		transfer_state = 910
+	}
+		hidden_effect = {
+			country_event = {days = 5 id = yug_rebel.4}
+		}
+	}
+
+}
+
+#kosovo rebels#
+country_event = {
+	id = yug_rebel.3
+	title = yug_rebel.3.t
+	desc = yug_rebel.3.d
+	picture = GFX_report_event_YUG_rebellion
+	
+	is_triggered_only = yes
+	
+	immediate = { # Optional : all the following will occur once the event occurs
+		hidden_effect = {
+			KOS = {
+			country_event = {id = kos.1}
+			transfer_state = 802
+					declare_war_on = {
+					type = annex_everything
+					target = YUG
+					}
+					add_ideas = KOS_albania_support	
+			}
+		}
+	}
+	
+	#hell#
+	option = {
+	name = yug_rebel.3.a
+	add_stability = -0.05
+	
+		
+	}
+	
+	#kosovo time#
+	option = {
+	name = yug_rebel.3.b
+	add_stability = -0.05
+	KOS = {change_tag_from = YUG }	
+		
+	}	
+
+}
+
+#macedonia rebels#
+country_event = {
+	id = yug_rebel.4
+	title = yug_rebel.4.t
+	desc = yug_rebel.4.d
+	picture = GFX_report_event_YUG_rebellion
+	
+	is_triggered_only = yes
+	
+	immediate = { # Optional : all the following will occur once the event occurs
+		hidden_effect = {
+			MAC = {
+			add_ideas = BOS_indepandance_war_fighter_experience
+			country_event = {id = mac.1}
+			transfer_state = 106
+					declare_war_on = {
+					type = annex_everything
+					target = YUG
+					}
+			}
+		}
+	}
+	
+	#this is getting real real bad#
+	option = {
+	name = yug_rebel.4.a
+	add_stability = -0.05
+		hidden_effect ={
+		country_event = {days = 5 id = yug_rebel.5}
+		}
+	}
+	
+	#macedonia time#
+	option = {
+	name = yug_rebel.4.b
+	add_stability = -0.05
+	MAC = {change_tag_from = YUG }	
+		hidden_effect ={
+		country_event = {days = 5 id = yug_rebel.5}
+		}		
+	}	
+
+}
+
+#Herzogavia croatia croats rebels#
+country_event = {
+	id = yug_rebel.10
+	title = yug_rebel.10.t
+	desc = yug_rebel.10.d
+	picture = GFX_report_event_YUG_rebellion
+	
+	is_triggered_only = yes
+	
+	immediate = { # Optional : all the following will occur once the event occurs
+		hidden_effect = {
+			HRZ = {
+			add_ideas = BOS_indepandance_war_fighter_experience
+			country_event = {id = hrz.1}
+			transfer_state = 804
+					declare_war_on = {
+					type = annex_everything
+					target = YUG
+					}
+			}
+		}
+	}
+	
+	#I HATE CROATS I HATE CROATS#
+	option = {
+	name = yug_rebel.10.a
+	add_stability = -0.05
+
+	}
+
+	#croat time#
+	option = {
+	name = yug_rebel.10.b
+	add_stability = -0.05
+	HRZ = {change_tag_from = YUG }	
+	
+	}
+
+}
+
+#get your units hrz#
+country_event = {
+	id = hrz.1
+	title = hrz.1.t
+	desc = hrz.1.d
+	picture = GFX_report_event_YUG_bossnia
+	
+	is_triggered_only = yes
+	
+	#oh hell yeah#
+	option = {
+	name = hrz.1.a
+	load_oob = "HRZ_rebellion"
+			804 = {
+				if = {
+					limit = {has_state_flag = yug_state_division_1}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = HRZ
+					}
+				}
+				if = {
+					limit = {has_state_flag = yug_state_division_2}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = HRZ
+					}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = HRZ
+					}					
+				}		
+				if = {
+					limit = {has_state_flag = yug_state_division_3}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = HRZ
+					}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = HRZ
+					}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = HRZ
+					}					
+				}	
+				if = {
+					limit = {has_state_flag = yug_state_division_4}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = HRZ
+					}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = HRZ
+					}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = HRZ
+					}		
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = HRZ
+					}					
+				}				
+				if = {
+					limit = {has_state_flag = yug_state_division_5}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = HRZ
+					}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = HRZ
+					}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = HRZ
+					}
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = HRZ
+					}		
+					create_unit = {
+						division = "name = \"Militia Division\" division_template = \"Militia Division\" start_experience_factor = 0.35 start_equipment_factor = 0.6"
+						owner = HRZ
+					}					
+				}				
+			}
+		
+	}
+
+}
+
+#get your units mac#
+country_event = {
+	id = mac.1
+	title = mac.1.t
+	desc = mac.1.d
+	picture = GFX_report_event_YUG_bossnia
+	
+	is_triggered_only = yes
+	
+	#oh hell yeah#
+	option = {
+	name = mac.1.a
+	load_oob = "MAC_rebellion"
+
+		
+	}
+
+}
+
+#montenegran militias raised#
+country_event = {
+	id = yug_rebel.5
+	title = yug_rebel.5.t
+	desc = yug_rebel.5.d
+	picture = GFX_report_event_YUG_militia
+	
+	is_triggered_only = yes
+	
+	#finally some help#
+	option = {
+	name = yug_rebel.5.a
+
+		add_manpower = 35000
+		
+		load_oob = "YUG_montenegro_volunteers"
+		
+		add_stability = -0.05
+		add_war_support = 0.10
+	}
+
+}
+
+#yugoslav rebellions yugoslavia wins#
+country_event = {
+	id = yug_rebel.7
+	title = yug_rebel.7.t
+	desc = yug_rebel.7.d
+	picture = GFX_report_event_YUG_yugoslavia_flag
+
+	is_triggered_only = yes
+	
+	#hell yeah boi#
+	option = {
+		name = yug_rebel.7.a
+		add_stability = 0.20
+		set_country_flag = yug_defeated_rebels	
+		YUG_stop_the_terror_attacks = yes
+		YUG_add_deportations = yes
+		add_popularity = {
+			ideology = paternal_autocracy
+			popularity = -0.30
+		}		
+		if = {
+			limit = {NOT = {has_government = fascism}}
+			news_event = {id = yug_news.2}				
+		}
+		else_if = {
+			news_event = {id = old_times_news.120}			
+		}
+	}
+
+}
+
+#yugoslav rebellions rebels wins#
+country_event = {
+	id = yug_rebel.8
+	title = yug_rebel.8.t
+	desc = yug_rebel.8.d
+	picture = GFX_report_GFX_news_yug_lost
+	
+	is_triggered_only = yes
+	
+	#oops#
+	option = {
+	name = yug_rebel.8.a
+	add_stability = -0.20
+	news_event = {id = yug_news.3}
+	set_country_flag = yug_defeated
+	YUG = {
+	white_peace = BOS
+	white_peace = KOS
+	white_peace = MAC
+	white_peace = HRZ
+	}
+	BOS = {
+		transfer_state = 104
+		transfer_state = 959
+		transfer_state = 960
+		transfer_state = 961
+		set_cosmetic_tag = BOS_win
+			set_politics = {
+				ruling_party = fascism
+				last_election = "1991.5.3"
+				election_frequency = 36
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 20
+				fascism = 40
+				social_democracy = 0
+				paternal_autocracy = 20 
+				liberalism = 10
+				
+			}		
+		country_event = {id = bos.2 days = 100}
+	}
+	KOS = {
+		transfer_state = 802
+		set_cosmetic_tag = KOS_win
+		country_event = {id = kos.2 days = 2}
+	}	
+	MAC = {
+		transfer_state = 106
+	}	
+	HRZ = {
+		transfer_state = 804
+	}
+	803 = {
+	set_demilitarized_zone = yes
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_government = fascism
+			}
+		}
+		country_event = {days = 3 id = yug_rebel.9}		
+	}
+	else = {
+		country_event = {days = 3 id = yug_rebel.11}		
+	}
+	YUG_stop_the_terror_attacks = yes
+	}
+
+}
+
+
+#yugoslavia loses military / democratic coup happens#
+country_event = {
+	id = yug_rebel.9
+	title = yug_rebel.9.t
+	desc = yug_rebel.9.d
+	picture = GFX_report_event_YUG_military_coup
+	
+	is_triggered_only = yes
+	
+	#military trolls milosevic#
+	option = {
+	name = yug_rebel.9.a
+		ai_chance = { 
+		base = 50
+		}
+		custom_effect_tooltip = yug_game_over
+		YUG = {
+		add_political_power = -300
+		add_stability = -0.30
+		news_event = { id = yug_news.4 }
+			set_politics = {
+				ruling_party = fascism
+				last_election = "1991.5.3"
+				election_frequency = 36
+				elections_allowed = no
+			}
+			add_country_leader_role = {
+			  character = YUG_ratko_mladic
+			  promote_leader = yes
+			  country_leader = {
+				ideology = fascism_ideology
+				expire = "2050.1.1.1"
+				traits = { }
+			  }
+			}
+			
+			set_popularities = {
+				democratic = 10
+				fascism = 40
+				communism = 20
+				paternal_autocracy = 30 
+				reformed_communism = 0
+				
+			}
+			load_focus_tree = generic_focus
+			
+			if = {
+				limit = {country_exists = MNT}
+				set_cosmetic_tag = SER
+			}
+			else_if = {
+
+			}			
+		}
+	}
+	
+	#cringe democrats trolls milosevic#
+	option = {
+	name = yug_rebel.9.b
+		ai_chance = { 
+		base = 75
+		}
+		custom_effect_tooltip = yug_game_over
+		YUG = {
+		add_political_power = -300
+		add_stability = -0.30
+		news_event = { id = yug_news.5 }
+				set_politics = {
+					ruling_party = social_democracy
+					last_election = "1991.5.3"
+					election_frequency = 36
+					elections_allowed = no
+				}
+				
+				set_popularities = {
+					liberalism = 24
+					social_democracy = 25 
+					democratic = 15
+					fascism = 16
+					paternal_autocracy = 5
+					reformed_communism = 15
+					communism = 0
+				}
+			load_focus_tree = generic_focus
+			if = {
+				limit = {country_exists = MNT}
+				set_cosmetic_tag = SER
+			}
+			else_if = {
+
+			}
+		}
+	}
+}
+
+#yugoslavia loses - seselj#
+country_event = {
+	id = yug_rebel.11
+	title = yug_rebel.11.t
+	desc = yug_rebel.11.d
+	picture = GFX_report_event_YUG_military_coup
+	
+	is_triggered_only = yes
+	
+	#new SKJ kills seselj#
+	option = {
+	name = yug_rebel.11.a
+		ai_chance = { 
+		base = 50
+		}
+		custom_effect_tooltip = yug_game_over
+		kill_country_leader = yes
+		add_political_power = -300
+		add_stability = -0.30
+		set_cosmetic_tag = YUG_new_com_cosmetic
+		set_party_name = {
+			ideology = communism
+			name = YUG_communism_NCPY_party
+			long_name = YUG_communism_NCPY_party_long
+		}
+			news_event = { id = old_times_news.161 }
+			set_politics = {
+				ruling_party = communism
+				last_election = "1991.5.3"
+				election_frequency = 36
+				elections_allowed = no
+			}
+			
+			set_popularities = {
+				communism = 54
+				socialism = 26
+				fascism = 20
+				paternal_autocracy = 0
+				reformed_communism = 0
+				
+			}
+			load_focus_tree = generic_focus
+		
+		outlaw_nationalism = yes
+		outlaw_authdem = yes 
+		outlaw_conservatism = yes
+	}
+
+}
+
+
+
+#democratic elections#
+country_event = {
+	id = yug_post_defeat.1
+	title = yug_post_defeat.1.t
+	desc = yug_post_defeat.1.d
+	
+	is_triggered_only = yes
+	
+	
+	#succdem dindic#
+	option = {
+	name = yug_post_defeat.1.a
+		set_politics = {
+			ruling_party = social_democracy
+			last_election = "1991.5.3"
+			election_frequency = 36
+			elections_allowed = no
+		}
+				
+		set_popularities = {
+			liberalism = 25
+			social_democracy = 35 
+			democratic = 15
+			fascism = 5
+			paternal_autocracy = 5
+			reformed_communism = 15
+			communism = 0
+		}		
+		ai_chance = {
+			factor = 25
+		}
+	}
+
+	#liberal yugoslavs#
+	option = {
+	name = yug_post_defeat.1.b
+		set_politics = {
+			ruling_party = liberalism
+			last_election = "1991.5.3"
+			election_frequency = 36
+			elections_allowed = no
+		}
+				
+		set_popularities = {
+			liberalism = 35
+			social_democracy = 25 
+			democratic = 15
+			fascism = 5
+			paternal_autocracy = 5
+			reformed_communism = 15
+			communism = 0
+		}		
+		ai_chance = {
+			factor = 25
+		}		
+	}
+
+}
+
+#economic zone?#
+country_event = {
+	id = yug_post_defeat.2
+	title = yug_post_defeat.2.t
+	desc = yug_post_defeat.2.d
+	
+	is_triggered_only = yes
+	
+	
+	#accept#
+	option = {
+	name = yug_post_defeat.2.a
+		add_ideas = YUG_yugoslav_economic_zone
+		ai_chance = {
+			factor = 75
+		}
+	}
+
+	#decline#
+	option = {
+	name = yug_post_defeat.2.b
+		ai_chance = {
+			factor = 25
+		}
+	}
+
+}
+
+#join the new yugoslavia?#
+country_event = {
+	id = yug_post_defeat.3
+	title = yug_post_defeat.3.t
+	desc = yug_post_defeat.3.d
+	
+	is_triggered_only = yes
+	
+	
+	#accept#
+	option = {
+	name = yug_post_defeat.3.a
+		YUG = { add_to_faction = ROOT }
+		ai_chance = {
+			factor = 75
+		}
+	}
+
+	#decline#
+	option = {
+	name = yug_post_defeat.3.b
+		ai_chance = {
+			factor = 25
+		}
+	}
+
+}
+
+#postwar bosnia#
+
+#conflict with bosniak serbs and croats
+country_event = {
+	id = bos.2
+	title = bos.2.t
+	desc = bos.2.d
+	picture = GFX_report_event_YUG_bossnia
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		959 = {
+		set_demilitarized_zone = yes
+		}
+		960 = {
+		set_demilitarized_zone = yes
+		}	
+		news_event = {id = old_times_news.101}
+		set_country_flag = bos_war_happened_buddy
+	}
+	
+	#FORWARD#
+	option = {
+	name = bos.2.a
+		add_ideas = hidden_army_buff_core	
+		load_oob = BOS_bosnia_war
+			declare_war_on = {
+				type = annex_everything
+				target = HRZ
+			}
+		SRP = {
+			add_ideas = hidden_army_buff_core
+			transfer_state = 959
+			add_state_core = 959
+			transfer_state = 960
+			add_state_core = 960
+			add_state_core = 961	
+			load_oob = SRP_rebellion
+			declare_war_on = {
+				type = annex_everything
+				target = BOS
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = HRZ
+			}			
+		}
+		HRZ = {
+			add_ideas = hidden_army_buff_core		
+				
+		}
+	}
+
+	#FORWARD SRPSKA#
+	option = {
+	name = bos.2.b
+		add_ideas = hidden_army_buff_core	
+		load_oob = BOS_bosnia_war		
+		SRP = {change_tag_from = BOS}	
+		SRP = {
+			add_ideas = hidden_army_buff_core
+			transfer_state = 959
+			add_state_core = 959
+			transfer_state = 960
+			add_state_core = 960
+			transfer_state = 961
+			add_state_core = 961	
+			load_oob = SRP_rebellion
+			declare_war_on = {
+				type = annex_everything
+				target = BOS
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = HRZ
+			}				
+		}
+			declare_war_on = {
+				type = annex_everything
+				target = HRZ
+			}			
+		HRZ = {
+			add_ideas = hidden_army_buff_core				
+		}
+	}
+
+}
+
+#Srpska - joining yugoslavia#
+country_event = {
+	id = bos.3
+	title = bos.3.t
+	desc = bos.3.d
+	picture = GFX_report_event_YUG_militia
+	
+	trigger = {
+		original_tag = SRP
+		SRP = {
+			owns_state = 104
+			owns_state = 804
+		}
+		YUG = {
+			has_government = fascism
+		}
+	}
+	
+	fire_only_once = yes
+	
+	#time to return to Mladic#
+	option = {
+	name = bos.3.a
+		YUG = {change_tag_from = SRP}
+		YUG = {
+			annex_country = {
+				target = SRP
+				transfer_troops = yes
+			}
+		}
+	}
+
+}
+
+#democracy
+country_event = {
+	id = bos.4
+	title = bos.4.t
+	desc = bos.4.d
+	picture = GFX_report_event_YUG_bossnia
+	
+	trigger = {
+		original_tag = BOS
+		has_country_flag = bos_war_happened_buddy
+		has_war = no
+	}
+	
+	fire_only_once = yes
+	
+	#i luv succdems#
+	option = {
+	name = bos.4.a
+		#set_politics = {
+		#	ruling_party = social_democracy
+		#	elections_allowed = no
+		#}
+			
+		#set_popularities = {
+		#	social_democracy = 20
+		#	fascism = 25
+		#	neutrality = 15
+		#	democratic = 20
+		#	liberalism = 10
+		#	paternal_autocracy = 10 
+		#	reformed_communism = 0
+		#		
+		#}
+	}
+
+}
+
+#kosovo postwar
+
+#kosovo ideology change#
+country_event = {
+	id = kos.2
+	title = kos.2.t
+	desc = kos.2.d
+	picture = GFX_report_event_YUG_depressed
+	
+	is_triggered_only = yes
+
+	
+	#democracy time#
+	option = {
+	name = kos.2.a
+			set_politics = {
+			ruling_party = democratic
+				last_election = "1991.5.3"
+				election_frequency = 36
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 30
+				fascism = 20
+				social_democracy = 20
+				paternal_autocracy = 20 
+				communism = 10
+				
+			}
+		ai_chance = {
+		factor = 45
+		}
+	
+	}
+
+	#nationalist time#
+	option = {
+	name = kos.2.b
+	set_politics = {
+			ruling_party = fascism
+				last_election = "1991.5.3"
+				election_frequency = 36
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 10
+				fascism = 40
+				social_democracy = 10
+				paternal_autocracy = 30 
+				communism = 10
+				
+			}		
+		ai_chance = {
+		factor = 45
+		}			
+	}
+
+	#islam time#
+	option = {
+	name = kos.2.c
+	set_politics = {
+			ruling_party = paternal_autocracy
+				last_election = "1991.5.3"
+				election_frequency = 36
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 15
+				fascism = 25
+				paternal_autocracy = 55 
+				communism = 5
+				
+			}	
+		ai_chance = {
+		factor = 35
+		}			
+	}
+
+	#natbol time#
+	option = {
+	name = kos.2.de
+	set_politics = {
+			ruling_party = communism
+				last_election = "1991.5.3"
+				election_frequency = 36
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 0
+				fascism = 45
+				social_democracy = 0
+				paternal_autocracy = 0 
+				communism = 55
+				
+			}	
+
+		ai_chance = {
+		factor = 25
+		}
+	}
+
+}
+
+#mass uprisings in yugoslavia news event#
+news_event = {
+	id = yug_news.1
+	title = yug_news.1.t
+	desc = yug_news.1.d
+	picture = GFX_news_yug_lost
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	#YUGOSLAVIA FOREVER#
+	option = {
+	name = yug_news.1.a
+		trigger = {
+			original_tag = YUG
+		}
+		
+	}
+	
+	#zamn#
+	option = {
+	name = yug_news.1.b
+		trigger = {
+			NOT = { original_tag = YUG }
+		}
+	}
+	
+
+}
+
+#yugoslav rebellions yugoslavia wins news event#
+news_event = {
+	id = yug_news.2
+	title = yug_news.2.t
+	desc = yug_news.2.d
+	picture = GFX_news_yug_win
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	#zamn#
+	option = {
+	name = yug_news.2.a
+
+	}
+	
+
+}
+
+#yugoslav rebellions rebels wins news event#
+news_event = {
+	id = yug_news.3
+	title = yug_news.3.t
+	desc = yug_news.3.d
+	picture = GFX_news_yug_lost
+	
+	major = yes
+
+	is_triggered_only = yes
+	
+	#rip#
+	option = {
+	name = yug_news.3.a
+
+		
+	}
+	
+}
+
+#yugoslav rebellions rebels win milosevic ousted by military news event#
+news_event = {
+	id = yug_news.4
+	title = yug_news.4.t
+	desc = yug_news.4.d
+	picture = GFX_news_yug_military_coup
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	#troll moment#
+	option = {
+	name = yug_news.4.a
+
+		
+	}
+	
+}
+
+#yugoslav rebellions rebels win milosevic ousted by cring democrats news event#
+news_event = {
+	id = yug_news.5
+	title = yug_news.5.t
+	desc = yug_news.5.d
+	picture = GFX_news_yug_dindic
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	#bruh moment#
+	option = {
+	name = yug_news.5.a
+
+		
+	}
+	
+}
+
+##flavour##
+
+#foundation of Vojvodina liberation front# 
+country_event = {
+	id = yug_flavour.1
+	title = yug_flavour.1.t
+	desc = yug_flavour.1.d
+	
+	trigger = {
+		original_tag = YUG
+		date > 2001.09.02
+	}
+	
+	fire_only_once = yes
+	
+	#lol#
+	option = {
+	name = yug_flavour.1.a
+		add_political_power = -1
+		add_stability = -0.01
+		HUN = {
+			add_manpower = -200
+		}
+		add_opinion_modifier = {
+			target = HUN
+			modifier = large_decrease
+		}
+		HUN = {
+			add_state_claim = 45
+		}
+	}
+	
+}
+
+#failed bank robbery# 
+country_event = {
+	id = yug_flavour.2
+	title = yug_flavour.2.t
+	desc = yug_flavour.2.d
+	
+	trigger = {
+		original_tag = YUG
+		date > 2002.01.02
+	}
+	
+	fire_only_once = yes
+	
+	#lol#
+	option = {
+	name = yug_flavour.2.a
+		add_political_power = 1
+		add_stability = 0.01
+	}
+	
+}
+
+#VLF dies# 
+country_event = {
+	id = yug_flavour.3
+	title = yug_flavour.3.t
+	desc = yug_flavour.3.d
+	
+	trigger = {
+		original_tag = YUG
+		HUN = {has_war_with = ROM}
+	}
+	
+	fire_only_once = yes
+	
+	#lol#
+	option = {
+	name = yug_flavour.3.a
+		add_political_power = 1
+		add_stability = 0.01
+		HUN = {
+			add_manpower = 34
+			remove_state_claim = 45
+		}
+	}
+	
+}

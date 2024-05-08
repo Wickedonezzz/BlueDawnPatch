@@ -1,0 +1,61 @@
+characters = {
+
+	AFG_mullah_omar = {
+		name = "Mullah Omar"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AFG/Mullah_Omar.dds"
+			}
+		}
+		country_leader = {
+			ideology = wahhabiten_islamism
+			traits = {}
+			desc = mullah_omar_DESC
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	AFG_dadullah = {
+		name = "Dadullah"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AFG/Dadullah.dds"
+			}
+			army = {
+				large = "gfx/leaders/AFG/Dadullah.dds"
+			}
+		}
+		field_marshal={
+			traits={ }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}	
+
+	AFG_jalaluddin_haqqani = {
+		name = "Jalaluddin Haqqani"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AFG/Jalaluddin_Haqqani.dds"
+			}
+			army = {
+				large = "gfx/leaders/AFG/Jalaluddin_Haqqani.dds"
+			}
+		}
+		corps_commander={
+			traits={}
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}	
+
+}

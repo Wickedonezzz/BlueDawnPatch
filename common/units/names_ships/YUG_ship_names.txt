@@ -1,0 +1,33 @@
+﻿##### YUG NAME LISTS #####
+
+### GENERIC ###
+YUG_NAVAL_NAME_CAPITALS = {
+	name = "Yugoslavian Republic Capitals"
+
+	for_countries = { YUG }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	
+	unique = {
+		"JRM Ljubljana" "JRM Skopje" "JRM Belgrade" "JRM Novi Sad" "JRM Prishtina" "JRM Podgorica" "JRM Zagreb" "JRM Sarajevo"
+	}
+}
+YUG_NAVAL_NAME_ADMIRALS = {
+	name = "Yugoslavian Admirals"
+
+	for_countries = { YUG }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	
+	unique = {
+		"JRM Mate Jerkovic" "JRM Josip Cerni" "JRM Ivo Purisic" "JRM Branko Mamula" "JRM Tihomir Vilovic" "JRM Bozidar Grubisic" "JRM Bogdan Pecotic" "JRM Ljubo Truta" "JRM Ivan Kern" "JRM Mile Kandic"
+	}
+}

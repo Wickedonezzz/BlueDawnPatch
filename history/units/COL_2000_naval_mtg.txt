@@ -1,0 +1,23 @@
+units = {
+	fleet = {
+		name = "Flota Colombiana"
+		naval_base = 12790 # Cartagena #
+		task_force = {
+			name = "Flota Colombiana"
+			location = 12790 # Cartagena #
+			ship = { name = "ARC Almirante Padilla" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = COL version_name = "Almirante Padilla Class" } } }
+			ship = { name = "ARC Caldas" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = COL version_name = "Almirante Padilla Class" } } }
+			ship = { name = "ARC Antioquia" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = COL version_name = "Almirante Padilla Class" } } }
+			ship = { name = "ARC Independiente" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = COL version_name = "Almirante Padilla Class" } } }
+		}
+		task_force = {
+			name = "Flota de Submarinos de Colombia"
+			location = 12790 # Cartagena #
+			ship = { name = "ARC Pijao" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = COL creator = GER version_name = "Type 209/1200 Class" } } }
+			ship = { name = "ARC Tayrona" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = COL creator = GER version_name = "Type 209/1200 Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

@@ -1,0 +1,102 @@
+characters = {
+
+	## Leaders ##
+
+	KOR_kim_jong_il = {
+		name = "Kim Jong Il"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KOR/Kim_Jong_Il.dds"
+			}
+			army = {
+				large = "gfx/leaders/KOR/Marshal_of_the_Republic.png"
+			}			
+		}
+		country_leader = {
+			ideology = juche
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		field_marshal={
+			traits={ }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}		
+	}
+
+	KOR_un_admin = {
+		name = "United Nations Administration"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/anti.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	KOR_military_admin = {
+		name = "Military Administration"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KOR/south_korean_army.png"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}	
+
+	## Field Marshals ##
+
+	KOR_ri_ul-sol = {
+		name = "Ri Ul-sol"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KOR/Ri_Ul-sol.png"
+			}
+		}
+		field_marshal={
+			traits={ }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	## Generals ##
+
+	KOR_jo_myong-rok = {
+		name = "Jo Myong-rok"
+		portraits = {
+			army = {
+				large = "gfx/leaders/KOR/Jo_Myong-rok.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+}

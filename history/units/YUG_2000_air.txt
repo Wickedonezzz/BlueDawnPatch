@@ -1,0 +1,30 @@
+air_wings = {
+	
+	107 =  {
+		fighter_equipment_3 =  {
+			owner = "YUG" 
+			creator = SOV
+			amount = 50
+		}
+		fighter_equipment_2 =  {
+			owner = "YUG" 
+			creator = SOV
+			amount = 30
+		}
+		fighter_equipment_1 =  {
+			owner = "YUG" 
+			creator = SOV
+			amount = 30
+		}		
+		attacker_equipment_2 =  { 
+			owner = "YUG" 
+			creator = SOV
+			amount = 50
+		}
+		attacker_equipment_2 =  { 
+			owner = "YUG" 
+			creator = SOV
+			amount = 30
+		}
+	}
+}

@@ -1,0 +1,34 @@
+﻿air_wings = {
+	# Land Wings #
+	229 = {
+		# Fighters -- MiG-21
+		fighter_equipment_0 =  { # MiG-21 #
+			owner = "AZR" 
+			creator = SOV
+			amount = 5
+		}
+		# Interceptors -- MiG-21
+		interceptor_equipment_1 =  { # MiG-25 #
+			owner = "AZR" 
+			creator = SOV
+			amount = 29
+		}
+		# Attackers -- Su-17, Su-24, Su-25
+		attacker_equipment_2 =  { # Su-25 #
+			owner = "AZR" 
+			creator = SOV
+			amount = 2
+		}
+		attacker_equipment_1 =  { # Su-17, Su-24 #
+			owner = "AZR" 
+			creator = SOV
+			amount = 9
+		}
+		# Transports -- An-12
+		transport_plane_equipment_1 =  {
+			owner = "AZR"
+			creator = SOV
+			amount = 1
+		}
+	}
+}

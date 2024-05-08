@@ -1,0 +1,713 @@
+debug_saf = {
+	#load_focus_tree = saf_military_junta_focus
+	capital_scope = { create_unit = { division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5" owner = PREV } }
+}
+saf_start_the_great_game = {
+	hidden_effect = {
+		activate_mission = saf_great_game_countdown
+		clr_country_flag = meiring_dead
+		clr_global_flag = meiring_uprising_begun
+		set_variable = { great_game_progress_var = 50 }
+		saf_great_game_gui_reset = yes
+		meiring_select_decision = yes
+	}
+}
+saf_viljoen_auto_win = {
+	set_variable = { great_game_progress_var = 100 }
+	saf_great_game_gui_reset = yes
+}
+saf_meiring_auto_win = {
+	set_variable = { great_game_progress_var = 0 }
+	saf_great_game_gui_reset = yes
+}
+
+
+
+
+saf_viljoen_succeeds = {
+	set_country_flag = meiring_dead
+	mark_focus_tree_layout_dirty = yes
+	hidden_effect = {
+		retire_character = SAF_georg_meiring
+	}
+}
+saf_meiring_succeeds = {
+	set_global_flag = meiring_uprising_begun
+	mark_focus_tree_layout_dirty = yes
+	hidden_effect = {
+		start_civil_war = {
+			ideology = ROOT
+			capital = 275
+			states = {
+				275 681
+			}
+			set_temp_variable = { SAF_meiring = THIS }
+			
+			every_possible_country = {
+				limit = { has_character = SAF_georg_meiring }
+				random_character = {
+					limit = { is_character = SAF_georg_meiring }
+					set_nationality = var:SAF_meiring
+				}
+			}
+			set_cosmetic_tag = SAF_meiring_civil_war
+			set_country_flag = SAF_meiring
+			create_dynamic_country = {
+				original_tag = ROOT
+				promote_character = SAF_georg_meiring
+			}
+		}
+	}
+}
+saf_great_game_gui_reset = {
+	if = {
+		limit = {
+			check_variable = { great_game_progress_var > 100 }
+		}
+		set_variable = { great_game_progress_var = 100 }
+	}
+	set_variable = { great_game_progress_anti_var = great_game_progress_var }
+	multiply_variable = { great_game_progress_anti_var = -1 }
+	add_to_variable = { great_game_progress_anti_var = 100 }
+	if = {
+		limit = {
+			check_variable = { great_game_progress_var = 100 }
+		}
+		hidden_effect = {
+			country_event = { id = saf_hidden.2 days = 3 }	#Viljoen succeeds over Meiring
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { great_game_progress_var < 0 }
+		}
+		set_variable = { great_game_progress_var = 0 }
+		set_variable = { great_game_progress_anti_var = 100 }
+	}
+	if = {
+		limit = {
+			check_variable = { great_game_progress_var = 0 }
+		}
+		hidden_effect = {
+			country_event = { id = saf_hidden.3 days = 3 }	#Meiring succeeds over Viljoen
+		}
+	}
+}
+saf_great_game_influence_change_tt = {
+	if = {
+		limit = {
+			has_variable = great_game_increase_influence_viljoen
+		}
+		custom_effect_tooltip = saf_increase_influence_viljoen_tt
+	}
+	if = {
+		limit = {
+			has_variable = great_game_increase_influence_meiring
+		}
+		custom_effect_tooltip = saf_increase_influence_meiring_tt
+	}
+}
+saf_great_game_influence_change_negative_tt = {
+	if = {
+		limit = {
+			has_variable = great_game_increase_influence_viljoen
+		}
+		custom_effect_tooltip = saf_increase_influence_viljoen_negative_tt
+	}
+	if = {
+		limit = {
+			has_variable = great_game_increase_influence_meiring
+		}
+		custom_effect_tooltip = saf_increase_influence_meiring_negative_tt
+	}
+}
+saf_great_game_compute_new_infulence = {
+	saf_great_game_influence_change_tt = yes
+	if = {
+		limit = {
+			has_variable = great_game_increase_influence_viljoen
+		}
+		add_to_variable = { great_game_progress_var = great_game_increase_influence_viljoen }
+		saf_great_game_gui_reset = yes
+	}
+	if = {
+		limit = {
+			has_variable = great_game_increase_influence_meiring
+		}
+		multiply_temp_variable = { great_game_increase_influence_meiring = -1 }
+		add_to_variable = { great_game_progress_var = great_game_increase_influence_meiring }
+		saf_great_game_gui_reset = yes
+	}
+}
+meiring_select_decision = {
+	custom_effect_tooltip = meiring_select_decision_tt
+	hidden_effect = {
+		if = {
+			limit = {
+				has_active_mission = saf_great_game_countdown
+			}
+			random_list = {
+				10 = {
+					activate_decision = saf_proofs_about_viljoens_treason
+				}
+				30 = {
+					activate_decision = saf_spread_propaganda
+				}
+				60 = {
+					activate_decision = saf_expand_meiring_influence
+				}
+			}
+		}
+	}
+}
+
+
+
+
+enable_saf_viljoen_cult_of_personality = {
+	clear_variable = viljoen_cop_influence
+	add_dynamic_modifier = { modifier = SAF_viljoen_cult_of_personality }
+}
+saf_viljoen_cop_modifiers_reset = {
+	
+	#50 multiplied by TEMP serves as the max
+	set_temp_variable = { viljoen_cop_war_modifier_TEMP = viljoen_cop_influence }
+	multiply_temp_variable = { viljoen_cop_war_modifier_TEMP = 0.002 }
+	set_variable = { viljoen_cop_army_strength_factor = viljoen_cop_war_modifier_TEMP }
+	
+	set_temp_variable = { viljoen_cop_war_modifier_TEMP = viljoen_cop_influence }
+	multiply_temp_variable = { viljoen_cop_war_modifier_TEMP = 0.004 }
+	set_variable = { viljoen_cop_army_morale_factor = viljoen_cop_war_modifier_TEMP }
+	
+	set_temp_variable = { viljoen_cop_war_modifier_TEMP = viljoen_cop_influence }
+	multiply_temp_variable = { viljoen_cop_war_modifier_TEMP = 0.002 }
+	set_variable = { viljoen_cop_dig_in_speed_factor = viljoen_cop_war_modifier_TEMP }
+	
+	set_temp_variable = { viljoen_cop_war_modifier_TEMP = viljoen_cop_influence }
+	multiply_temp_variable = { viljoen_cop_war_modifier_TEMP = 0.002 }
+	set_variable = { viljoen_cop_army_org_factor = viljoen_cop_war_modifier_TEMP }
+	
+	set_temp_variable = { viljoen_cop_war_modifier_TEMP = viljoen_cop_influence }
+	multiply_temp_variable = { viljoen_cop_war_modifier_TEMP = 0.003 }
+	set_variable = { viljoen_cop_war_support_factor = viljoen_cop_war_modifier_TEMP }
+	
+	set_temp_variable = { viljoen_cop_war_modifier_TEMP = viljoen_cop_influence }
+	multiply_temp_variable = { viljoen_cop_war_modifier_TEMP = -0.006 }
+	set_variable = { viljoen_cop_experience_loss_factor = viljoen_cop_war_modifier_TEMP }
+	
+	#If COP is negative, then add industry debuff
+	if = {
+		limit = {
+			check_variable = { viljoen_cop_influence < 0 }
+		}
+		set_temp_variable = { viljoen_cop_war_modifier_TEMP = viljoen_cop_influence }
+		multiply_temp_variable = { viljoen_cop_war_modifier_TEMP = -0.01 }
+		set_variable = { viljoen_cop_production_speed_buildings_factor = viljoen_cop_war_modifier_TEMP }
+		
+		set_temp_variable = { viljoen_cop_war_modifier_TEMP = viljoen_cop_influence }
+		multiply_temp_variable = { viljoen_cop_war_modifier_TEMP = -0.016 }
+		set_variable = { viljoen_cop_industry_repair_factor = viljoen_cop_war_modifier_TEMP }
+	}
+	#else, no industry debuff
+	else = {
+		set_variable = { viljoen_cop_production_speed_buildings_factor = 0 }
+		set_variable = { viljoen_cop_industry_repair_factor = 0 }
+	}
+	
+	force_update_dynamic_modifier = yes
+}
+saf_viljoen_cop_compute_new_infulence = {
+	custom_effect_tooltip = saf_increase_influence_viljoen_cop_tt
+	
+	add_to_variable = { viljoen_cop_influence = viljoen_cop_change_influence }
+	clamp_variable = {
+		var = viljoen_cop_influence
+		min = -50
+		max = 50
+	}
+	saf_viljoen_cop_modifiers_reset = yes
+}
+
+
+
+saf_turmoil_debug = {
+
+	set_variable = { turmoil_angola = 100 }
+	set_variable = { turmoil_botswana = 100 }
+	set_variable = { turmoil_burundi = 100 }
+	set_variable = { turmoil_congo = 100 }
+	set_variable = { turmoil_rcg = 100 }
+	set_variable = { turmoil_eswatini = 100 }
+	set_variable = { turmoil_gabon = 100 }
+	set_variable = { turmoil_guinea = 100 }
+	set_variable = { turmoil_kenya = 100 }
+	set_variable = { turmoil_lesotho = 100 }
+	set_variable = { turmoil_madagascar = 100 }
+	set_variable = { turmoil_malawi = 100 }
+	set_variable = { turmoil_mozambique = 100 }
+	set_variable = { turmoil_namibia = 100 }
+	set_variable = { turmoil_rwanda = 100 }
+	set_variable = { turmoil_tanzania = 100 }
+	set_variable = { turmoil_uganda = 100 }
+	set_variable = { turmoil_zambia = 100 }
+	set_variable = { turmoil_zimbabwe = 100 }
+}
+saf_world_war = {
+	hidden_effect = {
+		COG = {
+			white_peace = RCG
+			white_peace = RGO
+			white_peace = RCK
+		}
+		RGO = {
+			white_peace = RCK
+		}
+		UGA = {
+			set_rule = {
+				can_create_factions = yes
+			}
+			create_faction = faction_african_defense_coalition
+			add_to_faction = BOT
+			add_to_faction = BRD
+			add_to_faction = COG
+			add_to_faction = RGO
+			add_to_faction = RCK
+			add_to_faction = EQG
+			add_to_faction = GAB
+			add_to_faction = KEN
+			add_to_faction = MLW
+			add_to_faction = MZB
+			add_to_faction = RCG
+			add_to_faction = RWA
+			add_to_faction = TZN
+			add_to_faction = ZAM
+			add_to_faction = ZIM
+			declare_war_on = {
+				target = SAF
+				type = annex_everything
+			}
+			every_other_country = {
+				limit = {
+					is_in_faction_with = PREV
+				}
+				add_to_war = {
+					targeted_alliance = PREV
+					enemy = SAF
+				}
+			}
+		}
+	}
+}
+saf_clr_turmoil = {
+	clear_array = SAF.SAF_states_that_can_rebel_array
+	
+	saf_claim_states_to_be_pacified = yes
+	saf_reset_map_area = yes
+	
+	set_variable = { turmoil_angola = 20 }
+	set_variable = { turmoil_botswana = 35 }
+	set_variable = { turmoil_burundi = 15 }
+	set_variable = { turmoil_congo = 15 }
+	set_variable = { turmoil_rcg = 30 }
+	set_variable = { turmoil_eswatini = 40 }
+	set_variable = { turmoil_gabon = 20 }
+	set_variable = { turmoil_guinea = 20 }
+	set_variable = { turmoil_kenya = 30 }
+	set_variable = { turmoil_lesotho = 80 }
+	set_variable = { turmoil_madagascar = 20 }
+	set_variable = { turmoil_malawi = 35 }
+	set_variable = { turmoil_mozambique = 25 }
+	set_variable = { turmoil_namibia = 35 }
+	set_variable = { turmoil_rwanda = 10 }
+	set_variable = { turmoil_tanzania = 25 }
+	set_variable = { turmoil_uganda = 20 }
+	set_variable = { turmoil_zambia = 20 }
+	set_variable = { turmoil_zimbabwe = 30 }
+	
+	saf_calculate_mean_stability = yes
+}
+saf_start_random_weighted_turmoil = {
+	random_list = {
+		100 = { modifier = { set_temp_variable = { temp_random = turmoil_angola } multiply_temp_variable = { temp_random = -1 } add = temp_random }
+			random_list = {
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_angola_1 factor = 0 } activate_mission = saf_state_turmoil_brewing_angola_1 random = { chance = 10 540 = { set_demilitarized_zone = yes } } } 
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_angola_2 factor = 0 } activate_mission = saf_state_turmoil_brewing_angola_2 random = { chance = 10 888 = { set_demilitarized_zone = yes } } }  
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_angola_3 factor = 0 } activate_mission = saf_state_turmoil_brewing_angola_3 random = { chance = 10 889 = { set_demilitarized_zone = yes } } }  
+			}
+			ANG = { save_event_target_as = state_turmoil_brewing_event_name }
+		}
+		100 = { modifier = { set_temp_variable = { temp_random = turmoil_botswana } multiply_temp_variable = { temp_random = -1 } add = temp_random }
+			random_list = {
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_botswana_1 factor = 0 } activate_mission = saf_state_turmoil_brewing_botswana_1 random = { chance = 10 542 = { set_demilitarized_zone = yes } } } 
+			}
+			BOT = { save_event_target_as = state_turmoil_brewing_event_name }
+		}
+		100 = { modifier = { set_temp_variable = { temp_random = turmoil_burundi } multiply_temp_variable = { temp_random = -1 } add = temp_random }
+			random_list = {
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_burundi_1 factor = 0 } activate_mission = saf_state_turmoil_brewing_burundi_1 random = { chance = 10 769 = { set_demilitarized_zone = yes } } } 
+			}
+			BRD = { save_event_target_as = state_turmoil_brewing_event_name }
+		}
+		100 = { modifier = { set_temp_variable = { temp_random = turmoil_congo } multiply_temp_variable = { temp_random = -1 } add = temp_random }
+			random_list = {
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_congo_1 factor = 0 } activate_mission = saf_state_turmoil_brewing_congo_1 random = { chance = 10 295 = { set_demilitarized_zone = yes } } } 
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_congo_2 factor = 0 } activate_mission = saf_state_turmoil_brewing_congo_2 random = { chance = 10 538 = { set_demilitarized_zone = yes } } } 
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_congo_3 factor = 0 } activate_mission = saf_state_turmoil_brewing_congo_3 random = { chance = 10 718 = { set_demilitarized_zone = yes } } } 
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_congo_4 factor = 0 } activate_mission = saf_state_turmoil_brewing_congo_4 random = { chance = 10 929 = { set_demilitarized_zone = yes } } } 
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_congo_5 factor = 0 } activate_mission = saf_state_turmoil_brewing_congo_5 random = { chance = 10 930 = { set_demilitarized_zone = yes } } } 
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_congo_6 factor = 0 } activate_mission = saf_state_turmoil_brewing_congo_6 random = { chance = 10 931 = { set_demilitarized_zone = yes } } } 
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_congo_7 factor = 0 } activate_mission = saf_state_turmoil_brewing_congo_7 random = { chance = 10 932 = { set_demilitarized_zone = yes } } } 
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_congo_8 factor = 0 } activate_mission = saf_state_turmoil_brewing_congo_8 random = { chance = 10 933 = { set_demilitarized_zone = yes } } } 
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_congo_9 factor = 0 } activate_mission = saf_state_turmoil_brewing_congo_9 random = { chance = 10 958 = { set_demilitarized_zone = yes } } } 
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_congo_9 factor = 0 } activate_mission = saf_state_turmoil_brewing_congo_10 random = { chance = 10 796 = { set_demilitarized_zone = yes } } } 
+			}
+			COG = { save_event_target_as = state_turmoil_brewing_event_name }
+		}
+		100 = { modifier = { set_temp_variable = { temp_random = turmoil_rcg } multiply_temp_variable = { temp_random = -1 } add = temp_random }
+			random_list = {
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_rcg_1 factor = 0 } activate_mission = saf_state_turmoil_brewing_rcg_1 random = { chance = 10 772 = { set_demilitarized_zone = yes } } } 
+			}
+			RCG = { save_event_target_as = state_turmoil_brewing_event_name }
+		}
+		100 = { modifier = { set_temp_variable = { temp_random = turmoil_eswatini } multiply_temp_variable = { temp_random = -1 } add = temp_random }
+			random_list = {
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_eswatini_1 factor = 0 } activate_mission = saf_state_turmoil_brewing_eswatini_1 random = { chance = 10 951 = { set_demilitarized_zone = yes } } } 
+			}
+			ESW = { save_event_target_as = state_turmoil_brewing_event_name }
+		}
+		100 = { modifier = { set_temp_variable = { temp_random = turmoil_gabon } multiply_temp_variable = { temp_random = -1 } add = temp_random }
+			random_list = {
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_gabon_1 factor = 0 } activate_mission = saf_state_turmoil_brewing_gabon_1 random = { chance = 10 539 = { set_demilitarized_zone = yes } } } 
+			}
+			GAB = { save_event_target_as = state_turmoil_brewing_event_name }
+		}
+		100 = { modifier = { set_temp_variable = { temp_random = turmoil_guinea } multiply_temp_variable = { temp_random = -1 } add = temp_random }
+			random_list = {
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_guinea_1 factor = 0 } activate_mission = saf_state_turmoil_brewing_guinea_1 random = { chance = 10 297 = { set_demilitarized_zone = yes } } } 
+			}
+			EQG = { save_event_target_as = state_turmoil_brewing_event_name }
+		}
+		100 = { modifier = { set_temp_variable = { temp_random = turmoil_kenya } multiply_temp_variable = { temp_random = -1 } add = temp_random }
+			random_list = {
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_kenya_1 factor = 0 } activate_mission = saf_state_turmoil_brewing_kenya_1 random = { chance = 10 547 = { set_demilitarized_zone = yes } } } 
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_kenya_2 factor = 0 } activate_mission = saf_state_turmoil_brewing_kenya_2 random = { chance = 10 897 = { set_demilitarized_zone = yes } } } 
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_kenya_3 factor = 0 } activate_mission = saf_state_turmoil_brewing_kenya_3 random = { chance = 10 898 = { set_demilitarized_zone = yes } } } 
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_kenya_4 factor = 0 } activate_mission = saf_state_turmoil_brewing_kenya_4 random = { chance = 10 899 = { set_demilitarized_zone = yes } } } 
+			}
+			KEN = { save_event_target_as = state_turmoil_brewing_event_name }
+		}
+		100 = { modifier = { set_temp_variable = { temp_random = turmoil_lesotho } multiply_temp_variable = { temp_random = -1 } add = temp_random }
+			random_list = {
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_lesotho_1 factor = 0 } activate_mission = saf_state_turmoil_brewing_lesotho_1 random = { chance = 10 952 = { set_demilitarized_zone = yes } } } 
+			}
+			LES = { save_event_target_as = state_turmoil_brewing_event_name }
+		}
+		100 = { modifier = { set_temp_variable = { temp_random = turmoil_madagascar } multiply_temp_variable = { temp_random = -1 } add = temp_random }
+			random_list = {
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_madagascar_1 factor = 0 } activate_mission = saf_state_turmoil_brewing_madagascar_1 random = { chance = 10 543 = { set_demilitarized_zone = yes } } } 
+			}
+			MAD = { save_event_target_as = state_turmoil_brewing_event_name }
+		}
+		100 = { modifier = { set_temp_variable = { temp_random = turmoil_malawi } multiply_temp_variable = { temp_random = -1 } add = temp_random }
+			random_list = {
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_malawi_1 factor = 0 } activate_mission = saf_state_turmoil_brewing_malawi_1 random = { chance = 10 770 = { set_demilitarized_zone = yes } } } 
+			}
+			MLW = { save_event_target_as = state_turmoil_brewing_event_name }
+		}
+		100 = { modifier = { set_temp_variable = { temp_random = turmoil_mozambique } multiply_temp_variable = { temp_random = -1 } add = temp_random }
+			random_list = {
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_mozambique_1 factor = 0 } activate_mission = saf_state_turmoil_brewing_mozambique_1 random = { chance = 10 544 = { set_demilitarized_zone = yes } } } 
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_mozambique_2 factor = 0 } activate_mission = saf_state_turmoil_brewing_mozambique_2 random = { chance = 10 890 = { set_demilitarized_zone = yes } } } 
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_mozambique_3 factor = 0 } activate_mission = saf_state_turmoil_brewing_mozambique_3 random = { chance = 10 891 = { set_demilitarized_zone = yes } } } 
+			}
+			MZB = { save_event_target_as = state_turmoil_brewing_event_name }
+		}
+		100 = { modifier = { set_temp_variable = { temp_random = turmoil_namibia } multiply_temp_variable = { temp_random = -1 } add = temp_random }
+			random_list = {
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_namibia_1 factor = 0 } activate_mission = saf_state_turmoil_brewing_namibia_1 random = { chance = 10 541 = { set_demilitarized_zone = yes } } } 
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_namibia_2 factor = 0 } activate_mission = saf_state_turmoil_brewing_namibia_2 random = { chance = 10 980 = { set_demilitarized_zone = yes } } }
+			}
+			NMB = { save_event_target_as = state_turmoil_brewing_event_name }
+		}
+		100 = { modifier = { set_temp_variable = { temp_random = turmoil_rwanda } multiply_temp_variable = { temp_random = -1 } add = temp_random }
+			random_list = {
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_rwanda_1 factor = 0 } activate_mission = saf_state_turmoil_brewing_rwanda_1 random = { chance = 10 768 = { set_demilitarized_zone = yes } } } 
+			}
+			RWA = { save_event_target_as = state_turmoil_brewing_event_name }
+		}
+		100 = { modifier = { set_temp_variable = { temp_random = turmoil_tanzania } multiply_temp_variable = { temp_random = -1 } add = temp_random }
+			random_list = {
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_tanzania_1 factor = 0 } activate_mission = saf_state_turmoil_brewing_tanzania_1 random = { chance = 10 546 = { set_demilitarized_zone = yes } } } 
+			}
+			TZN = { save_event_target_as = state_turmoil_brewing_event_name }
+		}
+		100 = { modifier = { set_temp_variable = { temp_random = turmoil_uganda } multiply_temp_variable = { temp_random = -1 } add = temp_random }
+			random_list = {
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_uganda_1 factor = 0 } activate_mission = saf_state_turmoil_brewing_uganda_1 random = { chance = 10 548 = { set_demilitarized_zone = yes } } } 
+			}
+			UGA = { save_event_target_as = state_turmoil_brewing_event_name }
+		}
+		100 = { modifier = { set_temp_variable = { temp_random = turmoil_zambia } multiply_temp_variable = { temp_random = -1 } add = temp_random }
+			random_list = {
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_zambia_1 factor = 0 } activate_mission = saf_state_turmoil_brewing_zambia_1 random = { chance = 10 771 = { set_demilitarized_zone = yes } } }
+			}
+			ZAM = { save_event_target_as = state_turmoil_brewing_event_name }
+		}
+		100 = { modifier = { set_temp_variable = { temp_random = turmoil_zimbabwe } multiply_temp_variable = { temp_random = -1 } add = temp_random }
+			random_list = {
+				10 = { modifier = { has_active_mission = saf_state_turmoil_brewing_zimbabwe_1 factor = 0 } activate_mission = saf_state_turmoil_brewing_zimbabwe_1 random = { chance = 10 545 = { set_demilitarized_zone = yes } } } 
+			}
+			ZIM = { save_event_target_as = state_turmoil_brewing_event_name }
+		}
+	}
+}
+saf_stabilising_daily = {
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_angola_1 divisions_in_state = { size > 5 state = 540 } } add_to_variable = { turmoil_angola = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_angola_2 divisions_in_state = { size > 5 state = 888 } } add_to_variable = { turmoil_angola = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_angola_3 divisions_in_state = { size > 5 state = 889 } } add_to_variable = { turmoil_angola = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_botswana_1 divisions_in_state = { size > 5 state = 542 } } add_to_variable = { turmoil_botswana = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_burundi_1 divisions_in_state = { size > 5 state = 769 } } add_to_variable = { turmoil_burundi = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_congo_1 divisions_in_state = { size > 5 state = 295 } } add_to_variable = { turmoil_congo = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_congo_2 divisions_in_state = { size > 5 state = 538 } } add_to_variable = { turmoil_congo = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_congo_3 divisions_in_state = { size > 5 state = 718 } } add_to_variable = { turmoil_congo = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_congo_4 divisions_in_state = { size > 5 state = 929 } } add_to_variable = { turmoil_congo = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_congo_5 divisions_in_state = { size > 5 state = 930 } } add_to_variable = { turmoil_congo = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_congo_6 divisions_in_state = { size > 5 state = 931 } } add_to_variable = { turmoil_congo = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_congo_7 divisions_in_state = { size > 5 state = 932 } } add_to_variable = { turmoil_congo = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_congo_8 divisions_in_state = { size > 5 state = 933 } } add_to_variable = { turmoil_congo = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_congo_9 divisions_in_state = { size > 5 state = 958 } } add_to_variable = { turmoil_congo = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_congo_10 divisions_in_state = { size > 5 state = 796 } } add_to_variable = { turmoil_congo = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_rcg_1 divisions_in_state = { size > 5 state = 772 } } add_to_variable = { turmoil_rcg = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_eswatini_1 divisions_in_state = { size > 5 state = 951 } } add_to_variable = { turmoil_eswatini = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_gabon_1 divisions_in_state = { size > 5 state = 539 } } add_to_variable = { turmoil_gabon = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_guinea_1 divisions_in_state = { size > 5 state = 297 } } add_to_variable = { turmoil_guinea = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_kenya_1 divisions_in_state = { size > 5 state = 547 } } add_to_variable = { turmoil_kenya = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_kenya_2 divisions_in_state = { size > 5 state = 897 } } add_to_variable = { turmoil_kenya = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_kenya_3 divisions_in_state = { size > 5 state = 898 } } add_to_variable = { turmoil_kenya = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_kenya_4 divisions_in_state = { size > 5 state = 899 } } add_to_variable = { turmoil_kenya = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_lesotho_1 divisions_in_state = { size > 5 state = 952 } } add_to_variable = { turmoil_lesotho = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_madagascar_1 divisions_in_state = { size > 5 state = 543 } } add_to_variable = { turmoil_madagascar = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_malawi_1 divisions_in_state = { size > 5 state = 770 } } add_to_variable = { turmoil_malawi = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_mozambique_1 divisions_in_state = { size > 5 state = 544 } } add_to_variable = { turmoil_mozambique = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_mozambique_2 divisions_in_state = { size > 5 state = 890 } } add_to_variable = { turmoil_mozambique = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_mozambique_3 divisions_in_state = { size > 5 state = 891 } } add_to_variable = { turmoil_mozambique = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_namibia_1 divisions_in_state = { size > 5 state = 541 } } add_to_variable = { turmoil_namibia = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_namibia_2 divisions_in_state = { size > 5 state = 980 } } add_to_variable = { turmoil_namibia = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_rwanda_1 divisions_in_state = { size > 5 state = 768 } } add_to_variable = { turmoil_rwanda = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_tanzania_1 divisions_in_state = { size > 5 state = 546 } } add_to_variable = { turmoil_tanzania = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_uganda_1 divisions_in_state = { size > 5 state = 548 } } add_to_variable = { turmoil_uganda = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_zambia_1 divisions_in_state = { size > 5 state = 771 } } add_to_variable = { turmoil_zambia = 0.3 } }
+	if = { limit = { has_active_mission = saf_state_turmoil_brewing_zimbabwe_1 divisions_in_state = { size > 5 state = 545 } } add_to_variable = { turmoil_zimbabwe = 0.3 } }
+}
+saf_start_random_turmoil = {
+	saf_start_random_weighted_turmoil = yes
+	country_event = saf_pacification.2
+	saf_reset_map_area = yes
+}
+saf_calculate_mean_stability = {
+	clamp_variable = { var = turmoil_angola min = 0 max = 100 }
+	clamp_variable = { var = turmoil_botswana min = 0 max = 100 }
+	clamp_variable = { var = turmoil_burundi min = 0 max = 100 }
+	clamp_variable = { var = turmoil_congo min = 0 max = 100 }
+	clamp_variable = { var = turmoil_eswatini min = 0 max = 100 }
+	clamp_variable = { var = turmoil_gabon min = 0 max = 100 }
+	clamp_variable = { var = turmoil_guinea min = 0 max = 100 }
+	clamp_variable = { var = turmoil_kenya min = 0 max = 100 }
+	clamp_variable = { var = turmoil_lesotho min = 0 max = 100 }
+	clamp_variable = { var = turmoil_madagascar min = 0 max = 100 }
+	clamp_variable = { var = turmoil_malawi min = 0 max = 100 }
+	clamp_variable = { var = turmoil_mozambique min = 0 max = 100 }
+	clamp_variable = { var = turmoil_namibia min = 0 max = 100 }
+	clamp_variable = { var = turmoil_rcg min = 0 max = 100 }
+	clamp_variable = { var = turmoil_rwanda min = 0 max = 100 }
+	clamp_variable = { var = turmoil_tanzania min = 0 max = 100 }
+	clamp_variable = { var = turmoil_uganda min = 0 max = 100 }
+	clamp_variable = { var = turmoil_zambia min = 0 max = 100 }
+	clamp_variable = { var = turmoil_zimbabwe min = 0 max = 100 }
+	
+	set_variable = { saf_stability_angola = turmoil_angola }
+	
+	set_variable = { saf_stability_congo = turmoil_congo }
+	
+	set_variable = { saf_stability_east = turmoil_burundi }
+	add_to_variable = { saf_stability_east = turmoil_kenya }
+	add_to_variable = { saf_stability_east = turmoil_tanzania }
+	add_to_variable = { saf_stability_east = turmoil_rwanda }
+	add_to_variable = { saf_stability_east = turmoil_uganda }
+	divide_variable = { saf_stability_east = 5 }
+	round_variable = saf_stability_east
+	
+	set_variable = { saf_stability_central = turmoil_gabon }
+	add_to_variable = { saf_stability_central = turmoil_guinea }
+	add_to_variable = { saf_stability_central = turmoil_rcg }
+	divide_variable = { saf_stability_central = 3 }
+	round_variable = saf_stability_central
+	
+	set_variable = { saf_stability_highlands = turmoil_eswatini }
+	add_to_variable = { saf_stability_highlands = turmoil_lesotho }
+	divide_variable = { saf_stability_highlands = 2 }
+	round_variable = saf_stability_highlands
+	
+	set_variable = { saf_stability_kalahari = turmoil_botswana }
+	add_to_variable = { saf_stability_kalahari = turmoil_namibia }
+	divide_variable = { saf_stability_kalahari = 2 }
+	round_variable = saf_stability_kalahari
+	
+	set_variable = { saf_stability_madagascar = turmoil_madagascar }
+	
+	set_variable = { saf_stability_zambezi = turmoil_malawi }
+	add_to_variable = { saf_stability_zambezi = turmoil_mozambique }
+	add_to_variable = { saf_stability_zambezi = turmoil_zambia }
+	add_to_variable = { saf_stability_zambezi = turmoil_zimbabwe }
+	divide_variable = { saf_stability_zambezi = 4 }
+	round_variable = saf_stability_zambezi
+	
+	set_variable = { saf_mean_stability = saf_stability_angola }
+	add_to_variable = { saf_mean_stability = saf_stability_congo }
+	add_to_variable = { saf_mean_stability = saf_stability_east }
+	add_to_variable = { saf_mean_stability = saf_stability_highlands }
+	add_to_variable = { saf_mean_stability = saf_stability_kalahari }
+	add_to_variable = { saf_mean_stability = saf_stability_madagascar }
+	add_to_variable = { saf_mean_stability = saf_stability_zambezi }
+	divide_variable = { saf_mean_stability = 7 }
+	round_variable = saf_mean_stability
+}
+state_reduce_turmoil_in_all_decision = {
+	add_to_variable = { turmoil_angola = -10 }
+	add_to_variable = { turmoil_botswana = -10 }
+	add_to_variable = { turmoil_burundi = -10 }
+	add_to_variable = { turmoil_congo = -10 }
+	add_to_variable = { turmoil_eswatini = -10 }
+	add_to_variable = { turmoil_gabon = -10 }
+	add_to_variable = { turmoil_guinea = -10 }
+	add_to_variable = { turmoil_kenya = -10 }
+	add_to_variable = { turmoil_lesotho = -10 }
+	add_to_variable = { turmoil_madagascar = -10 }
+	add_to_variable = { turmoil_malawi = -10 }
+	add_to_variable = { turmoil_mozambique = -10 }
+	add_to_variable = { turmoil_namibia = -10 }
+	add_to_variable = { turmoil_rcg = -10 }
+	add_to_variable = { turmoil_rwanda = -10 }
+	add_to_variable = { turmoil_tanzania = -10 }
+	add_to_variable = { turmoil_uganda = -10 }
+	add_to_variable = { turmoil_zambia = -10 }
+	add_to_variable = { turmoil_zimbabwe = -10 }
+	
+	saf_calculate_mean_stability = yes
+}
+saf_state_turmoil_rebel = {
+	hidden_effect = {
+		every_possible_country = {
+			limit = {
+				var:SAF.saf_state_turmoil_rebel_state_temp = {
+					is_core_of = PREV
+				}
+			}
+			transfer_state = SAF.saf_state_turmoil_rebel_state_temp
+		}
+		random_country = {
+			limit = {
+				controls_state = SAF.saf_state_turmoil_rebel_state_temp
+			}
+			set_country_flag = SAF_pacification_rebelled
+			SAF = {
+				declare_war_on = {
+					target = PREV
+					type = annex_everything
+				}
+			}
+		}
+		state_reduce_turmoil_in_all_decision = yes
+	}
+}
+saf_pacification_collapse = {
+	hidden_effect = {
+		every_state = {
+			limit = {
+				SAF_states_that_can_rebel = yes
+			}
+			every_possible_country = {
+				limit = {
+					PREV = {
+						is_core_of = PREV
+					}
+				}
+				transfer_state = PREV
+				set_country_flag = saf_pacification_collapse_states
+			}
+			every_country = {
+				limit = {
+					has_country_flag = saf_pacification_collapse_states
+				}
+				SAF = {
+					declare_war_on = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+				every_country = {
+					limit = {
+						is_neighbor_of = PREV
+						has_country_flag = saf_pacification_collapse_states
+					}
+					PREV = {
+						declare_war_on = {
+							target = PREV
+							type = annex_everything
+						}
+					}
+				}
+				capital_scope = {
+					create_unit = { division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5" owner = PREV }
+					create_unit = { division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5" owner = PREV }
+					create_unit = { division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5" owner = PREV }
+				}
+			}
+		}
+		set_country_flag = saf_nation_collapsed
+	}
+}
+saf_reset_map_area = {
+	clear_array = SAF.SAF_states_that_can_rebel_array
+	every_state = {
+		limit = {
+			SAF_states_that_can_rebel = yes
+		}
+		add_to_array = { SAF.SAF_states_that_can_rebel_array = THIS }
+	}
+}
+saf_claim_states_to_be_pacified = {
+	every_state = {
+		limit = {
+			SAF_states_that_can_rebel = yes
+		}
+		set_state_flag = saf_to_be_pacified
+	}
+	saf_reset_map_area = yes
+}
+saf_states_economic_development = {
+	hidden_effect = {
+		clear_variable = saf_states_economic_development
+		random_list = {
+			10 = { modifier = { set_temp_variable = { saf_states_economic_development_temp = 540 } NOT = { controls_state = var:saf_states_economic_development_temp var:saf_states_economic_development_temp = { infrastructure > 4 } } factor = 0 } set_variable = { saf_states_economic_development = saf_states_economic_development_temp } }
+			10 = { modifier = { set_temp_variable = { saf_states_economic_development_temp = 542 } NOT = { controls_state = var:saf_states_economic_development_temp var:saf_states_economic_development_temp = { infrastructure > 4 } } factor = 0 } set_variable = { saf_states_economic_development = saf_states_economic_development_temp } }
+			10 = { modifier = { set_temp_variable = { saf_states_economic_development_temp = 295 } NOT = { controls_state = var:saf_states_economic_development_temp var:saf_states_economic_development_temp = { infrastructure > 4 } } factor = 0 } set_variable = { saf_states_economic_development = saf_states_economic_development_temp } }
+			10 = { modifier = { set_temp_variable = { saf_states_economic_development_temp = 796 } NOT = { controls_state = var:saf_states_economic_development_temp var:saf_states_economic_development_temp = { infrastructure > 4 } } factor = 0 } set_variable = { saf_states_economic_development = saf_states_economic_development_temp } }
+			10 = { modifier = { set_temp_variable = { saf_states_economic_development_temp = 772 } NOT = { controls_state = var:saf_states_economic_development_temp var:saf_states_economic_development_temp = { infrastructure > 4 } } factor = 0 } set_variable = { saf_states_economic_development = saf_states_economic_development_temp } }
+			10 = { modifier = { set_temp_variable = { saf_states_economic_development_temp = 951 } NOT = { controls_state = var:saf_states_economic_development_temp var:saf_states_economic_development_temp = { infrastructure > 4 } } factor = 0 } set_variable = { saf_states_economic_development = saf_states_economic_development_temp } }
+			10 = { modifier = { set_temp_variable = { saf_states_economic_development_temp = 539 } NOT = { controls_state = var:saf_states_economic_development_temp var:saf_states_economic_development_temp = { infrastructure > 4 } } factor = 0 } set_variable = { saf_states_economic_development = saf_states_economic_development_temp } }
+			10 = { modifier = { set_temp_variable = { saf_states_economic_development_temp = 297 } NOT = { controls_state = var:saf_states_economic_development_temp var:saf_states_economic_development_temp = { infrastructure > 4 } } factor = 0 } set_variable = { saf_states_economic_development = saf_states_economic_development_temp } }
+			10 = { modifier = { set_temp_variable = { saf_states_economic_development_temp = 547 } NOT = { controls_state = var:saf_states_economic_development_temp var:saf_states_economic_development_temp = { infrastructure > 4 } } factor = 0 } set_variable = { saf_states_economic_development = saf_states_economic_development_temp } }
+			10 = { modifier = { set_temp_variable = { saf_states_economic_development_temp = 952 } NOT = { controls_state = var:saf_states_economic_development_temp var:saf_states_economic_development_temp = { infrastructure > 4 } } factor = 0 } set_variable = { saf_states_economic_development = saf_states_economic_development_temp } }
+			10 = { modifier = { set_temp_variable = { saf_states_economic_development_temp = 543 } NOT = { controls_state = var:saf_states_economic_development_temp var:saf_states_economic_development_temp = { infrastructure > 4 } } factor = 0 } set_variable = { saf_states_economic_development = saf_states_economic_development_temp } }
+			10 = { modifier = { set_temp_variable = { saf_states_economic_development_temp = 770 } NOT = { controls_state = var:saf_states_economic_development_temp var:saf_states_economic_development_temp = { infrastructure > 4 } } factor = 0 } set_variable = { saf_states_economic_development = saf_states_economic_development_temp } }
+			10 = { modifier = { set_temp_variable = { saf_states_economic_development_temp = 544 } NOT = { controls_state = var:saf_states_economic_development_temp var:saf_states_economic_development_temp = { infrastructure > 4 } } factor = 0 } set_variable = { saf_states_economic_development = saf_states_economic_development_temp } }
+			10 = { modifier = { set_temp_variable = { saf_states_economic_development_temp = 541 } NOT = { controls_state = var:saf_states_economic_development_temp var:saf_states_economic_development_temp = { infrastructure > 4 } } factor = 0 } set_variable = { saf_states_economic_development = saf_states_economic_development_temp } }
+			10 = { modifier = { set_temp_variable = { saf_states_economic_development_temp = 768 } NOT = { controls_state = var:saf_states_economic_development_temp var:saf_states_economic_development_temp = { infrastructure > 4 } } factor = 0 } set_variable = { saf_states_economic_development = saf_states_economic_development_temp } }
+			10 = { modifier = { set_temp_variable = { saf_states_economic_development_temp = 546 } NOT = { controls_state = var:saf_states_economic_development_temp var:saf_states_economic_development_temp = { infrastructure > 4 } } factor = 0 } set_variable = { saf_states_economic_development = saf_states_economic_development_temp } }
+			10 = { modifier = { set_temp_variable = { saf_states_economic_development_temp = 548 } NOT = { controls_state = var:saf_states_economic_development_temp var:saf_states_economic_development_temp = { infrastructure > 4 } } factor = 0 } set_variable = { saf_states_economic_development = saf_states_economic_development_temp } }
+			10 = { modifier = { set_temp_variable = { saf_states_economic_development_temp = 771 } NOT = { controls_state = var:saf_states_economic_development_temp var:saf_states_economic_development_temp = { infrastructure > 4 } } factor = 0 } set_variable = { saf_states_economic_development = saf_states_economic_development_temp } }
+			10 = { modifier = { set_temp_variable = { saf_states_economic_development_temp = 545 } NOT = { controls_state = var:saf_states_economic_development_temp var:saf_states_economic_development_temp = { infrastructure > 4 } } factor = 0 } set_variable = { saf_states_economic_development = saf_states_economic_development_temp } }
+		}
+	}
+}

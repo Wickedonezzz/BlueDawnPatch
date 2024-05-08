@@ -1,0 +1,36 @@
+﻿SYR_MBT_02 = 
+{
+	name = "Republican Guard Divisions"
+
+	for_countries = { SYR }
+
+	can_use = { always = yes }
+
+	division_types = { "main_battle_tank_armor" }
+
+	fallback_name = "%d Republican Guard Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st Republican Guard Division" }
+		2 = { "2nd Republican Guard Division" }
+		3 = { "3rd Republican Guard Division" }
+		4 = { "4th Republican Guard Division" }
+		5 = { "5th Republican Guard Division" }
+		6 = { "6th Republican Guard Division" }
+		7 = { "7th Republican Guard Division" }
+		8 = { "8th Republican Guard Division" }
+		9 = { "9th Republican Guard Division" }
+		10 = { "10th Republican Guard Division" }
+		11 = { "11th Republican Guard Division" }
+		12 = { "12th Republican Guard Division" }
+		13 = { "13th Republican Guard Division" }
+		14 = { "14th Republican Guard Division" }
+		15 = { "15th Republican Guard Division" }
+		16 = { "16th Republican Guard Division" }
+		17 = { "17th Republican Guard Division" }
+		18 = { "18th Republican Guard Division" }
+		19 = { "19th Republican Guard Division" }
+	}
+}

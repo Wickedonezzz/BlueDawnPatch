@@ -1,0 +1,33 @@
+
+state={
+	id=940
+	name="STATE_940"
+	resources = {
+		steel = 35
+	}
+	history={
+		owner = SKR
+		add_core_of = SKR
+		add_core_of = KOR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 6
+			arms_factory = 3
+			dockyard = 3
+			anti_air_building = 1
+
+		}
+		
+		victory_points = {
+			4126 15
+		}
+		
+	}
+	provinces={
+		1054 1081 1177 4126 10085 10110 11948 11977 12085 13458
+	}
+	manpower=8324113
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=large_city
+}

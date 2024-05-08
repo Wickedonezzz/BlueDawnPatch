@@ -1,0 +1,33 @@
+
+state={
+	id=787
+	name="STATE_787"
+
+	history={
+		victory_points = {
+			1910 3 
+		}
+		victory_points = {
+			12763 3 
+		}
+		owner = PAK
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 2
+
+		}
+		add_core_of = PAK
+		add_claim_by = RAJ
+		add_claim_by = PRC
+
+	}
+
+	provinces={
+		2084 4558 12763 
+	}
+	manpower=2972501
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

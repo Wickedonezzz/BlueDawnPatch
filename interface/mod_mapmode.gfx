@@ -1,0 +1,15 @@
+spriteTypes = {	
+
+	## MOD ##
+
+	spriteType = {
+		name = "GFX_mapmode_buttons_deselected_small_cold_war_map"
+		texturefile = "gfx/interface/mapmode/mapmode_buttons_deselected_small_cold_war_map.dds"
+	}
+
+	spriteType = {
+		name = "GFX_mapmode_buttons_selected_small_cold_war_map"
+		texturefile = "gfx/interface/mapmode/mapmode_buttons_selected_small_cold_war_map.dds"
+	}
+
+}

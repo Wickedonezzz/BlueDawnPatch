@@ -1,0 +1,26 @@
+
+state={
+	id=979
+	name="STATE_979"
+	manpower = 8270
+	
+	state_category = wasteland
+	impassable = yes
+
+	history={
+		owner = EGY
+		buildings = {
+			infrastructure = 1
+		}
+
+		add_core_of = EGY
+		add_core_of = ROS
+
+	}
+
+	provinces={
+		1143 7216 10127 10869 12764
+	}
+
+	local_supplies=0.0 
+}

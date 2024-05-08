@@ -1,0 +1,20 @@
+﻿capital = 887
+
+set_convoys = 20
+
+recruit_character = DAR_al_nur
+
+set_war_support = 0.9
+set_stability = 0.4
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 50
+	social_democracy = 30
+	liberalism = 20
+}

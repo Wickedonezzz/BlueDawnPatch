@@ -1,0 +1,104 @@
+characters = {
+
+	BLR_alexander_lukashenko = {
+		name = "Alexander Lukashenko"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BLR/alexander_lukashenko.dds"
+			}
+		}
+		country_leader = {
+			ideology = market_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	BLR_alexander_lukashenko_paternal_autocrat = {
+		name = "Alexander Lukashenko"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BLR/alexander_lukashenko.dds"
+			}
+		}
+		country_leader = {
+			ideology = paternal_autocracy_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+###SCW###
+
+	BLR_sergey_surovikin = {
+		name = "Sergey Surovikin"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Sergey_Surovikin.dds"
+			}
+		}
+		field_marshal={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	BLR_vladimir_lobov = {
+		name = " Vladimir Lobov"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Vladimir_Lobov.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+ 	BLR_gennady_troshev = {
+		name = "Gennady Troshev"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Gennady_Troshev.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	BLR_albert_makashov = {
+		name = "Albert Makashov"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Albert_Makashov.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+}

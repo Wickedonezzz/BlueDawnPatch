@@ -1,0 +1,2620 @@
+focus_tree = {
+	id = saf_parliament_focus
+	country = {
+		factor = 0
+		modifier = {
+			tag = SAF
+			add = 0
+		}
+	}
+
+	default = no
+
+	focus = {
+		id = SAF_parliment_prevails
+		icon = GFX_focus_SAF_the_republic_lives
+		x = 6
+		y = 1
+
+		prerequisite = { }
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 25
+			add_stability = 0.05
+                }
+	}
+	focus = {
+		id = SAF_solifify_our_powers
+		icon = GFX_focus_SAF_solifify_our_power
+		relative_position_id = SAF_parliment_prevails
+		x = 0
+		y = 1
+
+		prerequisite = {focus = SAF_parliment_prevails}
+		cost = 1
+		ai_will_do = {
+			factor = 3
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			add_political_power = -20
+			add_stability = 0.02
+                }
+	}
+	focus = {
+		id = SAF_decrease_military_influence
+		icon = GFX_focus_SAF_decrease_military_influence
+		relative_position_id = SAF_solifify_our_powers
+		x = -1
+		y = 1
+
+		prerequisite = {focus = SAF_solifify_our_powers}
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = -20
+			add_stability = 0.02
+			add_war_support = -0.05
+			army_experience = -50
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.10
+			}
+			add_popularity = {
+				ideology = paternal_autocracy
+				popularity = -0.10
+			}
+        }
+	}
+	focus = {
+		id = SAF_initial_democracy
+		icon = GFX_focus_SAF_initial_democracy
+		relative_position_id = SAF_solifify_our_powers
+		x = 1
+		y = 1
+
+		prerequisite = {focus = SAF_solifify_our_powers}
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 50
+			add_timed_idea = {
+				idea = SAF_democracy_freedom_path_idea
+				days = 50
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.10
+			}
+
+		}
+	}
+	focus = {
+		id = SAF_expand_parliments_power
+		icon = GFX_focus_SAF_expand_parliments_power
+		relative_position_id = SAF_decrease_military_influence
+		x = 1
+		y = 1
+
+		prerequisite = {focus = SAF_decrease_military_influence}
+		prerequisite = {focus = SAF_initial_democracy}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = -75
+			modify_timed_idea = {
+				idea = SAF_democracy_freedom_path_idea
+				days = 60
+			}
+			remove_ideas = SAF_military_state_idea
+		}
+	}
+	focus = {
+		id = SAF_choosing_our_path
+		icon = GFX_focus_SAF_choosing_our_path
+		relative_position_id = SAF_expand_parliments_power
+		x = 0
+		y = 1
+
+		prerequisite = {focus = SAF_expand_parliments_power}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}			
+			modify_timed_idea = {
+				idea = SAF_democracy_freedom_path_idea
+				days = 60
+			}			
+		}
+	}
+	focus = {
+		id = SAF_re-elected_de_klerk
+		icon = GFX_focus_SAF_re_elected_de_klerk
+		relative_position_id = SAF_choosing_our_path
+		x = 0
+		y = 1
+
+		prerequisite = {focus = SAF_choosing_our_path}
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			retire_country_leader = yes
+			promote_character = {
+				character = SAF_de_klerk
+				ideology = despotism
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.10
+			}	
+        }
+	}
+	focus = {
+		id = SAF_new_reforms
+		icon = GFX_focus_SAF_new_reforms
+		relative_position_id = SAF_re-elected_de_klerk
+		x = 0
+		y = 1
+
+		prerequisite = {focus = SAF_re-elected_de_klerk}
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 25
+			add_timed_idea = {
+				idea = SAF_reforms_reforms_idea
+				days = 100
+			}
+		}
+	}
+	focus = {
+		id = SAF_jumpstart_the_economy
+		icon = GFX_focus_SAF_jumpstart_economy
+		relative_position_id = SAF_new_reforms
+		x = -4
+		y = 1
+
+		prerequisite = {focus = SAF_new_reforms}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = SAF_money_idea
+		}
+	}
+	focus = {
+		id = SAF_opening_up_to_investments
+		icon = GFX_focus_SAF_open_up_investment
+		relative_position_id = SAF_jumpstart_the_economy
+		x = -1
+		y = 1
+
+		prerequisite = {focus = SAF_jumpstart_the_economy}
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SAF_money_idea
+				add_idea = SAF_money_idea_2
+			}
+		}
+	}
+	focus = {
+		id = SAF_Re-connect_to_the_crown
+		icon = GFX_focus_SAF_reconnect_crown
+		relative_position_id = SAF_jumpstart_the_economy
+		x = 1
+		y = 1
+
+		prerequisite = {focus = SAF_jumpstart_the_economy}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = ENG
+				modifier = SAF_reconnect_with_crown_opinion
+			}
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = SAF_more_investments_in_civil_sector
+		icon = GFX_focus_generic_civilian_boost
+		relative_position_id = SAF_opening_up_to_investments
+		x = 1
+		y = 1
+
+		prerequisite = {focus = SAF_opening_up_to_investments}
+		prerequisite = {focus = SAF_Re-connect_to_the_crown}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			swap_ideas = {
+				remove_idea = SAF_money_idea_2
+				add_idea = SAF_money_idea_3
+			}
+			add_political_power = 25
+		 }
+	}
+	focus = {
+		id = SAF_increase_relations_with_the_us
+		icon = GFX_focus_SAF_increase_relations_usa
+		relative_position_id = SAF_more_investments_in_civil_sector
+		x = -1
+		y = 1
+
+		prerequisite = {focus = SAF_more_investments_in_civil_sector}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = USA
+				modifier = SAF_increase_relations_usa_opinion
+			}
+		}
+	}
+	focus = {
+		id = SAF_seek_western_aid
+		icon = GFX_focus_SAF_seek_western_aid
+		relative_position_id = SAF_increase_relations_with_the_us
+		x = 0
+		y = 1
+
+		prerequisite = {focus = SAF_increase_relations_with_the_us}
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 50
+			921 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+
+			}
+		}
+	}
+	focus = {
+		id = SAF_increase_reliance_on_the_dollar
+		icon = GFX_focus_SAF_increase_reliance_dollar
+		relative_position_id = SAF_seek_western_aid
+		x = 0
+		y = 1
+
+		prerequisite = {focus = SAF_seek_western_aid}
+		mutually_exclusive = {focus = SAF_increase_reliance_on_the_pound}
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = SAF_increase_reliance_dollar_opinion
+			}
+			reverse_add_opinion_modifier = {
+				target = USA
+				modifier = SAF_increase_reliance_dollar_opinion
+			}
+			swap_ideas = {
+				remove_idea = SAF_money_idea_3 
+				add_idea = SAF_money_idea_dollar
+			}			
+		}
+	}
+	focus = {
+		id = SAF_increase_relations_with_the_commonwealth
+		icon = GFX_focus_SAF_increase_relations_commonwealth
+		relative_position_id = SAF_more_investments_in_civil_sector
+		x = 1
+		y = 1
+
+		prerequisite = {focus = SAF_more_investments_in_civil_sector}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			every_possible_country = {
+					limit = {
+						has_idea = ENG_commonwelth
+					}
+					reverse_add_opinion_modifier = {
+						target = PREV
+						modifier = SAF_increase_relations_commonwealth_opinion
+					}
+			}
+		}
+	}
+	focus = {
+		id = SAF_cape_to_elizabeth_railway
+		icon = x
+		relative_position_id = SAF_increase_relations_with_the_commonwealth
+		x = 0
+		y = 1
+
+		prerequisite = {focus = SAF_increase_relations_with_the_commonwealth}
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			build_railway = {
+				level = 1
+				fallback = yes
+				path = { 12589 13270 12547 4696 }
+				start_province = 12589
+				target_province = 4696
+			}
+		}
+	}
+	focus = {
+		id = SAF_increase_reliance_on_the_pound
+		icon = x
+		relative_position_id = SAF_cape_to_elizabeth_railway
+		x = 0
+		y = 1
+
+		prerequisite = {focus = SAF_cape_to_elizabeth_railway}
+		mutually_exclusive = {focus = SAF_increase_reliance_on_the_dollar}
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_opinion_modifier = {
+				target = ENG
+				modifier = SAF_increase_reliance_pound_opinion
+			}
+			reverse_add_opinion_modifier = {
+				target = ENG
+				modifier = SAF_increase_reliance_pound_opinion
+			}
+			swap_ideas = {
+				remove_idea = SAF_money_idea_3 
+				add_idea = SAF_money_idea_pound
+			}
+		}
+	}
+	focus = {
+		id = SAF_economic_rebirth
+		icon = GFX_focus_SAF_economic_rebirth
+		relative_position_id = SAF_increase_reliance_on_the_dollar
+		x = 1
+		y = 2
+
+		prerequisite = {focus = SAF_increase_reliance_on_the_dollar focus = SAF_increase_reliance_on_the_pound}
+		cost = 1
+		ai_will_do = {
+			factor = 10
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = SAF_economic_rebirth_idea
+		}
+	}
+	focus = {
+		id = SAF_societal_reforms
+		icon = GFX_focus_SAF_social_reforms
+		relative_position_id = SAF_new_reforms
+		x = 3
+		y = 1
+
+		prerequisite = {focus = SAF_new_reforms}
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.10
+		}
+	}
+	focus = {
+		id = SAF_negotiations_with_the_anc
+		icon = GFX_focus_SAF_negotiate_anc
+		relative_position_id = SAF_societal_reforms
+		x = -2
+		y = 1
+
+		prerequisite = {focus = SAF_societal_reforms}
+		mutually_exclusive = {focus = SAF_delay_the_invitable }
+		cost = 5
+		ai_will_do = {
+			factor = 9
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = -100
+			add_war_support = -0.30
+			add_stability = 0.15
+		}
+	}
+	focus = {
+		id = SAF_call_for_a_cease_fire
+		icon = GFX_focus_SAF_call_for_ceasefire
+		relative_position_id = SAF_negotiations_with_the_anc
+		x = -1
+		y = 1
+
+		prerequisite = {focus = SAF_negotiations_with_the_anc }
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = -0.15
+			army_experience = -50
+			add_popularity = {
+				ideology = social_democracy
+				popularity = 0.15
+			}
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.10
+			}			
+		}
+	}
+	focus = {
+		id = SAF_ensure_there_nuetrality
+		icon = GFX_focus_SAF_ensure_security
+		relative_position_id = SAF_call_for_a_cease_fire
+		x = 0
+		y = 2
+
+		prerequisite = {focus = SAF_call_for_a_cease_fire }
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.15
+			}
+		}
+	}
+	focus = {
+		id = SAF_the_end_of_the_insurgency
+		icon = x
+		relative_position_id = SAF_ensure_there_nuetrality
+		x = 0
+		y = 2
+
+		prerequisite = {focus = SAF_ensure_there_nuetrality}
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_stability = 0.10
+			remove_ideas = SAF_anc_insurgency_idea
+			custom_effect_tooltip = social_democracy_party_will_be_legalized
+			set_party_name = {
+				ideology = social_democracy
+				name = SAF_social_democracy_legalized_party
+				long_name = SAF_social_democracy_legalized_party_long
+			}
+			custom_effect_tooltip = socialism_party_will_be_legalized
+			set_party_name = {
+				ideology = socialism
+				name = SAF_socialism_legalized_party
+				long_name = SAF_socialism_legalized_party_long
+			}	
+		}
+	}
+	focus = {
+		id = SAF_follow_the_us_example
+		icon = GFX_focus_SAF_follow_american_example
+		relative_position_id = SAF_negotiations_with_the_anc
+		x = 1
+		y = 1
+
+		prerequisite = {focus = SAF_negotiations_with_the_anc}
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = SAF_american_model_idea
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = SAF_demolish_segregation_rule
+		icon =x
+		relative_position_id = SAF_follow_the_us_example
+		x = 0
+		y = 2
+
+		prerequisite = {focus = SAF_follow_the_us_example}
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			every_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SAF_sideline_the_police
+		icon = x
+		relative_position_id = SAF_demolish_segregation_rule
+		x = 0
+		y = 2
+
+		prerequisite = {focus = SAF_demolish_segregation_rule}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = -50
+			add_timed_idea = {
+				idea = SAF_cut_police_funds_idea
+				days = 250
+			}
+		}
+	}
+	focus = {
+		id = SAF_end_segregation_for_good
+		icon = GFX_focus_geneirc_socialist_law
+		relative_position_id = SAF_the_end_of_the_insurgency
+		x = 1
+		y = 1
+
+		prerequisite = {focus = SAF_sideline_the_police}
+		prerequisite = {focus = SAF_the_end_of_the_insurgency}
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			custom_effect_tooltip = SAF_parliament_end_segregation_for_good_tt
+			remove_ideas = SAF_apartheid_idea		
+		}
+	}
+	focus = {
+		id = SAF_delay_the_invitable
+		icon = GFX_focus_SAF_delay_inevitable
+		relative_position_id = SAF_societal_reforms
+		x = 2
+		y = 1
+
+		prerequisite = {focus = SAF_societal_reforms}
+		mutually_exclusive = {focus = SAF_negotiations_with_the_anc}
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			custom_effect_tooltip = SAF_parliament_delay_the_invitable_tt
+		}
+	}
+	focus = {
+		id = SAF_ban_their_marches
+		icon = GFX_focus_SAF_ban_marches
+		relative_position_id = SAF_delay_the_invitable
+		x = 0
+		y = 1
+
+		prerequisite = {focus = SAF_delay_the_invitable}
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = -50
+			add_ideas = SAF_revolts_everywhere_idea
+		}
+	}
+	focus = {
+		id = SAF_increase_police_funding
+		icon = x
+		relative_position_id = SAF_ban_their_marches
+		x = 0
+		y = 1
+
+		prerequisite = {focus = SAF_ban_their_marches}
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = -10
+			add_ideas = SAF_military_police_1_idea
+		}
+	}
+	focus = {
+		id = SAF_expand_police_authority
+		icon = x
+		relative_position_id = SAF_increase_police_funding
+		x = 0
+		y = 1
+
+		prerequisite = {focus = SAF_increase_police_funding}
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = -30
+			swap_ideas = {
+				remove_idea = SAF_military_police_1_idea
+				add_idea = SAF_military_police_2_idea
+			}
+		}
+	}
+	focus = {
+		id = SAF_the_incident
+		icon = x
+		relative_position_id = SAF_expand_police_authority
+		x = 0
+		y = 1
+
+		prerequisite = {focus = SAF_expand_police_authority}
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = -300
+			add_stability = -0.30
+			add_war_support = -0.30
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.20
+			}
+		}
+	}
+	focus = {
+		id = SAF_increase_our_measere
+		icon = x
+		relative_position_id = SAF_the_incident
+		x = 1
+		y = 1
+
+		prerequisite = {focus = SAF_the_incident }
+		mutually_exclusive = {focus = SAF_give_in_to_preassure }
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			set_country_flag = saf_took_col_route_flag
+			mark_focus_tree_layout_dirty = yes			
+			swap_ideas = {
+				remove_idea = SAF_military_police_2_idea
+				add_idea = SAF_military_police_3_idea
+			}
+			custom_effect_tooltip = saf_are_u_dumb
+		}
+	}
+	focus = {
+		id = SAF_chaos_in_the_streets
+		icon = x
+		relative_position_id = SAF_increase_our_measere
+		x = 0
+		y = 1
+
+		prerequisite = {focus = SAF_increase_our_measere}
+		allow_branch = {has_country_flag = saf_took_col_route_flag}
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			set_country_flag = saf_took_col_route_2_flag
+			mark_focus_tree_layout_dirty = yes
+			swap_ideas = {
+				remove_idea = SAF_revolts_everywhere_idea
+				add_idea = SAF_revolts_everywhere_2_idea
+			}			
+		}
+	}
+	focus = {
+		id = SAF_our_army_abandoned
+		icon = x
+		relative_position_id = SAF_chaos_in_the_streets
+		x = 0
+		y = 1
+
+		prerequisite = {focus = SAF_chaos_in_the_streets}
+		allow_branch = {has_country_flag = saf_took_col_route_2_flag}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SAF_military_police_3_idea
+				add_idea = SAF_military_police_4_idea
+			}
+			add_manpower = -50000
+		}
+	}
+	
+	#try to find a good slang/prhase for goodnight/goodbye in afrikaner but found nothing#
+	focus = {
+		id = SAF_goodnight_south_africa
+		icon = x
+		relative_position_id = SAF_our_army_abandoned
+		x = 0
+		y = 1
+
+		prerequisite = {focus = SAF_our_army_abandoned}
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		mark_focus_tree_layout_dirty = yes
+			SAF = {
+				country_event = { id = saf.10 }
+			}
+        }
+	}
+	focus = {
+		id = SAF_give_in_to_preassure
+		icon = x
+		relative_position_id = SAF_the_incident
+		x = -1
+		y = 1
+
+		prerequisite = {focus = SAF_the_incident}
+		mutually_exclusive = {focus = SAF_increase_our_measere}
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.10
+			swap_ideas = {
+				remove_idea = SAF_revolts_everywhere_idea
+				add_idea = SAF_revolts_everywhere_not_worth_it_2_idea
+			}
+			custom_effect_tooltip = SAF_rev_expire_60_days_tt
+			hidden_effect = {
+				remove_ideas = SAF_revolts_everywhere_not_worth_it_2_idea
+				add_timed_idea = {
+					idea = SAF_revolts_everywhere_not_worth_it_2_idea
+					days = 60
+				}
+			}
+			hidden_effect = {
+				remove_ideas = SAF_revolts_everywhere_idea
+			}
+		}
+	}
+	focus = {
+		id = SAF_enact_emergency_powers
+		icon = x
+		relative_position_id = SAF_give_in_to_preassure
+		x = 0
+		y = 1
+
+		prerequisite = {focus = SAF_give_in_to_preassure}
+		available = {NOT = {has_idea = SAF_revolts_everywhere_not_worth_it_2_idea}}
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_timed_idea = {
+				idea = SAF_emergency_powers_idea
+				days = 90
+			}
+			swap_ideas = {
+				remove_idea = SAF_apartheid_idea
+				add_idea = SAF_apartheid_limited_idea
+			}			
+		}
+	}
+	focus = {
+		id = SAF_a_new_constitution
+		icon = GFX_focus_SAF_a_new_constitution
+		relative_position_id = SAF_end_segregation_for_good
+		x = 0
+		y = 1
+
+		prerequisite = {focus = SAF_economic_rebirth}
+		prerequisite = {focus = SAF_end_segregation_for_good focus = SAF_enact_emergency_powers}
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		mark_focus_tree_layout_dirty = yes
+			if = {
+				limit = {has_completed_focus = SAF_enact_emergency_powers}
+				country_event = {id = saf.40}
+			}
+			else = {
+				country_event = {id = saf.38}
+				country_event = {id = saf.39 days = 1}
+				set_party_name = {
+					ideology = democratic
+					name = SAF_democratic_NNP_party
+					long_name = SAF_democratic_NNP_party_long
+				}			
+			}
+		}
+	}
+	
+	##ECONOMY##
+	
+	focus = {
+		id = SAF_parliment_economy_modernize_our_industry
+		icon = GFX_focus_SAF_modernize_our_industry
+		x = 25
+		y = 1
+		
+		#prerequisite = { }
+		
+		allow_branch = {
+			OR = {
+				has_completed_focus = SAF_goodnight_south_africa
+				has_completed_focus = SAF_a_new_constitution
+			}
+		}
+		
+		cost = 6.7
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		#relative_position_id = 
+		
+		completion_reward = {
+				
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = SAF_parliment_economy_open_new_mines
+		icon = GFX_focus_SAF_open_mines
+		x = -7
+		y = 1
+		
+		prerequisite = { focus = SAF_parliment_economy_modernize_our_industry }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = SAF_parliment_economy_modernize_our_industry
+		
+		completion_reward = {
+			add_timed_idea = {
+				idea = SAF_south_african_mines_inaguration
+				days = 210
+			}
+			country_event = { id = saf.13 }
+		}
+	}
+	
+	focus = {
+		id = SAF_parliment_economy_support_the_costruction_of_new_energetic_industries
+		icon = GFX_focus_SAF_construct_new_energy
+		x = -3
+		y = 1
+		
+		prerequisite = { focus = SAF_parliment_economy_modernize_our_industry }
+		
+		cost = 3.5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = SAF_parliment_economy_modernize_our_industry
+		
+		completion_reward = {
+			add_ideas = SAF_construction_of_new_energetic_factories
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = SAF_parliment_economy_build_coal_factories
+		icon = GFX_focus_SAF_coal_factories
+		x = -5
+		y = 2
+		
+		prerequisite = { focus = SAF_parliment_economy_open_new_mines}
+		prerequisite = { focus = SAF_parliment_economy_support_the_costruction_of_new_energetic_industries}
+		
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = SAF_parliment_economy_modernize_our_industry
+		
+		completion_reward = {
+			921 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_timed_idea = {
+				idea = SAF_energetic_industries
+				days = 365
+			}
+			
+		}
+	}	
+	
+	focus = {
+		id = SAF_parliment_economy_found_exxaro_mining_company
+		icon = GFX_focus_SAF_found_exxaro_mining_company
+		x = -7
+		y = 3
+		
+		prerequisite = { focus = SAF_parliment_economy_build_coal_factories}
+		mutually_exclusive = { focus = SAF_parliment_economy_support_the_anglo_american_coal_foundation}
+		
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = SAF_parliment_economy_modernize_our_industry
+		
+		completion_reward = {
+			add_ideas = SAF_exxaro
+			country_event = { id = saf.14 }
+		}
+	}
+	
+	focus = {
+		id = SAF_parliment_economy_support_the_anglo_american_coal_foundation
+		icon = GFX_focus_SAF_anglo-american_coal
+		x = -3
+		y = 3
+		
+		prerequisite = { focus = SAF_parliment_economy_build_coal_factories}
+		mutually_exclusive = { focus = SAF_parliment_economy_found_exxaro_mining_company}
+		
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = SAF_parliment_economy_modernize_our_industry
+		
+		completion_reward = {
+			add_opinion_modifier = { target = ENG modifier = SAF_anglo_american_coal_foundation_opinion }
+			add_opinion_modifier = { target = USA modifier = SAF_anglo_american_coal_foundation_opinion }
+			add_ideas = SAF_anglo_american_coal_foundation			
+		}
+	}
+	
+	focus = {
+		id = SAF_parliment_economy_export_rare_minerials
+		icon = GFX_focus_SAF_export_rare_minerals
+		x = -5
+		y = 4
+		
+		prerequisite = { focus = SAF_parliment_economy_support_the_anglo_american_coal_foundation focus = SAF_parliment_economy_found_exxaro_mining_company}
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = SAF_parliment_economy_modernize_our_industry
+		
+		completion_reward = {
+			add_timed_idea = {
+				idea = SAF_jewelry_exporter
+				days = 730
+			}
+
+		}
+	}
+	
+	focus = {
+		id = SAF_parliment_economy_and_our_agriculture
+		icon = GFX_focus_SAF_and_our_agriculture
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = SAF_parliment_economy_modernize_our_industry }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = SAF_parliment_economy_modernize_our_industry
+		
+		completion_reward = {
+			add_timed_idea = {
+				idea = SAF_agricultural_modernization
+				days = 540
+			}
+		}
+	}
+	
+	focus = {
+		id = SAF_parliment_economy_import_new_agriculture_machinery
+		icon = GFX_focus_SAF_import_new_agriculture
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = SAF_parliment_economy_and_our_agriculture }
+		
+		cost = 3.9
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = SAF_parliment_economy_and_our_agriculture
+		
+		completion_reward = {
+			add_timed_idea = {
+				idea = SAF_foreign_exports
+				days = 300
+			}
+			swap_ideas = {
+				remove_idea = export_focus 
+				add_idea = limited_exports
+			}
+		}
+	}
+	
+	focus = {
+		id = SAF_parliment_economy_invest_in_farming_activities
+		icon = GFX_focus_SAF_invest_farming_activities
+		x = 0
+		y = 2
+		
+		prerequisite = { focus = SAF_parliment_economy_import_new_agriculture_machinery }
+		
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = SAF_parliment_economy_and_our_agriculture
+		
+		completion_reward = {
+			add_timed_idea = {
+				idea = SAF_farm_development
+				days = 210
+			}
+			set_country_flag = SAF_took_investing_in_farm_activities
+		}
+	}
+	
+	focus = {
+		id = SAF_parliment_economy_new_agriculture_methods
+		icon = GFX_focus_SAF_agriculture_methods
+		x = 0
+		y = 3
+		
+		prerequisite = { focus = SAF_parliment_economy_invest_in_farming_activities }
+		
+		available = {
+			has_country_flag = {
+				flag = SAF_took_investing_in_farm_activities
+				days > 150
+			}
+			custom_trigger_tooltip = {
+				tooltip = SAF_took_investing_farms_focus_tooltip
+				has_country_flag = {
+					flag = SAF_took_investing_in_farm_activities
+					days > 150
+				}
+			}
+		}
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = SAF_parliment_economy_and_our_agriculture
+		
+		completion_reward = {
+			add_ideas = SAF_revived_agriculture
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = SAF_parliment_economy_encourage_tourism
+		icon = GFX_focus_SAF_encourage_tourism
+		x = 3
+		y = 1
+		
+		prerequisite = { focus = SAF_parliment_economy_modernize_our_industry }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = SAF_parliment_economy_modernize_our_industry
+		
+		completion_reward = {
+			add_ideas = SAF_tourist_ads
+			country_event = {id = saf.15}
+			set_country_flag = SAF_took_encourage_tourism_focus
+		}
+	}
+		
+	focus = {
+		id = SAF_parliment_economy_expand_safari_business
+		icon = GFX_focus_SAF_safari
+		x = 0
+		y = 2
+		
+		prerequisite = { focus = SAF_parliment_economy_encourage_tourism }
+		
+		available = {
+			has_country_flag = {
+				flag = SAF_took_encourage_tourism_focus
+				days > 50
+			}
+			custom_trigger_tooltip = {
+				tooltip = SAF_took_encourage_tourism_focus_tooltip
+				has_country_flag = {
+					flag = SAF_took_encourage_tourism_focus
+					days > 50
+				}
+			}
+		}
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = SAF_parliment_economy_encourage_tourism
+		
+		completion_reward = {
+			remove_ideas = SAF_tourist_ads
+			add_timed_idea = {
+				idea = SAF_safari_activites
+				days = 365
+			}
+		}
+	}
+	
+	focus = {
+		id = SAF_parliment_economy_encourage_the_transport_sector
+		icon = GFX_focus_SAF_encourage_transport_system
+		x = 7
+		y = 1
+		
+		prerequisite = { focus = SAF_parliment_economy_modernize_our_industry }
+		
+		cost = 3.5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = SAF_parliment_economy_modernize_our_industry
+		
+		completion_reward = {
+			921 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+					province = 4822
+				}
+				
+	
+			}
+				build_railway = {
+					level = 5
+					build_only_on_allied = yes
+					controller_priority = {
+						base = 1
+
+					}
+					fallback = yes
+					path = { 12547 12692 10415 13265 13266 }
+					start_province = 12547
+					target_province = 13266
+				}
+		}
+	}
+		
+	focus = {
+		id = SAF_parliment_economy_improve_the_roads
+		icon = GFX_focus_SAF_improve_roads
+		x = 0
+		y = 2
+		
+		prerequisite = { focus = SAF_parliment_economy_encourage_the_transport_sector }
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = SAF_parliment_economy_encourage_the_transport_sector
+		
+		completion_reward = {
+				
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_stability = 0.075
+		}
+	}	
+	
+	focus = {
+		id = SAF_parliment_economy_support_the_foundation_of_transport_companies
+		icon = GFX_focus_SAF_transport_companies
+		x = -2
+		y = 1
+		
+		prerequisite = { focus = SAF_parliment_economy_expand_safari_business }
+		prerequisite = { focus = SAF_parliment_economy_improve_the_roads }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = SAF_parliment_economy_improve_the_roads
+		
+		completion_reward = {
+			add_ideas = SAF_minor_transportation_companies
+			add_political_power = -25
+		}
+	}
+	
+	focus = {
+		id = SAF_parliment_economy_a_new_great_industrial_era
+		icon = GFX_focus_SAF_new_industrial_era
+		x = -7
+		y = 2
+		
+		prerequisite = { focus = SAF_parliment_economy_export_rare_minerials }
+		prerequisite = { focus = SAF_parliment_economy_new_agriculture_methods }
+		prerequisite = { focus = SAF_parliment_economy_support_the_foundation_of_transport_companies }
+		
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		relative_position_id = SAF_parliment_economy_improve_the_roads
+		
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+			add_ideas = SAF_a_new_industrial_era
+		}
+	}
+
+	### Military Tree ###
+
+	focus = {
+		id = SAF_parliment_army_with_state
+		icon = GFX_focus_SAF_army_with_state
+		x = 50
+		y = 0
+		
+		allow_branch = {
+			OR = {
+				has_completed_focus = SAF_goodnight_south_africa
+				has_completed_focus = SAF_a_new_constitution
+			}
+		}
+		
+		cost = 10
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			add_political_power = 50
+			add_ideas = SAF_army_with_state_idea
+		}
+	}
+	focus = {
+		id = SAF_parliment_air_force
+		#icon = 
+		x = -8
+		y = 1
+		relative_position_id = SAF_parliment_army_with_state
+
+		prerequisite = { focus = SAF_parliment_army_with_state }
+		
+		cost = 3
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			SAF = {
+				country_event = { id = saf.20 }
+			}
+		}
+	}
+
+	focus = {
+		id = SAF_parliment_buy_foreign_jets
+		#icon = 
+		x = -1
+		y = 1
+		relative_position_id = SAF_parliment_air_force
+
+		prerequisite = { focus = SAF_parliment_air_force }
+		mutually_exclusive = { focus = SAF_parliment_increase_plane_production }
+		
+		cost = 4
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			add_political_power = -50
+			add_ideas = SAF_foreign_jet_import_costs_idea
+		}
+	}
+	focus = {
+		id = SAF_parliment_formalize_agreement
+		#icon = 
+		x = 0
+		y = 1
+		relative_position_id = SAF_parliment_buy_foreign_jets
+
+		prerequisite = { focus = SAF_parliment_buy_foreign_jets }
+		
+		cost = 7
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_2
+				amount = 50
+				producer = FRA
+			}
+			add_equipment_to_stockpile = {
+				type = attacker_equipment_1
+				amount = 50
+				producer = ENG
+			}
+			hidden_effect = {
+				remove_ideas = SAF_foreign_jet_import_costs_idea
+				add_timed_idea = {
+					idea = SAF_foreign_jet_import_costs_timed_idea
+					days = 180
+				}
+			}
+			custom_effect_tooltip = SAF_parliment_formalize_agreement_focus_tt
+		}
+	}
+	focus = {
+		id = SAF_parliment_increase_plane_production
+		#icon = 
+		x = 2
+		y = 1
+		relative_position_id = SAF_parliment_air_force
+
+		prerequisite = { focus = SAF_parliment_air_force }
+		mutually_exclusive = { focus = SAF_parliment_buy_foreign_jets }
+		
+		cost = 5
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_timed_idea = {
+				idea = SAF_increase_war_planes_production_idea
+				days = 365
+			}
+		}
+	}
+	focus = {
+		id = SAF_parliment_prioritize_attackers
+		#icon = 
+		x = -1
+		y = 1
+		relative_position_id = SAF_parliment_increase_plane_production
+
+		prerequisite = { focus = SAF_parliment_increase_plane_production }
+		mutually_exclusive = { focus = SAF_parliment_prioritize_fighters }
+		
+		cost = 4
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			add_ideas = SAF_prioritize_attackers_idea
+			if = {
+				limit = {
+					NOT = { has_tech = attacker_1980 }
+				}
+				set_technology = {
+					attacker_1980 = 1
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_tech = attacker_1990 }
+				}
+				set_technology = {
+					attacker_1990 = 1
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_tech = attacker_2000 }
+				}
+				set_technology = {
+					attacker_2000 = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SAF_parliment_prioritize_fighters
+		#icon = 
+		x = 1
+		y = 1
+		relative_position_id = SAF_parliment_increase_plane_production
+
+		prerequisite = { focus = SAF_parliment_increase_plane_production }
+		mutually_exclusive = { focus = SAF_parliment_prioritize_attackers }
+		
+		cost = 4
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			add_ideas = SAF_prioritize_fighters_idea
+			if = {
+				limit = {
+					NOT = { has_tech = fighter_2000 }
+				}
+				set_technology = {
+					fighter_2000 = 1
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_tech = fighter_2010 }
+				}
+				set_technology = {
+					fighter_2010 = 1
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_tech = fighter_2020 }
+				}
+				set_technology = {
+					fighter_2020 = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SAF_parliment_reborn_air_force
+		#icon = 
+		x = 1
+		y = 1
+		relative_position_id = SAF_parliment_formalize_agreement
+
+		prerequisite = { focus = SAF_parliment_formalize_agreement focus = SAF_parliment_prioritize_attackers focus = SAF_parliment_prioritize_fighters }
+		
+		cost = 5
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			add_political_power = 100
+			add_ideas = SAF_new_air_force_idea
+			if = {
+				limit = {
+					has_idea = SAF_prioritize_attackers_idea
+				}
+				remove_ideas = SAF_prioritize_attackers_idea
+			}
+			if = {
+				limit = {
+					has_idea = SAF_prioritize_fighters_idea
+				}
+				remove_ideas = SAF_prioritize_fighters_idea
+			}
+		}
+	}
+	focus = {
+		id = SAF_parliment_army
+		#icon = 
+		x = 0
+		y = 1
+		relative_position_id = SAF_parliment_army_with_state
+
+		prerequisite = { focus = SAF_parliment_army_with_state }
+		
+		cost = 3
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			SAF = {
+				country_event = { id = saf.16 }
+			}
+		}
+	}
+	focus = {
+		id = SAF_parliment_increase_military_funds
+		#icon = 
+		x = -2
+		y = 1
+		relative_position_id = SAF_parliment_army
+
+		prerequisite = { focus = SAF_parliment_army }
+		mutually_exclusive = { focus = SAF_parliment_light_military_investments }
+		
+		cost = 7
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			add_political_power = -50
+			add_ideas = SAF_overfunding_the_army_idea
+		}
+	}
+	focus = {
+		id = SAF_parliment_mandatory_military_service
+		#icon = 
+		x = 0
+		y = 1
+		relative_position_id = SAF_parliment_increase_military_funds
+
+		prerequisite = { focus = SAF_parliment_increase_military_funds }
+		
+		cost = 7
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			add_political_power = -20
+			swap_ideas = {
+				remove_idea = SAF_overfunding_the_army_idea
+				add_idea = SAF_overfunding_the_army_2_idea
+			}
+			if = {
+				limit = {
+					has_idea = disarmed_nation
+				}
+				swap_ideas = {
+					remove_idea = disarmed_nation
+					add_idea = volunteer_only
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = volunteer_only
+				}
+				swap_ideas = {
+					remove_idea = volunteer_only
+					add_idea = limited_conscription
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = limited_conscription
+				}
+				swap_ideas = {
+					remove_idea = limited_conscription
+					add_idea = extensive_conscription
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = extensive_conscription
+				}
+				swap_ideas = {
+					remove_idea = extensive_conscription
+					add_idea = service_by_requirement
+				}
+			}
+		}
+	}
+	focus = {
+		id = SAF_parliment_found_militia_forces
+		#icon = 
+		x = 0
+		y = 1
+		relative_position_id = SAF_parliment_mandatory_military_service
+
+		prerequisite = { focus = SAF_parliment_mandatory_military_service }
+		prerequisite = { focus = SAF_parliment_mass_increase_weapons_production }
+		
+		cost = 5
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			add_political_power = -50
+			921 = {
+				create_unit = {
+					division = "division_template = \"Light Infantry Division\""
+					owner = SAF
+				}
+			}
+			swap_ideas = {
+				remove_idea = SAF_overstretched_military_idea
+				add_idea = SAF_overstretched_military_2_idea
+			}
+			custom_effect_tooltip = SAF_parliment_found_militia_forces_tt
+		}
+	}
+	focus = {
+		id = SAF_parliment_mechanize_army
+		#icon = 
+		x = -1
+		y = 1
+		relative_position_id = SAF_parliment_found_militia_forces
+
+		prerequisite = { focus = SAF_parliment_found_militia_forces }
+		mutually_exclusive = { focus = SAF_parliment_focus_infantry }
+		
+		cost = 2
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			hidden_effect = {
+				division_template = {
+					name = "Mechanized Division"
+					division_names_group = GENERIC_MEC_01
+
+					regiments = {
+						heavy_infantry_unit  = { x = 0 y = 0 }
+						heavy_infantry_unit  = { x = 0 y = 1 }
+						heavy_infantry_unit  = { x = 0 y = 2 }
+						heavy_infantry_unit  = { x = 0 y = 3 }
+						heavy_infantry_unit  = { x = 1 y = 0 }
+						heavy_infantry_unit  = { x = 1 y = 1 }
+						heavy_infantry_unit  = { x = 1 y = 2 }
+						heavy_infantry_unit  = { x = 1 y = 3 }
+						motorised_artillery_unit = { x = 2 y = 0 }
+						motorised_artillery_unit = { x = 2 y = 1 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						logistics_company = { x = 0 y = 1 }
+					}
+				}
+			}
+			custom_effect_tooltip = SAF_parliment_mechanize_army_tt
+		}
+	}
+	focus = {
+		id = SAF_parliment_found_jaguars_corp
+		#icon = 
+		x = 0
+		y = 1
+		relative_position_id = SAF_parliment_mechanize_army
+
+		prerequisite = { focus = SAF_parliment_mechanize_army }
+
+		available = {
+			has_template = "Mechanized Division"
+		}
+		
+		cost = 4
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			275 = {
+				create_unit = {
+					division = "name = \"Jaguars of Johannesburg\" division_template = \"Mechanized Division\""
+					owner = SAF
+				}
+			}
+			add_ideas = SAF_jaguars_johannesburg_idea
+		}
+	}
+	focus = {
+		id = SAF_parliment_focus_infantry
+		#icon = 
+		x = 1
+		y = 1
+		relative_position_id = SAF_parliment_found_militia_forces
+
+		prerequisite = { focus = SAF_parliment_found_militia_forces }
+		mutually_exclusive = { focus = SAF_parliment_mechanize_army }
+		
+		cost = 4
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			hidden_effect = {
+				division_template = {
+					name = "Large Infantry Division"
+					division_names_group = GENERIC_INF_01
+
+					regiments = {
+						infantry_unit  = { x = 0 y = 0 }
+						infantry_unit  = { x = 0 y = 1 }
+						infantry_unit  = { x = 0 y = 2 }
+						infantry_unit  = { x = 0 y = 3 }
+						infantry_unit  = { x = 1 y = 0 }
+						infantry_unit  = { x = 1 y = 1 }
+						infantry_unit  = { x = 1 y = 2 }
+						towed_artillery_unit  = { x = 2 y = 0 }
+						towed_artillery_unit  = { x = 2 y = 1 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+					}
+				}
+			}
+			custom_effect_tooltip = SAF_parliment_focus_infantry_tt
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "division_template = \"Large Infantry Division\""
+					owner = SAF
+				}
+			}
+		}
+	}
+	focus = {
+		id = SAF_parliment_new_combat_doctrines
+		#icon = 
+		x = 0
+		y = 1
+		relative_position_id = SAF_parliment_focus_infantry
+
+		prerequisite = { focus = SAF_parliment_focus_infantry }
+		
+		cost = 2
+		ai_will_do = {
+		}
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SAF_parliment_new_republican_army
+		icon = GFX_focus_SAF_new_republican_army
+		x = 1
+		y = 1
+		relative_position_id = SAF_parliment_found_jaguars_corp
+
+		prerequisite = { focus = SAF_parliment_found_jaguars_corp focus = SAF_parliment_new_combat_doctrines }
+		
+		cost = 11
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			add_ideas = SAF_army_of_democracy_idea
+		}
+	}
+	focus = {
+		id = SAF_parliment_light_military_investments
+		icon = GFX_focus_SAF_light_military_invest
+		x = 2
+		y = 1
+		relative_position_id = SAF_parliment_army
+
+		prerequisite = { focus = SAF_parliment_army }
+		mutually_exclusive = { focus = SAF_parliment_increase_military_funds }
+		
+		cost = 8
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			add_ideas = SAF_light_military_investments_idea
+		}
+	}
+	focus = {
+		id = SAF_parliment_buy_foreign_armaments
+		#icon = 
+		x = 0
+		y = 1
+		relative_position_id = SAF_parliment_light_military_investments
+
+		prerequisite = { focus = SAF_parliment_light_military_investments }
+		
+		cost = 7
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SAF_parliment_buy_foreign_armaments_tt
+		}
+	}
+	focus = {
+		id = SAF_parliment_army_volunteers
+		#icon = 
+		x = 0
+		y = 1
+		relative_position_id = SAF_parliment_buy_foreign_armaments
+
+		prerequisite = { focus = SAF_parliment_buy_foreign_armaments }
+
+		cost = 8
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = disarmed_nation
+				}
+				swap_ideas = {
+					remove_idea = disarmed_nation
+					add_idea = volunteer_only
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = limited_conscription
+				}
+				swap_ideas = {
+					remove_idea = limited_conscription
+					add_idea = volunteer_only
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = extensive_conscription
+				}
+				swap_ideas = {
+					remove_idea = extensive_conscription
+					add_idea = volunteer_only
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = service_by_requirement
+				}
+				swap_ideas = {
+					remove_idea = service_by_requirement
+					add_idea = volunteer_only
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = all_adults_serve 
+				}
+				swap_ideas = {
+					remove_idea = all_adults_serve
+					add_idea = volunteer_only
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = scraping_the_barrel
+				}
+				swap_ideas = {
+					remove_idea = scraping_the_barrel
+					add_idea = volunteer_only
+				}
+			}
+			swap_ideas = {
+				remove_idea = SAF_light_military_investments_idea
+				add_idea = SAF_improving_the_army_idea
+			}
+		}
+	}
+	focus = {
+		id = SAF_parliment_improve_logistic_system
+		#icon = 
+		x = -1
+		y = 1
+		relative_position_id = SAF_parliment_army_volunteers
+
+		prerequisite = { focus = SAF_parliment_army_volunteers }
+		
+		cost = 2
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			275 = {
+				add_building_construction = {
+					type = supply_node
+					province = 10400
+					level = 1
+					instant_build = yes
+				}
+			}
+			build_railway = {
+				level = 1
+				fallback = yes
+				path = { 1833 13277 13271 13276 10697 13274 }
+				start_province = 1833
+				target_province = 13274
+			}
+		}
+	}
+	focus = {
+		id = SAF_parliment_improve_division_organisation
+		#icon = 
+		x = 1
+		y = 1
+		relative_position_id = SAF_parliment_army_volunteers
+
+		prerequisite = { focus = SAF_parliment_army_volunteers }
+		
+		cost = 5
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SAF_improving_the_army_idea
+				add_idea = SAF_improving_the_army_2_idea
+			}
+		}
+	}
+	focus = {
+		id = SAF_parliment_quality_over_quantity
+		#icon = 
+		x = 1
+		y = 1
+		relative_position_id = SAF_parliment_improve_logistic_system
+
+		prerequisite = { focus = SAF_parliment_improve_logistic_system }
+		prerequisite = { focus = SAF_parliment_improve_division_organisation }
+		
+		cost = 7
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SAF_improving_the_army_2_idea
+				add_idea = SAF_quality_over_quantity_idea
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = SAF_parliment_resolve_overstretched_military
+		#icon = 
+		x = 0
+		y = 1
+		relative_position_id = SAF_parliment_quality_over_quantity
+
+		prerequisite = { focus = SAF_parliment_quality_over_quantity }
+		
+		cost = 8
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			remove_ideas = SAF_overstretched_military_idea
+		}
+	}
+	focus = {
+		id = SAF_parliment_new_home_african_democracy
+		icon = GFX_focus_SAF_home_african_democracy
+		x = 0
+		y = 1
+		relative_position_id = SAF_parliment_resolve_overstretched_military
+
+		prerequisite = { focus = SAF_parliment_resolve_overstretched_military }
+		
+		cost = 10
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SAF_quality_over_quantity_idea
+				add_idea = SAF_new_home_african_democracy_idea
+			}
+		}
+	}
+	focus = {
+		id = SAF_parliment_navy
+		#icon = 
+		x = 7
+		y = 1
+		relative_position_id = SAF_parliment_army_with_state
+
+		prerequisite = { focus = SAF_parliment_army_with_state }
+		
+		cost = 3
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			SAF = {
+				country_event = { id = saf.21 }
+			}
+		}
+	}
+	focus = {
+		id = SAF_parliment_develop_fleet
+		#icon = 
+		x = 0
+		y = 1
+		relative_position_id = SAF_parliment_navy
+
+		prerequisite = { focus = SAF_parliment_navy }
+		
+		cost = 5
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = SAF_developing_fleet_idea
+				days = 365
+			}
+		}
+	}
+
+	focus = {
+		id = SAF_parliment_dockyard_construction
+		#icon = 
+		x = 2
+		y = 1
+		relative_position_id = SAF_parliment_develop_fleet
+
+		prerequisite = { focus = SAF_parliment_develop_fleet }
+		
+		cost = 2
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			add_political_power = -50
+			921 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SAF_parliment_navy_western_designs
+		#icon = 
+		x = -2
+		y = 2
+		relative_position_id = SAF_parliment_develop_fleet
+
+		prerequisite = { focus = SAF_parliment_develop_fleet }
+		mutually_exclusive = { focus = SAF_parliment_increase_fleet_production }
+
+		cost = 2
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SAF_parliment_navy_western_designs_tt
+		}
+	}
+
+	focus = {
+		id = SAF_parliment_navy_research_doctrines
+		#icon = 
+		x = 0
+		y = 1
+		relative_position_id = SAF_parliment_navy_western_designs
+
+		prerequisite = { focus = SAF_parliment_navy_western_designs }
+		
+		cost = 4
+		ai_will_do = {
+		}
+
+		completion_reward = {
+		}
+	}	
+	
+	focus = {
+		id = SAF_parliment_increase_fleet_production
+		#icon = 
+		x = 0
+		y = 1
+		relative_position_id = SAF_parliment_dockyard_construction
+
+		prerequisite = { focus = SAF_parliment_dockyard_construction }
+		mutually_exclusive = { focus = SAF_parliment_navy_western_designs }
+
+		cost = 6
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			add_ideas = SAF_reinforcing_fleet_idea
+		}
+	}
+	focus = {
+		id = SAF_parliment_prioritise_submarines
+		#icon = 
+		x = -1
+		y = 1
+		relative_position_id = SAF_parliment_increase_fleet_production
+
+		prerequisite = { focus = SAF_parliment_increase_fleet_production }
+		mutually_exclusive = { focus = SAF_parliment_prioritise_surface_fleet }
+
+		cost = 7
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			add_ideas = SAF_prioritizing_submarines_idea
+			swap_ideas = {
+				remove_idea = SAF_reinforcing_fleet_idea
+				add_idea = SAF_reinforcing_fleet_submarine_idea
+			}
+		}
+	}
+	focus = {
+		id = SAF_parliment_prioritise_surface_fleet
+		#icon = 
+		x = 1
+		y = 1
+		relative_position_id = SAF_parliment_increase_fleet_production
+
+		prerequisite = { focus = SAF_parliment_increase_fleet_production }
+		mutually_exclusive = { focus = SAF_parliment_prioritise_submarines }
+
+		cost = 7
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			add_ideas = SAF_prioritizing_surface_idea
+			swap_ideas = {
+				remove_idea = SAF_reinforcing_fleet_idea
+				add_idea = SAF_reinforcing_fleet_surface_idea
+			}
+		}
+	}
+	focus = {
+		id = SAF_parliment_defenders_south_atlantic
+		#icon = 
+		x = -2
+		y = 1
+		relative_position_id = SAF_parliment_prioritise_submarines
+
+		prerequisite = { focus = SAF_parliment_navy_research_doctrines focus = SAF_parliment_prioritise_submarines focus = SAF_parliment_prioritise_surface_fleet }
+
+		cost = 10
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			add_political_power = 100
+			add_ideas = SAF_rulers_south_atlantic_idea
+		}
+	}
+	focus = {
+		id = SAF_parliment_worthy_fleet
+		#icon = 
+		x = 0
+		y = 1
+		relative_position_id = SAF_parliment_defenders_south_atlantic
+
+		prerequisite = { focus = SAF_parliment_defenders_south_atlantic }
+
+		cost = 10
+		ai_will_do = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SAF_rulers_south_atlantic_idea
+				add_idea = SAF_rulers_south_atlantic_2_idea
+			}
+		}
+	}
+}

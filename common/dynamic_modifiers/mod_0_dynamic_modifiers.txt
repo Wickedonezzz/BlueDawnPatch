@@ -1,0 +1,384 @@
+#	Example:
+# 
+#	example_dynamic_modifier = {
+#		icon = "GFX_idea_unknown" # optional, will show up in guis if icon is specified
+#		enable = { always = yes } #optional, the modifier won't apply if not enabled
+#		remove_trigger = { always = no } #optional, will remove the modifier if true
+#       attacker_modifier = no  # if yes this modifier will also be read in combat for 
+#                               # people engaging in the combat even if not in the state
+#
+#		# list of modifiers
+#		fuel_cost = 321
+#		max_fuel = var_max_fuel # will be taken from a variable
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		add_dynamic_modifier = {
+#			modifier = example_dynamic_modifier
+#			scope = GER # optional, if you specify this your dynamic modifier scoped to this scope (root is the effect scope)
+#			days = 14 # optional, will be removed after this many days passes
+#		}
+#	}
+#
+#	can be added to countries, states or unit leaders
+#	will only updated daily, unless forced by force_update_dynamic_modifier effect
+
+SOV_cold_war = {
+	enable = { always = yes }
+	
+	icon = GFX_idea_cold_war_icon
+	
+	command_power_gain_mult = amount_of_proxies_won_ussr
+	planning_speed = amount_of_proxies_won_ussr
+	faction_trade_opinion_factor = amount_of_proxies_won_ussr
+
+}
+
+SOV_pugos_policies = {
+	enable = { always = yes }
+
+	icon = GFX_idea_cold_war_icon
+	
+	political_power_gain = sov_pugo_policy_political_power_gain_var
+	stability_factor = sov_pugo_policy_stability_var
+	compliance_gain = sov_pugo_policy_compliance_gain_var
+
+}
+
+SOV_putin_politburo = {
+	enable = { always = yes }
+
+	icon = GFX_idea_cold_war_icon
+	
+	enable = { has_completed_focus = SOV_put_party_balancing }
+
+	political_power_gain = modifiers_for_PP
+	stability_factor = modifiers_for_STAB
+	
+	reformed_communism_drift = modifiers_for_ideology_reformed
+
+	 communism_drift = communism_power
+}
+
+USA_cold_war = {
+	enable = { always = yes }
+	
+	icon = GFX_idea_cold_war_icon
+	
+	command_power_gain_mult = amount_of_proxies_won_usa
+	planning_speed = amount_of_proxies_won_usa
+	faction_trade_opinion_factor = amount_of_proxies_won_usa
+
+}
+
+IRQ_kurdish_autonomy = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_kurdish_autonomy
+
+	army_speed_factor_for_controller = -0.1
+	disable_strategic_redeployment = 1
+	state_resources_factor = -0.25
+	recruitable_population_factor = -0.15
+	local_intel_to_enemies = 0.15
+}
+
+IRQ_the_propaganda_machine_modifier = {
+	enable = { always = yes }
+
+	
+	drift_defence_factor = irq_propaganda_effect_political_var
+	political_power_factor = irq_propaganda_effect_political_var
+	army_morale_factor = irq_propaganda_effect_army_var	
+	army_attack_factor = irq_propaganda_effect_army_var
+	army_defence_factor = irq_propaganda_effect_army_var
+	production_speed_arms_factory_factor = irq_propaganda_effect_efficiency_var
+	war_support_factor = irq_propaganda_effect_efficiency_var
+	stability_factor = irq_propaganda_effect_efficiency_var
+}
+
+IRQ_the_propaganda_machine_costs_modifier = {
+	enable = { always = yes }
+	
+	
+	industrial_capacity_factory = irq_propaganda_effect_costs_var
+	consumer_goods_factor = irq_propaganda_effect_costs_consumer_goods_var
+}
+
+overmiliterisation_modifier = {
+	enable = { always = yes }
+
+	political_power_cost = ROOT.overmiliterisation_percentage
+	production_speed_buildings_factor = ROOT.overmiliterisation_percentage_minus
+	industrial_capacity_factory = ROOT.overmiliterisation_percentage_minus
+	industrial_capacity_dockyard = ROOT.overmiliterisation_percentage_minus
+	supply_consumption_factor = ROOT.overmiliterisation_percentage
+	unit_upkeep_attrition_factor = ROOT.overmiliterisation_percentage
+}
+
+IRQ_modernization_plans = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_kurdish_autonomy
+
+	state_resources_factor = 0.25
+	recruitable_population_factor = 0.15
+	local_building_slots_factor = 0.3
+	army_speed_factor = -0.5
+	
+}
+
+SAF_viljoen_cult_of_personality = {
+	enable = { always = yes }
+
+	army_strength_factor = viljoen_cop_army_strength_factor
+	army_morale_factor = viljoen_cop_army_morale_factor
+	army_org_factor = viljoen_cop_army_org_factor
+	dig_in_speed_factor = viljoen_cop_dig_in_speed_factor
+	
+	war_support_factor = viljoen_cop_war_support_factor
+ 
+	experience_loss_factor = viljoen_cop_experience_loss_factor
+	production_speed_buildings_factor = viljoen_cop_production_speed_buildings_factor
+	industry_repair_factor = viljoen_cop_industry_repair_factor
+	
+}
+
+VIN_developing_essential_infrastructure = {
+	enable = { always = yes }
+	consumer_goods_factor = 0.05
+}
+VIN_support_production_development_and_economic_restructuring = {
+	enable = { always = yes }
+	consumer_goods_factor = 0.05
+}
+VIN_local_staff_training = {
+	enable = { always = yes }
+	consumer_goods_factor = 0.03
+}
+VIN_improve_and_expand_public_services = {
+	enable = { always = yes }
+	consumer_goods_factor = 0.05
+}
+VIN_social_housing_project = {
+	enable = { always = yes }
+	consumer_goods_factor = 0.05
+}
+VIN_job_security_and_income_for_employees = {
+	enable = { always = yes }
+	consumer_goods_factor = 0.05
+}
+VIN_open_vocational_training_center = {
+	enable = { always = yes }
+	consumer_goods_factor = 0.05
+}
+VIN_increase_common_salary = {
+	enable = { always = yes }
+	consumer_goods_factor = 0.08
+}
+VIN_increase_minimum_wage = {
+	enable = { always = yes }
+	consumer_goods_factor = 0.08
+}
+VIN_invest_in_north = {
+	enable = { always = yes }
+
+	icon = GFX_decision_category_generic_economy
+
+	state_production_speed_buildings_factor = 0.10		
+	
+}
+VIN_invest_in_south = {
+	enable = { always = yes }
+
+	icon = GFX_decision_category_generic_economy
+
+	state_production_speed_buildings_factor = 0.10		
+	
+}
+
+#5 - stronghold
+#4 - powerful presence
+#3 - considerable presence
+#2 - waning presence
+#1 - minimal presence
+
+YUG_rebels_5 = {
+	enable = {always = yes}
+	remove_trigger = {YUG = {has_country_flag = yug_mass_rebellions}}
+	
+	icon = GFX_decision_category_spr_the_seeds_of_revolution
+
+	state_resources_factor = -0.75
+	recruitable_population_factor = -0.65
+	local_building_slots_factor = -0.6
+	state_production_speed_buildings_factor = -0.45		
+	local_factory_sabotage = 0.5
+	army_speed_factor = -0.7
+	resistance_target = 0.1
+}
+
+YUG_rebels_4 = {
+	enable = {always = yes}
+	remove_trigger = {YUG = {has_country_flag = yug_mass_rebellions}}
+	
+	icon = GFX_decision_category_spr_the_seeds_of_revolution
+
+	state_resources_factor = -0.50
+	recruitable_population_factor = -0.45
+	local_building_slots_factor = -0.4
+	state_production_speed_buildings_factor = -0.25		
+	local_factory_sabotage = 0.4
+	army_speed_factor = -0.5
+	resistance_target = 0.05
+}
+
+YUG_rebels_3 = {
+	enable = {always = yes}
+	remove_trigger = {YUG = {has_country_flag = yug_mass_rebellions}}
+
+	icon = GFX_decision_category_spr_the_seeds_of_revolution
+
+	state_resources_factor = -0.35
+	recruitable_population_factor = -0.35
+	local_building_slots_factor = -0.3
+	state_production_speed_buildings_factor = -0.15		
+	local_factory_sabotage = 0.2
+	army_speed_factor = -0.25
+}
+
+YUG_rebels_2 = {
+	enable = {always = yes}
+	remove_trigger = {YUG = {has_country_flag = yug_mass_rebellions}}
+
+	icon = GFX_decision_category_spr_the_seeds_of_revolution
+
+	state_resources_factor = -0.25
+	recruitable_population_factor = -0.25
+	local_building_slots_factor = -0.20
+	state_production_speed_buildings_factor = -0.10		
+	local_factory_sabotage = 0.1
+	army_speed_factor = -0.20
+	resistance_target = -0.05
+}
+
+YUG_rebels_1 = {
+	enable = {always = yes}
+	remove_trigger = {YUG = {has_country_flag = yug_mass_rebellions}}
+
+	icon = GFX_decision_category_spr_the_seeds_of_revolution
+
+	state_resources_factor = -0.15
+	recruitable_population_factor = -0.20
+	local_building_slots_factor = -0.10
+	state_production_speed_buildings_factor = -0.05		
+	local_factory_sabotage = 0.05
+	army_speed_factor = -0.10
+	resistance_target = -0.15
+
+}
+
+YUG_increased_autonomy = {
+	enable = {always = yes}
+
+	icon = GFX_decision_category_spr_the_seeds_of_revolution
+
+	state_resources_factor = -0.35
+	recruitable_population_factor = -0.35
+	local_building_slots_factor = -0.3
+	state_production_speed_buildings_factor = 0.10
+}
+
+YUG_heavy_autonomy = {
+	enable = {always = yes}
+
+	icon = GFX_decision_category_spr_the_seeds_of_revolution
+
+	state_resources_factor = -0.55
+	recruitable_population_factor = -0.70
+	local_building_slots_factor = -0.5
+
+}
+
+YUG_yugoslav_liberation_committee = {
+	enable = { always = yes }
+
+	icon = GFX_decision_category_spr_the_seeds_of_revolution
+
+	political_power_gain = YUG_yugoslav_liberation_committee_pp_gain_modifier
+	communism_drift = 0.01
+	recruitable_population_factor = YUG_yugoslav_liberation_committee_recruit_pop_modifier
+	army_core_defence_factor = YUG_yugoslav_liberation_committee_div_defence_modifier
+	war_support_factor = YUG_yugoslav_liberation_committee_war_support_modifier	
+	weekly_manpower = YUG_yugoslav_liberation_committee_weekly_manpower_modifier		
+	
+}
+
+YUG_yugoslav_liberation_committee_buff = {
+	enable = { always = yes }
+
+	icon = GFX_decision_category_spr_the_seeds_of_revolution
+
+	weekly_manpower = YUG_yugoslav_liberation_committee_buff_weekly_manpower_modifier		
+	
+}
+
+YUG_corrupt_party = {
+	enable = { always = yes }
+
+	icon = VIN_corruption_in_goverment
+
+	political_power_factor = yug_corrupt_party_pp_var
+	war_support_factor = yug_corrupt_party_ws_var
+	stability_factor = yug_corrupt_party_s_var
+	political_advisor_cost_factor = yug_corrupt_party_pac_var	
+	drift_defence_factor = yug_corrupt_party_dd_var
+	conscription_factor = yug_corrupt_party_cf_var
+	
+}
+
+YUG_deportations = {
+	enable = {always = yes}
+
+	icon = GFX_decision_category_spr_the_seeds_of_revolution
+
+	monthly_population = -2.0
+	state_production_speed_buildings_factor = -0.25 
+	conscription_factor = -1.0
+
+}
+
+SOV_irradiated_region = {
+	enable = {always = yes}
+
+	icon = GFX_modifiers_irradiated_region
+
+	production_speed_buildings_factor = -1.00
+	attrition = 0.8
+	winter_attrition = 1.0
+	monthly_population = -1.0
+}
+
+SPL_concentrated_defence = {
+	icon = GFX_unplanned_offensive
+	attacker_modifier = yes
+	army_attack_factor = -0.1	
+	ground_attack_factor = -0.1
+	
+}
+
+SAF_pacification_civ_use = {
+	enable = { always = yes }
+	civilian_factory_use = 3
+}
+
+kashmir_conflict = {
+	icon = GFX_unplanned_offensive
+	attacker_modifier = yes
+	army_attack_factor = -0.3	
+	ground_attack_factor = -0.3
+	
+}

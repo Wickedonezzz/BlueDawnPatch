@@ -1,0 +1,44 @@
+ideas = {
+	
+	country = {
+	
+		SOV_salt_3 = {
+			name = SOV_salt_3_name
+
+			removal_cost = -1
+
+			picture = salt_3_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.15
+				production_speed_nuclear_reactor_factor = -0.2
+                                ##There should be a debuff for nuke technology but since that isn't developed yet, i didn't put it##
+			}
+		}
+
+		SOV_mutual_trust = {
+			name = SOV_mutual_trust_name
+
+			removal_cost = -1
+
+			picture = mutual_trust_treaty_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = -0.15
+				political_power_gain = 0.1
+			}
+		}
+
+	}
+
+}

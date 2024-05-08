@@ -1,0 +1,53 @@
+﻿capital = 808
+
+set_oob = "LAT_2000"
+
+set_technology = {
+	towed_artillery_1960 = 1
+	tech_train_1960 = 1
+	infantry_weapons_1960 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_air_weapons_1960 = 1
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		recon_vehicle_1960 = 1
+	}
+}
+
+add_ideas = east_europe_eastern_threat
+add_ideas = east_europe_privatization
+
+add_ideas = {
+	limited_conscription
+}
+
+set_research_slots = 3
+
+set_convoys = 10
+
+recruit_character = LAT_vaira_vike_freiberga
+recruit_character = LAT_tatjana_zdanoka
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 0
+	reformed_communism = 0
+	social_democracy = 30
+	liberalism = 19
+	democratic = 41
+	neutrality = 0
+	paternal_autocracy = 0
+	fascism = 10
+}
+
+add_opinion_modifier = { target = SOV modifier = HISTORIC_baltic_ussr_opinion }

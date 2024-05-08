@@ -1,0 +1,18 @@
+characters = {
+
+	HZB_hassan_nasrallah = {
+		name = "Hassan Nasrallah"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HZB/Hassan_Nasrallah.png"
+			}
+		}
+		country_leader = {
+			ideology = shia_islamism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

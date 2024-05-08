@@ -1,0 +1,199 @@
+add_namespace = ussr_wienna
+
+#Proposal fail#
+country_event = {
+	id = ussr_wienna.4
+	title = ussr_wienna.4.t
+	desc = ussr_wienna.4.d
+	picture = GFX_report_event_SOV_wienna_talks
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ussr_wienna.4.a
+                set_country_flag = pugo_proposal_rejected
+		uncomplete_national_focus = {
+		  focus = SOV_put_another_detante
+		  uncomplete_children = yes
+		  refund_political_power = yes
+		}		
+		complete_national_focus = SOV_put_multipolarity
+	}
+
+}
+
+#Proposalbig win#
+country_event = {
+	id = ussr_wienna.5
+	title = ussr_wienna.5.t
+	desc = ussr_wienna.5.d
+	picture = GFX_report_event_SOV_wienna_talks
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ussr_wienna.5.a
+                set_country_flag = pugo_proposal_accepted
+	}
+
+}
+
+#Wienna success#
+country_event = {
+	id = ussr_wienna.2
+	title = ussr_wienna.2.t
+	desc = ussr_wienna.2.d
+	picture = GFX_report_event_SOV_wienna_talks
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ussr_wienna.2.a
+			add_opinion_modifier = {
+			target = USA
+			modifier = SOV_treaty_success_opinion
+			}
+
+			USA = {
+			add_opinion_modifier = {
+			target = SOV
+			modifier = SOV_treaty_success_opinion
+			}	
+	            }
+			add_ideas = SOV_mutual_trust	
+	}
+
+}
+
+#Wienna fail#
+country_event = {
+	id = ussr_wienna.1
+	title = ussr_wienna.1.t
+	desc = ussr_wienna.1.d
+	picture = GFX_report_event_SOV_wienna_talks
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ussr_wienna.1.a
+			add_opinion_modifier = {
+			target = USA
+			modifier = SOV_treaty_fail_opinion
+			}
+
+			USA = {
+			add_opinion_modifier = {
+			target = SOV
+			modifier = SOV_treaty_fail_opinion
+			}
+	            }
+		news_event = { id = old_times_news.58 days = 1 }
+
+	}
+
+}
+
+
+#Trade win#
+country_event = {
+	id = ussr_wienna.6
+	title = ussr_wienna.6.t
+	desc = ussr_wienna.6.d
+	picture = GFX_report_event_SOV_wienna_talks
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ussr_wienna.6.a
+			add_opinion_modifier = {
+			target = USA
+			modifier = SOV_trade_success_opinion
+			}
+
+			USA = {
+			add_opinion_modifier = {
+			target = SOV
+			modifier = SOV_trade_success_opinion
+			}
+	            }
+	}
+
+}
+
+#Trade fail#
+country_event = {
+	id = ussr_wienna.7
+	title = ussr_wienna.7.t
+	desc = ussr_wienna.7.d
+	picture = GFX_report_event_SOV_wienna_talks
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ussr_wienna.7.a
+			add_opinion_modifier = {
+			target = USA
+			modifier = SOV_trade_fail_opinion
+			}
+
+			USA = {
+			add_opinion_modifier = {
+			target = SOV
+			modifier = SOV_trade_fail_opinion
+			}
+	            }
+	}
+
+}
+
+#Salt win#
+country_event = {
+	id = ussr_wienna.8
+	title = ussr_wienna.8.t
+	desc = ussr_wienna.8.d
+	picture = GFX_report_event_SOV_wienna_talks
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ussr_wienna.8.a
+			add_opinion_modifier = {
+			target = USA
+			modifier = SOV_salt_success_opinion
+			}
+
+			USA = {
+			add_opinion_modifier = {
+			target = SOV
+			modifier = SOV_salt_success_opinion
+			}
+	            }
+
+			add_ideas = SOV_salt_3	
+	}
+}
+
+#Salt fail#
+country_event = {
+	id = ussr_wienna.9
+	title = ussr_wienna.9.t
+	desc = ussr_wienna.9.d
+	picture = GFX_report_event_SOV_wienna_talks
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ussr_wienna.9.a
+			add_opinion_modifier = {
+			target = USA
+			modifier = SOV_salt_fail_opinion
+			}
+
+			USA = {
+			add_opinion_modifier = {
+			target = SOV
+			modifier = SOV_salt_fail_opinion
+			}
+	            }
+	}
+}

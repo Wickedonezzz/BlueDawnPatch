@@ -1,0 +1,641 @@
+﻿shared_focus = {
+	id = SOV_mil_the_soviet_armed_forces
+	icon = GFX_focus_SOV_soviet_armed_forces
+	x = 45
+	y = 0
+	prerequisite = { }
+	available = {
+		if = {
+			limit = {
+				has_focus_tree = ussr_pugo_focus
+			}
+			has_completed_focus = SOV_pugo_army
+		}
+        }
+	mutually_exclusive = { }
+	#relative_position_id = 
+		
+	cost = 1
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			army_experience = 15
+			air_experience = 15
+			navy_experience = 15			
+	}
+}
+
+shared_focus = {
+	id = SOV_mil_the_soviet_navy
+	icon = GFX_focus_SOV_navy
+	x = -8
+	y = 1
+	prerequisite = {focus = SOV_mil_the_soviet_armed_forces}
+	mutually_exclusive = { }
+	relative_position_id = SOV_mil_the_soviet_armed_forces
+		
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		navy_experience = 20	
+	}
+}
+
+shared_focus = {
+	id = SOV_mil_a_navy_to_protect_the_motherland
+	icon = GFX_focus_SOV_marine_flags
+	x = -2
+	y = 1
+	prerequisite = {focus = SOV_mil_the_soviet_navy}
+	mutually_exclusive = {focus = SOV_mil_a_navy_to_match_the_west}
+	relative_position_id = SOV_mil_the_soviet_navy
+		
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = SOV_mil_defensive_naval_groups
+	icon = GFX_focus_SOV_defensive_naval_groups
+	x = -2
+	y = 2
+	prerequisite = {focus = SOV_mil_a_navy_to_protect_the_motherland}
+	mutually_exclusive = { }
+	relative_position_id = SOV_mil_the_soviet_navy
+		
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = SOV_mil_silent_but_deadly
+	icon = GFX_focus_SOV_subs
+	x = -2
+	y = 3
+	prerequisite = {focus = SOV_mil_defensive_naval_groups}
+	mutually_exclusive = { }
+	relative_position_id = SOV_mil_the_soviet_navy
+		
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = SOV_mil_a_navy_to_match_the_west
+	icon = GFX_focus_SOV_navy_to_match_the_west
+	x = 2
+	y = 1
+	prerequisite = {focus = SOV_mil_the_soviet_navy}
+	mutually_exclusive = {focus = SOV_mil_a_navy_to_protect_the_motherland}
+	relative_position_id = SOV_mil_the_soviet_navy
+		
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = SOV_mil_bigger_better_mightier_naval_groups
+	icon = GFX_focus_SOV_bigger_better_mighter
+	x = 2
+	y = 2
+	prerequisite = {focus = SOV_mil_a_navy_to_match_the_west}
+	mutually_exclusive = { }
+	relative_position_id = SOV_mil_the_soviet_navy
+		
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = SOV_mil_aircraft_carrier_priority
+	icon = GFX_focus_SOV_carrier_focus
+	x = 2
+	y = 3
+	prerequisite = {focus = SOV_mil_bigger_better_mightier_naval_groups}
+	mutually_exclusive = { }
+	relative_position_id = SOV_mil_the_soviet_navy
+		
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = SOV_mil_the_soviet_army
+	icon = GFX_focus_SOV_the_soviet_army
+	x = 0
+	y = 1
+	prerequisite = {focus = SOV_mil_the_soviet_armed_forces}
+	mutually_exclusive = { }
+	relative_position_id = SOV_mil_the_soviet_armed_forces
+		
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = SOV_mil_cold_war_strategy
+	icon = GFX_focus_SOV_lessons_from_zapada_81
+	x = -2	
+	y = 1
+	prerequisite = {focus = SOV_mil_the_soviet_army}
+	mutually_exclusive = {focus = SOV_mil_new_strategies}
+	relative_position_id = SOV_mil_the_soviet_army
+		
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = SOV_mil_quantity_over_quality
+	icon = GFX_focus_SOV_strict_training
+	x = -2
+	y = 1
+	prerequisite = {focus = SOV_mil_cold_war_strategy}
+	mutually_exclusive = { }
+	relative_position_id = SOV_mil_cold_war_strategy
+		
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = SOV_mil_the_army_of_the_people
+	icon = GFX_focus_SOV_army_of_the_people
+	x = 0
+	y = 1
+	prerequisite = {focus = SOV_mil_quantity_over_quality}
+	mutually_exclusive = { }
+	relative_position_id = SOV_mil_quantity_over_quality
+		
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = SOV_mil_the_armored_giant
+	icon = GFX_focus_SOV_Armoured_Giant
+	x = 0
+	y = 1
+	prerequisite = {focus = SOV_mil_cold_war_strategy}
+	mutually_exclusive = { }
+	relative_position_id = SOV_mil_cold_war_strategy
+		
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+                   add_ideas = SOV_yazov_tanks 
+			
+	}
+}
+
+shared_focus = {
+	id = SOV_mil_grand_battle_doctrine
+	icon = GFX_focus_SOV_grand_battleplan
+	x = 0
+	y = 1
+	prerequisite = {focus = SOV_mil_the_armored_giant}
+	mutually_exclusive = { }
+	relative_position_id = SOV_mil_the_armored_giant
+		
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = SOV_mil_new_strategies
+	icon = GFX_focus_SOV_new_tactics
+	x = 2	
+	y = 1
+	prerequisite = {focus = SOV_mil_the_soviet_army}
+	mutually_exclusive = {focus = SOV_mil_cold_war_strategy}
+	relative_position_id = SOV_mil_the_soviet_army
+		
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = SOV_mil_battlegroup_doctrine
+	icon = GFX_focus_SOV_offensive_operations
+	x = 0	
+	y = 1
+	prerequisite = {focus = SOV_mil_new_strategies}
+	mutually_exclusive = { }
+	relative_position_id = SOV_mil_new_strategies
+		
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = SOV_mil_lightning_strike_doctrine
+	icon = GFX_focus_SOV_ligthning_strike
+	x = 0	
+	y = 1
+	prerequisite = {focus = SOV_mil_battlegroup_doctrine}
+	mutually_exclusive = { }
+	relative_position_id = SOV_mil_battlegroup_doctrine
+		
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = SOV_mil_quality_over_quantity
+	icon = GFX_focus_SOV_superior_firepower
+	x = 2	
+	y = 1
+	prerequisite = {focus = SOV_mil_new_strategies}
+	mutually_exclusive = { }
+	relative_position_id = SOV_mil_new_strategies
+		
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = SOV_mil_a_professional_force
+	icon = GFX_focus_SOV_army_might
+	x = 0	
+	y = 1
+	prerequisite = {focus = SOV_mil_quality_over_quantity}
+	mutually_exclusive = { }
+	relative_position_id = SOV_mil_quality_over_quantity
+		
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = SOV_mil_the_soviet_air_force
+	icon = GFX_focus_SOV_airforce
+	x = 8	
+	y = 1
+	prerequisite = {focus = SOV_mil_the_soviet_armed_forces}
+	mutually_exclusive = { }
+	relative_position_id = SOV_mil_the_soviet_armed_forces
+		
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = SOV_mil_independent_air_command
+	icon = GFX_focus_SOV_commander_autonomy
+	x = -2
+	y = 1
+	prerequisite = {focus = SOV_mil_the_soviet_air_force}
+	mutually_exclusive = {focus = SOV_mil_army_air_cooperation}
+	relative_position_id = SOV_mil_the_soviet_air_force
+		
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = SOV_mil_prioritize_air_superiority
+	icon = GFX_focus_IRQ_operations_in_shade
+	x = 0
+	y = 1
+	prerequisite = {focus = SOV_mil_independent_air_command}
+	mutually_exclusive = { }
+	relative_position_id = SOV_mil_independent_air_command
+		
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = SOV_mil_fund_new_mig_projects
+	icon = GFX_focus_SOV_migs
+	x = 0
+	y = 1
+	prerequisite = {focus = SOV_mil_prioritize_air_superiority}
+	mutually_exclusive = { }
+	relative_position_id = SOV_mil_prioritize_air_superiority
+		
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = SOV_mil_army_air_cooperation
+	icon = GFX_focus_SOV_enforce_coop
+	x = 2
+	y = 1
+	prerequisite = {focus = SOV_mil_the_soviet_air_force}
+	mutually_exclusive = {focus = SOV_mil_independent_air_command}
+	relative_position_id = SOV_mil_the_soviet_air_force
+		
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = SOV_mil_prioritize_close_air_support
+	icon = GFX_focus_SOV_helicopter_support
+	x = 0
+	y = 1
+	prerequisite = {focus = SOV_mil_army_air_cooperation}
+	mutually_exclusive = { }
+	relative_position_id = SOV_mil_army_air_cooperation
+		
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = SOV_mil_soviet_drone_industry
+	icon = GFX_focus_SOV_drones
+	x = 0
+	y = 1
+	prerequisite = {focus = SOV_mil_prioritize_close_air_support}
+	mutually_exclusive = { }
+	relative_position_id = SOV_mil_prioritize_close_air_support
+		
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = SOV_mil_red_bears_fist
+	icon = GFX_SOV_true_red_army
+	x = 0
+	y = 5
+	prerequisite = {focus = SOV_mil_silent_but_deadly focus = SOV_mil_aircraft_carrier_priority}
+	prerequisite = {focus = SOV_mil_the_army_of_the_people focus = SOV_mil_lightning_strike_doctrine}
+	prerequisite = {focus = SOV_mil_grand_battle_doctrine focus = SOV_mil_a_professional_force}
+	prerequisite = {focus = SOV_mil_fund_new_mig_projects focus = SOV_mil_soviet_drone_industry}	
+	
+	mutually_exclusive = { }
+	relative_position_id = SOV_mil_the_soviet_armed_forces
+		
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		if = {
+			limit = {is_ai = yes}
+			country_event = {id = ai_mod.1}
+		}
+		else = {
+			country_lock_all_division_template = no
+		}
+	}
+}

@@ -1,0 +1,41 @@
+ideas = {
+	
+	country = {
+	
+		TUR_political_instability = {
+			name = TUR_political_instability_name
+
+			removal_cost = -1
+
+			picture = TUR_political_instability
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_factor = -0.30
+				stability_factor = -0.30
+				consumer_goods_factor = 0.30
+			}
+		}
+		
+		TUR_armys_watchful_eye = {
+			name = TUR_armys_watchful_eye_name
+
+			removal_cost = -1
+
+			picture = TUR_army_eye
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_factor = -0.30
+				stability_factor = 0.10
+				paternal_autocracy_drift = -0.05
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+﻿capital = 684
+
+##oob = ""
+
+set_convoys = 20
+
+recruit_character = FSM_leo_falcam
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1999.5.11"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 69
+	communism = 0
+	reformed_communism = 0
+	paternal_autocracy = 0
+	fascism = 0
+	neutrality = 31
+}

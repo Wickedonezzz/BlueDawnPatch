@@ -1,0 +1,122 @@
+add_namespace = bulgaria_mod
+
+#ELECTIONS BOI#
+country_event = {
+	id = bulgaria_mod.1
+	title = bulgaria_mod.1.t
+	desc = bulgaria_mod.1.d
+	picture = GFX_report_event_spark
+	
+	trigger = {
+		original_tag = BUL
+		date > 2001.05.17
+	}
+	
+	fire_only_once = yes
+	
+		#libtard king time#
+	option = {
+		name = bulgaria_mod.1.a
+
+		set_politics = {
+			ruling_party = liberalism
+			elections_allowed = no
+			last_election = "2000.12.17"
+			election_frequency = 48
+		}
+		set_popularities = {
+			democratic = 20
+			liberalism = 42
+			social_democracy = 20
+			communism = 10
+			neutrality = 8
+		}
+					
+		ai_chance = {
+			base = 30
+		}
+	}
+	
+		#conservative again#
+	option = {
+		name = bulgaria_mod.1.b
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+			last_election = "2000.12.17"
+			election_frequency = 48
+		}	
+		set_popularities = {
+			democratic = 42
+			liberalism = 20
+			social_democracy = 25
+			communism = 5
+			neutrality = 8
+		}
+			
+		ai_chance = {
+		factor = 15
+		}
+	}
+
+		#succdem win#
+	option = {
+		name = bulgaria_mod.1.c
+			
+		set_politics = {
+			ruling_party = social_democracy
+			elections_allowed = no
+			last_election = "2000.12.17"
+			election_frequency = 48
+		}	
+		set_popularities = {
+			democratic = 25
+			liberalism = 20
+			social_democracy = 42
+			communism = 5
+			neutrality = 8
+		}
+			
+		ai_chance = {
+		factor = 15
+		}
+	}
+
+}
+
+#communists storm parliment#
+country_event = {
+	id = bulgaria_mod.2
+	title = bulgaria_mod.2.t
+	desc = bulgaria_mod.2.d
+	picture = GFX_report_event_spark
+	
+	is_triggered_only = yes
+	
+		#uh oh#
+	option = {
+		name = bulgaria_mod.2.a
+
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+			last_election = "2000.12.17"
+			election_frequency = 48
+		}
+		set_popularities = {
+			reformed_communism = 15
+			socialism = 25
+			social_democracy = 20
+			communism = 25
+			liberalism = 15
+		}
+					
+		SOV = {add_to_faction = BUL}			
+					
+		ai_chance = {
+			base = 30
+		}
+	}
+
+
+}

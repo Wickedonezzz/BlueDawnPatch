@@ -1,0 +1,939 @@
+focus_tree = {
+	id = anc_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ANC
+		}
+	}
+
+	focus = {
+		id = ANC_spark
+		icon = GFX_focus_ANC_spark
+		x = 10
+		y = 0
+
+		prerequisite = {}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			ANC = {
+				country_event = { id = anc.4 }
+			}
+		}
+	}
+
+	focus = {
+		id = ANC_flame
+		icon = GFX_focus_ANC_flame
+		x = 10
+		y = 1
+
+		prerequisite = {focus = ANC_spark}
+		mutually_exclusive = { }
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			ANC = {
+				country_event = { id = anc.5 }
+			}
+		}
+	}
+
+	focus = {
+		id = ANC_militia
+		icon = GFX_focus_ANC_militia
+		x = 8
+		y = 2
+
+		prerequisite = {focus = ANC_flame}
+		mutually_exclusive = { }
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_manpower = 3000
+			add_stability = -0.07
+			army_experience = 20
+		}
+	}
+
+	focus = {
+		id = ANC_boers
+		icon = GFX_focus_ANC_cooperate_boers
+		x = 8
+		y = 3
+
+		prerequisite = {focus = ANC_militia}
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			ANC = {
+				country_event = { id = anc.2 }
+			}
+		}
+	}
+
+	focus = {
+		id = ANC_guns
+		icon = GFX_focus_ANC_guns
+		x = 10
+		y = 2
+
+		prerequisite = {focus = ANC_flame}
+		mutually_exclusive = { }
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_weapons
+				amount = 300
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 120
+			}
+			add_equipment_to_stockpile = {
+				type = towed_artillery_equipment
+				amount = 25
+			}
+		}
+	}
+
+	focus = {
+		id = ANC_soviets
+		icon = GFX_focus_IRQ_moscow
+		x = 10
+		y = 3
+
+		prerequisite = {focus = ANC_guns}
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+                add_ideas = ANC_kgb_idea
+			SOV = {
+				country_event = { id = anc.1 }
+			}
+		}
+	}
+
+	focus = {
+		id = ANC_size
+		#icon = 
+		x = 12
+		y = 2
+
+		prerequisite = {focus = ANC_flame}
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			ANC = {
+				country_event = { id = anc.3 }
+			}
+		}
+	}
+
+	focus = {
+		id = ANC_nationalise
+		icon = GFX_focus_ANC_full_nationalisation
+		x = 12
+		y = 3
+
+		prerequisite = {focus = ANC_size}
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 30
+			add_stability = -0.1
+				719 = {
+
+                		add_extra_state_shared_building_slots = 2
+
+                		add_building_construction = {
+                    		type = arms_factory
+                    		level = 2
+                    		instant_build = yes
+                		}
+           		 }
+		}
+	}
+
+	focus = {
+		id = ANC_frends
+		icon = GFX_focus_ANC_alliance
+		x = 10
+		y = 4
+
+		prerequisite = {focus = ANC_boers}
+		prerequisite = {focus = ANC_soviets}
+		prerequisite = {focus = ANC_nationalise}
+		mutually_exclusive = { }
+		bypass = {
+			SAF = {has_completed_focus = SAF_goodnight_south_africa}
+		}
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_stability = 0.05
+			create_faction = "African Liberation Front"
+	                add_to_faction = ZIM
+	                add_to_faction = BOT
+	                add_to_faction = MZB
+            ZIM = {
+		    declare_war_on = {
+            type = annex_everything
+            target = SAF
+            }
+            }
+
+            MZB = {
+		    declare_war_on = {
+            type = annex_everything
+            target = SAF
+            }
+            }
+
+            BOT = {
+		    declare_war_on = {
+            type = annex_everything
+            target = SAF
+            }
+            }
+			set_global_flag = ANC_war
+		news_event = { id = old_times_news.19 days = 1 }
+		}
+	}
+
+	focus = {
+		id = ANC_push
+		#icon = 
+		x = 10
+		y = 5
+
+		prerequisite = {focus = ANC_frends}
+		mutually_exclusive = { }
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			swap_ideas = {
+			remove_idea = ANC_fanatical_idea
+			add_idea = ANC_fanatical_2_idea
+                        }
+		}
+	}
+
+	focus = {
+		id = ANC_end
+		icon = GFX_focus_ANC_saf_free
+		x = 10
+		y = 6
+
+		prerequisite = {focus = ANC_push}
+		available = {has_war = no}
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			set_cosmetic_tag = ANC_win
+			add_political_power = 100
+			add_stability = 0.2
+			remove_ideas = ANC_mandela_idea 
+			remove_ideas = ANC_kgb_idea 
+			if = {
+				limit = {has_idea = ANC_fanatical_idea}
+				remove_ideas = ANC_fanatical_idea 				
+			}
+			if = {
+				limit = {has_idea = ANC_fanatical_2_idea}
+				remove_ideas = ANC_fanatical_2_idea 				
+			}			
+			dismantle_faction = ANC
+		}
+	}
+	
+	focus = {
+		id = ANC_new_homeland
+		icon = generic_soc_market
+		x = 10
+		y = 7
+
+		prerequisite = {
+			focus = ANC_end
+		}
+		cost = 6
+
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = ANC_homeland_idea
+		}
+	}
+
+		
+	focus = {
+		id = ANC_rebuild_nation
+		icon = generic_soc_market
+		x = 6
+		y = 8
+
+		prerequisite = {
+			focus = ANC_new_homeland
+		}
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = ANC_rebuild_idea
+		}
+	}
+
+	focus = {
+		id = ANC_new_industry
+		icon = generic_soc_market
+		cost = 3.6
+		x = 4
+		y = 9.5
+		prerequisite = {
+			focus = ANC_rebuild_nation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			random_list = {
+				25 = {			
+					random_owned_state = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				25 = {
+					random_owned_state = {
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+				}	
+				15 = {
+					random_owned_state = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				15 = {		
+					random_owned_state = {
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				15 = {
+					random_owned_state = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+					random_owned_state = {
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				5 = {		
+					random_owned_state = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+					}
+					random_owned_state = {
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+	
+			}
+		}
+	
+	}	
+		
+
+	focus = {
+		id = ANC_fix_roads
+		icon = generic_soc_market
+		cost = 3.6
+		x = 6
+		y = 9.5
+		prerequisite = {
+			focus = ANC_rebuild_nation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = { 
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ANC_repair_trains
+		icon = generic_soc_market
+		cost = 3.6
+		x = 8
+		y = 9.5
+		prerequisite = {
+			focus = ANC_rebuild_nation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = 10
+			}
+
+		 }
+	}
+	focus = {
+		id = ANC_reconstruction_complete
+		icon = generic_soc_market
+		cost = 10
+		x = 6
+		y = 11
+		prerequisite = {
+			focus = ANC_new_industry
+		}
+		prerequisite = {
+			focus = ANC_fix_roads
+		}
+		prerequisite = {
+			focus = ANC_repair_trains
+		}
+		available = {
+		num_of_civilian_factories > 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = { 
+			remove_ideas = ANC_rebuild_idea
+			add_timed_idea = {idea = ANC_completed_idea days = 365}
+		}
+	}
+
+	focus = {
+		id = ANC_heal_nation
+		icon = generic_soc_market
+		cost = 10.6
+		x = 13
+		y = 8
+		prerequisite = {
+			focus = ANC_new_homeland
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 20
+			add_ideas = ANC_heal_idea
+		 }
+	}
+
+	focus = {
+		id = ANC_build_hospitals
+		icon = generic_soc_market
+		cost = 3.6
+		x = 10.5
+		y = 9
+		prerequisite = {
+			focus = ANC_heal_nation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = { 
+			add_political_power = -15
+				random_owned_state = {
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+
+				}
+				random_owned_state = {
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+		}
+		
+	}
+
+	focus = {
+		id = ANC_improve_living
+		icon = generic_soc_market
+		cost = 3.6
+		x = 10.5
+		y = 10
+		prerequisite = {
+			focus = ANC_build_hospitals
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = ANC_heal_idea
+				add_idea = ANC_heal_2_idea
+			}
+		}
+	}
+
+	focus = {
+		id = ANC_intergration_now
+		icon = generic_soc_market
+		cost = 3.6
+		x = 13
+		y = 9
+		prerequisite = {
+			focus = ANC_heal_nation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			country_event = anc.13
+		 }
+	}
+
+	focus = {
+		id = ANC_pardoned_generals
+		icon = generic_soc_market
+		cost = 6.4
+		x = 12
+		y = 10
+		prerequisite = {
+			focus = ANC_intergration_now
+		}
+		mutually_exclusive = {
+			focus = ANC_no_mercy
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = { 
+			add_political_power = -100
+			country_event = anc.8
+		}
+	}
+
+	focus = {
+		id = ANC_no_mercy
+		icon = generic_soc_market
+		cost = 3.4
+		x = 14
+		y = 10
+		prerequisite = {
+			focus = ANC_intergration_now
+		}
+		mutually_exclusive = {
+			focus = ANC_pardoned_generals
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+			country_event = anc.9
+		 }
+	}
+
+	focus = {
+		id = ANC_new_homes
+		icon = generic_soc_market
+		cost = 10 #placeholder#
+		x = 16
+		y = 9
+		prerequisite = {
+			focus = ANC_heal_nation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = ANC_heal_3_idea
+		 }
+	}
+
+	focus = {
+		id = ANC_red_cross
+		icon = generic_soc_market
+		cost = 10 #placeholder#
+		x = 16
+		y = 10
+		prerequisite = {
+			focus = ANC_new_homes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			country_event = anc.6
+		 }
+	}	
+	
+	focus = {
+		id = ANC_end_aparthied
+		icon = generic_soc_market
+		cost = 10 #placeholder#
+		x = 13
+		y = 11
+		prerequisite = {
+			focus = ANC_improve_living
+		}
+		prerequisite = {
+			focus = ANC_pardoned_generals
+			focus = ANC_no_mercy
+		}
+		prerequisite = {
+			focus = ANC_red_cross
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+			#custom_effect_tooltip =
+			remove_ideas = ANC_heal_2_idea
+			country_event = anc.14
+		 }
+	}
+
+	focus = {
+		id = ANC_save_nation
+		icon = generic_soc_market
+		cost = 10.9
+		x = 10
+		y = 12
+		prerequisite = {
+			focus = ANC_reconstruction_complete
+		}
+		prerequisite = {
+			focus = ANC_end_aparthied
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = ANC_save_idea
+			country_event = anc.6
+		}
+	}
+	
+	focus = {
+		id = ANC_desegregation_forever
+		icon = generic_soc_market
+		cost = 10 #placeholder#
+		x = 10
+		y = 13
+		prerequisite = {
+			focus = ANC_save_nation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ANC_save_idea
+				add_idea = ANC_save_2_idea
+			}
+		 }
+	}
+
+	focus = {
+		id = ANC_stable_gov
+		icon = generic_soc_market
+		cost = 3.6
+		x = 10
+		y = 14
+		prerequisite = {
+			focus = ANC_desegregation_forever
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ANC_save_2_idea
+				add_idea = ANC_save_3_idea
+			}
+		 }
+	}
+
+	focus = {
+		id = ANC_right
+		icon = generic_soc_market
+		cost = 2
+		x = 9
+		y = 15
+		prerequisite = {
+			focus = ANC_stable_gov
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			country_event = anc.10
+		 }
+	}
+
+	focus = {
+		id = ANC_fair_election
+		icon = generic_soc_market
+		cost = 0.1
+		x = 9
+		y = 16
+		prerequisite = {
+			focus = ANC_right
+		}
+		available = {
+			has_country_flag = anc_success_right
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = { 
+			custom_effect_tooltip = tt_ANC_elections_restored
+		}
+	}
+
+	focus = {
+		id = ANC_left
+		icon = generic_soc_market
+		cost = 2
+		x = 11
+		y = 15
+		prerequisite = {
+			focus = ANC_stable_gov
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = { 
+			custom_effect_tooltip = tt_ANC_life_saved
+			country_event = anc.11
+		}
+	}
+	
+	focus = {
+		id = ANC_life
+		icon = generic_soc_market
+		cost = 0.1
+		x = 11
+		y = 16
+		prerequisite = {
+			focus = ANC_left
+		}
+		available = {
+			has_country_flag = anc_success_left
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			custom_effect_tooltip = tt_ANC_life_saved
+		 }
+	}
+
+	focus = {
+		id = ANC_unknown
+		icon = generic_soc_market
+		cost = 7.7
+		x = 10
+		y = 17
+		prerequisite = {
+			focus = ANC_fair_election
+		}
+		prerequisite = {
+			focus = ANC_life
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			country_event = anc.12
+		 }
+	}
+}	

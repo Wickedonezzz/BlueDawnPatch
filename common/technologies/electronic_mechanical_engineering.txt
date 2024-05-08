@@ -1,0 +1,1488 @@
+technologies = {
+
+## Electronics Tech ##
+
+	computing_tech_1960 = {
+
+		path = {
+			leads_to_tech = computing_tech_1980
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = radio_tech_1960
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = naval_radar_1960
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			sub_electrical_systems_1
+			surface_electrical_systems_1
+		}
+
+		research_speed_factor = 0.035
+
+		research_cost = 3.0
+
+		start_year = 1960
+
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				add = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 2
+				date > "1995.1.1"
+			}
+		}
+
+		categories = {
+			electronics
+			computing_tech
+		}
+
+	}
+	computing_tech_1980 = {
+
+		path = {
+			leads_to_tech = computing_tech_1990
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = radio_tech_1980
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			sub_electrical_systems_2
+			surface_electrical_systems_2
+		}
+
+		research_speed_factor = 0.035
+
+		research_cost = 3.0
+
+		start_year = 1980
+
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				add = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 2
+				date > "1995.1.1"
+			}
+		}
+
+		categories = {
+			electronics
+			computing_tech
+		}
+
+	}
+	computing_tech_1990 = {
+
+		path = {
+			leads_to_tech = computing_tech_2000
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			sub_electrical_systems_3
+			surface_electrical_systems_3
+		}
+
+		research_speed_factor = 0.035
+
+		research_cost = 3.0
+
+		start_year = 1990
+
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 8 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				add = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 2
+				date > "1995.1.1"
+			}
+		}
+
+		categories = {
+			electronics
+			computing_tech
+		}
+
+	}
+	computing_tech_2000 = {
+
+		path = {
+			leads_to_tech = computing_tech_2010
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = radio_tech_2000
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			sub_electrical_systems_4
+			surface_electrical_systems_4
+		}
+
+		research_speed_factor = 0.035
+
+		research_cost = 3.0
+
+		start_year = 2000
+
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				add = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 2
+				date > "2006.1.1"
+			}
+		}
+
+		categories = {
+			electronics
+			computing_tech
+		}
+
+	}
+	computing_tech_2010 = {
+
+		path = {
+			leads_to_tech = computing_tech_2020
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			sub_electrical_systems_5
+			surface_electrical_systems_5
+		}
+
+		research_speed_factor = 0.035
+
+		research_cost = 3.0
+
+		start_year = 2010
+
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 12 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				add = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 2
+				date > "2016.1.1"
+			}
+			modifier = {
+				factor = 0
+				date < "2004.1.1"
+			}
+		}
+
+		categories = {
+			electronics
+			computing_tech
+		}
+
+	}
+	computing_tech_2020 = {
+
+		path = {
+			leads_to_tech = radio_tech_2020
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			sub_electrical_systems_6
+			surface_electrical_systems_6
+		}
+
+		research_speed_factor = 0.035
+
+		research_cost = 3.0
+
+		start_year = 2020
+
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 14 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				add = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 2
+				date > "2026.1.1"
+			}
+			modifier = {
+				factor = 0
+				date < "2014.1.1"
+			}
+		}
+
+		categories = {
+			electronics
+			computing_tech
+		}
+
+	}
+	radio_tech_1960 = {
+
+		land_reinforce_rate = 0.02
+		coordination_bonus = 0.02
+
+		research_cost = 2.0
+
+		start_year = 1960
+
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 3
+				date > "1995.1.1"
+			}
+		}
+
+		categories = {
+			electronics
+		}
+
+	}
+	radio_tech_1980 = {
+
+		land_reinforce_rate = 0.02
+		coordination_bonus = 0.02
+
+		research_cost = 2.0
+
+		start_year = 1980
+
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 3
+				date > "1995.1.1"
+			}
+		}
+
+		categories = {
+			electronics
+		}
+
+	}
+	radio_tech_2000 = {
+
+		land_reinforce_rate = 0.02
+		coordination_bonus = 0.02
+
+		research_cost = 2.0
+
+		start_year = 2000
+
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 3
+				date > "2015.1.1"
+			}
+			modifier = {
+				factor = 0
+				date < "2005.1.1"
+			}
+		}
+
+		categories = {
+			electronics
+		}
+
+	}
+	radio_tech_2020 = {
+
+		land_reinforce_rate = 0.02
+		coordination_bonus = 0.02
+
+		research_cost = 2.0
+
+		start_year = 2020
+
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 14 }
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 3
+				date > "2025.1.1"
+			}
+			modifier = {
+				factor = 0
+				date < "2015.1.1"
+			}
+		}
+
+		categories = {
+			electronics
+		}
+
+	}
+	naval_radar_1960 = {
+
+		enable_equipment_modules = {
+			ship_radar_1
+		}
+
+		enable_building = {
+			building = radar_station
+			level = 1
+		}
+
+		path = {
+			leads_to_tech = naval_radar_1980
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+
+		start_year = 1960
+
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 2
+				date > "1995.1.1"
+			}
+		}
+
+		categories = {
+			naval_equipment
+			ship_modules_tech
+			radar_tech
+			electronics
+		}
+
+	}
+	naval_radar_1980 = {
+
+		enable_equipment_modules = {
+			ship_radar_2
+		}
+
+		enable_building = {
+			building = radar_station
+			level = 2
+		}
+
+		path = {
+			leads_to_tech = naval_radar_1990
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+
+		start_year = 1980
+
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 2
+				date > "1995.1.1"
+			}
+		}
+
+		categories = {
+			naval_equipment
+			ship_modules_tech
+			radar_tech
+			electronics
+		}
+
+	}
+	naval_radar_1990 = {
+
+		enable_equipment_modules = {
+			ship_radar_3
+		}
+
+		enable_building = {
+			building = radar_station
+			level = 3
+		}
+
+		path = {
+			leads_to_tech = naval_radar_2000
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+
+		start_year = 1990
+
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 8 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 2
+				date > "1995.1.1"
+			}
+		}
+
+		categories = {
+			naval_equipment
+			ship_modules_tech
+			radar_tech
+			electronics
+		}
+
+	}
+	naval_radar_2000 = {
+
+		enable_equipment_modules = {
+			ship_radar_4
+		}
+
+		enable_building = {
+			building = radar_station
+			level = 4
+		}
+
+		path = {
+			leads_to_tech = naval_radar_2010
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+
+		start_year = 2000
+
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 2
+				date > "2008.1.1"
+			}
+		}
+
+		categories = {
+			naval_equipment
+			ship_modules_tech
+			radar_tech
+			electronics
+		}
+
+	}
+	naval_radar_2010 = {
+
+		enable_equipment_modules = {
+			ship_radar_5
+		}
+
+		enable_building = {
+			building = radar_station
+			level = 5
+		}
+
+		path = {
+			leads_to_tech = naval_radar_2020
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+
+		start_year = 2010
+
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 12 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 2
+				date > "2018.1.1"
+			}
+			modifier = {
+				factor = 0
+				date < "2003.1.1"
+			}
+		}
+
+		categories = {
+			naval_equipment
+			ship_modules_tech
+			radar_tech
+			electronics
+		}
+
+	}
+	naval_radar_2020 = {
+
+		enable_equipment_modules = {
+			ship_radar_6
+		}
+
+		enable_building = {
+			building = radar_station
+			level = 6
+		}
+
+		research_cost = 2.5
+
+		start_year = 2020
+
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 14 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 2
+				date > "2028.1.1"
+			}
+			modifier = {
+				factor = 0
+				date < "2013.1.1"
+			}
+		}
+
+		categories = {
+			naval_equipment
+			ship_modules_tech
+			radar_tech
+			electronics
+		}
+
+	}
+
+## Missile Tech ##
+
+	missile_tech_1940 = {
+
+		path = {
+			leads_to_tech = cruise_missile_1960
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = theatre_ballistic_missile_1960
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3.0
+
+		start_year = 1960
+
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 0 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 2
+				date > "1995.1.1"
+			}
+		}
+
+		categories = {
+			mod_cat_missile
+		}
+
+	}
+	cruise_missile_1960 = {
+
+		enable_equipment_modules = {
+			cruise_missile_1
+			sam_missile_1
+		}
+
+		allow = {
+			has_dlc = "Man the Guns"
+		}
+
+		dependencies = {
+			computing_tech_1960 = 1
+		}
+
+		path = {
+			leads_to_tech = cruise_missile_1980
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+
+		start_year = 1960
+
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_missile
+			ship_modules_tech
+		}
+
+	}
+	cruise_missile_1980 = {
+
+		enable_equipment_modules = {
+			cruise_missile_2
+			sam_missile_2
+		}
+
+		allow = {
+			has_dlc = "Man the Guns"
+		}
+
+		dependencies = {
+			computing_tech_1960 = 1
+		}
+
+		path = {
+			leads_to_tech = cruise_missile_2000
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+
+		start_year = 1980
+
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_missile
+			ship_modules_tech
+		}
+
+	}
+	cruise_missile_2000 = {
+
+		enable_equipment_modules = {
+			cruise_missile_3
+			sam_missile_3
+		}
+
+		allow = {
+			has_dlc = "Man the Guns"
+		}
+
+		dependencies = {
+			computing_tech_1960 = 1
+		}
+
+		path = {
+			leads_to_tech = cruise_missile_2020
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+
+		start_year = 2000
+
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_missile
+			ship_modules_tech
+		}
+
+	}
+	cruise_missile_2020 = {
+
+		enable_equipment_modules = {
+			cruise_missile_4
+			sam_missile_4
+		}
+
+		allow = {
+			has_dlc = "Man the Guns"
+		}
+
+		dependencies = {
+			computing_tech_1960 = 1
+		}
+
+		research_cost = 3
+
+		start_year = 2020
+
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 14 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				date < "2010.1.1"
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_missile
+			ship_modules_tech
+		}
+
+	}
+	ballistic_missile_1960 = {
+
+		enable_equipment_modules = {
+			ballistic_missile_1
+		}
+
+		path = {
+			leads_to_tech = ballistic_missile_1980
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			computing_tech_1960 = 1
+			atomic_bomb_tech = 1
+		}
+
+		research_cost = 3.5
+
+		start_year = 1960
+
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_missile
+			ship_modules_tech
+		}
+
+	}
+	ballistic_missile_1980 = {
+
+		enable_equipment_modules = {
+			ballistic_missile_2
+		}
+
+		path = {
+			leads_to_tech = ballistic_missile_2000
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			computing_tech_1960 = 1
+			atomic_bomb_tech = 1
+		}
+
+		research_cost = 3.5
+
+		start_year = 1980
+
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_missile
+			ship_modules_tech
+		}
+
+	}
+	ballistic_missile_2000 = {
+
+		enable_equipment_modules = {
+			ballistic_missile_3
+		}
+
+		path = {
+			leads_to_tech = ballistic_missile_2020
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = hypersonic_glide_vehicle_tech
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			computing_tech_1960 = 1
+			atomic_bomb_tech = 1
+		}
+
+		research_cost = 3.5
+
+		start_year = 2000
+
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_missile
+			ship_modules_tech
+		}
+
+	}
+	ballistic_missile_2020 = {
+
+		enable_equipment_modules = {
+			ballistic_missile_4
+		}
+
+		dependencies = {
+			computing_tech_1960 = 1
+			atomic_bomb_tech = 1
+		}
+
+		research_cost = 3.5
+
+		start_year = 2020
+
+		folder = {
+			name = electronics_folder
+			position = { x = -2 y = 14 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 0
+				date < "2010.1.1"
+			}
+		}
+
+		categories = {
+			naval_equipment
+			mod_cat_missile
+			ship_modules_tech
+		}
+
+	}
+	theatre_ballistic_missile_1960 = {
+
+		path = {
+			leads_to_tech = theatre_ballistic_missile_1980
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ballistic_missile_1960
+			research_cost_coeff = 0.5
+		}
+
+		dependencies = {
+			computing_tech_1960 = 1
+		}
+
+		research_cost = 3.5
+
+		start_year = 1960
+
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+		}
+
+		categories = {
+			mod_cat_missile
+		}
+
+	}
+	theatre_ballistic_missile_1980 = {
+
+		path = {
+			leads_to_tech = theatre_ballistic_missile_2000
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ballistic_missile_1980
+			research_cost_coeff = 0.5
+		}
+
+		dependencies = {
+			computing_tech_1960 = 1
+		}
+
+		research_cost = 3.5
+
+		start_year = 1980
+
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+		}
+
+		categories = {
+			mod_cat_missile
+		}
+
+	}
+	theatre_ballistic_missile_2000 = {
+
+		path = {
+			leads_to_tech = theatre_ballistic_missile_2020
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ballistic_missile_2000
+			research_cost_coeff = 0.5
+		}
+
+		dependencies = {
+			computing_tech_1960 = 1
+		}
+
+		research_cost = 3.5
+
+		start_year = 2000
+
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+		}
+
+		categories = {
+			mod_cat_missile
+		}
+
+	}
+	theatre_ballistic_missile_2020 = {
+
+		dependencies = {
+			computing_tech_1960 = 1
+		}
+
+		research_cost = 3.5
+
+		start_year = 2020
+
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 14 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 0
+				date < "2010.1.1"
+			}
+		}
+
+		categories = {
+			mod_cat_missile
+		}
+
+	}
+	hypersonic_glide_vehicle_tech = {
+
+		dependencies = {
+			computing_tech_2000 = 1
+		}
+
+		research_cost = 3.0
+
+		start_year = 2010
+
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 12 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+		}
+
+		categories = {
+			mod_cat_missile
+		}
+
+	}
+
+## Nuclear Tech ##
+
+	nuclear_research_tech = {
+
+		research_speed_factor = 0.05
+
+		path = {
+			leads_to_tech = nuclear_reactor_tech_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 5.0
+
+		start_year = 1960
+
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 0 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+		}
+
+		categories = {
+			nuclear
+		}
+
+	}
+	nuclear_reactor_tech_1 = {
+
+		path = {
+			leads_to_tech = nuclear_reactor_tech_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = atomic_bomb_tech
+			research_cost_coeff = 1
+		}
+
+		research_cost = 5.0
+
+		start_year = 1960
+
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 2 }
+		}
+		folder = {
+			name = mtgnavalsupportfolder
+			position = { x = 0 y = 0 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 2
+				is_major = yes
+			}
+		}
+
+		categories = {
+			nuclear
+		}
+
+		enable_building = {
+			building = nuclear_reactor
+			level = 1
+		}
+
+	}
+	nuclear_reactor_tech_2 = {
+
+		path = {
+			leads_to_tech = nuclear_reactor_tech_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3.5
+
+		start_year = 1960
+
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 1
+				is_major = yes
+			}
+		}
+
+		categories = {
+			nuclear
+		}
+
+		enable_building = {
+			building = nuclear_reactor
+			level = 3
+		}
+
+	}
+	nuclear_reactor_tech_3 = {
+
+		research_cost = 3.5
+
+		start_year = 1960
+
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				add = 1
+				is_major = yes
+			}
+		}
+
+		categories = {
+			nuclear
+		}
+
+		enable_building = {
+			building = nuclear_reactor
+			level = 5
+		}
+
+	}
+	atomic_bomb_tech = {
+
+		path = {
+			leads_to_tech = hydrogen_bomb_tech
+			research_cost_coeff = 1
+		}
+
+		enable_equipments = {
+			atomic_bomb_equipment_1
+		}
+
+		research_cost = 4.0
+
+		start_year = 1960
+
+		folder = {
+			name = electronics_folder
+			position = { x = 3 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		categories = {
+			nuclear
+		}
+
+	}
+	hydrogen_bomb_tech = {
+
+		enable_equipments = {
+			hydrogen_bomb_equipment_1
+		}
+
+		research_cost = 4.0
+
+		start_year = 1960
+
+		folder = {
+			name = electronics_folder
+			position = { x = 3 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		categories = {
+			nuclear
+		}
+
+	}
+
+}

@@ -1,0 +1,46 @@
+﻿capital = 284
+
+#oob = "NZL_1936"
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+
+	set_technology = {
+		destroyer_hull_1960 = 1
+	}
+}
+
+set_stability = 0.8
+set_war_support = 0.3
+
+recruit_character = NZL_helen_clark
+
+add_ideas = usa_aligned_nation
+
+set_politics = {
+	ruling_party = social_democracy
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 0
+	reformed_communism = 7
+	social_democracy = 43
+	liberalism = 15
+	democratic = 35
+	neutrality = 0
+	paternal_autocracy = 0
+	fascism = 0
+}
+
+set_convoys = 70
+
+# Naval Variants #
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "NZL_2000_naval_mtg"
+}

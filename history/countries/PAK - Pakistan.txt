@@ -1,0 +1,76 @@
+﻿capital = 440
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+
+	set_technology = {
+		attack_submarine_hull_1960 = 1
+		destroyer_hull_1960 = 1
+	}
+}
+set_technology = {
+	infantry_weapons_1960 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_air_weapons_1960 = 1
+	tech_support = 1
+	tech_motorised_1960 = 1
+	tech_train_1960 = 1
+	mbt_tank_1960 = 1
+	apc_tank_1960 = 1
+	towed_artillery_1960 = 1
+	motorised_artillery_1960 = 1
+	rocket_artillery_1960 = 1
+	heli_transport_1960 = 1
+	heli_attack_1970 = 1
+	support_tech_engineers_1960 = 1
+	support_tech_militarypolice_1960 = 1
+	support_tech_hospital_1960 = 1
+	support_tech_maintenance_1960 = 1
+	support_tech_logistics_1960 = 1
+	support_tech_recon_1960 = 1
+}
+set_oob = "PAK_2000"
+set_air_oob = "PAK_2000_air"
+
+set_convoys = 200
+
+recruit_character = PAK_pervez_musharraf
+
+add_ideas = usa_aligned_nation
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1990.11.14"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 17
+	fascism = 0
+	communism = 3
+	neutrality = 80
+}
+
+add_ideas = volunteer_only
+add_ideas = usa_aligned_nation
+
+
+##nat ideas 
+add_ideas = {
+  PAK_ongoing_nuclear_program
+  PAK_american_aid
+  PAK_military_incharge
+  PAK_baloch_insurgency
+}
+
+
+add_opinion_modifier = { target = RAJ modifier = HISTORIC_india_pakistan_opinion }
+add_opinion_modifier = { target = ISR modifier = HISTORIC_israel_hostile_40_opinion }
+
+# Naval Variants #
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "PAK_2000_naval_mtg"
+}

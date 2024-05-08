@@ -1,0 +1,124 @@
+characters = {
+
+	SYR_bashar_al_assad = {
+		name = "Bashar Al Assad"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SYR/Bashar_Al_Assad.dds"
+			}
+		}
+		country_leader = {
+			ideology = baathist_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	SYR_hafez_al_assad = {
+		name = "Hafez Al Assad"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SYR/Hafez_Al_Assad.dds"
+			}
+		}
+		country_leader = {
+			ideology = baathist_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	SYR_abu_mohammad_al-julani = {
+		name = "Abu Mohammad al-Julani"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SYR/Abu_Mohammad_al-Julani.png"
+			}
+		}
+		country_leader = {
+			ideology = shia_islamism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	SYR_shibli_al_aysami = {  
+		name = "Shibli al-Aysami"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SYR/aysami.png"
+			}
+		}
+		country_leader = {
+			ideology = baathist_nationalism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	SYR_riad_seif = {  
+		name = "Riad Seif"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SYR/riad_seif.png"
+			}
+		}
+		country_leader = {
+			ideology = liberalism_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	SYR_maher_al_assad = {
+		name = "Maher Al-Assad"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SYR/Maher_Al_Assad.dds"
+			}
+		}	
+		corps_commander={
+			traits={armor_officer}
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}		
+	}
+	
+	SYR_ali_habib_mahmud = {
+		name = "Ali Habib Mahmud"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SYR/mahmud.png"
+			}
+		}	
+		corps_commander={
+			traits={armor_officer}
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}		
+	}
+		
+	
+	SYR_ali_al-majid = {
+		name = "Ali Hassan al-Majid"
+		portraits = {
+			army = {
+				large = "gfx/leaders/IRQ/Ali_al-Majid.dds"
+				small = "gfx/leaders/IRQ/Ali_al-Majid_small.dds"
+			}
+		}			
+	}
+}

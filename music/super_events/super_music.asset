@@ -1,0 +1,80 @@
+music = {
+	name = "super_yugo_war"
+	file = "yugo_war.ogg"
+}
+music = {
+	name = "super_eastern_war"
+	file = "eastern_war.ogg"
+}
+music = {
+	name = "super_sa_war"
+	file = "south_african_war.ogg"
+}
+music = {
+	name = "super_soviet_melancholy"
+	file = "soviet_coup.ogg"
+}
+music = {
+	name = "super_soviet_collapse"
+	file = "soviet_collapse.ogg"
+}
+music = {
+	name = "super_soviet_dissolution"
+	file = "soviet_dissolution.ogg"
+}
+music = {
+	name = "super_indochina_war"
+	file = "indochina_war.ogg"
+}
+music = {
+	name = "super_ww3"
+	file = "world_war_3.ogg"
+}
+music = {
+	name = "super_great_asian_war"
+	file = "great_asian_war.ogg"
+}
+music = {
+	name = "super_sino_soviet_war"
+	file = "sino_soviet_war.ogg"
+}
+music = {
+	name = "super_zyuganov_unificiation"
+	file = "zyuganov_unificiation.ogg"
+}
+music = {
+	name = "super_vdv_unification"
+	file = "vdv_unification.ogg"
+}
+music = {
+	name = "super_navy_unification"
+	file = "navy_unification.ogg"
+}
+music = {
+	name = "super_yazov_unification"
+	file = "yazov_unification.ogg"
+}
+music = {
+	name = "super_medvedev_unification"
+	file = "medvedev_unification.ogg"
+}
+music = {
+	name = "super_dugin_unification"
+	file = "dugin_unification.ogg"
+}
+music = {
+	name = "super_lukashenko_unification"
+	file = "lukashenko_unification.ogg"
+}
+music = {
+	name = "super_kgb_unification"
+	file = "kgb_unification.ogg"
+}
+music = {
+	name = "super_udaltsov_unification"
+	file = "udaltsov_unification.ogg"
+}
+music = {
+	name = "super_pugo_unification"
+	file = "pugo_unification.ogg"
+}

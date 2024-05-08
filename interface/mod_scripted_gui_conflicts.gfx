@@ -1,0 +1,115 @@
+spriteTypes = {	
+	SpriteType = {
+		name = "GFX_conflicts_map_africa_central"
+		texturefile = "gfx/interface/scripted_gui/conflicts_map/africa_central.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_conflicts_map_africa_east"
+		texturefile = "gfx/interface/scripted_gui/conflicts_map/africa_east.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_conflicts_map_africa_north"
+		texturefile = "gfx/interface/scripted_gui/conflicts_map/africa_north.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_conflicts_map_africa_south"
+		texturefile = "gfx/interface/scripted_gui/conflicts_map/africa_south.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_conflicts_map_africa_west"
+		texturefile = "gfx/interface/scripted_gui/conflicts_map/africa_west.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_conflicts_map_america_brazil"
+		texturefile = "gfx/interface/scripted_gui/conflicts_map/america_brazil.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_conflicts_map_america_central"
+		texturefile = "gfx/interface/scripted_gui/conflicts_map/america_central.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_conflicts_map_america_north"
+		texturefile = "gfx/interface/scripted_gui/conflicts_map/america_north.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_conflicts_map_america_south"
+		texturefile = "gfx/interface/scripted_gui/conflicts_map/america_south.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_conflicts_map_asia_east"
+		texturefile = "gfx/interface/scripted_gui/conflicts_map/asia_east.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_conflicts_map_asia_south"
+		texturefile = "gfx/interface/scripted_gui/conflicts_map/asia_south.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_conflicts_map_asia_south_east"
+		texturefile = "gfx/interface/scripted_gui/conflicts_map/asia_south_east.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_conflicts_map_asia_west"
+		texturefile = "gfx/interface/scripted_gui/conflicts_map/asia_west.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_conflicts_map_europe_east"
+		texturefile = "gfx/interface/scripted_gui/conflicts_map/europe_east.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_conflicts_map_europe_scandinavia"
+		texturefile = "gfx/interface/scripted_gui/conflicts_map/europe_scandinavia.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_conflicts_map_europe_west"
+		texturefile = "gfx/interface/scripted_gui/conflicts_map/europe_west.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_conflicts_map_oceania"
+		texturefile = "gfx/interface/scripted_gui/conflicts_map/oceania.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_conflicts_map_russia_central"
+		texturefile = "gfx/interface/scripted_gui/conflicts_map/russia_central.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_conflicts_map_russia_east"
+		texturefile = "gfx/interface/scripted_gui/conflicts_map/russia_east.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_conflicts_map_russia_west"
+		texturefile = "gfx/interface/scripted_gui/conflicts_map/russia_west.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_conflicts_map_logo"
+		texturefile = "gfx/interface/scripted_gui/conflicts_map/logo_gif_small.dds"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_conflicts_map_logo_gif"
+		texturefile = "gfx/interface/scripted_gui/conflicts_map/logo_gif_small.dds"
+		noOfFrames = 80
+		
+		animation_rate_fps = 20
+		looping = yes
+		play_on_show = yes
+	}
+}

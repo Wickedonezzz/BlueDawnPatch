@@ -1,0 +1,44 @@
+units = {
+	fleet = {
+		name = "Atlantic Fleet"
+		naval_base = 7361 # Halifax #
+		task_force = {
+			name = "Atlantic Fleet"
+			location = 7361 # Halifax #
+			ship = { name = "HMCS Halifax" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = CAN version_name = "Halifax Class" } } }
+			ship = { name = "HMCS Ville de Québec" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = CAN version_name = "Halifax Class" } } }
+			ship = { name = "HMCS Toronto" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = CAN version_name = "Halifax Class" } } }
+			ship = { name = "HMCS Montréal" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = CAN version_name = "Halifax Class" } } }
+			ship = { name = "HMCS Fredericton" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = CAN version_name = "Halifax Class" } } }
+			ship = { name = "HMCS Charlottetown" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = CAN version_name = "Halifax Class" } } }
+			ship = { name = "HMCS St. John's" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = CAN version_name = "Halifax Class" } } }
+			ship = { name = "HMCS Iroquois" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CAN version_name = "Iroquois Class" } } }
+			ship = { name = "HMCS Athabaskan" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CAN version_name = "Iroquois Class" } } }
+		}
+		task_force = {
+			name = "Atlantic Submarine Fleet"
+			location = 7361 # Halifax #
+			ship = { name = "HMCS Ojibwa" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = CAN creator = ENG version_name = "Oberon Class" } } }
+			ship = { name = "HMCS Onondaga" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = CAN creator = ENG version_name = "Oberon Class" } } }
+			ship = { name = "HMCS Okanagan" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = CAN creator = ENG version_name = "Oberon Class" } } }
+		}
+	}
+	fleet = {
+		name = "Pacific Fleet"
+		naval_base = 1408 # CFB Esquimalt #
+		task_force = {
+			name = "Pacific Fleet"
+			location = 1408 # CFB Esquimalt #
+			ship = { name = "HMCS Vancouver" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = CAN version_name = "Halifax Class" } } }
+			ship = { name = "HMCS Regina" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = CAN version_name = "Halifax Class" } } }
+			ship = { name = "HMCS Calgary" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = CAN version_name = "Halifax Class" } } }
+			ship = { name = "HMCS Winnipeg" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = CAN version_name = "Halifax Class" } } }
+			ship = { name = "HMCS Ottawa" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = CAN version_name = "Halifax Class" } } }
+			ship = { name = "HMCS Huron" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CAN version_name = "Iroquois Class" } } }
+			ship = { name = "HMCS Algonquin" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CAN version_name = "Iroquois Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

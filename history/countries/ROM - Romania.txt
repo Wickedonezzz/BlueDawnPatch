@@ -1,0 +1,172 @@
+﻿capital = 46
+set_oob = "ROM_2000"
+set_air_oob = "ROM_2000_air"
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+
+	set_technology = {
+		destroyer_hull_1960 = 1
+		destroyer_hull_1980 = 1
+		attack_submarine_hull_1960 = 1
+	}
+}
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons_1960 = 1
+	infantry_weapons_1980 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_air_weapons_1960 = 1
+	tech_support = 1
+	tech_motorised_1960 = 1
+	tech_train_1960 = 1
+	towed_artillery_1960 = 1
+	rocket_artillery_1960 = 1
+	mbt_tank_1960 = 1
+	mbt_tank_1970 = 1
+	mbt_tank_1980 = 1
+	ifv_tank_1970 = 1
+	ifv_tank_1980 = 1
+	apc_tank_1960 = 1
+	apc_tank_1970 = 1
+	apc_tank_1980 = 1
+	spaa_tank_1960 = 1
+	attacker_1960 = 1
+	attacker_1970 = 1
+	heli_transport_1960 = 1
+	heli_transport_1970 = 1
+	heli_attack_1970 = 1
+	support_tech_engineers_1960 = 1
+	support_tech_militarypolice_1960 = 1
+	support_tech_hospital_1960 = 1
+	support_tech_maintenance_1960 = 1
+	support_tech_logistics_1960 = 1
+	support_tech_recon_1960 = 1
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		recon_vehicle_1960 = 1
+	}
+}
+
+set_stability = 0.6
+set_war_support = 0.6
+
+set_convoys = 50
+
+recruit_character = ROM_emil_constantinescu
+recruit_character = ROM_corneliu_vadim_tudor
+recruit_character = ROM_ion_iliescu
+recruit_character = ROM_ion_iliescu1
+recruit_character = ROM_mircea_chelaru
+recruit_character = ROM_gheorghe_catrina
+recruit_character = ROM_miron_cozma
+
+add_ideas = east_europe_eastern_threat
+add_ideas = east_europe_privatization
+add_ideas = ROM_betrayed_revolution
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 0
+	reformed_communism = 1
+	neutrality = 7 #hungarians
+	social_democracy = 29
+	liberalism = 15
+	democratic = 15
+	neutrality = 6
+	paternal_autocracy = 0
+	fascism = 27
+}
+
+add_ideas = {
+	limited_conscription
+}
+
+# Naval Variants #
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "ROM_2000_naval_mtg"
+
+	# Frigates #
+	create_equipment_variant = {
+		name = "Amiral Petre Bărbuneanu Class"
+		type = destroyer_hull_2
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_2
+			fixed_ship_sonar_slot = sub_sonar_2
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = sam_missile_1
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = empty
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = aswrl_1
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = ciws_1
+			custom_slot_4 = aswrl_1
+			custom_ship_rear_cannon_slot = naval_gun_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Contra-Amiral Eustaţiu Sebastian Class"
+		type = destroyer_hull_2
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_2
+			fixed_ship_sonar_slot = sub_sonar_2
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = ciws_1
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_2
+			custom_slot_1 = aswrl_1
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = empty
+			custom_slot_4 = aswrl_1
+			custom_ship_rear_cannon_slot = naval_gun_2
+		}
+		obsolete = no
+	}
+
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Muntenia Class"
+		type = destroyer_hull_2
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_2
+			fixed_ship_sonar_slot = sub_sonar_2
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = sam_missile_1
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = cruise_missile_1
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = ciws_1
+			custom_slot_4 = aswrl_1
+			custom_ship_rear_cannon_slot = naval_gun_1
+		}
+		obsolete = no
+	}
+}

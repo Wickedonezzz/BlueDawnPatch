@@ -1,0 +1,23 @@
+ideas = {
+	
+country = {
+	AZR_karabakh_war = {
+		name = AZR_karabakh_war_name
+
+		removal_cost = -1
+
+		picture = AZR_karabakh_war_icon
+
+		allowed = {
+			always = no
+		}
+
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.1
+				war_support_factor = -0.15
+				army_org_factor = -0.1
+			}
+		}
+	}
+}

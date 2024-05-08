@@ -1,0 +1,25 @@
+﻿capital = 687
+
+##oob = ""
+
+set_convoys = 5
+
+recruit_character = GYA_bharrat_jagdeo
+
+set_politics = {
+	ruling_party = socialism
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 0
+	socialism = 55
+	social_democracy = 40
+	liberalism = 0
+	democratic = 5
+	neutrality = 0
+	paternal_autocracy = 0
+	fascism = 0
+}

@@ -1,0 +1,4080 @@
+yug_debug = {
+
+	yug_debug_load_stambolic = {
+
+		icon = GFX_decision_generic_assassination
+
+		allowed = {
+		}
+		available = {
+			original_tag = YUG
+			is_debug = yes
+		}
+		visible = {
+			original_tag = YUG
+			is_debug = yes
+		}
+		modifier {
+		}
+		cost = 0
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = { 
+			retire_country_leader = yes
+			promote_character = YUG_stambolic
+			load_focus_tree = yug_stambolic_communist_focus
+			add_popularity = {
+				ideology = reformed_communism
+				popularity = -1.0
+			}
+			set_politics = {
+				ruling_party = communism
+
+			}
+			set_party_name = {
+				ideology = communism
+				long_name = YUG_communism_NJL_party_long
+				name = YUG_communism_NJL_party
+			}
+			country_event = {id = yug.18 days = 3}
+			news_event = {id = old_times_news.72}
+		}
+	}
+	
+	yug_debug_load_seselj = {
+
+		icon = GFX_decision_generic_assassination
+
+		allowed = {
+		}
+		available = {
+			original_tag = YUG
+			is_debug = yes
+		}
+		visible = {
+			original_tag = YUG
+			is_debug = yes
+		}
+		modifier {
+		}
+		cost = 0
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = { 
+			retire_country_leader = yes
+			promote_character = YUG_seselj
+			load_focus_tree = yug_nationalist_seselj_focus
+			set_politics = {
+				ruling_party = communism
+
+			}
+			set_party_name = {
+				ideology = communism
+				long_name = YUG_communism_seselj_party_long
+				name = YUG_communism_seselj_party
+			}
+			country_event = {id=yug.18}
+		}
+	}
+	
+	yug_debug_load_milosevic = {
+
+		icon = GFX_decision_generic_assassination
+
+		allowed = {
+		}
+		available = {
+			original_tag = YUG
+			is_debug = yes
+		}
+		visible = {
+			original_tag = YUG
+			is_debug = yes
+		}
+		modifier {
+		}
+		cost = 0
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = { 
+			load_focus_tree = yug_milosevic_focus
+			
+			promote_character = YUG_seselj
+			set_party_name = {
+				ideology = communism
+				name = YUG_communism_seselj_party
+				long_name = YUG_communism_seselj_party_long
+			}
+			country_event = {id = yug.17 days = 3}
+		}
+	}
+
+}
+
+#debts debt#
+
+yug_debt_decision_category = {
+
+	yug_imf_demands_5_bil_to_be_paid = {                          
+		allowed = {
+			original_tag = YUG
+		}            
+        available = {    
+			has_political_power > 199
+        }
+		
+		activation = {
+			original_tag = YUG
+			has_country_flag = yug_imf_time
+			OR = {
+			check_variable = {YUG_economic_health_var = 5}
+			check_variable = {YUG_debt_owe_var > 44}
+			}
+		}
+		visible = {
+			has_country_flag = yug_imf_time
+		}
+		  
+		ai_will_do = {
+			factor = 200
+		
+		}  
+		  
+		priority = 1  
+		cost = 200
+		is_good = no
+		selectable_mission = yes
+		days_mission_timeout = 250            
+		timeout_effect = {
+			add_stability = -0.30
+			add_political_power = -300
+		}
+		
+        complete_effect = {
+			subtract_from_variable = {YUG_debt_owe_var = 5}
+			custom_effect_tooltip = yug_our_debts_will_decrease_5_bil
+			YUG_improve_economic_health = yes
+
+        }
+	}
+
+	yug_imf_demands_2_bil_to_be_paid = {                          
+		allowed = {
+			original_tag = YUG
+		}              
+        available = {    
+			has_political_power > 149
+        }
+		
+		activation = {
+			original_tag = YUG
+			has_country_flag = yug_imf_time
+			OR = {
+			check_variable = {YUG_economic_health_var = 4}
+			check_variable = {YUG_debt_owe_var > 39}
+			}
+		}
+		visible = {
+			has_country_flag = yug_imf_time
+		}
+
+		ai_will_do = {
+			factor = 200
+		
+		}
+		  
+		priority = 1  
+		cost = 150
+		is_good = no
+		selectable_mission = yes
+		days_mission_timeout = 200            
+		timeout_effect = {
+			add_stability = -0.15
+			add_political_power = -150
+			activate_mission_tooltip = yug_imf_demands_2_bil_to_be_paid
+		}
+		
+        complete_effect = {
+			subtract_from_variable = {YUG_debt_owe_var = 2}
+			custom_effect_tooltip = yug_our_debts_will_decrease_2_bil
+			YUG_improve_economic_health = yes
+
+        }
+	}
+
+	yug_finish_paying_the_debts = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+
+		allowed = {
+			original_tag = YUG
+		}
+		available = {
+			original_tag = YUG
+			has_country_flag = yug_imf_time
+			custom_trigger_tooltip = {
+				tooltip = yug_paid_back_all_of_the_money
+				check_variable = {YUG_debt_owe_var < 1}
+
+			}
+		}
+		visible = {
+			has_country_flag = yug_imf_time			
+		}
+		modifier {
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_completed_focus = YUG_matters_of_economy
+				factor = 200
+			}				
+		}
+		complete_effect = { 
+			set_country_flag = yug_paid_all_the_debts_in_full
+			add_stability = 0.1
+			add_political_power = 100
+			subtract_from_variable = {YUG_economic_health_var = 1}			
+			custom_effect_tooltip = yug_our_economic_health_will_get_better
+		}
+		remove_effect = {
+
+			
+		}
+	}
+	
+	yug_improve_economic_health = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+
+		allowed = {
+			original_tag = YUG
+		}
+		available = {
+			original_tag = YUG
+			has_country_flag = yug_imf_time
+			has_country_flag = yug_paid_all_the_debts_in_full
+			custom_trigger_tooltip = {
+				tooltip = yug_economic_health_isnt_good_or_very_bad
+				check_variable = {YUG_economic_health_var > 0}
+
+			}
+		}
+		visible = {
+			has_country_flag = yug_imf_time		
+			has_country_flag = yug_paid_all_the_debts_in_full
+			
+		}
+		modifier {
+		}
+		
+		cost = 50
+		days_remove = 30
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = { 
+
+		}
+		remove_effect = {
+			YUG_improve_economic_health = yes
+		}
+	}
+
+	yug_debt_pay_back_1_billion = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+
+		allowed = {
+			original_tag = YUG
+		}
+		available = {
+			original_tag = YUG
+			has_country_flag = yug_imf_time
+		}
+		visible = {
+			has_country_flag = yug_imf_time			
+		}
+		modifier {
+		}
+		
+		cost = 50
+		days_remove = 30
+		fire_only_once = no
+		days_re_enable = 30
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				check_variable = {YUG_economic_health_var > 4}
+				factor = 20
+			}
+			modifier = {
+				has_completed_focus = YUG_matters_of_economy
+				factor = 200
+			}	
+		}
+		complete_effect = { 
+			subtract_from_variable = {YUG_debt_owe_var = 1}
+			custom_effect_tooltip = yug_our_debts_will_decrease_1_bil
+
+		}
+		remove_effect = {
+		
+			if = {
+				limit = {
+					check_variable = {YUG_economic_health_var = 0}
+				}
+				
+			}
+			else_if = {
+				YUG_improve_economic_health = yes
+			}
+		}
+	}
+
+	yug_debt_pay_back_2_billion = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+
+		allowed = {
+			original_tag = YUG
+		}
+		available = {
+			original_tag = YUG
+			has_country_flag = yug_imf_time
+			custom_trigger_tooltip = {
+				tooltip = yug_economic_health_isnt_very_bad		
+				check_variable = {YUG_economic_health_var < 4}
+
+			}
+		}
+
+		visible = {
+			has_country_flag = yug_imf_time			
+		}
+		modifier {
+		}
+		
+		cost = 75
+		days_remove = 30
+		fire_only_once = no
+		days_re_enable = 30
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				check_variable = {YUG_economic_health_var > 3}
+				factor = 20
+			}
+			modifier = {
+				has_completed_focus = YUG_matters_of_economy
+				factor = 200
+			}			
+		}
+		complete_effect = { 
+			subtract_from_variable = {YUG_debt_owe_var = 2}
+			custom_effect_tooltip = yug_our_debts_will_decrease_2_bil
+
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					check_variable = {YUG_economic_health_var = 0}
+				}
+				
+			}
+			else_if = {
+				YUG_improve_economic_health = yes
+			}
+		}
+	}
+	
+	yug_debt_pay_back_5_billion = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+
+		allowed = {
+			original_tag = YUG
+		}
+		available = {
+			original_tag = YUG
+			has_country_flag = yug_imf_time
+			custom_trigger_tooltip = {
+				tooltip = yug_economic_health_isnt_average	
+				check_variable = {YUG_economic_health_var < 2}
+
+			}
+		}
+
+		visible = {
+			has_country_flag = yug_imf_time			
+		}
+		modifier {
+		}
+		
+		cost = 100
+		days_remove = 30
+		fire_only_once = no
+		days_re_enable = 30
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				check_variable = {YUG_economic_health_var > 3}
+				factor = 20
+			}
+			modifier = {
+				has_completed_focus = YUG_matters_of_economy
+				factor = 200
+			}				
+		}
+		complete_effect = { 
+			subtract_from_variable = {YUG_debt_owe_var = 5}
+			custom_effect_tooltip = yug_our_debts_will_decrease_5_bil
+
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					check_variable = {YUG_economic_health_var < 0}
+				}
+				
+			}
+			else_if = {
+				YUG_improve_economic_health = yes
+			}
+		}
+	}
+
+	yug_debt_get_consumer_goods = {
+
+		icon = GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+			original_tag = YUG
+		}
+		available = {
+			original_tag = YUG
+			has_country_flag = yug_imf_time
+			custom_trigger_tooltip = {
+				tooltip = yug_economic_health_isnt_bad
+				check_variable = {YUG_economic_health_var < 3}
+
+			}
+		}
+		visible = {
+			has_country_flag = yug_imf_time			
+		}
+		modifier {
+			consumer_goods_factor = -0.40
+		}
+		
+		custom_cost_trigger = {
+			check_variable = { YUG_debt_owe_var > 1 }
+		}
+		custom_cost_text = yug_1_billion_dollars_required
+		
+		cost = 0
+		days_remove = 60
+		fire_only_once = no
+		days_re_enable = 45
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				check_variable = {YUG_economic_health_var > 2}
+				factor = 0
+			}
+		}
+		complete_effect = { 
+			add_to_variable = {YUG_debt_owe_var = 1}
+			custom_effect_tooltip = yug_our_debts_will_increase_1_bil
+			YUG_worsen_economic_health = yes
+		}
+	}
+	
+	yug_debt_get_construction_efforts = {
+
+		icon = GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+			original_tag = YUG
+		}
+		available = {
+			original_tag = YUG
+			has_country_flag = yug_imf_time
+			custom_trigger_tooltip = {
+				tooltip = yug_economic_health_isnt_very_bad
+				check_variable = {YUG_economic_health_var < 4}
+
+			}
+		}
+		visible = {
+			has_country_flag = yug_imf_time			
+		}
+		modifier {
+			production_speed_buildings_factor = 0.50
+		}
+		
+		custom_cost_trigger = {
+			check_variable = { YUG_debt_owe_var > 1 }
+		}
+		custom_cost_text = yug_1_billion_dollars_required
+		
+		cost = 0
+		days_remove = 100
+		days_re_enable = 30
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				check_variable = {YUG_economic_health_var > 2}
+				factor = 0
+			}
+		}
+		complete_effect = { 
+			add_to_variable = {YUG_debt_owe_var = 1}
+			custom_effect_tooltip = yug_our_debts_will_increase_1_bil
+			YUG_worsen_economic_health = yes
+
+		}
+	}
+
+	yug_debt_get_weaponry = {
+
+		icon = GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+			original_tag = YUG
+		}
+		available = {
+			original_tag = YUG
+			has_country_flag = yug_imf_time
+			custom_trigger_tooltip = {
+				tooltip = yug_economic_health_isnt_average	
+				check_variable = {YUG_economic_health_var < 2}
+
+			}
+		}
+		visible = {
+			has_country_flag = yug_imf_time			
+		}
+		modifier {
+		}
+		
+		custom_cost_trigger = {
+			check_variable = { YUG_debt_owe_var > 2 }
+		}
+		custom_cost_text = yug_2_billion_dollars_required
+		
+		cost = 0
+		days_remove = 30
+		days_re_enable = 100
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				check_variable = {YUG_economic_health_var > 2}
+				factor = 0
+			}
+		}
+		complete_effect = { 
+			add_to_variable = {YUG_debt_owe_var = 2}
+			custom_effect_tooltip = yug_our_debts_will_increase_2_bil
+			YUG_worsen_economic_health = yes
+			add_political_power = -50
+			add_equipment_to_stockpile = {
+				type = mbt_tank_equipment_3
+				amount = 2000
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_weapons_2
+				amount = 10000
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_anti_tank_weapons_2
+				amount = 2000
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_anti_air_weapons_1
+				amount = 200
+			}		
+			add_equipment_to_stockpile = {
+				type = ifv_tank_equipment_1
+				amount = 200
+			}			
+
+		}
+	}
+}
+
+
+yug_deal_with_uprisings = {
+	
+	
+	yug_timer_clock_bosnia = {
+	
+		icon = GFX_decision_revolt
+	
+		allowed = {
+			original_tag = YUG
+		}               
+		available = {    
+			has_country_flag = bos_uprising_started
+		}
+		activation = {                          
+			has_country_flag = yug_anti_terrorist_time
+			NOT = {
+				OR = {
+					has_country_flag = bos_uprising_started
+					YUG = {has_government = fascism}
+				}
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = bos_uprising_started
+			}
+		}  
+		  
+		priority = 10 
+		  
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 45            
+		timeout_effect = {
+			country_event = { id = yug_rebel.1} 
+			set_country_flag = bos_uprising_started
+			BOS = {
+				transfer_state = 104
+				declare_war_on = {
+					type = annex_everything
+					target = YUG
+				}
+				country_event ={id = bos.1}
+			}
+		}
+         	complete_effect = {
+          	}
+	}
+	
+	yug_relocate_serbs_into_bosnia = {
+
+		icon = GFX_decision_eng_blackshirt_march
+
+		allowed = {
+			original_tag = YUG
+		}
+		available = {
+			NOT = {
+				has_country_flag = bos_uprising_started
+			}
+			NOT = {
+			YUG = {has_government = communism}
+			YUG = {has_government = socialism}
+			}
+		}
+		visible = {
+			has_country_flag = yug_anti_terrorist_time
+		}
+		modifier {
+		}
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		remove_effect = { 
+			custom_effect_tooltip = YUG_decrases_the_figthing_strength_of_rebels
+			add_to_variable = { bosnia_fight_strength = -10 }
+			add_days_mission_timeout = {
+				mission = YUG_timer_clock_bosnia
+				days = -5
+			}
+		}
+	}
+	
+	yug_remove_ethnic_bosnian_generals = {
+
+		icon = GFX_decision_SWI_elect_confederation_president
+
+		allowed = {
+			original_tag = YUG
+		}
+		available = {
+			NOT = {
+				has_country_flag = bos_uprising_started
+			}
+			NOT = {
+			YUG = {has_government = communism}
+			YUG = {has_government = socialism}
+			}
+		}
+		visible = {
+			has_country_flag = yug_anti_terrorist_time
+		}
+		modifier {
+		}
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		remove_effect = { 
+			add_war_support = -0.05
+			custom_effect_tooltip = YUG_decrases_the_figthing_strength_of_rebels
+			add_to_variable = { bosnia_fight_strength = -10 }
+			add_days_mission_timeout = {
+				mission = YUG_timer_clock_bosnia
+				days = -5
+			}
+		}
+	}
+	
+	yug_imprison_the_sympathizers = {
+
+		icon = GFX_decision_generic_arrest
+
+		allowed = {
+			original_tag = YUG
+		}
+		available = {
+			NOT = {
+				has_country_flag = bos_uprising_started
+			}
+		}
+		visible = {
+			has_country_flag = yug_anti_terrorist_time
+		}
+		modifier {
+		}
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		remove_effect = { 
+			add_political_power = -25
+			add_stability = -0.05
+			custom_effect_tooltip = YUG_decrases_the_figthing_strength_of_rebels
+			add_to_variable = { bosnia_fight_strength = -10 }
+			add_to_variable = { albania_fight_strength = -10 }
+
+			add_days_mission_timeout = {
+				mission = YUG_timer_clock_bosnia
+				days = -5
+			}
+		}
+	}
+	
+	yug_relocate_assets = {
+
+		icon = GFX_decision_generic_factory
+
+		allowed = {
+			original_tag = YUG
+		}
+		available = {
+			NOT = {
+				has_country_flag = bos_uprising_started
+			}
+		}
+		visible = {
+			has_country_flag = yug_anti_terrorist_time
+		}
+		modifier {
+		}
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		remove_effect = { 
+			104 = { 
+				remove_building = { type = arms_factory  level = 1 } 
+				remove_building = { type = industrial_complex  level = 1 } 
+			}
+			107 = {	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			108 = {	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			custom_effect_tooltip = YUG_decrases_the_figthing_strength_of_rebels
+			add_to_variable = { bosnia_fight_strength = -10 }
+			add_to_variable = { albania_fight_strength = -10 }
+			
+			add_days_mission_timeout = {
+				mission = YUG_timer_clock_bosnia
+				days = -5
+			}
+		}
+	}
+	
+	yug_relocate_serbs_into_kosovo = {
+
+		icon = GFX_decision_eng_blackshirt_march
+
+		allowed = {
+			original_tag = YUG
+		}
+		available = {
+			NOT = {
+				has_country_flag = bos_uprising_started
+			}
+			NOT = {
+			YUG = {has_government = communism}
+			YUG = {has_government = socialism}
+			}
+		}
+		visible = {
+			has_country_flag = yug_anti_terrorist_time
+		}
+		modifier {
+		}
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		remove_effect = { 
+			custom_effect_tooltip = YUG_decrases_the_figthing_strength_of_rebels
+			add_to_variable = {albania_fight_strength = -10}
+			add_days_mission_timeout = {
+				mission = yug_timer_clock_bosnia
+				days = -5
+			}
+		}
+	}
+	
+	yug_remove_ethnic_albanian_generals = {
+
+		icon = GFX_decision_SWI_elect_confederation_president
+
+		allowed = {
+			original_tag = YUG
+		}
+		available = {
+			NOT = {
+				has_country_flag = bos_uprising_started
+			}
+			NOT = {
+			YUG = {has_government = communism}
+			YUG = {has_government = socialism}
+			}
+		}
+		visible = {
+			has_country_flag = yug_anti_terrorist_time
+		}
+		modifier {
+		}
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		remove_effect = { 
+			add_war_support = -0.05
+			custom_effect_tooltip = YUG_decrases_the_figthing_strength_of_rebels
+			add_to_variable = { albania_fight_strength = -10 }
+			add_days_mission_timeout = {
+				mission = yug_timer_clock_bosnia
+				days = -5
+			}
+		}
+	}
+	
+	yug_deport_local_albanians = {
+
+		icon = GFX_decision_border_war
+
+		allowed = {
+			original_tag = YUG
+		}
+		available = {
+			NOT = {
+				has_country_flag = bos_uprising_started
+			}
+			NOT = {
+			YUG = {has_government = communism}
+			YUG = {has_government = socialism}
+			}
+		}
+		visible = {
+			has_country_flag = yug_anti_terrorist_time
+		}
+		modifier {
+		}
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		remove_effect = { 
+			add_political_power = -25
+			add_stability = -0.05
+			custom_effect_tooltip = YUG_decrases_the_figthing_strength_of_rebels
+			add_to_variable = {albania_fight_strength = -10}
+			add_days_mission_timeout = {
+				mission = yug_timer_clock_bosnia
+				days = -5
+			}
+		}
+	}
+	
+}
+
+##UPRISING TIMER FOR YUGO TO WIN OR LOSE###
+
+yug_uprising = {
+
+	yug_timer_clock_uprising = {                          
+		allowed = {
+			original_tag = YUG
+		}
+        available = {    
+			NOT = {country_exists = BOS}
+			NOT = {country_exists = HRZ}			
+			NOT = {country_exists = KOS}
+			NOT = {country_exists = MAC}
+			
+        }
+		
+		activation = {
+			original_tag = YUG
+			NOT = {has_country_flag = yug_wars_reached_conclusion}
+			OR = {
+				has_country_flag = bos_uprising_started
+				has_country_flag = bos_uprising_started
+			}
+		}
+		visible = {
+			has_country_flag = yug_mass_rebellions
+			NOT = {
+				has_country_flag = yug_wars_reached_conclusion
+			}
+		}
+		  
+		  
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 250            
+		timeout_effect = {
+			country_event = { id = yug_rebel.8 }
+			set_country_flag = yug_wars_reached_conclusion
+			remove_mission = yug_timer_clock_uprising			
+		}
+		
+        complete_effect = {
+			country_event = { id = yug_rebel.7 }
+			set_country_flag = yug_wars_reached_conclusion
+			remove_mission = yug_timer_clock_uprising
+
+        }
+	}
+
+	yug_lines_solidify = {                          
+		allowed = {
+			original_tag = YUG
+		}
+		
+		visible = {
+			has_country_flag = yug_mass_rebellions
+			NOT = {
+				has_country_flag = yug_wars_reached_conclusion
+			}
+		}
+		  
+		modifier = {
+			army_attack_factor = 0.05
+			army_speed_factor = 0.5
+		}
+		  
+		is_good = no
+		selectable_mission = yes
+		days_remove = 30     
+		fire_only_once = yes
+
+	}
+
+}
+
+yug_yugoslavia_ussr_war = {
+
+	yug_defend_against_ussr_timer = {                          
+		allowed = {
+			original_tag = YUG
+		}        
+        available = {   
+			YUG = {is_puppet_of = SOV}
+        }
+		
+		activation = {
+			original_tag = YUG
+			NOT = {has_global_flag = yug_won_against_ussr}
+			NOT = {has_global_flag = anti_yug_coalition_formed}
+			YUG = {
+			has_defensive_war_with = SOV
+			}
+		}
+		visible = {
+			NOT = {has_global_flag = yug_won_against_ussr}
+			YUG = {
+			has_defensive_war_with = SOV
+			}
+		}
+		  
+		  
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 200           
+		timeout_effect = {
+			custom_effect_tooltip = yug_a_peace_deal_with_ussr_will_be_signed
+			hidden_effect = {
+				white_peace = {
+					tag = SOV
+					message = YUG_wins_SOV_peace_message
+				}
+			}
+			set_global_flag = yug_won_against_ussr
+			remove_mission = yug_defend_against_ussr_timer			
+		}
+		
+        complete_effect = {
+			
+        }
+	}
+
+}
+
+yug_remmants_of_the_old_gov = {
+
+	yug_anti_government_movements = {                          
+		allowed = {
+			original_tag = YUG
+		}
+		
+        available = {   
+			has_country_flag = yug_secured_the_army_flag
+        }
+		
+		activation = {
+			has_completed_focus = YUG_stambolic_end_of_milosevic
+			NOT = {has_country_flag = yug_secured_the_army_flag}
+		}
+		visible = {
+			has_completed_focus = YUG_stambolic_end_of_milosevic
+
+		}
+		  
+		  
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 15           
+		timeout_effect = {
+			activate_mission_tooltip = yug_anti_government_movements
+			custom_effect_tooltip = yug_milosevic_loyalists_strength_increases_by_10				
+			add_to_variable = {yug_loyalists_strength = 10}
+		}
+		
+        complete_effect = {
+
+        }
+	}
+	
+	yug_jail_former_officials = {
+		icon = GFX_decision_generic_factory
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			has_completed_focus = YUG_stambolic_end_of_milosevic
+			NOT = {has_country_flag = yug_secured_the_army_flag}
+		}
+
+		available = {
+			NOT = {has_country_flag = yug_secured_the_army_flag}
+		}
+
+		modifier = {
+			stability_weekly = 0.04
+
+		}
+		
+		cost = 45
+		days_remove = 15
+		fire_only_once = no
+		ai_will_do = {
+			factor = 50
+		}
+		
+        complete_effect = {
+			custom_effect_tooltip = yug_milosevic_loyalists_strength_decreases_by_15		
+			subtract_from_variable = {yug_loyalists_strength = 15}
+        }
+		
+		remove_effect = {
+			add_political_power = 50
+		}
+	}
+
+	yug_reform_the_socialists = {
+		icon = GFX_decision_generic_factory
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			has_completed_focus = YUG_stambolic_end_of_milosevic
+			NOT = {has_country_flag = yug_secured_the_army_flag}
+		}
+
+		available = {
+			NOT = {has_country_flag = yug_secured_the_army_flag}
+		}
+
+		modifier = {
+
+		}
+		
+		cost = 100
+		days_remove = 30
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 500
+		}
+		
+        complete_effect = {
+			custom_effect_tooltip = yug_milosevic_loyalists_strength_decreases_by_30
+			subtract_from_variable = {yug_loyalists_strength = 30}		
+        }
+		
+		remove_effect = {
+			retire_ideology_leader = socialism
+			promote_character = YUG_vulin
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.15
+			}
+			set_country_flag = yug_reformed_socialists
+			add_political_power = 100
+        }
+	}
+
+	yug_return_of_the_SKJ = {
+		icon = GFX_decision_generic_factory
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			has_completed_focus = YUG_stambolic_end_of_milosevic
+			NOT = {has_country_flag = yug_secured_the_army_flag}
+		}
+
+		available = {
+			NOT = {has_country_flag = yug_secured_the_army_flag}
+		}
+
+		modifier = {
+
+		}
+		
+		cost = 150
+		days_remove = 30
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 500
+		}
+		
+        complete_effect = {
+			custom_effect_tooltip = yug_milosevic_loyalists_strength_decreases_by_30
+			subtract_from_variable = {yug_loyalists_strength = 30}
+			add_stability = -0.10
+
+        }
+			
+        remove_effect = {
+			set_party_name = {
+				ideology = communism
+				name = YUG_communism_SKJ_party
+				long_name = YUG_communism_SKJ_party_long				
+			}		
+			set_party_name = {
+				ideology = reformed_communism
+				name = YUG_reformed_communism_NJL_party
+				long_name = YUG_reformed_communism_NJL_party_long				
+			}
+			
+			set_country_flag = yug_reformed_the_SKJ
+			
+			add_political_power = 150
+
+        }
+	}
+	
+	yug_reform_the_SBD = {
+		icon = GFX_decision_generic_factory
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			has_completed_focus = YUG_stambolic_end_of_milosevic
+			NOT = {has_country_flag = yug_secured_the_army_flag}
+		}
+
+		available = {
+			NOT = {has_country_flag = yug_secured_the_army_flag}
+			has_completed_focus = YUG_stambolic_reform_sbd
+		}
+
+		modifier = {
+
+		}
+		
+		cost = 35
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 500
+		}
+	
+        complete_effect = {
+			custom_effect_tooltip = yug_milosevic_loyalists_strength_decreases_by_15
+			subtract_from_variable = {yug_loyalists_strength = 15}		
+
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
+
+        }
+	}
+
+}
+
+yug_stambolic_a_new_yugoslavia_category = {
+
+	## theres gonna be tensions which will give you debuffs and collapse yugoslavia if it reaches 100
+	## regime power/popularity is required to do certain decisions, hitting 0 regime popularity will give and idea that decreases pp gain by %15
+	## regime power/popularity can only be increased by either focuses/events or missions (like the ones in vanilla Italy)
+
+	yug_stambolic_impending_party_coup_mission = {
+		icon = GFX_decision_revolt
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		available = {    
+			YUG = {
+				check_variable = {yug_regime_popularity_strength > 1}		
+			}
+		}
+
+		activation = {                    
+			has_completed_focus = YUG_stambolic_a_new_yugoslavia	
+			NOT = {has_country_flag = yug_you_will_no_longer_get_couped}
+			YUG = {
+				check_variable = {yug_regime_popularity_strength < 1}		
+			}
+		}
+		visible = {
+
+		}  
+		  
+		  
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 35 
+		priority = 99
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+        complete_effect = {
+			add_to_variable = {yug_regime_popularity_strength = 2}
+			custom_effect_tooltip = yug_regime_popularity_strength_increases_by_2
+
+        }
+		
+		timeout_effect = {
+			add_political_power = -100
+			add_stability = -0.15
+			
+			if = {
+				limit = {has_government = communism}
+				country_event = {id = yug_stambolic.10}
+			}
+			else_if = {
+				limit = {
+				has_government = socialism
+				NOT = {has_country_flag = yug_joska_has_been_forced_into_retirement}
+				}
+				country_event = {id = yug_stambolic.12}
+			
+			}
+	
+		}
+	}
+	
+	yug_stambolic_impending_collapse_mission = {
+		icon = GFX_decision_revolt
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		available = {    
+			YUG = {
+				check_variable = {yug_regime_ethnic_tensions_strength < 99}		
+			}
+		}
+
+		activation = {  
+			has_completed_focus = YUG_stambolic_a_new_yugoslavia
+			YUG = {
+				check_variable = {yug_regime_ethnic_tensions_strength > 99}
+				has_war = no
+			}
+		}
+		visible = {
+
+		}  
+		  
+		  
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 35 
+		priority = 99
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+        complete_effect = {
+			add_to_variable = {yug_regime_popularity_strength = 2}
+			custom_effect_tooltip = yug_regime_popularity_strength_increases_by_2
+			
+			subtract_from_variable = {yug_regime_ethnic_tensions_strength = 15}	
+			custom_effect_tooltip = yug_regime_ethnic_tensions_strength_decreases_by_15
+
+        }
+		
+		timeout_effect = {
+			add_political_power = -300
+			add_stability = -0.30
+			country_event = {id = yug_rebel.9 days = 3}
+			news_event = {id = old_times_news.100}
+			
+			CRO = {
+				transfer_state = 910
+			}
+			BOS = {
+				transfer_state = 104
+				transfer_state = 959
+				transfer_state = 960
+				transfer_state = 961
+				set_cosmetic_tag = BOS_win
+					set_politics = {
+						ruling_party = fascism
+						last_election = "1991.5.3"
+						election_frequency = 36
+						elections_allowed = no
+					}
+					set_popularities = {
+						democratic = 20
+						fascism = 20
+						social_democracy = 20
+						paternal_autocracy = 10 
+						liberalism = 30
+						
+					}		
+				country_event = {id = bos.2 days = 100}
+			}
+			KOS = {
+				transfer_state = 802
+				set_cosmetic_tag = KOS_win
+				country_event = {id = kos.2 days = 2}
+			}	
+			MAC = {
+				transfer_state = 106
+			}	
+			HRZ = {
+				transfer_state = 804
+			}
+			803 = {
+			set_demilitarized_zone = yes
+			}
+			YUG_stop_the_terror_attacks = yes
+			release = MNT
+			release = CRO
+			release = SLV
+			release = BUL
+			release = ALB
+		}
+	}	
+
+	yug_stambolic_pop_increase_address_the_economic_problems = {
+		icon = GFX_decision_gre_paying_ifc_debt
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			has_completed_focus = YUG_stambolic_a_new_yugoslavia
+		}
+
+		available = {
+			has_completed_focus = YUG_stambolic_a_new_yugoslavia
+			has_completed_focus = YUG_stambolic_the_economic_problem
+		}
+		
+		custom_cost_trigger = {
+			check_variable = { yug_regime_popularity_strength > 0 }
+		}
+		custom_cost_text = yug_1_regime_pop_required
+
+		modifier = {
+
+		}
+		
+		cost = 0
+		days_re_enable = 135
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		
+        complete_effect = {
+			activate_mission = yug_stambolic_pop_increase_address_the_economic_problems_mission
+			set_country_flag = yug_stambolic_pop_increase_industrial_capabilities_flag
+			
+			add_political_power = -50
+			subtract_from_variable = {yug_regime_popularity_strength = 1}
+        }
+	}
+	
+	yug_stambolic_pop_increase_address_the_economic_problems_mission = {
+		icon = GFX_decision_gre_paying_ifc_debt
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		available = {  
+			has_country_flag = {
+				flag = YUG_took_the_economy_focus
+				days > 50
+			}
+			custom_trigger_tooltip = {
+				tooltip = YUG_took_the_economy_focus_tooltip
+				has_country_flag = {
+					flag = YUG_took_the_economy_focus
+					days > 50
+				}
+			}
+		}
+
+		activation = {                          
+			has_country_flag = yug_stambolic_pop_increase_industrial_capabilities_flag
+		}
+		visible = {
+		}  
+		  
+		  
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 160 
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+        complete_effect = {
+			add_to_variable = {yug_regime_popularity_strength = 2}
+			custom_effect_tooltip = yug_regime_popularity_strength_increases_by_2
+			add_offsite_building = { type = arms_factory level = 2 }
+			add_offsite_building = { type = industrial_complex level = 2 }
+			
+			clr_country_flag = yug_stambolic_pop_increase_industrial_capabilities_flag
+
+        }
+		
+		timeout_effect = {
+			add_political_power = -35
+			add_stability = -0.03
+			
+			subtract_from_variable = {yug_regime_popularity_strength = 1}
+			custom_effect_tooltip = yug_regime_popularity_strength_decreases_by_1
+			
+			clr_country_flag = yug_stambolic_pop_increase_industrial_capabilities_flag
+	
+		}
+	}
+
+	yug_stambolic_use_our_popularity = {
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			has_completed_focus = YUG_stambolic_a_new_yugoslavia
+		}
+
+		available = {
+			has_completed_focus = YUG_stambolic_a_new_yugoslavia
+		}
+
+		modifier = {
+			consumer_goods_factor = -0.40
+			political_power_gain = 0.50
+		}
+		
+		custom_cost_trigger = {
+			check_variable = { yug_regime_popularity_strength > 0 }
+		}
+		custom_cost_text = yug_1_regime_pop_required
+		
+		cost = 35
+		days_remove = 60
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		
+        remove_effect = {
+			add_political_power = 100
+			
+        }
+		
+		complete_effect = {
+			subtract_from_variable = {yug_regime_popularity_strength = 1}
+		}
+	}
+
+	yug_stambolic_fund_industrial_development = {
+		icon = GFX_decision_generic_factory
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			has_completed_focus = YUG_stambolic_a_new_yugoslavia
+		}
+
+		available = {
+			has_completed_focus = YUG_stambolic_a_new_yugoslavia
+		}
+
+		modifier = {
+			production_speed_buildings_factor = 0.25 
+			political_power_cost = 0.25
+
+		}
+		
+		custom_cost_trigger = {
+			check_variable = { yug_regime_popularity_strength > 0 }
+		}
+		custom_cost_text = yug_1_regime_pop_required
+		
+		cost = 35
+		days_remove = 60
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		
+        complete_effect = {			
+			subtract_from_variable = {yug_regime_popularity_strength = 1}
+        }
+	}
+
+	yug_stambolic_recruitment_campaigns = {
+		icon = GFX_decision_eng_blackshirt_march
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			has_completed_focus = YUG_stambolic_a_new_yugoslavia
+		}
+
+		available = {
+			has_completed_focus = YUG_stambolic_a_new_yugoslavia
+		}
+
+		modifier = {
+			political_power_cost = 0.80
+			weekly_manpower = 2000
+		}
+		
+		custom_cost_trigger = {
+			check_variable = { yug_regime_popularity_strength > 0 }
+		}
+		custom_cost_text = yug_1_regime_pop_required
+		
+		cost = 35
+		days_remove = 60
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		
+        remove_effect = {
+			add_manpower = 7500
+        }
+		
+        complete_effect = {			
+			subtract_from_variable = {yug_regime_popularity_strength = 1}
+        }
+	}
+	
+	yug_stambolic_show_off_our_successess = {
+		icon = GFX_decision_generic_political_rally
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			has_completed_focus = YUG_stambolic_a_new_yugoslavia
+		}
+
+		available = {
+			has_completed_focus = YUG_stambolic_a_new_yugoslavia
+			has_stability > 0.55
+		}
+
+		modifier = {
+			political_power_cost = 0.80
+
+		}
+		
+		cost = 35
+		days_remove = 60
+		fire_only_once = no
+		ai_will_do = {
+			factor = 2
+		}
+		
+        remove_effect = {
+			add_to_variable = {yug_regime_popularity_strength = 1}
+			custom_effect_tooltip = yug_regime_popularity_strength_increases_by_1
+			subtract_from_variable = {yug_regime_ethnic_tensions_strength = 15}	
+			custom_effect_tooltip = yug_regime_ethnic_tensions_strength_decreases_by_15
+			add_stability = -0.075
+        }
+	}
+
+	yug_stambolic_calm_down_tensions = {
+		icon = GFX_decision_generic_political_discourse
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			has_completed_focus = YUG_stambolic_a_new_yugoslavia
+		}
+
+		available = {
+			has_completed_focus = YUG_stambolic_a_new_yugoslavia
+			has_country_flag = yug_neg_win
+		}
+
+		modifier = {
+			political_power_cost = 0.70
+		}
+		
+		cost = 150
+		days_remove = 30
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		
+        complete_effect = {
+			subtract_from_variable = {yug_regime_ethnic_tensions_strength = 15}	
+			custom_effect_tooltip = yug_regime_ethnic_tensions_strength_decreases_by_15
+        }
+	}
+	
+	yug_stambolic_foreign_policy = {
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			has_completed_focus = YUG_stambolic_a_new_yugoslavia
+		}
+
+		available = {
+			has_completed_focus = YUG_stambolic_a_new_yugoslavia
+			NOT = {country_exists = CRO}
+		}
+
+		modifier = {
+
+		}
+		
+		cost = 35
+		days_remove = 30
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		
+        complete_effect = {
+			country_event = {id = yug_foreign_policy.12}
+        }
+	}
+
+}
+
+yug_stambolic_yugoslav_liberation_committee_category = {
+	
+	#le plan
+	#croatia and slovenia will receive ideas (dynamic modifier) about the yugoslav liberation committee, yugoslavia will be able to do decision to increase unpopularity of the croatian government and increase the strength of the YLC, the decisions will close when the focus operation proleter finishes.
+	# the cost of decisions will be determined by a var (cost of operations) that increase gradually by a mission.
+	
+	yug_stambolic_yug_lib_cost_of_operations_increase_mission = {
+		icon = GFX_decision_generic_decision
+	
+		allowed = {
+			original_tag = YUG
+		}
+		
+		available = {    
+			always = no
+		}
+
+		activation = {                          
+			hidden_trigger = {
+			has_country_flag = yug_stambolic_yug_lib_cost_of_operations_increase_mission_flag
+			}
+		}
+
+		priority = 1
+		  
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 100   
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		timeout_effect = {
+			add_to_variable = {yug_stambolic_cost_of_op = 40}
+			custom_effect_tooltip = yug_stambolic_cost_of_op_increases_by_40
+	
+		}
+	}
+	
+	yug_stambolic_increase_the_budget = {
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			has_completed_focus = YUG_stambolic_yugoslav_liberation_committee
+			NOT = {has_completed_focus = YUG_stambolic_operation_proleter}
+		}
+
+		available = {
+			has_completed_focus = YUG_stambolic_yugoslav_liberation_committee
+			NOT = {has_completed_focus = YUG_stambolic_operation_proleter}
+		}
+
+		modifier = {
+
+		}
+		
+		cost = yug_stambolic_cost_of_op
+		days_remove = 30
+		days_re_enable = 30
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		
+		complete_effect = {
+		}
+
+        remove_effect = {
+			add_days_mission_timeout = {
+				mission = yug_stambolic_yug_lib_cost_of_operations_increase_mission
+				days = 60
+			}
+        }
+	}
+	
+	yug_stambolic_recruit_defectors = {
+		icon = GFX_decision_eng_blackshirt_march
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			has_completed_focus = YUG_stambolic_yugoslav_liberation_committee
+			NOT = {has_completed_focus = YUG_stambolic_operation_proleter}
+		}
+
+		available = {
+			has_completed_focus = YUG_stambolic_yugoslav_liberation_committee
+			NOT = {has_completed_focus = YUG_stambolic_operation_proleter}
+		}
+
+		modifier = {
+
+		}
+		
+		cost = yug_stambolic_cost_of_op
+		days_remove = 30
+		fire_only_once = no
+		days_re_enable = 50		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		complete_effect = {
+			set_country_flag = yug_yug_lib_currently_doing_decision
+		}
+
+        remove_effect = {
+			subtract_from_variable = {CRO.YUG_yugoslav_liberation_committee_weekly_manpower_modifier = 500}
+			subtract_from_variable = {SLV.YUG_yugoslav_liberation_committee_weekly_manpower_modifier = 500}
+			
+			add_to_variable = {YUG_yugoslav_liberation_committee_buff_weekly_manpower_modifier = 500}			
+
+			custom_effect_tooltip = yug_stambolic_weekly_manpower_decrease_but_ours_increases
+
+			clr_country_flag = yug_yug_lib_currently_doing_decision
+        }
+	}
+	
+	yug_stambolic_spread_yugoslav_propaganda = {
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			has_completed_focus = YUG_stambolic_yugoslav_liberation_committee
+			NOT = {has_completed_focus = YUG_stambolic_operation_proleter}
+		}
+
+		available = {
+			has_completed_focus = YUG_stambolic_yugoslav_liberation_committee
+			NOT = {has_completed_focus = YUG_stambolic_operation_proleter}
+		}
+
+		modifier = {
+
+		}
+		
+		cost = yug_stambolic_cost_of_op
+		days_remove = 30
+		days_re_enable = 50				
+		fire_only_once = no
+		ai_will_do = {
+			factor = 3
+		}
+	
+		complete_effect = {
+			set_country_flag = yug_yug_lib_currently_doing_decision
+		}
+
+        remove_effect = {
+			subtract_from_variable = {CRO.YUG_yugoslav_liberation_committee_pp_gain_modifier = 0.15}
+			custom_effect_tooltip = yug_stambolic_pp_gain_decreases
+			
+			subtract_from_variable = {CRO.YUG_yugoslav_liberation_committee_war_support_modifier = 0.10}
+			custom_effect_tooltip = yug_stambolic_war_support_decreases
+
+			subtract_from_variable = {SLV.YUG_yugoslav_liberation_committee_pp_gain_modifier = 0.15}	
+			
+			subtract_from_variable = {SLV.YUG_yugoslav_liberation_committee_war_support_modifier = 0.10}
+
+			clr_country_flag = yug_yug_lib_currently_doing_decision
+        }
+	}
+
+	yug_stambolic_sabotage_the_army = {
+		icon = GFX_decision_broken_tank
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			has_completed_focus = YUG_stambolic_yugoslav_liberation_committee
+			NOT = {has_completed_focus = YUG_stambolic_operation_proleter}
+		}
+
+		available = {
+			has_completed_focus = YUG_stambolic_yugoslav_liberation_committee
+			NOT = {has_completed_focus = YUG_stambolic_operation_proleter}
+		}
+
+		modifier = {
+
+		}
+		
+		cost = yug_stambolic_cost_of_op
+		days_remove = 30
+		days_re_enable = 50				
+		fire_only_once = no
+		ai_will_do = {
+			factor = 2
+		}
+		
+		complete_effect = {
+			set_country_flag = yug_yug_lib_currently_doing_decision
+		}
+
+        remove_effect = {
+			subtract_from_variable = {CRO.YUG_yugoslav_liberation_committee_div_defence_modifier = 0.05}
+			subtract_from_variable = {SLV.YUG_yugoslav_liberation_committee_div_defence_modifier = 0.05}
+		
+			custom_effect_tooltip = yug_stambolic_div_defence_decreases
+			
+			clr_country_flag = yug_yug_lib_currently_doing_decision
+        }
+	}
+	
+	yug_stambolic_fund_pro_yugoslav_parties = {
+		icon = GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			has_completed_focus = YUG_stambolic_yugoslav_liberation_committee
+			NOT = {has_completed_focus = YUG_stambolic_operation_proleter}
+		}
+
+		available = {
+			has_completed_focus = YUG_stambolic_yugoslav_liberation_committee
+			NOT = {has_completed_focus = YUG_stambolic_operation_proleter}
+		}
+
+		modifier = {
+		}
+		
+		cost = yug_stambolic_cost_of_op
+		days_remove = 35
+		days_re_enable = 50				
+		fire_only_once = no
+		ai_will_do = {
+			factor = 2
+		}
+		
+		complete_effect = {
+			set_country_flag = yug_yug_lib_currently_doing_decision
+		}
+
+        remove_effect = {
+			CRO = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.075
+				}
+			}
+			SLV = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.075
+				}
+			}			
+			
+			clr_country_flag = yug_yug_lib_currently_doing_decision
+        }
+	}
+
+}
+
+# Seselj #
+
+yug_seselj_restructuring_of_the_state = {
+
+	yug_seselj_the_inevitable = {
+		icon = GFX_decision_revolt
+
+		allowed = {
+			original_tag = YUG
+		}
+		
+		activation = {
+			has_completed_focus = YUG_seselj_restructuring_the_state
+			NOT = {has_country_flag = bos_uprising_started}
+		}
+		
+		available = {
+			has_country_flag = bos_uprising_started
+		}
+		
+		modifier = {
+
+		}
+		
+		priority = 10
+		
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 150  
+		ai_will_do = {
+			factor = 2
+		}
+		
+		complete_effect = {
+		}
+
+        timeout_effect = {
+			country_event = { id = yug_rebel.1} 
+			set_country_flag = bos_uprising_started
+			BOS = {
+				transfer_state = 104
+				declare_war_on = {
+					type = annex_everything
+					target = YUG
+				}
+				country_event ={id = bos.1}
+			}
+        }
+	}
+	
+	yug_seselj_show_off_legitimacy = {
+		icon = GFX_decision_eng_trade_unions_demand
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			has_completed_focus = YUG_seselj_chain_the_republics_to_belgrade
+		}
+
+		available = {
+			has_completed_focus = YUG_seselj_chain_the_republics_to_belgrade
+		}
+
+		modifier = {
+			army_defence_factor = 0.10
+			army_attack_factor = 0.10
+			stability_weekly = 0.040
+		}
+		
+		cost = 35
+		days_remove = 35
+		days_re_enable = 50				
+		fire_only_once = no
+		ai_will_do = {
+			factor = 2
+		}
+		
+		complete_effect = {
+			YUG_decrease_radicalization_5 = yes
+		}
+
+        remove_effect = {
+			add_stability = 0.10
+			YUG_increase_nat_support = yes
+
+        }
+	}
+
+	yug_seselj_promote_nationalism = {
+		icon = GFX_decision_generic_form_nation
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			has_completed_focus = YUG_seselj_restructuring_the_state
+		}
+
+		available = {
+			has_completed_focus = YUG_seselj_restructuring_the_state
+		}
+
+		modifier = {
+			stability_weekly = -0.005
+			fascism_drift = 0.05
+		}
+		
+		cost = 35
+		days_remove = 35
+		days_re_enable = 50				
+		fire_only_once = no
+		ai_will_do = {
+			factor = 2
+		}
+		
+		complete_effect = {
+		}
+
+        remove_effect = {
+			add_war_support = 0.10
+			add_political_power = 50
+			YUG_increase_nat_support = yes
+			YUG_increase_radicalization_5 = yes
+		}
+	}
+
+	yug_seselj_revamp_the_education_system = {
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			has_completed_focus = YUG_seselj_restructuring_the_state
+		}
+
+		available = {
+			has_completed_focus = YUG_seselj_restructuring_the_state
+		}
+
+		modifier = {
+			stability_weekly = -0.005
+			fascism_drift = 0.05
+		}
+		
+		cost = 100
+		days_remove = 35
+		days_re_enable = 50				
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 2
+		}
+		
+		complete_effect = {
+		}
+
+        remove_effect = {
+			add_ideas = YUG_nationalist_education
+			YUG_increase_nat_support = yes
+			YUG_increase_radicalization_10 = yes
+		}
+	}
+	
+	yug_seselj_calm_down_the_movement = {
+		icon = GFX_decision_SWI_consolidate_council_power
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			has_completed_focus = YUG_seselj_restructuring_the_state
+		}
+
+		available = {
+			has_completed_focus = YUG_seselj_restructuring_the_state
+		}
+
+		modifier = {
+			fascism_drift = -0.05
+			political_power_cost = 0.50
+		}
+		
+		cost = 50
+		days_remove = 35
+		days_re_enable = 60
+		fire_only_once = no
+		ai_will_do = {
+			factor = 2
+		}
+		
+		complete_effect = {
+		}
+
+        remove_effect = {
+			add_stability = 0.05
+			YUG_decrease_nat_support = yes
+			YUG_decrease_radicalization_10 = yes
+		}
+	}	
+
+	yug_seselj_abolish_secularism = {
+		icon = GFX_decision_generic_break_treaty
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			has_completed_focus = YUG_seselj_restructuring_the_state
+		}
+
+		available = {
+			has_completed_focus = YUG_seselj_restructuring_the_state
+		}
+
+		modifier = {
+			stability_weekly = -0.005
+		}
+		
+		cost = 75
+		days_remove = 35
+		days_re_enable = 60
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 2
+		}
+		
+		complete_effect = {
+		}
+
+        remove_effect = {
+			YUG_increase_nat_support = yes
+			YUG_increase_radicalization_10 = yes
+			add_political_power = 100
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.10
+			}		
+			104 = {
+				add_resistance = 15
+				add_compliance = -10
+			}
+			BOS = {
+				add_manpower = 75000
+				add_popularity = {
+					ideology = paternal_autocracy
+					popularity = 0.10
+				}		
+			}
+			802 = {
+				add_resistance = 15
+				add_compliance = -10
+			}
+			KOS = {
+				add_manpower = 75000
+				add_popularity = {
+					ideology = paternal_autocracy
+					popularity = 0.10
+				}		
+			}
+			set_country_flag = abolished_secularism
+			custom_effect_tooltip = recruit_advisor_effect
+			show_ideas_tooltip = YUG_pavle
+		}
+	}	
+
+	yug_seselj_lower_military_supervision = {
+		icon = GFX_decision_generic_factory
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			has_completed_focus = YUG_seselj_restructuring_the_state
+		}
+
+		available = {
+			has_completed_focus = YUG_seselj_restructuring_the_state
+			has_completed_focus = YUG_seselj_promote_young_radicals
+		}
+
+		modifier = {
+			stability_weekly = -0.005
+		}
+		
+		cost = 50
+		days_remove = 35
+		days_re_enable = 60
+		fire_only_once = no
+		ai_will_do = {
+			factor = 2
+		}
+		
+		complete_effect = {
+		}
+
+        remove_effect = {
+			YUG_increase_nat_support = yes
+			YUG_increase_radicalization_5 = yes
+			add_political_power = 50
+			army_experience = -50
+			add_manpower = 50000			
+		}
+	}	
+
+	yug_seselj_promote_serbian_settlements = {
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			has_completed_focus = YUG_seselj_restructuring_the_state
+		}
+
+		available = {
+			has_completed_focus = YUG_seselj_restructuring_the_state
+			has_completed_focus = YUG_seselj_repopulation_programs
+		}
+
+		modifier = {
+			stability_weekly = -0.005
+		}
+		
+		cost = 50
+		days_remove = 35
+		days_re_enable = 60
+		fire_only_once = no
+		ai_will_do = {
+			factor = 2
+		}
+		
+		complete_effect = {
+		}
+
+        remove_effect = {
+			add_war_support = 0.05
+			YUG_increase_nat_support = yes
+			YUG_increase_radicalization_5 = yes
+			107 = {
+				add_manpower = -1000
+			}
+			961 = {
+				add_manpower = 1000
+			}
+			107 = {
+				add_manpower = -1000
+			}
+			104 = {
+				add_manpower = 1000
+			}			
+			107 = {
+				add_manpower = -1000
+			}
+			802 = {
+				add_manpower = 1000
+			}					
+		}
+	}
+
+	yug_seselj_power_to_security_services = {
+		icon = GFX_decision_onmap_recruit_operative
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			has_completed_focus = YUG_seselj_restructuring_the_state
+		}
+
+		available = {
+			has_completed_focus = YUG_seselj_restructuring_the_state
+			has_completed_focus = YUG_seselj_centralize_the_security_services
+		}
+
+		modifier = {
+			fascism_drift = 0.05
+			political_power_gain = 0.15
+		}
+		
+		cost = 50
+		days_remove = 35
+		days_re_enable = 60
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 2
+		}
+		
+		complete_effect = {
+		}
+
+        remove_effect = {
+			add_stability = 0.20
+			YUG_increase_nat_support = yes
+			YUG_increase_radicalization_10 = yes
+			add_political_power = 100
+
+
+		}
+	}
+
+	yug_seselj_expand_serb_only_places = {
+		icon = GFX_decision_eng_blackshirt_march
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			has_completed_focus = YUG_seselj_restructuring_the_state
+		}
+
+		available = {
+			has_completed_focus = YUG_seselj_restructuring_the_state
+			has_completed_focus = YUG_seselj_repopulation_programs
+		}
+
+		modifier = {
+			political_power_gain = 0.15
+		}
+		
+		cost = 50
+		days_remove = 35
+		days_re_enable = 60
+		fire_only_once = no
+		ai_will_do = {
+			factor = 2
+		}
+		
+		complete_effect = {
+		}
+
+        remove_effect = {
+			add_stability = -0.10
+			YUG_increase_nat_support = yes
+			YUG_increase_radicalization_10 = yes
+						
+		}
+	}
+
+	yug_seselj_nationalist_loyalty_decay = {
+		icon = GFX_decision_generic_political_discourse
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			has_completed_focus = YUG_seselj_restructuring_the_state
+		}
+
+		available = {
+			check_variable = {YUG_radicalization_var > 20}
+		}
+		
+		activation = {
+			has_completed_focus = YUG_seselj_restructuring_the_state
+			check_variable = {YUG_radicalization_var < 21}
+			NOT = {has_country_flag = yug_defeated}
+		}
+		
+		cancel_trigger = {
+			has_country_flag = yug_defeated
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		priority = 1  
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 30            
+		timeout_effect = {
+			if = {
+				limit = {
+					check_variable = {YUG_nationalist_support_var = 1}
+				}
+					if = {
+						limit = {
+							OR = {
+								AND = {
+								NOT = {check_variable = {YUG_nationalist_leader_change_count = 3}}
+								has_country_flag = abolished_secularism
+								}
+								NOT = {check_variable = {YUG_nationalist_leader_change_count = 2}}
+							}
+						}
+						country_event = {id = yug_seselj.12}
+					}
+					
+					else = {
+						add_political_power = -100
+						add_war_support = -0.30
+					}
+			}
+			YUG_decrease_nat_support = yes
+			activate_mission = yug_seselj_nationalist_loyalty_decay				
+		}
+		
+        complete_effect = {
+			add_political_power = 50
+			add_stability = 0.05
+        }
+	}
+	
+	yug_seselj_test = {
+		icon = GFX_decision_generic_factory
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			has_completed_focus = YUG_seselj_restructuring_the_state
+			is_debug = yes
+		}
+
+		available = {
+			has_completed_focus = YUG_seselj_restructuring_the_state
+		}
+
+		modifier = {
+			fascism_drift = -0.05
+			political_power_cost = 0.50
+		}
+		
+		cost = 50
+		days_remove = 0
+		days_re_enable = 1
+		fire_only_once = no
+		ai_will_do = {
+			factor = 2
+		}
+		
+		complete_effect = {
+		}
+
+        remove_effect = {
+	
+			YUG = {
+				add_to_variable = {YUG_radicalization_var = YUG_monthly_radicalization_var}
+				clamp_variable = {
+				var = YUG_radicalization_var
+				min = 0
+				max = 100
+				}	
+			}
+		}
+	}	
+
+
+}
+
+yug_milosevic_the_great_progress_campaign = {
+	
+	yug_milosevic_monthly_update = {
+	         
+		allowed = {    
+			original_tag = YUG		
+		}
+		
+		available = {
+			always = no
+		}
+		
+		activation = {     
+			has_completed_focus = YUG_milosevic_the_great_progress_campaign
+		}
+		visible = {
+			has_completed_focus = YUG_milosevic_finish_the_program
+			NOT = {has_completed_focus = YUG_milosevic_finish_the_program}
+		}  
+		  
+		priority = 50
+		is_good = yes
+		selectable_mission = no
+		days_mission_timeout = 30            
+		timeout_effect = {
+			YUG_clamper = yes		
+			custom_effect_tooltip = yug_milo_change
+			add_to_variable = {yug_milo_industrial_prog = yug_milo_industrial_prog_monthly}
+			add_to_variable = {yug_milo_tech_prog = yug_milo_tech_prog_monthly}
+			YUG_upgrade_ind_stage = yes
+			YUG_upgrade_tech_stage = yes
+			if = {
+				limit = {has_completed_focus = YUG_milosevic_finish_the_program}
+			}
+			else_if = {
+				activate_mission = yug_milosevic_monthly_update				
+			}
+		}
+       	complete_effect = {
+       	
+		}
+	}
+
+	yug_milosevic_expand_industries = {
+	
+        allowed = {
+			original_tag = YUG		
+		}                
+		available = {    
+			has_completed_focus = YUG_milosevic_the_great_progress_campaign
+			NOT = {
+				custom_trigger_tooltip = {
+					tooltip = yug_ind_stage_needs_5_nope
+					has_idea = YUG_milo_prog_industry_stage_5
+					
+				}				
+			}
+		}
+
+		visible = {
+			has_completed_focus = YUG_milosevic_the_great_progress_campaign
+			NOT = {has_completed_focus = YUG_milosevic_finish_the_program}
+		}  
+		
+		modifier = {
+			consumer_goods_factor = 0.30
+		} 
+		  
+		cost = 25
+		fire_only_once = no
+		days_remove = 30		
+		days_re_enable = 30
+		remove_effect = {
+			custom_effect_tooltip = yug_increase_ind_prog_monthly_5
+			YUG_clamper = yes		
+			add_to_variable = {yug_milo_industrial_prog_monthly = 5}
+
+		}
+
+	}
+
+	yug_milosevic_expand_universities = {
+	
+        allowed = {
+			original_tag = YUG		
+		}                
+		available = {    
+			has_completed_focus = YUG_milosevic_the_great_progress_campaign
+			NOT = {
+				custom_trigger_tooltip = {
+					tooltip = yug_tech_stage_needs_5_nope
+					has_idea = YUG_milo_prog_tech_stage_5
+					
+				}					
+			}
+		}
+
+		visible = {
+			has_completed_focus = YUG_milosevic_the_great_progress_campaign
+			NOT = {has_completed_focus = YUG_milosevic_finish_the_program}			
+		}  
+			
+		modifier = {
+			research_speed_factor = -0.15
+		} 
+		  
+		cost = 25
+		fire_only_once = no
+		days_remove = 30		
+		days_re_enable = 30
+		remove_effect = {
+			custom_effect_tooltip = yug_increase_tech_prog_monthly_5
+			YUG_clamper = yes		
+			add_to_variable = {yug_milo_tech_prog_monthly = 5}
+
+		}
+
+	}
+
+	yug_milosevic_increase_rd_funding = {
+	
+        allowed = {
+			original_tag = YUG		
+		}                
+		available = {    
+			has_completed_focus = YUG_milosevic_the_great_progress_campaign
+			NOT = {
+				custom_trigger_tooltip = {
+					tooltip = yug_tech_stage_needs_5_nope
+					has_idea = YUG_milo_prog_tech_stage_5
+					
+				}					
+			}
+		}
+
+		visible = {
+			has_completed_focus = YUG_milosevic_the_great_progress_campaign
+			NOT = {has_completed_focus = YUG_milosevic_finish_the_program}
+			
+		}  
+			
+		modifier = {
+			research_speed_factor = -0.30
+		} 
+		  
+		cost = 50
+		fire_only_once = no
+		days_remove = 30		
+		days_re_enable = 30
+		remove_effect = {
+			custom_effect_tooltip = yug_increase_tech_prog_monthly_10
+			YUG_clamper = yes		
+			add_to_variable = {yug_milo_tech_prog_monthly = 10}
+
+		}
+
+	}
+
+	yug_milosevic_increase_industry_funding = {
+	
+        allowed = {
+			original_tag = YUG		
+		}                
+		available = {    
+			has_completed_focus = YUG_milosevic_the_great_progress_campaign
+			NOT = {
+				custom_trigger_tooltip = {
+					tooltip = yug_ind_stage_needs_5_nope
+					has_idea = YUG_milo_prog_industry_stage_5
+					
+				}					
+			}
+		}
+
+		visible = {
+			has_completed_focus = YUG_milosevic_the_great_progress_campaign
+			NOT = {has_completed_focus = YUG_milosevic_finish_the_program}
+			
+		}  
+			
+		modifier = {
+			consumer_goods_factor = 0.60
+		} 
+		  
+		cost = 50
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 30
+		remove_effect = {
+			custom_effect_tooltip = yug_increase_ind_prog_monthly_10
+			YUG_clamper = yes		
+			add_to_variable = {yug_milo_industrial_prog_monthly = 10}
+
+		}
+
+	}
+	
+	yug_milosevic_test = {
+	
+        allowed = {
+		}                
+		available = {    
+			has_completed_focus = YUG_milosevic_the_great_progress_campaign
+		}
+
+		visible = {
+			original_tag = YUG
+			has_completed_focus = YUG_milosevic_the_great_progress_campaign
+			is_debug = yes
+		}  
+		  
+		            
+		complete_effect = {
+			add_political_power = 1
+			YUG_clamper = yes		
+			add_to_variable = {yug_milo_industrial_prog_monthly = 25}
+			add_to_variable = {yug_milo_tech_prog_monthly = 25}
+
+		}
+
+	}
+	
+	yug_milosevic_test2 = {
+	
+        allowed = {
+		}                
+		available = {    
+			has_completed_focus = YUG_milosevic_the_great_progress_campaign
+		}
+
+		visible = {
+			original_tag = YUG
+			has_completed_focus = YUG_milosevic_the_great_progress_campaign
+			is_debug = yes
+		}  
+		  
+		            
+		complete_effect = {
+			add_political_power = 2
+			YUG_clamper = yes			
+			add_to_variable = {yug_milo_industrial_prog = 25}
+			add_to_variable = {yug_milo_tech_prog = 25}
+
+		}
+
+	}	
+}
+
+yug_post_defeat_cat = {
+	
+	yug_post_defeat_organize_elections = {
+		icon = GFX_decision_eng_trade_unions_demand
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			OR = {
+				has_government = social_democracy
+				has_government = liberalism
+			}	
+		}
+
+		available = {
+		}
+
+		modifier = {
+		}
+		
+		cost = 0
+		days_remove = 35
+		days_re_enable = 50				
+		fire_only_once = no
+		ai_will_do = {
+			factor = 50
+		}
+		
+		complete_effect = {
+		}
+
+        remove_effect = {
+			add_stability = 0.10
+			country_event = {id = yug_post_defeat.1}
+        }
+	}
+	
+	yug_post_defeat_improve_relations_with_former_yug = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			OR = {
+				has_government = social_democracy
+				has_government = liberalism
+			}	
+		}
+
+		available = {
+		}
+
+		modifier = {
+		}
+		
+		cost = 25
+		days_remove = 15
+		days_re_enable = 50				
+		fire_only_once = no
+		ai_will_do = {
+			factor = 50
+		}
+		
+		complete_effect = {
+		}
+
+        remove_effect = {
+			add_stability = 0.10
+			set_country_flag = yug_improved_rel_with_former_yug
+			add_opinion_modifier = {
+				target = BOS
+				modifier = large_increase
+			}
+			add_opinion_modifier = {
+				target = KOS
+				modifier = large_increase
+			}
+			add_opinion_modifier = {
+				target = MAC
+				modifier = large_increase
+			}
+			add_opinion_modifier = {
+				target = SRP
+				modifier = large_increase
+			}
+			add_opinion_modifier = {
+				target = HRZ
+				modifier = large_increase
+			}			
+        }
+	}	
+
+	yug_post_defeat_yug_economic_zone = {
+		icon = GFX_decision_generic_industry
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			OR = {
+				has_government = social_democracy
+				has_government = liberalism
+			}	
+		}
+
+		available = {
+			has_country_flag = yug_improved_rel_with_former_yug
+		}
+
+		modifier = {
+		}
+		
+		cost = 50
+		days_remove = 60
+		days_re_enable = 50				
+		fire_only_once = no
+		ai_will_do = {
+			factor = 50
+		}
+		
+		complete_effect = {
+		}
+
+        remove_effect = {
+			add_stability = 0.10
+			set_country_flag = yug_former_yug_economic_zone
+			SLV = {
+				country_event = {id = yug_post_defeat.2}
+			}
+			BOS = {
+				country_event = {id = yug_post_defeat.2}
+			}
+			SRP = {
+				country_event = {id = yug_post_defeat.2}
+			}
+			HRZ = {
+				country_event = {id = yug_post_defeat.2}
+			}
+			KOS = {
+				country_event = {id = yug_post_defeat.2}
+			}
+			MAC = {
+				country_event = {id = yug_post_defeat.2}
+			}
+			if = {
+				limit = {CRO = {NOT = {has_government = neutrality}}}
+				CRO = {
+					country_event = {id = yug_post_defeat.2}
+				}				
+			}			
+        }
+	}	
+	
+	yug_post_defeat_yug_closer_coop = {
+		icon = GFX_decision_hol_war_on_pacifism
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			OR = {
+				has_government = social_democracy
+				has_government = liberalism
+			}	
+		}
+
+		available = {
+			has_country_flag = yug_improved_rel_with_former_yug
+			has_country_flag = yug_former_yug_economic_zone
+		}
+
+		modifier = {
+			stability_weekly = 0.010
+		}
+		
+		cost = 100
+		days_remove = 150
+		days_re_enable = 50				
+		fire_only_once = no
+		ai_will_do = {
+			factor = 50
+		}
+		
+		complete_effect = {
+		}
+
+        remove_effect = {
+			add_stability = 0.05
+			create_faction = YUG_FACTION
+			every_country = {
+				limit = {has_idea = YUG_yugoslav_economic_zone}
+				country_event = {id = yug_post_defeat.3}
+			}
+        }
+	}	
+
+	yug_post_defeat_invade_bosnia = {
+		icon = GFX_decision_generic_tank
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			has_government = fascism
+			NOT = {country_exists = SRP}
+		}
+
+		available = {
+			BOS = {
+				has_war = no
+				owns_state = 804
+			}
+		}
+
+		modifier = {
+			stability_weekly = 0.020
+		}
+		
+		cost = 50
+		days_remove = 60
+		days_re_enable = 50				
+		fire_only_once = no
+		ai_will_do = {
+			factor = 50
+		}
+		
+		complete_effect = {
+		}
+
+        remove_effect = {
+			add_stability = 0.10
+			SRP = {add_ideas = SRP_belgrade_support}
+        }
+	}	
+	
+	yug_post_defeat_invade_kosovo = {
+		icon = GFX_decision_generic_tank
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+			has_government = fascism
+		}
+
+		available = {
+			owns_state = 104
+		}
+
+		modifier = {
+			stability_weekly = 0.020
+		}
+		
+		cost = 50
+		days_remove = 100
+		days_re_enable = 50				
+		fire_only_once = no
+		ai_will_do = {
+			factor = 50
+		}
+		
+		complete_effect = {
+		}
+
+        remove_effect = {
+			add_stability = 0.10
+			declare_war_on = {
+				target = KOS
+				type = annex_everything
+			}
+        }
+	}	
+
+	yug_post_defeat_end_of_collapse_cw = {
+		icon = GFX_decision_hol_war_on_pacifism
+
+		allowed = {
+			OR = {
+				original_tag = YUG
+				original_tag = SER
+				original_tag = VOJ
+			}
+		}
+
+		visible = {
+			has_global_flag = yug_total_collapse
+		}
+
+		available = {
+			owns_state = 107
+			has_war = no
+		}
+		
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 50
+		}
+		
+		complete_effect = {
+		}
+
+        remove_effect = {
+			if = { ##ser tag win
+				limit = {SER = {owns_state = 107}}
+				if = {
+					limit = {has_government = communism}
+					YUG = {
+						retire_ideology_leader = communism
+					}
+					SER = {
+						set_nationality = {
+							target_country = YUG
+							character = YUG_branko_kitanovic
+						}
+					}	
+					YUG = {
+						set_cosmetic_tag = YUG_new_com_cosmetic
+						set_party_name = {
+							ideology = communism
+							name = YUG_communism_NCPY_party
+							long_name = YUG_communism_NCPY_party_long
+						}
+						set_politics = {
+							ruling_party = communism
+							last_election = "1991.5.3"
+							election_frequency = 36
+							elections_allowed = no
+						}
+						
+						set_popularities = {
+							communism = 54
+							socialism = 26
+							fascism = 20
+							paternal_autocracy = 0
+							reformed_communism = 0
+							
+						}
+						annex_country = { 
+							target = SER
+							transfer_troops = no
+						}
+						YUG = {change_tag_from = SER }
+					}
+				}
+				else = { ##arkan		
+					SER = {
+						set_nationality = {
+							target_country = YUG
+							character = YUG_arkan
+						}
+					}	
+					YUG = {
+						set_cosmetic_tag = YUG_greater_serbia_cosmetic
+						set_politics = {
+							ruling_party = paternal_autocracy
+							elections_allowed = no
+						}				
+						set_popularities = {
+							fascism = 50
+							paternal_autocracy = 50
+							reformed_communism = 0
+							
+						}
+						set_party_name = {
+							ideology = paternal_autocracy
+							name = YUG_paternal_autocracy_party
+							long_name = YUG_paternal_autocracy_party_long
+						}
+						set_party_name = {
+							ideology = fascism
+							name = YUG_paternal_autocracy_party
+							long_name = YUG_paternal_autocracy_party_long
+						}						
+						add_country_leader_role = {
+							character = YUG_arkan
+							promote_leader = yes
+							country_leader = {
+								ideology = military_junta
+								expire = "2050.1.1.1"
+							}
+						}
+						annex_country = { 
+							target = SER
+							transfer_troops = no
+						}					
+						YUG = {change_tag_from = SER }
+					}
+				}
+			}
+			else_if = { #vojvodina win
+				limit = {original_tag = VOJ}
+				set_cosmetic_tag = VOJ_win
+				SER = {
+					every_core_state = {
+						add_core_of = VOJ
+					}
+				}
+			}
+			else_if = { #anarkiddie win
+				limit = {original_tag = YUG}
+				give_guarantee = VOJ
+				diplomatic_relation = {
+					country = VOJ
+					relation = non_aggression_pact
+					active = yes
+				}
+				VOJ = {
+					give_guarantee = YUG
+					diplomatic_relation = {
+						country = YUG
+						relation = non_aggression_pact
+						active = yes
+					}					
+				}
+				
+			}
+			
+        }
+	}	
+	
+}	
+
+YUG_rebels_management_category = {
+
+	YUG_start_bosnia_operation = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = YUG
+		}
+		available = {
+			104 = {
+				is_demilitarized_zone = yes
+			}	
+			OR = {
+				961 = {
+					is_demilitarized_zone = no
+				}
+				960 = {
+					is_demilitarized_zone = no
+				}
+				804 = {
+					is_demilitarized_zone = no
+				}
+				959 = {
+					is_demilitarized_zone = no
+				}				
+			}
+		}
+		visible = {
+
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 104
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		custom_cost_trigger = {
+			command_power > 19
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_20_PP_50
+		
+		fire_only_once = no
+		ai_will_do = {
+			factor = 75
+		}
+		days_remove = 10
+		days_re_enable = 150
+		
+		complete_effect = {
+			104 = {
+				set_demilitarized_zone = no
+			}
+			hidden_effect = {
+				add_political_power = -50
+				add_command_power = -20
+			}
+		}
+		remove_effect = { 
+			activate_mission = YUG_bosnia_operation_mission
+			set_country_flag = YUG_bosnia_operation_mission
+			custom_effect_tooltip = move_at_least_8_divisions
+		}
+	}
+
+	YUG_bosnia_operation_mission = {
+
+		icon = GFX_decision_generic_ignite_civil_war
+
+		allowed = {
+			original_tag = YUG
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = has_lower_than_8_divisions
+				divisions_in_state = {
+					state = 104
+					size < 8
+				}
+			}
+		}
+		visible = {
+
+		}
+		activation = {
+			has_country_flag = YUG_bosnia_operation_mission
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 104
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		ai_will_do = {
+			factor = 75
+		}
+		
+		cancel_trigger  = {
+			OR = {
+				has_country_flag = yug_mass_rebellions
+				has_country_flag = yug_neg_win
+			}	
+		}		
+		
+		selectable_mission = no
+		days_mission_timeout = 60 
+		
+		timeout_effect = {
+			add_stability = 0.05
+			clr_country_flag = YUG_bosnia_operation_mission
+			104 = {
+				set_demilitarized_zone = yes
+				YUG_improve_rebel_situation = yes
+			}
+		}
+
+		complete_effect = { 
+			add_stability = -0.10
+			clr_country_flag = YUG_bosnia_operation_mission
+			104 = {
+				set_demilitarized_zone = yes
+				YUG_worsen_rebel_situation = yes
+			}			
+		}
+
+		cancel_effect = {
+			clr_country_flag = YUG_bosnia_operation_mission
+		}	
+	
+	}
+
+	YUG_start_herzegov_operation = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = YUG
+		}
+		available = {
+			804 = {
+				is_demilitarized_zone = yes
+			}
+		}
+		visible = {
+
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 804
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		custom_cost_trigger = {
+			command_power > 19
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_20_PP_50
+		
+		fire_only_once = no
+		ai_will_do = {
+			factor = 75
+		}
+		days_remove = 10
+		days_re_enable = 150
+		
+		complete_effect = {
+			804 = {
+				set_demilitarized_zone = no
+			}
+			hidden_effect = {
+				add_political_power = -50
+				add_command_power = -20
+			}
+		}
+		remove_effect = { 
+			activate_mission = YUG_herzegov_operation_mission
+			set_country_flag = YUG_herzegov_operation_mission
+			custom_effect_tooltip = move_at_least_8_divisions
+		}
+	}
+
+	YUG_herzegov_operation_mission = {
+
+		icon = GFX_decision_generic_ignite_civil_war
+
+		allowed = {
+			original_tag = YUG
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = has_lower_than_8_divisions
+				divisions_in_state = {
+					state = 804
+					size < 8
+				}
+			}
+		}
+		visible = {
+
+		}
+		activation = {
+			has_country_flag = YUG_herzegov_operation_mission
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 804
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		ai_will_do = {
+			factor = 75
+		}
+	
+		cancel_trigger  = {
+			OR = {
+				has_country_flag = yug_mass_rebellions
+				has_country_flag = yug_neg_win
+			}	
+		}
+	
+		selectable_mission = no
+		days_mission_timeout = 60 
+		
+		timeout_effect = {
+			add_stability = 0.05
+			clr_country_flag = YUG_herzegov_operation_mission
+			804 = {
+				set_demilitarized_zone = yes
+				YUG_improve_rebel_situation = yes
+			}
+		}
+
+		complete_effect = { 
+			add_stability = -0.10
+			clr_country_flag = YUG_herzegov_operation_mission
+			804 = {
+				set_demilitarized_zone = yes
+				YUG_worsen_rebel_situation = yes
+			}			
+		}
+		
+		cancel_effect = {
+			clr_country_flag = YUG_herzegov_operation_mission
+		}		
+	}
+
+	YUG_start_banja_luka_operation = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = YUG
+		}
+		available = {
+			959 = {
+				is_demilitarized_zone = yes
+			}
+			OR = {
+				961 = {
+					is_demilitarized_zone = no
+				}		
+				104 = {
+					is_demilitarized_zone = no
+				}				
+			}
+		}
+		visible = {
+
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 959
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		custom_cost_trigger = {
+			command_power > 19
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_20_PP_50
+		
+		fire_only_once = no
+		ai_will_do = {
+			factor = 75
+		}
+		days_remove = 10
+		days_re_enable = 150
+		
+		complete_effect = {
+			959 = {
+				set_demilitarized_zone = no
+			}
+			hidden_effect = {
+				add_political_power = -50
+				add_command_power = -20
+			}
+		}
+		remove_effect = { 
+			activate_mission = YUG_banja_luka_operation_mission
+			set_country_flag = YUG_banja_luka_operation_mission
+			custom_effect_tooltip = move_at_least_8_divisions
+		}
+	}
+
+	YUG_banja_luka_operation_mission = {
+
+		icon = GFX_decision_generic_ignite_civil_war
+
+		allowed = {
+			original_tag = YUG
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = has_lower_than_8_divisions
+				divisions_in_state = {
+					state = 959
+					size < 8
+				}
+			}
+		}
+		visible = {
+
+		}
+		activation = {
+			has_country_flag = YUG_banja_luka_operation_mission
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 959
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		ai_will_do = {
+			factor = 75
+		}
+	
+		cancel_trigger  = {
+			OR = {
+				has_country_flag = yug_mass_rebellions
+				has_country_flag = yug_neg_win
+			}	
+		}
+	
+		selectable_mission = no
+		days_mission_timeout = 60 
+		
+		timeout_effect = {
+			add_stability = 0.05
+			clr_country_flag = YUG_banja_luka_operation_mission
+			959 = {
+				set_demilitarized_zone = yes
+				YUG_improve_rebel_situation = yes
+			}
+		}
+
+		complete_effect = { 
+			add_stability = -0.10
+			clr_country_flag = YUG_banja_luka_operation_mission
+			959 = {
+				set_demilitarized_zone = yes
+				YUG_worsen_rebel_situation = yes
+			}			
+		}
+		
+		cancel_effect = {
+			clr_country_flag = YUG_banja_luka_operation_mission
+		}			
+	}
+
+	YUG_start_brcko_operation = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = YUG
+		}
+		available = {
+			961 = {
+				is_demilitarized_zone = yes
+			}
+		}
+		visible = {
+
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 961
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		custom_cost_trigger = {
+			command_power > 19
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_20_PP_50
+		
+		fire_only_once = no
+		ai_will_do = {
+			factor = 75
+		}
+		days_remove = 10
+		days_re_enable = 150
+		
+		complete_effect = {
+			961 = {
+				set_demilitarized_zone = no
+			}
+			hidden_effect = {
+				add_political_power = -50
+				add_command_power = -20
+			}
+		}
+		remove_effect = { 
+			activate_mission = YUG_brcko_operation_mission
+			set_country_flag = YUG_brcko_operation_mission
+			custom_effect_tooltip = move_at_least_8_divisions
+		}
+	}
+
+	YUG_brcko_operation_mission = {
+
+		icon = GFX_decision_generic_ignite_civil_war
+
+		allowed = {
+			original_tag = YUG
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = has_lower_than_8_divisions
+				divisions_in_state = {
+					state = 961
+					size < 8
+				}
+			}
+		}
+		visible = {
+
+		}
+		activation = {
+			has_country_flag = YUG_brcko_operation_mission
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 961
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		ai_will_do = {
+			factor = 75
+		}
+	
+		cancel_trigger  = {
+			OR = {
+				has_country_flag = yug_mass_rebellions
+				has_country_flag = yug_neg_win
+			}	
+		}
+	
+		cost = 35
+		selectable_mission = no
+		days_mission_timeout = 60 
+		
+		timeout_effect = {
+			add_stability = 0.05
+			clr_country_flag = YUG_brcko_operation_mission
+			961 = {
+				set_demilitarized_zone = yes
+				YUG_improve_rebel_situation = yes
+			}
+		}
+
+		complete_effect = { 
+			add_stability = -0.10
+			clr_country_flag = YUG_brcko_operation_mission
+			961 = {
+				set_demilitarized_zone = yes
+				YUG_worsen_rebel_situation = yes
+			}			
+		}
+		
+		cancel_effect = {
+			clr_country_flag = YUG_brcko_operation_mission
+		}
+	}
+
+	YUG_start_eastern_srpska_operation = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = YUG
+		}
+		available = {
+			960 = {
+				is_demilitarized_zone = yes
+			}
+		}
+		visible = {
+
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 960
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		custom_cost_trigger = {
+			command_power > 19
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_20_PP_50
+		
+		fire_only_once = no
+		ai_will_do = {
+			factor = 75
+		}
+		days_remove = 10
+		days_re_enable = 150
+		
+		complete_effect = {
+			960 = {
+				set_demilitarized_zone = no
+			}
+			hidden_effect = {
+				add_political_power = -50
+				add_command_power = -20
+			}
+		}
+		remove_effect = { 
+			activate_mission = YUG_eastern_srpska_operation_mission
+			set_country_flag = YUG_eastern_srpska_operation_mission
+			custom_effect_tooltip = move_at_least_8_divisions
+		}
+	}
+
+	YUG_eastern_srpska_operation_mission = {
+
+		icon = GFX_decision_generic_ignite_civil_war
+
+		allowed = {
+			original_tag = YUG
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = has_lower_than_8_divisions
+				divisions_in_state = {
+					state = 960
+					size < 8
+				}
+			}
+		}
+		visible = {
+
+		}
+		activation = {
+			has_country_flag = YUG_eastern_srpska_operation_mission
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 960
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		ai_will_do = {
+			factor = 75
+		}
+
+		cancel_trigger  = {
+			OR = {
+				has_country_flag = yug_mass_rebellions
+				has_country_flag = yug_neg_win
+			}	
+		}
+		
+		selectable_mission = no
+		days_mission_timeout = 60 
+		
+		timeout_effect = {
+			add_stability = 0.05
+			clr_country_flag = YUG_eastern_srpska_operation_mission
+			960 = {
+				set_demilitarized_zone = yes
+				YUG_improve_rebel_situation = yes
+			}
+		}
+
+		complete_effect = { 
+			add_stability = -0.10
+			clr_country_flag = YUG_eastern_srpska_operation_mission
+			960 = {
+				set_demilitarized_zone = yes
+				YUG_worsen_rebel_situation = yes
+			}			
+		}
+		
+		cancel_effect = {
+			clr_country_flag = YUG_eastern_srpska_operation_mission
+		}		
+	}
+
+	YUG_start_kosovo_operation = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = YUG
+		}
+		available = {
+			802 = {
+				is_demilitarized_zone = yes
+			}
+		}
+		visible = {
+
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 802
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		custom_cost_trigger = {
+			command_power > 19
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_20_PP_50
+		
+		fire_only_once = no
+		ai_will_do = {
+			factor = 75
+		}
+		days_remove = 10
+		days_re_enable = 150
+		
+		complete_effect = {
+			802 = {
+				set_demilitarized_zone = no
+			}
+			hidden_effect = {
+				add_political_power = -50
+				add_command_power = -20
+			}
+		}
+		remove_effect = { 
+			activate_mission = YUG_kosovo_operation_mission
+			set_country_flag = YUG_kosovo_operation_mission
+			custom_effect_tooltip = move_at_least_8_divisions
+		}
+	}
+
+	YUG_kosovo_operation_mission = {
+
+		icon = GFX_decision_generic_ignite_civil_war
+
+		allowed = {
+			original_tag = YUG
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = has_lower_than_8_divisions
+				divisions_in_state = {
+					state = 802
+					size < 8
+				}
+			}
+		}
+		visible = {
+
+		}
+		activation = {
+			has_country_flag = YUG_kosovo_operation_mission
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 802
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		ai_will_do = {
+			factor = 75
+		}
+		
+		cancel_trigger  = {
+			OR = {
+				has_country_flag = yug_mass_rebellions
+				has_country_flag = yug_neg_win
+			}	
+		}
+		
+		selectable_mission = no
+		days_mission_timeout = 60 
+		
+		timeout_effect = {
+			add_stability = 0.05
+			clr_country_flag = YUG_kosovo_operation_mission
+			802 = {
+				set_demilitarized_zone = yes
+				YUG_improve_rebel_situation = yes
+			}
+		}
+
+		complete_effect = { 
+			add_stability = -0.10
+			clr_country_flag = YUG_kosovo_operation_mission
+			802 = {
+				set_demilitarized_zone = yes
+				YUG_worsen_rebel_situation = yes
+			}			
+		}
+		
+		cancel_effect = {
+			clr_country_flag = YUG_kosovo_operation_mission
+		}			
+	}
+	yug_seperatist_operation = {
+		icon = GFX_decision_revolt
+
+		allowed = {
+			original_tag = YUG
+		}
+
+		visible = {
+		}
+
+		available = {
+			
+		}
+		
+		activation = {
+			NOT = {
+				has_country_flag = yug_mass_rebellions
+			}
+		}
+
+		cancel_trigger  = {
+			has_country_flag = yug_mass_rebellions
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		priority = 1  
+		cost = 200
+		is_good = no
+		selectable_mission = yes
+		days_mission_timeout = 200            
+		timeout_effect = {
+			random_owned_controlled_state = {
+				prioritize = {
+					104 802 804 959 960 961 			
+				}
+				YUG_worsen_rebel_situation = yes				
+			}
+			if = {
+				limit = {NOT = {has_country_flag = yug_mass_rebellions}}
+				activate_mission = yug_seperatist_operation				
+			}
+		}
+		
+        complete_effect = {
+
+        }
+	}
+}

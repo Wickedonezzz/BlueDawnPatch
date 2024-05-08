@@ -1,0 +1,35 @@
+
+state={
+	id=553
+	name="STATE_553"
+
+	history={
+		owner = LEB
+		victory_points = {
+			792 5 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 1
+			air_base = 4
+			792 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = LEB
+		add_claim_by = HZB
+
+	}
+
+	provinces={
+		792 11919 13339 13342 
+	}
+	manpower=3243000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

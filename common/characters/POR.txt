@@ -1,0 +1,33 @@
+characters = {
+
+	POR_jorge_sampaio = {
+		name = "Jorge Sampaio"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POR/Jorge_Sampaio.dds"
+			}
+		}
+		country_leader = {
+			ideology = democratic_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	POR_carlos_carvalhas = {
+		name = "Carlos Carvalhas"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POR/Carlos_Carvalhas.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}	
+
+}

@@ -1,0 +1,247 @@
+division_template = { # Mechanised Division #
+	name = "Mechanised Division"
+	division_names_group = GENERIC_MEC_01
+
+	regiments = {
+		main_battle_tank_armor = { x = 0 y = 0 }
+		main_battle_tank_armor = { x = 0 y = 1 }
+		infantry_fighting_vehicle_armor = { x = 0 y = 2 }
+		infantry_fighting_vehicle_armor = { x = 0 y = 3 }
+		recon_vehicle_armor = { x = 0 y = 4 }
+		heavy_infantry_unit = { x = 1 y = 0 }
+		heavy_infantry_unit = { x = 1 y = 1 }
+		heavy_infantry_unit = { x = 1 y = 2 }
+		heavy_infantry_unit = { x = 2 y = 0 }
+		heavy_infantry_unit = { x = 2 y = 1 }
+		heavy_infantry_unit = { x = 2 y = 2 }
+		motorised_artillery_unit = { x = 3 y = 0 }
+		motorised_artillery_unit = { x = 3 y = 1 }
+		rocket_artillery_unit = { x = 3 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		maintenance_company = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		towed_artillery_support_unit = { x = 0 y = 3 }
+		transport_heli_company = { x = 0 y = 4 }
+	}
+	priority = 1
+}
+division_template = { # Infantry Division #
+	name = "Infantry Division"
+	division_names_group = GENERIC_INF_01
+
+	regiments = {
+		infantry_unit = { x = 0 y = 0 }
+		infantry_unit = { x = 0 y = 1 }
+		infantry_unit = { x = 0 y = 2 }
+		infantry_unit = { x = 0 y = 3 }
+		infantry_unit = { x = 0 y = 4 }
+		infantry_unit = { x = 1 y = 0 }
+		infantry_unit = { x = 1 y = 1 }
+		infantry_unit = { x = 1 y = 2 }
+		infantry_unit = { x = 1 y = 3 }
+        towed_artillery_unit = { x = 2 y = 0 }
+	}
+	support = {
+		towed_artillery_support_unit = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		engineer = { x = 0 y = 3 }
+	}
+	priority = 1
+}
+units = {
+	# Infantry Division #
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 421
+		division_template = "Infantry Division"
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.80
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2	
+		}
+		location = 3583
+		division_template = "Infantry Division"
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.80
+	}
+	# Mechanised Division #
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 421
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "SOV" }
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_0 = { owner = "CZE" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "CZE" }
+			rocket_artillery_equipment_2 = { owner = "CZE" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.80
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 9421
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "SOV" }
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_0 = { owner = "CZE" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "CZE" }
+			rocket_artillery_equipment_2 = { owner = "CZE" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.80
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 6576
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "SOV" }
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_0 = { owner = "CZE" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "CZE" }
+			rocket_artillery_equipment_2 = { owner = "CZE" }
+			heli_transport_equipment_1 = { owner = "POL" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.80
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 9429
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "SOV" }
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_0 = { owner = "CZE" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "CZE" }
+			rocket_artillery_equipment_2 = { owner = "CZE" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.80
+	}
+}
+instant_effect = {
+
+	# Stockpile #
+        add_equipment_to_stockpile = {
+		type = infantry_weapons_1
+		amount = 5000
+		producer = CZE
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 750
+		producer = CZE
+	}
+        add_equipment_to_stockpile = {
+		type = motorised_equipment_1
+		amount = 800
+		producer = CZE
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_anti_tank_weapons_1
+		amount = 500
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_anti_tank_weapons_2
+		amount = 100
+		producer = USA
+	}
+
+	add_equipment_to_stockpile = {
+		type = mbt_tank_equipment_0
+		amount = 250
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = mbt_tank_equipment_1
+		amount = 290
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = ifv_tank_equipment_0
+		amount = 370
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = ifv_tank_equipment_1
+		amount = 170
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = apc_tank_equipment_1
+		amount = 400
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = recon_vehicle_equipment_0
+		amount = 20
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = towed_artillery_equipment_1
+		amount = 110
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = motorised_artillery_equipment_2
+		amount = 90
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = motorised_artillery_equipment_3
+		amount = 50
+		producer = CZE
+	}
+	add_equipment_to_stockpile = {
+		type = rocket_artillery_equipment_2
+		amount = 20
+		producer = CZE
+	}
+	add_equipment_to_stockpile = {
+		type = heli_transport_equipment_1
+		amount = 7
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = heli_attack_equipment_0
+		amount = 34
+		producer = SOV
+	}
+}

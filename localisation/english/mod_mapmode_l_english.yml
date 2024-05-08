@@ -1,0 +1,13 @@
+﻿l_english:
+ MAPMODE_COLD_WAR_MAP:0 "Cold War"
+ MAPMODE_COLD_WAR_MAP_NAME:0 "Cold War"
+ MAPMODE_COLD_WAR_MAP_DESCRIPTION:0 "Shows the current Cold War Development with countries' stances\n\n§BBlue countries§! are aligned with [USA.GetNameWithFlag] \n\n§RRed countries§! are aligned with [SOV.GetNameWithFlag] \n\n§tPink countries§! are aligned with [PRC.GetNameWithFlag] \n\n§gGrey countries§! are either not aligned with any side or do not have a clear stance."
+ cold_war_map_tooltip:0 "[From.Controller.cold_war_loc_thing]"
+ nation_is_aligned_with_ussr:0 "[From.Controller.GetNameWithFlag] is aligned with §R[SOV.GetNameWithFlag]§!."
+ ussr_special_cold_war_text:0 "[From.Controller.GetNameWithFlag] is a Cold War Power with its §Rown sphere§!."
+ nation_is_aligned_with_usa:0 "[From.Controller.GetNameWithFlag] is aligned with §B[USA.GetNameWithFlag]§!."
+ usa_special_cold_war_text:0 "[From.Controller.GetNameWithFlag] is a Cold War Power with its §2own sphere§!."
+ nation_is_aligned_with_china:0 "[From.Controller.GetNameWithFlag] is aligned with §t[PRC.GetNameWithFlag]§!."
+ china_special_cold_war_text:0 "[From.Controller.GetNameWithFlag] is a Cold War Power with its §town sphere§!."
+ nation_is_aligned_with_noone:0 "[From.Controller.GetNameWithFlag] is §gnot aligned with any nation§!."
+ cold_war_map_tooltip_delay:0 ""

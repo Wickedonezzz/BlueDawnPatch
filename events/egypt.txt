@@ -1,0 +1,96 @@
+add_namespace = egypt
+
+#death#
+country_event = {
+	id = egypt.1
+	title = egypt.1.t
+	desc = egypt.1.d
+	picture = GFX_report_event_spark
+
+    is_triggered_only = yes
+
+		#rip#
+	option = {
+		name = egypt.1.a
+		news_event = {id = old_times_news.79}
+		retire_country_leader = yes
+		promote_character = EGY_party
+                hidden_effect = {
+					EGY = {
+						country_event = { id = egypt.2 days = 9 }
+					}
+				}
+	}
+}
+country_event = {
+	id = egypt.2
+	title = egypt.2.t
+	desc = egypt.2.d
+	picture = GFX_report_event_spark
+    is_triggered_only = yes
+
+		#rip#
+	option = {
+		name = egypt.2.a
+		promote_character = EGY_Khaled_Mohieddin
+                  set_politics = {
+			ruling_party = socialism
+		}
+		add_popularity = {
+			ideology = socialism
+		   popularity = 0.4
+		  }
+		  news_event = {id = old_times_news.80}
+		add_ideas = {
+			EGY_nasser_dream_live_on
+			EGY_idealist_revolution
+			EGY_islamist_terroist 
+		} 
+	}
+}
+
+#wholesome democracy#
+country_event = {
+	id = egypt.3
+	title = egypt.3.t
+	desc = egypt.3.d
+	picture = GFX_report_event_spark
+	
+    is_triggered_only = yes
+
+		#I LOVE LIBERALISM#
+	option = {
+		name = egypt.3.a
+		release = EGY
+		EGY = {
+			load_oob = EGY_2000
+			set_politics = {
+				ruling_party = liberalism
+			}
+			add_popularity = {
+				ideology = liberalism
+			   popularity = 0.3
+			}
+			add_popularity = {
+				ideology = democratic
+			   popularity = 0.2
+			}		
+			add_popularity = {
+				ideology = social_democracy
+			   popularity = 0.2
+			}		
+		}
+		if = {
+			limit = {country_exists = YEM}
+			YEM = {
+				transfer_state = 900
+			}
+		}
+		else_if = {
+			IRQ = {
+				transfer_state = 900
+			}
+		}
+		
+	}
+}

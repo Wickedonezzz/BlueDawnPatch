@@ -1,0 +1,18 @@
+characters = {
+
+	BHR_hamad_khalifa = {
+		name = "Hamad bin Isa Al Khalifa"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BHR/Hamad_Khalifa.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

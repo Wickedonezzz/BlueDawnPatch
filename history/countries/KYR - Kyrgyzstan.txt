@@ -1,0 +1,23 @@
+﻿capital = 732
+
+##oob = ""
+
+set_convoys = 5
+
+recruit_character = KYR_absamat_masaliyev
+recruit_character = KYR_kurmanbek_bakiyev
+
+set_politics = {
+	ruling_party = reformed_communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 18
+	socialism = 10
+	paternal_autocracy = 11
+	reformed_communism = 12
+	communism = 34
+	neutrality = 15
+}

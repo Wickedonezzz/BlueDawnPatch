@@ -1,0 +1,132 @@
+﻿capital = 266
+
+set_oob = "PER_2000"
+set_air_oob = "PER_2000_air"
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+
+	set_technology = {
+		attack_submarine_hull_1960 = 1
+		corvette_hull_1960 = 1
+		destroyer_hull_1960 = 1
+	}
+}
+
+set_technology = {
+	infantry_weapons_1960 = 1
+	infantry_weapons_1980 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_air_weapons_1960 = 1
+	tech_support = 1
+	tech_motorised_1960 = 1
+	tech_train_1960 = 1
+	towed_artillery_1960 = 1
+	motorised_artillery_1960 = 1
+	rocket_artillery_1960 = 1
+	mbt_tank_1960 = 1
+	ifv_tank_1970 = 1
+	apc_tank_1960 = 1
+	heli_transport_1960 = 1
+	drone_recon_1980 = 1
+	paratrooper_tech_1960 = 1
+	marine_tech_1960 = 1
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		recon_vehicle_1960 = 1
+	}
+}
+
+set_convoys = 80
+
+set_research_slots = 3
+
+
+add_ideas = PER_oil_producers
+add_ideas = PER_home_of_islam_rev 
+
+recruit_character = PER_ali_khamenei
+recruit_character = PER_mohammad_khatami
+recruit_character = PER_tariq_aziz
+recruit_character = PER_massoud_rajavi
+recruit_character = PER_reza_pahlavi
+recruit_character = PER_hajjarian
+recruit_character = PER_mahmoud_ahmadinejad
+recruit_character = PER_mostafa_moeen
+
+recruit_character = PER_hossein_sadi
+
+add_ideas = {
+	limited_conscription
+}
+
+set_politics = {
+	ruling_party = paternal_autocracy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	paternal_autocracy = 90
+	democratic = 10
+}
+
+add_opinion_modifier = { target = IRQ modifier = HISTORIC_iran_iraq_war_opinion }
+add_opinion_modifier = { target = ISR modifier = HISTORIC_israel_hostile_40_opinion }
+
+# Naval Variants #
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "PER_2000_naval_mtg"
+
+	# Corvettes #
+	create_equipment_variant = {
+		name = "Saam Class"
+		type = corvette_hull_1
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = anti_air_1
+			fixed_ship_defensive_slot_2 = empty
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = aswrl_1
+			custom_slot_2 = cruise_missile_3
+			custom_slot_3 = empty
+		}
+		obsolete = yes
+	}
+
+	# Frigates #
+	create_equipment_variant = {
+		name = "Bayandor Class"
+		type = destroyer_hull_1
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = anti_air_1
+			fixed_ship_defensive_slot_2 = empty
+			fixed_ship_aviation_slot = empty
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = empty
+			custom_slot_2 = empty
+			custom_slot_3 = empty
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = naval_gun_1
+		}
+		obsolete = yes
+	}
+}

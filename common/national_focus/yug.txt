@@ -1,0 +1,302 @@
+focus_tree = {
+	id = yug_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = YUG
+		}
+	}
+	
+	default = no
+	focus = {
+		id = YUG_a_broken_nation
+		icon = GFX_focus_YUG_broken_nation
+		x = 9
+		y = 0
+
+		prerequisite = {}
+		mutually_exclusive = { }
+		
+		cost = 1.43
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = -10
+			add_stability = -0.07
+			YUG = {
+				country_event = { id = yug.3 }
+			}
+			custom_effect_tooltip = yug_increase_stambolic_pop_10
+			hidden_effect = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.1
+				}
+			}
+
+		}
+	}
+	
+	focus = {
+		id = YUG_new_future
+		icon = GFX_focus_YUG_new_future
+		x = -3
+		y = 1
+
+		prerequisite = {focus = YUG_a_broken_nation}
+		mutually_exclusive = { }
+		relative_position_id = YUG_a_broken_nation
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 25
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = YUG_slobos_11_years
+		icon = GFX_focus_YUG_slobos_11
+		x = -5
+		y = 2
+
+		prerequisite = {focus = YUG_new_future}
+		mutually_exclusive = { }
+		relative_position_id = YUG_a_broken_nation
+		
+		cost = 1.43
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			YUG = {
+				country_event = { id = yug.2 }
+			}
+		custom_effect_tooltip = yug_increase_milosevic_pop_25
+		hidden_effect = {
+			add_popularity = {
+				ideology = reformed_communism
+				popularity = 0.025
+			}
+		}
+			
+		}
+	}
+
+	focus = {
+		id = YUG_the_two_coalition_parties
+		icon = GFX_focus_SOV_diplo_in_chaos
+		x = -1
+		y = 2
+
+		prerequisite = {focus = YUG_new_future}
+		mutually_exclusive = { }
+		relative_position_id = YUG_a_broken_nation
+		
+		cost = 1.43
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			YUG = {
+				country_event = { id = yug_start.1 }
+			}
+			
+		}
+	}
+
+	focus = {
+		id = YUG_a_new_constitution
+		icon = GFX_focus_YUG_a_new_constitution
+		x = -3
+		y = 3
+
+		prerequisite = {focus = YUG_slobos_11_years}
+		prerequisite = {focus = YUG_the_two_coalition_parties}
+		mutually_exclusive = { }
+		relative_position_id = YUG_a_broken_nation
+		
+		cost = 1.43
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			YUG = {
+				country_event = { id = yug_start.2 }
+			}
+			
+		}
+	}
+
+	focus = {
+		id = YUG_national_report
+		icon = GFX_focus_YUG_national_report
+		x = 3
+		y = 1
+
+		prerequisite = {focus = YUG_a_broken_nation}
+		mutually_exclusive = { }
+		relative_position_id = YUG_a_broken_nation
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = -20
+			add_war_support = -0.10
+			add_command_power = 10
+			YUG = {
+				country_event = { id = yug.1 }
+			}
+			
+		}
+	}
+
+	focus = {
+		id = YUG_cities
+		icon = GFX_focus_YUG_cities
+		x = 5
+		y = 2
+
+		prerequisite = {focus = YUG_national_report}
+		mutually_exclusive = { }
+		relative_position_id = YUG_a_broken_nation
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+			add_command_power = 30
+		}
+	}
+
+	focus = {
+		id = YUG_rebuilding_what_we_have
+		icon = GFX_focus_YUG_rebuilding_what_we_have
+		x = 1
+		y = 2
+
+		prerequisite = {focus = YUG_national_report}
+		mutually_exclusive = { }
+		relative_position_id = YUG_a_broken_nation
+
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_stability = 0.10
+			add_ideas = YUG_rebuilding_what_we_have_idea
+
+		}
+	}
+
+	focus = {
+		id = YUG_status_of_the_srs
+		icon = GFX_focus_YUG_status_of_the_srs
+		x = 3
+		y = 3
+
+		prerequisite = {focus = YUG_cities}
+		prerequisite = {focus = YUG_rebuilding_what_we_have}
+		
+		mutually_exclusive = { }
+		relative_position_id = YUG_a_broken_nation
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			country_event = { id = yug_start.3}
+		}
+	}
+
+	focus = {
+		id = YUG_skj
+		icon = GFX_focus_YUG_skj
+		x = 0
+		y = 4
+
+		prerequisite = {focus = YUG_a_new_constitution }
+		prerequisite = {focus = YUG_status_of_the_srs }
+
+		mutually_exclusive = { }
+		relative_position_id = YUG_a_broken_nation
+		
+		cost = 4
+		ai_will_do = {
+			factor = 100
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		completion_reward = {
+			add_political_power = 15
+			add_stability = 0.03
+			YUG = {
+				country_event = { id = yug.4 }
+			}
+		}
+	}
+
+}

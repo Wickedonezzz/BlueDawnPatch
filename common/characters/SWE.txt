@@ -1,0 +1,33 @@
+characters = {
+
+	SWE_goran_persson = {
+		name = "Goran Persson"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SWE/Goran_Persson.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	SWE_anders_carlsson = {
+		name = "Anders Carlsson"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SWE/Anders_Carlsson.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

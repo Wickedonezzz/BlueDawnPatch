@@ -1,0 +1,1064 @@
+
+# make ussr want to send stuff to the tamil tigers
+SOV_help_TAM_win_war = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		SRL = { has_war_with = TAM } 
+	}
+	abort = {
+		NOT = {	
+		SRL = { has_war_with = TAM } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = TAM
+		value = 50
+	}
+}
+
+# make ussr want to send stuff to the congo
+SOV_help_COG_win_war = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		COG = { has_war_with = RGO } 
+		COG = { has_war_with = RCK } 
+	}
+	abort = {
+		NOT = {	
+			OR = {
+				COG = { has_war_with = RGO } 
+				COG = { has_war_with = RCK } 
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = COG
+		value = 50
+	}
+}
+
+# make ussr want to send stuff to the angola
+SOV_help_ANG_win_war = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		UNI = { has_war_with = ANG } 
+	}
+	abort = {
+		NOT = {	
+
+				UNI = { has_war_with = ANG } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ANG
+		value = 50
+	}
+}
+# make angola want to send stuff to the congo
+ANG_help_COG_win_war = {
+	allowed = {
+		original_tag = ANG
+	}
+	enable = {
+		RGO = { has_war_with = COG } 
+
+	}
+	abort = {
+		NOT = {	
+			OR = {
+				RGO = { has_war_with = COG } 
+		RGO = { has_war_with = RCK } 
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = COG
+		value = 50
+	}
+}
+# make ussr and cuba want to send stuff to the ethiopia
+SOV_help_ETH_win_war = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		ETH = { has_war_with = ERI } 	
+		}
+	abort = {
+		NOT = {	
+			ETH = { has_war_with = ERI } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ETH
+		value = 100
+	}
+}
+# make ussr and cuba want to send stuff to the ethiopia
+SOV_help_ETH_win_war_1 = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		ETH = { has_war_with = ERI } 	
+		}
+	abort = {
+		NOT = {	
+			ETH = { has_war_with = ERI } 
+		}
+	}
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = ETH
+		value = 999
+	}
+}
+
+
+ 
+CUB_help_ETH_win_war = {
+	allowed = {
+		original_tag = CUB
+	}
+	enable = {
+		ETH = { has_war_with = ERI } 	
+		}
+	abort = {
+		NOT = {	
+			ETH = { has_war_with = ERI } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ETH
+		value = 50
+	}
+}
+
+# make vietnam send volunteer to cambodia
+VIN_help_CAM_win_war = {
+	allowed = {
+		original_tag = VIN
+	}
+	enable = {
+		CAM = { has_war_with = SIA } 	
+		}
+	abort = {
+		NOT = {	
+			CAM = { has_war_with = SIA } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = CAM
+		value = 9999
+	}
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = CAM
+		value = 999
+	}
+}
+
+# make vietnam send volunteer to laos
+VIN_help_LAO_win_war = {
+	allowed = {
+		original_tag = VIN
+	}
+	enable = {
+		LAO = { has_war_with = SIA } 	
+		}
+	abort = {
+		NOT = {	
+			LAO = { has_war_with = SIA } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = LAO
+		value = 9999
+	}
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = LAO
+		value = 999
+	}
+}
+# make Soviet send volunteer to VN
+SOV_help_VIN_win_war = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		VIN = { has_war_with = SIA } 	
+		}
+	abort = {
+		NOT = {	
+			VIN = { has_war_with = SIA } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = VIN
+		value = 999
+	}
+	
+}
+# make Soviet send volunteer to laos
+SOV_not_help_LAO_win_war = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		LAO = { has_war_with = SIA } 	
+		}
+	abort = {
+		NOT = {	
+			LAO = { has_war_with = SIA } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = LAO
+		value = -999
+	}
+	
+}
+# make Soviet not send volunteer to cambodia
+SOV_help_CAM_win_war = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		CAM = { has_war_with = SIA } 	
+		}
+	abort = {
+		NOT = {	
+			CAM = { has_war_with = SIA } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = CAM
+		value = -999
+	}
+	
+}
+
+
+
+
+# make thailand want to help cambodia
+SIA_help_CMK_win_war = {
+	allowed = {
+		original_tag = SIA
+	}
+	enable = {
+		SIA = { has_war_with = CAM } 	
+		}
+	abort = {
+		NOT = {	
+			SIA = { has_war_with = CAM } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = CMK
+		value = 999
+	}
+}
+
+#big indochina war related stuff
+
+# make usa send volunteer to thailand
+USA_help_SIA_win_war = {
+	allowed = {
+		original_tag = USA
+	}
+	enable = {
+		VIN = { has_war_with = SIA } 	
+		}
+	abort = {
+		NOT = {	
+			VIN = { has_war_with = SIA } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SIA
+		value = 9999
+	}
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = SIA
+		value = 999
+	}
+}
+
+# make s korea send volunteer to thailand
+SKR_help_SIA_win_war = {
+	allowed = {
+		original_tag = SKR
+	}
+	enable = {
+		VIN = { has_war_with = SIA } 	
+		}
+	abort = {
+		NOT = {	
+			VIN = { has_war_with = SIA } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SIA
+		value = 9999
+	}
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = SIA
+		value = 999
+	}
+}
+
+# make indonesia send volunteer to thailand
+INS_help_SIA_win_war = {
+	allowed = {
+		original_tag = INS
+	}
+	enable = {
+		VIN = { has_war_with = SIA } 	
+		}
+	abort = {
+		NOT = {	
+			VIN = { has_war_with = SIA } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SIA
+		value = 9999
+	}
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = SIA
+		value = 999
+	}
+}
+
+# make SA want to help UNITA
+SAF_help_UNI_win_war = {
+	allowed = {
+		original_tag = SAF
+	}
+	enable = {
+		UNI = { has_war_with = ANG } 	
+		}
+	abort = {
+		NOT = {	
+			UNI = { has_war_with = ANG } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = UNI
+		value = 999
+	}
+}
+# make rwanda want to send stuff to the congo
+RWA_help_RGO_win_war = {
+	allowed = {
+		original_tag = RWA
+	}
+	enable = {
+		RGO = { has_war_with = COG } 
+
+	}
+	abort = {
+		NOT = {	
+			OR = {
+				RGO = { has_war_with = COG } 
+		RGO = { has_war_with = RCK } 
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = RGO
+		value = 50
+	}
+}
+# make burundi want to send stuff to the congo
+BRD_help_RGO_win_war = {
+	allowed = {
+		original_tag = BRD
+	}
+	enable = {
+		RGO = { has_war_with = COG } 
+	}
+	abort = {
+		NOT = {	
+			OR = {
+				RGO = { has_war_with = COG } 
+		RGO = { has_war_with = RCK } 
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = RGO
+		value = 50
+	}
+}
+# make unganda want to send stuff to the congo
+UGA_help_RCK_win_war = {
+	allowed = {
+		original_tag = UGA
+	}
+	enable = {
+		RCK = { has_war_with = COG } 
+	}
+	abort = {
+		NOT = {	
+			OR = {
+		RCK = { has_war_with = COG } 
+		RCK = { has_war_with = RGO } 
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = RCK
+		value = 500
+	}
+}
+# fuck u Fr*nch 1
+FRA_pls_dont = {
+	allowed = {
+		original_tag = FRA
+	}
+	enable = {
+		OR = {
+			SAU = { has_war_with = DYR } 
+			SAU = { has_war_with = EGY } 
+				}
+	}
+	abort = {
+		NOT = {	
+			OR = {
+				SAU = { has_war_with = DYR } 
+				SAU = { has_war_with = EGY }  
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SAU
+		value = -500
+	}
+}
+FRA_pls_dont_2 = {
+	allowed = {
+		original_tag = FRA
+	}
+	enable = {
+		OR = {
+			SAU = { has_war_with = DYR } 
+			SAU = { has_war_with = EGY } 
+				}
+	}
+	abort = {
+		NOT = {	
+			OR = {
+				SAU = { has_war_with = DYR } 
+				SAU = { has_war_with = EGY }  
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = YEM
+		value = -500
+	}
+}
+#Fuck u Briish
+ENG_pls_dont = {
+	allowed = {
+		original_tag = ENG
+	}
+	enable = {
+		OR = {
+			SAU = { has_war_with = DYR } 
+			SAU = { has_war_with = EGY } 
+				}
+	}
+	abort = {
+		NOT = {	
+			OR = {
+				SAU = { has_war_with = DYR } 
+				SAU = { has_war_with = EGY }  
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = YEM
+		value = -500
+	}
+}
+ENG_pls_dont_2 = {
+	allowed = {
+		original_tag = ENG
+	}
+	enable = {
+		OR = {
+			SAU = { has_war_with = DYR } 
+			SAU = { has_war_with = EGY } 
+				}
+	}
+	abort = {
+		NOT = {	
+			OR = {
+				SAU = { has_war_with = DYR } 
+				SAU = { has_war_with = EGY }  
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SAU
+		value = -500
+	}
+}
+#Fuck u Gernoid
+GER_pls_dont = {
+	allowed = {
+		original_tag = GER
+	}
+	enable = {
+		OR = {
+			SAU = { has_war_with = DYR } 
+			SAU = { has_war_with = EGY } 
+				}
+	}
+	abort = {
+		NOT = {	
+			OR = {
+				SAU = { has_war_with = DYR } 
+				SAU = { has_war_with = EGY }  
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = YEM
+		value = -500
+	}
+}
+GER = {
+	allowed = {
+		original_tag = GER
+	}
+	enable = {
+		OR = {
+			SAU = { has_war_with = DYR } 
+			SAU = { has_war_with = EGY } 
+				}
+	}
+	abort = {
+		NOT = {	
+			OR = {
+				SAU = { has_war_with = DYR } 
+				SAU = { has_war_with = EGY }  
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SAU
+		value = -500
+	}
+}
+
+# make croatia send stuff to her
+CRO_help_YUG_win_war = {
+	allowed = {
+		original_tag = CRO
+	}
+	enable = {
+		HRZ = { has_war_with = YUG } 	
+		}
+	abort = {
+		NOT = {	
+			HRZ = { has_war_with = YUG } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = HRZ
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = HRZ
+		value = 999
+	}
+}
+# make ussr send stuff to yemen
+SOV_help_DYR_win_war = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		DYR = { has_war_with = YEM } 	
+		}
+	abort = {
+		NOT = {	
+			DYR = { has_war_with = YEM } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = DYR
+		value = 999
+	}
+	
+}
+# make usa send volunteer to saudi
+USA_help_SIA_win_war = {
+	allowed = {
+		original_tag = USA
+	}
+	enable = {
+		SAU = { has_war_with = IRQ } 	
+		}
+	abort = {
+		NOT = {	
+			SAU = { has_war_with = IRQ } 	
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SAU
+		value = 9999
+	}
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = SAU
+		value = 999
+	}
+}
+# make india send stuff to sirilanka
+RAJ_help_SRL_win_war = {
+	allowed = {
+		original_tag = RAJ
+	}
+	enable = {
+		SRL = { has_war_with = TAM } 	
+		}
+	abort = {
+		NOT = {	
+			SRL = { has_war_with = TAM } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SRL
+		value = 999
+	}
+	
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = SRL
+		value = 999
+	}
+}
+# make Japan send stuff to ROK
+JAP_help_SKR_win_war = {
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		SKR = { has_war_with = KOR } 	
+		}
+	abort = {
+		NOT = {	
+			SKR = { has_war_with = KOR } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SKR
+		value = 999
+	}
+	
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = SKR
+		value = 999
+	}
+}
+# make China send stuff to DPRK
+PRC_help_KOR_win_war = {
+	allowed = {
+		original_tag = PRC
+	}
+	enable = {
+		KOR = { has_war_with = SKR } 	
+		}
+	abort = {
+		NOT = {	
+			SKR = { has_war_with = KOR } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = KOR
+		value = 999
+	}
+	
+}
+# make Britain help South Korea
+ENG_help_SKR_win_war = {
+	allowed = {
+		original_tag = ENG
+	}
+	enable = {
+		KOR = { has_war_with = SKR } 	
+		}
+	abort = {
+		NOT = {	
+			SKR = { has_war_with = KOR } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SKR
+		value = 999
+	}
+	
+}
+# make France help South Korea
+FRA_help_SKR_win_war = {
+	allowed = {
+		original_tag = FRA
+	}
+	enable = {
+		KOR = { has_war_with = SKR } 	
+		}
+	abort = {
+		NOT = {	
+			SKR = { has_war_with = KOR } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SKR
+		value = 999
+	}
+	
+}
+# make Germany help South Korea
+GER_help_SKR_win_war = {
+	allowed = {
+		original_tag = GER
+	}
+	enable = {
+		KOR = { has_war_with = SKR } 	
+		}
+	abort = {
+		NOT = {	
+			SKR = { has_war_with = KOR } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SKR
+		value = 999
+	}
+	
+}
+# make Canada help South Korea
+CAN_help_SKR_win_war = {
+	allowed = {
+		original_tag = CAN
+	}
+	enable = {
+		KOR = { has_war_with = SKR } 	
+		}
+	abort = {
+		NOT = {	
+			SKR = { has_war_with = KOR } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SKR
+		value = 999
+	}
+	
+}
+# make USA help South Korea
+USA_help_SKR_win_war = {
+	allowed = {
+		original_tag = USA
+	}
+	enable = {
+		KOR = { has_war_with = SKR } 	
+		}
+	abort = {
+		NOT = {	
+			SKR = { has_war_with = KOR } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SKR
+		value = 999
+	}
+	
+}
+
+
+# make USA help Japan
+USA_help_SKR_win_war = {
+	allowed = {
+		original_tag = USA
+	}
+	enable = {
+		KOR = { has_war_with = SKR } 	
+		}
+	abort = {
+		NOT = {	
+			SKR = { has_war_with = KOR } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = JAP
+		value = -999
+	}
+	
+}
+#west africa stuff
+LIB_help_RUF_win_war = {
+	allowed = {
+		original_tag = LIB
+	}
+	enable = {
+		RUF = { has_war_with = SIE } 	
+	}
+	abort = {
+		NOT = {	
+			RUF = { has_war_with = SIE } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = RUF
+		value = 500
+	}
+}
+RUF_help_LIB_win_war = {
+	allowed = {
+		original_tag = RUF
+	}
+	enable = {
+		LIB = { has_war_with = LUR } 	
+	}
+	abort = {
+		NOT = {	
+			LIB = { has_war_with = LUR } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = LIB
+		value = 500
+	}
+}
+# make Zimbawe help ANC
+ZIM_help_ANC_win_war = {
+	allowed = {
+		original_tag = ZIM
+	}
+	enable = {
+		ANC = { has_war_with = SAF } 	
+		}
+	abort = {
+		NOT = {	
+			ANC = { has_war_with = SAF } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ANC
+		value = 999
+	}
+}
+# make USSR help ANC
+SOV_help_ANC_win_war = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		ANC = { has_war_with = SAF } 	
+		}
+	abort = {
+		NOT = {	
+			ANC = { has_war_with = SAF } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ANC
+		value = 999
+	}
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = ANC
+		value = 999
+	}
+}
+# make USSR help MZB
+SOV_help_MZB_win_war = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		ANC = { has_war_with = SAF } 	
+		}
+	abort = {
+		NOT = {	
+			ANC = { has_war_with = SAF } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = MZB
+		value = 999
+	}
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = MZB
+		value = 999
+	}
+}
+# make USSR help DPRK
+SOV_help_KOR_win_war = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		KOR = { has_war_with = SKR } 	
+		}
+	abort = {
+		NOT = {	
+			KOR = { has_war_with = SKR } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = KOR
+		value = 999
+	}
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = KOR
+		value = 999
+	}
+}
+# make NMB help ANC
+NMB_help_ANC_win_war = {
+	allowed = {
+		original_tag = NMB
+	}
+	enable = {
+		ANC = { has_war_with = SAF } 	
+		}
+	abort = {
+		NOT = {	
+			ANC = { has_war_with = SAF } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ANC
+		value = 999
+	}
+}
+# make USA help SAF
+USA_help_SAF_win_war = {
+	allowed = {
+		original_tag = USA
+	}
+	enable = {
+		ANC = { has_war_with = SAF } 	
+		}
+	abort = {
+		NOT = {	
+			ANC = { has_war_with = SAF } 
+		}
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SAF
+		value = 999
+	}
+}

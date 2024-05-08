@@ -1,0 +1,134 @@
+characters = {
+
+	TUR_bulent_ecevit = {
+		name = "Bulent Ecevit"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TUR/Bulent_Ecevit.png"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	TUR_recep_erdogan = {
+		name = "Recep Tayyip Erdogan"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TUR/Recep_Erdogan.png"
+			}
+		}
+	}	
+
+	TUR_cem_uzan = {
+		name = "Cem Uzan"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TUR/Cem_Uzan.png"
+			}
+		}
+	}
+	
+	TUR_deniz_baykal = {
+		name = "Deniz Baykal"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TUR/Deniz_Baykal.png"
+			}
+		}
+	}
+
+	TUR_devlet_bahceli = {
+		name = "Devlet Bahceli"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TUR/Devlet_Bahceli.png"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {nationalist}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}	
+	
+	TUR_bulent_uluer = {
+		name = "Bulent Uluer"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TUR/bulent_uluer.png"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	TUR_salih_colak = {
+		name = "Salih Zeki Colak"
+		portraits = {
+			army = {
+				large = "gfx/leaders/TUR/salih_colak.png"
+			}
+		}
+
+		corps_commander={
+			traits={}
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	
+	TUR_aytac_yalman = {
+		name = "Aytac Yalman"
+		portraits = {
+			army = {
+				large = "gfx/leaders/TUR/aytac_yalman.png"
+			}
+		}
+
+		corps_commander={
+			traits={}
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}	
+
+	TUR_yasar_buyukanit = {
+		name = "Yasar Buyukanit"
+		portraits = {
+			army = {
+				large = "gfx/leaders/TUR/yasar_buyukanit.png"
+			}
+		}
+
+		corps_commander={
+			traits={}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}	
+
+
+
+}

@@ -1,0 +1,68 @@
+﻿capital = 271
+
+oob = "ETH_2000"
+set_air_oob = "ETH_2000_air"
+
+set_convoys = 5
+
+#recruit_character = ETH_negasso_gidada
+recruit_character = ETH_mengistu
+recruit_character = ETH_fisseha_desta
+
+add_ideas = ETH_soviet
+add_ideas = ETH_mass_insurgency
+add_timed_idea = {
+idea = ETH_operation_weridwali
+days = 145
+}
+
+add_ideas = ussr_aligned_nation
+
+add_ideas = war_economy
+add_ideas = limited_conscription
+
+ETH = { set_province_controller = 8043 }
+ETH = { set_province_controller = 13328 }
+ETH = { set_province_controller = 13329 }
+
+set_technology = {
+	infantry_weapons_1960 = 1
+	infantry_weapons_1980 = 1	
+	mbt_tank_1960 = 1
+	towed_artillery_1960 = 1
+	towed_artillery_1980 = 1
+	ifv_tank_1970 = 1
+	tech_support = 1
+	support_weapons_1960 = 1	
+	support_weapons_1980 = 1
+	support_weapons_1990 = 1
+	support_weapons_1995 = 1
+	night_vision_gen_1 = 1
+	night_vision_gen_2 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_air_weapons_1960 = 1
+	infantry_anti_tank_weapons_1980 = 1
+	infantry_anti_air_weapons_1980 = 1	
+	
+	computing_tech_1960 = 1
+	computing_tech_1980 = 1
+}
+
+set_politics = {
+	ruling_party = communism
+	last_election = "2000.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 10
+	fascism = 10
+	democratic = 10
+	reformed_communism = 5
+    communism = 65
+}
+
+declare_war_on = {
+	target = ERI
+	type = annex_everything
+}

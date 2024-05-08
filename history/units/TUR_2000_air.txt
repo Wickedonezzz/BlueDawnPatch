@@ -1,0 +1,95 @@
+air_wings = {
+	# Land Wings #
+	340 = {
+		# Fighters -- F-16, F-5, F-4
+		fighter_equipment_2 = { # F-16 #
+			owner = "TUR" 
+			creator = USA
+			amount = 47
+		}
+		fighter_equipment_0 = { # F-5, F-4 #
+			owner = "TUR" 
+			creator = USA
+			amount = 50
+		}
+	}
+	350 = {
+		# Fighters -- F-16, F-5, F-4
+		fighter_equipment_2 = { # F-16 #
+			owner = "TUR" 
+			creator = USA
+			amount = 46
+		}
+		fighter_equipment_0 = { # F-5, F-4 #
+			owner = "TUR" 
+			creator = USA
+			amount = 47
+		}
+	}
+	346 = {
+		# Transports -- C-130, C-160, CN-235
+		transport_plane_equipment_1 = { # C-130 #
+			owner = "TUR"
+			creator = USA
+			amount = 13
+		}
+		transport_plane_equipment_1 = { # C-160 #
+			owner = "TUR"
+			creator = GER
+			amount = 19
+		}
+		transport_plane_equipment_1 = { # CN-235 #
+			owner = "TUR"
+			creator = SPR
+			amount = 20
+		}
+	}
+	49 = {
+		# Fighters -- F-16, F-5, F-4
+		fighter_equipment_2 = { # F-16 #
+			owner = "TUR" 
+			creator = USA
+			amount = 47
+		}
+		fighter_equipment_2 = { # F-16 #
+			owner = "TUR" 
+			creator = USA
+			amount = 50
+		}
+		fighter_equipment_0 = { # F-5, F-4 #
+			owner = "TUR" 
+			creator = USA
+			amount = 43
+		}
+		fighter_equipment_0 = { # F-5, F-4 #
+			owner = "TUR" 
+			creator = USA
+			amount = 46
+		}
+
+		# Transports -- CN-235
+		transport_plane_equipment_1 = { # CN-235 #
+			owner = "TUR"
+			creator = SPR
+			amount = 15
+		}
+		transport_plane_equipment_1 = { # CN-235 #
+			owner = "TUR"
+			creator = SPR
+			amount = 15
+		}
+	}
+	356 = {
+		# Fighters -- F-16, F-5, F-4
+		fighter_equipment_2 = { # F-16 #
+			owner = "TUR" 
+			creator = USA
+			amount = 50
+		}
+		fighter_equipment_0 = { # F-5, F-4 #
+			owner = "TUR" 
+			creator = USA
+			amount = 40
+		}
+	}
+}

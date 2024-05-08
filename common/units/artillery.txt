@@ -1,0 +1,343 @@
+sub_units = {
+
+	towed_artillery_unit = {
+		abbreviation = "ART"
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 1000
+		ai_priority = 100
+		active = yes
+		
+		type = {
+			infantry
+			artillery
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_army
+			category_line_artillery
+			category_artillery
+		}
+
+		combat_width = 3
+
+		need = {
+			towed_artillery_equipment = 35
+		}
+
+		manpower = 450
+		
+		max_strength = 0.6
+		max_organisation = 5
+		default_morale = 0.15
+		training_time = 140
+		weight = 0.5		
+		supply_consumption = 0.20
+
+		forest = {
+			attack = -0.2
+			movement = -0.2
+		}
+
+		hills = {
+			movement = -0.05
+		}
+
+		mountain = {
+			movement = -0.2
+		}
+
+		jungle = {
+			attack = -0.25
+			movement = -0.2
+		}
+
+		marsh = {
+			attack = -0.2
+			movement = -0.3
+		}
+
+		fort = {
+			attack = 0.1
+		}
+
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+
+		amphibious = {
+			attack = -0.4
+		}
+	}
+
+	motorised_artillery_unit = {
+		abbreviation = "MRT"
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 1000
+		ai_priority = 100
+		active = yes
+		
+		type = {
+			motorized
+			artillery
+		}
+		
+		group = mobile
+		
+		categories = {
+			category_army
+			category_line_artillery
+			category_artillery
+		}
+
+		combat_width = 3
+		transport = motorised_equipment
+
+		need = {
+			motorised_artillery_equipment = 35
+		}
+
+		manpower = 550
+		
+		max_strength = 0.6
+		max_organisation = 5
+		default_morale = 0.15
+		training_time = 150
+		weight = 0.5		
+		supply_consumption = 0.22
+
+		forest = {
+			attack = -0.2
+			movement = -0.3
+		}
+
+		mountain = {
+			movement = -0.2
+		}
+
+		jungle = {
+			attack = -0.25
+			movement = -0.2
+		}
+
+		marsh = {
+			attack = -0.2
+			movement = -0.2
+		}
+
+		fort = {
+			attack = 0.1
+		}
+
+		river = {
+			attack = -0.2
+			movement = -0.15
+		}
+
+		amphibious = {
+			attack = -0.4
+		}
+	}
+
+	rocket_artillery_unit = {
+		abbreviation = "TRA"
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 1000
+		ai_priority = 100
+		active = yes
+		
+		type = {
+			motorized
+			artillery
+		}
+		
+		group = mobile
+		
+		categories = {
+			category_army
+			category_line_artillery
+			category_artillery
+		}
+
+		combat_width = 3
+		transport = motorised_equipment
+
+		need = {
+			rocket_artillery_equipment = 35
+		}
+
+		manpower = 550
+		
+		max_strength = 0.6
+		max_organisation = 5
+		default_morale = 0.15
+		training_time = 155
+		weight = 0.5		
+		supply_consumption = 0.22
+
+		forest = {
+			attack = -0.2
+			movement = -0.3
+		}
+
+		mountain = {
+			movement = -0.2
+		}
+
+		jungle = {
+			attack = -0.25
+			movement = -0.2
+		}
+
+		marsh = {
+			attack = -0.2
+			movement = -0.2
+		}
+
+		fort = {
+			attack = 0.1
+		}
+
+		river = {
+			attack = -0.2
+			movement = -0.15
+		}
+
+		amphibious = {
+			attack = -0.4
+		}
+	}
+
+	towed_artillery_support_unit = {
+		abbreviation = "ART"
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 1000
+		ai_priority = 100
+		active = yes
+		affects_speed = no
+		
+		type = {
+			infantry
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_support_battalions
+			category_army
+			category_artillery
+		}
+
+		combat_width = 0
+
+		need = {
+			towed_artillery_equipment = 12
+		}
+
+		manpower = 240
+		
+		max_strength = 0.2
+		max_organisation = 0
+		default_morale = 0.15
+		training_time = 140
+		weight = 0.1
+		supply_consumption = 0.12
+
+		defense = -0.4
+		breakthrough = -0.4
+		soft_attack = -0.4
+		hard_attack = -0.4
+	}
+
+	motorised_artillery_support_unit = {
+		abbreviation = "MRT"
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 1000
+		ai_priority = 100
+		active = yes
+		
+		type = {
+			motorized
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_support_battalions
+			category_army
+			category_artillery
+		}
+
+		combat_width = 0
+
+		need = {
+			motorised_artillery_equipment = 12
+		}
+
+		manpower = 260
+
+		max_strength = 0.2
+		max_organisation = 0
+		default_morale = 0.15
+		training_time = 150
+		weight = 0.1
+		supply_consumption = 0.16
+		
+		defense = -0.3
+		breakthrough = -0.3
+		soft_attack = -0.3
+		hard_attack = -0.3
+	}
+
+	rocket_artillery_support_unit = {
+		abbreviation = "TRA"
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 1000
+		ai_priority = 100
+		active = yes
+		
+		type = {
+			motorized
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_support_battalions
+			category_army
+			category_artillery
+		}
+
+		combat_width = 0
+
+		need = {
+			rocket_artillery_equipment = 12
+		}
+
+		manpower = 260
+		
+		max_strength = 0.2
+		max_organisation = 0
+		default_morale = 0.15
+		training_time = 155
+		weight = 0.1
+		supply_consumption = 0.16
+		
+		defense = -0.3
+		breakthrough = -0.3
+		soft_attack = -0.3
+		hard_attack = -0.3
+	}
+
+}

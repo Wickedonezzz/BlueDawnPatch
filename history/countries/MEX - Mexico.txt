@@ -1,0 +1,42 @@
+﻿capital = 277
+
+#oob = "MEX_1936"
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+
+	set_technology = {
+		destroyer_hull_1960 = 1
+	}
+}
+
+set_convoys = 45
+set_stability = 0.2
+set_war_support = 0.1
+
+recruit_character = MEX_vicente_fox
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 0
+	reformed_communism = 0
+	social_democracy = 17
+	liberalism = 36
+	democratic = 43
+	neutrality = 0
+	paternal_autocracy = 0
+	fascism = 4
+}
+# Naval Variants #
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "MEX_2000_naval_mtg"
+}

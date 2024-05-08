@@ -1,0 +1,42 @@
+division_template = {
+	name = "Militia Division"
+	division_names_group = GENERIC_INF_01
+
+	regiments = {
+		militia_unit = { x = 1 y = 0 }		
+		militia_unit = { x = 1 y = 1 }	
+
+
+	}
+	priority = 1
+}
+
+units = {
+
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 1
+			}
+			location = 5010
+			division_template = "Militia Division"		# Militia
+			start_experience_factor = 0.2
+			start_equipment_factor = 0.9
+
+		}
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 2
+			}
+			location = 5010
+			division_template = "Militia Division"		# Militia
+			start_experience_factor = 0.2
+			start_equipment_factor = 0.7
+
+		}	
+			
+	
+}

@@ -1,0 +1,139 @@
+units = {
+	fleet = {
+		name = "Taiwan Haixia Jiandui"
+		naval_base = 12068 # Zuoying #
+		task_force = {
+			name = "Taiwan Haixia Shuimian Jiandui"
+			location = 12068 # Zuoying #
+			ship = { name = "ROCS Kang Ding" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = CHI creator = FRA version_name = "La Fayette Class" } } }
+			ship = { name = "ROCS Hsi Ning" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = CHI creator = FRA version_name = "La Fayette Class" } } }
+			ship = { name = "ROCS Kun Ming" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = CHI creator = FRA version_name = "La Fayette Class" } } }
+			ship = { name = "ROCS Di Hua" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = CHI creator = FRA version_name = "La Fayette Class" } } }
+			ship = { name = "ROCS Wu Chang" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = CHI creator = FRA version_name = "La Fayette Class" } } }
+			ship = { name = "ROCS Chen De" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = CHI creator = FRA version_name = "La Fayette Class" } } }
+			ship = { name = "ROCS Lo Yang" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHI creator = USA version_name = "Allen M. Sumner FRAM-II Class" } } }
+			ship = { name = "ROCS Nan Yang" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHI creator = USA version_name = "Allen M. Sumner FRAM-II Class" } } }
+			ship = { name = "ROCS Fu Yang" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHI creator = USA version_name = "Gearing Class" } } }
+			ship = { name = "ROCS Chieng Yang" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHI creator = USA version_name = "Gearing Class" } } }
+			ship = { name = "ROCS Liao Yang" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHI creator = USA version_name = "Gearing Class" } } }
+			ship = { name = "ROCS Shen Yang" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHI creator = USA version_name = "Gearing Class" } } }
+			ship = { name = "ROCS Te Yang" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHI creator = USA version_name = "Gearing Class" } } }
+
+			ship = { name = "ROCS Jin Chiang" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = CHI version_name = "Jin Chiang Class" } } }
+			ship = { name = "ROCS Tan Chiang" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = CHI version_name = "Jin Chiang Class" } } }
+			ship = { name = "ROCS Hsin Chiang" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = CHI version_name = "Jin Chiang Class" } } }
+			ship = { name = "ROCS Feng Chiang" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = CHI version_name = "Jin Chiang Class" } } }
+			ship = { name = "ROCS Tzeng Chiang" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = CHI version_name = "Jin Chiang Class" } } }
+			ship = { name = "ROCS Kao Chiang" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = CHI version_name = "Jin Chiang Class" } } }
+		}
+		task_force = {
+			name = "Taiwan Haixia Qianting Jiandui"
+			location = 12068 # Zuoying #
+			ship = { name = "ROCS Hai Lung" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = CHI creator = HOL version_name = "Zwaardvis Class" } } }
+			ship = { name = "ROCS Hai Hu" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = CHI creator = HOL version_name = "Zwaardvis Class" } } }
+			ship = { name = "ROCS Hai Shih" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = CHI creator = USA version_name = "Tench GUPPY II Class" } } }
+			ship = { name = "ROCS Hai Pao" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = CHI creator = USA version_name = "Tench GUPPY II Class" } } }
+		}
+		task_force = {
+			name = "Penghu Jiandui"
+			location = 13356 # Pescadores #
+			ship = { name = "ROCS Cheung Kung" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHI version_name = "Cheung Kung Class" } } }
+			ship = { name = "ROCS Cheng Ho" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHI version_name = "Cheung Kung Class" } } }
+			ship = { name = "ROCS Chi Kuang" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHI version_name = "Cheung Kung Class" } } }
+			ship = { name = "ROCS Yueh Fei" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHI version_name = "Cheung Kung Class" } } }
+			ship = { name = "ROCS Tzu I" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHI version_name = "Cheung Kung Class" } } }
+			ship = { name = "ROCS Pan Chao" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHI version_name = "Cheung Kung Class" } } }
+			ship = { name = "ROCS Chang Chien" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHI version_name = "Cheung Kung Class" } } }
+		}
+	}
+	fleet = {
+		name = "Taipingyang Jiandui"
+		naval_base = 13450 # Suao #
+		task_force = {
+			name = "Taipingyang Shuimian Jiandui"
+			location = 13450 # Suao #
+			ship = { name = "ROCS Chih Yang" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHI creator = USA version_name = "Knox Class" } } }
+			ship = { name = "ROCS Feng Yang" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHI creator = USA version_name = "Knox Class" } } }
+			ship = { name = "ROCS Fen Yang" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHI creator = USA version_name = "Knox Class" } } }
+			ship = { name = "ROCS Lan Yang" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHI creator = USA version_name = "Knox Class" } } }
+			ship = { name = "ROCS Hae Yang" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHI creator = USA version_name = "Knox Class" } } }
+			ship = { name = "ROCS Hwai Yang" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHI creator = USA version_name = "Knox Class" } } }
+			ship = { name = "ROCS Ning Yang" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHI creator = USA version_name = "Knox Class" } } }
+			ship = { name = "ROCS Yi Yang" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHI creator = USA version_name = "Knox Class" } } }
+			ship = { name = "ROCS Sui Yang" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHI creator = USA version_name = "Gearing Class" } } }
+			ship = { name = "ROCS Yun Yang" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHI creator = USA version_name = "Gearing Class" } } }
+			ship = { name = "ROCS Zheng Yang" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHI creator = USA version_name = "Gearing Class" } } }
+			ship = { name = "ROCS Shao Yang" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHI creator = USA version_name = "Gearing Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+	# Corvettes #
+	add_equipment_production = {
+		equipment = {
+			type = corvette_hull_3
+			creator = "CHI" 
+			version_name = "Jin Chiang Class"
+		}
+		name = "ROCS Jing Chiang"
+		requested_factories = 1
+		progress = 0.87
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = corvette_hull_3
+			creator = "CHI" 
+			version_name = "Jin Chiang Class"
+		}
+		name = "ROCS Hsian Chiang"
+		requested_factories = 1
+		progress = 0.83
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = corvette_hull_3
+			creator = "CHI" 
+			version_name = "Jin Chiang Class"
+		}
+		name = "ROCS Tsi Chiang"
+		requested_factories = 1
+		progress = 0.73
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = corvette_hull_3
+			creator = "CHI" 
+			version_name = "Jin Chiang Class"
+		}
+		name = "ROCS Po Chiang"
+		requested_factories = 1
+		progress = 0.38
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = corvette_hull_3
+			creator = "CHI" 
+			version_name = "Jin Chiang Class"
+		}
+		name = "ROCS Chan Chiang"
+		requested_factories = 1
+		progress = 0.23
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = corvette_hull_3
+			creator = "CHI" 
+			version_name = "Jin Chiang Class"
+		}
+		name = "ROCS Chu Chiang"
+		requested_factories = 1
+		progress = 0.22
+		amount = 1
+	}
+}

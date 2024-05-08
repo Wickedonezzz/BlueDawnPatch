@@ -1,0 +1,49 @@
+add_namespace = columbia
+
+#farc uprising#
+country_event = {
+	id = columbia.1
+	title = columbia.1.t
+	desc = columbia.1.d
+	picture = GFX_report_event_spark
+
+	fire_only_once = yes
+        
+    	trigger = {
+		date > 2001.8.25
+		original_tag = COL
+	}
+
+	#bruh#
+	option = {
+		name = columbia.1.a
+
+		add_political_power = -200
+		load_oob = "COL_civil_war"
+		FRC = {
+			transfer_state = 486
+			load_oob = "FRC_civil_war"
+			declare_war_on = {
+				type = civil_war
+				target = COL
+			}
+		}
+	}
+	
+	option = {
+		name = columbia.2.a
+
+		FRC = { change_tag_from = COL }
+		add_political_power = -200
+		load_oob = "COL_civil_war"
+		FRC = {
+			transfer_state = 486
+			load_oob = "FRC_civil_war"
+			declare_war_on = {
+				type = civil_war
+				target = COL
+			}
+			change_tag_from = COL
+		}
+	}
+}

@@ -1,0 +1,28 @@
+units = {
+}
+
+instant_effect = {
+	# Corvettes #
+	add_equipment_production = {
+		equipment = {
+			type = corvette_hull_4
+			creator = "BRM" 
+			version_name = "Anawratha Class"
+		}
+		name = "UMS Anawratha"
+		requested_factories = 1
+		progress = 0.67
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = corvette_hull_4
+			creator = "BRM" 
+			version_name = "Anawratha Class"
+		}
+		name = "UMS Bayintnaung"
+		requested_factories = 1
+		progress = 0.40
+		amount = 1
+	}
+}

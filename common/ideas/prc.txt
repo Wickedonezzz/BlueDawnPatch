@@ -1,0 +1,138 @@
+ideas = {
+
+	country = {
+
+		PRC_legacy_xiaoping_reform = {
+			name = PRC_legacy_xiaoping_reform_name
+
+			removal_cost = -1
+
+			picture = PRC_legacy_xiaoping_reform_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.08
+				production_speed_infrastructure_factor = 0.15
+				production_speed_rail_way_factor = 0.1
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+
+		PRC_third_taiwan_strait_crisis = {
+			name = PRC_third_taiwan_strait_crisis_idea_name
+
+			removal_cost = -1
+
+			picture = PRC_CHI_third_taiwan_strait_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_cost = 0.1
+				airforce_intel_to_others = 10.0
+				army_intel_to_others = 10.0
+				navy_intel_to_others = 10.0
+				naval_invasion_penalty = 0.15
+			}
+		}
+
+		PRC_one_child_policy = {
+			name = PRC_one_child_policy_name
+
+			removal_cost = -1
+
+			picture = PRC_one_child_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				monthly_population = -0.7
+				stability_factor = -0.1
+			}
+		}
+		 PRC_factory_of_the_world = {
+			name = PRC_factory_of_the_world_name
+
+			removal_cost = -1
+
+			picture = PRC_world_fac_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.2
+				consumer_goods_factor = 0.60
+				production_factory_efficiency_gain_factor = 0.1
+
+			}
+		}
+
+		 PRC_theory = {
+			name = PRC_theory_name
+
+			removal_cost = -1
+
+			picture = PRC_the_theory
+
+
+			modifier = {
+
+				drift_defence_factor = 0.2
+				stability_factor = 0.1
+
+
+		}
+		 }
+		 PRC_theory_1 = {
+			name = PRC_theory_1_name
+
+			removal_cost = -1
+
+			picture = PRC_the_theory
+
+
+			modifier = {
+
+				drift_defence_factor = 0.2
+				stability_factor = 0.12
+				}
+
+	}
+	 PRC_three_bodies_of_the_party = {
+			name = PRC_three_bodies_of_the_party_name
+
+			removal_cost = -1
+
+			picture = PRC_three_bodies
+			modifier = {
+
+	
+				political_power_factor = 0.1
+
+		}
+
+      }
+	  PRC_security_at_all_cost = {
+			name =  PRC_security_at_all_cost_name
+
+			removal_cost = -1
+
+			picture = PRC_security
+			modifier = {
+             stability_factor = 0.05
+			 political_power_factor = -0.1
+
+		}
+
+      }
+}
+}

@@ -1,0 +1,23 @@
+capital = 725
+
+##oob = "NAU_1936"
+
+set_research_slots = 3
+
+recruit_character = NAU_rene_reynaldo_harris
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 65
+	fascism = 0
+	communism = 1
+	reformed_communism = 5
+	neutrality = 29
+	paternal_autocracy = 0 
+}

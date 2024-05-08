@@ -1,0 +1,66 @@
+﻿air_wings = {
+	# Land Wings #
+	46 = {
+		# Fighters -- MiG-21, MiG-29
+		fighter_equipment_2 =  { # MiG-29 #
+			owner = "ROM" 
+			creator = SOV
+			amount = 16
+		}
+		fighter_equipment_0 =  { # MiG-21 #
+			owner = "ROM" 
+			creator = SOV
+			amount = 49
+		}
+
+		# Attackers -- IAR-93
+		attacker_equipment_1 =  { # IAR-93 #
+			owner = "ROM" 
+			creator = ROM
+			amount = 41
+		}
+
+		# Transports -- An-26
+		transport_plane_equipment_1 =  {
+			owner = "ROM"
+			creator = SOV
+			amount = 20
+		}
+	}
+	84 = {
+		# Fighters -- MiG-21
+		fighter_equipment_0 =  { # MiG-21 #
+			owner = "ROM" 
+			creator = SOV
+			amount = 44
+		}
+		fighter_equipment_0 =  { # MiG-21 #
+			owner = "ROM" 
+			creator = SOV
+			amount = 43
+		}
+	}
+	79 = {
+		# Fighters -- MiG-21
+		fighter_equipment_0 =  { # MiG-21 #
+			owner = "ROM" 
+			creator = SOV
+			amount = 45
+		}
+	}
+	82 = {
+		fighter_equipment_1 =  { # MiG-23 #
+			owner = "ROM" 
+			creator = SOV
+			amount = 37
+		}
+	}
+	81 = {
+		# Attackers -- IAR-93
+		attacker_equipment_1 =  { # IAR-93 #
+			owner = "ROM" 
+			creator = ROM
+			amount = 33
+		}
+	}
+}

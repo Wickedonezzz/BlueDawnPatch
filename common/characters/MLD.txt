@@ -1,0 +1,18 @@
+characters = {
+
+	MLD_maumoon_gayoom = {
+		name = "Maumoon Abdul Gayoom"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MLD/Maumoon_Gayoom.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

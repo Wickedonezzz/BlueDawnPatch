@@ -1,0 +1,36 @@
+﻿EGY_MBT_01 = 
+{
+	name = "Armoured Republican Guard Divisions"
+
+	for_countries = { EGY }
+
+	can_use = { always = yes }
+
+	division_types = { "main_battle_tank_armor" }
+
+	fallback_name = "%d Armoured Republican Guard Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st Armoured Republican Guard Division" }
+		2 = { "2nd Armoured Republican Guard Division" }
+		3 = { "3rd Armoured Republican Guard Division" }
+		4 = { "4th Armoured Republican Guard Division" }
+		5 = { "5th Armoured Republican Guard Division" }
+		6 = { "6th Armoured Republican Guard Division" }
+		7 = { "7th Armoured Republican Guard Division" }
+		8 = { "8th Armoured Republican Guard Division" }
+		9 = { "9th Armoured Republican Guard Division" }
+		10 = { "10th Armoured Republican Guard Division" }
+		11 = { "11th Armoured Republican Guard Division" }
+		12 = { "12th Armoured Republican Guard Division" }
+		13 = { "13th Armoured Republican Guard Division" }
+		14 = { "14th Armoured Republican Guard Division" }
+		15 = { "15th Armoured Republican Guard Division" }
+		16 = { "16th Armoured Republican Guard Division" }
+		17 = { "17th Armoured Republican Guard Division" }
+		18 = { "18th Armoured Republican Guard Division" }
+		19 = { "19th Armoured Republican Guard Division" }
+	}
+}

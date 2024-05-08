@@ -1,0 +1,130 @@
+add_namespace = kor_mod
+add_namespace = skr_mod
+
+#Second Battle of Yeonpyeong
+country_event = {
+	id = kor_mod.1
+	title = kor_mod.1.t
+	desc = kor_mod.1.d
+	picture = GFX_report_event_spark
+	
+	trigger = {
+	original_tag = KOR
+
+	}
+        is_triggered_only = yes
+
+	fire_only_once = yes
+
+		#rip#
+	option = {
+		name = kor_mod.1.a
+		news_event = {id = old_times_news.125}
+	}
+}
+#Artillery Fight in Yeonpyeong
+country_event = {
+	id = kor_mod.2
+	title = kor_mod.2.t
+	desc = kor_mod.2.d
+	picture = GFX_report_event_spark
+	
+	trigger = {
+	original_tag = KOR
+
+	}
+        is_triggered_only = yes
+
+	fire_only_once = yes
+
+		#rip#
+	option = {
+		name = kor_mod.2.a
+		news_event = {id = old_times_news.126}
+		country_event = { id = kor_mod.3 days = 10 }
+
+	}
+}
+#War is coming, war is fucking coming
+country_event = {
+	id = kor_mod.3
+	title = kor_mod.3.t
+	desc = kor_mod.3.d
+	picture = GFX_report_event_spark
+	
+	trigger = {
+	original_tag = KOR
+
+	}
+        is_triggered_only = yes
+
+	fire_only_once = yes
+
+		#rip#
+	option = {
+		name = kor_mod.3.a
+		news_event = {id = old_times_news.127}
+		country_event = { id = kor_mod.4 days = 10 }
+	}
+}
+#It has begun, may the glorious leader help us all
+country_event = {
+	id = kor_mod.4
+	title = kor_mod.4.t
+	desc = kor_mod.4.d
+	picture = GFX_report_event_spark
+	
+	trigger = {
+	original_tag = KOR
+
+	}
+        is_triggered_only = yes
+
+	fire_only_once = yes
+
+		#rip#
+	option = {
+		name = kor_mod.4.a
+		news_event = {id = old_times_news.128}
+		KOR = {
+			declare_war_on = {
+				target = SKR
+				type = civil_war
+				}
+			}
+		add_war_support = 0.3
+		hidden_effect = {
+			JAP = {  
+			 country_event = { id = japan_mod.5 days = 5}
+			}
+			PRC =  {
+				country_event = { id = prc.4 days = 12 }
+			}
+			      USA = {
+		add_ideas = USA_korea_war
+	   }
+		}
+	}
+}
+#unification
+country_event = {
+	id = kor_mod.5
+	title = kor_mod.5.t
+	desc = kor_mod.5.d
+	picture = GFX_report_event_spark
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+		#rip#
+	option = {
+		name = kor_mod.5.a
+		annex_country = {
+			target = SKR
+			transfer_troops = yes
+		}
+
+	}
+}
+

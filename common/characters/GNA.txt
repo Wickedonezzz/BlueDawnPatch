@@ -1,0 +1,33 @@
+characters = {
+
+	GNA_kansana_conté = {
+		name = "Lansana Conté"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GNA/Lansana_Conté.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	GNA_fofana = {
+		name = "Mohamed Lamine Fofana"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GNA/fofana.png"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

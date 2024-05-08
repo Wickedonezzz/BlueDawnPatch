@@ -1,0 +1,48 @@
+characters = {
+
+	RUF_sam_bockarie = {
+		name = "Sam Bockarie"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Africa/sam_bockarie.png"
+			}
+			army = {
+				large = "gfx/leaders/Africa/sam_bockarie.png"
+			}			
+		}
+		country_leader = {
+			ideology = military_junta
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		corps_commander={
+			traits={ }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+		
+	}
+
+	RUF_foday_sankoh = {
+		name = "Foday Sankoh"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Africa/foday_sankoh.png"
+			}
+
+		}
+		country_leader = {
+			ideology = military_junta
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		
+	}
+
+}

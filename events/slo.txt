@@ -1,0 +1,43 @@
+add_namespace = slovakia_mod
+
+#socialist revolution##
+country_event = {
+	id = slovakia_mod.1
+	title = slovakia_mod.1.t
+	desc = slovakia_mod.1.d
+	picture = GFX_report_event_ballot_box
+
+	is_triggered_only = yes
+
+	option = { 
+		name = slovakia_mod.1.a #coomunism time#
+		ai_chance = { base = 35 }
+
+
+		set_politics = {
+			ruling_party = socialism
+			election_frequency = 48
+			elections_allowed = no
+		}
+
+		set_popularities = {
+			communism = 35
+			reformed_communism = 30
+			socialism = 35
+			social_democracy = 0
+			liberalism = 0
+			democratic = 0
+			neutrality = 0
+			paternal_autocracy = 0
+			fascism = 0
+		}
+		
+		add_stability = -0.10
+		
+		SOV = {add_to_faction = SLO}
+		
+		news_event = {id = old_times_news.154}
+		
+	}
+
+}

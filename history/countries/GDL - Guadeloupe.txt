@@ -1,0 +1,22 @@
+﻿capital = 694
+
+##oob = ""
+
+set_convoys = 5
+
+recruit_character = GDL_jean-francois_carenco
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1998.1.1"
+	election_frequency = 72
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 53
+	communism = 12
+	reformed_communism = 4
+	paternal_autocracy = 0
+	fascism = 6
+	neutrality = 25
+}

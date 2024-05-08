@@ -1,0 +1,133 @@
+characters = {
+
+	PER_ali_khamenei = {
+		name = "Ali Khameni"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IRN/khameni.png"
+			}
+		}
+		country_leader = {
+			ideology = shia_islamism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	PER_mohammad_khatami = {
+		name = "Mohammad Khatami"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IRN/Mohammad_Khatami.dds"
+			}
+		}
+		country_leader = {
+			ideology = shia_islamism
+			traits = {reformist}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	PER_tariq_aziz = {
+		name = "Tariq Aziz"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IRN/Tariq_Aziz1.dds"
+			}
+		}
+		country_leader = {
+			ideology = nationalist_military_junta
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	PER_massoud_rajavi = {
+		name = "Massoud Rajavi"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IRN/massoud_rajavi.dds"
+			}
+		}
+		country_leader = {
+			ideology = democratic_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	PER_reza_pahlavi = {
+		name = "Reza Pahlavi"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IRN/reza_pahlavi.png"
+			}
+		}
+		country_leader = {
+			ideology = monarchism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	PER_hajjarian = {
+		name = "Saeed Hajjarian"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IRN/hajjarian.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}	
+	PER_mahmoud_ahmadinejad = {
+		name = "Mahmoud Ahmadinejad"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IRN/mahmoud_ahmadinejad.png"
+			}
+		}
+		country_leader = {
+			ideology = shia_islamism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}	
+	PER_mostafa_moeen = {
+		name = "Mostafa Moeen"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IRN/moeen.png"
+			}
+		}
+		country_leader = {
+			ideology = liberalism_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}	
+	PER_hossein_sadi = {
+		name = "Hossein Hassani Sa'di"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/IRN/sadi.png"
+			}
+		}
+		corps_commander={
+			traits={armor_officer}
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}	
+	}		
+}

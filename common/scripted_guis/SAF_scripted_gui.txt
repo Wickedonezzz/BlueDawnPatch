@@ -1,0 +1,72 @@
+scripted_gui = {
+
+	saf_great_game_gui = {
+		window_name = "saf_great_game_window"
+		context_type = decision_category
+
+		visible = {
+			original_tag = SAF
+		}
+		
+		properties = {
+			bar_progress = {
+				frame = great_game_progress_var
+			}
+		}
+	}
+
+	saf_pacification_gui = {
+		window_name = "saf_pacification_window"
+		context_type = decision_category
+
+		visible = {
+			original_tag = SAF
+			#always = no
+		}
+		
+		triggers = {
+			states_grid_visible = { always = yes }
+			angola1_visible = { check_variable = { saf_stability_angola < 33 } }
+			angola5_visible = { check_variable = { saf_stability_angola < 60 } check_variable = { saf_stability_angola > 32 } }
+			angola2_visible = { check_variable = { saf_stability_angola < 80 } check_variable = { saf_stability_angola > 59 } }
+			angola3_visible = { check_variable = { saf_stability_angola < 100 } check_variable = { saf_stability_angola > 79 } }
+			angola4_visible = { check_variable = { saf_stability_angola = 100 } }
+			congo1_visible = { check_variable = { saf_stability_congo < 33 } }
+			congo5_visible = { check_variable = { saf_stability_congo < 60 } check_variable = { saf_stability_congo > 32 } }
+			congo2_visible = { check_variable = { saf_stability_congo < 80 } check_variable = { saf_stability_congo > 59 } }
+			congo3_visible = { check_variable = { saf_stability_congo < 100 } check_variable = { saf_stability_congo > 79 } }
+			congo4_visible = { check_variable = { saf_stability_congo = 100 } }
+			central1_visible = { check_variable = { saf_stability_central < 33 } }
+			central5_visible = { check_variable = { saf_stability_central < 60 } check_variable = { saf_stability_central > 32 } }
+			central2_visible = { check_variable = { saf_stability_central < 80 } check_variable = { saf_stability_central > 59 } }
+			central3_visible = { check_variable = { saf_stability_central < 100 } check_variable = { saf_stability_central > 79 } }
+			central4_visible = { check_variable = { saf_stability_central = 100 } }
+			east1_visible = { check_variable = { saf_stability_east < 33 } }
+			east5_visible = { check_variable = { saf_stability_east < 60 } check_variable = { saf_stability_east > 32 } }
+			east2_visible = { check_variable = { saf_stability_east < 80 } check_variable = { saf_stability_east > 59 } }
+			east3_visible = { check_variable = { saf_stability_east < 100 } check_variable = { saf_stability_east > 79 } }
+			east4_visible = { check_variable = { saf_stability_east = 100 } }
+			highlands1_visible = { check_variable = { saf_stability_highlands < 33 } }
+			highlands5_visible = { check_variable = { saf_stability_highlands < 60 } check_variable = { saf_stability_highlands > 32 } }
+			highlands2_visible = { check_variable = { saf_stability_highlands < 80 } check_variable = { saf_stability_highlands > 59 } }
+			highlands3_visible = { check_variable = { saf_stability_highlands < 100 } check_variable = { saf_stability_highlands > 79 } }
+			highlands4_visible = { check_variable = { saf_stability_highlands = 100 } }
+			kalahari1_visible = { check_variable = { saf_stability_kalahari < 33 } }
+			kalahari5_visible = { check_variable = { saf_stability_kalahari < 60 } check_variable = { saf_stability_kalahari > 32 } }
+			kalahari2_visible = { check_variable = { saf_stability_kalahari < 80 } check_variable = { saf_stability_kalahari > 59 } }
+			kalahari3_visible = { check_variable = { saf_stability_kalahari < 100 } check_variable = { saf_stability_kalahari > 79 } }
+			kalahari4_visible = { check_variable = { saf_stability_kalahari = 100 } }
+			madagascar1_visible = { check_variable = { saf_stability_madagascar < 33 } }
+			madagascar5_visible = { check_variable = { saf_stability_madagascar < 60 } check_variable = { saf_stability_madagascar > 32 } }
+			madagascar2_visible = { check_variable = { saf_stability_madagascar < 80 } check_variable = { saf_stability_madagascar > 59 } }
+			madagascar3_visible = { check_variable = { saf_stability_madagascar < 100 } check_variable = { saf_stability_madagascar > 79 } }
+			madagascar4_visible = { check_variable = { saf_stability_madagascar = 100 } }
+			zambezi1_visible = { check_variable = { saf_stability_zambezi < 33 } }
+			zambezi5_visible = { check_variable = { saf_stability_zambezi < 60 } check_variable = { saf_stability_zambezi > 32 } }
+			zambezi2_visible = { check_variable = { saf_stability_zambezi < 80 } check_variable = { saf_stability_zambezi > 59 } }
+			zambezi3_visible = { check_variable = { saf_stability_zambezi < 100 } check_variable = { saf_stability_zambezi > 79 } }
+			zambezi4_visible = { check_variable = { saf_stability_zambezi = 100 } }
+		}
+	}
+	
+}

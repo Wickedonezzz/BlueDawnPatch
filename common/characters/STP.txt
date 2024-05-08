@@ -1,0 +1,18 @@
+characters = {
+
+	STP_miguel_trovoada = {
+		name = "Miguel Trovoada"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/STP/miguel_trovoada.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

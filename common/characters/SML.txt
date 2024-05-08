@@ -1,0 +1,18 @@
+characters = {
+
+	SML_egal = {
+		name = "Mohamed Haji Ibrahim Egal"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SML/Muhammad_Haji_Ibrahim_Egal.png"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

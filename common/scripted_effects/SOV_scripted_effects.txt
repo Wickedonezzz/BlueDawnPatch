@@ -1,0 +1,80 @@
+SOV_clicked_on_poland_effect = {
+
+	set_country_flag = poland_clicked
+	
+	clr_country_flag = slovakia_clicked
+	clr_country_flag = hungary_clicked	
+	clr_country_flag = romania_clicked
+	clr_country_flag = bulgaria_clicked
+	
+}
+SOV_clicked_on_slovakia_effect = {
+
+	set_country_flag = slovakia_clicked
+	
+	clr_country_flag = poland_clicked
+	clr_country_flag = hungary_clicked	
+	clr_country_flag = romania_clicked
+	clr_country_flag = bulgaria_clicked
+	
+}
+SOV_clicked_on_hungary_effect = {
+
+	set_country_flag = hungary_clicked
+	
+	clr_country_flag = slovakia_clicked
+	clr_country_flag = poland_clicked	
+	clr_country_flag = romania_clicked
+	clr_country_flag = bulgaria_clicked
+	
+}
+SOV_clicked_on_romania_effect = {
+
+	set_country_flag = romania_clicked
+	
+	clr_country_flag = slovakia_clicked
+	clr_country_flag = hungary_clicked	
+	clr_country_flag = poland_clicked
+	clr_country_flag = bulgaria_clicked
+	
+}
+SOV_clicked_on_bulgaria_effect = {
+
+	set_country_flag = bulgaria_clicked
+	
+	clr_country_flag = slovakia_clicked
+	clr_country_flag = hungary_clicked	
+	clr_country_flag = poland_clicked
+	clr_country_flag = romania_clicked
+	
+}
+
+
+SOV_ryz_clamper = {
+
+	clamp_variable = {
+		var = sov_poland_var
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = sov_slovakia_var
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = sov_hungary_var
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = sov_romania_var
+		min = 0
+		max = 100
+	}	
+	clamp_variable = {
+		var = sov_bulgaria_var
+		min = 0
+		max = 100
+	}	
+}

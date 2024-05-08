@@ -1,0 +1,30 @@
+﻿air_wings = {
+	# Land Wings #
+	430 = {
+		# Fighters -- MiG-29, J-6, J-7
+		fighter_equipment_2 =  { # MiG-29 #
+			owner = "BAN" 
+			creator = SOV
+			amount = 8
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "BAN" 
+			creator = PRC
+			amount = 39
+		}
+
+		# Attackers -- A-5
+		attacker_equipment_1 =  { # A-5 #
+			owner = "BAN" 
+			creator = PRC
+			amount = 18
+		}
+
+		# Transports -- An-32
+		transport_plane_equipment_1 =  { # An-32 #
+			owner = "BAN"
+			creator = SOV
+			amount = 3
+		}
+	}
+}

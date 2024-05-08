@@ -1,0 +1,19 @@
+state={
+	id=988
+	name="STATE_988"
+	history={
+		owner = LIB
+		add_core_of = LIB
+		add_core_of = LUR
+		victory_points = {
+			13511 3 
+		}
+	}
+	provinces={
+		13503 13511 
+	}
+	manpower=554000
+	state_category=rural	
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

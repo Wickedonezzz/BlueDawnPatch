@@ -1,0 +1,27 @@
+ideas = {
+	
+	country = {
+	
+		SPR_separatism = {
+
+			name = SPR_separatism_name
+
+			removal_cost = -1
+
+			picture = SPR_separatism_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				resistance_damage_to_garrison = 0.1
+				stability_factor = -0.25
+				war_support_factor = -0.1
+			}
+
+		}
+
+	}
+
+}

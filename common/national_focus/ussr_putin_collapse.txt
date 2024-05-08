@@ -1,0 +1,807 @@
+focus_tree = {
+	
+	id = ussr_putin_collapse_focus
+	country = {
+		factor = 0
+		modifier = {
+		tag = SOV
+		add = 0
+		}
+	}
+	
+	default = no
+	
+	focus = {
+		id = SOV_put_conspiracy
+		icon = GFX_focus_SOV_conspiracy
+		x = 10
+		y = 0
+
+		prerequisite = {}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 15
+
+		}
+	}
+
+	focus = {
+		id = SOV_put_eyes_on_left
+		icon = GFX_focus_SOV_eyes_on_the_left
+		x = 8
+		y = 1
+
+		prerequisite = {focus = SOV_put_conspiracy}
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+                                add_popularity = {
+                                    ideology = communism
+                                    popularity = -0.1
+                                }
+                                add_popularity = {
+                                    ideology = reformed_communism
+                                    popularity = -0.05
+                                }
+			SOV = {
+			country_event = {id = ussr.66}
+			}
+
+		}
+	}
+
+	focus = {
+		id = SOV_put_center
+		icon = GFX_focus_SOV_center_will_hold
+		x = 10
+		y = 1
+
+		prerequisite = {focus = SOV_put_conspiracy}
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 25
+			add_stability = 0.1
+
+		}
+	}
+
+	focus = {
+		id = SOV_put_eyes_on_right
+		icon = GFX_focus_SOV_eyes_on_the_right
+		x = 12
+		y = 1
+
+		prerequisite = {focus = SOV_put_conspiracy}
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+                                add_popularity = {
+                                    ideology = fascism
+                                    popularity = -0.1
+                                }
+
+		}
+	}
+
+	focus = {
+		id = SOV_put_emergency
+		icon = GFX_focus_SOV_emergency_meassures
+		x = 10
+		y = 2
+
+		prerequisite = {focus = SOV_put_eyes_on_left}
+		prerequisite = {focus = SOV_put_center}
+		prerequisite = {focus = SOV_put_eyes_on_right}
+		mutually_exclusive = { }
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = SOV_putin_slipping_grip
+
+		}
+	}
+
+###CIVIL WAR###
+
+	focus = {
+		id = SOV_put_mil_crack
+		icon = GFX_focus_SOV_mil_crack
+		x = 2
+		y = 3
+
+		prerequisite = {focus = SOV_put_emergency}
+		mutually_exclusive = {focus = SOV_put_contact_ssrs}
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_putin_slipping_grip
+				add_idea = SOV_putin_slipping_grip_1
+			}
+
+		}
+	}
+
+	focus = {
+		id = SOV_put_chaos_in_streets
+		icon = GFX_focus_SOV_chaos_in_the_streets
+		x = 0
+		y = 4
+
+		prerequisite = {focus = SOV_put_mil_crack}
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = -35
+			add_stability = -0.1
+			add_war_support = -0.1
+			SOV = {
+			country_event = {id = ussr.64}
+			}
+
+		}
+	}
+
+	focus = {
+		id = SOV_put_breaking_point
+		icon = GFX_focus_SOV_rising_dissidence
+		x = 2
+		y = 4
+
+		prerequisite = {focus = SOV_put_mil_crack}
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_putin_slipping_grip_1
+				add_idea = SOV_putin_slipping_grip_2
+			}
+
+		}
+	}
+
+	focus = {
+		id = SOV_put_sib_silence
+		icon = GFX_focus_SOV_the_siberian_silence
+		x = 4
+		y = 4
+
+		prerequisite = {focus = SOV_put_mil_crack}
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+
+		custom_effect_tooltip = sov_putin_siberia
+		hidden_effect = {
+		653 = { set_demilitarized_zone = yes }
+		572 = { set_demilitarized_zone = yes }
+		403 = { set_demilitarized_zone = yes }
+		571 = { set_demilitarized_zone = yes }
+		578 = { set_demilitarized_zone = yes }
+		570 = { set_demilitarized_zone = yes }
+		569 = { set_demilitarized_zone = yes }
+		568 = { set_demilitarized_zone = yes }
+		329 = { set_demilitarized_zone = yes }
+		567 = { set_demilitarized_zone = yes }
+		566 = { set_demilitarized_zone = yes }
+		564 = { set_demilitarized_zone = yes }
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_put_battle_of_moscow
+		icon = GFX_focus_SOV_the_battle_of_moscowa
+		x = 2
+		y = 5
+
+		prerequisite = {focus = SOV_put_chaos_in_streets}
+		prerequisite = {focus = SOV_put_breaking_point}
+		prerequisite = {focus = SOV_put_sib_silence}
+		mutually_exclusive = {}
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			SOV = {
+			country_event = {id = ussr.61}
+			}
+
+		}
+	}
+
+	focus = {
+		id = SOV_put_heil_the_nightmare
+		icon = GFX_focus_SOV_darkest_night
+		x = 2
+		y = 6
+
+		prerequisite = {focus = SOV_put_battle_of_moscow}
+		mutually_exclusive = {}
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 15
+		custom_effect_tooltip = sov_putin_civil_war
+		hidden_effect = {
+			SOV = {
+				country_event = { id = ussr.70 days = 4 }
+			}
+		    }
+		}
+	}
+
+
+###DISSOLUTION###
+
+	focus = {
+		id = SOV_put_contact_ssrs
+		icon = GFX_focus_SOV_contact_ssr
+		x = 10
+		y = 3
+
+		prerequisite = {focus = SOV_put_emergency}
+		mutually_exclusive = {focus = SOV_put_mil_crack}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_putin_slipping_grip
+				add_idea = SOV_putin_slipping_grip_3
+			}
+			set_country_flag = political_decisions_yes
+		}
+	}
+
+	focus = {
+		id = SOV_put_negotiations
+		icon = GFX_focus_SOV_Unification_talk
+		x = 10
+		y = 4
+
+		prerequisite = {focus = SOV_put_contact_ssrs}
+		mutually_exclusive = {}
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 20
+			swap_ideas = {
+				remove_idea = SOV_putin_slipping_grip_3
+				add_idea = SOV_putin_slipping_grip_4
+			}
+
+		}
+	}
+
+	focus = {
+		id = SOV_put_peceful_solution
+		icon = GFX_focus_SOV_peaceful_solution
+		x = 10
+		y = 5
+
+		prerequisite = {focus = SOV_put_negotiations}
+		mutually_exclusive = {}
+		
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 15
+			add_stability = 0.25
+			add_war_support = -0.1
+			SOV = {
+			country_event = {id = ussr.56}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_put_lukashenko
+		icon = GFX_focus_SOV_our_man_in_minsk
+		x = 8
+		y = 4
+
+		prerequisite = {focus = SOV_put_contact_ssrs}
+		mutually_exclusive = {}
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 20
+
+		}
+	}
+
+	focus = {
+		id = SOV_put_two_states_one_goal
+		icon = GFX_focus_SOV_two_countries_one_goal
+		x = 8
+		y = 5
+
+		prerequisite = {focus = SOV_put_lukashenko}
+		mutually_exclusive = {focus = SOV_put_union_state_solution}
+		
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+
+		custom_effect_tooltip = sov_putin_belarus
+		hidden_effect = {
+			set_country_flag = sov_two_state_solution
+			release = BLR
+			give_guarantee = BLR
+		BLR = {
+			set_politics = {
+			    ruling_party = paternal_autocracy
+			    elections_allowed = no
+			    last_election = "2000.12.17"
+			    election_frequency = 48
+			    long_name = BLR_paternal_autocracy_party_long
+			    name = BLR_paternal_autocracy_party
+			}
+		    } 
+		    create_faction = "Collective Security Organization"
+		    SOV = {
+		    	add_to_faction = BLR
+		    }
+
+			}  
+
+		}
+	}
+
+	focus = {
+		id = SOV_put_union_state_solution
+		icon = GFX_focus_SOV_union_state
+		x = 6
+		y = 5
+
+		prerequisite = {focus = SOV_put_lukashenko}
+		mutually_exclusive = {focus = SOV_put_two_states_one_goal}
+		
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		custom_effect_tooltip = sov_putin_union_state
+		hidden_effect = {
+		    create_faction = "Collective Security Organization"
+			SOV = {
+				add_to_faction = MON
+			}
+			set_country_flag = sov_union_state_solution
+			if = {
+				limit = { 
+				has_country_flag = bortnikov
+			}
+			remove_ideas = SOV_bortnikov_advisor
+			add_ideas = SOV_alexander_lukashenko 
+			}
+
+			if = {
+			       limit = { 
+			       has_country_flag = patrushev
+			}
+			remove_ideas = SOV_patrushev_advisor
+			add_ideas = SOV_alexander_lukashenko 
+			}
+		   }
+
+		}
+	}
+
+	focus = {
+		id = SOV_put_agitators
+		icon = GFX_focus_SOV_remove_opposition
+		x = 12
+		y = 4
+
+		prerequisite = {focus = SOV_put_contact_ssrs}
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_manpower = -3000
+                                add_popularity = {
+                                    ideology = communism 
+                                    popularity = -0.1
+                                }
+                                add_popularity = {
+                                    ideology = reformed_communism
+                                    popularity = -0.05
+                                }
+                                add_popularity = {
+                                    ideology = liberalism
+                                    popularity = -0.07
+                                }
+
+		}
+	}
+
+	focus = {
+		id = SOV_put_strela
+		icon = GFX_focus_SOV_increase_anti-terrorist_funding
+		x = 12
+		y = 5
+
+		prerequisite = {focus = SOV_put_agitators}
+		mutually_exclusive = {}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			SOV = {
+			country_event = {id = ussr.60}
+			}
+
+		}
+	}
+
+
+###QUESTION OF GOVERNMENT###
+
+	focus = {
+		id = SOV_put_question_of_government
+		icon = GFX_SOV_our_power_secured
+		x = 15
+		y = 3
+
+		prerequisite = {focus = SOV_put_emergency}
+		mutually_exclusive = {}
+		available = {
+		has_country_flag = political_decisions_yes
+		}
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 25
+
+		}
+	}
+
+	focus = {
+		id = SOV_put_keeping_rouse
+		icon = GFX_focus_SOV_keeping_the_rouse
+		x = 14
+		y = 4
+
+		prerequisite = {focus = SOV_put_question_of_government}
+		mutually_exclusive = {focus = SOV_put_new_russia}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+                                add_popularity = {
+                                    ideology = communism
+                                    popularity = 0.08
+                                }
+                                add_popularity = {
+                                    ideology = socialism
+                                    popularity = 0.05
+                                }
+			add_stability = 0.15
+			add_ideas = SOV_putin_socialist_dominated_politics
+			set_country_flag = sov_communist_choice
+
+		}
+	}
+
+	focus = {
+		id = SOV_put_red_oligarchy
+		icon = GFX_focus_SOV_red_oligarchy
+		x = 14
+		y = 5
+
+		prerequisite = {focus = SOV_put_keeping_rouse}
+		mutually_exclusive = {}
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = { 
+                                add_stability = -0.1
+
+                                add_popularity = {
+                                    ideology = paternal_autocracy
+                                    popularity = 0.1
+                                }
+                                add_popularity = {
+                                    ideology = reformed_communism
+                                    popularity = 0.15
+                                }
+
+		custom_effect_tooltip = sov_putin_reformism
+	
+		hidden_effect = {
+		retire_country_leader = yes
+		promote_character = SOV_putin_reformist
+
+			set_politics = {
+			    ruling_party = reformed_communism
+			    elections_allowed = no
+			    last_election = "2000.12.17"
+			    election_frequency = 48
+			    long_name = SOV_reformed_communism_party_long
+			    name = SOV_reformed_communism_party
+			}
+		    }
+		}
+	}
+
+	focus = {
+		id = SOV_put_new_russia
+		icon = GFX_focus_SOV_new_russian_nation
+		x = 16
+		y = 4
+
+		prerequisite = {focus = SOV_put_question_of_government}
+		mutually_exclusive = {focus = SOV_put_keeping_rouse}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+                                add_popularity = {
+                                    ideology = paternal_autocracy
+                                    popularity = 0.15
+                                }
+                                add_popularity = {
+                                    ideology = fascism
+                                    popularity = 0.07
+                                }
+			add_stability = -0.08
+			add_ideas = SOV_putin_nationalist_dominated_politics
+			set_country_flag = sov_nationalist_choice
+
+		}
+	}
+
+	focus = {
+		id = SOV_put_old_clothes
+		icon = GFX_focus_SOV_old_clothes
+		x = 16
+		y = 5
+
+		prerequisite = {focus = SOV_put_new_russia}
+		mutually_exclusive = {}
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_stability = 0.05
+                                add_popularity = {
+                                    ideology = communism
+                                    popularity = 0.07
+                                }
+                                add_popularity = {
+                                    ideology = reformed_communism
+                                    popularity = 0.02
+                                }
+                                add_popularity = {
+                                    ideology = socialism
+                                    popularity = 0.05
+                                }
+		custom_effect_tooltip = sov_putin_nationalism
+		hidden_effect = {
+			add_ideas = SOV_putin_soviet_asthetic
+		       }
+		}
+	}
+
+	focus = {
+		id = SOV_put_goodbye
+		icon = GFX_focus_SOV_goodbye_forever
+		x = 10
+		y = 6
+
+		prerequisite = {focus = SOV_put_peceful_solution}
+		prerequisite = {focus = SOV_put_strela}
+		prerequisite = {focus = SOV_put_union_state_solution focus = SOV_put_two_states_one_goal}
+		prerequisite = {focus = SOV_put_red_oligarchy focus = SOV_put_old_clothes}
+		mutually_exclusive = {}
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			SOV = {
+			country_event = {id = ussr.55}
+			}
+
+		}
+	}
+
+}

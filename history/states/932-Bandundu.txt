@@ -1,0 +1,33 @@
+
+state={
+	id=932
+	name="STATE_932"
+	resources={
+		rubber=15.000
+	}
+
+	history={
+		owner = COG
+		add_core_of = COG
+		add_core_of = RGO
+		add_core_of = RCK
+		buildings = {
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 2
+
+		}
+		victory_points = {
+			5117 3 
+		}
+
+	}
+
+	provinces={
+		5117 10025 10071 12775 12896 12945 13389 
+	}
+	manpower=14760170
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

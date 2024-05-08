@@ -1,0 +1,2022 @@
+division_template = { # Armoured Division #
+	name = "Armoured Division"
+	division_names_group = GENERIC_MBT_01
+
+	regiments = {
+		main_battle_tank_armor = { x = 0 y = 0 }
+		main_battle_tank_armor = { x = 0 y = 1 }
+		main_battle_tank_armor = { x = 0 y = 2 }
+		main_battle_tank_armor = { x = 0 y = 3 }
+		main_battle_tank_armor = { x = 0 y = 4 }
+		main_battle_tank_armor = { x = 1 y = 0 }
+		main_battle_tank_armor = { x = 1 y = 1 }
+		heavy_infantry_unit = { x = 2 y = 0 }
+		heavy_infantry_unit = { x = 2 y = 1 }
+		heavy_infantry_unit = { x = 2 y = 2 }
+		heavy_infantry_unit = { x = 2 y = 3 }
+		motorised_artillery_unit = { x = 3 y = 0 }
+		motorised_artillery_unit = { x = 3 y = 1 }
+		rocket_artillery_unit = { x = 3 y = 2 }
+		rocket_artillery_unit = { x = 3 y = 3 }
+		spaa_vehicle_armor = { x = 4 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		armoured_recon = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+		transport_heli_company = { x = 0 y = 4 }
+		
+	}
+	priority = 1
+}
+division_template = { # Mechanised Division #
+	name = "Mechanised Division"
+	division_names_group = GENERIC_MEC_01
+
+	regiments = {
+		infantry_fighting_vehicle_armor = { x = 0 y = 0 }
+		infantry_fighting_vehicle_armor = { x = 0 y = 1 }
+		heavy_infantry_unit = { x = 1 y = 0 }
+		heavy_infantry_unit = { x = 1 y = 1 }
+		heavy_infantry_unit = { x = 1 y = 2 }
+		heavy_infantry_unit = { x = 1 y = 3 }
+		heavy_infantry_unit = { x = 1 y = 4 }
+		infantry_unit = { x = 2 y = 0 }
+		infantry_unit = { x = 2 y = 1 }
+		infantry_unit = { x = 2 y = 2 }
+		infantry_unit = { x = 2 y = 3 }
+		motorised_artillery_unit = { x = 3 y = 0 }
+		towed_artillery_unit = { x = 4 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		spaa_vehicle_support_armor = { x = 0 y = 1 }
+		armoured_recon = { x = 0 y = 2 }
+		towed_artillery_support_unit = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
+	}
+	priority = 1
+}
+division_template = { # Infantry Division #
+	name = "Infantry Division"
+	division_names_group = GENERIC_INF_01
+
+	regiments = {
+		infantry_unit = { x = 0 y = 0 }
+		infantry_unit = { x = 0 y = 1 }
+		infantry_unit = { x = 0 y = 2 }
+		infantry_unit = { x = 0 y = 3 }
+		infantry_unit = { x = 1 y = 0 }
+		infantry_unit = { x = 1 y = 1 }
+		infantry_unit = { x = 1 y = 2 }
+		infantry_unit = { x = 1 y = 3 }
+		infantry_unit = { x = 1 y = 4 }
+		towed_artillery_unit = { x = 2 y = 0 }
+		towed_artillery_unit = { x = 2 y = 1 }
+		towed_artillery_unit = { x = 2 y = 2 }
+		towed_artillery_unit = { x = 2 y = 3 }
+	}
+	support = {
+		towed_artillery_support_unit = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		maintenance_company = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		engineer = { x = 0 y = 4 }
+	}
+	priority = 1
+}
+division_template = { # Marine Division #
+	name = "Marine Division"
+	division_names_group = GENERIC_MRN_01
+
+	regiments = {
+		infantry_fighting_vehicle_armor = { x = 0 y = 0 }
+		heavy_infantry_unit = { x = 1 y = 0 }
+		marine_unit = { x = 2 y = 0 }
+		marine_unit = { x = 2 y = 1 }
+		marine_unit = { x = 2 y = 2 }
+		marine_unit = { x = 2 y = 3 }
+		marine_unit = { x = 2 y = 4 }
+		towed_artillery_unit = { x = 3 y = 0 }
+		towed_artillery_unit = { x = 3 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon_drone_company = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+
+units = {
+	# Armoured Division #
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12026
+		division_template = "Armoured Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "PRC" }
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_1 = { owner = "PRC" }
+			motorised_artillery_equipment_4 = { owner = "PRC" }
+			rocket_artillery_equipment_4 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 900
+		division_template = "Armoured Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "PRC" }
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_1 = { owner = "PRC" }
+			motorised_artillery_equipment_3 = { owner = "PRC" }
+			rocket_artillery_equipment_4 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9969
+		division_template = "Armoured Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "PRC" }
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_1 = { owner = "PRC" }
+			motorised_artillery_equipment_3 = { owner = "PRC" }
+			rocket_artillery_equipment_4 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 6860
+		division_template = "Armoured Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "PRC" }
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_0 = { owner = "PRC" }
+			motorised_artillery_equipment_3 = { owner = "PRC" }
+			rocket_artillery_equipment_4 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 810
+		division_template = "Armoured Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "PRC" }
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_0 = { owner = "PRC" }
+			motorised_artillery_equipment_1 = { owner = "PRC" }
+			rocket_artillery_equipment_4 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 9798
+		division_template = "Armoured Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "PRC" }
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_0 = { owner = "PRC" }
+			motorised_artillery_equipment_1 = { owner = "PRC" }
+			rocket_artillery_equipment_4 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 10567
+		division_template = "Armoured Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "PRC" }
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_0 = { owner = "PRC" }
+			motorised_artillery_equipment_1 = { owner = "PRC" }
+			rocket_artillery_equipment_4 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 10004
+		division_template = "Armoured Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "PRC" }
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_0 = { owner = "PRC" }
+			motorised_artillery_equipment_1 = { owner = "PRC" }
+			rocket_artillery_equipment_4 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 9942
+		division_template = "Armoured Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "PRC" }
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_0 = { owner = "PRC" }
+			motorised_artillery_equipment_1 = { owner = "PRC" }
+			rocket_artillery_equipment_4 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 9934
+		division_template = "Armoured Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "PRC" }
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_0 = { owner = "PRC" }
+			motorised_artillery_equipment_1 = { owner = "PRC" }
+			rocket_artillery_equipment_4 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 4504
+		division_template = "Armoured Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "PRC" }
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_0 = { owner = "PRC" }
+			motorised_artillery_equipment_1 = { owner = "PRC" }
+			rocket_artillery_equipment_4 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.02
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 7159
+		division_template = "Armoured Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "PRC" }
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_0 = { owner = "PRC" }
+			motorised_artillery_equipment_1 = { owner = "PRC" }
+			rocket_artillery_equipment_4 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.02
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 9843
+		division_template = "Armoured Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "PRC" }
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_0 = { owner = "PRC" }
+			motorised_artillery_equipment_1 = { owner = "PRC" }
+			rocket_artillery_equipment_4 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.02
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 6999
+		division_template = "Armoured Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "PRC" }
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_0 = { owner = "PRC" }
+			motorised_artillery_equipment_1 = { owner = "PRC" }
+			rocket_artillery_equipment_4 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.02
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 11986
+		division_template = "Armoured Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "PRC" }
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_0 = { owner = "PRC" }
+			motorised_artillery_equipment_1 = { owner = "PRC" }
+			rocket_artillery_equipment_4 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.02
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 4925
+		division_template = "Armoured Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "PRC" }
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_0 = { owner = "PRC" }
+			motorised_artillery_equipment_1 = { owner = "PRC" }
+			rocket_artillery_equipment_4 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.02
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 7637
+		division_template = "Armoured Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "PRC" }
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_0 = { owner = "PRC" }
+			motorised_artillery_equipment_1 = { owner = "PRC" }
+			rocket_artillery_equipment_4 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.02
+	}
+
+	# Mechanised Division #
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12076
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_0 = { owner = "PRC" }
+			motorised_artillery_equipment_1 = { owner = "PRC" }
+			rocket_artillery_equipment_3 = { owner = "PRC" }
+			heli_transport_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 11920
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_0 = { owner = "PRC" }
+			motorised_artillery_equipment_1 = { owner = "PRC" }
+			rocket_artillery_equipment_3 = { owner = "PRC" }
+			heli_transport_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 996
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_0 = { owner = "PRC" }
+			motorised_artillery_equipment_1 = { owner = "PRC" }
+			rocket_artillery_equipment_3 = { owner = "PRC" }
+			heli_transport_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 1202
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_0 = { owner = "PRC" }
+			motorised_artillery_equipment_1 = { owner = "PRC" }
+			rocket_artillery_equipment_3 = { owner = "PRC" }
+			heli_transport_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 4682
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_0 = { owner = "PRC" }
+			motorised_artillery_equipment_1 = { owner = "PRC" }
+			rocket_artillery_equipment_1 = { owner = "PRC" }
+			heli_transport_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 1367
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_0 = { owner = "PRC" }
+			motorised_artillery_equipment_1 = { owner = "PRC" }
+			rocket_artillery_equipment_1 = { owner = "PRC" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 1508
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_0 = { owner = "PRC" }
+			motorised_artillery_equipment_1 = { owner = "PRC" }
+			rocket_artillery_equipment_1 = { owner = "PRC" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 1172
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_0 = { owner = "PRC" }
+			motorised_artillery_equipment_1 = { owner = "PRC" }
+			rocket_artillery_equipment_1 = { owner = "PRC" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.02
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 4572
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_0 = { owner = "PRC" }
+			motorised_artillery_equipment_1 = { owner = "PRC" }
+			rocket_artillery_equipment_1 = { owner = "PRC" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.02
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 10000
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_0 = { owner = "PRC" }
+			motorised_artillery_equipment_1 = { owner = "PRC" }
+			rocket_artillery_equipment_1 = { owner = "PRC" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.02
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 10424
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_0 = { owner = "PRC" }
+			motorised_artillery_equipment_1 = { owner = "PRC" }
+			rocket_artillery_equipment_1 = { owner = "PRC" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.02
+	}
+		division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 1150
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_0 = { owner = "PRC" }
+			motorised_artillery_equipment_1 = { owner = "PRC" }
+			rocket_artillery_equipment_1 = { owner = "PRC" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.02
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 7101
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_0 = { owner = "PRC" }
+			motorised_artillery_equipment_1 = { owner = "PRC" }
+			rocket_artillery_equipment_1 = { owner = "PRC" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.02
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 4506
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			spaa_tank_equipment_0 = { owner = "PRC" }
+			motorised_artillery_equipment_1 = { owner = "PRC" }
+			rocket_artillery_equipment_1 = { owner = "PRC" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.1
+	}
+
+	# Infantry Division #
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 964
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 12074
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 4071
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 12043
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 1489
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 7832
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 7743
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 1645
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 944
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 6806
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 9897
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 9623
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 5102
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 11781
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 3932
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 9885
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = 7659
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = 1139
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location = 12119
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 12036
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 1114
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 22
+		}
+		location = 1089
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 23
+		}
+		location = 10014
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 24
+		}
+		location = 7035
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 25
+		}
+		location = 7058
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 26
+		}
+		location = 10010
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 27
+		}
+		location = 12030
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 28
+		}
+		location = 10517
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		}
+		location = 4709
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 30
+		}
+		location = 4023
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 31
+		}
+		location = 7152
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 32
+		}
+		location = 1087
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 33
+		}
+		location = 12590
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 34
+		}
+		location = 1469
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 35
+		}
+		location = 7965
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 36
+		}
+		location = 8029
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 37
+		}
+		location = 4973
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 38
+		}
+		location = 7446
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 39
+		}
+		location = 7095
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 40
+		}
+		location = 7137
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 41
+		}
+		location = 3992
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 4619
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 43
+		}
+		location = 5033
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location = 7940
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 45
+		}
+		location = 7521
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 46
+		}
+		location = 9843
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 47
+		}
+		location = 7418
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 48
+		}
+		location = 2045
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 49
+		}
+		location = 10433
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 50
+		}
+		location = 11771
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 51
+		}
+		location = 1070
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 52
+		}
+		location = 7294
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 53
+		}
+		location = 1010
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 54
+		}
+		location = 1522
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 55
+		}
+		location = 861
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 56
+		}
+		location = 9848
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 57
+		}
+		location = 4190
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 58
+		}
+		location = 1531
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 59
+		}
+		location = 4010
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 59
+		}
+		location = 11913
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 60
+		}
+		location = 9766
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 61
+		}
+		location = 4925
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 62
+		}
+		location = 800
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+		division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 63
+		}
+		location = 8042
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	  division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 64
+		}
+		location = 10068
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	 division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 65
+		}
+		location = 1069
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 66
+		}
+		location = 7142
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 67
+		}
+		location = 4041
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 68
+		}
+		location = 7172
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 69
+		}
+		location = 9938
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 70
+		}
+		location = 1047
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 71
+		}
+		location = 1047
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 72
+		}
+		location = 4506
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.18
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 73
+		}
+		location = 7767
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 74
+		}
+		location = 7014
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 75
+		}
+		location = 1055
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 75
+		}
+		location = 1055
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 76
+		}
+		location = 7191
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 77
+		}
+		location = 4809
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 78
+		}
+		location = 1608
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 79
+		}
+		location = 5087
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 80
+		}
+		location = 4823
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 81
+		}
+		location = 1499
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 82
+		}
+		location = 9843
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 83
+		}
+		location = 10629
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 84
+		}
+		location = 10724
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 85
+		}
+		location = 2093
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+
+
+
+	# Marine Division #
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 994
+		division_template = "Marine Division"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+			drone_recon_equipment_0 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1200
+		division_template = "Marine Division"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+			drone_recon_equipment_0 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10076
+		division_template = "Marine Division"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "PRC" }
+			apc_tank_equipment_3 = { owner = "PRC" }
+			towed_artillery_equipment_1 = { owner = "PRC" }
+			drone_recon_equipment_0 = { owner = "PRC" }
+		}
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+}
+instant_effect = {
+	# Stockpile #
+	add_equipment_to_stockpile = {
+		type = infantry_weapons_1
+		amount = 70000
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_weapons_2
+		amount = 30000
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_anti_tank_weapons_1
+		amount = 5500
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_anti_air_weapons_1
+		amount = 5000
+	}
+	add_equipment_to_stockpile = {
+		type = motorised_equipment_1
+		amount = 1000
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 7500
+	}
+	add_equipment_to_stockpile = {
+		type = mbt_tank_equipment_0
+		amount = 4800
+		producer = PRC
+	}
+	add_equipment_to_stockpile = {
+		type = mbt_tank_equipment_1
+		amount = 150
+		producer = PRC
+	}
+	add_equipment_to_stockpile = {
+		type = mbt_tank_equipment_2
+		amount = 100
+		producer = PRC
+	}
+	add_equipment_to_stockpile = {
+		type = mbt_tank_equipment_3
+		amount = 10
+		producer = PRC
+	}
+	add_equipment_to_stockpile = {
+		type = apc_tank_equipment_0
+		amount = 690
+		producer = PRC
+	}
+	add_equipment_to_stockpile = {
+		type = apc_tank_equipment_3
+		amount = 690
+		producer = PRC
+	}
+	add_equipment_to_stockpile = {
+		type = towed_artillery_equipment_1
+		amount = 580
+		producer = PRC
+	}
+	add_equipment_to_stockpile = {
+		type = towed_artillery_equipment_2
+		amount = 300
+		producer = PRC
+	}
+	add_equipment_to_stockpile = {
+		type = motorised_artillery_equipment_1
+		amount = 250
+		producer = PRC
+	}
+	add_equipment_to_stockpile = {
+		type = rocket_artillery_equipment_1
+		amount = 800
+		producer = PRC
+	}
+	add_equipment_to_stockpile = {
+		type = rocket_artillery_equipment_3
+		amount = 410
+		producer = PRC
+	}
+	add_equipment_to_stockpile = {
+		type = rocket_artillery_equipment_4
+		amount = 100
+		producer = PRC
+	}
+	add_equipment_to_stockpile = {
+		type = heli_transport_equipment_0
+		amount = 33
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = heli_transport_equipment_1
+		amount = 22
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = heli_transport_equipment_0
+		amount = 4
+		producer = PRC
+	}
+	add_equipment_to_stockpile = {
+		type = heli_transport_equipment_1
+		amount = 13
+		producer = PRC
+	}
+	  add_equipment_to_stockpile = {
+		type = ifv_tank_equipment_1
+		amount = 250
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = ifv_tank_equipment_1
+		amount = 300
+		producer = PRC
+	}
+	add_equipment_to_stockpile = {
+		type = recon_vehicle_equipment_0
+		amount = 100
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = recon_vehicle_equipment_0
+		amount = 200
+		producer = PRC
+	}
+}

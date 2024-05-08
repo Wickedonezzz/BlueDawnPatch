@@ -1,0 +1,37 @@
+add_namespace = greenland_independence
+
+country_event = {
+    id = greenland_independence.1
+	title = greenland_independence.1.t
+	desc = greenland_independence.1.d
+	picture = GFX_report_event_ballot_box
+
+    trigger = {
+		original_tag = GRN
+        date > 2000.3.5
+    }
+
+    mean_time_to_happen = {
+        days = 15
+        months = 7
+    }
+    fire_only_once = yes
+
+    option = {
+        name = greenland_independence.1.a
+
+        DEN = {
+            end_puppet = GRN
+        }
+
+        ai_chance = {
+            base = 50
+        }
+    }
+    option = {
+        name = greenland_independence.1.b
+        ai_chance = {
+            base = 50
+        }
+    }
+}

@@ -1,0 +1,293 @@
+defined_text = {
+	name = YUG_the_stambolic_program_coup_text
+	text = {
+		trigger = {
+			NOT = {has_country_flag = yug_you_will_no_longer_get_couped}
+		}
+		localization_key = YUG_you_will_indeed_get_couped_loc_key
+	}
+	text = {
+		trigger = {
+			has_country_flag = yug_you_will_no_longer_get_couped
+		}
+		localization_key = YUG_you_wont_indeed_get_couped_loc_key
+	}
+}
+
+defined_text = {
+	name = YUG_economic_health_text
+	text = {
+		trigger = {
+			check_variable = {YUG_economic_health_var = 0}
+		}
+		localization_key = YUG_economic_health_good_loc_key
+	}
+	text = {
+		trigger = {
+			check_variable = {YUG_economic_health_var = 1}
+		}
+		localization_key = YUG_economic_health_fine_loc_key
+	}
+	text = {
+		trigger = {
+			check_variable = {YUG_economic_health_var = 2}
+		}
+		localization_key = YUG_economic_health_average_loc_key
+	}
+	text = {
+		trigger = {
+			check_variable = {YUG_economic_health_var = 3}
+		}
+		localization_key = YUG_economic_health_bad_loc_key
+	}
+	text = {
+		trigger = {
+			check_variable = {YUG_economic_health_var = 4}
+		}
+		localization_key = YUG_economic_health_very_bad_loc_key
+	}
+	text = {
+		trigger = {
+			check_variable = {YUG_economic_health_var = 5}
+		}
+		localization_key = YUG_economic_health_garbage_loc_key
+	}
+}
+
+defined_text = {
+	name = YUG_industrial_progress_stage_text
+	text = {
+		trigger = {
+			check_variable = {YUG_milo_ind_stage_var = 1}
+		}
+		localization_key = YUG_industrial_progress_stage_first_loc_key
+	}
+	text = {
+		trigger = {
+			check_variable = {YUG_milo_ind_stage_var = 2}
+		}
+		localization_key = YUG_industrial_progress_stage_second_loc_key
+	}
+	text = {
+		trigger = {
+			check_variable = {YUG_milo_ind_stage_var = 3}
+		}
+		localization_key = YUG_industrial_progress_stage_third_loc_key
+	}
+	text = {
+		trigger = {
+			check_variable = {YUG_milo_ind_stage_var = 4}
+		}
+		localization_key = YUG_industrial_progress_stage_fourth_loc_key
+	}
+	text = {
+		trigger = {
+			check_variable = {YUG_milo_ind_stage_var = 5}
+		}
+		localization_key = YUG_industrial_progress_stage_finished_loc_key
+	}
+
+}
+
+defined_text = {
+	name = YUG_tech_progress_stage_text
+	text = {
+		trigger = {
+			check_variable = {YUG_milo_tech_stage_var = 1}
+		}
+		localization_key = YUG_industrial_progress_stage_first_loc_key
+	}
+	text = {
+		trigger = {
+			check_variable = {YUG_milo_tech_stage_var = 2}
+		}
+		localization_key = YUG_industrial_progress_stage_second_loc_key
+	}
+	text = {
+		trigger = {
+			check_variable = {YUG_milo_tech_stage_var = 3}
+		}
+		localization_key = YUG_industrial_progress_stage_third_loc_key
+	}
+	text = {
+		trigger = {
+			check_variable = {YUG_milo_tech_stage_var = 4}
+		}
+		localization_key = YUG_industrial_progress_stage_fourth_loc_key
+	}
+	text = {
+		trigger = {
+			check_variable = {YUG_milo_tech_stage_var = 5}
+		}
+		localization_key = YUG_industrial_progress_stage_finished_loc_key
+	}
+
+}
+
+defined_text = {
+	name = YUG_event_candidate_option
+	text = {
+		trigger = {
+			has_completed_focus = YUG_milosevic_integrate_pcpoy_remmants
+		}
+		localization_key = YUG_event_candidate_option_karadzic_loc_key
+	}
+	text = {
+		trigger = {
+			NOT = {has_completed_focus = YUG_milosevic_integrate_pcpoy_remmants}
+		}
+		localization_key = YUG_event_candidate_option_no_karadzic_loc_key
+	}
+}
+
+defined_text = {
+	name = YUG_operation_focus_name
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = operation_soko_flag
+				has_country_flag = operation_gvozdena_ruka_flag	
+			}
+		}
+		localization_key = YUG_operation_loc_key
+	}
+	text = {
+		trigger = {
+			has_country_flag = operation_soko_flag
+		}
+		localization_key = YUG_operation_soko_loc_key
+	}
+	text = {
+		trigger = {
+			has_country_flag = operation_gvozdena_ruka_flag
+		}
+		localization_key = YUG_operation_gvozdena_ruka_loc_key
+	}
+}
+
+defined_text = {
+	name = YUG_nationalist_support_text
+	text = {
+		trigger = {
+			check_variable = {YUG_nationalist_support_var = 1}
+		}
+		localization_key = YUG_nationalist_support_very_unloyal_loc_key
+	}
+	text = {
+		trigger = {
+			check_variable = {YUG_nationalist_support_var = 2}
+		}
+		localization_key = YUG_nationalist_support_unloyal_loc_key
+	}
+	text = {
+		trigger = {
+			check_variable = {YUG_nationalist_support_var = 3}
+		}
+		localization_key = YUG_nationalist_support_leaning_unloyal_loc_key
+	}
+	text = {
+		trigger = {
+			check_variable = {YUG_nationalist_support_var = 4}
+		}
+		localization_key = YUG_nationalist_support_leaning_loyal_loc_key
+	}	
+	text = {
+		trigger = {
+			check_variable = {YUG_nationalist_support_var = 5}
+		}
+		localization_key = YUG_nationalist_support_loyal_loc_key
+	}
+	text = {
+		trigger = {
+			check_variable = {YUG_nationalist_support_var = 6}
+		}
+		localization_key = YUG_nationalist_support_very_loyal_loc_key
+	}
+
+}
+
+defined_text = {
+	name = YUG_choose_city
+	text = {
+		trigger = {
+			check_variable = {YUG_city_chooser_var = 1}
+		}
+		localization_key = YUG_sarajevo_loc_key
+	}
+	text = {
+		trigger = {
+			check_variable = {YUG_city_chooser_var = 2}
+		}
+		localization_key = YUG_banja_luka_loc_key
+	}
+	text = {
+		trigger = {
+			check_variable = {YUG_city_chooser_var = 3}
+		}
+		localization_key = YUG_prishtina_loc_key
+	}
+	text = {
+		trigger = {
+			check_variable = {YUG_city_chooser_var = 4}
+		}
+		localization_key = YUG_novi_sad_loc_key
+	}	
+	text = {
+		trigger = {
+			check_variable = {YUG_city_chooser_var = 5}
+		}
+		localization_key = YUG_mostar_loc_key
+	}
+	text = {
+		trigger = {
+			check_variable = {YUG_city_chooser_var = 6}
+			CRO = {owns_state = 109}
+			CRO = {is_puppet_of = YUG}
+		}
+		localization_key = YUG_zagreb_loc_key
+	}
+	text = {
+		trigger = {
+			check_variable = {YUG_city_chooser_var = 7}
+			CRO = {owns_state = 853}
+			CRO = {is_puppet_of = YUG}
+		}
+		localization_key = YUG_ljubljana_loc_key
+	}	
+}
+
+defined_text = {
+	name = YUG_event_seselj_candidate_option
+	text = {
+		trigger = {
+			has_country_flag = abolished_secularism
+		}
+		localization_key = YUG_pavle_loc_key
+	}
+	text = {
+		trigger = {
+			NOT = {has_country_flag = abolished_secularism}
+		}
+		localization_key = YUG_no_pavle_loc_key
+	}
+}
+
+defined_text = {
+	name = YUG_name
+	text = {
+		trigger = {
+			YUG = {has_completed_focus = YUG_seselj_embracing_serbian_ultranationalism}
+			YUG = {has_completed_focus = YUG_seselj_united_once_more}
+		}
+		localization_key = YUG_seselj_g_serbia
+	}
+	text = {
+		trigger = {
+			NOT = {
+				YUG = {has_completed_focus = YUG_seselj_embracing_serbian_ultranationalism}
+				YUG = {has_completed_focus = YUG_seselj_united_once_more}
+			}
+		}
+		localization_key = YUG_seselj_yugo
+	}
+}

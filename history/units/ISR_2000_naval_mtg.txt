@@ -1,0 +1,34 @@
+units = {
+	fleet = {
+		name = "Hyl Hym Hyshraly"
+		naval_base = 4206 # Tel Aviv #
+		task_force = {
+			name = "Hyl Hym Hyshraly"
+			location = 4206 # Tel Aviv #
+			ship = { name = "INS Eilat" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = ISR version_name = "Eilat Class" } } }
+			ship = { name = "INS Lahav" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = ISR version_name = "Eilat Class" } } }
+			ship = { name = "INS Hanit" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = ISR version_name = "Eilat Class" } } }
+		}
+		task_force = {
+			name = "Hyl Hym Hyshraly Ltsvllvt"
+			location = 4206 # Tel Aviv #
+			ship = { name = "INS Dolphin" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = ISR version_name = "Dolphin Class" } } }
+			ship = { name = "INS Leviathan" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = ISR version_name = "Dolphin Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+	# Attack Submarines #
+	add_equipment_production = {
+		equipment = {
+			type = attack_submarine_hull_3
+			creator = "ISR" 
+			version_name = "Dolphin Class"
+		}
+		name = "INS Tekuma"
+		requested_factories = 1
+		progress = 0.84
+		amount = 1
+	}
+}

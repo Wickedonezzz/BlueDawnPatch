@@ -1,0 +1,179 @@
+add_namespace = turkey_mod
+
+#2002 elections#
+country_event = {
+	id = turkey_mod.1
+	title = turkey_mod.1.t
+	desc = turkey_mod.1.d
+	picture = GFX_report_event_spark
+	
+	trigger = {
+	date > 2002.11.03
+	original_tag = TUR
+
+	}
+	
+	immediate = {
+			remove_ideas = TUR_political_instability
+			set_party_name = {
+				ideology = social_democracy
+				name = TUR_chp_party
+				long_name = TUR_chp_party_long
+			}
+			set_party_name = {
+				ideology = democratic
+				name = TUR_akp_party
+				long_name = TUR_akp_party_long
+			}
+			set_party_name = {
+				ideology = liberalism
+				name = TUR_gp_party
+				long_name = TUR_gp_party_long
+			}
+			add_country_leader_role = {
+				character = TUR_cem_uzan
+				promote_leader = yes
+				country_leader = {
+					ideology = liberalism_sub
+					expire = "2050.1.1.1"
+					traits = {wealthy_businessman}
+				}
+			}
+			add_country_leader_role = {
+				character = TUR_recep_erdogan
+				promote_leader = yes
+				country_leader = {
+					ideology = conservatism
+					expire = "2050.1.1.1"
+					traits = {populist}
+				}
+			}
+			add_country_leader_role = {
+				character = TUR_deniz_baykal
+				promote_leader = yes
+				country_leader = {
+					ideology = social_democracy_sub
+					expire = "2050.1.1.1"
+					traits = {useful_bureaucrat}
+				}
+			}			
+		}
+
+	fire_only_once = yes
+
+		#I wonder how long this new guy will serve as the PM#
+	option = {
+		name = turkey_mod.1.a
+			news_event = {id = old_times_news.112}
+			
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+			
+			set_popularities = {
+				democratic = 34
+				social_democracy = 27
+				reformed_communism = 10
+				liberalism = 13
+				fascism = 15
+				communism = 1
+				paternal_autocracy = 0
+				
+			}
+			
+		ai_chance = {
+			base = 25
+		}	
+	}
+
+		#worst damn opposition leader#
+	option = {
+		name = turkey_mod.1.b
+			news_event = {id = old_times_news.113}
+
+			set_politics = {
+				ruling_party = social_democracy
+				elections_allowed = no
+			}
+			
+			set_popularities = {
+				democratic = 30
+				social_democracy = 37
+				reformed_communism = 10
+				liberalism = 7
+				fascism = 15
+				communism = 1
+				paternal_autocracy = 0
+				
+			}
+			
+		ai_chance = {
+			base = 22
+		}	
+	}
+	
+		#the dude that put political ads of his campaign during ad breaks of the soccer match that he was televising on the tv channels he owned#
+	option = {
+		name = turkey_mod.1.c
+			news_event = {id = old_times_news.114}
+
+			set_politics = {
+				ruling_party = liberalism
+				elections_allowed = no
+			}
+			
+			set_popularities = {
+				democratic = 19
+				social_democracy = 20
+				reformed_communism = 10
+				liberalism = 30
+				fascism = 20
+				communism = 1
+				paternal_autocracy = 0
+				
+			}
+			
+		ai_chance = {
+			base = 20
+		}
+	}
+	
+		#the racist#
+	option = {
+		name = turkey_mod.1.de
+			news_event = {id = old_times_news.115}
+			
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			
+			set_popularities = {
+				democratic = 25
+				social_democracy = 15
+				reformed_communism = 15
+				liberalism = 6
+				fascism = 37
+				communism = 2
+				paternal_autocracy = 0
+				
+			}
+		ai_chance = {
+			base = 20
+			modifier = {
+				factor = 25
+				OR = {
+					SOV = {
+						has_country_leader = {
+							character = SOV_dmitry_yazov
+							ruling_only = yes
+						}
+					}
+					POL = {is_puppet_of = SOV}
+				
+				}
+			}
+		}	
+	}
+}

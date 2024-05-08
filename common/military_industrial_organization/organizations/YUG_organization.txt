@@ -1,0 +1,74 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+YUG_yugimport_armor_division_organization = {
+	include = generic_mobile_tank_organization
+	icon = YUG_design_yugoimport_icon
+	
+	allowed = {	
+		tag = YUG
+	}
+}	
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+YUG_SOKO_organization = { 
+	include = generic_medium_aircraft_organization
+	icon = YUG_design_SOKO_icon
+	allowed = { 
+		tag = YUG
+	}
+
+}
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+YUG_zastava_arms_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
+	allowed = { 
+		tag = YUG
+	}
+}
+
+YUG_yugimport_artilerry_division_organization = {
+	include = generic_artillery_organization
+	icon = YUG_design_yugoimport_icon
+	allowed = { 
+		tag = YUG
+	}
+}

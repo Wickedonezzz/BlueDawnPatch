@@ -1,0 +1,180 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "sp_event_window"	
+		position = { x = 0 y = 0 }	
+		size = { width = 600 height = 510 }
+		orientation = center
+		origo = center
+		moveable = yes
+		click_to_front = no
+		clipping = no
+
+		background = {
+			name = "Background"	
+			spriteType = "GFX_sp_event_window"
+		}
+		iconType = {
+			name = "Super_Event_Image_South_African_War"
+			spriteType = "GFX_sp_event_South_African_War"
+			position = {x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "Super_Event_Image_Yugo_War"
+			spriteType = "GFX_sp_event_Yugo_War"
+			position = {x = 0 y = 0}
+		}
+
+		iconType = {
+			name = "Super_Event_Image_Sino_Soviet_War"
+			spriteType = "GFX_sp_event_Sino_Soviet_War"
+			position = {x = 0 y = 0}
+		}
+
+		iconType = {
+			name = "Super_Event_Image_Indochina_War"
+			spriteType = "GFX_sp_event_Indochina_War"
+			position = {x = 0 y = 0}
+		}
+
+		iconType = {
+			name = "Super_Event_Image_World_War_3"
+			spriteType = "GFX_sp_event_World_War_3"
+			position = {x = 0 y = 0}
+		}
+
+		iconType = {
+			name = "Super_Event_Image_Soviet_Melancholy"
+			spriteType = "GFX_sp_event_Soviet_Melancholy"
+			position = {x = 0 y = 0}
+		}
+
+		iconType = {
+			name = "Super_Event_Image_Soviet_Dissolution"
+			spriteType = "GFX_sp_event_Soviet_Dissolution"
+			position = {x = 0 y = 0}
+		}
+
+		iconType = {
+			name = "Super_Event_Image_Eastern_War"
+			spriteType = "GFX_sp_event_Eastern_War"
+			position = {x = 0 y = 0}
+		}
+
+		iconType = {
+			name = "Super_Event_Image_Soviet_Civil_War"
+			spriteType = "GFX_sp_event_Soviet_Civil_War"
+			position = {x = 0 y = 0}
+		}
+
+		iconType = {
+			name = "Super_Event_Image_Great_Asian_War"
+			spriteType = "GFX_sp_event_Great_Asian_War"
+			position = {x = 0 y = 0}
+		}
+
+		iconType = {
+			name = "Super_Event_Image_Zyuganov_Baklanov"
+			spriteType = "GFX_sp_event_Zyuganov_Baklanov"
+			position = {x = 0 y = 0}
+		}
+
+		iconType = {
+			name = "Super_Event_Image_Soviet_Navy"
+			spriteType = "GFX_sp_event_Navy"
+			position = {x = 0 y = 0}
+		}
+
+		iconType = {
+			name = "Super_Event_Image_VDV"
+			spriteType = "GFX_sp_event_VDV"
+			position = {x = 0 y = 0}
+		}
+
+		iconType = {
+			name = "Super_Event_Image_Dugin"
+			spriteType = "GFX_sp_event_Dugin"
+			position = {x = 0 y = 0}
+		}
+
+		iconType = {
+			name = "Super_Event_Image_Medvedev"
+			spriteType = "GFX_sp_event_Medvedev"
+			position = {x = 0 y = 0}
+		}
+
+		iconType = {
+			name = "Super_Event_Image_Yazov"
+			spriteType = "GFX_sp_event_Yazov"
+			position = {x = 0 y = 0}
+		}
+
+		iconType = {
+			name = "Super_Event_Image_Lukashenko"
+			spriteType = "GFX_sp_event_Lukashenko"
+			position = {x = 0 y = 0}
+		}
+
+		iconType = {
+			name = "Super_Event_Image_KGB"
+			spriteType = "GFX_sp_event_KGB"
+			position = {x = 0 y = 0}
+		}
+
+		iconType = {
+			name = "Super_Event_Image_Udaltsov"
+			spriteType = "GFX_sp_event_Udaltsov"
+			position = {x = 0 y = 0}
+		}
+
+		iconType = {
+			name = "Super_Event_Image_Pugo"
+			spriteType = "GFX_sp_event_Pugo"
+			position = {x = 0 y = 0}
+		}
+
+		iconType = {
+			name = "Super_Event_Image_TT"
+			spriteType = "GFX_sp_event_The_Theory_That_Was_Toolboxed"
+			position = {x = 0 y = 0}
+		}
+		
+		###############
+		###INTERFACE###
+		###############
+		
+		instantTextBoxType = {
+			name = "super_quote"
+			position = { x = 225 y = 305 }
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_quote]"
+			maxWidth = 348
+			maxHeight = 110
+			fixedsize = yes	
+			format = right
+		}
+		
+		instantTextboxType = {
+			name = "super_title"
+			position = { x = -52 y = 30 }
+			font = "hoi_24header"
+			format = center
+			borderSize = {x = 0 y = 0}
+			text = "[get_super_event_title]"
+			maxWidth = 700
+			maxHeight = 50
+			fixedsize = yes
+		}
+		
+		buttonType = {
+			name = "sp_event_close_button"
+			spriteType = "GFX_sp_event_close_button"
+			position = { x = 187 y = 452 }
+			clicksound = click_close
+			buttonText = "[get_super_event_remark]"
+			buttonFont = "hoi_20b"
+		}
+	}
+}

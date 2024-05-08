@@ -1,0 +1,24 @@
+
+state={
+	id=885
+	name="STATE_885"
+
+	history={
+		owner = SPL
+		add_core_of = SPL
+		add_extra_state_shared_building_slots = 2
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		1953 7996 10764 10857 10908 13398 13399 13401 
+	}
+	manpower=550000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

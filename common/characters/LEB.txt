@@ -1,0 +1,42 @@
+characters = {
+
+	LEB_emile_lahoud = {
+		name = "Émile Lahoud"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LEB/Émile_Lahoud.dds"
+			}
+		}
+		country_leader = {
+			ideology = moderatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}	
+	}
+	
+	LEB_rafei = {
+		name = "Abd al-Majid al-Rafei"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LEB/Rafei.dds"
+			}
+		}
+		country_leader = {
+			ideology = baathist_nationalism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

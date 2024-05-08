@@ -1,0 +1,230 @@
+add_namespace = nepal
+
+#royal massacre#
+country_event = {
+	id = nepal.1
+	title = nepal.1.t
+	desc = nepal.1.d
+	picture = GFX_report_event_spark
+	
+	trigger = {
+
+	original_tag = NEP
+
+	}
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+		#bruh#
+	option = {
+		name = nepal.1.a
+		news_event = { id = old_times_news.66 }
+		retire_country_leader = yes
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.10
+		}
+		add_popularity = {
+			ideology = paternal_autocracy
+			popularity = -0.10
+		}
+		add_stability = -0.20
+		323 = {
+		add_manpower = -9
+		}
+		promote_character = NEP_dipendra_of_nepal 
+                country_event = { id = nepal.2 days = 3 }
+	}
+}
+
+#does Dipendra survive?#
+country_event = {
+	id = nepal.2
+	title = nepal.2.t
+	desc = nepal.2.d
+	picture = GFX_report_event_spark
+	
+	is_triggered_only = yes
+
+		#he dies#
+	option = {
+		name = nepal.2.a
+		retire_country_leader = yes
+		323 = {
+		add_manpower = -1
+		}
+		promote_character = NEP_gyanendra_of_nepal
+		country_event = {id = nepal.3 days = 575}
+	}
+	
+}
+
+#declare martial law and die#
+country_event = {
+	id = nepal.3
+	title = nepal.3.t
+	desc = nepal.3.d
+	picture = GFX_report_event_spark
+	
+	is_triggered_only = yes
+
+		#no internal coup this totally means nepal will stay as a kingdom forever :)))))))))#
+	option = {
+		name = nepal.3.a
+		add_stability = -0.20
+		add_political_power = 50
+		country_event = {id = nepal.4 days = 60}
+		news_event = {id = old_times_news.138}
+	}
+
+		#internal coup#
+	option = {
+		name = nepal.3.b
+		remove_ideas = NEP_royal_autocracy				
+		set_politics = {
+			ruling_party = socialism
+		}			
+		add_political_power = -50
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.15
+		}
+		add_popularity = {
+			ideology = paternal_autocracy
+			popularity = -0.15
+		}
+		set_cosmetic_tag = NEP_republic
+		country_event = {id = nepal.5 days = 15}
+		news_event = {id = old_times_news.139}		
+	}
+	
+}
+
+#communism time#
+country_event = {
+	id = nepal.4
+	title = nepal.4.t
+	desc = nepal.4.d
+	picture = GFX_report_event_spark
+	
+	is_triggered_only = yes
+
+		#damn#
+	option = {
+		name = nepal.4.a
+		set_portraits = {
+			character = NEP_pushpa_kamal_dahal
+			civilian = { large ="gfx/leaders/NEP/Pushpa_Kamal_Dahal_2.png" }
+		}
+		add_stability = 0.25
+		remove_ideas = NEP_communist_insurgency
+		remove_ideas = NEP_royal_autocracy		
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.10
+		}
+		add_popularity = {
+			ideology = paternal_autocracy
+			popularity = -0.10
+		}
+		set_politics = {
+			ruling_party = communism
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.25
+		}		
+		set_cosmetic_tag = NEP_mao
+		news_event = {id = old_times_news.140}
+		ENG = {
+			diplomatic_relation = {
+				country = NEP
+				relation = military_access
+				active = no
+			}		
+		}
+	}
+	
+}
+
+#negotiate with communism time#
+country_event = {
+	id = nepal.5
+	title = nepal.5.t
+	desc = nepal.5.d
+	picture = GFX_report_event_spark
+	
+	is_triggered_only = yes
+
+		#negotiations go well#
+	option = {
+		name = nepal.5.a
+		add_stability = 0.25
+		remove_ideas = NEP_communist_insurgency
+		add_popularity = {
+			ideology = communism
+			popularity = -0.05
+		}	
+		add_popularity = {
+			ideology = reformed_communism
+			popularity = 0.10
+		}			
+		add_popularity = {
+			ideology = socialism
+			popularity = 0.15
+		}				
+		country_event = {id = nepal.6 days = 14}				
+	}
+
+		#negotiations go bad#
+	option = {
+		name = nepal.5.a
+		add_stability = -0.05
+		country_event = {id = nepal.4 days = 30}		
+	}
+	
+}
+
+#elections#
+country_event = {
+	id = nepal.6
+	title = nepal.6.t
+	desc = nepal.6.d
+	picture = GFX_report_event_spark
+	
+	is_triggered_only = yes
+
+		#nepali congress wins#
+	option = {
+		name = nepal.6.a
+		add_stability = 0.25
+		add_popularity = {
+			ideology = socialism
+			popularity = 0.15
+		}		
+		set_politics = {
+			ruling_party = socialism
+		}			
+		news_event = {id = old_times_news.142}					
+	}
+
+		#communists win#
+	option = {
+		name = nepal.6.a
+		add_stability = 0.25
+		add_country_leader_role = {
+			character = NEP_pushpa_kamal_dahal
+			promote_leader = yes
+			country_leader = {
+				ideology = market_socialism
+			}
+		}
+		set_politics = {
+			ruling_party = reformed_communism
+		}	
+		news_event = {id = old_times_news.141}					
+	}
+	
+}

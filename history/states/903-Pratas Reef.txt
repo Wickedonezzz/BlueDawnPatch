@@ -1,0 +1,25 @@
+state={
+	id=903
+	name="STATE_903"
+	manpower=20
+
+	state_category = tiny_island
+
+	history={
+		owner = CHI
+		add_claim_by = PRC
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+			13259 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		13259
+	}
+
+	local_supplies=0.0 
+}

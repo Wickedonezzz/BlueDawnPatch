@@ -1,0 +1,146 @@
+﻿capital = 112
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+
+	set_technology = {
+		corvette_hull_1960 = 1
+		destroyer_hull_1960 = 1
+		destroyer_hull_1980 = 1
+		destroyer_hull_1990 = 1
+		attack_submarine_hull_1960 = 1
+	}
+}
+set_technology = {
+	infantry_weapons_1960 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_air_weapons_1960 = 1
+	tech_support = 1
+	tech_motorised_1960 = 1
+	tech_train_1960 = 1
+	mbt_tank_1960 = 1
+	apc_tank_1960 = 1
+	towed_artillery_1960 = 1
+	motorised_artillery_1960 = 1
+	heli_transport_1960 = 1
+	support_tech_engineers_1960 = 1
+	support_tech_militarypolice_1960 = 1
+	support_tech_hospital_1960 = 1
+	support_tech_maintenance_1960 = 1
+	support_tech_logistics_1960 = 1
+	support_tech_recon_1960 = 1
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		recon_vehicle_1960 = 1
+	}
+}
+set_oob = "POR_2000"
+set_air_oob = "POR_2000_air"
+
+set_research_slots = 3
+set_convoys = 50
+
+recruit_character = POR_jorge_sampaio
+recruit_character = POR_carlos_carvalhas
+
+add_ideas = GER_eu
+
+add_ideas = usa_aligned_nation
+
+add_ideas = limited_conscription
+
+set_politics = {
+	ruling_party = socialism
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 8
+	reformed_communism = 6
+	socialism = 43
+	liberalism = 34
+	democratic = 9
+	neutrality = 0
+	paternal_autocracy = 0
+	fascism = 0
+}
+
+
+
+# Naval Variants #
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "POR_2000_naval_mtg"
+
+	# Corvettes #
+	create_equipment_variant = {
+		name = "João Coutinho Class"
+		type = corvette_hull_1
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = empty
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = anti_air_1
+			fixed_ship_defensive_slot_2 = empty
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = empty
+			custom_slot_2 = empty
+			custom_slot_3 = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Baptista de Andrade Class"
+		type = corvette_hull_1
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = anti_air_1
+			fixed_ship_defensive_slot_2 = empty
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = empty
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = depth_charges_1
+		}
+		obsolete = yes
+	}
+
+	# Frigates #
+	create_equipment_variant = {
+		name = "Vasco da Gama Class"
+		type = destroyer_hull_3
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = small_surface_engine_diesel_2
+			fixed_ship_sonar_slot = sub_sonar_3
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = sam_missile_1
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = cruise_missile_2
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = no
+	}
+}

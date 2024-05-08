@@ -1,0 +1,67 @@
+ideas = {
+	
+	country = {
+	
+		HUN_red_scum = {
+			name = HUN_red_scum_name
+
+			removal_cost = -1
+
+			picture = HUN_anti_com
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				war_support_factor = 0.05
+				political_power_gain = 0.15
+				social_democracy_drift = -0.03
+				socialism_drift = -0.03
+				reformed_communism_drift = -0.03				
+				communism_drift = -0.03
+			}
+		}
+		
+		HUN_the_century_of_humiliation = {
+			name = HUN_the_century_of_humiliation_name
+
+			removal_cost = -1
+
+			picture = HUN_revenge
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				weekly_casualties_war_support = 0.0025								
+				army_attack_factor = 0.15
+				army_core_defence_factor = 0.12
+				
+			}
+		}
+
+		HUN_humiliation_revenged = {
+			name = HUN_humiliation_revenged_name
+
+			removal_cost = -1
+
+			picture = HUN_revenge
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.30
+				army_attack_factor = 0.05
+				
+			}
+		}
+		
+	}
+}

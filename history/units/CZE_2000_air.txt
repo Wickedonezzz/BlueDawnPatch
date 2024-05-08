@@ -1,0 +1,18 @@
+﻿air_wings = {
+	# Land Wings #
+	9 = {
+		# Fighters -- MiG-21
+		fighter_equipment_0 =  { # MiG-21 #
+			owner = "CZE" 
+			creator = SOV
+			amount = 37
+		}
+
+		# Transports -- An-24
+		transport_plane_equipment_1 =  { # An-24 #
+			owner = "CZE"
+			creator = SOV
+			amount = 8
+		}
+	}
+}

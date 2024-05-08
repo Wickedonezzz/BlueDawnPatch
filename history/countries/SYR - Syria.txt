@@ -1,0 +1,86 @@
+﻿capital = 554
+
+set_oob = "SYR_2000"
+set_air_oob = "SYR_2000_air"
+
+set_technology = {
+	infantry_weapons_1960 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_air_weapons_1960 = 1
+	tech_support = 1
+	tech_motorised_1960 = 1
+	towed_artillery_1960 = 1
+	motorised_artillery_1960 = 1
+	rocket_artillery_1960 = 1
+	mbt_tank_1960 = 1
+	ifv_tank_1970 = 1
+	apc_tank_1960 = 1
+	heli_transport_1960 = 1
+	heli_attack_1970 = 1
+	tech_train_1960 = 1
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		recon_vehicle_1960 = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+
+	set_technology = {
+		attack_submarine_hull_1960 = 1
+		corvette_hull_1960 = 1
+	}
+}
+
+set_convoys = 5
+
+add_ideas = SYR_oil_producers
+add_ideas = SYR_fine_line
+
+recruit_character = SYR_hafez_al_assad
+recruit_character = SYR_bashar_al_assad
+recruit_character = SYR_maher_al_assad
+recruit_character = SYR_ali_habib_mahmud
+
+recruit_character = SYR_abu_mohammad_al-julani
+
+recruit_character = SYR_ali_al-majid
+recruit_character = SYR_shibli_al_aysami
+recruit_character = SYR_riad_seif
+
+add_ideas = {
+	extensive_conscription
+}
+
+set_politics = {
+	ruling_party = socialism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 15
+	socialism = 75
+	communism = 10
+}
+
+add_ideas = ussr_aligned_nation
+
+diplomatic_relation = {
+	country = LEB
+	relation = military_access
+}
+
+add_opinion_modifier = { target = ISR modifier = HISTORIC_israel_hostile_40_opinion }
+
+# Naval Variants #
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "SYR_2000_naval_mtg"
+}

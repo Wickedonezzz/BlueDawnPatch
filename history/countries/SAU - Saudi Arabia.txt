@@ -1,0 +1,178 @@
+﻿capital = 292
+
+set_oob = "SAU_2000"
+set_air_oob = "SAU_2000_air"
+
+set_technology = {
+	infantry_weapons_1960 = 1
+	support_weapons_1960 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_air_weapons_1960 = 1
+	tech_support = 1
+	tech_motorised_1960 = 1
+	tech_train_1960 = 1
+	mbt_tank_1960 = 1
+	ifv_tank_1970 = 1
+	ifv_tank_1980 = 1
+	apc_tank_1960 = 1
+	apc_tank_1970 = 1
+	spaa_tank_1960 = 1
+	towed_artillery_1960 = 1
+	motorised_artillery_1960 = 1
+	rocket_artillery_1960 = 1
+	heli_transport_1960 = 1
+	heli_attack_1970 = 1
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		recon_vehicle_1960 = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+
+	set_technology = {
+		corvette_hull_1960 = 1
+		corvette_hull_1980 = 1
+		destroyer_hull_1960 = 1
+		destroyer_hull_1980 = 1
+		destroyer_hull_1990 = 1
+		destroyer_hull_2000 = 1
+	}
+}
+
+set_convoys = 100
+
+set_research_slots = 3
+
+
+add_ideas = SAU_oil_producers
+
+add_ideas = usa_aligned_nation
+
+recruit_character = SAU_fahd
+recruit_character = SAU_abdul_nashaba
+recruit_character = SAU_ahmad_asiri
+recruit_character = SAU_al_nasser
+
+set_politics = {
+	ruling_party = paternal_autocracy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 4
+	communism = 0
+	reformed_communism = 0
+	paternal_autocracy = 75
+	fascism = 9
+	neutrality = 12
+}
+
+add_ideas = {
+	volunteer_only
+}
+
+diplomatic_relation = {
+	country = BHR
+	relation = non_aggression_pact
+}
+diplomatic_relation = {
+	country = KUW
+	relation = non_aggression_pact
+}
+diplomatic_relation = {
+	country = OMA
+	relation = non_aggression_pact
+}
+diplomatic_relation = {
+	country = QAT
+	relation = non_aggression_pact
+}
+diplomatic_relation = {
+	country = UAE
+	relation = non_aggression_pact
+}
+
+add_opinion_modifier = { target = IRQ modifier = HISTORIC_gulf_war_coalition_opinion }
+add_opinion_modifier = { target = ISR modifier = HISTORIC_israel_hostile_40_opinion }
+
+# Naval Variants #
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "SAU_2000_naval_mtg"
+
+	# Corvettes #
+	create_equipment_variant = {
+		name = "Badr Class"
+		type = corvette_hull_2
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_2
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = ciws_1
+			fixed_ship_defensive_slot_2 = empty
+			fixed_ship_aviation_slot = empty
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = empty
+		}
+		obsolete = no
+	}
+
+	# Frigates #
+	create_equipment_variant = {
+		name = "Al Madinah Class"
+		type = destroyer_hull_2
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = small_surface_engine_diesel_2
+			fixed_ship_sonar_slot = sub_sonar_2
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = sam_missile_1
+			fixed_ship_defensive_slot_2 = anti_air_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = cruise_missile_2
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Al Riyadh Class"
+		type = destroyer_hull_4
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_4
+			fixed_ship_engine_slot = small_surface_engine_diesel_2
+			fixed_ship_sonar_slot = sub_sonar_4
+			fixed_ship_radar_slot = ship_radar_3
+			fixed_ship_defensive_slot_1 = sam_missile_3
+			fixed_ship_defensive_slot_2 = sam_missile_3
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = cruise_missile_2
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = no
+	}
+}

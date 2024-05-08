@@ -1,0 +1,294 @@
+﻿capital = 439
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "RAJ_2000_naval_mtg"
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		corvette_hull_1960 = 1
+		corvette_hull_1980 = 1
+		corvette_hull_1990 = 1
+		destroyer_hull_1960 = 1
+		destroyer_hull_1980 = 1
+		destroyer_hull_1990 = 1
+		carrier_hull_1960 = 1
+		attack_submarine_hull_1960 = 1
+	}
+}
+set_technology = {
+	infantry_weapons_1960 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_air_weapons_1960 = 1
+	tech_support = 1
+	tech_motorised_1960 = 1
+	tech_train_1960 = 1
+	mbt_tank_1960 = 1
+	mbt_tank_1970 = 1
+	mbt_tank_1980 = 1
+	mbt_tank_1990 = 1
+	ifv_tank_1970 = 1
+	apc_tank_1960 = 1
+	spaa_tank_1960 = 1
+	towed_artillery_1960 = 1
+	towed_artillery_1980 = 1
+	motorised_artillery_1960 = 1
+	motorised_artillery_1970 = 1
+	motorised_artillery_1980 = 1
+	rocket_artillery_1960 = 1
+	heli_transport_1960 = 1
+	heli_attack_1970 = 1
+	drone_recon_1980 = 1
+	drone_recon_1990 = 1
+	drone_recon_2000 = 1
+	support_tech_engineers_1960 = 1
+	support_tech_militarypolice_1960 = 1
+	support_tech_hospital_1960 = 1
+	support_tech_maintenance_1960 = 1
+	support_tech_logistics_1960 = 1
+	support_tech_recon_1960 = 1
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		recon_vehicle_1960 = 1
+	}
+}
+set_oob = "RAJ_2000"
+set_air_oob = "RAJ_2000_air"
+
+set_stability = 0.5
+set_war_support = 0.6
+
+set_convoys = 300
+
+recruit_character = RAJ_atal_vajpayee
+
+add_ideas = ussr_aligned_nation
+
+add_ideas = volunteer_only
+
+##nat ideas 
+add_ideas = {
+    RAJ_caste_system
+	RAJ_neverending_military_spending
+	RAJ_parliment_split
+	RAJ_the_southern_revolutionaries
+}
+
+
+set_research_slots = 4
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.11.14"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	liberalism = 15
+	social_democracy = 27
+	communism = 14
+	neutrality = 9
+	democratic = 35
+}
+
+add_opinion_modifier = { target = PAK modifier = HISTORIC_india_pakistan_opinion }
+add_opinion_modifier = { target = PRC modifier = HISTORIC_india_china_raj_opinion }
+
+# Naval Variants #
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	# Corvettes #
+	create_equipment_variant = {
+		name = "Khukri Class"
+		type = corvette_hull_2
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = small_surface_engine_diesel_2
+			fixed_ship_sonar_slot = empty
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = sam_missile_1
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_2
+			custom_slot_1 = cruise_missile_1
+			custom_slot_2 = empty
+			custom_slot_3 = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Kora Class"
+		type = corvette_hull_3
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = small_surface_engine_diesel_3
+			fixed_ship_sonar_slot = empty
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = sam_missile_1
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_2
+			custom_slot_1 = cruise_missile_3
+			custom_slot_2 = cruise_missile_3
+			custom_slot_3 = empty
+		}
+		obsolete = no
+	}
+
+	# Frigates #
+	create_equipment_variant = {
+		name = "Nilgiri Class"
+		type = destroyer_hull_1
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = ciws_1
+			fixed_ship_defensive_slot_2 = anti_air_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = aswrl_1
+			custom_slot_2 = empty
+			custom_slot_3 = ciws_1
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Taragiri Class"
+		type = destroyer_hull_1
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = ciws_1
+			fixed_ship_defensive_slot_2 = anti_air_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = aswrl_1
+			custom_slot_2 = ship_torpedo_surface_2
+			custom_slot_3 = ciws_1
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Godavari Class"
+		type = destroyer_hull_2
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = ciws_1
+			fixed_ship_defensive_slot_2 = sam_missile_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = cruise_missile_1
+			custom_slot_2 = ship_torpedo_surface_2
+			custom_slot_3 = ciws_1
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Brahmaputra Class"
+		type = destroyer_hull_2
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_3
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_3
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = ciws_1
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_2
+			custom_slot_1 = cruise_missile_3
+			custom_slot_2 = ship_torpedo_surface_2
+			custom_slot_3 = cruise_missile_3
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = no
+	}
+	create_equipment_variant = {
+		name = "Talwar Class (Pr. 11356)"
+		type = destroyer_hull_3
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_3
+			fixed_ship_engine_slot = small_surface_engine_diesel_4
+			fixed_ship_sonar_slot = sub_sonar_4
+			fixed_ship_radar_slot = ship_radar_3
+			fixed_ship_defensive_slot_1 = sam_missile_2
+			fixed_ship_defensive_slot_2 = ciws_2
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_3
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_2
+			custom_slot_3 = cruise_missile_2
+			custom_slot_4 = aswrl_1
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = no
+	}
+
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Delhi Class"
+		type = destroyer_hull_3
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_3
+			fixed_ship_engine_slot = small_surface_engine_diesel_2
+			fixed_ship_sonar_slot = sub_sonar_3
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = sam_missile_2
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = naval_helicopter_2
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = cruise_missile_3
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = cruise_missile_3
+			custom_slot_4 = aswrl_1
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = no
+	}
+}
+
+country_event = {
+    id = kashmir.1
+    days = 775
+}
+country_event = {
+    id = india.1
+    days = 712
+}

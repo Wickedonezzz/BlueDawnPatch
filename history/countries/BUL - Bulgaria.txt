@@ -1,0 +1,95 @@
+﻿capital = 48
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+
+	set_technology = {
+		corvette_hull_1960 = 1
+		destroyer_hull_1960 = 1
+		attack_submarine_hull_1960 = 1
+	}
+}
+
+set_technology = {
+	infantry_weapons_1960 = 1
+	infantry_weapons_1980 = 1
+	support_weapons_1960 = 1
+	support_weapons_1980 = 1
+	support_weapons_1990 = 1
+	night_vision_gen_1 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_tank_weapons_1980 = 1
+	infantry_anti_air_weapons_1960 = 1
+	paratrooper_tech_1960 = 1
+	marine_tech_1960 = 1
+	tech_support = 1
+	support_tech_engineers_1960 = 1
+	support_tech_militarypolice_1960 = 1
+	support_tech_militarypolice_1980 = 1
+	support_tech_recon_1960 = 1
+	support_tech_hospital_1960 = 1
+	support_tech_maintenance_1960 = 1
+	support_tech_logistics_1960 = 1
+	tech_motorised_1960 = 1
+	tech_motorised_1980 = 1
+	tech_train_1960 = 1
+	mbt_tank_1960 = 1
+	ifv_tank_1970 = 1
+	ifv_tank_1980 = 1
+	apc_tank_1960 = 1
+	spaa_tank_1960 = 1
+	towed_artillery_1960 = 1
+	motorised_artillery_1960 = 1
+	rocket_artillery_1960 = 1
+	heli_transport_1960 = 1
+	heli_attack_1970 = 1
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		recon_vehicle_1960 = 1
+	}
+}
+
+set_oob = "BUL_2000"
+set_air_oob = "BUL_2000_air"
+
+set_convoys = 5
+
+add_ideas = limited_conscription
+
+add_ideas = east_europe_eastern_threat
+add_ideas = east_europe_privatization
+
+recruit_character = BUL_petar_stoyanov
+recruit_character = BUL_alexander_lilov
+recruit_character = BUL_aleksandar_paunov
+recruit_character = BUL_simeon
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 0
+	reformed_communism = 20
+	social_democracy = 36
+	liberalism = 5
+	democratic = 35
+	neutrality = 4
+	paternal_autocracy = 0
+	fascism = 0
+}
+
+# Naval Variants #
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "BUL_2000_naval_mtg"
+}

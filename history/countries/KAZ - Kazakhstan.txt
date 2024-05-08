@@ -1,0 +1,29 @@
+﻿capital = 586 #Almaty
+
+#oob = "KAZ_1936"
+
+set_research_slots = 3
+
+recruit_character = KAZ_nursultan_nazarbayev
+recruit_character = KAZ_nursultan_nazarbayev_petau
+
+
+recruit_character = KAZ_dmitry_yazov
+recruit_character = KAZ_boris_pugo
+recruit_character = KAZ_valery_gerasimov
+recruit_character = KAZ_anatoly_kulikov
+recruit_character = KAZ_dmitry_bulgakov
+recruit_character = KAZ_sergey_akhromeyev
+recruit_character = KAZ_sergey_akhromeyev_advisor
+
+set_popularities = {
+	democratic = 15
+	paternal_autocracy = 23
+	communism = 30
+	reformed_communism = 32
+}
+
+set_politics = {
+	ruling_party = reformed_communism
+	elections_allowed = no
+}

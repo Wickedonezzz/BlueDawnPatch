@@ -1,0 +1,17 @@
+units = {
+	fleet = {
+		name = "Nigerian Fleet"
+		naval_base = 2050 # Lagos #
+		task_force = {
+			name = "Nigerian Surface Fleet"
+			location = 2050 # Lagos #
+			ship = { name = "NNS Aradu" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = NGA version_name = "Aradu Class" } } }
+
+			ship = { name = "NNS Erin'mi" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = NGA version_name = "Erin'mi Class" } } }
+			ship = { name = "NNS Enymiri" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = NGA version_name = "Erin'mi Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

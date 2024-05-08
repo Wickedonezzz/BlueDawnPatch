@@ -1,0 +1,76 @@
+ideas = {
+	
+	country = {
+	
+		AFG_hardened_fighters = {
+			name = AFG_hardened_fighters_name
+
+			removal_cost = -1
+
+			picture = AFG_hardened_fighters_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				army_morale_factor = 0.15
+				no_supply_grace = 120
+				heat_attrition_factor = -0.5
+				out_of_supply_factor = -0.2
+				army_core_attack_factor = 0.20
+				army_core_defence_factor = 0.20
+				army_attack_against_major_factor = 0.30
+				army_defence_against_major_factor = 0.30
+			}
+		}
+		
+		AFG_islamic_fanaticism = {
+			name = AFG_islamic_fanaticism_name
+
+			removal_cost = -1
+
+			picture = AFG_islamic_fanaticism_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				war_support_factor = 0.15
+				army_org_factor = -0.10
+				recruitable_population_factor = 0.15
+				stability_factor = -0.30
+				consumer_goods_factor = 0.30
+				research_speed_factor = -0.25
+				army_morale_factor = 0.10
+				paternal_autocracy_drift = 0.05
+			}
+		}
+		
+		NRO_taliban_insurgency = {
+			name = NRO_taliban_insurgency_name
+
+			removal_cost = -1
+
+			picture = AFG_taliban_insurgency_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				war_support_factor = -0.15
+				army_org_factor = -0.10
+				stability_factor = -0.30
+				political_power_gain = -0.30
+				consumer_goods_factor = 0.30
+
+			}
+		}
+		
+		
+
+	}
+
+}

@@ -1,0 +1,1773 @@
+@tier1 = 30
+@tier2 = 20
+@tier3 = 10
+
+@experience_gain_low = 0.03
+@experience_gain_medium = 0.06
+@experience_gain_high = 0.08
+
+@chief_experience_gain_low = 0.20
+@chief_experience_gain_medium = 0.30
+@chief_experience_gain_high = 0.40
+
+leader_traits = {
+	minister_of_education = {
+		random = no
+		research_speed_factor = 0.075
+		production_factory_efficiency_gain_factor 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	chief_of_staff_of_the_presidency = {
+		random = no
+		political_power_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	minister_of_labour = {
+		random = no
+		industrial_capacity_factory = 0.15
+		production_speed_buildings_factor = 0.075
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	minister_of_defence = {
+		random = no
+		experience_gain_army = 0.09
+		army_defence_factor = 0.075	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	minister_of_defence_2 = {
+		random = no
+		experience_gain_army = 0.12
+		army_org_factor = 0.1
+		mobilization_speed = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	minister_of_public_security = {
+		random = no
+		stability_factor = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	reformist = {
+		random = no
+		political_power_factor = 0.05
+		industrial_capacity_factory = 0.05
+		research_speed_factor = 0.05
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	guerilla_fighter = { # durangoose note : do not use this for big countries, only use it on small countries or rebellions that are at a big disadventage since this trait really op.
+		random = no
+		political_power_factor = -0.75
+		max_command_power_mult = -0.90
+		production_lack_of_resource_penalty_factor = -0.50
+		industrial_capacity_factory = 0.30
+		army_core_defence_factor = 0.075
+		army_defence_against_major_factor = 0.25
+		dig_in_speed_factor = 0.15
+		max_dig_in_factor = -0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	reformist_advisor = {
+		random = no
+		industrial_capacity_factory = 0.10
+		research_speed_factor = 0.05
+		line_change_production_efficiency_factor = 0.20
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	economic_reformist = {
+		random = no
+		industrial_capacity_factory = 0.10
+		research_speed_factor = 0.05
+		line_change_production_efficiency_factor = 0.20
+		stability_factor = -0.08
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	chief_of_industry = {
+		random = no
+		industrial_capacity_factory = 0.05
+		production_speed_buildings_factor = 0.075
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	party_hardliner = {
+		random = no
+		political_power_gain = -0.10
+		stability_factor = 0.08
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	soviet_patriot = {
+		random = no
+		political_power_gain = 0.15
+		stability_factor = -0.1
+		war_support_factor = 0.05
+		drift_defence_factor = 0.5
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	eurasianist_theorist = {
+		random = no
+		political_power_gain = 0.15
+		stability_factor = -0.1
+		war_support_factor = 0.2
+		drift_defence_factor = 0.5
+		consumer_goods_factor = -0.4
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	collapsed_government = {
+		random = no
+		political_power_gain = -0.15
+		stability_factor = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	putins_right_hand= {
+		random = no
+		political_power_gain = 0.2
+		stability_factor = -0.1
+		drift_defence_factor = 0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	kgb_buerocrat = {
+		random = no
+		political_power_gain = 0.1
+		stability_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	militarist_advisor = {
+		random = no
+		political_power_gain = -0.015
+		stability_factor = -0.07
+		war_support_factor = 0.1
+		experience_gain_army = 0.03
+		experience_gain_navy = 0.03
+		experience_gain_air = 0.03
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	party_conservative = {
+		random = no
+		political_power_gain = 0.10
+		stability_factor = -0.05
+		drift_defence_factor = 1.0
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	useful_bureaucrat = {
+		random = no
+		political_power_gain = 0.2
+		stability_factor = -0.05
+		war_support_factor = -0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	leader_of_the_intelligance_network = {
+		random = no
+		stability_factor = -0.05
+		agency_upgrade_time = 0.10
+		intel_network_gain_factor = 0.5
+		operative_slot = 1
+		civilian_intel_to_others = -10
+		airforce_intel_to_others = -10
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	leader_of_the_council_of_ministers = {
+	random = no
+		
+		political_power_factor = -0.010
+		stability_factor = 0.05
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	leader_of_the_council_of_ministers_2 = {
+	random = no
+		
+		political_power_factor = 0.005
+		stability_factor = 0.025
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	secretary_of_homeland_security = {
+	random = no
+		
+		political_power_factor = 0.1
+		drift_defence_factor = 1.0
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	secretary_of_treasury = {
+	random = no
+		
+		opinion_gain_monthly_factor = 0.1
+		consumer_goods_factor = -0.15
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	secretary_of_state = {
+	random = no
+		
+		war_support_factor = 0.1
+		political_power_factor = 0.05
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	prime_minister = {
+		random = no
+		political_power_gain = -0.25
+		stability_factor = 0.075
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#iraqi troller#
+	chemical_ali = {
+		random = no
+		experience_gain_army = 0.10
+		experience_gain_air = 0.05
+		army_attack_factor = 0.05	
+		compliance_gain = -0.15
+		resistance_target = -0.10
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	face_of_neo_baathism = {
+		random = no
+		war_support_factor = 0.3
+		experience_gain_army = 0.01
+		fascism_drift = 0.03
+		communism_drift = 0.01
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	chemical_ali_2 = {
+		random = no
+		experience_gain_army = 0.10
+		experience_gain_air = 0.05
+		army_attack_factor = 0.05	
+		compliance_gain = -0.30
+		resistance_target = -0.25
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	minister_of_finance = {
+		random = no
+		consumer_goods_factor = -0.15
+		production_speed_buildings_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	president = {
+		random = no
+		political_power_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	head_of_central_economic_commission = {
+		random = no
+		production_speed_buildings_factor = 0.05
+		production_factory_max_efficiency_factor = 0.08 
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	nationalist = {
+		random = no
+		war_support_factor = 0.15
+		stability_factor = -0.10
+		production_speed_arms_factory_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	nationalist_2 = {
+		random = no
+		war_support_factor = 0.20
+		stability_factor = -0.05
+		production_speed_arms_factory_factor = 0.20
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	populist = {
+	random = no
+		
+		political_power_factor = -0.1
+		stability_factor = 0.15
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	head_of_intel = {
+	random = no
+		
+		political_power_factor = 0.05
+		stability_factor = 0.1
+		army_morale_factor = 0.10
+		resistance_growth = -0.05
+		resistance_damage_to_garrison = -0.10
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}		
+	
+	head_of_secret_police = {
+	random = no
+		
+		political_power_factor = 0.05
+		stability_factor = -0.1
+		army_morale_factor = 0.075
+		resistance_growth = -0.05
+		resistance_damage_to_garrison = -0.10
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}		
+
+	head_of_secret_police_lar = {
+	random = no
+		
+		political_power_factor = 0.05
+		stability_factor = -0.1
+		army_morale_factor = 0.075
+		resistance_growth = -0.05
+		resistance_damage_to_garrison = -0.10
+		operative_slot = 1
+		root_out_resistance_effectiveness_factor = 0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}		
+
+	wealthy_businessman = {
+		random = no
+		production_speed_buildings_factor = 0.05
+		production_speed_synthetic_refinery_factor = 0.10		
+		political_power_gain = -0.25
+		fuel_gain_factor = 0.25
+		fuel_gain_factor_from_states = 0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	croat_serb_nationalist = {
+		random = no
+		
+		war_support_factor = 0.20
+		conscription = 0.005
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	banker = {
+		random = no
+		
+		consumer_goods_factor = -0.07
+		production_speed_buildings_factor = 0.05		
+		line_change_production_efficiency_factor = 0.10
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	banker_2 = {
+		random = no
+		
+		political_power_factor = 0.05
+		consumer_goods_factor = -0.15
+		production_speed_buildings_factor = 0.10		
+		line_change_production_efficiency_factor = 0.10
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	president_for_life = {
+		random = no
+		
+		political_power_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	loyal_politician = {
+		random = no
+		
+		political_power_factor = 0.05
+		stability_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+
+	symbol_of_unity_and_stability = {
+		random = no
+		
+		political_power_factor = 0.05
+		stability_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	heir_of_vo_van_kiet = {
+		random = no
+		
+		industrial_capacity_factory = 0.05
+		trade_opinion_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	serbian_ultranationalist = {
+	random = no
+		
+		political_power_factor = 0.1
+		conscription_factor = -0.20
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}		
+
+	croat_communist = {
+	random = no
+		
+		conscription = 0.01
+		weekly_manpower = 1000
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+
+	computer_designer = {
+	random = no
+		
+		political_power_gain = -0.35
+		research_speed_factor = 0.20
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+
+	religious_leader = {
+	random = no
+		
+		political_power_factor = 0.10
+		army_morale_factor = 0.10
+		research_speed_factor = -0.05
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	trade_unionist = {
+		random = no
+		
+		industrial_capacity_factory = 0.20
+		consumer_goods_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}		
+	
+	youth_leader = {
+		random = no
+		
+		conscription = 0.01
+		army_morale_factor = 0.10
+		
+		ai_will_do = {
+			factor = 1
+		}	
+	}
+
+	autonomist = {
+		random = no
+		
+		conscription = 0.01
+		stability_factor = 0.20
+		political_power_factor = -0.15
+		
+		ai_will_do = {
+			factor = 1
+		}	
+	}
+	
+	## ARMY ##
+	
+	
+		# 1 is worst, 3 is best
+
+	army_chief_defensive_1 = { # +5 Defensive efficiency
+		sprite = 9
+		army_defence_factor = 0.05
+		experience_gain_army = 0.075
+
+		command_cap = @tier1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				command_power < @tier1
+			}
+		}
+	}
+
+	army_chief_defensive_2 = { # +10 Defensive efficiency
+		sprite = 9
+		army_defence_factor = 0.1
+		experience_gain_army = 0.1
+
+		command_cap = @tier2
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				command_power < @tier2
+			}
+		}
+	}
+
+	army_chief_defensive_3 = { # +15 Defensive efficiency
+		sprite = 9
+		army_defence_factor = 0.15
+		experience_gain_army = 0.12
+
+		command_cap = @tier3
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				command_power < @tier3
+			}
+		}
+	}
+
+
+	army_chief_offensive_1 = { # +5 Offensive efficiency
+		sprite = 7
+		army_attack_factor = 0.05
+		experience_gain_army = 0.075
+
+		command_cap = @tier1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				command_power < @tier1
+			}
+		}
+	}
+
+	army_chief_offensive_2 = { # +10 Offensive efficiency
+		sprite = 7
+		army_attack_factor = 0.1
+		experience_gain_army = 0.1
+
+		command_cap = @tier2
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				command_power < @tier2
+			}
+		}
+	}
+
+	army_chief_offensive_3 = { # +15 Offensive efficiency
+		sprite = 7
+		army_attack_factor = 0.15
+		experience_gain_army = 0.12
+
+		command_cap = @tier3
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				command_power < @tier3
+			}
+		}
+	}
+
+	army_chief_old_guard = { # Rate at which field experience is gained decreases by 10%
+		sprite = 5 # Should not need sprite, should mostly be secondary
+		max_command_power = 10
+
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				factor = 0
+				command_power < @tier1
+			}
+		}
+	}
+
+	army_chief_drill_1 = { # Decreases training time for ground units
+		sprite = 5
+		training_time_army_factor = -0.05
+		experience_gain_army = 0.075
+
+		command_cap = @tier1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				command_power < @tier1
+			}
+		}
+	}
+
+	army_chief_drill_2 = { # Decreases training time for ground units
+		sprite = 5
+		training_time_army_factor = -0.1
+		experience_gain_army = 0.1
+
+		command_cap = @tier2
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				command_power < @tier2
+			}
+		}
+	}
+
+	army_chief_drill_3 = { # Decreases training time for ground units
+		sprite = 5
+		training_time_army_factor = -0.15
+		experience_gain_army = 0.12
+
+		command_cap = @tier3
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				command_power < @tier3
+			}
+		}
+	}
+
+
+	army_chief_reform_1 = {
+		sprite = 5
+		experience_gain_army = 0.085
+
+		command_cap = @tier1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				command_power < @tier1
+			}
+		}
+	}
+
+	army_chief_reform_2 = {
+		sprite = 5
+		experience_gain_army = 0.13
+
+		command_cap = @tier2
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				command_power < @tier2
+			}
+		}
+	}
+
+	army_chief_reform_3 = {
+		sprite = 5
+		experience_gain_army = 0.16
+
+		command_cap = @tier3
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				command_power < @tier3
+			}
+		}
+	}
+
+
+	army_chief_organizational_1 = { # Ground units get 4 more Organization
+		sprite = 5
+		army_org_factor = 0.04
+		experience_gain_army = 0.075
+
+		command_cap = @tier1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				command_power < @tier1
+			}
+		}
+	}
+
+	army_chief_organizational_2 = { # Ground units get 8 more Organization
+		sprite = 5
+		army_org_factor = 0.08
+		experience_gain_army = 0.1
+
+		command_cap = @tier2
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				command_power < @tier2
+			}
+		}
+	}
+
+	army_chief_organizational_3 = { # Ground units get 12 more Organization
+		sprite = 5
+		army_org_factor = 0.12
+		experience_gain_army = 0.12
+
+		command_cap = @tier3
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				command_power < @tier3
+			}
+		}
+	}
+
+	army_chief_planning_1 = { #
+		sprite = 5
+		planning_speed = 0.05
+		experience_gain_army = 0.075
+
+		command_cap = @tier1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				command_power < @tier1
+			}
+		}
+	}
+
+	army_chief_planning_2 = { #
+		sprite = 5
+		planning_speed = 0.10
+		experience_gain_army = 0.1
+
+		command_cap = @tier2
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				command_power < @tier2
+			}
+		}
+	}
+
+	army_chief_planning_3 = { #
+		sprite = 5
+		planning_speed = 0.15
+		experience_gain_army = 0.12
+
+		command_cap = @tier3
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				command_power < @tier3
+			}
+		}
+	}
+
+	army_chief_morale_1 = { # Ground units get 4 more Morale
+		sprite = 5
+		out_of_supply_factor = -0.03
+		experience_gain_army = 0.075
+
+		command_cap = @tier1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				command_power < @tier1
+			}
+		}
+	}
+
+	army_chief_morale_2 = { # Ground units get 8 more Morale
+		sprite = 5
+		out_of_supply_factor = -0.06
+		experience_gain_army = 0.1
+
+		command_cap = @tier2
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				command_power < @tier2
+			}
+		}
+	}
+
+	army_chief_morale_3 = { # Ground units get 12 more Morale
+		sprite = 5
+		out_of_supply_factor = -0.09
+		experience_gain_army = 0.12
+
+		command_cap = @tier3
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				command_power < @tier3
+			}
+		}
+	}
+
+
+	army_chief_maneuver_1 = { # Ground units move 5% faster
+		sprite = 5
+		army_speed_factor = 0.05
+		experience_gain_army = 0.075
+
+		command_cap = @tier1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				command_power < @tier1
+			}
+		}
+	}
+
+	army_chief_maneuver_2 = { # Ground units move 10% faster
+		sprite = 5
+		army_speed_factor = 0.1
+		experience_gain_army = 0.1
+
+		command_cap = @tier2
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				command_power < @tier2
+			}
+		}
+	}
+
+	army_chief_maneuver_3 = { # Ground units move 15% faster
+		sprite = 5
+		army_speed_factor = 0.15
+		experience_gain_army = 0.12
+
+		command_cap = @tier3
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				command_power < @tier3
+			}
+		}
+	}
+
+	army_chief_entrenchment_1 = {
+		sprite = 5
+		max_dig_in = 3
+		mobilization_speed = -0.02
+		experience_gain_army = 0.075
+
+		command_cap = @tier1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				command_power < @tier1
+			}
+		}
+	}
+
+	army_chief_entrenchment_2 = {
+		sprite = 5
+		max_dig_in = 5
+		mobilization_speed = -0.04
+		experience_gain_army = 0.1
+
+		command_cap = @tier2
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				command_power < @tier2
+			}
+		}
+	}
+
+	army_chief_entrenchment_3 = {
+		sprite = 5
+		max_dig_in = 7
+		mobilization_speed = -0.06
+		experience_gain_army = 0.12
+
+		command_cap = @tier3
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				command_power < @tier3
+			}
+		}
+	}
+
+
+	army_entrenchment_1 = { # Ground units entrench n% faster
+		sprite = 9
+		dig_in_speed_factor = 0.08
+		experience_gain_army = @experience_gain_low
+
+		command_cap = @tier1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				command_power < @tier1
+			}
+		}
+	}
+
+	army_entrenchment_2 = { # Ground units entrench 8% faster
+		sprite = 9
+		dig_in_speed_factor = 0.16
+		experience_gain_army = @experience_gain_medium
+
+		command_cap = @tier2
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				command_power < @tier2
+			}
+		}
+	}
+
+	army_entrenchment_3 = { # Ground units entrench 12% faster
+		sprite = 9
+		dig_in_speed_factor = 0.24
+		experience_gain_army = @experience_gain_high
+
+		command_cap = @tier3
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				command_power < @tier3
+			}
+		}
+	}
+
+
+	army_armored_1 = { # +4 armor efficiency
+		sprite = 8
+		army_armor_attack_factor = 0.05
+	    army_armor_defence_factor = 0.05
+		experience_gain_army = @experience_gain_low
+
+		command_cap = @tier1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				command_power < @tier1
+			}
+		}
+	}
+
+	army_armored_2 = { # +8 armor efficiency
+		sprite = 8
+		army_armor_attack_factor = 0.1
+	    army_armor_defence_factor = 0.1
+		experience_gain_army = @experience_gain_medium
+
+		command_cap = @tier2
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				command_power < @tier2
+			}
+		}
+	}
+
+	army_armored_3 = { # +12 armor efficiency
+		sprite = 8
+		army_armor_attack_factor = 0.15
+	    army_armor_defence_factor = 0.15
+		experience_gain_army = @experience_gain_high
+
+		command_cap = @tier3
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				command_power < @tier3
+			}
+		}
+	}
+
+
+	army_artillery_1 = { # +4 artillery efficiency
+		sprite = 16
+		army_artillery_attack_factor = 0.1
+		army_artillery_defence_factor = 0.05
+		experience_gain_army = @experience_gain_low
+
+		command_cap = @tier1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				command_power < @tier1
+			}
+		}
+	}
+
+	army_artillery_2 = { # +8 artillery efficiency
+		sprite = 16
+		army_artillery_attack_factor = 0.15
+		army_artillery_defence_factor = 0.1
+		experience_gain_army = @experience_gain_medium
+
+		command_cap = @tier2
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				command_power < @tier2
+			}
+		}
+	}
+
+	army_artillery_3 = { # +12 artillery efficiency
+		sprite = 16
+		army_artillery_attack_factor = 0.2
+		army_artillery_defence_factor = 0.15
+		experience_gain_army = @experience_gain_high
+
+		command_cap = @tier3
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				command_power < @tier3
+			}
+		}
+	}
+
+
+	army_infantry_1 = { # +4 infantry efficiency
+		sprite = 5
+		army_infantry_attack_factor = 0.05
+		army_infantry_defence_factor = 0.1
+		experience_gain_army = @experience_gain_low
+
+		command_cap = @tier1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				command_power < @tier1
+			}
+		}
+	}
+
+	army_infantry_2 = { # +8 infantry efficiency
+		sprite = 5
+		army_infantry_attack_factor = 0.1
+		army_infantry_defence_factor = 0.15
+		experience_gain_army = @experience_gain_medium
+
+		command_cap = @tier2
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				command_power < @tier2
+			}
+		}
+	}
+
+	army_infantry_3 = { # +12 infantry efficiency
+		sprite = 5
+		army_infantry_attack_factor = 0.15
+		army_infantry_defence_factor = 0.2
+		experience_gain_army = @experience_gain_high
+
+		command_cap = @tier3
+
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				factor = 0
+				command_power < @tier3
+			}
+		}
+	}
+
+
+	army_commando_1 = { # +4 paratrooper/marine/mountain efficiency
+		sprite = 5
+		special_forces_attack_factor = 0.1
+	    special_forces_defence_factor = 0.1
+		experience_gain_army = @experience_gain_low
+
+		command_cap = @tier1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				command_power < @tier1
+			}
+		}
+	}
+
+	army_commando_2 = { # +8 paratrooper/marine/mountain efficiency
+		sprite = 5
+		special_forces_attack_factor = 0.15
+	    special_forces_defence_factor = 0.15
+		experience_gain_army = @experience_gain_medium
+
+		command_cap = @tier2
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				command_power < @tier2
+			}
+		}
+	}
+
+	army_commando_3 = { # +12 paratrooper/marine/mountain efficiency
+		sprite = 5
+		special_forces_attack_factor = 0.2
+	    special_forces_defence_factor = 0.2
+		experience_gain_army = @experience_gain_high
+
+		command_cap = @tier3
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				command_power < @tier3
+			}
+		}
+	}
+
+
+	army_cavalry_1 = { # +4 cavalry/motorized efficiency
+		sprite = 17
+		cavalry_attack_factor = 0.05
+		cavalry_defence_factor = 0.05
+		experience_gain_army = @experience_gain_low
+
+		command_cap = @tier1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				command_power < @tier1
+			}
+		}
+	}
+
+	army_cavalry_2 = { # +8 cavalry/motorized efficiency
+		sprite = 17
+		cavalry_attack_factor = 0.1
+		cavalry_defence_factor = 0.1
+		experience_gain_army = @experience_gain_medium
+
+		command_cap = @tier2
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				command_power < @tier2
+			}
+		}
+	}
+
+	army_cavalry_3 = { # +12 cavalry/motorized efficiency
+		sprite = 17
+		cavalry_attack_factor = 0.15
+		cavalry_defence_factor = 0.15
+		experience_gain_army = @experience_gain_high
+
+		command_cap = @tier3
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				command_power < @tier3
+			}
+		}
+	}
+
+	army_CombinedArms_1 = { # +4 cavalry/motorized efficiency
+		sprite = 8
+		motorized_attack_factor = 0.05
+		motorized_defence_factor = 0.05
+		mechanized_attack_factor = 0.05
+		mechanized_defence_factor = 0.05
+		experience_gain_army = @experience_gain_low
+
+		command_cap = @tier1
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				command_power < @tier1
+			}
+		}
+	}
+
+	army_CombinedArms_2 = { # +8 cavalry/motorized efficiency
+		sprite = 8
+		motorized_attack_factor = 0.1
+		motorized_defence_factor = 0.1
+		mechanized_attack_factor = 0.1
+		mechanized_defence_factor = 0.1
+		experience_gain_army = @experience_gain_medium
+
+		command_cap = @tier2
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				command_power < @tier2
+			}
+		}
+	}
+
+	army_CombinedArms_3 = { # +12 cavalry/motorized efficiency
+		sprite = 8
+		motorized_attack_factor = 0.15
+		motorized_defence_factor = 0.15
+		mechanized_attack_factor = 0.15
+		mechanized_defence_factor = 0.15
+		experience_gain_army = @experience_gain_high
+
+		command_cap = @tier3
+
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				factor = 0
+				command_power < @tier3
+			}
+		}
+	}
+
+
+	army_regrouping_1 = { # Org regenerates 4% faster
+		sprite = 5
+		army_morale_factor = 0.04
+		experience_gain_army = @experience_gain_low
+
+		command_cap = @tier1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				command_power < @tier1
+			}
+		}
+	}
+
+	army_regrouping_2 = { # Org regenerates 8% faster
+		sprite = 5
+		army_morale_factor = 0.08
+		experience_gain_army = @experience_gain_medium
+
+		command_cap = @tier2
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				command_power < @tier2
+			}
+		}
+	}
+
+	army_regrouping_3 = { # Org regenerates 12% faster
+		sprite = 5
+		army_morale_factor = 0.12
+		experience_gain_army = @experience_gain_high
+
+		command_cap = @tier3
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				command_power < @tier3
+			}
+		}
+	}
+
+
+	army_concealment_1 = { # Ground units take less damage from air attacks
+		sprite = 9
+		enemy_army_bonus_air_superiority_factor = -0.05
+		experience_gain_army = @experience_gain_low
+
+		command_cap = @tier1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				command_power < @tier1
+			}
+		}
+	}
+
+	army_concealment_2 = { # Ground units take less damage from air attacks
+		sprite = 9
+		enemy_army_bonus_air_superiority_factor = -0.10
+		experience_gain_army = @experience_gain_medium
+
+		command_cap = @tier2
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				command_power < @tier2
+			}
+		}
+	}
+
+	army_concealment_3 = { # Ground units take less damage from air attacks
+		sprite = 9
+		enemy_army_bonus_air_superiority_factor = -0.15
+		experience_gain_army = @experience_gain_high
+
+		command_cap = @tier3
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				command_power < @tier3
+			}
+		}
+	}
+
+
+	army_logistics_1 = {  # Ground units suffer 4% less attrition
+		sprite = 6
+		attrition = -0.04
+		experience_gain_army = @experience_gain_low
+
+		command_cap = @tier1
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				command_power < @tier1
+			}
+		}
+	}
+
+	army_logistics_2 = {  # Ground units suffer 8% less attrition
+		sprite = 6
+		attrition = -0.08
+		experience_gain_army = @experience_gain_medium
+
+		command_cap = @tier2
+
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				factor = 0
+				command_power < @tier2
+			}
+		}
+	}
+
+	army_logistics_3 = {  # Ground units suffer 12% less attrition
+		sprite = 6
+		attrition = -0.12
+		experience_gain_army = @experience_gain_high
+
+		command_cap = @tier3
+
+		ai_will_do = {
+			factor = 6
+			modifier = {
+				factor = 0
+				command_power < @tier3
+			}
+		}
+	}
+
+	## NAVY STUFF ##
+	
+	navy_amphibious_assault_1 = {
+		sprite = 3
+		amphibious_invasion = 0.05
+		#experience_gain_navy = @experience_gain_low
+
+		command_cap = @tier1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				command_power < @tier1
+			}
+		}
+	}
+
+	navy_amphibious_assault_2 = {
+		sprite = 3
+		amphibious_invasion = 0.1
+		#experience_gain_navy = @experience_gain_medium
+
+		command_cap = @tier2
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				command_power < @tier2
+			}
+		}
+	}
+
+	navy_amphibious_assault_3 = {
+		sprite = 3
+		amphibious_invasion = 0.15
+		#experience_gain_navy = @experience_gain_high
+
+		command_cap = @tier3
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 0
+				command_power < @tier3
+			}
+		}
+	}
+	
+	## industrial concern ##
+	
+	railway_company = {
+	random = no
+		
+		production_speed_rail_way_factor = 0.30
+		production_speed_supply_node_factor = 0.30
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	mbt_designer = {
+	random = no
+		
+		equipment_bonus = {
+			mbt_tank_equipment = {
+				build_cost_ic = -0.15
+				soft_attack = 0.05
+				reliability = 0.05
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	arty_designer = {
+	random = no
+		
+		equipment_bonus = {
+			towed_artillery_equipment = {
+				build_cost_ic = 0.05
+				soft_attack = 0.05
+				reliability = 0.05
+			}
+			motorised_artillery_equipment = {
+				build_cost_ic = 0.05
+				soft_attack = 0.05
+				reliability = 0.05
+			}
+			rocket_artillery_equipment = {
+				build_cost_ic = 0.05
+				soft_attack = 0.05
+				reliability = 0.05
+			}			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	plane_designer = {
+	random = no
+		
+		equipment_bonus = {
+			fighter_equipment = {
+				build_cost_ic = -0.1
+				air_agility = 0.10
+				reliability = 0.05
+			}
+			attacker_equipment = {
+				build_cost_ic = -0.1
+				air_agility = 0.10
+				reliability = 0.05
+			}
+		
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	## SAF ##
+
+	SAF_prioritizing_submarines_idea_trait = {
+		random = no
+
+		equipment_bonus = {
+			attack_submarine_hull = {
+				build_cost_ic = -0.05
+			}
+			cruise_submarine_hull = {
+				build_cost_ic = -0.05
+			}
+			ballistic_submarine_hull = {
+				build_cost_ic = -0.05
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SAF_prioritizing_surface_idea_trait = {
+		random = no
+
+		equipment_bonus = {
+			corvette_hull = {
+				build_cost_ic = -0.05
+			}
+			destroyer_hull = {
+				build_cost_ic = -0.05
+			}
+			cruiser_hull = {
+				build_cost_ic = -0.05
+			}
+			carrier_hull = {
+				build_cost_ic = -0.05
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

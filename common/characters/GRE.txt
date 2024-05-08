@@ -1,0 +1,50 @@
+characters = {
+
+	GRE_simitis = {
+		name = "Konstantinos Simitis"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GRE/simitis.png"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	GRE_aleka_papariga = {
+		name = "Aleka Papariga"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GRE/Aleka_Papariga.png"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	GRE_konstantinos_floros = {
+		name = "Konstantinos Floros"
+		portraits = {
+			army = {
+				large = "gfx/leaders/GRE/konstantinos_floros.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+}

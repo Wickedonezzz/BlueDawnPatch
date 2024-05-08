@@ -1,0 +1,45 @@
+ideas = {
+	
+	country = {
+	
+		NEP_communist_insurgency = {
+			name = NEP_communist_insurgency_idea_name
+
+			removal_cost = -1
+
+			picture = GFX_idea_NEP_communist_insurgency
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				communism_drift = 0.01
+                                reformed_communism_drift = 0.02
+				political_power_gain = -0.02
+				consumer_goods_factor = 0.30
+				stability_factor = -0.3
+				war_support_factor = -0.3
+				
+		}
+	}
+	NEP_royal_autocracy = {
+			name = NEP_royal_autocracy_idea_name
+
+			removal_cost = -1
+
+			picture = GFX_idea_NEP_royal_autocracy
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_gain = 0.01
+				stability_factor = 0.05
+				war_support_factor = -0.05
+				
+		}
+	}
+}
+}

@@ -1,0 +1,159 @@
+characters = {
+
+	UKR_mil_command = {
+		name = "United Military Command"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UKR/hohol.dds"
+			}
+			army = {
+				large = "gfx/leaders/UKR/hohol.dds"			
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		corps_commander={
+			traits={skilled_staffer}
+			skill=2
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	
+	UKR_petro_symonenko = {
+		name = "Petro Symonenko"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UKR/petro_symonenko.dds"
+			}
+		}
+		country_leader = {
+			ideology = market_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	UKR_petro_symonenko_ml = {
+		name = "Petro Symonenko"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UKR/petro_symonenko.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	OUN_oleh_tyahnybok = {
+		name = "Oleh Tyahnybok"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UKR/Oleh_Tyahnybok.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	DPR_pavel_gubarev = {
+		name = "Pavel Gubarev"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UKR/Pavel_Gubarev.dds"
+			}
+		}
+		country_leader = {
+			ideology = nazbolism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	TFK_vladimir_masorin = {
+		name = "Vladimir Masorin"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Vladimir_Masorin.dds"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		navy_leader={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+
+	UCR_viktor_yushchenko = {
+		name = "Viktor Yushchenko"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UKR/Viktor_Yushchenko.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	UKR_viktor_yushchenko = {
+		name = "Viktor Yushchenko"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UKR/Viktor_Yushchenko.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	UKR_viktor_yanukovych = {
+		name = "Viktor Yanukovych"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UKR/viktor_yanukovych.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

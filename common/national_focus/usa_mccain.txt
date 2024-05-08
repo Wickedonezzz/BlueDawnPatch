@@ -1,0 +1,902 @@
+﻿focus_tree = {
+	id = usa_mccain_focus
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 0
+			tag = USA
+		}
+	}
+	
+	default = no
+	shared_focus = USA_the_giant_wakes_again
+	
+	focus = {
+		id = USA_mccain_mccain_in_office
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 10
+		y = 0
+
+		prerequisite = {}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = {id = usa_mccain.1}
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_woes_of_a_reformer #dengist dengist dengist
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -1
+		y = 1
+
+		prerequisite = {focus = USA_mccain_mccain_in_office}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_mccain_in_office
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_reach_across_the_aisle
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 1
+		y = 1
+
+		prerequisite = {focus = USA_mccain_mccain_in_office}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_mccain_in_office
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_moderatism_is_the_way_forward
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 2
+
+		prerequisite = {focus = USA_mccain_woes_of_a_reformer}
+		prerequisite = {focus = USA_mccain_reach_across_the_aisle}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_mccain_in_office
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_old_age_progressivism
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -6
+		y = 1
+
+		prerequisite = {focus = USA_mccain_moderatism_is_the_way_forward}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_moderatism_is_the_way_forward
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_balance_our_freedoms
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -2		
+		y = 1
+		prerequisite = {focus = USA_mccain_old_age_progressivism}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_old_age_progressivism
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_national_values_first
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 1
+		prerequisite = {focus = USA_mccain_old_age_progressivism}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_old_age_progressivism
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_america_land_of_the_free
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 2
+		y = 1
+		prerequisite = {focus = USA_mccain_old_age_progressivism}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_old_age_progressivism
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_common_sense_gun_legislation
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -2
+		y = 2
+		prerequisite = {focus = USA_mccain_balance_our_freedoms}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_old_age_progressivism
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_the_internet_and_america
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 2
+		prerequisite = {focus = USA_mccain_national_values_first}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_old_age_progressivism
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_home_of_the_brave
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 2
+		y = 2
+		prerequisite = {focus = USA_mccain_america_land_of_the_free}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_old_age_progressivism
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_new_nationalism
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 3
+		prerequisite = {focus = USA_mccain_common_sense_gun_legislation}
+		prerequisite = {focus = USA_mccain_the_internet_and_america}
+		prerequisite = {focus = USA_mccain_home_of_the_brave}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_old_age_progressivism
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_march_of_the_eagles
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -1
+		y = 4
+		prerequisite = {focus = USA_mccain_new_nationalism}
+		mutually_exclusive = { focus = USA_mccain_never_another_iraq }
+		relative_position_id = USA_mccain_old_age_progressivism
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_never_another_iraq
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 1
+		y = 4
+		prerequisite = {focus = USA_mccain_new_nationalism}
+		mutually_exclusive = { focus = USA_mccain_march_of_the_eagles }
+		relative_position_id = USA_mccain_old_age_progressivism
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_the_american_eagle_soars
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 5
+		prerequisite = {focus = USA_mccain_march_of_the_eagles focus = USA_mccain_never_another_iraq}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_old_age_progressivism
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_republican_values
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 1
+		prerequisite = {focus = USA_mccain_moderatism_is_the_way_forward}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_moderatism_is_the_way_forward
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_no_more_lobbyism
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 1
+		prerequisite = {focus = USA_mccain_republican_values}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_republican_values
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_mccainism
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -1
+		y = 2
+		prerequisite = {focus = USA_mccain_no_more_lobbyism}
+		mutually_exclusive = {focus = USA_mccain_lincolns_lifes_work}
+		relative_position_id = USA_mccain_republican_values
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_main_street_republicanism
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -2
+		y = 3
+		prerequisite = {focus = USA_mccain_mccainism}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_republican_values
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_lincolns_lifes_work
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 1
+		y = 2
+		prerequisite = {focus = USA_mccain_no_more_lobbyism}
+		mutually_exclusive = {focus = USA_mccain_mccainism}
+		relative_position_id = USA_mccain_republican_values
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_fix_our_image
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 2
+		y = 3
+		prerequisite = {focus = USA_mccain_lincolns_lifes_work}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_republican_values
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_light_on_immigration
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 3
+		prerequisite = {focus = USA_mccain_mccainism focus = USA_mccain_lincolns_lifes_work}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_republican_values
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_expand_the_bipartisan_campaign_reform_act
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -1
+		y = 4
+		prerequisite = {focus = USA_mccain_light_on_immigration}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_republican_values
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_comprehensive_immigration_reform
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 1
+		y = 4
+		prerequisite = {focus = USA_mccain_light_on_immigration}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_republican_values
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_new_old_fashioned_way
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 5
+		prerequisite = {focus = USA_mccain_expand_the_bipartisan_campaign_reform_act}
+		prerequisite = {focus = USA_mccain_comprehensive_immigration_reform}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_republican_values
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_taxes_the_price_we_pay
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 6
+		y = 1
+		prerequisite = {focus = USA_mccain_moderatism_is_the_way_forward}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_moderatism_is_the_way_forward
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_tax_balancing
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -2
+		y = 1
+		prerequisite = {focus = USA_mccain_taxes_the_price_we_pay}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_taxes_the_price_we_pay
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_meet_in_the_middle
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 1
+		prerequisite = {focus = USA_mccain_taxes_the_price_we_pay}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_taxes_the_price_we_pay
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_dues_on_the_deficit
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 2
+		y = 1
+		prerequisite = {focus = USA_mccain_taxes_the_price_we_pay}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_taxes_the_price_we_pay
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_balance_the_budget
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -2
+		y = 2
+		prerequisite = {focus = USA_mccain_tax_balancing}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_taxes_the_price_we_pay
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_working_mans_welfare
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 2
+		prerequisite = {focus = USA_mccain_meet_in_the_middle}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_taxes_the_price_we_pay
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_some_from_one_some_for_all
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 2
+		y = 2
+		prerequisite = {focus = USA_mccain_dues_on_the_deficit}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_taxes_the_price_we_pay
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_roosevelts_legacy
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -1
+		y = 3
+		prerequisite = {focus = USA_mccain_working_mans_welfare}
+		prerequisite = {focus = USA_mccain_balance_the_budget}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_taxes_the_price_we_pay
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_education_incentives
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 1
+		y = 3
+		prerequisite = {focus = USA_mccain_working_mans_welfare}
+		prerequisite = {focus = USA_mccain_some_from_one_some_for_all}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_taxes_the_price_we_pay
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_sweeping_medicare_reform
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -1
+		y = 4
+		prerequisite = {focus = USA_mccain_roosevelts_legacy}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_taxes_the_price_we_pay
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_americas_natural_wealth
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 1
+		y = 4
+		prerequisite = {focus = USA_mccain_education_incentives}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_taxes_the_price_we_pay
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_a_deal_thats_fair
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 5
+		prerequisite = {focus = USA_mccain_sweeping_medicare_reform}
+		prerequisite = {focus = USA_mccain_americas_natural_wealth}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_taxes_the_price_we_pay
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_mccain_a_reformer_with_results
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 7
+		prerequisite = {focus = USA_mccain_the_american_eagle_soars}
+		prerequisite = {focus = USA_mccain_new_old_fashioned_way}
+		prerequisite = {focus = USA_mccain_a_deal_thats_fair}
+		mutually_exclusive = { }
+		relative_position_id = USA_mccain_moderatism_is_the_way_forward
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			
+		}
+	}
+	
+}

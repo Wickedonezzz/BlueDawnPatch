@@ -1,0 +1,51 @@
+characters = {
+
+	YEM_ali_abdullah = {
+		name = "Ali Abdullah Saleh"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Arab/Ali_Abdullah_Saleh.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	YEM_baath = { #yup, another party logo leader. im not wasting any more time finding irrelavent leaders for these countries
+		name = "Yemen Ba'ath Party Command"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JOR/jordan_baath.dds"
+			}
+		}
+		country_leader = {
+			ideology = baathist_nationalism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	YEM_mohsen = {
+		name = "Ali Mohsen al-Ahmar"
+		portraits = {
+			army = {
+				large = "gfx/leaders/arab/mohsen.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+}

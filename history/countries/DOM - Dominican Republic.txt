@@ -1,0 +1,41 @@
+﻿capital = 319
+
+#oob = "DOM_1936"
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+
+	set_technology = {
+		corvette_hull_1960 = 1
+	}
+}
+
+set_war_support = 0.1
+set_convoys = 5
+
+recruit_character = DOM_leonel_fernandez
+
+set_politics = {
+	ruling_party = social_democracy
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 0
+	reformed_communism = 0
+	social_democracy = 39
+	liberalism = 46
+	democratic = 15
+	neutrality = 0
+	paternal_autocracy = 0
+	fascism = 0
+}
+# Naval Variants #
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "DOM_2000_naval_mtg"
+}

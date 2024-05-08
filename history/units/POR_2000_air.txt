@@ -1,0 +1,18 @@
+﻿air_wings = {
+	# Land Wings #
+	112 = {
+		# Fighters -- F-16
+		fighter_equipment_2 = { # F-16 #
+			owner = "POR" 
+			creator = USA
+			amount = 20
+		}
+
+		# Transports -- C-130
+		transport_plane_equipment_1 = { # C-130 #
+			owner = "POR"
+			creator = USA
+			amount = 6
+		}
+	}
+}

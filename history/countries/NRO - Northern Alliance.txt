@@ -1,0 +1,38 @@
+﻿capital = 939
+
+oob = "NRO_2000"
+
+recruit_character = NRO_northern_alliance
+recruit_character = NRO_muhammad_mohaqiq
+recruit_character = NRO_ahmad_shah_massoud
+recruit_character = NRO_abdul_rashid_dostum
+recruit_character = NRO_atta_muhammad_nur
+recruit_character = NRO_mohammad_najibullah
+
+set_technology = {
+	infantry_weapons_1960 = 1
+	infantry_weapons_1980 = 1
+	mbt_tank_1990 = 1
+	towed_artillery_1980 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_air_weapons_1960 = 1
+}
+
+add_ideas = war_economy
+add_ideas = extensive_conscription
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	fascism = 0
+	communism = 0
+	socialism = 30
+	paternal_autocracy = 25
+	neutrality = 45
+	
+}

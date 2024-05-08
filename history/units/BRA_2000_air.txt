@@ -1,0 +1,7 @@
+air_wings = {
+	# Carrier Wings #
+	"Minas Gerais" = {
+		carrier_attacker_equipment_0 = { owner = "USA" amount = 10 }
+		carrier_attacker_equipment_0 = { owner = "USA" amount = 2 }
+	}
+}

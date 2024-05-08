@@ -1,0 +1,148 @@
+add_namespace = romania_mod
+
+#elections##
+country_event = {
+	id = romania_mod.1
+	title = romania_mod.1.t
+	desc = romania_mod.1.d
+	picture = GFX_report_event_ballot_box
+	
+	trigger = {
+	date > 2000.12.9
+	original_tag = ROM
+
+	}
+
+	fire_only_once = yes
+
+	option = { 
+		name = romania_mod.1.a #succdems#
+		ai_chance = { base = 35 }
+
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+		
+		retire_country_leader = yes
+		set_politics = {
+			ruling_party = social_democracy
+		}
+		add_popularity = {
+			ideology = social_democracy
+			popularity = 0.05
+		}
+		
+		news_event = {id = old_times_news.64}
+		
+	}
+	option = {
+		name = romania_mod.1.b #funni ultranat guy##
+		ai_chance = { base = 25 }
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.05
+		}
+		
+		retire_country_leader = yes
+		set_politics = {
+			ruling_party = fascism
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}		
+		
+		news_event = {id = old_times_news.65}
+
+	}
+}
+
+#miners##
+country_event = {
+	id = romania_mod.2
+	title = romania_mod.2.t
+	desc = romania_mod.2.d
+	picture = GFX_report_event_ballot_box
+
+	is_triggered_only = yes
+
+	option = { 
+		name = romania_mod.1.a #RYZKOV YOU LITTLE SHIIIIIT#
+		ai_chance = { base = 35 }
+
+		add_popularity = {
+			ideology = socialism
+			popularity = 0.10
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = reformed_communism
+			popularity = 0.05
+		}
+	
+		add_stability = -0.10
+		
+		#news_event = {id = old_times_news.64}
+		country_event = {id = romania_mod.3 days = 3}
+	}
+
+}
+
+#government collapse##
+country_event = {
+	id = romania_mod.3
+	title = romania_mod.3.t
+	desc = romania_mod.3.d
+	picture = GFX_report_event_ballot_box
+
+	is_triggered_only = yes
+
+	option = { 
+		name = romania_mod.1.a #coomunism time#
+		ai_chance = { base = 35 }
+
+
+		set_politics = {
+			ruling_party = socialism
+			election_frequency = 48
+			elections_allowed = no
+		}
+
+		set_popularities = {
+			communism = 10
+			reformed_communism = 15
+			socialism = 35
+			social_democracy = 10
+			liberalism = 5
+			democratic = 10
+			neutrality = 10
+			paternal_autocracy = 0
+			fascism = 5
+		}
+		
+		add_stability = -0.10
+		
+		SOV = {add_to_faction = ROM}
+		
+		news_event = {id = old_times_news.158}					
+
+		
+	}
+
+}

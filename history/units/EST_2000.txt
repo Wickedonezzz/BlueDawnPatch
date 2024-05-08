@@ -1,0 +1,40 @@
+﻿division_template = { # Infantry Division #
+	name = "Infantry Division"
+	division_names_group = GENERIC_INF_01
+
+	regiments = {
+		infantry_unit = { x = 0 y = 0 }
+		infantry_unit = { x = 0 y = 1 }
+		infantry_unit = { x = 0 y = 2 }
+		infantry_unit = { x = 0 y = 3 }
+		infantry_unit = { x = 0 y = 4 }
+		spaa_vehicle_armor = { x = 1 y = 0 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }
+		armoured_recon = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+
+units = {
+	#Infantry Division
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9221
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.75
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+}

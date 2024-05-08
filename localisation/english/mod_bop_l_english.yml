@@ -1,0 +1,9 @@
+﻿l_english:
+ SOV_kgb_balance:0 "KGB Balance"
+ SOV_putin_side:0 "Vladimir Putin"
+ SOV_putin_right_side_range:0 "KGB controlled by Vladimir Putin"
+ putin_side_mid_range:0 "KGB influenced by Vladimir Putin"
+ mid_range:0 "KGB is influenced equally"
+ pugo_side_mid_range:0 "KGB influenced by Boris Pugo"
+ SOV_pugo_left_side_range:0 "KGB controlled by Boris Pugo"
+ SOV_pugo_side:0 "Boris Pugo"

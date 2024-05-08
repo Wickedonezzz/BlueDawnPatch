@@ -1,0 +1,131 @@
+characters = {
+
+	JAP_keizō_obuchi = {
+		name = "Keizō Obuchi"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/Keizō_Obuchi.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	JAP_yoshiro_mori = {
+		name = "Yoshiro Mori"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/Yoshiro_Mori.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	JAP_Kazuo_Shii = {
+		name = "Kazuo Shii"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/Kazuo_Shii.png"
+			}
+		}
+		country_leader = {
+			ideology = democratic_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	JAP_tetsuzo_fuwa = {
+		name = "Tetsuzo Fuwa"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/Tetsuzo_Fuwa.png"
+			}
+		}
+		country_leader = {
+			ideology = democratic_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	JAP_Ryutaro_Hashimoto = {
+		name = "Ryutaro Hashimoto"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/Ryutaro_Hashimoto.png"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	JAP_junichiro_koizumi = {
+		name = "Junichiro Koizumi"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/Junichiro_Koizumi.png"
+			}
+		}
+		country_leader = { 
+			ideology = liberalism_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	JAP_Naoto_Kan = {
+		name = "Naoto Kan"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/Naoto_Kan.png"
+			}
+		}
+		country_leader = { 
+			ideology = liberalism_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	JAP_Yukio_Hatoyama = {
+		name = "Yukio Hatoyama"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/Yukio_Hatoyama.png"
+			}
+		}
+		country_leader = { 
+			ideology = liberalism_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	JAP_takenori_kanzaki = {
+		name = "Takenori Kanzaki"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/Takenori_Kanzaki.png"
+			}
+		}
+		country_leader = { 
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

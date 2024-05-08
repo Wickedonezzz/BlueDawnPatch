@@ -1,0 +1,18 @@
+characters = {
+
+	OFS_steyn_von_ronge = {
+		name = "Steyn von Rönge"
+		portraits = {
+			civilian = {
+				#large = "gfx/leaders/SAF/Steyn_Ronge.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

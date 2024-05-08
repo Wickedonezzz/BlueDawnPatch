@@ -1,0 +1,358 @@
+units = {
+	fleet = {
+		name = "Beihai Jiandui"
+		naval_base = 10000 # Qingdao #
+		task_force = {
+			name = "Flota Chilena"
+			location = 10000 # Qingdao #
+			ship = { name = "Harbin" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = PRC version_name = "Type 052 Class" } } }
+			ship = { name = "Qingdao" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = PRC version_name = "Type 052 Class" } } }
+			ship = { name = "Shenzhen" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = PRC version_name = "Type 051B Class" } } }
+			ship = { name = "Jinan" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 051 Class" } } }
+			ship = { name = "Xian" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 051 Class" } } }
+			ship = { name = "Yinchuan" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 051 Class" } } }
+			ship = { name = "Xining" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 051 Class" } } }
+			ship = { name = "Kaifeng" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 051 Class" } } }
+			ship = { name = "Dalian" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 051 Class" } } }
+			ship = { name = "Zunyi" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 051 Class" } } }
+			ship = { name = "Guilin" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 051 Class" } } }
+			ship = { name = "Changzhi" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H Class" } } }
+			ship = { name = "Dandong" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H1 Class" } } }
+			ship = { name = "Linfen" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H1 Class" } } }
+			ship = { name = "Siping" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H1Q Class" } } }
+		}
+		task_force = {
+			name = "Beihai Qianting Jiandui"
+			location = 10000 # Qingdao #
+			ship = { name = "Changcheng 320" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = PRC version_name = "Type 039 Class" } } }
+			ship = { name = "Changzheng 1" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC version_name = "Type 091 Class" } } }
+			ship = { name = "Changzheng 2" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC version_name = "Type 091 Class" } } }
+			ship = { name = "Changzheng 3" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC version_name = "Type 091 Class" } } }
+			ship = { name = "Changzheng 4" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC version_name = "Type 091 Class" } } }
+			ship = { name = "Changzheng 5" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC version_name = "Type 091 Class" } } }
+			ship = { name = "Changcheng 232" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC version_name = "Type 035 Class" } } }
+			ship = { name = "Changcheng 233" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC version_name = "Type 035 Class" } } }
+			ship = { name = "Changcheng 342" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC version_name = "Type 035A Class" } } }
+			ship = { name = "Changcheng 352" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC version_name = "Type 035A Class" } } }
+			ship = { name = "Changcheng 353" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC version_name = "Type 035A Class" } } }
+			ship = { name = "Changcheng 354" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC version_name = "Type 035A Class" } } }
+			ship = { name = "Changcheng 356" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC version_name = "Type 035A Class" } } }
+			ship = { name = "Changcheng 357" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC version_name = "Type 035A Class" } } }
+			ship = { name = "Changcheng 358" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC version_name = "Type 035A Class" } } }
+			ship = { name = "Changcheng 359" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC version_name = "Type 035A Class" } } }
+			ship = { name = "Changcheng 360" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC version_name = "Type 035A Class" } } }
+			ship = { name = "Changcheng 361" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC version_name = "Type 035A Class" } } }
+			ship = { name = "Changcheng 362" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC version_name = "Type 035A Class" } } }
+			ship = { name = "Changcheng 140" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 141" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 142" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 143" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 144" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 145" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 146" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 147" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 148" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 149" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 208" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 209" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 210" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 211" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 212" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 213" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 214" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 215" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 216" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 217" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 218" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 219" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 220" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 221" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 222" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 223" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 224" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 225" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 226" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 227" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 228" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 229" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 230" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 234" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 235" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 236" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 237" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 238" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 239" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 281" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 282" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 283" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 290" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 291" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 292" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 293" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 294" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+		}
+		task_force = {
+			name = "Beihai Dandao Qianting Jiandui"
+			location = 10000 # Qingdao #
+			ship = { name = "Changzheng 6" definition = ballistic_submarine equipment = { ballistic_submarine_hull_2 = { amount = 1 owner = PRC version_name = "Type 092 Class" } } }
+			ship = { name = "Changcheng 200" definition = ballistic_submarine equipment = { ballistic_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Golf Class (Pr. 629)" } } }
+		}
+	}
+	fleet = {
+		name = "Donghai Jiandui"
+		naval_base = 9974 # Ningbo #
+		task_force = {
+			name = "Donghai Jiandui"
+			location = 9974 # Ningbo #
+			ship = { name = "Anqing" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = PRC version_name = "Type 053H2G Class" } } }
+			ship = { name = "Huainan" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = PRC version_name = "Type 053H2G Class" } } }
+			ship = { name = "Huaibei" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = PRC version_name = "Type 053H2G Class" } } }
+			ship = { name = "Tongling" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = PRC version_name = "Type 053H2G Class" } } }
+			ship = { name = "Lianyungang" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = PRC version_name = "Type 053H3 Class" } } }
+			ship = { name = "Putian" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = PRC version_name = "Type 053H3 Class" } } }
+			ship = { name = "Sanming" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = PRC version_name = "Type 053H3 Class" } } }
+			ship = { name = "Yichang" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = PRC version_name = "Type 053H3 Class" } } }
+			ship = { name = "Nanjing" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 051 Class" } } }
+			ship = { name = "Hefei" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 051 Class" } } }
+			ship = { name = "Chongqing" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 051 Class" } } }
+			ship = { name = "Nantong" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H Class" } } }
+			ship = { name = "Wuxi" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H Class" } } }
+			ship = { name = "Huaiyin" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H Class" } } }
+			ship = { name = "Zhenjiang" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H Class" } } }
+			ship = { name = "Xiamen" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H Class" } } }
+			ship = { name = "Jiujiang" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H Class" } } }
+			ship = { name = "Nanping" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H Class" } } }
+			ship = { name = "Ningbo" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H1 Class" } } }
+			ship = { name = "Jinhua" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H1 Class" } } }
+			ship = { name = "Jishou" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H1 Class" } } }
+			ship = { name = "Huangshi" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H2 Class" } } }
+			ship = { name = "Wuhu" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H2 Class" } } }
+			ship = { name = "Zhoushan" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H2 Class" } } }
+			ship = { name = "Zigong" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H1G Class" } } }
+			ship = { name = "Foshan" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H1G Class" } } }
+		}
+		task_force = {
+			name = "Donghai Qianting Jiandui"
+			location = 9974 # Ningbo #
+			ship = { name = "Changcheng 366" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = PRC creator = SOV version_name = "Improved Kilo Class (Pr. 636)" } } }
+			ship = { name = "Changcheng 367" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = PRC creator = SOV version_name = "Improved Kilo Class (Pr. 636)" } } }
+		}
+	}
+	fleet = {
+		name = "Nanhai Jiandui"
+		naval_base = 11981 # Zhanjiang #
+		task_force = {
+			name = "Nanhai Jiandui"
+			location = 11981 # Zhanjiang #
+			ship = { name = "Changsha" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 051 Class" } } }
+			ship = { name = "Nanning" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 051 Class" } } }
+			ship = { name = "Nanchang" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 051 Class" } } }
+			ship = { name = "Zhangjiang" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 051G Class" } } }
+			ship = { name = "Changde" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H Class" } } }
+			ship = { name = "Shaoxing" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H Class" } } }
+			ship = { name = "Ji'an" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H Class" } } }
+			ship = { name = "Maoming" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H Class" } } }
+			ship = { name = "Yibin" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H Class" } } }
+			ship = { name = "Shaoguan" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H1 Class" } } }
+			ship = { name = "Anshun" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H1 Class" } } }
+			ship = { name = "Zhaotong" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H1 Class" } } }
+			ship = { name = "Zhuhai" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 051GT Class" } } }
+			ship = { name = "Dongguan" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H1G Class" } } }
+			ship = { name = "Shantou" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H1G Class" } } }
+			ship = { name = "Jiangmen" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H1G Class" } } }
+			ship = { name = "Zhaoqing" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRC version_name = "Type 053H1G Class" } } }
+		}
+		task_force = {
+			name = "Nanhai Qianting Jiandui"
+			location = 1070 # Yulin #
+			ship = { name = "Changcheng 363" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC version_name = "Type 035A Class" } } }
+			ship = { name = "Changcheng 305" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC version_name = "Type 035A Class" } } }
+			ship = { name = "Changcheng 306" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC version_name = "Type 035A Class" } } }
+			ship = { name = "Changcheng 307" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC version_name = "Type 035A Class" } } }
+			ship = { name = "Changcheng 308" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC version_name = "Type 035A Class" } } }
+			ship = { name = "Changcheng 160" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 161" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 162" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 163" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 164" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 165" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 170" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 171" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 172" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 173" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 174" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 175" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 176" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 245" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 246" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 247" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 248" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 249" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 250" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 254" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 255" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 256" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 267" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 268" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 269" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 270" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 272" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 343" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 344" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 345" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 346" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 349" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Changcheng 777" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRC creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+		}
+	}
+}
+
+instant_effect = {
+	# Frigates #
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_hull_3
+			creator = "PRC" 
+			version_name = "Type 053H3 Class"
+		}
+		name = "Yichang"
+		requested_factories = 1
+		progress = 0.99
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_hull_3
+			creator = "PRC" 
+			version_name = "Type 053H3 Class"
+		}
+		name = "Yulin"
+		requested_factories = 1
+		progress = 0.99
+		amount = 1
+	}
+
+	# Attack Submarines #
+	add_equipment_production = {
+		equipment = {
+			type = attack_submarine_hull_1
+			creator = "PRC" 
+			version_name = "Type 035A Class"
+		}
+		name = "Changcheng 309"
+		requested_factories = 1
+		progress = 0.89
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = attack_submarine_hull_1
+			creator = "PRC" 
+			version_name = "Type 035B Class"
+		}
+		name = "Changcheng 310"
+		requested_factories = 1
+		progress = 0.71
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = attack_submarine_hull_1
+			creator = "PRC" 
+			version_name = "Type 035B Class"
+		}
+		name = "Changcheng 311"
+		requested_factories = 1
+		progress = 0.53
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = attack_submarine_hull_1
+			creator = "PRC" 
+			version_name = "Type 035B Class"
+		}
+		name = "Changcheng 312"
+		requested_factories = 1
+		progress = 0.44
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = attack_submarine_hull_1
+			creator = "PRC" 
+			version_name = "Type 035B Class"
+		}
+		name = "Changcheng 313"
+		requested_factories = 1
+		progress = 0.20
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = attack_submarine_hull_3
+			creator = "PRC" 
+			version_name = "Type 039G Class"
+		}
+		name = "Changcheng 321"
+		requested_factories = 1
+		progress = 0.85
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = attack_submarine_hull_3
+			creator = "PRC" 
+			version_name = "Type 039G Class"
+		}
+		name = "Changcheng 322"
+		requested_factories = 1
+		progress = 0.85
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = attack_submarine_hull_3
+			creator = "PRC" 
+			version_name = "Type 093 Class"
+		}
+		name = "Changzheng 7"
+		requested_factories = 1
+		progress = 0.14
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = attack_submarine_hull_3
+			creator = "PRC" 
+			version_name = "Type 093 Class"
+		}
+		name = "Changzheng 8"
+		requested_factories = 1
+		progress = 0.02
+		amount = 1
+	}
+
+	## Construction Agreements ##
+	if = {
+		limit = { has_dlc = "Death or Dishonor" }
+		SOV = {
+			create_production_license = {
+				target = PRC
+				equipment = {
+					type = attack_submarine_hull_1
+					version_name = "Romeo Class (Pr. 633)"
+				}
+				cost_factor = 0
+			}
+			create_production_license = {
+				target = PRC
+				equipment = {
+					type = ballistic_submarine_hull_1
+					version_name = "Golf Class (Pr. 629)"
+				}
+				cost_factor = 0
+			}
+		}
+	}
+}

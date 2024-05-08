@@ -1,0 +1,41 @@
+
+state={
+	id=964
+	name="STATE_964"
+
+	history={
+		owner = CRO
+		victory_points = {
+			6889 3 
+		}
+		victory_points = {
+			3924 3 
+		}
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+			industrial_complex = 3
+			arms_factory = 1
+			3924 = {
+				naval_base = 3
+
+			}
+			6889 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = CRO
+		add_claim_by = YUG
+
+	}
+
+	provinces={
+		984 3868 3924 3974 6889 11816 13411 13611 13612 13613 13614 13615 13616 13621 13622 
+	}
+	manpower=1022325
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=1.000
+}

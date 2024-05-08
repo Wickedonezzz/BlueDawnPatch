@@ -1,0 +1,20 @@
+scripted_gui = { 
+
+	reddusk_welcome_gui = {
+	 	window_name = "reddusk_welcome_gui_window"
+	 	context_type = player_context
+	 
+	 	visible = {
+	 		has_global_flag = reddusk_welcome_gui_flag
+	 	}
+	 
+	 	effects = {
+	 		close_da_reddusk_gui_x_thingy_click = {
+	 			clr_global_flag = reddusk_welcome_gui_flag
+	 		}
+
+	 	}
+	 
+	}
+	
+}

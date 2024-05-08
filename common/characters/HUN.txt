@@ -1,0 +1,132 @@
+characters = {
+
+	HUN_gonc_arpad = {
+		name = "Göncz Árpád"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HUN/Goncz_Arpad.png"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	HUN_istvan_csurka = {
+		name = "István Csurka"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HUN/csurka.png"
+			}
+		}
+		country_leader = {
+			ideology = ultranationalism
+			traits = {}
+			desc = istvan_csurka_DESC
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	HUN_ferenc_madl = {
+		name = "Ferenc Mádl"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HUN/Ferenc_Madl.png"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	HUN_victor_orban = {
+		name = "Victor Orban"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HUN/Victor_Orban_lib.png"
+			}
+		}
+		country_leader = {
+			ideology = liberalism_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}	
+	
+	HUN_gyula_thürmer = {
+		name = "Gyula Thürmer"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HUN/Gyula_Thürmer.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	HUN_tibor_szanyi = {
+		name = "Tibor Szanyi"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HUN/szanyi.png"
+			}
+		}
+		country_leader = {
+			ideology = democratic_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	## Generals ##
+
+	HUN_lajos_fur = {
+		name = "Lajos Für"
+		portraits = {
+			army = {
+				large = "gfx/leaders/HUN/fur.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}	
+
+	HUN_zagya = {
+		name = "György Gyula Zagyva"
+		portraits = {
+			army = {
+				large = "gfx/leaders/HUN/zagya.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}	
+
+}

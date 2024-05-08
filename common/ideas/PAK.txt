@@ -1,0 +1,91 @@
+ideas = {
+
+	country = {
+
+		PAK_ongoing_nuclear_program = {
+			name = PAK_ongoing_nuclear_program_name
+
+			removal_cost = -1
+
+			allowed = {
+				always = yes
+			}
+			
+			picture = SOV_nuclear_development
+
+			modifier = {
+				research_speed_factor = 0.05
+				nuclear_production_factor = 0.01
+			}
+		}
+		
+		
+		
+		
+
+
+			PAK_american_aid = {
+			name = PAK_american_aid_name
+
+			removal_cost = -1
+
+			allowed = {
+				always = yes
+			}
+			
+			picture = PAK_american_aid
+
+			modifier = {
+				monthly_population = 0.01
+				trade_opinion_factor = 0.2
+				stability_factor = 0.3
+				drift_defence_factor = 0.03
+			}
+		}
+		
+
+			PAK_military_incharge = {
+			name = PAK_military_incharge_name
+
+			removal_cost = -1
+
+			allowed = {
+				always = yes
+			}
+			
+			picture = military_incharge
+
+			modifier = {
+				opinion_gain_monthly = -5
+				conversion_cost_civ_to_mil_factor = 0.01
+				command_power_gain = -0.2
+				stability_weekly_factor = -0.01
+			}
+		}
+
+
+		PAK_baloch_insurgency = {
+			name = PAK_baloch_insurgency_name
+
+			removal_cost = -1
+
+			allowed = {
+				always = yes
+			}
+			
+			picture = PAK_baloch_insurgency
+
+			modifier = {
+			
+				
+	
+				stability_weekly_factor = -0.01
+				   	
+                supply_factor = -0.04
+			}
+				
+}
+
+	}
+
+}

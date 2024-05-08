@@ -1,0 +1,216 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_kurd_resistance_bar"
+		texturefile = "gfx/interface/scripted_gui/test_bar.dds"
+		noOfFrames = 5
+	}
+
+	spriteType = {
+		name = "GFX_decision_gui_iraq_nofly_zone_map"
+		texturefile = "gfx/interface/scripted_gui/decision_gui_iraq_nofly_zone_map.dds"
+		noOfFrames = 7
+	}
+	spriteType = {
+		name = "GFX_decision_gui_iraq_nofly_zone_map_arrows"
+		texturefile = "gfx/interface/scripted_gui/decision_gui_iraq_nofly_zone_map_arrows.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_saddam_eagle"
+		texturefile = "gfx/interface/scripted_gui/saddam_eagle.dds"
+	}
+	SpriteType = {
+		name = "GFX_centralization_icon"
+		texturefile = "gfx/interface/scripted_gui/centralization_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_uar_stability_icon"
+		texturefile = "gfx/interface/scripted_gui/uar_stability_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_hardliner_icon"
+		texturefile = "gfx/interface/scripted_gui/sov_hardliner_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_army_icon"
+		texturefile = "gfx/interface/scripted_gui/sov_army_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_kgb_icon"
+		texturefile = "gfx/interface/scripted_gui/sov_kgb_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_reformist_icon"
+		texturefile = "gfx/interface/scripted_gui/sov_reformist_icon.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_sov_hardliner_ruler_hat_icon"
+		texturefile = "gfx/interface/scripted_gui/sov_ruler_hat.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_reformist_ruler_hat_icon"
+		texturefile = "gfx/interface/scripted_gui/sov_reformist_ruler_hat.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_military_ruler_hat_icon"
+		texturefile = "gfx/interface/scripted_gui/sov_military_ruler_hat.dds"
+	}
+	SpriteType = {
+		name = "GFX_sov_kgb_ruler_hat_icon"
+		texturefile = "gfx/interface/scripted_gui/sov_kgb_ruler_hat.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_scripted_decision_button"
+		texturefile = "gfx/interface/scripted_gui/decision_button.dds"
+	}
+	SpriteType = {
+		name = "GFX_indian_tsunami_influence_table"
+		texturefile = "gfx/interface/scripted_gui/indian_tsunami_influence_table.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_square_background_gui"
+		texturefile = "gfx/interface/scripted_gui/square_background_gui.dds"
+	}
+	SpriteType = {
+		name = "GFX_yellow_square_gui_piece"
+		texturefile = "gfx/interface/scripted_gui/yellow_square_gui_piece.dds"
+	}	
+	SpriteType = {
+		name = "GFX_red_square_gui_piece"
+		texturefile = "gfx/interface/scripted_gui/red_square_gui_piece.dds"
+	}		
+	SpriteType = {
+		name = "GFX_x_button_gui_piece"
+		texturefile = "gfx/interface/scripted_gui/x_button_gui_piece.dds"
+	}
+	SpriteType = {
+		name = "GFX_discord_button_gui"
+		texturefile = "gfx/interface/scripted_gui/discord_button_gui.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_yug_republics_icon_gui"
+		texturefile = "gfx/interface/scripted_gui/yug_republics_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_yug_slobo_faction_icon_gui"
+		texturefile = "gfx/interface/scripted_gui/yug_slobo_faction_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_yug_socialist_left_faction_icon_gui"
+		texturefile = "gfx/interface/scripted_gui/yug_socialist_left_faction_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_yug_seselj_faction_icon_gui"
+		texturefile = "gfx/interface/scripted_gui/yug_seselj_faction_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_yug_stambolic_faction_icon_gui"
+		texturefile = "gfx/interface/scripted_gui/yug_stambolic_faction_icon.dds"
+	}
+	
+	progressbartype = {
+        name = "GFX_saf_great_game_bar"
+        textureFile1 = "gfx/interface/bop/bop_bar_blue_arrow.dds"
+        textureFile2 = "gfx/interface/bop/bop_bar_orange_arrow.dds"
+        size = { 
+            x = 360
+            y = 16
+        }
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+    }
+	SpriteType = {
+		name = "GFX_saf_pacification_frame"
+		texturefile = "gfx/interface/scripted_gui/saf_pacification/frame.dds"
+	}
+	SpriteType = {
+		name = "GFX_saf_southafrica_flag"
+		texturefile = "gfx/interface/scripted_gui/saf_pacification/southafrica_flag.dds"
+	}
+	SpriteType = {
+		name = "GFX_saf_angola"
+		texturefile = "gfx/interface/scripted_gui/saf_pacification/angola.dds"
+		noOfFrames = 5
+	}
+	SpriteType = {
+		name = "GFX_saf_congo"
+		texturefile = "gfx/interface/scripted_gui/saf_pacification/congo.dds"
+		noOfFrames = 5
+	}
+	SpriteType = {
+		name = "GFX_saf_central"
+		texturefile = "gfx/interface/scripted_gui/saf_pacification/central.dds"
+		noOfFrames = 5
+	}
+	SpriteType = {
+		name = "GFX_saf_east"
+		texturefile = "gfx/interface/scripted_gui/saf_pacification/east.dds"
+		noOfFrames = 5
+	}
+	SpriteType = {
+		name = "GFX_saf_highlands"
+		texturefile = "gfx/interface/scripted_gui/saf_pacification/highlands.dds"
+		noOfFrames = 5
+	}
+	SpriteType = {
+		name = "GFX_saf_kalahari"
+		texturefile = "gfx/interface/scripted_gui/saf_pacification/kalahari.dds"
+		noOfFrames = 5
+	}
+	SpriteType = {
+		name = "GFX_saf_madagascar"
+		texturefile = "gfx/interface/scripted_gui/saf_pacification/madagascar.dds"
+		noOfFrames = 5
+	}
+	SpriteType = {
+		name = "GFX_saf_southafrica"
+		texturefile = "gfx/interface/scripted_gui/saf_pacification/southafrica.dds"
+		noOfFrames = 5
+	}
+	SpriteType = {
+		name = "GFX_saf_zambezi"
+		texturefile = "gfx/interface/scripted_gui/saf_pacification/zambezi.dds"
+		noOfFrames = 5
+	}
+
+	SpriteType = {
+		name = "GFX_reddusk_logo_gui_piece"
+		texturefile = "gfx/interface/logo_game.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_small_box_icon"
+		texturefile = "gfx/interface/scripted_gui/square_background_small_gui.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_poland_icon"
+		texturefile = "gfx/interface/scripted_gui/poland_gui.dds"
+		noOfFrames = 5
+	}	
+	SpriteType = {
+		name = "GFX_romania_icon"
+		texturefile = "gfx/interface/scripted_gui/romania_gui.dds"
+		noOfFrames = 4
+	}				
+	SpriteType = {
+		name = "GFX_hungary_icon"
+		texturefile = "gfx/interface/scripted_gui/hungary_gui.dds"
+		noOfFrames = 5		
+	}	
+	SpriteType = {
+		name = "GFX_bulgaria_icon"
+		texturefile = "gfx/interface/scripted_gui/bulgaria_gui.dds"
+		noOfFrames = 4		
+	}	
+	SpriteType = {
+		name = "GFX_slovakia_icon"
+		texturefile = "gfx/interface/scripted_gui/slovakia_gui.dds"
+		noOfFrames = 4		
+	}		
+}

@@ -1,0 +1,146 @@
+ideas = {
+	
+	country = {
+	
+	
+	### other stuff that isnt path related ###
+	
+		KOR_north_korean_resource_benefits_1 = {
+		
+			name = KOR_north_korean_resource_benefits_name
+
+			removal_cost = -1
+
+			picture =  SOV_rising_separatism_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet_of = SKR
+			}
+				
+			modifier = {
+			}	
+
+		}
+		
+		KOR_north_korean_resource_benefits_2 = {
+		
+			name = KOR_north_korean_resource_benefits_name
+
+			removal_cost = -1
+
+			picture =  SOV_rising_separatism_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet_of = SKR
+			}
+			
+			modifier = {
+			consumer_goods_factor = -0.025
+			}	
+
+		}
+		
+		KOR_north_korean_resource_benefits_3 = {
+		
+			name = KOR_north_korean_resource_benefits_name
+
+			removal_cost = -1
+
+			picture =  SOV_rising_separatism_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet_of = SKR
+			}
+				
+			modifier = {
+			consumer_goods_factor = -0.15
+			production_speed_buildings_factor = 0.05
+			}	
+
+		}
+		
+		KOR_north_korean_resource_benefits_final = {
+		
+			name = KOR_north_korean_resource_benefits_name
+
+			removal_cost = -1
+
+			picture =  SOV_rising_separatism_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet_of = SKR
+			}
+				
+			modifier = {
+			consumer_goods_factor = -0.15
+			production_speed_buildings_factor = 0.15
+			}	
+
+		}
+		
+		
+		KOR_songun = {
+			name = KOR_songun_name
+
+			removal_cost = -1
+
+			picture = GFX_idea_KOR_songun
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet_of = SKR
+			}
+			
+			modifier = {
+				war_support_factor = 0.1
+				production_speed_industrial_complex_factor = -0.05 
+				production_factory_efficiency_gain_factor = 0.1
+                industrial_capacity_factory = 0.1
+				production_speed_arms_factory_factor = 0.1
+                consumer_goods_factor = 0.30				
+				army_core_attack_factor = 0.1
+			    army_core_defence_factor = 0.1
+			}
+		}
+		
+		KOR_mil_occupation = {
+			name = "Military Occupation"
+
+			removal_cost = -1
+
+			picture = SOV_militarised_industry
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.20
+				cic_to_overlord_factor = 1.0
+				mic_to_overlord_factor = 1.0
+
+			}
+		}	
+		
+	}
+
+}

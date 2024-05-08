@@ -1,0 +1,23 @@
+state={
+	id=950
+	name="STATE_950"
+	provinces={
+		6997 
+	}
+	history = {
+		owner = AZR
+		buildings = {
+			infrastructure = 1
+			air_base = 7
+			industrial_complex = 0
+			arms_factory = 1
+		}
+		victory_points = { 6997 5 }
+		add_core_of = AZR
+
+	}
+	manpower=12000
+	buildings_max_level_factor=1.000
+	state_category = town
+	local_supplies=0.000
+}

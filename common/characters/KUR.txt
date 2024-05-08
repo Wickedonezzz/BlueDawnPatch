@@ -1,0 +1,104 @@
+characters = {
+
+	## Leaders ##
+
+	KUR_masoud_barzani = {
+		name = "Masoud Barzani"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KUR/Masoud_Barzani.dds"
+			}
+			army = {
+				large = "gfx/leaders/KUR/Masoud_Barzani.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		field_marshal={
+			traits={ }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	
+	KUR_mullah_krekar = {
+		name = "Mullah Krekar"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KUR/Mullah_Krekar.dds"
+			}
+			army = {
+				large = "gfx/leaders/KUR/Mullah_Krekar.dds"
+			}
+		}
+		country_leader = {
+			ideology = sunni_islamism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		field_marshal={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	
+	KUR_babaker_zebari = {
+		name = "Babaker Zebari"
+		portraits = {
+			army = {
+				large = "gfx/leaders/KUR/babaker_zebari.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	KUR_abdullah_ocalan = {
+		name = "Abdullah Öcalan"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KUR/abdullah_ocalan.dds"
+			}
+			army = {
+				large = "gfx/leaders/KUR/abdullah_ocalan.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		corps_commander={
+			traits={ }
+			skill=4
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+}

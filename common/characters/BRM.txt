@@ -1,0 +1,33 @@
+characters = {
+
+	BRM_aung_san = {
+		name = "Aung San Suu Kyi"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRM/Aung_San_Suu_Kyi.dds"
+			}
+		}
+		country_leader = {
+			ideology = democratic_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	BRM_than_shwe = {
+		name = "Than Shwe"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRM/Aung_San_Suu_Kyi.dds"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

@@ -1,0 +1,18 @@
+characters = {
+
+	UNI_jonas_savimbi = {
+		name = "Jonas Savimbi"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Africa/Jonas_Savimbi.png"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

@@ -1,0 +1,83 @@
+add_namespace = germany_mod
+
+#ELECTIONS BOI#
+country_event = {
+	id = germany_mod.1
+	title = germany_mod.1.t
+	desc = germany_mod.1.d
+	picture = GFX_report_event_spark
+	
+	is_triggered_only = yes
+	
+		#succdem scroder#
+	option = {
+		name = germany_mod.1.a
+
+		set_politics = {
+			ruling_party = social_democracy
+			elections_allowed = no
+			last_election = "2000.12.17"
+			election_frequency = 48
+		}
+			
+		add_popularity = {
+			ideology = social_democracy
+			popularity = -0.02
+		}
+		
+		news_event = {id = old_times_news.61}
+			
+		ai_chance = {
+		factor = 40
+		}
+	}
+	
+		#CSU#
+	option = {
+		name = germany_mod.1.b
+			
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+			last_election = "2000.12.17"
+			election_frequency = 48
+		}
+			
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.03
+		}		
+		news_event = {id = old_times_news.62}
+			
+		ai_chance = {
+		factor = 40
+		}
+	}
+	
+		#libtards#
+	option = {
+		name = germany_mod.1.c
+			
+		set_politics = {
+			ruling_party = liberalism
+			elections_allowed = no
+			last_election = "2000.12.17"
+			election_frequency = 48
+		}
+			
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.15
+		}
+		
+		news_event = {id = old_times_news.63}
+		
+		ai_chance = {
+		factor = 10
+		}
+	}
+}

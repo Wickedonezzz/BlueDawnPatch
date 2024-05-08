@@ -1,0 +1,413 @@
+﻿division_template = {
+	name = "Infantry Division"
+	division_names_group = GENERIC_INF_01
+
+	regiments = {
+		infantry_unit = { x = 0 y = 0 }
+		infantry_unit = { x = 0 y = 1 }
+		infantry_unit = { x = 0 y = 2 }
+		infantry_unit = { x = 0 y = 3 }		
+		towed_artillery_unit = { x = 1 y = 0 }
+
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Militia Division"
+	division_names_group = GENERIC_INF_01
+
+	regiments = {
+		militia_unit = { x = 0 y = 0 }
+		militia_unit = { x = 0 y = 1 }
+		militia_unit = { x = 0 y = 2 }
+		militia_unit = { x = 0 y = 3 }		
+		militia_unit = { x = 1 y = 0 }
+		militia_unit = { x = 1 y = 1 }		
+		militia_unit = { x = 1 y = 2 }		
+		militia_unit = { x = 1 y = 3 }		
+
+	}
+	priority = 1
+}
+
+units = {
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 1
+			}
+			location = 11411
+			division_template = "Infantry Division"		# Regular Infantry
+			start_experience_factor = 0.1
+			start_equipment_factor = 0.9
+
+		}
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 2
+			}
+			location = 572
+			division_template = "Infantry Division"		# Regular Infantry
+			start_experience_factor = 0.1
+			start_equipment_factor = 0.7
+
+		}
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 3
+			}
+			location = 6593
+			division_template = "Infantry Division"		# Regular Infantry
+			start_experience_factor = 0.4
+			start_equipment_factor = 0.9
+
+		}
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 4
+			}
+			location = 504
+			division_template = "Infantry Division"		# Regular Infantry
+			start_experience_factor = 0.5
+			start_equipment_factor = 0.7
+
+		}
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 5
+			}
+			location = 9465
+			division_template = "Infantry Division"		# Regular Infantry
+			start_experience_factor = 0.3
+			start_equipment_factor = 0.7
+
+		}
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 1
+			}
+			location = 9543
+			division_template = "Militia Division"		# Militia
+			start_experience_factor = 0.4
+			start_equipment_factor = 0.9
+
+		}
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 2
+			}
+			location = 9543
+			division_template = "Militia Division"		# Militia
+			start_experience_factor = 0.3
+			start_equipment_factor = 0.9
+
+		}
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 3
+			}
+			location = 9543
+			division_template = "Militia Division"		# Militia
+			start_experience_factor = 0.4
+			start_equipment_factor = 0.9
+
+		}
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 4
+			}
+			location = 11557
+			division_template = "Militia Division"		# Militia
+			start_experience_factor = 0.3
+			start_equipment_factor = 0.9
+
+		}
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 5
+			}
+			location = 11557
+			division_template = "Militia Division"		# Militia
+			start_experience_factor = 0.5
+			start_equipment_factor = 0.9
+
+		}
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 6
+			}
+			location = 489
+			division_template = "Militia Division"		# Militia
+			start_experience_factor = 0.5
+			start_equipment_factor = 0.9
+
+		}
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 7
+			}
+			location = 6520
+			division_template = "Militia Division"		# Militia
+			start_experience_factor = 0.5
+			start_equipment_factor = 0.9
+
+		}		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 8
+			}
+			location = 525
+			division_template = "Militia Division"		# Militia
+			start_experience_factor = 0.5
+			start_equipment_factor = 0.9
+
+		}	
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 9
+			}
+			location = 525
+			division_template = "Militia Division"		# Militia
+			start_experience_factor = 0.5
+			start_equipment_factor = 0.9
+
+		}			
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 10
+			}
+			location = 6451
+			division_template = "Militia Division"		# Militia
+			start_experience_factor = 0.5
+			start_equipment_factor = 0.9
+
+		}		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 11
+			}
+			location = 741
+			division_template = "Militia Division"		# Militia
+			start_experience_factor = 0.5
+			start_equipment_factor = 0.9
+
+		}	
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 12
+			}
+			location = 11441
+			division_template = "Militia Division"		# Militia
+			start_experience_factor = 0.5
+			start_equipment_factor = 0.9
+
+		}		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 13
+			}
+			location = 9568
+			division_template = "Militia Division"		# Militia
+			start_experience_factor = 0.5
+			start_equipment_factor = 0.9
+
+		}	
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 14
+			}
+			location = 474
+			division_template = "Militia Division"		# Militia
+			start_experience_factor = 0.5
+			start_equipment_factor = 0.9
+
+		}		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 15
+			}
+			location = 474
+			division_template = "Militia Division"		# Militia
+			start_experience_factor = 0.5
+			start_equipment_factor = 0.9
+
+		}		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 16
+			}
+			location = 3430
+			division_template = "Militia Division"		# Militia
+			start_experience_factor = 0.5
+			start_equipment_factor = 0.9
+
+		}	
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 17
+			}
+			location = 6483
+			division_template = "Militia Division"		# Militia
+			start_experience_factor = 0.5
+			start_equipment_factor = 0.9
+
+		}		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 18
+			}
+			location = 6483
+			division_template = "Militia Division"		# Militia
+			start_experience_factor = 0.5
+			start_equipment_factor = 0.9
+
+		}	
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 19
+			}
+			location = 11477
+			division_template = "Militia Division"		# Militia
+			start_experience_factor = 0.5
+			start_equipment_factor = 0.9
+
+		}		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 20
+			}
+			location = 11477
+			division_template = "Militia Division"		# Militia
+			start_experience_factor = 0.5
+			start_equipment_factor = 0.9
+
+		}	
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 21
+			}
+			location = 489
+			division_template = "Militia Division"		# Militia
+			start_experience_factor = 0.5
+			start_equipment_factor = 0.9
+
+		}			
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 22
+			}
+			location = 489
+			division_template = "Militia Division"		# Militia
+			start_experience_factor = 0.5
+			start_equipment_factor = 0.9
+
+		}					
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 23
+			}
+			location = 489
+			division_template = "Militia Division"		# Militia
+			start_experience_factor = 0.5
+			start_equipment_factor = 0.9
+
+		}		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 24
+			}
+			location = 6429
+			division_template = "Militia Division"		# Militia
+			start_experience_factor = 0.5
+			start_equipment_factor = 0.9
+
+		}	
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 25
+			}
+			location = 6429
+			division_template = "Militia Division"		# Militia
+			start_experience_factor = 0.5
+			start_equipment_factor = 0.9
+
+		}
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 26
+			}
+			location = 525
+			division_template = "Militia Division"		# Militia
+			start_experience_factor = 0.5
+			start_equipment_factor = 0.9
+
+		}		
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_weapons_1
+			creator = "SOV"
+		}
+		requested_factories = 10
+		progress = 0.1
+		efficiency = 50
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = towed_artillery_equipment_1
+			creator = "SOV"
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 50
+	}
+
+}

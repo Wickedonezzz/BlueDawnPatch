@@ -1,0 +1,63 @@
+﻿capital = 934
+
+##oob = ""
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+
+	set_technology = {
+		corvette_hull_1960 = 1
+		corvette_hull_1980 = 1
+	}
+}
+
+set_convoys = 5
+
+recruit_character = BHR_hamad_khalifa
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1973.12.12"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 25
+	communism = 3
+	reformed_communism = 0
+	paternal_autocracy = 24
+	fascism = 7
+	neutrality = 41
+}
+
+add_ideas = usa_aligned_nation
+
+# Naval Variants #
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "BHR_2000_naval_mtg"
+
+	# Corvettes #
+	create_equipment_variant = {
+		name = "Al Manama Class"
+		type = corvette_hull_2
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = small_surface_engine_diesel_2
+			fixed_ship_sonar_slot = empty
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = anti_air_1
+			fixed_ship_defensive_slot_2 = anti_air_1
+			fixed_ship_aviation_slot = empty
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = empty
+			custom_slot_3 = empty
+		}
+		obsolete = no
+	}
+}

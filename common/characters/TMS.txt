@@ -1,0 +1,33 @@
+characters = {
+
+	TMS_saparmurat_niyazov = {
+		name = "Saparmurat Nniyazov"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TMS/saparmurat_niyazov.dds"
+			}
+		}
+		country_leader = {
+			ideology = market_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	TMS_saparmurat_niyazov_pat = {
+		name = "Saparmurat Nniyazov"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TMS/saparmurat_niyazov.dds"
+			}
+		}
+		country_leader = {
+			ideology = paternal_autocracy_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

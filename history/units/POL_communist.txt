@@ -1,0 +1,402 @@
+division_template = { # Infantry Division #
+	name = "Infantry Division"
+	division_names_group = GENERIC_INF_01
+
+	regiments = {
+		infantry_unit = { x = 0 y = 0 }
+		infantry_unit = { x = 0 y = 1 }
+		infantry_unit = { x = 0 y = 2 }
+		infantry_unit = { x = 0 y = 3 }
+		infantry_unit = { x = 0 y = 4 }
+		infantry_unit = { x = 1 y = 0 }
+		infantry_unit = { x = 1 y = 1 }
+		infantry_unit = { x = 1 y = 2 }
+		infantry_unit = { x = 1 y = 3 }
+        	towed_artillery_unit = { x = 2 y = 0 }
+	}
+	support = {
+		towed_artillery_support_unit = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		maintenance_company = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		engineer = { x = 0 y = 4 }
+	}
+	priority = 1
+}
+division_template = { # Mechanised Division #
+	name = "Mechanised Division"
+	division_names_group = GENERIC_MEC_01
+
+	regiments = {
+		infantry_fighting_vehicle_armor = { x = 0 y = 0 }
+		infantry_fighting_vehicle_armor = { x = 0 y = 1 }
+		infantry_fighting_vehicle_armor = { x = 0 y = 2 }
+		infantry_fighting_vehicle_armor = { x = 0 y = 3 }
+		heavy_infantry_unit = { x = 1 y = 0 }
+		heavy_infantry_unit = { x = 1 y = 1 }
+		heavy_infantry_unit = { x = 1 y = 2 }
+		towed_artillery_unit = { x = 2 y = 0 }
+	}
+	support = {
+		towed_artillery_support_unit = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		maintenance_company = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		engineer = { x = 0 y = 4 }
+	}
+	priority = 1
+}
+division_template = { # Armoured Division #
+	name = "Armoured Division"
+	division_names_group = GENERIC_MBT_01
+
+	regiments = {
+		main_battle_tank_armor = { x = 0 y = 0 }
+		main_battle_tank_armor = { x = 0 y = 1 }
+		main_battle_tank_armor = { x = 0 y = 2 }
+		main_battle_tank_armor = { x = 0 y = 3 }
+		main_battle_tank_armor = { x = 1 y = 0 }
+		main_battle_tank_armor = { x = 1 y = 1 }
+		main_battle_tank_armor = { x = 1 y = 2 }
+		main_battle_tank_armor = { x = 1 y = 3 }
+		infantry_fighting_vehicle_armor = { x = 2 y = 0 }
+		infantry_fighting_vehicle_armor = { x = 2 y = 1 }
+
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		armoured_recon = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+		towed_artillery_support_unit = { x = 0 y = 4 }
+	}
+	priority = 1
+}
+division_template = { # Air Assault Division #
+	name = "Air Assault Division"
+	division_names_group = GENERIC_INF_01
+
+	regiments = {
+		infantry_unit = { x = 0 y = 0 }
+		infantry_unit = { x = 0 y = 1 }
+		infantry_unit = { x = 0 y = 2 }
+		infantry_unit = { x = 0 y = 3 }
+		infantry_unit = { x = 0 y = 4 }
+		towed_artillery_unit = { x = 1 y = 0 }
+	}
+	support = {
+		towed_artillery_support_unit = { x = 0 y = 0 }
+		attack_heli_company = { x = 0 y = 1 }
+		transport_heli_company = { x = 0 y = 2 }
+	}
+	priority = 2
+}
+
+units = {
+	#Infantry Division
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6375
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9427
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3458
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9494
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+
+	#Heavy Infantry Division
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6464
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_0 = { owner = "CZE" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 11399
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_0 = { owner = "CZE" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 362
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_0 = { owner = "CZE" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 6558
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_0 = { owner = "CZE" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.6
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 3324
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_0 = { owner = "CZE" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 6334
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_0 = { owner = "CZE" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 9546
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_0 = { owner = "CZE" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 11301
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_0 = { owner = "CZE" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+
+	#Armoured Division
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3544
+		division_template = "Armoured Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "SOV" }
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.30
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 402
+		division_template = "Armoured Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "SOV" }
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.30
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3230
+		division_template = "Armoured Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "SOV" }
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.30
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 3254
+		division_template = "Armoured Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "SOV" }
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.30
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 11386
+		division_template = "Armoured Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "SOV" }
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.30
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 11385
+		division_template = "Armoured Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "SOV" }
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.30
+		start_equipment_factor = 0.5
+	}
+
+	#Air Assault Division
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9508
+		division_template = "Air Assault Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.30
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6375
+		division_template = "Air Assault Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.30
+		start_equipment_factor = 0.7
+	}
+}
+

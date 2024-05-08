@@ -1,0 +1,850 @@
+add_namespace = yemen
+add_namespace = baath_cw
+add_namespace = bugkiller
+
+country_event = {
+	id = yemen.1   #happens in early 2003 
+	title = yemen.1.t
+	desc = yemen.1.d
+	picture = GFX_report_event_spark
+	
+	is_triggered_only = yes
+
+		#rip#
+	option = {
+		name = yemen.1.a
+	EGY = {
+		create_faction = "Cairo Pact"
+		EGY = { add_to_faction = DYR }
+	}
+	SAU = {
+		create_faction = "Islamic Military Coalition"
+		SAU = { add_to_faction = YEM }
+	}
+	YEM = {
+	declare_war_on = {
+		target = DYR
+		type = civil_war
+		}
+	}
+	EGY = {
+	add_to_war = {
+		targeted_alliance = DYR
+		enemy = YEM
+		hostility_reason = asked_to_join
+		}
+	}
+	
+	YEM = {
+		declare_war_on = {
+			target = DYR
+			type = civil_war
+		}
+	}
+	SAU = {
+		add_to_war = {
+		targeted_alliance = YEM
+		enemy = DYR
+		hostility_reason = asked_to_join
+		}
+	}
+	news_event = {
+		id = old_times_news.85
+		hours = 8
+		}
+	}
+}
+
+country_event = {
+	id = yemen.2
+	title = yemen.2.t
+	desc = yemen.2.d
+	picture = GFX_report_event_spark
+
+	trigger = {
+		original_tag = DYR
+		DYR = {
+			has_country_flag = DYR_won_civil_war
+		}
+	}
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = yemen.2.a
+	
+	set_party_name = { 
+    ideology = socialism 
+    long_name = DYR_ARABIAN_LONG
+    name = DYR_ARABIAN_SHORT
+	}
+
+	EGY = {
+		set_nationality = {
+			target_country = DYR
+			character = EGY_Khaled_Mohieddin
+		}
+		set_nationality = {
+			target_country = DYR
+			character = EGY_sami_hafez_anan
+		}		
+	}
+
+	DYR = {
+		annex_country = {
+			target = EGY
+			transfer_troops = yes
+		}
+			add_state_core = 452
+			add_state_core = 447
+			add_state_core = 453
+			add_state_core = 446
+			add_state_core = 901
+			add_state_core = 457
+			add_state_core = 456
+			add_state_core = 977
+			add_state_core = 978
+
+		set_politics = {
+			ruling_party = socialism
+		}
+		add_popularity = {
+			ideology = socialism
+		   popularity = 0.4
+		  }
+
+		}
+		set_cosmetic_tag = DYR_arab
+		set_capital = {
+			state = 901
+			remember_old_capital = no
+		}
+		promote_character = DYR_arab_socialist_union_party
+	}
+}
+
+#kill saudi#
+country_event = {
+	id = baath_cw.1
+	title = baath_cw.1.t
+	desc = baath_cw.1.d
+	picture = GFX_report_event_spark
+	
+	trigger = {
+		original_tag = DYR
+		has_war = no
+		BGD = {
+			has_war = no
+		}
+		OR = {
+		date > 2005.03.15	
+		has_country_flag = yem_debug_enable
+		}		
+	}
+
+	fire_only_once = yes
+
+		#les go#
+		option = {
+			name = baath_cw.1.a
+			set_global_flag = great_middle_east_war
+			news_event = {id = old_times_news.123}
+			BGD = {country_event = {id = baath_cw.2 days = 5}}
+			declare_war_on = {
+				target = SAU
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = UAE
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = OMA
+				type = annex_everything
+			}			
+			SAU = {
+				give_military_access = OMA
+				give_military_access = UAE				
+			}
+			OMA = {
+				give_military_access = SAU
+				give_military_access = UAE				
+			}
+			UAE = {
+				give_military_access = SAU
+				give_military_access = OMA				
+			}				
+		}
+}
+
+#Iraq comes in#
+country_event = {
+	id = baath_cw.2
+	title = baath_cw.2.t
+	desc = baath_cw.2.d
+
+	is_triggered_only = yes
+
+		#les go#
+		option = {
+			name = baath_cw.2.a
+			declare_war_on = {
+				target = SAU
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = UAE
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = OMA
+				type = annex_everything
+			}			
+			declare_war_on = {
+				target = DYR
+				type = annex_everything
+			}
+				
+		}
+}
+
+#Egypt green Uar knocked out#
+country_event = {
+	id = baath_cw.3
+	title = baath_cw.3.t
+	desc = baath_cw.3.d
+	
+	is_triggered_only = yes
+
+		#les go#
+		option = {
+			name = baath_cw.3.a
+			add_stability = -0.30
+			add_popularity = {
+				ideology = socialism
+				popularity = -0.45
+			}
+			add_popularity = {
+				ideology = paternal_autocracy
+				popularity = 0.45
+			}			
+			country_event = {id = egypt.3 days = 50}
+			if = {
+				limit = {
+					country_exists = SAU
+					NOT = {SAU = {is_puppet_of = BGD}}
+				}
+				white_peace = SAU
+				white_peace = UAE
+				white_peace = OMA
+				white_peace = BGD				
+					YEM = {
+						transfer_state = 293
+						transfer_state = 659
+						transfer_state = 976
+					}
+					if = {
+						limit = {owns_state = 294}
+						OMA = {
+							transfer_state = 294
+							transfer_state = 975
+							transfer_state = 957
+						}						
+					}
+					if = {
+						limit = {owns_state = 292}
+						SAU = {
+							transfer_state = 292
+							transfer_state = 679
+							transfer_state = 856
+							transfer_state = 858
+							transfer_state = 678
+							transfer_state = 859
+							transfer_state = 857
+							transfer_state = 855
+							transfer_state = 854
+
+						}
+					}
+					if = {
+						limit = {owns_state = 658}
+						UAE = {
+							transfer_state = 658
+						}
+					}
+				SAU = {
+					puppet = YEM
+				}
+				YEM = {
+					set_politics = {
+						ruling_party = fascism
+					}				
+					set_popularities = {
+						fascism = 50
+						paternal_autocracy = 25
+						neutrality = 25
+					}
+				}
+			}	
+			else_if = {
+				white_peace = SAU
+				white_peace = UAE
+				white_peace = OMA
+				white_peace = BGD
+				if = {
+					limit = {
+						BGD = {has_completed_focus = IRQ_proclaim_uar}
+					}
+					YEM = {
+						transfer_state = 293
+						transfer_state = 659
+						transfer_state = 976
+					}
+					if = {
+						limit = {owns_state = 294}
+						OMA = {
+							transfer_state = 294
+							transfer_state = 975
+							transfer_state = 957
+						}						
+					}
+					if = {
+						limit = {owns_state = 292}
+						SAU = {
+							transfer_state = 292
+							transfer_state = 679
+							transfer_state = 856
+							transfer_state = 858
+							transfer_state = 678
+							transfer_state = 859
+							transfer_state = 857
+							transfer_state = 855
+							transfer_state = 854
+
+						}
+					}
+					if = {
+						limit = {owns_state = 658}
+						SAU = {
+							transfer_state = 658
+						}
+					}				
+				
+					BGD = {
+						annex_country = {
+							target = YEM
+							transfer_troops = no
+						}
+					}					
+				}
+				else_if = {
+					limit = {
+						IRQ = {owns_state = 291}
+						NOT = {IRQ = {is_puppet_of = PER}}
+					}
+					YEM = {
+						transfer_state = 293
+						transfer_state = 659
+						transfer_state = 976
+					}
+					if = {
+						limit = {owns_state = 294}
+						OMA = {
+							transfer_state = 294
+							transfer_state = 975
+							transfer_state = 957
+						}						
+					}
+					if = {
+						limit = {owns_state = 292}
+						SAU = {
+							transfer_state = 292
+							transfer_state = 679
+							transfer_state = 856
+							transfer_state = 858
+							transfer_state = 678
+							transfer_state = 859
+							transfer_state = 857
+							transfer_state = 855
+							transfer_state = 854
+
+						}
+					}
+					if = {
+						limit = {owns_state = 658}
+						SAU = {
+							transfer_state = 658
+						}
+					}					
+					BGD = {
+						puppet = YEM
+					}
+					YEM = {
+						remove_alignments = yes					
+						set_cosmetic_tag = YEM_iraq_puppet
+						retire_ideology_leader = fascism
+						promote_character = YEM_baath						
+						set_popularities = {
+						socialism = 20
+						democratic = 5
+						neutrality = 15
+						liberalism = 15
+						paternal_autocracy = 20
+						fascism = 25
+						}		
+						set_party_name = {
+							ideology = fascism
+							name = baath_party
+							long_name = baath_party_long
+							}
+									
+						set_party_name = {
+							ideology = socialism
+							name = baath_party
+							long_name = baath_party_long
+						}
+									
+					}
+					
+					BGD = {
+						puppet = OMA
+					}
+
+					OMA = {
+						remove_alignments = yes
+						set_cosmetic_tag = OMA_iraq_puppet
+
+						set_popularities = {
+							socialism = 15
+							fascism = 15
+							paternal_autocracy = 35
+							neutrality = 25
+						}
+								
+						set_party_name = {
+							ideology = fascism
+							name = baath_party
+							long_name = baath_party_long
+						}
+								
+						set_party_name = {
+							ideology = socialism
+							name = baath_party
+							long_name = baath_party_long
+						}
+								
+					}
+					BGD = {
+						puppet = SAU
+					}
+
+					SAU = {
+						remove_alignments = yes
+						set_cosmetic_tag = SAU_iraq_puppet
+
+						set_popularities = {
+							socialism = 15
+							paternal_autocracy = 70
+							fascism = 15
+						}
+								
+						set_party_name = {
+							ideology = fascism
+							name = baath_party
+							long_name = baath_party_long
+						}
+								
+						set_party_name = {
+							ideology = socialism
+							name = baath_party
+							long_name = baath_party_long
+						}								
+								
+					}
+					
+				}
+				else_if = {
+					YEM = {
+						transfer_state = 293
+						transfer_state = 659
+						transfer_state = 976
+					}
+					if = {
+						limit = {owns_state = 294}
+						OMA = {
+							transfer_state = 294
+							transfer_state = 975
+							transfer_state = 957
+						}						
+					}
+					if = {
+						limit = {owns_state = 292}
+						SAU = {
+							transfer_state = 292
+							transfer_state = 679
+							transfer_state = 856
+							transfer_state = 858
+							transfer_state = 678
+							transfer_state = 859
+							transfer_state = 857
+							transfer_state = 855
+							transfer_state = 854
+
+						}
+					}
+					if = {
+						limit = {owns_state = 658}
+						SAU = {
+							transfer_state = 658
+						}
+					}			
+					BGD = {
+						annex_country = {
+							target = YEM
+							transfer_troops = no
+						}
+					}	
+				}
+			}
+		}
+	}
+
+#green UAR win - core time and kill jordan n lebanon#
+country_event = {
+	id = baath_cw.5
+	title = baath_cw.5.t
+	desc = baath_cw.5.d
+
+	trigger = {
+		original_tag = DYR
+		NOT = {
+		country_exists = BGD
+		country_exists = SAU
+		}
+	}
+	
+	fire_only_once = yes
+	
+		#les go#
+		option = {
+			name = baath_cw.5.a
+			every_state = {
+				add_core_of = DYR
+			}
+			declare_war_on = {
+				target = LEB
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = JOR
+				type = annex_everything
+			}				
+		}
+}
+
+#green UAR win - kill Israel#
+country_event = {
+	id = baath_cw.6
+	title = baath_cw.6.t
+	desc = baath_cw.6.d
+
+	trigger = {
+		original_tag = DYR
+		NOT = {
+		country_exists = LEB
+		country_exists = JOR
+		}
+		NOT = {
+		country_exists = BGD
+		country_exists = SAU
+		}		
+	}
+	
+	fire_only_once = yes
+	
+		#les go#
+		option = {
+			name = baath_cw.6.a
+			declare_war_on = {
+				target = ISR
+				type = annex_everything
+			}
+			
+		}
+}
+
+#the other scenario, Iraq Invade Saudi Arabia#
+country_event = {
+	id = baath_cw.7
+	title = baath_cw.7.t
+	desc = baath_cw.7.d
+
+	trigger = {
+		original_tag = BGD
+		BGD = {
+			has_war = no
+		}		
+		OR = {
+		date > 2005.03.15
+		has_country_flag = great_middle_east_war_sc_2_debug
+		}
+		NOT = {
+		country_exists = DYR
+		}
+		country_exists = YEM
+	}
+	
+	fire_only_once = yes
+	
+		#les go#
+		option = {
+			name = baath_cw.7.a
+			set_global_flag = great_middle_east_war
+			news_event = {id = old_times_news.124}
+			
+			declare_war_on = {
+				target = SAU
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = UAE
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = OMA
+				type = annex_everything
+			}			
+			declare_war_on = {
+				target = YEM
+				type = annex_everything
+			}
+			SAU = {
+				give_military_access = OMA
+				give_military_access = UAE
+				give_military_access = YEM
+			}
+			OMA = {
+				give_military_access = SAU
+				give_military_access = UAE		
+				give_military_access = YEM				
+			}
+			UAE = {
+				give_military_access = SAU
+				give_military_access = OMA	
+				give_military_access = YEM				
+			}					
+			YEM = {
+				give_military_access = SAU
+				give_military_access = OMA	
+				give_military_access = UAE				
+			}				
+		}
+}
+
+
+
+#VICTORY EVENTS#
+
+#green UAR win#
+country_event = {
+	id = baath_cw.8
+	title = baath_cw.8.t
+	desc = baath_cw.8.d
+
+	trigger = {
+		original_tag = DYR
+		NOT = {
+		country_exists = BGD
+		country_exists = SAU
+		}
+		has_war = no
+	}
+	
+	hidden = yes
+	
+	fire_only_once = yes
+	
+		#les go#
+		option = {
+			news_event = {id = old_times_news.129}		
+		}
+}
+
+#iraq win#
+country_event = {
+	id = baath_cw.9
+	title = baath_cw.9.t
+	desc = baath_cw.9.d
+
+	trigger = {
+		original_tag = IRQ
+		NOT = {
+		DYR = {owns_state = 659}
+		country_exists = SAU
+		}
+		has_war = no
+		is_puppet = no
+	}
+	
+	hidden = yes
+	
+	fire_only_once = yes
+	
+		#uar#
+		option = {
+			trigger = {
+				has_completed_focus = IRQ_proclaim_uar
+			}
+			news_event = {id = old_times_news.130}		
+		}
+		
+		#greater iraq
+		option = {
+			trigger = {
+				has_completed_focus = IRQ_greater_iraq
+			}
+			news_event = {id = old_times_news.131}		
+		}		
+}
+
+#saudi win#
+country_event = {
+	id = baath_cw.10
+	title = baath_cw.10.t
+	desc = baath_cw.10.d
+
+	trigger = {
+		original_tag = SAU
+		NOT = {
+		DYR = {owns_state = 659}
+		}
+		BGD = {is_puppet_of = SAU}
+		has_war = no
+	}
+	
+	hidden = yes
+	
+	fire_only_once = yes
+	
+		#yay#
+		option = {
+			news_event = {id = old_times_news.132}					
+		}
+		
+}
+
+#iran win#
+country_event = {
+	id = baath_cw.11
+	title = baath_cw.11.t
+	desc = baath_cw.11.d
+
+	trigger = {
+		original_tag = PER
+		owns_state = 292
+		NOT = {
+		DYR = {owns_state = 659}
+		country_exists = SAU
+		}
+		has_war = no
+	}
+		
+	fire_only_once = yes
+	
+		#yay#
+		option = {
+			#news_event = {id = old_times_news.132}					
+			release = SAU 
+			puppet = SAU			
+			SAU = {
+				retire_ideology_leader = paternal_autocracy
+				promote_character = SAU_al_nasser
+				set_cosmetic_tag = SAU_iran_puppet
+				transfer_state = 293
+				transfer_state = 976
+				transfer_state = 659
+				transfer_state = 975
+				transfer_state = 294
+				transfer_state = 658
+				transfer_state = 957
+				set_party_name = {
+					ideology = paternal_autocracy
+					name = SAU_paternal_autocracy_alt_party
+					long_name = SAU_paternal_autocracy_alt_party
+				}
+				set_politics = {
+					ruling_party = paternal_autocracy
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				set_popularities = {
+					paternal_autocracy = 65
+					neutrality = 25
+					fascism = 10
+				}
+				remove_alignments = yes
+			}
+			set_country_flag = PER_gamer_win
+		}
+		
+}
+
+#syria win#
+country_event = {
+	id = baath_cw.12
+	title = baath_cw.12.t
+	desc = baath_cw.12.d
+
+	trigger = {
+		original_tag = SYR
+		owns_state = 292
+		NOT = {
+		DYR = {owns_state = 659}
+		country_exists = SAU
+		}
+		has_war = no
+	}
+	
+	hidden = yes
+	
+	fire_only_once = yes
+	
+		#yay#
+		option = {
+			name = baath_cw.12.a
+			annex_country = {
+				target = JOR
+				transfer_troops = no
+			}				
+			set_country_flag = SYR_epic_win
+		}
+		
+}
+
+#Syria UAR win - kill Israel #
+country_event = {
+	id = baath_cw.13
+	title = baath_cw.13.t
+	desc = baath_cw.13.d
+
+	trigger = {
+		original_tag = SYR
+		has_country_flag = SYR_epic_win
+		has_war = no
+	}
+	
+	fire_only_once = yes
+	
+		#les go#
+		option = {
+			name = baath_cw.13.a
+			declare_war_on = {
+				target = ISR
+				type = annex_everything
+			}
+		}
+}

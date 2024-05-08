@@ -1,0 +1,195 @@
+characters = {
+
+	KAZ_nursultan_nazarbayev = {
+		name = "Nursultan Nazarbayev"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KAZ/nursultan_nazarbayev.dds"
+			}
+		}
+		country_leader = {
+			ideology = market_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	KAZ_nursultan_nazarbayev_petau = {
+		name = "Nursultan Nazarbayev"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KAZ/nursultan_nazarbayev.dds"
+			}
+		}
+		country_leader = {
+			ideology = paternal_autocracy_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+###SOVIET EMERGENCY GOV###
+
+	KAZ_dmitry_yazov = {
+		name = "Dmitry Yazov"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/Dmitry_Yazov_GAMING.dds"
+				small = "gfx/leaders/SOV/yazov_new_small.dds"
+			}
+			army = {
+				large = "gfx/leaders/SOV/Dmitry_Yazov_GAMING.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}		
+		advisor={
+			cost = 75			
+			slot = army_chief
+			idea_token = KAZ_dmitry_yazov
+			allowed = {
+				original_tag = KAZ
+			}
+			
+			traits = {
+				army_chief_offensive_2
+			}
+		}
+		field_marshal={
+			traits={offensive_doctrine}
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	KAZ_boris_pugo = {
+		name = "Boris Pugo"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/Boris_Pugo.dds"
+				small = "gfx/leaders/SOV/pugo_advisor.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		advisor={
+			cost = 100
+			slot = political_advisor
+			idea_token = KAZ_boris_pugo
+			allowed = {
+				original_tag = KAZ
+			}
+			traits = {
+				party_hardliner
+			}
+		}
+	}
+
+	KAZ_valery_gerasimov = {
+		name = "Valery Gerasimov"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Valery_Gerasimov.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	KAZ_anatoly_kulikov = {
+		name = "Anatoly Kulikov"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Anatoly_Kulikov.dds"
+			}
+		}
+		field_marshal={
+			traits={ }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	KAZ_dmitry_bulgakov = {
+		name = "Dmitry Bulgakov"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Dmitry_Bulgakov.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	KAZ_sergey_akhromeyev = {
+		name = "Sergey Akhromeyev"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Sergey_Akhromeyev.dds"
+			}
+		}
+		field_marshal={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	KAZ_sergey_akhromeyev_advisor = {
+		name = "Sergey Akhromeyev"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/SOV/Sergey_Akhromeyev_advisor.dds"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = political_advisor
+			idea_token = KAZ_sergey_akhromeyev_advisor
+			allowed = {
+				original_tag = KAZ
+			}
+			traits = {
+				militarist_advisor
+			}
+		}
+	}
+
+
+}

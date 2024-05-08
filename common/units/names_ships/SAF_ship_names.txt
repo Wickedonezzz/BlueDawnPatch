@@ -1,0 +1,33 @@
+﻿##### SAF NAME LISTS #####
+
+### GENERIC ###
+SAF_NAVAL_NAME_CULTURE = {
+	name = "South African Cultural Icons"
+
+	for_countries = { SAF }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	
+	unique = {
+		"SAS Manthatisi" "SAS Charlotte Maxeke" "SAS Queen Modjadji"
+	}
+}
+SAF_NAVAL_NAME_BATTLES = {
+	name = "South African Battles"
+
+	for_countries = { SAF }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	
+	unique = {
+		"SAS Amatola" "SAS Isandlwana" "SAS Spioenkop" "SAS Paardeberg" "SAS Tugela" "SAS Amba Alagi" "SAS Ulundi" "SAS Magersfontein" "SAS Schuinshoogte" "SAS Doornkop" "SAS Modder" "SAS Bronkhorstspruit" "SAS Talana" "SAS Rorke" "SAS Leliefontein" "SAS Mafeking" "SAS Majuba"
+	}
+}

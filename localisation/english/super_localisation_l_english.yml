@@ -1,0 +1,99 @@
+﻿l_english:
+sp_event_Yugo_War:0 "The Yugoslav War"
+sp_event_Yugo_War_QUOTE:0 "If you saw what I see for the future in Yugoslavia, it would scare you. \n- Josip Broz Tito"
+sp_event_Yugo_War_REMARK:0 "A Dream, Shattered"
+
+sp_event_South_Africa_War:0 "The South African Civil War"
+sp_event_South_Africa_War_QUOTE:0 "You cannot carry out a fundamental change without a certain ammount of madness. \n- Thomas Sankara"
+sp_event_South_Africa_War_REMARK:0 "Dark Continent Burns"
+
+sp_event_Sino_Sov_War:0 "The Sino-Soviet War"
+sp_event_Sino_Sov_War_QUOTE:0 "Who are our enemies? Who are our friends? This is a question of the first importance for the revolution. \n- Mao Tse Tung"
+sp_event_Sino_Sov_War_REMARK:0 "Two Starts, One Sky"
+
+sp_event_Eastern_War:0 "The Eastern European War"
+sp_event_Eastern_War_QUOTE:0 "Everyone imposes his own system as far as his army can reach.\n- Joseph Stalin"
+sp_event_Eastern_War_REMARK:0 "Onwards Comrades!"
+
+sp_event_Soviet_Dissolution:0 "The Soviet Dissolution"
+sp_event_Soviet_Dissolution_QUOTE:0 "And today I am worried by our people's loss the citizenship of a great country. The consequences may turn out to be hard for everyone.\n- Mikhail Gorbachev"
+sp_event_Soviet_Dissolution_REMARK:0 "Goodbye Forever..."
+
+sp_event_Soviet_Melancholy:0 "The Soviet Melancholy"
+sp_event_Soviet_Melancholy_QUOTE:0 "The revolution seems like sheer madness to those whom it sweeps aside and overthrows.\n- Leon Trotsky"
+sp_event_Soviet_Melancholy_REMARK:0 "A Union Frozen in Time"
+
+sp_event_Soviet_Civil_War:0 "The Soviet Civil War"
+sp_event_Soviet_Civil_War_QUOTE:0 "You can make a throne of bayonets but you can't sit on it for long.\n- Boris Yeltsin"
+sp_event_Soviet_Civil_War_REMARK:0 "Darkest Night Ahead"
+
+sp_event_Indochinese_War:0 "The Fourth Indochina War"
+sp_event_Indochinese_War_QUOTE:0 "It may take three years, it may take five, it may take ten, but that will be the war of Indo-china.\n- Ho Chi Minh"
+sp_event_Indochinese_War_REMARK:0 "Indochina Ablaze"
+
+sp_event_World_War_3:0 "World War III"
+sp_event_World_War_3_QUOTE:0 "Only the dead have seen the end of war.\n- Plato"
+sp_event_World_War_3_REMARK:0 "The End is Nigh..."
+
+sp_event_GAW:0 "Great Asian War"
+sp_event_GAW_QUOTE:0 "Everything under heaven is in utter chaos; the situation is excellent.\n- Mao Tse Tung"
+sp_event_GAW_REMARK:0 "East Aflame"
+
+
+###SOVIET CIVIL WAR REUNIFICATIONS###
+
+sp_event_navy:0 "Russian Reunification"
+sp_event_navy_QUOTE:0 "My whole life has been the Soviet Navy. I made my choice when young and have never regretted it.\n- Nikolai Kuznetsov"
+sp_event_navy_REMARK:0 "And Avrora Fires Again!"
+
+sp_event_zyuganov_baklanov:0 "Russian Reunification"
+sp_event_zyuganov_baklanov_QUOTE:0 "It is not national interests we are upholding — we claim that the interests of socialism, the interests of world socialism, rank higher than national interests, higher than the interests of the state. We are defenders of the socialist fatherland.\n- Vladimir Lenin"
+sp_event_zyuganov_baklanov_REMARK:0 "An Eternal October"
+
+sp_event_vdv:0 "Russian Reunification"
+sp_event_vdv_QUOTE:0 "Show me a man who will jump out of an airplane, and I'll show you a man who'll fight.\n- James M. Gavin"
+sp_event_vdv_REMARK:0 "Death From Above"
+
+sp_event_kgb:0 "Russian Reunification"
+sp_event_kgb_QUOTE:0 "The fact that you are free is not your achievement, but rather a failure on our side.\n- Felix Dzerzhinsky"
+sp_event_kgb_REMARK:0 "Order Above All"
+
+sp_event_dugin:0 "Russian Reunification"
+sp_event_dugin_QUOTE:0 "I know one thing and I will tell you secret that if Russia is saved, then only as a Eurasian power and only through Eurasianism.\n- Lev Gumilev"
+sp_event_dugin_REMARK:0 "Binding the Continents"
+
+sp_event_nazbols:0 "Russian Reunification"
+sp_event_nazbols_QUOTE:0 "I know one thing and I will tell you secret that if Russia is saved, then only as a Eurasian power and only through Eurasianism.\n- Lev Gumilev"
+sp_event_nazbols_REMARK:0 "Class and Nation"
+
+sp_event_medvedev:0 "Russian Reunification"
+sp_event_medvedev_QUOTE:0 "Many people remember the quote of Alexander III that Russia has two faithful allies: its Army and its Navy, but a few know its continuation: 'because sooner or later, all the other allies will betray us.'\n- Sergey Mironov"
+sp_event_medvedev_REMARK:0 "Russia Reborn"
+
+sp_event_yazov:0 "Russian Reunification"
+sp_event_yazov_QUOTE:0 "It is a fact that under equal conditions, large-scale battles and whole wars are won by troops which have a strong will for victory, clear goals before them, high moral standards, and devotion to the banner under which they go into battle.\n- Georgy Zhukov"
+sp_event_yazov_REMARK:0 "Red Dawn"
+
+sp_event_lukashenko:0 "Russian Reunification"
+sp_event_lukashenko_QUOTE:0 "It is not heroes that make history, but history that makes heroes.\n- Joseph Stalin"
+sp_event_lukashenko_REMARK:0 "Direct Rule from Minsk"
+
+sp_event_udaltsov:0 "Russian Reunification"
+sp_event_udaltsov_QUOTE:0 "Give me just one generation of youth, and I'll transform the whole world.\n- Vladimir Lenin"
+sp_event_udaltsov_REMARK:0 "And Lenin is Young Again"
+
+sp_event_rutskoy:0 "Russian Reunification"
+sp_event_rutskoy_QUOTE:0 "Give me just one generation of youth, and I'll transform the whole world.\n- Vladimir Lenin"
+sp_event_rutskoy_REMARK:0 "Nationalist Soviets?"
+
+sp_event_pugo:0 "Russian Reunification"
+sp_event_pugo_QUOTE:0 "It is the duty of the revolution to put an end to compromise, and to put an end to compromise means taking the path of socialist revolution.\n- Vladimir Lenin"
+sp_event_pugo_REMARK:0 "A Return to Normal"
+
+###LE FUNNY###
+
+sp_event_Red_Susk:0 "The Red Susk"
+sp_event_Red_Susk_QUOTE:0 "Oh hello sexy, mind if I have a lick?"
+sp_event_Red_Susk_REMARK:0 "petah the horse is here"
+
+

@@ -1,0 +1,18 @@
+characters = {
+
+	SAM_tuila'epa_malielegaoi = {
+		name = "Tuila'epa Sa'ilele Malielegaoi"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SAM/Tuila'epa_Malielegaoi.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

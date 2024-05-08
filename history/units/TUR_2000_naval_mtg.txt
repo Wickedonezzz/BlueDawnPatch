@@ -1,0 +1,118 @@
+units = {
+	fleet = {
+		name = "Adriyatik Filosu"
+		naval_base = 9833 # Gölcük #
+		task_force = {
+			name = "Adriyatik Yüzey Filosu"
+			location = 9833 # Gölcük #
+			ship = { name = "TCG Barbaros" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = TUR version_name = "Barbaros Class" } } }
+			ship = { name = "TCG Oruçreis" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = TUR version_name = "Barbaros Class" } } }
+			ship = { name = "TCG Salihreis" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = TUR version_name = "Barbaros Class" } } }
+			ship = { name = "TCG Yavuz" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = TUR version_name = "Yavuz Class" } } }
+			ship = { name = "TCG Fatih" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = TUR version_name = "Yavuz Class" } } }
+			ship = { name = "TCG Berk" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = TUR version_name = "Berk Class" } } }
+			ship = { name = "TCG Peyk" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = TUR version_name = "Berk Class" } } }
+			ship = { name = "TCG Muavenet" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = TUR creator = USA version_name = "Knox Class" } } }
+			ship = { name = "TCG Adatepe" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = TUR creator = USA version_name = "Knox Class" } } }
+			ship = { name = "TCG Zafer" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = TUR creator = USA version_name = "Knox Class" } } }
+			ship = { name = "TCG Ege" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = TUR creator = USA version_name = "Knox Class" } } }
+		}
+		task_force = {
+			name = "Adriyatik Denizaltı Filosu"
+			location = 9833 # Gölcük #
+			ship = { name = "TCG Preveze" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = TUR creator = GER version_name = "Type 209T/1400 Class" } } }
+			ship = { name = "TCG Sakarya" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = TUR creator = GER version_name = "Type 209T/1400 Class" } } }
+			ship = { name = "TCG 18 Mart" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = TUR creator = GER version_name = "Type 209T/1400 Class" } } }
+			ship = { name = "TCG Anafartalar" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = TUR creator = GER version_name = "Type 209T/1400 Class" } } }
+			ship = { name = "TCG Piri Reis" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = TUR creator = USA version_name = "Tang Class" } } }
+			ship = { name = "TCG Hızır Reis" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = TUR creator = USA version_name = "Tang Class" } } }
+			ship = { name = "TCG Yıldıray" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = TUR creator = GER version_name = "Type 209/1200 Class" } } }
+			ship = { name = "TCG Doğanay" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = TUR creator = GER version_name = "Type 209/1200 Class" } } }
+			ship = { name = "TCG Dolunay" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = TUR creator = GER version_name = "Type 209/1200 Class" } } }
+			ship = { name = "TCG Uluç Ali Reis" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = TUR creator = USA version_name = "Tench GUPPY II Class" } } }
+			ship = { name = "TCG Murat Reis" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = TUR creator = USA version_name = "Tench GUPPY II Class" } } }
+		}
+	}
+	fleet = {
+		name = "Karadeniz Filosu"
+		naval_base = 904 # Zonguldak #
+		task_force = {
+			name = "Karadeniz Yüzey Filosu"
+			location = 904 # Zonguldak #
+			ship = { name = "TCG Turgut Reis" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = TUR version_name = "Yavuz Class" } } }
+			ship = { name = "TCG Yıldırım" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = TUR version_name = "Yavuz Class" } } }
+			ship = { name = "TCG Kocatepe" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = TUR creator = USA version_name = "Knox Class" } } }
+			ship = { name = "TCG Trakya" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = TUR creator = USA version_name = "Knox Class" } } }
+			ship = { name = "TCG Karadeniz" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = TUR creator = USA version_name = "Knox Class" } } }
+			ship = { name = "TCG Akdeniz" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = TUR creator = USA version_name = "Knox Class" } } }
+		}
+		task_force = {
+			name = "Karadeniz Denizaltı Filosu"
+			location = 904 # Bartin #
+			ship = { name = "TCG Atılay" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = TUR creator = GER version_name = "Type 209/1200 Class" } } }
+			ship = { name = "TCG Saldıray" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = TUR creator = GER version_name = "Type 209/1200 Class" } } }
+			ship = { name = "TCG Batıray" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = TUR creator = GER version_name = "Type 209/1200 Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+	# Frigate #
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_hull_3
+			creator = "TUR" 
+			version_name = "Barbaros Class"
+		}
+		name = "TCG Kemalreis"
+		requested_factories = 1
+		progress = 0.88
+		amount = 1
+	}
+
+	# Attack Submarine #
+	add_equipment_production = {
+		equipment = {
+			type = attack_submarine_hull_1
+			creator = "GER" 
+			version_name = "Type 209T/1400 Class"
+		}
+		name = "TCG Gür"
+		requested_factories = 1
+		progress = 0.29
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = attack_submarine_hull_1
+			creator = "GER" 
+			version_name = "Type 209T/1400 Class"
+		}
+		name = "TCG Çanakkale"
+		requested_factories = 1
+		progress = 0.07
+		amount = 1
+	}
+
+	if = {
+		limit = { has_dlc = "Death or Dishonor" }
+		GER = {
+			create_production_license = {
+				target = TUR
+				equipment = {
+					type = attack_submarine_hull_1
+					version_name = "Type 209/1200 Class"
+				}
+				cost_factor = 0
+			}
+			create_production_license = {
+				target = TUR
+				equipment = {
+					type = attack_submarine_hull_1
+					version_name = "Type 209T/1400 Class"
+				}
+				cost_factor = 0
+			}
+		}
+	}
+}

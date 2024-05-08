@@ -1,0 +1,26 @@
+units = {
+	fleet = {
+		name = "Persian Gulf Fleet"
+		naval_base = 7982 # Bandar Abbas #
+		task_force = {
+			name = "Persian Gulf Surface Fleet"
+			location = 7982 # Bandar Abbas #
+			ship = { name = "IRIS Bayandor" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PER version_name = "Bayandor Class" } } }
+			ship = { name = "IRIS Naghdi" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PER version_name = "Bayandor Class" } } }
+
+			ship = { name = "IRIS Alvand" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = PER version_name = "Saam Class" } } }
+			ship = { name = "IRIS Alborz" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = PER version_name = "Saam Class" } } }
+			ship = { name = "IRIS Sabalan" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = PER version_name = "Saam Class" } } }
+		}
+		task_force = {
+			name = "Persian Gulf Submarine Fleet"
+			location = 7982 # Bandar Abbas #
+			ship = { name = "IRIS Tareq" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = PER creator = SOV version_name = "Kilo Class (Pr. 877EKM)" } } }
+			ship = { name = "IRIS Noor" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = PER creator = SOV version_name = "Kilo Class (Pr. 877EKM)" } } }
+			ship = { name = "IRIS Yunes" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = PER creator = SOV version_name = "Kilo Class (Pr. 877EKM)" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

@@ -1,0 +1,23 @@
+﻿capital = 318
+
+#oob = "HAI_1936"
+
+set_war_support = 0.1
+set_convoys = 5
+
+recruit_character = HAI_rene_preval
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1996.2.7"
+	election_frequency = 60
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 59
+	communism = 6
+	reformed_communism = 0
+	paternal_autocracy = 0
+	fascism = 16
+	neutrality = 19
+}

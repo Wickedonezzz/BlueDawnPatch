@@ -1,0 +1,1321 @@
+focus_tree = {
+	id = yug_milosevic_focus
+	country = {
+		factor = 0
+		modifier = {
+		tag = YUG
+		add = 0
+		}
+	}
+		
+	default = no
+	shared_focus = YUG_matters_of_economy
+	shared_focus = YUG_future_of_the_army
+	
+	##done by durangoose##
+	
+	focus = {
+		id = YUG_milosevic_renewed_mandate
+		icon = GFX_focus_YUG_milosevic
+		x = -1
+		y = 0
+
+		prerequisite = {}
+		mutually_exclusive = { }
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {		
+			add_political_power = 150
+			add_stability = 0.15
+			country_event = {id = yug_milosevic.4}
+		}
+	}
+	
+	focus = {
+		id = YUG_milosevic_solidify_the_agenda
+		icon = GFX_focus_YUG_solidify_our_agenda
+		x = 0
+		y = 1
+
+		prerequisite = {focus = YUG_milosevic_renewed_mandate}
+		mutually_exclusive = { }
+		relative_position_id = YUG_milosevic_renewed_mandate
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			country_event = {id = yug_milosevic.3}
+			remove_ideas = YUG_what_are_we
+			add_stability = 0.15
+			add_war_support = 0.15
+			set_variable = {YUG_milo_ind_stage_var = 1}
+			set_variable = {YUG_milo_tech_stage_var = 1}	
+			set_variable = {yug_milo_industrial_prog = 25}
+			set_variable = {yug_milo_industrial_prog_monthly = 3}			
+			set_variable = {yug_milo_tech_prog = 25}
+			set_variable = {yug_milo_tech_prog_monthly = 2}
+			
+		}
+	}
+	
+	focus = {
+		id = YUG_milosevic_loyal_men_in_high_positions
+		icon = GFX_focus_YUG_loyal_men
+		x = -4
+		y = 1
+
+		prerequisite = {focus = YUG_milosevic_solidify_the_agenda}
+		mutually_exclusive = { }
+		relative_position_id = YUG_milosevic_solidify_the_agenda
+
+		
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+			swap_ideas = {
+				remove_idea = YUG_after_tito
+				add_idea = YUG_after_tito_2_alt
+			}
+			add_dynamic_modifier = {modifier = YUG_corrupt_party}
+			show_ideas_tooltip = YUG_corrupt_party #im so smart （￣ ＾ ￣）
+			set_variable = {yug_corrupt_party_pp_var = -0.20}
+			set_variable = {yug_corrupt_party_ws_var = -0.15}
+			set_variable = {yug_corrupt_party_s_var = -0.15}
+			set_variable = {yug_corrupt_party_pac_var = -0.10}
+			add_popularity = {
+				ideology = reformed_communism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.05
+			}			
+		}
+	}
+
+	focus = {
+		id = YUG_milosevic_absorb_the_socialists
+		icon = GFX_focus_generic_socialist_fist
+		x = -1
+		y = 1
+
+		prerequisite = {focus = YUG_milosevic_loyal_men_in_high_positions}
+		mutually_exclusive = {focus = YUG_milosevic_continue_the_political_tutelage}
+		relative_position_id = YUG_milosevic_loyal_men_in_high_positions
+
+		
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			set_party_name = {
+				ideology = socialism
+				name = YUG_socialism_SKJ_party
+				long_name = YUG_socialism_SKJ_party_long
+			}
+			add_popularity = {
+				ideology = socialism
+				popularity = -1.0
+			}
+			add_popularity = {
+				ideology = reformed_communism
+				popularity = 0.10
+			}			
+			custom_effect_tooltip = YUG_modify_corrupt_party_absorb_soc
+			add_to_variable = {yug_corrupt_party_pp_var = 0.10}
+			add_to_variable = {yug_corrupt_party_s_var = -0.05}
+			add_to_variable = {yug_corrupt_party_pac_var = 0.05}			
+		}
+	}
+
+	focus = {
+		id = YUG_milosevic_continue_the_political_tutelage
+		icon = GFX_focus_SOV_initial_reform
+		x = 1
+		y = 1
+
+		prerequisite = {focus = YUG_milosevic_loyal_men_in_high_positions}
+		mutually_exclusive = {focus = YUG_milosevic_absorb_the_socialists}
+		relative_position_id = YUG_milosevic_loyal_men_in_high_positions
+
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_popularity = {
+				ideology = socialism
+				popularity = 0.15
+			}	
+			add_popularity = {
+				ideology = reformed_communism
+				popularity = 0.10
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}			
+			custom_effect_tooltip = YUG_modify_corrupt_party_cotninue_tut
+			add_to_variable = {yug_corrupt_party_pp_var = -0.05}			
+			add_to_variable = {yug_corrupt_party_s_var = 0.10}
+			add_to_variable = {yug_corrupt_party_pac_var = -0.20}
+		}
+	}
+
+	focus = {
+		id = YUG_milosevic_purge_the_pcpoy
+		icon = GFX_focus_YUG_no_more_seselj
+		x = -1
+		y = 2
+
+		prerequisite = {focus = YUG_milosevic_absorb_the_socialists focus = YUG_milosevic_continue_the_political_tutelage}
+		mutually_exclusive = {focus = YUG_milosevic_integrate_pcpoy_remmants}
+		relative_position_id = YUG_milosevic_loyal_men_in_high_positions
+
+		
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			custom_effect_tooltip = YUG_modify_corrupt_party_purge_pcpoy	
+			add_political_power = 100
+			add_stability = 0.10
+			add_manpower = 75000
+			add_to_variable = {yug_corrupt_party_pp_var = 0.05}
+			add_to_variable = {yug_corrupt_party_ws_var = -0.25}	
+			add_to_variable = {yug_corrupt_party_pac_var = 0.10}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.20
+			}	
+			add_popularity = {
+				ideology = paternal_autocracy
+				popularity = -0.20
+			}			
+		}
+	}
+
+	focus = {
+		id = YUG_milosevic_integrate_pcpoy_remmants
+		icon = GFX_focus_YUG_integrate_pcpoy
+		x = 1
+		y = 2
+
+		prerequisite = {focus = YUG_milosevic_absorb_the_socialists focus = YUG_milosevic_continue_the_political_tutelage}
+		mutually_exclusive = {focus = YUG_milosevic_purge_the_pcpoy}
+		relative_position_id = YUG_milosevic_loyal_men_in_high_positions
+
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			country_event = {id=yug_milosevic.9}
+			custom_effect_tooltip = YUG_modify_corrupt_party_integrate_pcpoy_remmants			
+			add_ideas = YUG_nationalist_recruitment
+			add_to_variable = {yug_corrupt_party_pp_var = -0.05}
+			add_to_variable = {yug_corrupt_party_ws_var = 0.10}	
+			add_to_variable = {yug_corrupt_party_pac_var = -0.15}
+			custom_effect_tooltip = recruit_advisor_effect
+			show_ideas_tooltip = YUG_milan_martic
+			
+		}
+	}
+
+	focus = {
+		id = YUG_milosevic_propaganda_campaigns
+		icon = GFX_focus_generic_propaganda
+		x = -1
+		y = 3
+
+		prerequisite = {focus = YUG_milosevic_purge_the_pcpoy focus = YUG_milosevic_integrate_pcpoy_remmants}
+		mutually_exclusive = { }
+		relative_position_id = YUG_milosevic_loyal_men_in_high_positions
+
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_stability = 0.10
+			add_war_support = 0.10
+			custom_effect_tooltip = YUG_modify_corrupt_party_prop_camp	
+			add_to_variable = {yug_corrupt_party_pp_var = 0.05}	
+			add_to_variable = {yug_corrupt_party_ws_var = 0.05}	
+			add_to_variable = {yug_corrupt_party_dd_var = 0.25}
+		}
+	}
+
+	focus = {
+		id = YUG_milosevic_nationalist_populism
+		icon = GFX_focus_YUG_slobo_saviour
+		x = 1
+		y = 3
+
+		prerequisite = {focus = YUG_milosevic_purge_the_pcpoy focus = YUG_milosevic_integrate_pcpoy_remmants}
+		mutually_exclusive = { }
+		relative_position_id = YUG_milosevic_loyal_men_in_high_positions
+
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			custom_effect_tooltip = YUG_modify_corrupt_party_nationalist_populism		
+			add_to_variable = {yug_corrupt_party_ws_var = 0.10}		
+			add_war_support = 0.10
+			add_popularity = {
+				ideology = reformed_communism
+				popularity = 0.10
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+			}
+			add_country_leader_trait = populist
+		}
+	}
+
+	focus = {
+		id = YUG_milosevic_finalize_the_constitutional_reforms
+		icon = GFX_focus_YUG_national_report
+		x = 0
+		y = 4
+		
+		prerequisite = {focus = YUG_milosevic_propaganda_campaigns}
+		prerequisite = {focus = YUG_milosevic_nationalist_populism}
+		mutually_exclusive = { }
+		relative_position_id = YUG_milosevic_loyal_men_in_high_positions
+
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {	
+			add_ideas = YUG_reformed_consitution
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = YUG_milosevic_national_security_and_unity_law
+		icon = GFX_focus_SOV_administrative_reforms
+		x = 0
+		y = 5
+		
+		prerequisite = {focus = YUG_milosevic_finalize_the_constitutional_reforms}
+		mutually_exclusive = { }
+		relative_position_id = YUG_milosevic_loyal_men_in_high_positions
+
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			country_event = {id=yug_milosevic.14}
+			add_ideas = YUG_nsaul
+			custom_effect_tooltip = YUG_modify_corrupt_party_prop_camp	
+			add_to_variable = {yug_corrupt_party_pp_var = 0.05}	
+			add_to_variable = {yug_corrupt_party_s_var = 0.05}	
+			add_to_variable = {yug_corrupt_party_dd_var = 0.25}		
+		
+		}
+	}
+
+	focus = {
+		id = YUG_milosevic_national_army_exercises
+		icon = GFX_focus_YUG_army_reorganization
+		x = 0
+		y = 1
+		
+		prerequisite = {focus = YUG_milosevic_solidify_the_agenda}
+		mutually_exclusive = { }
+		relative_position_id = YUG_milosevic_solidify_the_agenda
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		army_experience = 50
+		add_war_support = 0.10
+		set_country_flag = YUG_can_deal_with_army
+		custom_effect_tooltip = YUG_can_deal_with_army				
+		}
+	}
+	
+	focus = {
+		id = YUG_milosevic_final_strike_against_the_rebels
+		icon = GFX_focus_YUG_antiterror
+		x = 0
+		y = 1
+		
+		prerequisite = {focus = YUG_milosevic_national_army_exercises}
+		mutually_exclusive = { }
+		relative_position_id = YUG_milosevic_national_army_exercises
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_stability = 0.10
+		add_political_power = 50
+		country_event = {id = yug.22}
+		}
+	}	
+
+	focus = {
+		id = YUG_milosevic_expand_sbd_operations
+		icon = GFX_focus_generic_spy
+		x = 0
+		y = 2
+		
+		prerequisite = {focus = YUG_milosevic_final_strike_against_the_rebels}
+		mutually_exclusive = { }
+		relative_position_id = YUG_milosevic_national_army_exercises
+		
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_stability = 0.10
+			104 = {
+				add_resistance = -10
+			}
+			804 = {
+				add_resistance = -10
+			}	
+			802 = {
+				add_resistance = -10
+			}			
+			custom_effect_tooltip = recruit_advisor_effect
+			show_ideas_tooltip = YUG_radomir_markovic
+		}
+	}	
+
+	focus = {
+		id = YUG_milosevic_deport_albanians_from_kosovo
+		icon = GFX_focus_YUG_deport_kosovo
+		x = 0
+		y = 4
+		
+		prerequisite = {focus = YUG_milosevic_expand_sbd_operations}
+		prerequisite = {focus = YUG_milosevic_nationalist_populism}		
+		available = {has_war = no}
+		mutually_exclusive = { }
+		relative_position_id = YUG_milosevic_national_army_exercises
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_popularity = {
+				ideology = reformed_communism
+				popularity = -0.10
+			}
+			add_stability = -0.10
+			802 = {
+				add_dynamic_modifier = {modifier = YUG_deportations}
+			}
+		}
+	}	
+	
+	focus = {
+		id = YUG_milosevic_install_pro_serb_politicians_in_bosnia
+		icon = GFX_focus_YUG_install_pro_serbs_in_bosnia
+		x = -1
+		y = 5
+		
+		prerequisite = {focus = YUG_milosevic_deport_albanians_from_kosovo}
+		mutually_exclusive = {focus = YUG_milosevic_abolish_bosnia_sr}
+		relative_position_id = YUG_milosevic_national_army_exercises
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			custom_effect_tooltip = YUG_modify_corrupt_party_install_pro_serb
+			add_to_variable = {yug_corrupt_party_pp_var = 0.05}
+			add_to_variable = {yug_corrupt_party_s_var = -0.05}
+			add_to_variable = {yug_corrupt_party_pac_var = -0.05}
+			
+		}
+	}	
+
+	focus = {
+		id = YUG_milosevic_abolish_bosnia_sr
+		icon = GFX_focus_YUG_kill_bosnia
+		x = 1
+		y = 5
+		
+		prerequisite = {focus = YUG_milosevic_deport_albanians_from_kosovo}
+		mutually_exclusive = {focus = YUG_milosevic_install_pro_serb_politicians_in_bosnia}
+		relative_position_id = YUG_milosevic_national_army_exercises
+		available = {has_country_flag = bos_uprising_started}
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			country_event = {id = yug_milosevic.8}
+			add_stability = -0.15
+			add_manpower = -65000
+			custom_effect_tooltip = YUG_modify_corrupt_party_abolish_bosnia
+			add_to_variable = {yug_corrupt_party_pp_var = 0.15}
+			add_to_variable = {yug_corrupt_party_s_var = -0.15}	
+			add_to_variable = {yug_corrupt_party_ws_var = -0.10}
+			add_to_variable = {yug_corrupt_party_cf_var = -0.20}			
+			
+		}
+	}	
+
+	#great progress
+	focus = {
+		id = YUG_milosevic_the_great_progress_campaign
+		icon = GFX_focus_YUG_great_progress
+		x = 5
+		y = 1
+		
+		prerequisite = {focus = YUG_milosevic_solidify_the_agenda}
+		mutually_exclusive = { }
+		relative_position_id = YUG_milosevic_solidify_the_agenda
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_stability = 0.10		
+			country_event = {id = yug_milosevic.10}
+			unlock_decision_category_tooltip = yug_milosevic_the_great_progress_campaign
+			add_ideas = YUG_milo_prog_industry_stage_1
+			add_ideas = YUG_milo_prog_tech_stage_1
+		}
+	}
+
+	focus = {
+		id = YUG_milosevic_price_controls
+		icon = GFX_focus_ITA_devaluate_the_lire
+		x = -2
+		y = 1
+		
+		prerequisite = {focus = YUG_milosevic_the_great_progress_campaign}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = yug_ind_stage_needs_2	
+				OR = {
+				has_idea = YUG_milo_prog_industry_stage_2
+				has_idea = YUG_milo_prog_industry_stage_3
+				has_idea = YUG_milo_prog_industry_stage_4
+				has_idea = YUG_milo_prog_industry_stage_5
+				}
+			}
+		}
+		mutually_exclusive = { }
+		relative_position_id = YUG_milosevic_the_great_progress_campaign
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+			add_stability = -0.10
+			set_country_flag = YUG_economy_time
+			custom_effect_tooltip = YUG_can_deal_with_economy
+		}
+	}
+
+	focus = {
+		id = YUG_milosevic_long_road_to_economic_stability
+		icon = GFX_SOV_mobilize_industry
+		x = -2
+		y = 2
+		
+		prerequisite = {focus = YUG_milosevic_price_controls}
+		mutually_exclusive = { }
+		relative_position_id = YUG_milosevic_the_great_progress_campaign
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = yug_ind_stage_needs_3	
+				OR = {
+				has_idea = YUG_milo_prog_industry_stage_3
+				has_idea = YUG_milo_prog_industry_stage_4
+				has_idea = YUG_milo_prog_industry_stage_5
+				}				
+			}
+		}
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_stability = 0.15
+			add_timed_idea = {
+				idea = YUG_road_to_economic_stability
+				days = 365
+			}
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}	
+		}
+	}
+
+	focus = {
+		id = YUG_milosevic_extensive_research_efforts
+		icon = GFX_focus_YUG_tito_honour
+		x = 0
+		y = 1
+		
+		prerequisite = {focus = YUG_milosevic_the_great_progress_campaign}
+		mutually_exclusive = { }
+		relative_position_id = YUG_milosevic_the_great_progress_campaign
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = yug_tech_stage_needs_3	
+				OR = {
+				has_idea = YUG_milo_prog_industry_stage_3
+				has_idea = YUG_milo_prog_industry_stage_4
+				has_idea = YUG_milo_prog_industry_stage_5
+				}				
+			}
+		}
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_research_slot = 1
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = electronics
+			}
+		}
+	}
+
+	focus = {
+		id = YUG_milosevic_nuclear_development
+		icon = GFX_focus_IRQ_facilities
+		x = 0
+		y = 2
+		
+		prerequisite = {focus = YUG_milosevic_extensive_research_efforts}
+		mutually_exclusive = { }
+		relative_position_id = YUG_milosevic_the_great_progress_campaign
+	
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = yug_tech_stage_needs_4	
+				OR = {
+				has_idea = YUG_milo_prog_industry_stage_4
+				has_idea = YUG_milo_prog_industry_stage_5
+				}		
+			}
+		}
+	
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			country_event = {id = yug_milosevic.13}
+			add_tech_bonus = {
+				bonus = 3
+				uses = 3
+				category = nuclear
+			}
+		}
+	}
+
+	focus = {
+		id = YUG_milosevic_reconnect_the_country
+		icon = GFX_focus_generic_rebuild
+		x = 2
+		y = 1
+		
+		prerequisite = {focus = YUG_milosevic_the_great_progress_campaign}
+		mutually_exclusive = { }
+		relative_position_id = YUG_milosevic_the_great_progress_campaign
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = yug_tech_stage_needs_3	
+				OR = {
+				has_idea = YUG_milo_prog_industry_stage_3				
+				has_idea = YUG_milo_prog_industry_stage_4
+				has_idea = YUG_milo_prog_industry_stage_5
+				}				
+			}
+		}
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			build_railway = {
+				level = 2
+				path = { 11586 9599 13347 13346 11741 13344 13366 13349 }
+				start_province = 11586
+				target_province = 13349
+			}
+			build_railway = {
+				level = 2
+				start_province = 11586
+				target_province = 3882
+			}	
+			build_railway = {
+				level = 2
+				start_province = 11586
+				target_province = 6940
+			}				
+			build_railway = {
+				level = 2
+				start_province = 11586
+				target_province = 9821
+			}
+			build_railway = {
+				level = 2
+				start_province = 11586
+				target_province = 6619
+			}			
+			if = {
+				limit = {owns_state = 109}
+				build_railway = {
+				level = 2
+				start_province = 11586
+				target_province = 11581
+				}					
+			}
+			if = {
+				limit = {owns_state = 853}
+				build_railway = {
+				level = 2
+				start_province = 11586
+				target_province = 9627
+				}		
+			}			
+		}
+	}
+
+	focus = {
+		id = YUG_milosevic_improving_the_internet_structure
+		icon = GFX_focus_SOV_more_pc_more_efficency
+		x = 2
+		y = 2
+		
+		prerequisite = {focus = YUG_milosevic_reconnect_the_country}
+		mutually_exclusive = { }
+		relative_position_id = YUG_milosevic_the_great_progress_campaign
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = yug_tech_stage_needs_3
+				OR = {
+				has_idea = YUG_milo_prog_tech_stage_3
+				has_idea = YUG_milo_prog_tech_stage_4
+				has_idea = YUG_milo_prog_tech_stage_5
+				}
+			}
+		}
+		
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			country_event = {id = yug_milosevic.11}
+			add_political_power = 50
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = electronics
+			}	
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			custom_effect_tooltip = recruit_advisor_effect
+			show_ideas_tooltip = YUG_voja_antonic
+		}
+	}
+
+	focus = {
+		id = YUG_milosevic_industrial_buildup_scheme
+		icon = GFX_focus_YUG_indutrial_buildup
+		x = -1
+		y = 3
+
+		prerequisite = {focus = YUG_milosevic_long_road_to_economic_stability}		
+		prerequisite = {focus = YUG_milosevic_nuclear_development}
+		prerequisite = {focus = YUG_milosevic_improving_the_internet_structure}		
+		available = {
+			NOT = {has_idea = YUG_road_to_economic_stability}
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = yug_ind_stage_needs_4
+				OR = {
+				has_idea = YUG_milo_prog_tech_stage_4
+				has_idea = YUG_milo_prog_tech_stage_5
+				}			
+			}		
+		}		
+		mutually_exclusive = {focus = YUG_milosevic_divert_funding_to_party_members}
+		relative_position_id = YUG_milosevic_the_great_progress_campaign
+		
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = YUG_industrial_buildup
+		}
+	}
+
+	focus = {
+		id = YUG_milosevic_divert_funding_to_party_members
+		icon = GFX_focus_YUG_corruption
+		x = 1
+		y = 3
+
+		prerequisite = {focus = YUG_milosevic_long_road_to_economic_stability}		
+		prerequisite = {focus = YUG_milosevic_nuclear_development}
+		prerequisite = {focus = YUG_milosevic_improving_the_internet_structure}		
+		available = {has_completed_focus = YUG_milosevic_loyal_men_in_high_positions}
+		mutually_exclusive = {focus = YUG_milosevic_industrial_buildup_scheme}
+		relative_position_id = YUG_milosevic_the_great_progress_campaign
+		
+		cost = 2.9
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			custom_effect_tooltip = YUG_modify_corrupt_party_divert_funding
+			add_to_variable = {yug_corrupt_party_pp_var = 0.15}
+			add_to_variable = {yug_corrupt_party_s_var = -0.10}			
+			add_to_variable = {yug_corrupt_party_pac_var = -0.15}	
+		}
+	}
+
+	focus = {
+		id = YUG_milosevic_finish_the_program
+		icon = GFX_focus_YUG_tito_honour
+		x = 0
+		y = 4
+
+		prerequisite = {focus = YUG_milosevic_industrial_buildup_scheme focus = YUG_milosevic_divert_funding_to_party_members}		
+		mutually_exclusive = { }
+		relative_position_id = YUG_milosevic_the_great_progress_campaign
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = yug_ind_stage_needs_5
+				has_idea = YUG_milo_prog_industry_stage_5
+				
+			}
+			custom_trigger_tooltip = {
+				tooltip = yug_tech_stage_needs_5
+				has_idea = YUG_milo_prog_tech_stage_5
+				
+			}			
+		}		
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			custom_effect_tooltip = YUG_modify_corrupt_party_finish_the_program			
+			add_to_variable = {yug_corrupt_party_s_var = 0.10}		
+
+			add_political_power = 150
+			add_stability = 0.15
+			add_popularity = {
+				ideology = reformed_communism
+				popularity = 0.15
+			}
+			custom_effect_tooltip = yug_progress_combine_tt
+			add_ideas = YUG_great_progress_program_finished			
+			remove_ideas = YUG_milo_prog_tech_stage_5 
+			remove_ideas = YUG_milo_prog_industry_stage_5
+		}
+	}
+
+	focus = {
+		id = YUG_milosevic_looking_outwards
+		icon = GFX_focus_YUG_looking_outwards
+		x = 0
+		y = 8
+		
+		available = {
+		has_country_flag = bos_uprising_started
+		has_war = no
+		}
+		prerequisite = {focus = YUG_milosevic_national_security_and_unity_law}
+		prerequisite = {focus = YUG_milosevic_install_pro_serb_politicians_in_bosnia focus = YUG_milosevic_abolish_bosnia_sr}		
+		mutually_exclusive = { }
+		
+		relative_position_id = YUG_milosevic_renewed_mandate
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			country_event = { id = yug.10 }
+			add_war_support = 0.10
+		}
+	}
+	
+	focus = {
+		id = YUG_milosevic_cut_diplomatic_contacts
+		icon = GFX_focus_YUG_cut_contact
+		x = 2
+		y = 1
+		
+		prerequisite = {focus = YUG_milosevic_looking_outwards}
+		mutually_exclusive = { }
+
+		relative_position_id = YUG_milosevic_looking_outwards		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			YUG = {
+				add_opinion_modifier = { target = CRO modifier = YUG_cut_contacts }
+			}
+			YUG = {
+				add_opinion_modifier = { target = SLV modifier = YUG_cut_contacts }
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = YUG_milosevic_prepare_the_JNA
+		icon = GFX_focus_YUG_prepare_JNA
+		x = -2
+		y = 1
+		
+		prerequisite = {focus = YUG_milosevic_looking_outwards}
+		mutually_exclusive = { }
+
+		relative_position_id = YUG_milosevic_looking_outwards				
+		cost = 2.9
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 15
+			add_war_support = 0.10
+		}
+	}
+	
+	focus = {
+		id = YUG_milosevic_operation_proleter
+		icon = GFX_focus_YUG_deal_with_the_breakaways
+		x = 0
+		y = 2
+		
+		prerequisite = {focus = YUG_milosevic_cut_diplomatic_contacts}
+		prerequisite = {focus = YUG_milosevic_prepare_the_JNA}
+		mutually_exclusive = { }
+		
+		select_effect = {
+			news_event = {id = old_times_news.149}
+		}
+		
+		relative_position_id = YUG_milosevic_looking_outwards
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+			NOT = {
+			country_exists = CRO
+			country_exists = SLV
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_flag = operation_soko_flag
+				}
+				add_timed_idea = {
+					idea = YUG_operation_soko
+					days = 100
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = operation_gvozdena_ruka_flag
+				}
+				add_timed_idea = {
+					idea = YUG_operation_gvozdena_ruka
+					days = 100
+				}				
+			}
+			news_event = { id = old_times_news.18 days = 1 }			
+			declare_war_on = {
+				type = annex_everything
+				target = CRO
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = SLV
+			}
+			hidden_effect = {
+				CRO = {
+					give_military_access = SLV
+				}
+				SLV = {
+					give_military_access = CRO
+				}				
+			}
+		}
+	}
+	
+	focus = {
+		id = YUG_milosevic_united_once_more
+		icon = GFX_focus_YUG_united_once_more
+		x = 0
+		y = 3
+		
+		prerequisite = {focus = YUG_milosevic_operation_proleter}
+		available = {
+			NOT = {
+			country_exists = CRO
+			country_exists = SLV
+			}
+		}
+		
+		relative_position_id = YUG_milosevic_looking_outwards		
+		mutually_exclusive = { }
+		
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			custom_effect_tooltip = yug_won_over_yugoslavia_milosevic_communist
+			hidden_effect = {
+				add_state_core = 103
+				add_state_core = 163
+				add_state_core = 109
+				add_state_core = 102
+				add_state_core = 736
+				add_state_core = 963
+				add_state_core = 964
+				add_state_core = 852
+				add_state_core = 853				
+			}
+			country_event = {id = yug.11}
+		}
+	}
+	
+	focus = {
+		id = YUG_milosevic_introduce_nsaul_to_croatia_and_slovenia
+		icon = GFX_focus_YUG_tito_honour
+		x = -1
+		y = 4
+		
+		prerequisite = {focus = YUG_milosevic_united_once_more}
+		available = { }
+		
+		relative_position_id = YUG_milosevic_looking_outwards		
+		mutually_exclusive = { }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_stability = -0.15
+			add_political_power = 100
+			swap_ideas = {
+				remove_idea = YUG_nsaul
+				add_idea = YUG_nsaul_2
+			}
+		}
+	}	
+	
+	focus = {
+		id = YUG_milosevic_control_the_adriatic_sea
+		icon = GFX_focus_YUG_control_the_adriatic
+		x = 1
+		y = 4
+		
+		prerequisite = {focus = YUG_milosevic_united_once_more}
+		available = { }
+		
+		relative_position_id = YUG_milosevic_looking_outwards		
+		mutually_exclusive = { }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+			add_offsite_building = { type = industrial_complex level = 2 }
+		}
+	}	
+	
+	focus = {
+		id = YUG_milosevic_designating_a_successor
+		icon = GFX_focus_YUG_designate_successor
+		x = -1
+		y = 5
+
+		prerequisite = {focus = YUG_milosevic_introduce_nsaul_to_croatia_and_slovenia}		
+		prerequisite = {focus = YUG_milosevic_control_the_adriatic_sea}
+		available = {has_country_flag = yug_milosevic_worsened_health}
+		
+		relative_position_id = YUG_milosevic_looking_outwards		
+		mutually_exclusive = {focus = YUG_milosevic_eternal_rule}
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = -100
+			add_stability = 0.05
+			country_event = {id = yug_milosevic.7}
+		}
+	}	
+	
+	focus = {
+		id = YUG_milosevic_eternal_rule
+		icon = GFX_focus_YUG_eternal_rule
+		x = 1
+		y = 5
+		
+		prerequisite = {focus = YUG_milosevic_introduce_nsaul_to_croatia_and_slovenia}		
+		prerequisite = {focus = YUG_milosevic_control_the_adriatic_sea}
+		available = { }
+		
+		relative_position_id = YUG_milosevic_looking_outwards		
+		mutually_exclusive = {focus = YUG_milosevic_designating_a_successor}
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_country_leader_trait = president_for_life
+		}
+	}		
+}

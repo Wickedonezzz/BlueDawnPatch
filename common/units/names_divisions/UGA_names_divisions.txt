@@ -1,0 +1,39 @@
+﻿
+UGA_INF_01 = 
+{
+	name = "Infantry Division"
+
+	for_countries = { UGA }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry_unit" }
+
+	fallback_name = "%s kitengo cha watoto wachanga cha Uganda"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%s kitengo cha watoto wachanga cha Uganda" }
+		2 = { "%s kitengo cha watoto wachanga cha Uganda" }
+		3 = { "%s kitengo cha watoto wachanga cha Uganda" }
+		4 = { "%s kitengo cha watoto wachanga cha Uganda" }
+		5 = { "%s kitengo cha watoto wachanga cha Uganda" }
+		6 = { "%s kitengo cha watoto wachanga cha Uganda" }
+		7 = { "%s kitengo cha watoto wachanga cha Uganda" }
+		8 = { "%s kitengo cha watoto wachanga cha Uganda" }
+		9 = { "%s kitengo cha watoto wachanga cha Uganda" }
+		10 = { "%s kitengo cha watoto wachanga cha Uganda" }
+		11 = { "%s kitengo cha watoto wachanga cha Uganda" }
+		12 = { "%s kitengo cha watoto wachanga cha Uganda" }
+		13 = { "%s kitengo cha watoto wachanga cha Uganda" }
+		14 = { "%s kitengo cha watoto wachanga cha Uganda" }
+		15 = { "%s kitengo cha watoto wachanga cha Uganda" }
+		16 = { "%s kitengo cha watoto wachanga cha Uganda" }
+		17 = { "%s kitengo cha watoto wachanga cha Uganda" }
+		18 = { "%s kitengo cha watoto wachanga cha Uganda" }
+		19 = { "%s kitengo cha watoto wachanga cha Uganda" }
+		20 = { "%s kitengo cha watoto wachanga cha Uganda" }		
+	}
+}
+

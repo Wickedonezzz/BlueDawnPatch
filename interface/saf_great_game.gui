@@ -1,0 +1,81 @@
+guiTypes = {
+
+	
+	containerWindowType = {
+		name = "saf_great_game_window"
+		position = { x = 0 y = 50 }
+		size = { width = 100% height= 100 }
+		
+		
+		containerWindowType	= {
+			name = "saf_great_game_progress_bar_window"
+			position = { x = 70 y = 20 }
+			size = { width = 100% height= 100% }
+			
+			iconType = {
+				name ="bar_bg"
+				spriteType = "GFX_bop_bar_bg"
+				position = { x=5	 y=5 } 
+			}
+			iconType = {
+				name ="bar_progress"
+				quadtexturesprite = "GFX_saf_great_game_bar"
+				position = { x=4	 y=3 } 
+			}
+			iconType = {
+				name ="bar_frame"
+				spriteType = "GFX_bop_bar_frame"
+				position = { x=0	 y=0 } 
+			}
+		}
+		
+		containerWindowType	= {
+			name = "saf_viljoen_influence"
+			position = { x = -85 y = 50 }
+			
+			instantTextBoxType = {
+				name ="name"
+				position = { x = 0 y = 0 }
+				font = "hoi_16mbs"
+				text = "Viljoen's Influence"
+				format = center
+				maxHeight = 0
+				maxWidth = 500
+			}
+			instantTextBoxType = {
+				name ="influence_var"
+				position = { x = 0 y = 15 }
+				font = "hoi_16mbs"
+				text = "[?great_game_progress_var]"
+				format = center
+				maxHeight = 0
+				maxWidth = 500
+			}
+		}
+		
+		containerWindowType	= {
+			name = "saf_meiring_influence"
+			position = { x = 93 y = 50 }
+			
+			instantTextBoxType = {
+				name ="name"
+				position = { x = 0 y = 0 }
+				font = "hoi_16mbs"
+				text = "Meiring's Influence"
+				format = center
+				maxHeight = 0
+				maxWidth = 500
+			}
+			instantTextBoxType = {
+				name ="influence_var"
+				position = { x = 0 y = 15 }
+				font = "hoi_16mbs"
+				text = "[?great_game_progress_anti_var]"
+				format = center
+				maxHeight = 0
+				maxWidth = 500
+			}
+		}
+	}
+
+}

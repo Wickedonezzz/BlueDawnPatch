@@ -1,0 +1,70 @@
+guiTypes = {
+
+		containerWindowType = {
+			name = "nuke_1_counter"
+			position = { x= 970 y = 5}
+			clipping = no
+			size = { width=74 height=30 }
+			Orientation = UPPER_LEFT
+			
+			background = {
+				name = "nuke_1_counter_bg"
+				quadTextureSprite ="GFX_mini_tooltip"
+			}
+
+			iconType = {
+				name ="nuke_1_counter_icon"
+				spriteType = "GFX_topbar_nuke_1"
+				position = { x= 5 y = 6 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name ="nuke_1_counter_value"
+				position = { x= 27 y = 5 }
+				font = "hoi_18mbs"
+				text = "[?ROOT.atomic_number]"
+				format = left
+				maxWidth = 42
+				maxHeight = 24
+				fixedsize = yes
+				pdx_tooltip = nuke_1_counter_tt
+				pdx_tooltip_delayed = nuke_1_counter_desc_tt
+			}
+		}
+		containerWindowType = {
+			name = "nuke_2_counter"
+			position = { x= 1046 y = 5}
+			clipping = no
+			size = { width=74 height=30 }
+			Orientation = UPPER_LEFT
+			
+			background = {
+				name = "nuke_2_counter_bg"
+				quadTextureSprite ="GFX_mini_tooltip"
+			}
+
+			iconType = {
+				name ="nuke_2_counter_icon"
+				spriteType = "GFX_topbar_nuke_2"
+				position = { x= 5 y = 6 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name ="nuke_2_counter_value"
+				position = { x= 27 y = 5 }
+				font = "hoi_18mbs"
+				text = "[?ROOT.hydrogen_number]"
+				format = left
+				maxWidth = 42
+				maxHeight = 24
+				fixedsize = yes
+				pdx_tooltip = nuke_2_counter_tt
+				pdx_tooltip_delayed = nuke_2_counter_desc_tt
+			}
+		}
+
+}

@@ -1,0 +1,48 @@
+﻿air_wings = {
+	# Land Wings #
+	276 = {
+		# Transports -- C-130
+		transport_plane_equipment_1 =  { # C-130 #
+			owner = "CAN"
+			creator = USA
+			amount = 15
+		}
+	}
+	464 = {
+		# Transports -- C-130
+		transport_plane_equipment_1 =  { # C-130 #
+			owner = "CAN"
+			creator = USA
+			amount = 10
+		}
+	}
+	740 = {
+		# Transports -- C-130
+		transport_plane_equipment_1 =  { # C-130 #
+			owner = "CAN"
+			creator = USA
+			amount = 8
+		}
+	}
+	468 = {
+		# Carrier Fighters -- F-18
+		carrier_fighter_equipment_2 =  { # F-18 #
+			owner = "CAN" 
+			creator = USA
+			amount = 41
+		}
+		carrier_fighter_equipment_2 =  { # F-18 #
+			owner = "CAN" 
+			creator = USA
+			amount = 37
+		}
+	}
+	473 = {
+		# Carrier Fighters -- F-18
+		carrier_fighter_equipment_2 =  { # F-18 #
+			owner = "CAN" 
+			creator = USA
+			amount = 44
+		}
+	}
+}

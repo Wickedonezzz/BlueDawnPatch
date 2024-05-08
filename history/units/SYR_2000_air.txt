@@ -1,0 +1,114 @@
+air_wings = {
+	# Land Wings #
+	677 = {
+		# Fighters -- MiG-21, MiG-23
+		fighter_equipment_1 =  { # MiG-23 #
+			owner = "SYR" 
+			creator = SOV
+			amount = 27
+		}
+		fighter_equipment_0 =  { # MiG-21 #
+			owner = "SYR" 
+			creator = SOV
+			amount = 50
+		}
+		fighter_equipment_0 =  { # MiG-21 #
+			owner = "SYR" 
+			creator = SOV
+			amount = 10
+		}
+
+		# Interceptors -- MiG-25
+		interceptor_equipment_1 =  { # MiG-25 #
+			owner = "SYR" 
+			creator = SOV
+			amount = 14
+		}
+
+		# Attackers -- Su-22, Su-24, MiG-23B
+		attacker_equipment_1 =  { # Su-22, Su-24, MiG-23B #
+			owner = "SYR" 
+			creator = SOV
+			amount = 39
+		}
+	}
+	680 = {
+		# Fighters -- MiG-21, MiG-23
+		fighter_equipment_1 =  { # MiG-23 #
+			owner = "SYR" 
+			creator = SOV
+			amount = 18
+		}
+		fighter_equipment_0 =  { # MiG-21 #
+			owner = "SYR" 
+			creator = SOV
+			amount = 50
+		}
+		fighter_equipment_0 =  { # MiG-21 #
+			owner = "SYR" 
+			creator = SOV
+			amount = 5
+		}
+
+		# Attackers -- Su-22, Su-24, MiG-23B
+		attacker_equipment_1 =  { # Su-22, Su-24, MiG-23B #
+			owner = "SYR" 
+			creator = SOV
+			amount = 50
+		}
+		attacker_equipment_1 =  { # Su-22, Su-24, MiG-23B #
+			owner = "SYR" 
+			creator = SOV
+			amount = 8
+		}
+	}
+	554 = {
+		# Fighters -- MiG-21, MiG-23, MiG-29
+		fighter_equipment_2 =  { # MiG-29 #
+			owner = "SYR" 
+			creator = SOV
+			amount = 50
+		}
+		fighter_equipment_1 =  { # MiG-23 #
+			owner = "SYR" 
+			creator = SOV
+			amount = 15
+		}
+		fighter_equipment_0 =  { # MiG-21 #
+			owner = "SYR" 
+			creator = SOV
+			amount = 50
+		}
+		fighter_equipment_0 =  { # MiG-21 #
+			owner = "SYR" 
+			creator = SOV
+			amount = 5
+		}
+
+		# Interceptors -- MiG-25
+		interceptor_equipment_1 =  { # MiG-25 #
+			owner = "SYR" 
+			creator = SOV
+			amount = 16
+		}
+
+		# Attackers -- Su-22, Su-24, MiG-23B
+		attacker_equipment_1 =  { # Su-22, Su-24, MiG-23B #
+			owner = "SYR" 
+			creator = SOV
+			amount = 50
+		}
+		attacker_equipment_1 =  { # Su-22, Su-24, MiG-23B #
+			owner = "SYR" 
+			creator = SOV
+			amount = 7
+		}
+
+		# Transports -- An-26, Il-76, Tu-134
+		transport_plane_equipment_1 =  {
+			owner = "SYR" 
+			creator = SOV
+			amount = 15
+		}
+	}
+}

@@ -1,0 +1,18 @@
+characters = {
+
+	DOM_leonel_fernandez = {
+		name = "Leonel Fernández"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOM/Leonel_Fernandez.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

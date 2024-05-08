@@ -1,0 +1,210 @@
+spriteTypes = {	
+
+	### categories
+	
+	
+	### category PHOTO ###
+	
+	spriteType = {
+		name = "GFX_decision_category_iraq_army_photo"
+		texturefile = "gfx/interface/decisions/iraq_army_photo.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_south_africa_army_photo"
+		texturefile = "gfx/interface/decisions/decision_cat_south_africa_army_photo.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_north_korea_and_ussr_propaganda"
+		texturefile = "gfx/interface/decisions/decision_cat_north_korea_and_ussr_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_culture_war"
+		texturefile = "gfx/interface/decisions/decision_cat_culture_war.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_indian_tsunami"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_indian_tsunami.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_iraq_rebuild_navy"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_iraq_rebuild_navy.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_iraq_photo"
+		texturefile = "gfx/interface/decisions/decision_cat_iraq_photo.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_iraq_request_foreign_aid"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_iraq_request_foreign_aid.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_iraq_contest_nofly_zone"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_iraq_contest_nofly_zone.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_saf_foreign_navy_designs"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_saf_foreign_navy_designs.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_vietnam_fighting_poverty"
+		texturefile = "gfx/interface/decisions/decision_cat_vietnam_fighting_poverty.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_generic_factory"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_factory.dds"
+	}	
+	spriteType = {
+		name = "GFX_decision_cat_generic_army"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_army.dds"
+	}		
+	
+	### decision icon stuff ###
+	
+	spriteType = {
+		name = "GFX_decision_broken_tank"
+		texturefile = "gfx/interface/decisions/decision_broken_tank.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_coins"
+		texturefile = "gfx/interface/decisions/decision_coins.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_red_flag_holding_hand"
+		texturefile = "gfx/interface/decisions/red_flag_holding_hand.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_soviet_flag_with_fists_under_it"
+		texturefile = "gfx/interface/decisions/soviet_flag_with_fists_under_it.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_spy"
+		texturefile = "gfx/interface/decisions/decision_spy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_prc_vs_sov"
+		texturefile = "gfx/interface/decisions/decision_prc_vs_sov.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_mining_operations"
+		texturefile = "gfx/interface/decisions/decision_mining_operations.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_mining_tungsten"
+		texturefile = "gfx/interface/decisions/decision_mining_tungsten.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_mining_iron"
+		texturefile = "gfx/interface/decisions/decision_mining_iron.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_convert_into_steel"
+		texturefile = "gfx/interface/decisions/decision_convert_into_steel.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_north_korea_and_soviets"
+		texturefile = "gfx/interface/decisions/decision_north_korea_and_soviets.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_mining_tungsten"
+		texturefile = "gfx/interface/decisions/decision_mining_tungsten.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_medical_aid"
+		texturefile = "gfx/interface/decisions/decision_medical_aid.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_eu_economy"
+		texturefile = "gfx/interface/decisions/decision_eu_economy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_build_highway"
+		texturefile = "gfx/interface/decisions/decision_build_highway.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_iraq_eagle"
+		texturefile = "gfx/interface/decisions/decision_iraq_eagle.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_burning_flag"
+		texturefile = "gfx/interface/decisions/decision_burning_flag.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_skull_with_isral_flag"
+		texturefile = "gfx/interface/decisions/decision_skull_with_isral_flag.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_decision_soldiers_carrying_iraq_flag"
+		texturefile = "gfx/interface/decisions/decision_soldiers_carrying_iraq_flag.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_decision_for_a_pan_arab_country"
+		texturefile = "gfx/interface/decisions/decision_for_a_pan_arab_country.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_decision_iraq_map_with_flag"
+		texturefile = "gfx/interface/decisions/decision_iraq_map_with_flag.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_decision_cat_iraq_propaganda"
+		texturefile = "gfx/interface/decisions/decision_cat_iraq_propaganda.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_saf_viljoen_cult_of_personality"
+		texturefile = "gfx/interface/decisions/decision_cat_saf_viljoen_cult_of_personality.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_generic_air_defence"
+		texturefile = "gfx/interface/decisions/decision_generic_air_defence.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_radar"
+		texturefile = "gfx/interface/decisions/decision_generic_radar.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_submarine"
+		texturefile = "gfx/interface/decisions/decision_generic_submarine.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_ship"
+		texturefile = "gfx/interface/decisions/decision_generic_ship.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_fighter_soviet"
+		texturefile = "gfx/interface/decisions/decision_generic_fighter_soviet.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_fighter_nato"
+		texturefile = "gfx/interface/decisions/decision_generic_fighter_nato.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_mbt"
+		texturefile = "gfx/interface/decisions/decision_generic_mbt.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_apc"
+		texturefile = "gfx/interface/decisions/decision_generic_apc.dds"
+	}
+}

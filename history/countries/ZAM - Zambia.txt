@@ -1,0 +1,23 @@
+﻿capital = 771
+
+set_convoys = 0
+
+recruit_character = ZAM_frederick_chiluba
+
+set_politics = {
+	ruling_party = social_democracy
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 0
+	reformed_communism = 12
+	social_democracy = 72
+	liberalism = 6
+	democratic = 10
+	neutrality = 0
+	paternal_autocracy = 0
+	fascism = 0
+}

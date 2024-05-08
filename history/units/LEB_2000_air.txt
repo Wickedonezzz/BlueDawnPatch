@@ -1,0 +1,16 @@
+﻿air_wings = {
+	# Land Wings #
+	553 = {
+		# Fighters -- Hunter, Mirage III
+		fighter_equipment_0 =  { # Hunter #
+			owner = "LEB" 
+			creator = ENG
+			amount = 6
+		}
+		fighter_equipment_0 =  { # Mirage III #
+			owner = "LEB" 
+			creator = FRA
+			amount = 10
+		}
+	}
+}

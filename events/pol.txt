@@ -1,0 +1,185 @@
+add_namespace = poland_mod
+
+#ELECTIONS BOI#
+country_event = {
+	id = poland_mod.1
+	title = poland_mod.1.t
+	desc = poland_mod.1.d
+	picture = GFX_report_event_spark
+	
+	trigger = {
+		original_tag = POL
+		date > 2001.09.23
+	}
+	
+	fire_only_once = yes
+	
+		#succdem time#
+	option = {
+		name = poland_mod.1.a
+
+		set_politics = {
+			ruling_party = social_democracy
+			elections_allowed = no
+			last_election = "2000.12.17"
+			election_frequency = 48
+		}
+		set_popularities = {
+			democratic = 20
+			liberalism = 25
+			social_democracy = 40
+			socialism = 10
+			fascism = 5
+		}
+					
+		ai_chance = {
+		factor = 15
+		}
+	}
+	
+		#conservative again#
+	option = {
+		name = poland_mod.1.b
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+			last_election = "2000.12.17"
+			election_frequency = 48
+		}	
+		set_popularities = {
+			democratic = 30
+			liberalism = 20
+			social_democracy = 30
+			socialism = 10
+			fascism = 10
+		}
+			
+		ai_chance = {
+		factor = 15
+		}
+	}
+
+		#lib win#
+	option = {
+		name = poland_mod.1.c
+			
+		set_politics = {
+			ruling_party = liberalism
+			elections_allowed = no
+			last_election = "2000.12.17"
+			election_frequency = 48
+		}	
+		set_popularities = {
+			democratic = 20
+			liberalism = 40
+			social_democracy = 20
+			socialism = 10
+			fascism = 5
+			neutrality = 5
+		}
+			
+		ai_chance = {
+		factor = 15
+		}
+	}
+
+		#other con win#
+	option = {
+		name = poland_mod.1.de
+		
+		retire_ideology_leader = democratic 
+		promote_character = POL_jaroslaw_kalinowski
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+			last_election = "2000.12.17"
+			election_frequency = 48
+		}	
+		set_popularities = {
+			democratic = 40
+			liberalism = 10
+			social_democracy = 20
+			socialism = 20
+			neutrality = 5			
+			fascism = 5
+		}
+			
+		set_party_name = {
+			ideology = democratic
+			name = POL_democratic_psl_party
+			long_name = POL_democratic_psl_party_long
+		}	
+			
+		ai_chance = {
+		factor = 15
+		}
+	}
+
+		#soc win#
+	option = {
+		name = poland_mod.1.f
+
+		set_politics = {
+			ruling_party = socialism
+			elections_allowed = no
+			last_election = "2000.12.17"
+			election_frequency = 48
+		}	
+			
+		set_popularities = {
+			democratic = 15
+			liberalism = 20
+			social_democracy = 15
+			socialism = 35
+			fascism = 15
+		}
+		
+		ai_chance = {
+		factor = 15
+		}
+	}
+
+}
+
+
+#soviets want to reopen relations#
+country_event = {
+	id = poland_mod.2
+	title = poland_mod.2.t
+	desc = poland_mod.2.d
+	picture = GFX_report_event_spark
+	
+	is_triggered_only = yes
+	
+		#sure#
+	option = {
+		name = poland_mod.2.a
+		
+		SOV = {country_event = {id = ussr_foreign_policy.6}}
+		
+		ai_chance = {
+			base = 35
+			modifier = {
+				factor = 45
+				OR = {
+					has_government = social_democracy
+					has_government = socialism
+				}
+			}
+		}	
+	}
+	
+		#declined#
+	option = {
+		name = poland_mod.2.b
+		SOV = {country_event = {id = ussr_foreign_policy.7}}
+		
+		ai_chance = {
+			base = 25
+			modifier = {
+				factor = 45
+				has_government = democratic
+			}
+		}	
+	}	
+}

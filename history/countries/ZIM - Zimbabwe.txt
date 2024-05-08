@@ -1,0 +1,47 @@
+﻿capital = 545
+
+set_technology = {
+	infantry_weapons_1960 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_air_weapons_1960 = 1
+	tech_support = 1
+	tech_motorised_1960 = 1
+	tech_train_1960 = 1
+	mbt_tank_1960 = 1
+	apc_tank_1960 = 1
+	apc_tank_1970 = 1
+	towed_artillery_1960 = 1
+	rocket_artillery_1960 = 1
+	heli_transport_1960 = 1
+	heli_attack_1970 = 1
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		recon_vehicle_1960 = 1
+	}
+}
+set_oob = "ZIM_2000"
+set_air_oob = "ZIM_2000_air"
+
+add_ideas = volunteer_only
+
+set_convoys = 5
+
+recruit_character = ZIM_mugabe
+recruit_character = ZIM_peter_walls
+
+set_war_support = 0.65
+set_stability = 0.45
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 60
+        communism = 40
+}

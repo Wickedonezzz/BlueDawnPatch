@@ -1,0 +1,101 @@
+﻿capital = 109
+
+set_research_slots = 2
+
+set_convoys = 25
+
+set_oob = "CRO_2000"
+
+set_technology = {
+	infantry_weapons_1960 = 1
+	infantry_weapons_1980 = 1
+	support_weapons_1960 = 1
+	support_weapons_1980 = 1
+	support_weapons_1990 = 1
+	night_vision_gen_1 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_tank_weapons_1980 = 1
+	infantry_anti_air_weapons_1960 = 1
+	paratrooper_tech_1960 = 1
+	marine_tech_1960 = 1
+	tech_support = 1
+	support_tech_engineers_1960 = 1
+	support_tech_militarypolice_1960 = 1
+	support_tech_militarypolice_1980 = 1
+	support_tech_recon_1960 = 1
+	support_tech_hospital_1960 = 1
+	support_tech_maintenance_1960 = 1
+	support_tech_logistics_1960 = 1
+	tech_motorised_1960 = 1
+	tech_motorised_1980 = 1
+	tech_train_1960 = 1
+	mbt_tank_1960 = 1
+	mbt_tank_1970 = 1
+	mbt_tank_1980 = 1
+	mbt_tank_1990 = 1
+	tank_ammo_1960 = 1
+	tank_ammo_1970 = 1
+	ifv_tank_1970 = 1
+	ifv_tank_1980 = 1
+	ifv_anti_tank_missile_1 = 1
+	apc_tank_1960 = 1
+	apc_tank_1970 = 1
+	apc_tank_1980 = 1
+	spaa_tank_1960 = 1
+	spaa_tank_1980 = 1
+	towed_artillery_1960 = 1
+	towed_artillery_1980 = 1
+	motorised_artillery_1960 = 1
+	motorised_artillery_1970 = 1
+	motorised_artillery_1980 = 1
+	rocket_artillery_1960 = 1
+	rocket_artillery_1970 = 1
+	rocket_artillery_1980 = 1
+	rocket_artillery_1990 = 1
+	tech_artillery_guidance_systems_1 = 1
+	attacker_1960 = 1
+	attacker_1970 = 1
+	heli_transport_1960 = 1
+	heli_transport_1970 = 1
+	heli_attack_1970 = 1
+}
+
+set_convoys = 5
+
+recruit_character = CRO_stjepan_mjesić
+recruit_character = CRO_ante_gotovina
+recruit_character = CRO_petar_stipetic
+recruit_character = CRO_ivic_pasalic
+recruit_character = CRO_anto_dapic
+recruit_character = CRO_ivo_sanader
+recruit_character = CRO_ivica_racan
+
+recruit_character = CRO_mladic
+
+add_ideas = CRO_tudmanism
+add_ideas = CRO_aftermath_of_the_krajina_war
+
+add_ideas = usa_aligned_nation
+
+add_ideas = limited_conscription
+add_manpower = 55000
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 0
+	reformed_communism = 0
+	social_democracy = 20
+	liberalism = 15
+	democratic = 17
+	neutrality = 38
+	paternal_autocracy = 0
+	fascism = 10
+}
+
+add_opinion_modifier = { target = YUG modifier = HISTORIC_yugoslavia_seperatists_opinion }

@@ -1,0 +1,155 @@
+﻿IRQ_MBT_01 = 
+{
+	name = "Armoured Republic Guard Divisions"
+
+	for_countries = { IRQ }
+
+	can_use = { always = yes }
+
+	division_types = { "main_battle_tank_armor" }
+
+	fallback_name = "%d Armoured Republican Guard Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st 'Hammurabi' Armoured Division" }
+		2 = { "2nd 'Al Medina' Armoured Division" }
+		3 = { "3rd 'Al Nida' Armoured Division" }
+		4 = { "4th Armoured Republican Guard Division" }
+		5 = { "5th Armoured Republican Guard Division" }
+		6 = { "6th Armoured Republican Guard Division" }
+		7 = { "7th Armoured Republican Guard Division" }
+		8 = { "8th Armoured Republican Guard Division" }
+		9 = { "9th Armoured Republican Guard Division" }
+		10 = { "10th Armoured Republican Guard Division" }
+		11 = { "11th Armoured Republican Guard Division" }
+		12 = { "12th Armoured Republican Guard Division" }
+		13 = { "13th Armoured Republican Guard Division" }
+		14 = { "14th Armoured Republican Guard Division" }
+		15 = { "15th Armoured Republican Guard Division" }
+		16 = { "16th Armoured Republican Guard Division" }
+		17 = { "17th Armoured Republican Guard Division" }
+		18 = { "18th Armoured Republican Guard Division" }
+		19 = { "19th Armoured Republican Guard Division" }
+	}
+}
+IRQ_MEC_01 = 
+{
+	name = "Mechanised Republic Guard Divisions"
+
+	for_countries = { IRQ }
+
+	can_use = { always = yes }
+
+	division_types = { "heavy_infantry_unit" }
+
+	fallback_name = "%d Mechanised Republican Guard Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st Mechanised Republican Guard Division" }
+		2 = { "2nd Mechanised Republican Guard Division" }
+		3 = { "3rd Mechanised Republican Guard Division" }
+		4 = { "4th Mechanised Republican Guard Division" }
+		5 = { "5th 'Baghdad' Mechanised Division" }
+		6 = { "6th Mechanised Republican Guard Division" }
+		7 = { "7th Mechanised Republican Guard Division" }
+		8 = { "8th Mechanised Republican Guard Division" }
+		9 = { "9th Mechanised Republican Guard Division" }
+		10 = { "10th Mechanised Republican Guard Division" }
+		11 = { "11th Mechanised Republican Guard Division" }
+		12 = { "12th Mechanised Republican Guard Division" }
+		13 = { "13th Mechanised Republican Guard Division" }
+		14 = { "14th Mechanised Republican Guard Division" }
+		15 = { "15th Mechanised Republican Guard Division" }
+		16 = { "16th Mechanised Republican Guard Division" }
+		17 = { "17th Mechanised Republican Guard Division" }
+		18 = { "18th Mechanised Republican Guard Division" }
+		19 = { "19th Mechanised Republican Guard Division" }
+	}
+}
+IRQ_MEC_02 = 
+{
+	name = "Mechanised Iraqi Divisions"
+
+	for_countries = { IRQ }
+
+	can_use = { always = yes }
+
+	division_types = { "heavy_infantry_unit" }
+
+	fallback_name = "%d Mechanised Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st Mechanised Division" }
+		2 = { "2nd Mechanised Division" }
+		3 = { "3rd Mechanised Division" }
+		4 = { "4th Mechanised Division" }
+		5 = { "5th Mechanised Division" }
+		6 = { "6th Mechanised Division" }
+		7 = { "7th Mechanised Division" }
+		8 = { "8th Mechanised Division" }
+		9 = { "9th Mechanised Division" }
+		10 = { "10th Mechanised Division" }
+		11 = { "11th Mechanised Division" }
+		12 = { "12th Mechanised Division" }
+		13 = { "13th Mechanised Division" }
+		14 = { "14th Mechanised Division" }
+		15 = { "15th Mechanised Division" }
+		16 = { "16th Mechanised Division" }
+		17 = { "17th Mechanised Division" }
+		18 = { "18th Mechanised Division" }
+		19 = { "19th Mechanised Division" }
+		51 = { "51st Mechanised Division" }
+	}
+}
+IRQ_INF_01 = 
+{
+	name = "Republic Guard Divisions"
+
+	for_countries = { IRQ }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry_unit" }
+
+	fallback_name = "%d Republican Guard Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st Republican Guard Division" }
+		2 = { "2nd Republican Guard Division" }
+		3 = { "3rd Republican Guard Division" }
+		4 = { "4th Republican Guard Division" }
+		5 = { "5th Republican Guard Division" }
+		6 = { "6th 'Nebuchadnezzer' Infantry Division" }
+		7 = { "7th 'Adnan' Infantry Division" }
+		8 = { "8th Republican Guard Division" }
+		9 = { "9th Republican Guard Division" }
+		10 = { "10th Republican Guard Division" }
+		11 = { "11th Republican Guard Division" }
+		12 = { "12th Republican Guard Division" }
+		13 = { "13th Republican Guard Division" }
+		14 = { "14th Republican Guard Division" }
+		15 = { "15th Republican Guard Division" }
+		16 = { "16th Republican Guard Division" }
+		17 = { "17th Republican Guard Division" }
+		18 = { "18th Republican Guard Division" }
+		19 = { "19th Republican Guard Division" }
+		20 = { "20th Republican Guard Division" }
+		21 = { "21st Republican Guard Division" }
+		22 = { "22nd Republican Guard Division" }
+		23 = { "23rd Republican Guard Division" }
+		24 = { "24th Republican Guard Division" }
+		25 = { "25th Republican Guard Division" }
+		26 = { "26th Republican Guard Division" }
+		27 = { "27th Republican Guard Division" }
+		28 = { "28th Republican Guard Division" }
+		29 = { "29th Republican Guard Division" }
+	}
+}

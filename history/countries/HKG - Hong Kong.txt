@@ -1,0 +1,22 @@
+﻿capital = 326
+
+set_research_slots = 2
+
+set_politics = {
+	ruling_party = reformed_communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 5
+	reformed_communism = 42
+	socialism = 11
+	liberalism = 32
+	democratic = 10
+}
+
+recruit_character = HKG_tung_chee-hwa
+
+add_ideas = china_aligned_nation

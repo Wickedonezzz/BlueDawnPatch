@@ -1,0 +1,331 @@
+##### NEED TO BE IN ALPHABETICAL ORDER#####
+
+music = {
+	name = "A_Song_About_Yuri_Gagarin"
+	file = "A_Song_About_Yuri_Gagarin.ogg"
+}
+music = {
+	name = "An_Escalation"
+	file = "An_Escalation.ogg"
+}
+music = {
+	name = "Another_Life_Extended"
+	file = "Another_life_(extended).ogg"
+}
+music = {
+	name = "Are_You_Satisfied"
+	file = "Are_You_Satisfied.ogg"
+}
+music = {
+	name = "At_The_Dangerous_Line"
+	file = "At_The_Dangerous_Line.ogg"
+}
+music = {
+	name = "Auferstanden_Aus_Ruinen"
+	file = "Auferstanden_Aus_Ruinen.ogg"
+}
+music = {
+	name = "Battle_Hymn_Of_The_Republic"
+	file = "Battle_Hymn_Of_The_Republic.ogg"
+}
+music = {
+	name = "Bento"
+	file = "Bento.ogg"
+}
+music = {
+	name = "Black_Hole_Sun"
+	file = "Black_Hole_Sun.ogg"
+}
+music = {
+	name = "Boulevard_Of_Broken_Dreams"
+	file = "Boulevard_Of_Broken_Dreams.ogg"
+}
+music = {
+	name = "BREEZIN"
+	file = "BREEZIN.ogg"
+}
+music = {
+	name = "Brush_Away"
+	file = "Brush_Away.ogg"
+}
+music = {
+	name = "Campaign_Brief"
+	file = "Campaign_Brief.ogg"
+}
+music = {
+	name = "Curse_Me_Good"
+	file = "Curse_Me_Good.ogg"
+}
+music = {
+	name = "Defcon_1"
+	file = "Defcon_1.ogg"
+}
+music = {
+	name = "Defcon_2"
+	file = "Defcon_2.ogg"
+}
+music = {
+	name = "Defcon_3"
+	file = "Defcon_3.ogg"
+}
+music = {
+	name = "Do_You_Want_To"
+	file = "Do_You_Want_To.ogg"
+}
+music = {
+	name = "Drops_Of_Jupiter"
+	file = "Drops_Of_Jupiter.ogg"
+}
+music = {
+	name = "Enjoy_The_Silence"
+	file = "Enjoy_The_Silence.ogg"
+}
+music = {
+	name = "Eto_Govorim_My"
+	file = "Eto_Govorim_My.ogg"
+}
+music = {
+	name = "Everybody_Wants_To_Rule_The_World_extended"
+	file = "Everybody_Wants_To_Rule_The_World_extended.ogg"
+}
+music = {
+	name = "Freestyle_Goodbye_Forever"
+	file = "Freestyle_Goodbye_Forever.ogg"
+}
+music = {
+	name = "Going_Back_To_My_Roots_12Version"
+	file = "Going_Back_To_My_Roots_(12' Version).ogg"
+}
+music = {
+	name = "Gruppa_Krovi"
+	file = "Gruppa_Krovi.ogg"
+}
+music = {
+	name = "Hey_Man_Nice_Shot"
+	file = "Hey_Man_Nice_Shot.ogg"
+}
+music = {
+	name = "Highwayman"
+	file = "Highwayman.ogg"
+}
+music = {
+	name = "In_A_Big_Country"
+	file = "In_A_Big_Country.ogg"
+}
+music = {
+	name = "In_The_Room_Where_You_Sleep"
+	file = "In_The_Room_Where_You_Sleep.ogg"
+}
+music = {
+	name = "Internationale"
+	file = "Internationale.ogg"
+}
+music = {
+	name = "Interstate_Love_Song"
+	file = "Interstate_Love_Song.ogg"
+}
+music = {
+	name = "Invincible_And_Legendary"
+	file = "Invincible_And_Legendary.ogg"
+}
+music = {
+	name = "It's_Our_Time_Our_Turn"
+	file = "It's_Our_Time_Our_turn.ogg"
+}
+music = {
+	name = "Karavan"
+	file = "Karavan.ogg"
+}
+music = {
+	name = "Kerber-Ratne_Igre"
+	file = "Kerber-Ratne_Igre.ogg"
+}
+music = {
+	name = "Kusin_Endalt_Nou"
+	file = "Kusin_Endalt_Nou.ogg"
+}
+music = {
+	name = "Lady_Hear_Me_Tonight"
+	file = "Lady_Hear_Me_Tonight.ogg"
+}
+music = {
+	name = "Lava"
+	file = "Lava.ogg"
+}
+music = {
+	name = "Made_In_the_USSR"
+	file = "Made_In_the_USSR.ogg"
+}
+
+music = {
+	name = "Matchbox"
+	file = "Matchbox.ogg"
+}
+music = {
+	name = "Modern_Talking-Who_Will_Save_The_World"
+	file = "Modern_Talking-Who_Will_Save_The_World.ogg"
+}
+music = {
+	name = "Mr._Blue_Sky"
+	file = "Mr._Blue_Sky.ogg"
+}
+music = {
+	name = "National_Anthem"
+	file = "National_Anthem.ogg"
+}
+music = {
+	name = "National_Anthem_of_Green_Libya"
+	file = "National_Anthem_of_Green_Libya.ogg"
+}
+music = {
+	name = "Nena_99_Luftballons"
+	file = "Nena_99_Luftballons.ogg"
+}
+music = {
+	name = "New_World_Order"
+	file = "New_World_Order.ogg"
+}
+music = {
+	name = "Old"
+	file = "Old.ogg"
+}
+music = {
+	name = "Owner_Of_A_Lonely_Heart_Extended"
+	file = "Owner_Of_A_Lonely_Heart_Extended.ogg"
+}
+music = {
+	name = "Plan_in_Motion"
+	file = "Plan_in_Motion.ogg"
+}
+music = {
+	name = "Polyushka_Polye"
+	file = "Polyushka_Polye.ogg"
+}
+music = {
+	name = "Prljavo_Kazaliste_Ne_Zovi_Mama_Doktora"
+	file = "Prljavo_Kazaliste_Ne_Zovi_Mama_Doktora.ogg"
+}
+music = {
+	name = "Sacred_War"
+	file = "Sacred_War.ogg"
+}
+music = {
+	name = "Seven_Nation_Army"
+	file = "Seven_Nation_Army.ogg"
+}
+music = {
+	name = "Shame_In_You"
+	file = "Shame_In_You.ogg"
+}
+music = {
+	name = "Short_Change_Hero"
+	file = "Short_Change_Hero.ogg"
+}
+music = {
+	name = "shotgun"
+	file = "Shotgun.ogg"
+}
+music = {
+	name = "Smash_Mouth_All_Star"
+	file = "Smash_Mouth_All_Star.ogg"
+}
+music = {
+	name = "Someday_Never_Comes"
+	file = "Someday_Never_Comes.ogg"
+}
+music = {
+	name = "Soviet_Anthem_Pop_Version"
+	file = "Soviet_Anthem_pop_version.ogg"
+}
+music = {
+	name = "Space_Forces"
+	file = "Space_Forces.ogg"
+}
+music = {
+	name = "Stop_This_Train"
+	file = "Stop_This_Train.ogg"
+}
+music = {
+	name = "Stone_The_Crow"
+	file = "Stone_The_Crow.ogg"
+}
+music = {
+	name = "Summer_Is_Ending"
+	file = "Summer_is_ending.ogg"
+}
+music = {
+	name = "Swallowing_Dust"
+	file = "Swallowing_Dust.ogg"
+}
+music = {
+	name = "Thats_Alright_Mama"
+	file = "Thats_Alright_Mama.ogg"
+}
+music = {
+	name = "The_Battle_Is_Going_Again"
+	file = "The_Battle_Is_Going_Again.ogg"
+}
+music = {
+	name = "The_Downeaster_Alexa"
+	file = "The_Downeaster_Alexa.ogg"
+}
+music = {
+	name = "The_Internationale_2000-Maxx_Klaxon"
+	file = "The_Internationale_2000-Maxx_Klaxon.ogg"
+}
+music = {
+	name = "The_Man_Who_Sold_The_World"
+	file = "The_Man_Who_Sold_The_World.ogg"
+}
+music = {
+	name = "The_Road_Runs_Far_There_Is_A_Lot_Of_Fun_Ahead"
+	file = "The_Road_Runs_Far_There_Is_A_Lot_Of_Fun_Ahead.ogg"
+}
+music = {
+	name = "The_Twentieth_Century_Is_Almost_Over"
+	file = "The_Twentieth_Century_Is_Almost_Over.ogg"
+}
+music = {
+	name = "This_Fffire"
+	file = "This_Fffire.ogg"
+}
+music = {
+	name = "Tie_A_Yellow_River_Round_The_Ole_Oak_Tree"
+	file = "Tie_A_Yellow_River_Round_The_Ole_Oak_Tree.ogg"
+}
+music = {
+	name = "To_Serve_Russia"
+	file = "To_Serve_Russia.ogg"
+}
+music = {
+	name = "Twilight_Zone"
+	file = "Twilight_Zone.ogg"
+}
+music = {
+	name = "Vasoline"
+	file = "Vasoline.ogg"
+}
+music = {
+	name = "Voices"
+	file = "Voices.ogg"
+}
+music = {
+	name = "Wake_Me_Up_When_September_Ends"
+	file = "Wake_Me_Up_When_September_Ends.ogg"
+}
+music = {
+	name = "Warsaw_Pact"
+	file = "Warsaw_Pact.ogg"
+}
+music = {
+	name = "What_Makes_A_Good_Man"
+	file = "What_Makes_A_Good_Man.ogg"
+}
+music = {
+	name = "What_You_Wont_Do_For_Love"
+	file = "What_You_Wont_Do_for_Love.ogg"
+}
+music = {
+	name = "Where_Is_The_Love"
+	file = "Where_Is_The_Love.ogg"
+}

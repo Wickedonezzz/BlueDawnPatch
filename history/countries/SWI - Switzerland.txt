@@ -1,0 +1,45 @@
+﻿capital = 3
+
+#oob = "SWI_1936"
+
+set_research_slots = 3
+
+set_technology = {
+	tech_support = 1
+	spaa_tank_1960 = 1
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		recon_vehicle_1960 = 1
+		recon_vehicle_1980 = 1
+		recon_vehicle_2000 = 1
+	}
+}
+
+recruit_character = SWI_federal_council
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 0
+	reformed_communism = 0
+	social_democracy = 36
+	liberalism = 27
+	democratic = 37
+	neutrality = 0
+	paternal_autocracy = 0
+	fascism = 0
+}
+
+set_stability = 0.85
+add_ideas = {
+	limited_conscription
+}

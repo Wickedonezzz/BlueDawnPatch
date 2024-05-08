@@ -1,0 +1,149 @@
+﻿capital = 921
+
+set_oob = "SAF_2000"
+set_air_oob = "SAF_2000_air"
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+
+	set_technology = {
+		attack_submarine_hull_1960 = 1
+	}
+}
+
+set_technology = {
+	infantry_weapons_1960 = 1
+	infantry_weapons_1980 = 1
+	support_weapons_1960 = 1
+	support_weapons_1980 = 1
+	support_weapons_1990 = 1
+	support_weapons_1995 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_tank_weapons_1980 = 1
+	infantry_anti_air_weapons_1960 = 1
+	paratrooper_tech_1960 = 1
+	marine_tech_1960 = 1
+	tech_support = 1
+	support_tech_engineers_1960 = 1
+	support_tech_militarypolice_1960 = 1
+	support_tech_recon_1960 = 1
+	tech_motorised_1960 = 1
+	tech_motorised_1980 = 1
+	tech_train_1960 = 1
+	mbt_tank_1960 = 1
+	mbt_tank_1970 = 1
+	mbt_tank_1980 = 1
+	tank_ammo_1960 = 1
+	tank_ammo_1970 = 1
+	ifv_tank_1970 = 1
+	ifv_anti_tank_missile_1 = 1
+	apc_tank_1960 = 1
+	apc_tank_1970 = 1
+	apc_tank_1980 = 1
+	apc_tank_1990 = 1
+	spaa_tank_1960 = 1
+	towed_artillery_1960 = 1
+	towed_artillery_1980 = 1
+	motorised_artillery_1960 = 1
+	motorised_artillery_1970 = 1
+	motorised_artillery_1980 = 1
+	motorised_artillery_1990 = 1
+	rocket_artillery_1960 = 1
+	rocket_artillery_1970 = 1
+	rocket_artillery_1980 = 1
+	tech_air_burst_shells = 1
+	tech_manoeuvre_tactics = 1
+	tech_artillery_guidance_systems_1 = 1
+	fighter_1960 = 1
+	fighter_1970 = 1
+	fighter_1980 = 1
+	fighter_1990 = 1
+	attacker_1960 = 1
+	attacker_1970 = 1
+	heli_transport_1960 = 1
+	heli_transport_1970 = 1
+	heli_transport_1990 = 1
+	drone_recon_1980 = 1
+	drone_recon_1990 = 1
+
+	tech_modern_manufacturing = 1
+	tech_containerisation = 1
+	tech_lean_manufacturing = 1
+	tech_modern_factories = 1
+	tech_digital_control = 1
+	tech_modern_construction = 1
+	tech_basic_resource_extraction = 1
+	tech_improved_resource_extraction = 1
+	tech_rotary_drilling = 1
+
+	computing_tech_1960 = 1
+	computing_tech_1980 = 1
+	radio_tech_1960 = 1
+	radio_tech_1980 = 1
+	naval_radar_1960 = 1
+	nuclear_research_tech = 1
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		recon_vehicle_1960 = 1
+		recon_vehicle_1980 = 1
+	}
+}
+
+set_stability = 0.6
+set_war_support = 0.1
+set_convoys = 25
+
+recruit_character = SAF_constand_viljoen
+recruit_character = SAF_constand_viljoen_general
+recruit_character = SAF_georg_meiring
+recruit_character = SAF_daniel_knobel
+recruit_character = SAF_johannes_geldenhuys
+recruit_character = SAF_roy_anderson
+recruit_character = SAF_parliament
+recruit_character = SAF_de_klerk
+recruit_character = SAF_robert_simpson-anderson
+recruit_character = SAF_john_retief
+recruit_character = SAF_thabo_mbeki
+recruit_character = SAF_marth
+recruit_character = SAF_lille
+recruit_character = SAF_buthelezi
+
+recruit_character = SAF_lewis
+recruit_character = SAF_hartzenberg
+recruit_character = SAF_mulder
+
+add_ideas = SAF_apartheid_idea
+add_ideas = SAF_military_state_idea
+add_ideas = SAF_anc_insurgency_idea
+add_ideas = SAF_overstretched_military_idea
+
+add_ideas = usa_aligned_nation
+
+set_variable = {anc_fight_strength = 90}
+
+country_lock_all_division_template = yes
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1994.5.17"
+	election_frequency = 60
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 5
+	fascism = 30
+    neutrality = 25
+	socialism = 35
+	communism = 5
+}
+
+# Naval Variants #
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "SAF_2000_naval_mtg"
+}

@@ -1,0 +1,18 @@
+characters = {
+
+	RAJ_atal_vajpayee = {
+		name = "Atal Bihari Vajpayee"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RAJ/Atal_Vajpayee.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

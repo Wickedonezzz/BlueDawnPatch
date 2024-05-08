@@ -1,0 +1,29 @@
+
+state={
+	id=923
+	name="STATE_923"
+
+	history={
+		owner = SAF
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+
+		}
+		add_core_of = SAF
+		add_core_of = ANC
+		add_core_of = SNF
+		add_core_of = OFS
+		victory_points = {
+			12648 10
+		}
+	}
+
+	provinces={
+		5231 12064 12648 13279 13280
+	}
+	manpower=2150000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

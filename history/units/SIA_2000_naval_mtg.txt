@@ -1,0 +1,66 @@
+units = {
+	fleet = {
+		name = "Kxng Reux Thiy"
+		naval_base = 7408 # Sattahip #
+		task_force = {
+			name = "Kxng Reux Phiwna Thiy"
+			location = 7408 # Sattahip #
+			ship = { name = "HTMS Chakri Naruebet" definition = carrier equipment = { carrier_hull_2 = { amount = 1 owner = SIA creator = SPR version_name = "Principe de Asturias Class" } } }
+
+			ship = { name = "HTMS Naresuan" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = SIA version_name = "Naresuan Class" } } }
+			ship = { name = "HTMS Taksin" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = SIA version_name = "Naresuan Class" } } }
+			ship = { name = "HTMS Phuttha Yotfa Chulalok" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = SIA creator = USA version_name = "Knox Class" } } }
+			ship = { name = "HTMS Phuttha Loetla Naphalai" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = SIA creator = USA version_name = "Knox Class" } } }
+			ship = { name = "HTMS Tachin" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = SIA creator = USA version_name = "Tacoma Class" } } }
+			ship = { name = "HTMS Prasae" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = SIA creator = USA version_name = "Tacoma Class" } } }
+			ship = { name = "HTMS Pin Clao" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = SIA creator = USA version_name = "Cannon Class" } } }
+			ship = { name = "HTMS Chao Phraya" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = SIA creator = PRC version_name = "Type 053HT Class" } } }
+			ship = { name = "HTMS Bangpakong" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = SIA creator = PRC version_name = "Type 053HT Class" } } }
+			ship = { name = "HTMS Kraburi" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = SIA creator = PRC version_name = "Type 053HTH Class" } } }
+			ship = { name = "HTMS Saiburi" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = SIA creator = PRC version_name = "Type 053HTH Class" } } }
+
+			ship = { name = "HTMS Rattanakosin" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SIA version_name = "Rattanakosin Class" } } }
+			ship = { name = "HTMS Sukhotai" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SIA version_name = "Rattanakosin Class" } } }
+			ship = { name = "HTMS Tapi" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = SIA version_name = "Tapi Class" } } }
+			ship = { name = "HTMS Khirirat" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = SIA version_name = "Tapi Class" } } }
+			ship = { name = "HTMS Makut Rajakumarn" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = SIA version_name = "Makut Rajakumarn Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+	# Corvette #
+	add_equipment_production = {
+		equipment = {
+			type = corvette_hull_3
+			creator = "SIA" 
+			version_name = "Hua Hin Class"
+		}
+		name = "HTMS Hua Hin"
+		requested_factories = 1
+		progress = 0.93
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = corvette_hull_3
+			creator = "SIA" 
+			version_name = "Hua Hin Class"
+		}
+		name = "HTMS Klaeng"
+		requested_factories = 1
+		progress = 0.72
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = corvette_hull_3
+			creator = "SIA" 
+			version_name = "Hua Hin Class"
+		}
+		name = "HTMS Si Racha"
+		requested_factories = 1
+		progress = 0.67
+		amount = 1
+	}
+}

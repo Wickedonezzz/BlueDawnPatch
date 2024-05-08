@@ -1,0 +1,102 @@
+add_namespace = usa_wienna
+
+#approach#
+country_event = {
+	id = usa_wienna.3
+	title = usa_wienna.3.t
+	desc = usa_wienna.3.d
+	picture = GFX_report_event_SOV_wienna_talks
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = usa_wienna.3.a
+			SOV = {
+		        country_event = {id = ussr_wienna.5}
+			}		
+	}
+
+	option = {
+		name = usa_wienna.3.b	
+			SOV = {
+		        country_event = {id = ussr_wienna.4}
+			}	
+	}
+}
+
+#treaty#
+country_event = {
+	id = usa_wienna.1
+	title = usa_wienna.1.t
+	desc = usa_wienna.1.d
+	picture = GFX_report_event_SOV_wienna_talks
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = usa_wienna.1.a
+			SOV = {
+		        country_event = {id = ussr_wienna.2}
+			}
+			add_ideas = SOV_mutual_trust		
+	}
+
+	option = {
+		name = usa_wienna.1.b	
+			SOV = {
+		        country_event = {id = ussr_wienna.1}
+			}	
+	}
+}
+
+#trade approach#
+country_event = {
+	id = usa_wienna.4
+	title = usa_wienna.4.t
+	desc = usa_wienna.4.d
+	picture = GFX_report_event_SOV_wienna_talks
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = usa_wienna.4.a
+			SOV = {
+		        country_event = {id = ussr_wienna.6}
+			}		
+	}
+
+	option = {
+		name = usa_wienna.4.b	
+			SOV = {
+		        country_event = {id = ussr_wienna.7}
+			}	
+	}
+}
+
+#salt3#
+country_event = {
+	id = usa_wienna.5
+	title = usa_wienna.5.t
+	desc = usa_wienna.5.d
+	picture = GFX_report_event_SOV_wienna_talks
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = usa_wienna.5.a
+			SOV = {
+		        country_event = {id = ussr_wienna.8}
+			}		
+	}
+
+	option = {
+		name = usa_wienna.5.b	
+			SOV = {
+		        country_event = {id = ussr_wienna.9}
+			}	
+	}
+}

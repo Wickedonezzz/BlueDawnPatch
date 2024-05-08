@@ -1,0 +1,300 @@
+scripted_gui = {
+
+	conflicts_map_gui = {
+		window_name = "conflicts_map_window"
+		context_type = player_context
+		parent_window_name = world_tension_popup
+
+		visible = {
+			always = yes
+		}
+		
+		properties = {
+			logo_gif = {
+				image = "[THIS.GetMapLogoGif]"
+			}
+		}
+		triggers = {
+			clock_1_visible = {
+				threat < 0.11
+			}
+			clock_2_visible = {
+				threat > 0.1
+				threat < 0.21
+			}
+			clock_3_visible = {
+				threat > 0.2
+				threat < 0.31
+			}
+			clock_4_visible = {
+				threat > 0.3
+				threat < 0.41
+			}
+			clock_5_visible = {
+				threat > 0.4
+				threat < 0.51
+			}
+			clock_6_visible = {
+				threat > 0.5
+				threat < 0.61
+			}
+			clock_7_visible = {
+				threat > 0.6
+				threat < 0.71
+			}
+			clock_8_visible = {
+				threat > 0.7
+				threat < 0.81
+			}
+			clock_9_visible = {
+				threat > 0.8
+				threat < 0.91
+			}
+			clock_10_visible = {
+				threat > 0.9
+			}
+			america_brazil2_visible = {
+				any_country = {
+					OR = {
+						any_owned_state = {
+							is_state_in_america_brazil = yes
+							NOT = { is_controlled_by = PREV }
+						}
+						capital_scope = { is_state_in_america_brazil = yes }
+					}
+					has_war = yes
+				}
+			}
+			america_central2_visible = {
+				any_country = {
+					OR = {
+						any_owned_state = {
+							is_state_in_america_central = yes
+							NOT = { is_controlled_by = PREV }
+						}
+						capital_scope = { is_state_in_america_central = yes }
+					}
+					has_war = yes
+				}
+			}
+			america_north2_visible = {
+				any_country = {
+					OR = {
+						any_owned_state = {
+							is_state_in_america_north = yes
+							NOT = { is_controlled_by = PREV }
+						}
+						capital_scope = { is_state_in_america_north = yes }
+					}
+					has_war = yes
+				}
+			}
+			america_south2_visible = {
+				any_country = {
+					OR = {
+						any_owned_state = {
+							is_state_in_america_south = yes
+							NOT = { is_controlled_by = PREV }
+						}
+						capital_scope = { is_state_in_america_south = yes }
+					}
+					has_war = yes
+				}
+			}
+			
+			africa_central2_visible = {
+				any_country = {
+					OR = {
+						any_owned_state = {
+							is_state_in_africa_central = yes
+							NOT = { is_controlled_by = PREV }
+						}
+						capital_scope = { is_state_in_africa_central = yes }
+					}
+					has_war = yes
+				}
+			}
+			africa_east2_visible = {
+				any_country = {
+					OR = {
+						any_owned_state = {
+							is_state_in_africa_east = yes
+							NOT = { is_controlled_by = PREV }
+						}
+						capital_scope = { is_state_in_africa_east = yes }
+					}
+					has_war = yes
+				}
+			}
+			africa_north2_visible = {
+				any_country = {
+					OR = {
+						any_owned_state = {
+							is_state_in_africa_north = yes
+							NOT = { is_controlled_by = PREV }
+						}
+						capital_scope = { is_state_in_africa_north = yes }
+					}
+					has_war = yes
+				}
+			}
+			africa_south2_visible = {
+				any_country = {
+					OR = {
+						any_owned_state = {
+							is_state_in_africa_south = yes
+							NOT = { is_controlled_by = PREV }
+						}
+						capital_scope = { is_state_in_africa_south = yes }
+					}
+					has_war = yes
+				}
+			}			
+			africa_west2_visible = {
+				any_country = {
+					OR = {
+						any_owned_state = {
+							is_state_in_africa_west = yes
+							NOT = { is_controlled_by = PREV }
+						}
+						capital_scope = { is_state_in_africa_west = yes }
+					}
+					has_war = yes
+				}
+			}
+			asia_east2_visible = {
+				any_country = {
+					OR = {
+						any_owned_state = {
+							is_state_in_asia_east = yes
+							NOT = { is_controlled_by = PREV }
+						}
+						capital_scope = { is_state_in_asia_east = yes }
+					}
+					has_war = yes
+				}
+			}
+			asia_south2_visible = {
+				any_country = {
+					OR = {
+						any_owned_state = {
+							is_state_in_asia_south = yes
+							NOT = { is_controlled_by = PREV }
+						}
+						capital_scope = { is_state_in_asia_south = yes }
+					}
+					has_war = yes
+				}
+			}
+			asia_south_east2_visible = {
+				any_country = {
+					OR = {
+						any_owned_state = {
+							is_state_in_asia_south_east = yes
+							NOT = { is_controlled_by = PREV }
+						}
+						capital_scope = { is_state_in_asia_south_east = yes }
+					}
+					has_war = yes
+				}
+			}			
+			asia_west2_visible = {
+				any_country = {
+					OR = {
+						any_owned_state = {
+							is_state_in_asia_west = yes
+							NOT = { is_controlled_by = PREV }
+						}
+						capital_scope = { is_state_in_asia_west = yes }
+					}
+					has_war = yes
+				}
+			}
+			europe_east2_visible = {
+				any_country = {
+					OR = {
+						any_owned_state = {
+							is_state_in_europe_east = yes
+							NOT = { is_controlled_by = PREV }
+						}
+						capital_scope = { is_state_in_europe_east = yes }
+					}
+					has_war = yes
+				}
+			}
+			europe_scandinavia2_visible = {
+				any_country = {
+					OR = {
+						any_owned_state = {
+							is_state_in_europe_scandinavia = yes
+							NOT = { is_controlled_by = PREV }
+						}
+						capital_scope = { is_state_in_europe_scandinavia = yes }
+					}
+					has_war = yes
+				}
+			}
+			europe_west2_visible = {
+				any_country = {
+					OR = {
+						any_owned_state = {
+							is_state_in_europe_west = yes
+							NOT = { is_controlled_by = PREV }
+						}
+						capital_scope = { is_state_in_europe_west = yes }
+					}
+					has_war = yes
+				}
+			}			
+			oceania2_visible = {
+				any_country = {
+					OR = {
+						any_owned_state = {
+							is_state_in_oceania = yes
+							NOT = { is_controlled_by = PREV }
+						}
+						capital_scope = { is_state_in_oceania = yes }
+					}
+					has_war = yes
+				}
+			}
+			russia_central2_visible = {
+				any_country = {
+					OR = {
+						any_owned_state = {
+							is_state_in_russia_central = yes
+							NOT = { is_controlled_by = PREV }
+						}
+						capital_scope = { is_state_in_russia_central = yes }
+					}
+					has_war = yes
+				}
+			}
+			russia_east2_visible = {
+				any_country = {
+					OR = {
+						any_owned_state = {
+							is_state_in_russia_east = yes
+							NOT = { is_controlled_by = PREV }
+						}
+						capital_scope = { is_state_in_russia_east = yes }
+					}
+					has_war = yes
+				}
+			}
+			russia_west2_visible = {
+				any_country = {
+					OR = {
+						any_owned_state = {
+							is_state_in_russia_west = yes
+							NOT = { is_controlled_by = PREV }
+						}
+						capital_scope = { is_state_in_russia_west = yes }
+					}
+					has_war = yes
+				}
+			}
+		}
+	}
+	
+}

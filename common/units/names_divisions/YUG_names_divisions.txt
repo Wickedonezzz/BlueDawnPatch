@@ -1,0 +1,220 @@
+﻿# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# If we run out of all historical names, the names will be assigned in the old way.
+#
+# Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
+#
+# for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
+#
+# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+#
+# division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template
+#                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
+#                  for example the current one is no longer available due to the can_use trigger saying so).
+#                  In automated choice, the division template must have at least 1 of the following types for it to be chosen.
+#
+# fallback_name - Is going to be used if we run out of the scripted historical names. If you want to use the old division naming
+#                 mechanics to be used for fallbacks, then just skip this option.
+#
+# unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
+#             this option is available here mainly for a mods.
+#
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
+#           Numbers can't repeat in one scope.
+#           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
+#           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
+#           1st argument = The name. It must contain either: 
+#                          %d (for decimal number placement)
+#                          %s (for string number placement - ROMAN numbers like XIV).
+#           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
+#                                      where you choose the historical division name.
+#           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
+#                                      the current game version.
+
+YUG_INF_01 = 
+{
+	name = "JNA Infantry"
+
+	for_countries = { YUG }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry_unit" }
+
+	fallback_name = "%d pešadije JNA"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st pešadije JNA" }
+		2 = { "2nd pešadije JNA" }
+		3 = { "3rd pešadije JNA" }
+		4 = { "4th pešadije JNA" }
+		5 = { "5th pešadije JNA" }
+		6 = { "6th pešadije JNA" }
+		7 = { "7th pešadije JNA" }
+		8 = { "8th pešadije JNA" }
+		9 = { "9th pešadije JNA" }
+		10 = { "10th pešadije JNA" }
+		11 = { "11th pešadije JNA" }
+		12 = { "12th pešadije JNA" }
+		13 = { "13th pešadije JNA" }
+		14 = { "14th pešadije JNA" }
+		15 = { "15th pešadije JNA" }
+		16 = { "16th pešadije JNA" }
+		17 = { "17th pešadije JNA" }
+		18 = { "18th pešadije JNA" }
+		19 = { "19th pešadije JNA" }
+		20 = { "20th pešadije JNA" }
+		21 = { "21th pešadije JNA" }
+		22 = { "22th pešadije JNA" }
+		23 = { "23th pešadije JNA" }
+		24 = { "24th pešadije JNA" }
+		25 = { "25th pešadije JNA" }
+		26 = { "26th pešadije JNA" }
+		27 = { "27th pešadije JNA" }
+		28 = { "28th pešadije JNA" }
+		29 = { "29th pešadije JNA" }
+	}
+}
+
+YUG_INF_02 = 
+{
+	name = "Milicija"
+
+	for_countries = { YUG }
+
+	can_use = { always = yes }
+
+	division_types = { "militia_unit" }
+
+	fallback_name = "%d Jedinica Milicija"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st Jedinica Milicija" }
+		2 = { "2nd Jedinica Milicija" }
+		3 = { "3rd Jedinica Milicija" }
+		4 = { "4th Jedinica Milicija" }
+		5 = { "5th D Jedinica Milicija" }
+		6 = { "6th D Jedinica Milicija" }
+		7 = { "7th D Jedinica Milicija" }
+		8 = { "8th D Jedinica Milicija" }
+		9 = { "9th D Jedinica Milicija" }
+		10 = { "10th D Jedinica Milicija" }
+		11 = { "11th D Jedinica Milicija" }
+		12 = { "12th D Jedinica Milicija" }
+		13 = { "13th D Jedinica Milicija" }
+		14 = { "14th D Jedinica Milicija" }
+		15 = { "15th D Jedinica Milicija" }
+		16 = { "16th D Jedinica Milicija" }
+		17 = { "17th D Jedinica Milicija" }
+		18 = { "18th D Jedinica Milicija" }
+		19 = { "19th D Jedinica Milicija" }
+		20 = { "20th D Jedinica Milicija" }
+		21 = { "21th D Jedinica Milicija" }
+		22 = { "22th D Jedinica Milicija" }
+		23 = { "23th D Jedinica Milicija" }
+		24 = { "24th D Jedinica Milicija" }
+		25 = { "25th D Jedinica Milicija" }
+		26 = { "26th D Jedinica Milicija" }
+		27 = { "27th D Jedinica Milicija" }
+		28 = { "28th D Jedinica Milicija" }
+		29 = { "29th D Jedinica Milicija" }
+	}
+}
+
+YUG_ARM_01 = 
+{
+	name = "Armored Division"
+
+	for_countries = { YUG }
+
+	can_use = { always = yes }
+
+	division_types = { "main_battle_tank_armor" }
+
+	fallback_name = "%d Oklopna divizija"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st Oklopna divizija" }
+		2 = { "2nd Oklopna divizija" }
+		3 = { "3rd Oklopna divizija" }
+		4 = { "4th Oklopna divizija" }
+		5 = { "5th Oklopna divizija" }
+		6 = { "6th Oklopna divizija" }
+		7 = { "7th Oklopna divizija" }
+		8 = { "8th Oklopna divizija" }
+		9 = { "9th Oklopna divizija" }
+		10 = { "10th Oklopna divizija" }
+		11 = { "11th Oklopna divizija" }
+		12 = { "12th Oklopna divizija" }
+		13 = { "13th Oklopna divizija" }
+		14 = { "14th Oklopna divizija" }
+		15 = { "15th Oklopna divizija" }
+		16 = { "16th Oklopna divizija" }
+		17 = { "17th Oklopna divizija" }
+		18 = { "18th Oklopna divizija" }
+		19 = { "19th Oklopna divizija" }
+		20 = { "20th Oklopna divizija" }
+		21 = { "21th Oklopna divizija" }
+		22 = { "22th Oklopna divizija" }
+		23 = { "23th Oklopna divizija" }
+		24 = { "24th Oklopna divizija" }
+		25 = { "25th Oklopna divizija" }
+		26 = { "26th Oklopna divizija" }
+		27 = { "27th Oklopna divizija" }
+		28 = { "28th Oklopna divizija" }
+		29 = { "29th Oklopna divizija" }
+	}
+}
+
+YUG_ARM_02 = 
+{
+	name = "Motorized Division"
+
+	for_countries = { YUG }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry_fighting_vehicle_armor" "heavy_infantry_unit" }
+
+	fallback_name = "%d Motorizovana divizija"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st Motorizovana divizija" }
+		2 = { "2nd Motorizovana divizija" }
+		3 = { "3rd Motorizovana divizija" }
+		4 = { "4th Motorizovana divizija" }
+		5 = { "5th Motorizovana divizija" }
+		6 = { "6th Motorizovana divizija" }
+		7 = { "7th Motorizovana divizija" }
+		8 = { "8th Motorizovana divizija" }
+		9 = { "9th Motorizovana divizija" }
+		10 = { "10th Motorizovana divizija" }
+		11 = { "11th Motorizovana divizija" }
+		12 = { "12th Motorizovana divizija" }
+		13 = { "13th Motorizovana divizija" }
+		14 = { "14th Motorizovana divizija" }
+		15 = { "15th Motorizovana divizija" }
+		16 = { "16th Motorizovana divizija" }
+		17 = { "17th Motorizovana divizija" }
+		18 = { "18th Motorizovana divizija" }
+		19 = { "19th Motorizovana divizija" }
+		20 = { "20th Motorizovana divizija" }
+		21 = { "21th Motorizovana divizija" }
+		22 = { "22th Motorizovana divizija" }
+		23 = { "23th Motorizovana divizija" }
+		24 = { "24th Motorizovana divizija" }
+		25 = { "25th Motorizovana divizija" }
+		26 = { "26th Motorizovana divizija" }
+		27 = { "27th Motorizovana divizija" }
+		28 = { "28th Motorizovana divizija" }
+		29 = { "29th Motorizovana divizija" }
+	}
+}

@@ -1,0 +1,174 @@
+guiTypes = {
+
+	
+	containerWindowType = {
+		name = "sov_party_factionalism_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 500 }
+		
+		instantTextBoxType = {
+			name ="sov_current_state_of_factionalism"
+			position = { x = 0 y = 0 }
+			font = "hoi_30header"
+			text = "sov_current_state_of_factionalism_loc"
+			format = center
+			maxHeight = 0
+			maxWidth = 500
+		}
+		
+		instantTextBoxType = {
+			name ="sov_current_gensec"
+			position = { x = 15 y = 25 }
+			font = "hoi_24header"
+			text = "sov_current_gensec_loc"
+			format = left
+			maxHeight = 0
+			maxWidth = 500
+		}
+		
+		iconType = {
+			name ="sov_hardliner_icon"
+			spriteType = "GFX_sov_hardliner_icon"
+			position = { x=100	 y=100 } 
+			pdx_tooltip = sov_hardliner_localisation_tt
+
+		}
+			
+		iconType = {
+			name ="sov_hardliner_hat_icon"
+			spriteType = "GFX_sov_hardliner_ruler_hat_icon"
+			position = { x=90 y=45 } 
+			pdx_tooltip = this_faction_rules_the_nation_hardliner
+
+		}
+
+		instantTextBoxType = {
+			name ="sov_hardliner_text"
+			position = { x = 110 y = 185 }
+			font = "hoi_18mbs"
+			text = "sov_hardliner_text_loc"
+			format = left
+			maxHeight = 0
+			maxWidth = 500
+		}
+		
+		instantTextBoxType = {
+			name ="sov_hardliner_influance_text"
+			position = { x = 138 y = 200 }
+			font = "hoi_18mbs"
+			text = "sov_hardliner_influance_text_loc"
+			format = left
+			maxHeight = 0
+			maxWidth = 500
+		}
+		
+		iconType = {
+			name ="sov_militarist_icon"
+			spriteType = "GFX_sov_army_icon"
+			position = { x=330	 y=95 } 
+			pdx_tooltip = sov_militarist_localisation_tt
+
+		}
+		
+		iconType = {
+			name ="sov_military_hat_icon"
+			spriteType = "GFX_sov_military_ruler_hat_icon"
+			position = { x=332 y=65 } 
+			pdx_tooltip = this_faction_rules_the_nation_military
+
+		}
+		
+		instantTextBoxType = {
+			name ="sov_militarist_text"
+			position = { x = 350 y = 185 }
+			font = "hoi_18mbs"
+			text = "sov_militarist_text_loc"
+			format = left
+			maxHeight = 0
+			maxWidth = 500
+		}
+		
+		instantTextBoxType = {
+			name ="sov_militarist_influance_text"
+			position = { x = 380 y = 200 }
+			font = "hoi_18mbs"
+			text = "sov_militarist_influance_text_loc"
+			format = left
+			maxHeight = 0
+			maxWidth = 500
+		}
+		
+		iconType = {
+			name ="sov_reformist_icon"
+			spriteType = "GFX_sov_reformist_icon"
+			position = { x=105	 y=295 } 
+			pdx_tooltip = sov_reformist_localisation_tt
+
+		}
+		
+		iconType = {
+			name ="sov_reformist_hat_icon"
+			spriteType = "GFX_sov_reformist_ruler_hat_icon"
+			position = { x=90 y=245 } 
+			pdx_tooltip = this_faction_rules_the_nation_reformist
+
+		}
+		
+		instantTextBoxType = {
+			name ="sov_reformist_text"
+			position = { x = 112 y = 385 }
+			font = "hoi_18mbs"
+			text = "sov_reformist_text_loc"
+			format = left
+			maxHeight = 0
+			maxWidth = 500
+		}
+		
+		instantTextBoxType = {
+			name ="sov_reformist_influance_text"
+			position = { x = 143 y = 400 }
+			font = "hoi_18mbs"
+			text = "sov_reformist_influance_text_loc"
+			format = left
+			maxHeight = 0
+			maxWidth = 500
+		}
+		
+		iconType = {
+			name ="sov_kgb_icon"
+			spriteType = "GFX_sov_kgb_icon"
+			position = { x=340	 y=265 } 
+			pdx_tooltip = sov_kgb_localisation_tt
+
+		}
+		
+		iconType = {
+			name ="sov_kgb_hat_icon"
+			spriteType = "GFX_sov_kgb_ruler_hat_icon"
+			position = { x=332 y=240 } 
+			pdx_tooltip = this_faction_rules_the_nation_kgb
+
+		}
+		
+		instantTextBoxType = {
+			name ="sov_kgb_text"
+			position = { x = 373 y = 385 }
+			font = "hoi_18mbs"
+			text = "sov_kgb_text_loc"
+			format = left
+			maxHeight = 0
+			maxWidth = 500
+		}
+		
+		instantTextBoxType = {
+			name ="sov_kgb_influance_text"
+			position = { x = 383 y = 400 }
+			font = "hoi_18mbs"
+			text = "sov_kgb_influance_text_loc"
+			format = left
+			maxHeight = 0
+			maxWidth = 500
+		}
+	}
+
+}

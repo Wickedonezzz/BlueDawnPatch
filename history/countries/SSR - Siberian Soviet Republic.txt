@@ -1,0 +1,34 @@
+﻿capital = 566
+
+set_technology = {
+	infantry_weapons_1960 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_air_weapons_1960 = 1
+	tech_support = 1
+	tech_motorised_1960 = 1
+	towed_artillery_1960 = 1
+	motorised_artillery_1960 = 1
+	rocket_artillery_1960 = 1
+	mbt_tank_1960 = 1
+	ifv_tank_1970 = 1
+	apc_tank_1960 = 1
+	heli_transport_1960 = 1
+	drone_recon_1980 = 1
+}
+
+
+recruit_character = SSR_viktor_anpilov
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	communism = 61
+	socialism = 12
+	reformed_communism = 22
+	social_democracy = 3
+	paternal_autocracy = 2
+}

@@ -1,0 +1,312 @@
+division_template = { # Infantry Division #
+	name = "Infantry Division"
+	division_names_group = GENERIC_INF_01
+
+  regiments = {
+		infantry_unit = { x = 0 y = 0 }
+		infantry_unit = { x = 0 y = 1 }
+		infantry_unit = { x = 0 y = 2 }
+		infantry_unit = { x = 0 y = 3 }
+		towed_artillery_unit = { x = 1 y = 0 }
+		towed_artillery_unit = { x = 1 y = 1 }
+        towed_artillery_unit = { x = 1 y = 2 }
+		towed_artillery_unit = { x = 1 y = 3 }
+	}
+	priority = 1
+}
+
+division_template = { # Infantry Division #
+	name = "Real Infantry Division"
+	division_names_group = GENERIC_INF_01
+
+  regiments = {
+		infantry_unit = { x = 0 y = 0 }
+		infantry_unit = { x = 0 y = 1 }
+		infantry_unit = { x = 0 y = 2 }
+		infantry_unit = { x = 0 y = 3 }
+		infantry_unit = { x = 1 y = 0 }
+		infantry_unit = { x = 1 y = 1 }
+        infantry_unit = { x = 1 y = 2 }
+		infantry_unit = { x = 1 y = 3 }
+	}
+	priority = 1
+}
+
+division_template = { # Infantry Division #
+	name = "Motorised Infantry Division"
+	division_names_group = GENERIC_INF_01
+
+  regiments = {
+		main_battle_tank_armor = { x = 0 y = 0 }
+		main_battle_tank_armor = { x = 0 y = 1 }
+		main_battle_tank_armor = { x = 0 y = 2 }
+		main_battle_tank_armor = { x = 0 y = 3 }
+		towed_artillery_unit = { x = 1 y = 0 }
+		towed_artillery_unit = { x = 1 y = 1 }
+        towed_artillery_unit = { x = 1 y = 2 }
+		towed_artillery_unit = { x = 1 y = 3 }
+	}
+	priority = 1
+}
+
+units = {
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 10297
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.75
+		}
+
+		division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 10297
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.75
+		}
+
+
+		division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 10297
+		division_template = "Real Infantry Division"
+		force_equipment_variants = {
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.75
+		}
+
+		division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 10297
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.75
+		}
+
+		division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 7329
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.75
+		}
+
+		division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 7329
+		division_template = "Real Infantry Division"
+		force_equipment_variants = {
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.75
+		}
+
+		division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 1208
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.75
+		}
+
+		division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 1208
+		division_template = "Real Infantry Division"
+		force_equipment_variants = {
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.75
+		}
+
+		division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 1208
+		division_template = "Real Infantry Division"
+		force_equipment_variants = {
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.75
+		}
+		
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 10297
+		division_template = "Motorised Infantry Division"
+		force_equipment_variants = {
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.75
+		}
+
+		division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 7329
+		division_template = "Motorised Infantry Division"
+		force_equipment_variants = {
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.75
+		}
+
+		division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 1208
+		division_template = "Motorised Infantry Division"
+		force_equipment_variants = {
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.75
+		}
+
+		division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 1364
+		division_template = "Motorised Infantry Division"
+		force_equipment_variants = {
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.75
+		}
+		
+		division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 1364
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.75
+		}
+
+	}
+
+instant_effect = {
+	# manpower #
+	add_manpower = 65000
+	# Stockpile #
+        add_equipment_to_stockpile = {
+		type = infantry_weapons_1
+		amount = 3500
+		producer = MAL
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 5000
+		producer = MAL
+	}
+
+	add_equipment_to_stockpile = {
+		type = mbt_tank_equipment_0
+		amount = 560
+		producer = MAL
+	}
+	add_equipment_to_stockpile = {
+		type = ifv_tank_equipment_0
+		amount = 140
+		producer = FRA
+	}
+	add_equipment_to_stockpile = {
+		type = ifv_tank_equipment_1
+		amount = 162
+		producer = BEL
+	}
+	add_equipment_to_stockpile = {
+		type = apc_tank_equipment_2
+		amount = 37
+		producer = FRA
+	}
+	add_equipment_to_stockpile = {
+		type = apc_tank_equipment_0
+		amount = 184
+		producer = SKR
+	}
+	add_equipment_to_stockpile = {
+		type = recon_vehicle_equipment_1
+		amount = 26
+		producer = ENG
+	}
+	add_equipment_to_stockpile = {
+		type = spaa_tank_equipment_0
+		amount = 150
+		producer = MAL
+	}
+	add_equipment_to_stockpile = {
+		type = towed_artillery_equipment_1
+		amount = 1340
+		producer = MAL
+	}
+	add_equipment_to_stockpile = {
+		type = heli_attack_equipment_0
+		amount = 11
+		producer = FRA
+	}
+}

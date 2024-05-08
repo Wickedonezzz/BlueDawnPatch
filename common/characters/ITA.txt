@@ -1,0 +1,122 @@
+characters = {
+
+	## Leaders ##
+
+	ITA_carlo_ciampi = {
+		name = "Carlo Ciampi"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ITA/Carlo_Ciampi.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	ITA_Massimo_DAlema = {
+		name = "Massimo D'Alema"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ITA/Massimo_DAlema.png"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	ITA_Fausto_Bertinotti = {
+		name = "Fausto Bertinotti"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ITA/Bertinotti.png"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}	
+	ITA_roberto_fiore = {
+		name = "Roberto Fiore"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ITA/Roberto_Fiore.dds"
+			}
+		}
+		country_leader = {
+			ideology = neo_nazism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	## Field Marshals ##
+
+	ITA_leonardo_marco = {
+		name = "Leonardo di Marco"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ITA/Leonardo_Marco.png"
+			}
+		}
+		field_marshal={
+			traits={ }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	## Generals ##
+
+	ITA_stefano_mannino = {
+		name = "Stefano Mannino"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ITA/Stefano_Mannino.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	## Admirals ##
+
+	ITA_donato_marzano = {
+		name = "Donato Marzano"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ITA/Donato_Marzano.png"
+			}
+		}
+		navy_leader={
+			traits={ }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=2
+			legacy_id=-1
+		}
+	}
+
+}

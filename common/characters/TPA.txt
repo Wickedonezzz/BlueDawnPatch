@@ -1,0 +1,18 @@
+characters = {
+
+	TPA_revolutionary_council = {
+		name = "Revolutionary Council"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/South_America/Revolutionary_Council.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

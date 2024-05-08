@@ -1,0 +1,25 @@
+ideas = {
+
+	country = {
+		
+		JAP_article_9 = {
+			name = JAP_article_9_name
+
+			removal_cost = -1
+
+			picture = JAP_article_9_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				custom_modifier_tooltip = cannot_do_shit_with_units
+			}
+
+		}
+		
+		
+	}
+
+}

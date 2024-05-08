@@ -1,0 +1,75 @@
+﻿air_wings = {
+	# Land Wings #
+	527 = {
+		# Fighters -- J-5, J-6, J-7, MiG-23, MiG-29
+		fighter_equipment_2 =  { # MiG-29 #
+			owner = "KOR" 
+			creator = SOV
+			amount = 46
+		}
+		fighter_equipment_1 =  { # MiG-23 #
+			owner = "KOR" 
+			creator = SOV
+			amount = 46
+		}
+		fighter_equipment_0 =  { # J-7, J-6, J-5 #
+			owner = "KOR" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-7, J-6, J-5 #
+			owner = "KOR" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-7, J-6, J-5 #
+			owner = "KOR" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-7, J-6, J-5 #
+			owner = "KOR" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-7, J-6, J-5 #
+			owner = "KOR" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-7, J-6, J-5 #
+			owner = "KOR" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-7, J-6, J-5 #
+			owner = "KOR" 
+			creator = PRC
+			amount = 49
+		}
+		fighter_equipment_0 =  { # J-7, J-6, J-5 #
+			owner = "KOR" 
+			creator = PRC
+			amount = 47
+		}
+
+		# Attackers -- Su-7, Su-25
+		attacker_equipment_2 =  { # Su-25 #
+			owner = "KOR" 
+			creator = SOV
+			amount = 35
+		}
+		attacker_equipment_0 =  { # Su-7 #
+			owner = "KOR" 
+			creator = SOV
+			amount = 18
+		}
+
+		# Transports -- An-24
+		transport_plane_equipment_1 =  { # An-24 #
+			owner = "KOR" 
+			creator = SOV
+			amount = 6
+		}
+	}
+}

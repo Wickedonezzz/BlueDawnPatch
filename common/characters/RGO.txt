@@ -1,0 +1,18 @@
+characters = {
+
+	RGO_Azarias_Ruberwa_Manywa = {
+		name = "Azarias Ruberwa Manywa"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RGO/Azarias_Ruberwa_Manywa.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

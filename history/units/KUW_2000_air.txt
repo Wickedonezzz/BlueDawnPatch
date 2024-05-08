@@ -1,0 +1,33 @@
+air_wings = {
+	# Land Wings #
+	656 = {
+		# Fighters -- F/A-18C/D, Mirage F1-CK/BK
+		carrier_fighter_equipment_2 =  { # F/A-18C/D #
+			owner = "KUW" 
+			creator = USA
+			amount = 40
+		}
+		fighter_equipment_1 =  { # Mirage F1-CK/BK #
+			owner = "KUW" 
+			creator = FRA
+			amount = 14
+		}
+		# Attackers -- Hawk 64, Shorts Tucano
+		attacker_equipment_2 =  { # Shorts Tucano #
+			owner = "KUW" 
+			creator = ENG
+			amount = 16
+		}
+		attacker_equipment_1 =  { # Hawk 64 #
+			owner = "KUW" 
+			creator = ENG
+			amount = 12
+		}
+		# Transports -- L-100-30, DC-9
+		transport_plane_equipment_1 =  {
+			owner = "KUW" 
+			creator = USA
+			amount = 4
+		}
+	}
+}

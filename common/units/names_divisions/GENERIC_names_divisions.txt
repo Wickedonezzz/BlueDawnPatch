@@ -1,0 +1,950 @@
+﻿GENERIC_MBT_01 = 
+{
+	name = "Armoured Divisions"
+
+	for_countries = { }
+
+	can_use = { always = yes }
+
+	division_types = { "main_battle_tank_armor" }
+
+	fallback_name = "%d Armoured Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st Armoured Division" }
+		2 = { "2nd Armoured Division" }
+		3 = { "3rd Armoured Division" }
+		4 = { "4th Armoured Division" }
+		5 = { "5th Armoured Division" }
+		6 = { "6th Armoured Division" }
+		7 = { "7th Armoured Division" }
+		8 = { "8th Armoured Division" }
+		9 = { "9th Armoured Division" }
+		10 = { "10th Armoured Division" }
+		11 = { "11th Armoured Division" }
+		12 = { "12th Armoured Division" }
+		13 = { "13th Armoured Division" }
+		14 = { "14th Armoured Division" }
+		15 = { "15th Armoured Division" }
+		16 = { "16th Armoured Division" }
+		17 = { "17th Armoured Division" }
+		18 = { "18th Armoured Division" }
+		19 = { "19th Armoured Division" }
+		20 = { "20th Armoured Division" }
+		21 = { "21st Armoured Division" }
+		22 = { "22nd Armoured Division" }
+		23 = { "23rd Armoured Division" }
+		24 = { "24th Armoured Division" }
+		25 = { "25th Armoured Division" }
+		26 = { "26th Armoured Division" }
+		27 = { "27th Armoured Division" }
+		28 = { "28th Armoured Division" }
+		29 = { "29th Armoured Division" }
+		30 = { "30th Armoured Division" }
+		31 = { "31st Armoured Division" }
+		32 = { "32nd Armoured Division" }
+		33 = { "33rd Armoured Division" }
+		34 = { "34th Armoured Division" }
+		35 = { "35th Armoured Division" }
+		36 = { "36th Armoured Division" }
+		37 = { "37th Armoured Division" }
+		38 = { "38th Armoured Division" }
+		39 = { "39th Armoured Division" }
+		40 = { "40th Armoured Division" }
+		41 = { "41st Armoured Division" }
+		42 = { "42nd Armoured Division" }
+		43 = { "43rd Armoured Division" }
+		44 = { "44th Armoured Division" }
+		45 = { "45th Armoured Division" }
+		46 = { "46th Armoured Division" }
+		47 = { "47th Armoured Division" }
+		48 = { "48th Armoured Division" }
+		49 = { "49th Armoured Division" }
+		50 = { "50th Armoured Division" }
+		51 = { "51st Armoured Division" }
+		52 = { "52nd Armoured Division" }
+		53 = { "53rd Armoured Division" }
+		54 = { "54th Armoured Division" }
+		55 = { "55th Armoured Division" }
+		56 = { "56th Armoured Division" }
+		57 = { "57th Armoured Division" }
+		58 = { "58th Armoured Division" }
+		59 = { "59th Armoured Division" }
+		60 = { "60th Armoured Division" }
+		61 = { "61st Armoured Division" }
+		62 = { "62nd Armoured Division" }
+		63 = { "63rd Armoured Division" }
+		64 = { "64th Armoured Division" }
+		65 = { "65th Armoured Division" }
+		66 = { "66th Armoured Division" }
+		67 = { "67th Armoured Division" }
+		68 = { "68th Armoured Division" }
+		69 = { "69th Armoured Division" }
+		70 = { "70th Armoured Division" }
+		71 = { "71st Armoured Division" }
+		72 = { "72nd Armoured Division" }
+		73 = { "73rd Armoured Division" }
+		74 = { "74th Armoured Division" }
+		75 = { "75th Armoured Division" }
+		76 = { "76th Armoured Division" }
+		77 = { "77th Armoured Division" }
+		78 = { "78th Armoured Division" }
+		79 = { "79th Armoured Division" }
+		80 = { "80th Armoured Division" }
+		81 = { "81st Armoured Division" }
+		82 = { "82nd Armoured Division" }
+		83 = { "83rd Armoured Division" }
+		84 = { "84th Armoured Division" }
+		85 = { "85th Armoured Division" }
+		86 = { "86th Armoured Division" }
+		87 = { "87th Armoured Division" }
+		88 = { "88th Armoured Division" }
+		89 = { "89th Armoured Division" }
+		90 = { "90th Armoured Division" }
+		91 = { "91st Armoured Division" }
+		92 = { "92nd Armoured Division" }
+		93 = { "93rd Armoured Division" }
+		94 = { "94th Armoured Division" }
+		95 = { "95th Armoured Division" }
+		96 = { "96th Armoured Division" }
+		97 = { "97th Armoured Division" }
+		98 = { "98th Armoured Division" }
+		99 = { "99th Armoured Division" }
+	}
+}
+GENERIC_MEC_01 = 
+{
+	name = "Mechanised Divisions"
+
+	for_countries = { }
+
+	can_use = { always = yes }
+
+	division_types = { "main_battle_tank_armor" "infantry_fighting_vehicle_armor" "heavy_infantry_unit" }
+
+	fallback_name = "%d Mechanised Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st Mechanised Division" }
+		2 = { "2nd Mechanised Division" }
+		3 = { "3rd Mechanised Division" }
+		4 = { "4th Mechanised Division" }
+		5 = { "5th Mechanised Division" }
+		6 = { "6th Mechanised Division" }
+		7 = { "7th Mechanised Division" }
+		8 = { "8th Mechanised Division" }
+		9 = { "9th Mechanised Division" }
+		10 = { "10th Mechanised Division" }
+		11 = { "11th Mechanised Division" }
+		12 = { "12th Mechanised Division" }
+		13 = { "13th Mechanised Division" }
+		14 = { "14th Mechanised Division" }
+		15 = { "15th Mechanised Division" }
+		16 = { "16th Mechanised Division" }
+		17 = { "17th Mechanised Division" }
+		18 = { "18th Mechanised Division" }
+		19 = { "19th Mechanised Division" }
+		20 = { "20th Mechanised Division" }
+		21 = { "21st Mechanised Division" }
+		22 = { "22nd Mechanised Division" }
+		23 = { "23rd Mechanised Division" }
+		24 = { "24th Mechanised Division" }
+		25 = { "25th Mechanised Division" }
+		26 = { "26th Mechanised Division" }
+		27 = { "27th Mechanised Division" }
+		28 = { "28th Mechanised Division" }
+		29 = { "29th Mechanised Division" }
+		30 = { "30th Mechanised Division" }
+		31 = { "31st Mechanised Division" }
+		32 = { "32nd Mechanised Division" }
+		33 = { "33rd Mechanised Division" }
+		34 = { "34th Mechanised Division" }
+		35 = { "35th Mechanised Division" }
+		36 = { "36th Mechanised Division" }
+		37 = { "37th Mechanised Division" }
+		38 = { "38th Mechanised Division" }
+		39 = { "39th Mechanised Division" }
+		40 = { "40th Mechanised Division" }
+		41 = { "41st Mechanised Division" }
+		42 = { "42nd Mechanised Division" }
+		43 = { "43rd Mechanised Division" }
+		44 = { "44th Mechanised Division" }
+		45 = { "45th Mechanised Division" }
+		46 = { "46th Mechanised Division" }
+		47 = { "47th Mechanised Division" }
+		48 = { "48th Mechanised Division" }
+		49 = { "49th Mechanised Division" }
+		50 = { "50th Mechanised Division" }
+		51 = { "51st Mechanised Division" }
+		52 = { "52nd Mechanised Division" }
+		53 = { "53rd Mechanised Division" }
+		54 = { "54th Mechanised Division" }
+		55 = { "55th Mechanised Division" }
+		56 = { "56th Mechanised Division" }
+		57 = { "57th Mechanised Division" }
+		58 = { "58th Mechanised Division" }
+		59 = { "59th Mechanised Division" }
+		60 = { "60th Mechanised Division" }
+		61 = { "61st Mechanised Division" }
+		62 = { "62nd Mechanised Division" }
+		63 = { "63rd Mechanised Division" }
+		64 = { "64th Mechanised Division" }
+		65 = { "65th Mechanised Division" }
+		66 = { "66th Mechanised Division" }
+		67 = { "67th Mechanised Division" }
+		68 = { "68th Mechanised Division" }
+		69 = { "69th Mechanised Division" }
+		70 = { "70th Mechanised Division" }
+		71 = { "71st Mechanised Division" }
+		72 = { "72nd Mechanised Division" }
+		73 = { "73rd Mechanised Division" }
+		74 = { "74th Mechanised Division" }
+		75 = { "75th Mechanised Division" }
+		76 = { "76th Mechanised Division" }
+		77 = { "77th Mechanised Division" }
+		78 = { "78th Mechanised Division" }
+		79 = { "79th Mechanised Division" }
+		80 = { "80th Mechanised Division" }
+		81 = { "81st Mechanised Division" }
+		82 = { "82nd Mechanised Division" }
+		83 = { "83rd Mechanised Division" }
+		84 = { "84th Mechanised Division" }
+		85 = { "85th Mechanised Division" }
+		86 = { "86th Mechanised Division" }
+		87 = { "87th Mechanised Division" }
+		88 = { "88th Mechanised Division" }
+		89 = { "89th Mechanised Division" }
+		90 = { "90th Mechanised Division" }
+		91 = { "91st Mechanised Division" }
+		92 = { "92nd Mechanised Division" }
+		93 = { "93rd Mechanised Division" }
+		94 = { "94th Mechanised Division" }
+		95 = { "95th Mechanised Division" }
+		96 = { "96th Mechanised Division" }
+		97 = { "97th Mechanised Division" }
+		98 = { "98th Mechanised Division" }
+		99 = { "99th Mechanised Division" }
+		100 = { "100th Mechanised Division" }
+		101 = { "101st Mechanised Division" }
+		102 = { "102nd Mechanised Division" }
+		103 = { "103rd Mechanised Division" }
+		104 = { "104th Mechanised Division" }
+		105 = { "105th Mechanised Division" }
+		106 = { "106th Mechanised Division" }
+		107 = { "107th Mechanised Division" }
+		108 = { "108th Mechanised Division" }
+		109 = { "109th Mechanised Division" }
+		110 = { "110th Mechanised Division" }
+		111 = { "111th Mechanised Division" }
+		112 = { "112th Mechanised Division" }
+		113 = { "113th Mechanised Division" }
+		114 = { "114th Mechanised Division" }
+		115 = { "115th Mechanised Division" }
+		116 = { "116th Mechanised Division" }
+		117 = { "117th Mechanised Division" }
+		118 = { "118th Mechanised Division" }
+		119 = { "119th Mechanised Division" }
+		120 = { "120th Mechanised Division" }
+		121 = { "121st Mechanised Division" }
+		122 = { "122nd Mechanised Division" }
+		123 = { "123rd Mechanised Division" }
+		124 = { "124th Mechanised Division" }
+		125 = { "125th Mechanised Division" }
+		126 = { "126th Mechanised Division" }
+		127 = { "127th Mechanised Division" }
+		128 = { "128th Mechanised Division" }
+		129 = { "129th Mechanised Division" }
+		130 = { "130th Mechanised Division" }
+		131 = { "131st Mechanised Division" }
+		132 = { "132nd Mechanised Division" }
+		133 = { "133rd Mechanised Division" }
+		134 = { "134th Mechanised Division" }
+		135 = { "135th Mechanised Division" }
+		136 = { "136th Mechanised Division" }
+		137 = { "137th Mechanised Division" }
+		138 = { "138th Mechanised Division" }
+		139 = { "139th Mechanised Division" }
+		140 = { "140th Mechanised Division" }
+		141 = { "141st Mechanised Division" }
+		142 = { "142nd Mechanised Division" }
+		143 = { "143rd Mechanised Division" }
+		144 = { "144th Mechanised Division" }
+		145 = { "145th Mechanised Division" }
+		146 = { "146th Mechanised Division" }
+		147 = { "147th Mechanised Division" }
+		148 = { "148th Mechanised Division" }
+		149 = { "149th Mechanised Division" }
+		150 = { "150th Mechanised Division" }
+		151 = { "151st Mechanised Division" }
+		152 = { "152nd Mechanised Division" }
+		153 = { "153rd Mechanised Division" }
+		154 = { "154th Mechanised Division" }
+		155 = { "155th Mechanised Division" }
+		156 = { "156th Mechanised Division" }
+		157 = { "157th Mechanised Division" }
+		158 = { "158th Mechanised Division" }
+		159 = { "159th Mechanised Division" }
+		160 = { "160th Mechanised Division" }
+		161 = { "161st Mechanised Division" }
+		162 = { "162nd Mechanised Division" }
+		163 = { "163rd Mechanised Division" }
+		164 = { "164th Mechanised Division" }
+		165 = { "165th Mechanised Division" }
+		166 = { "166th Mechanised Division" }
+		167 = { "167th Mechanised Division" }
+		168 = { "168th Mechanised Division" }
+		169 = { "169th Mechanised Division" }
+		170 = { "170th Mechanised Division" }
+		171 = { "171st Mechanised Division" }
+		172 = { "172nd Mechanised Division" }
+		173 = { "173rd Mechanised Division" }
+		174 = { "174th Mechanised Division" }
+		175 = { "175th Mechanised Division" }
+		176 = { "176th Mechanised Division" }
+		177 = { "177th Mechanised Division" }
+		178 = { "178th Mechanised Division" }
+		179 = { "179th Mechanised Division" }
+		180 = { "180th Mechanised Division" }
+		181 = { "181st Mechanised Division" }
+		182 = { "182nd Mechanised Division" }
+		183 = { "183rd Mechanised Division" }
+		184 = { "184th Mechanised Division" }
+		185 = { "185th Mechanised Division" }
+		186 = { "186th Mechanised Division" }
+		187 = { "187th Mechanised Division" }
+		188 = { "188th Mechanised Division" }
+		189 = { "189th Mechanised Division" }
+		190 = { "190th Mechanised Division" }
+		191 = { "191st Mechanised Division" }
+		192 = { "192nd Mechanised Division" }
+		193 = { "193rd Mechanised Division" }
+		194 = { "194th Mechanised Division" }
+		195 = { "195th Mechanised Division" }
+		196 = { "196th Mechanised Division" }
+		197 = { "197th Mechanised Division" }
+		198 = { "198th Mechanised Division" }
+		199 = { "199th Mechanised Division" }
+	}
+}
+GENERIC_INF_01 = 
+{
+	name = "Infantry Divisions"
+
+	for_countries = { }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry_unit" }
+
+	fallback_name = "%d Infantry Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st Infantry Division" }
+		2 = { "2nd Infantry Division" }
+		3 = { "3rd Infantry Division" }
+		4 = { "4th Infantry Division" }
+		5 = { "5th Infantry Division" }
+		6 = { "6th Infantry Division" }
+		7 = { "7th Infantry Division" }
+		8 = { "8th Infantry Division" }
+		9 = { "9th Infantry Division" }
+		10 = { "10th Infantry Division" }
+		11 = { "11th Infantry Division" }
+		12 = { "12th Infantry Division" }
+		13 = { "13th Infantry Division" }
+		14 = { "14th Infantry Division" }
+		15 = { "15th Infantry Division" }
+		16 = { "16th Infantry Division" }
+		17 = { "17th Infantry Division" }
+		18 = { "18th Infantry Division" }
+		19 = { "19th Infantry Division" }
+		20 = { "20th Infantry Division" }
+		21 = { "21st Infantry Division" }
+		22 = { "22nd Infantry Division" }
+		23 = { "23rd Infantry Division" }
+		24 = { "24th Infantry Division" }
+		25 = { "25th Infantry Division" }
+		26 = { "26th Infantry Division" }
+		27 = { "27th Infantry Division" }
+		28 = { "28th Infantry Division" }
+		29 = { "29th Infantry Division" }
+		30 = { "30th Infantry Division" }
+		31 = { "31st Infantry Division" }
+		32 = { "32nd Infantry Division" }
+		33 = { "33rd Infantry Division" }
+		34 = { "34th Infantry Division" }
+		35 = { "35th Infantry Division" }
+		36 = { "36th Infantry Division" }
+		37 = { "37th Infantry Division" }
+		38 = { "38th Infantry Division" }
+		39 = { "39th Infantry Division" }
+		40 = { "40th Infantry Division" }
+		41 = { "41st Infantry Division" }
+		42 = { "42nd Infantry Division" }
+		43 = { "43rd Infantry Division" }
+		44 = { "44th Infantry Division" }
+		45 = { "45th Infantry Division" }
+		46 = { "46th Infantry Division" }
+		47 = { "47th Infantry Division" }
+		48 = { "48th Infantry Division" }
+		49 = { "49th Infantry Division" }
+		50 = { "50th Infantry Division" }
+		51 = { "51st Infantry Division" }
+		52 = { "52nd Infantry Division" }
+		53 = { "53rd Infantry Division" }
+		54 = { "54th Infantry Division" }
+		55 = { "55th Infantry Division" }
+		56 = { "56th Infantry Division" }
+		57 = { "57th Infantry Division" }
+		58 = { "58th Infantry Division" }
+		59 = { "59th Infantry Division" }
+		60 = { "60th Infantry Division" }
+		61 = { "61st Infantry Division" }
+		62 = { "62nd Infantry Division" }
+		63 = { "63rd Infantry Division" }
+		64 = { "64th Infantry Division" }
+		65 = { "65th Infantry Division" }
+		66 = { "66th Infantry Division" }
+		67 = { "67th Infantry Division" }
+		68 = { "68th Infantry Division" }
+		69 = { "69th Infantry Division" }
+		70 = { "70th Infantry Division" }
+		71 = { "71st Infantry Division" }
+		72 = { "72nd Infantry Division" }
+		73 = { "73rd Infantry Division" }
+		74 = { "74th Infantry Division" }
+		75 = { "75th Infantry Division" }
+		76 = { "76th Infantry Division" }
+		77 = { "77th Infantry Division" }
+		78 = { "78th Infantry Division" }
+		79 = { "79th Infantry Division" }
+		80 = { "80th Infantry Division" }
+		81 = { "81st Infantry Division" }
+		82 = { "82nd Infantry Division" }
+		83 = { "83rd Infantry Division" }
+		84 = { "84th Infantry Division" }
+		85 = { "85th Infantry Division" }
+		86 = { "86th Infantry Division" }
+		87 = { "87th Infantry Division" }
+		88 = { "88th Infantry Division" }
+		89 = { "89th Infantry Division" }
+		90 = { "90th Infantry Division" }
+		91 = { "91st Infantry Division" }
+		92 = { "92nd Infantry Division" }
+		93 = { "93rd Infantry Division" }
+		94 = { "94th Infantry Division" }
+		95 = { "95th Infantry Division" }
+		96 = { "96th Infantry Division" }
+		97 = { "97th Infantry Division" }
+		98 = { "98th Infantry Division" }
+		99 = { "99th Infantry Division" }
+	}
+}
+GENERIC_INF_02 = 
+{
+	name = "Air Assault Divisions"
+
+	for_countries = { }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry_unit" }
+
+	fallback_name = "%d Air Assault Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st Air Assault Division" }
+		2 = { "2nd Air Assault Division" }
+		3 = { "3rd Air Assault Division" }
+		4 = { "4th Air Assault Division" }
+		5 = { "5th Air Assault Division" }
+		6 = { "6th Air Assault Division" }
+		7 = { "7th Air Assault Division" }
+		8 = { "8th Air Assault Division" }
+		9 = { "9th Air Assault Division" }
+		10 = { "10th Air Assault Division" }
+		11 = { "11th Air Assault Division" }
+		12 = { "12th Air Assault Division" }
+		13 = { "13th Air Assault Division" }
+		14 = { "14th Air Assault Division" }
+		15 = { "15th Air Assault Division" }
+		16 = { "16th Air Assault Division" }
+		17 = { "17th Air Assault Division" }
+		18 = { "18th Air Assault Division" }
+		19 = { "19th Air Assault Division" }
+		20 = { "20th Air Assault Division" }
+		21 = { "21st Air Assault Division" }
+		22 = { "22nd Air Assault Division" }
+		23 = { "23rd Air Assault Division" }
+		24 = { "24th Air Assault Division" }
+		25 = { "25th Air Assault Division" }
+		26 = { "26th Air Assault Division" }
+		27 = { "27th Air Assault Division" }
+		28 = { "28th Air Assault Division" }
+		29 = { "29th Air Assault Division" }
+		30 = { "30th Air Assault Division" }
+		31 = { "31st Air Assault Division" }
+		32 = { "32nd Air Assault Division" }
+		33 = { "33rd Air Assault Division" }
+		34 = { "34th Air Assault Division" }
+		35 = { "35th Air Assault Division" }
+		36 = { "36th Air Assault Division" }
+		37 = { "37th Air Assault Division" }
+		38 = { "38th Air Assault Division" }
+		39 = { "39th Air Assault Division" }
+		40 = { "40th Air Assault Division" }
+		41 = { "41st Air Assault Division" }
+		42 = { "42nd Air Assault Division" }
+		43 = { "43rd Air Assault Division" }
+		44 = { "44th Air Assault Division" }
+		45 = { "45th Air Assault Division" }
+		46 = { "46th Air Assault Division" }
+		47 = { "47th Air Assault Division" }
+		48 = { "48th Air Assault Division" }
+		49 = { "49th Air Assault Division" }
+		50 = { "50th Air Assault Division" }
+		51 = { "51st Air Assault Division" }
+		52 = { "52nd Air Assault Division" }
+		53 = { "53rd Air Assault Division" }
+		54 = { "54th Air Assault Division" }
+		55 = { "55th Air Assault Division" }
+		56 = { "56th Air Assault Division" }
+		57 = { "57th Air Assault Division" }
+		58 = { "58th Air Assault Division" }
+		59 = { "59th Air Assault Division" }
+		60 = { "60th Air Assault Division" }
+		61 = { "61st Air Assault Division" }
+		62 = { "62nd Air Assault Division" }
+		63 = { "63rd Air Assault Division" }
+		64 = { "64th Air Assault Division" }
+		65 = { "65th Air Assault Division" }
+		66 = { "66th Air Assault Division" }
+		67 = { "67th Air Assault Division" }
+		68 = { "68th Air Assault Division" }
+		69 = { "69th Air Assault Division" }
+		70 = { "70th Air Assault Division" }
+		71 = { "71st Air Assault Division" }
+		72 = { "72nd Air Assault Division" }
+		73 = { "73rd Air Assault Division" }
+		74 = { "74th Air Assault Division" }
+		75 = { "75th Air Assault Division" }
+		76 = { "76th Air Assault Division" }
+		77 = { "77th Air Assault Division" }
+		78 = { "78th Air Assault Division" }
+		79 = { "79th Air Assault Division" }
+		80 = { "80th Air Assault Division" }
+		81 = { "81st Air Assault Division" }
+		82 = { "82nd Air Assault Division" }
+		83 = { "83rd Air Assault Division" }
+		84 = { "84th Air Assault Division" }
+		85 = { "85th Air Assault Division" }
+		86 = { "86th Air Assault Division" }
+		87 = { "87th Air Assault Division" }
+		88 = { "88th Air Assault Division" }
+		89 = { "89th Air Assault Division" }
+		90 = { "90th Air Assault Division" }
+		91 = { "91st Air Assault Division" }
+		92 = { "92nd Air Assault Division" }
+		93 = { "93rd Air Assault Division" }
+		94 = { "94th Air Assault Division" }
+		95 = { "95th Air Assault Division" }
+		96 = { "96th Air Assault Division" }
+		97 = { "97th Air Assault Division" }
+		98 = { "98th Air Assault Division" }
+		99 = { "99th Air Assault Division" }
+	}
+}
+GENERIC_INF_03 = 
+{
+	name = "Mountain Divisions"
+
+	for_countries = { }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry_unit" }
+
+	fallback_name = "%d Mountain Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st Mountain Division" }
+		2 = { "2nd Mountain Division" }
+		3 = { "3rd Mountain Division" }
+		4 = { "4th Mountain Division" }
+		5 = { "5th Mountain Division" }
+		6 = { "6th Mountain Division" }
+		7 = { "7th Mountain Division" }
+		8 = { "8th Mountain Division" }
+		9 = { "9th Mountain Division" }
+		10 = { "10th Mountain Division" }
+		11 = { "11th Mountain Division" }
+		12 = { "12th Mountain Division" }
+		13 = { "13th Mountain Division" }
+		14 = { "14th Mountain Division" }
+		15 = { "15th Mountain Division" }
+		16 = { "16th Mountain Division" }
+		17 = { "17th Mountain Division" }
+		18 = { "18th Mountain Division" }
+		19 = { "19th Mountain Division" }
+		20 = { "20th Mountain Division" }
+		21 = { "21st Mountain Division" }
+		22 = { "22nd Mountain Division" }
+		23 = { "23rd Mountain Division" }
+		24 = { "24th Mountain Division" }
+		25 = { "25th Mountain Division" }
+		26 = { "26th Mountain Division" }
+		27 = { "27th Mountain Division" }
+		28 = { "28th Mountain Division" }
+		29 = { "29th Mountain Division" }
+		30 = { "30th Mountain Division" }
+		31 = { "31st Mountain Division" }
+		32 = { "32nd Mountain Division" }
+		33 = { "33rd Mountain Division" }
+		34 = { "34th Mountain Division" }
+		35 = { "35th Mountain Division" }
+		36 = { "36th Mountain Division" }
+		37 = { "37th Mountain Division" }
+		38 = { "38th Mountain Division" }
+		39 = { "39th Mountain Division" }
+		40 = { "40th Mountain Division" }
+		41 = { "41st Mountain Division" }
+		42 = { "42nd Mountain Division" }
+		43 = { "43rd Mountain Division" }
+		44 = { "44th Mountain Division" }
+		45 = { "45th Mountain Division" }
+		46 = { "46th Mountain Division" }
+		47 = { "47th Mountain Division" }
+		48 = { "48th Mountain Division" }
+		49 = { "49th Mountain Division" }
+		50 = { "50th Mountain Division" }
+		51 = { "51st Mountain Division" }
+		52 = { "52nd Mountain Division" }
+		53 = { "53rd Mountain Division" }
+		54 = { "54th Mountain Division" }
+		55 = { "55th Mountain Division" }
+		56 = { "56th Mountain Division" }
+		57 = { "57th Mountain Division" }
+		58 = { "58th Mountain Division" }
+		59 = { "59th Mountain Division" }
+		60 = { "60th Mountain Division" }
+		61 = { "61st Mountain Division" }
+		62 = { "62nd Mountain Division" }
+		63 = { "63rd Mountain Division" }
+		64 = { "64th Mountain Division" }
+		65 = { "65th Mountain Division" }
+		66 = { "66th Mountain Division" }
+		67 = { "67th Mountain Division" }
+		68 = { "68th Mountain Division" }
+		69 = { "69th Mountain Division" }
+		70 = { "70th Mountain Division" }
+		71 = { "71st Mountain Division" }
+		72 = { "72nd Mountain Division" }
+		73 = { "73rd Mountain Division" }
+		74 = { "74th Mountain Division" }
+		75 = { "75th Mountain Division" }
+		76 = { "76th Mountain Division" }
+		77 = { "77th Mountain Division" }
+		78 = { "78th Mountain Division" }
+		79 = { "79th Mountain Division" }
+		80 = { "80th Mountain Division" }
+		81 = { "81st Mountain Division" }
+		82 = { "82nd Mountain Division" }
+		83 = { "83rd Mountain Division" }
+		84 = { "84th Mountain Division" }
+		85 = { "85th Mountain Division" }
+		86 = { "86th Mountain Division" }
+		87 = { "87th Mountain Division" }
+		88 = { "88th Mountain Division" }
+		89 = { "89th Mountain Division" }
+		90 = { "90th Mountain Division" }
+		91 = { "91st Mountain Division" }
+		92 = { "92nd Mountain Division" }
+		93 = { "93rd Mountain Division" }
+		94 = { "94th Mountain Division" }
+		95 = { "95th Mountain Division" }
+		96 = { "96th Mountain Division" }
+		97 = { "97th Mountain Division" }
+		98 = { "98th Mountain Division" }
+		99 = { "99th Mountain Division" }
+	}
+}
+GENERIC_PAR_01 = 
+{
+	name = "Paratrooper Divisions"
+
+	for_countries = { }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper_unit" }
+
+	fallback_name = "%d Paratrooper Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st Paratrooper Division" }
+		2 = { "2nd Paratrooper Division" }
+		3 = { "3rd Paratrooper Division" }
+		4 = { "4th Paratrooper Division" }
+		5 = { "5th Paratrooper Division" }
+		6 = { "6th Paratrooper Division" }
+		7 = { "7th Paratrooper Division" }
+		8 = { "8th Paratrooper Division" }
+		9 = { "9th Paratrooper Division" }
+		10 = { "10th Paratrooper Division" }
+		11 = { "11th Paratrooper Division" }
+		12 = { "12th Paratrooper Division" }
+		13 = { "13th Paratrooper Division" }
+		14 = { "14th Paratrooper Division" }
+		15 = { "15th Paratrooper Division" }
+		16 = { "16th Paratrooper Division" }
+		17 = { "17th Paratrooper Division" }
+		18 = { "18th Paratrooper Division" }
+		19 = { "19th Paratrooper Division" }
+		20 = { "20th Paratrooper Division" }
+		21 = { "21st Paratrooper Division" }
+		22 = { "22nd Paratrooper Division" }
+		23 = { "23rd Paratrooper Division" }
+		24 = { "24th Paratrooper Division" }
+		25 = { "25th Paratrooper Division" }
+		26 = { "26th Paratrooper Division" }
+		27 = { "27th Paratrooper Division" }
+		28 = { "28th Paratrooper Division" }
+		29 = { "29th Paratrooper Division" }
+		30 = { "30th Paratrooper Division" }
+		31 = { "31st Paratrooper Division" }
+		32 = { "32nd Paratrooper Division" }
+		33 = { "33rd Paratrooper Division" }
+		34 = { "34th Paratrooper Division" }
+		35 = { "35th Paratrooper Division" }
+		36 = { "36th Paratrooper Division" }
+		37 = { "37th Paratrooper Division" }
+		38 = { "38th Paratrooper Division" }
+		39 = { "39th Paratrooper Division" }
+		40 = { "40th Paratrooper Division" }
+		41 = { "41st Paratrooper Division" }
+		42 = { "42nd Paratrooper Division" }
+		43 = { "43rd Paratrooper Division" }
+		44 = { "44th Paratrooper Division" }
+		45 = { "45th Paratrooper Division" }
+		46 = { "46th Paratrooper Division" }
+		47 = { "47th Paratrooper Division" }
+		48 = { "48th Paratrooper Division" }
+		49 = { "49th Paratrooper Division" }
+	}
+}
+GENERIC_MRN_01 = 
+{
+	name = "Marine Divisions"
+
+	for_countries = { }
+
+	can_use = { always = yes }
+
+	division_types = { "marine_unit" }
+
+	fallback_name = "%d Marine Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st Marine Division" }
+		2 = { "2nd Marine Division" }
+		3 = { "3rd Marine Division" }
+		4 = { "4th Marine Division" }
+		5 = { "5th Marine Division" }
+		6 = { "6th Marine Division" }
+		7 = { "7th Marine Division" }
+		8 = { "8th Marine Division" }
+		9 = { "9th Marine Division" }
+		10 = { "10th Marine Division" }
+		11 = { "11th Marine Division" }
+		12 = { "12th Marine Division" }
+		13 = { "13th Marine Division" }
+		14 = { "14th Marine Division" }
+		15 = { "15th Marine Division" }
+		16 = { "16th Marine Division" }
+		17 = { "17th Marine Division" }
+		18 = { "18th Marine Division" }
+		19 = { "19th Marine Division" }
+		20 = { "20th Marine Division" }
+		21 = { "21st Marine Division" }
+		22 = { "22nd Marine Division" }
+		23 = { "23rd Marine Division" }
+		24 = { "24th Marine Division" }
+		25 = { "25th Marine Division" }
+		26 = { "26th Marine Division" }
+		27 = { "27th Marine Division" }
+		28 = { "28th Marine Division" }
+		29 = { "29th Marine Division" }
+		30 = { "30th Marine Division" }
+		31 = { "31st Marine Division" }
+		32 = { "32nd Marine Division" }
+		33 = { "33rd Marine Division" }
+		34 = { "34th Marine Division" }
+		35 = { "35th Marine Division" }
+		36 = { "36th Marine Division" }
+		37 = { "37th Marine Division" }
+		38 = { "38th Marine Division" }
+		39 = { "39th Marine Division" }
+		40 = { "40th Marine Division" }
+		41 = { "41st Marine Division" }
+		42 = { "42nd Marine Division" }
+		43 = { "43rd Marine Division" }
+		44 = { "44th Marine Division" }
+		45 = { "45th Marine Division" }
+		46 = { "46th Marine Division" }
+		47 = { "47th Marine Division" }
+		48 = { "48th Marine Division" }
+		49 = { "49th Marine Division" }
+	}
+}
+GENERIC_ART_01 = 
+{
+	name = "Artillery Divisions"
+
+	for_countries = { }
+
+	can_use = { always = yes }
+
+	division_types = { "towed_artillery_unit" "motorised_artillery_unit" }
+
+	fallback_name = "%d Artillery Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st Artillery Division" }
+		2 = { "2nd Artillery Division" }
+		3 = { "3rd Artillery Division" }
+		4 = { "4th Artillery Division" }
+		5 = { "5th Artillery Division" }
+		6 = { "6th Artillery Division" }
+		7 = { "7th Artillery Division" }
+		8 = { "8th Artillery Division" }
+		9 = { "9th Artillery Division" }
+		10 = { "10th Artillery Division" }
+		11 = { "11th Artillery Division" }
+		12 = { "12th Artillery Division" }
+		13 = { "13th Artillery Division" }
+		14 = { "14th Artillery Division" }
+		15 = { "15th Artillery Division" }
+		16 = { "16th Artillery Division" }
+		17 = { "17th Artillery Division" }
+		18 = { "18th Artillery Division" }
+		19 = { "19th Artillery Division" }
+		20 = { "20th Artillery Division" }
+		21 = { "21st Artillery Division" }
+		22 = { "22nd Artillery Division" }
+		23 = { "23rd Artillery Division" }
+		24 = { "24th Artillery Division" }
+		25 = { "25th Artillery Division" }
+		26 = { "26th Artillery Division" }
+		27 = { "27th Artillery Division" }
+		28 = { "28th Artillery Division" }
+		29 = { "29th Artillery Division" }
+		30 = { "30th Artillery Division" }
+		31 = { "31st Artillery Division" }
+		32 = { "32nd Artillery Division" }
+		33 = { "33rd Artillery Division" }
+		34 = { "34th Artillery Division" }
+		35 = { "35th Artillery Division" }
+		36 = { "36th Artillery Division" }
+		37 = { "37th Artillery Division" }
+		38 = { "38th Artillery Division" }
+		39 = { "39th Artillery Division" }
+		40 = { "40th Artillery Division" }
+		41 = { "41st Artillery Division" }
+		42 = { "42nd Artillery Division" }
+		43 = { "43rd Artillery Division" }
+		44 = { "44th Artillery Division" }
+		45 = { "45th Artillery Division" }
+		46 = { "46th Artillery Division" }
+		47 = { "47th Artillery Division" }
+		48 = { "48th Artillery Division" }
+		49 = { "49th Artillery Division" }
+	}
+}
+GENERIC_ART_02 = 
+{
+	name = "Heavy Artillery Divisions"
+
+	for_countries = { }
+
+	can_use = { always = yes }
+
+	division_types = { "rocket_artillery_unit" }
+
+	fallback_name = "%d Heavy Artillery Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st Heavy Artillery Division" }
+		2 = { "2nd Heavy Artillery Division" }
+		3 = { "3rd Heavy Artillery Division" }
+		4 = { "4th Heavy Artillery Division" }
+		5 = { "5th Heavy Artillery Division" }
+		6 = { "6th Heavy Artillery Division" }
+		7 = { "7th Heavy Artillery Division" }
+		8 = { "8th Heavy Artillery Division" }
+		9 = { "9th Heavy Artillery Division" }
+		10 = { "10th Heavy Artillery Division" }
+		11 = { "11th Heavy Artillery Division" }
+		12 = { "12th Heavy Artillery Division" }
+		13 = { "13th Heavy Artillery Division" }
+		14 = { "14th Heavy Artillery Division" }
+		15 = { "15th Heavy Artillery Division" }
+		16 = { "16th Heavy Artillery Division" }
+		17 = { "17th Heavy Artillery Division" }
+		18 = { "18th Heavy Artillery Division" }
+		19 = { "19th Heavy Artillery Division" }
+	}
+}
+GENERIC_RCN_01 = 
+{
+	name = "Reconnaissance Divisions"
+
+	for_countries = { }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry_unit" "recon_vehicle_armor" }
+
+	fallback_name = "%d Reconnaissance Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st Reconnaissance Division" }
+		2 = { "2nd Reconnaissance Division" }
+		3 = { "3rd Reconnaissance Division" }
+		4 = { "4th Reconnaissance Division" }
+		5 = { "5th Reconnaissance Division" }
+		6 = { "6th Reconnaissance Division" }
+		7 = { "7th Reconnaissance Division" }
+		8 = { "8th Reconnaissance Division" }
+		9 = { "9th Reconnaissance Division" }
+		10 = { "10th Reconnaissance Division" }
+		11 = { "11th Reconnaissance Division" }
+		12 = { "12th Reconnaissance Division" }
+		13 = { "13th Reconnaissance Division" }
+		14 = { "14th Reconnaissance Division" }
+		15 = { "15th Reconnaissance Division" }
+		16 = { "16th Reconnaissance Division" }
+		17 = { "17th Reconnaissance Division" }
+		18 = { "18th Reconnaissance Division" }
+		19 = { "19th Reconnaissance Division" }
+	}
+}

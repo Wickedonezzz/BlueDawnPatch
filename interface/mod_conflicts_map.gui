@@ -1,0 +1,519 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "conflicts_map_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 100%% }
+		
+		containerWindowType	= { 
+			name = "doomsday_window"
+			position = { x = 585 y = 515}
+			
+			
+			containerWindowType	= { 
+				name = "doomsday_clock"
+				position = { x = 0 y = 0}
+				
+				iconType = {
+					name ="clock_1"
+					spriteType = "GFX_world_tension_icon_big_strip"
+					position = { x=0 y=0 } 
+					frame = 1
+				}
+				iconType = {
+					name ="clock_2"
+					spriteType = "GFX_world_tension_icon_big_strip"
+					position = { x=0 y=0 } 
+					frame = 2
+				}
+				iconType = {
+					name ="clock_3"
+					spriteType = "GFX_world_tension_icon_big_strip"
+					position = { x=0 y=0 } 
+					frame = 3
+				}
+				iconType = {
+					name ="clock_4"
+					spriteType = "GFX_world_tension_icon_big_strip"
+					position = { x=0 y=0 } 
+					frame = 4
+				}
+				iconType = {
+					name ="clock_5"
+					spriteType = "GFX_world_tension_icon_big_strip"
+					position = { x=0 y=0 } 
+					frame = 5
+				}
+				iconType = {
+					name ="clock_6"
+					spriteType = "GFX_world_tension_icon_big_strip"
+					position = { x=0 y=0 } 
+					frame = 6
+				}
+				iconType = {
+					name ="clock_7"
+					spriteType = "GFX_world_tension_icon_big_strip"
+					position = { x=0 y=0 } 
+					frame = 7
+				}
+				iconType = {
+					name ="clock_8"
+					spriteType = "GFX_world_tension_icon_big_strip"
+					position = { x=0 y=0 } 
+					frame = 8
+				}
+				iconType = {
+					name ="clock_9"
+					spriteType = "GFX_world_tension_icon_big_strip"
+					position = { x=0 y=0 } 
+					frame = 9
+				}
+				iconType = {
+					name ="clock_10"
+					spriteType = "GFX_world_tension_icon_big_strip"
+					position = { x=0 y=0 } 
+					frame = 10
+				}
+			}
+			containerWindowType	= { 
+				name = "doomsday_text"
+				position = { x = -7 y = 110}
+				scale = 0.2
+				
+				instantTextboxType = {
+					name = "active_conflict1"
+					position = {x=0 y=0}
+					font = "tahoma_60"
+					text = doomsday_minutes_get
+					maxWidth = 400
+					maxHeight = 23
+					format = center
+				}
+				instantTextboxType = {
+					name = "active_conflict2"
+					position = {x=0 y=0}
+					font = "tahoma_60"
+					text = doomsday_minutes_get
+					maxWidth = 400
+					maxHeight = 23
+					format = center
+				}
+				instantTextboxType = {
+					name = "active_conflict3"
+					position = {x=0 y=0}
+					font = "tahoma_60"
+					text = doomsday_minutes_get
+					maxWidth = 400
+					maxHeight = 23
+					format = center
+				}
+				instantTextboxType = {
+					name = "active_conflict4"
+					position = {x=0 y=0}
+					font = "tahoma_60"
+					text = doomsday_minutes_get
+					maxWidth = 400
+					maxHeight = 23
+					format = center
+				}
+				instantTextboxType = {
+					name = "active_conflict5"
+					position = {x=0 y=0}
+					font = "tahoma_60"
+					text = doomsday_minutes_get
+					maxWidth = 400
+					maxHeight = 23
+					format = center
+				}
+				instantTextboxType = {
+					name = "active_conflict6"
+					position = {x=0 y=0}
+					font = "tahoma_60"
+					text = doomsday_minutes_get
+					maxWidth = 400
+					maxHeight = 23
+					format = center
+				}
+				instantTextboxType = {
+					name = "active_conflict7"
+					position = {x=0 y=0}
+					font = "tahoma_60"
+					text = doomsday_minutes_get
+					maxWidth = 400
+					maxHeight = 23
+					format = center
+				}
+				instantTextboxType = {
+					name = "active_conflict8"
+					position = {x=0 y=0}
+					font = "tahoma_60"
+					text = doomsday_minutes_get
+					maxWidth = 400
+					maxHeight = 23
+					format = center
+				}
+				instantTextboxType = {
+					name = "active_conflict9"
+					position = {x=0 y=0}
+					font = "tahoma_60"
+					text = doomsday_minutes_get
+					maxWidth = 400
+					maxHeight = 23
+					format = center
+				}
+				
+			}
+			iconType = {
+				name ="logo_gif"
+				spriteType = "GFX_conflicts_map_logo_gif"
+				position = { x=-15 y=189 } 
+				scale = 0.80
+			}
+		}
+		
+		containerWindowType	= { 
+			name = "africa_central_window"
+			position = { x = 357 y = 282}
+			
+			iconType = {
+				name ="africa_central1"
+				spriteType = "GFX_conflicts_map_africa_central"
+				position = { x=0 y=0 } 
+				frame = 1
+			}
+			iconType = {
+				name ="africa_central2"
+				spriteType = "GFX_conflicts_map_africa_central"
+				position = { x=0 y=0 } 
+				frame = 2
+			}		
+		}
+		containerWindowType	= { 
+			name = "africa_east_window"
+			position = { x = 381 y = 274}
+			
+			iconType = {
+				name ="africa_east1"
+				spriteType = "GFX_conflicts_map_africa_east"
+				position = { x=0 y=0 } 
+				frame = 1
+			}
+			iconType = {
+				name ="africa_east2"
+				spriteType = "GFX_conflicts_map_africa_east"
+				position = { x=0 y=0 } 
+				frame = 2
+			}		
+		}
+		containerWindowType	= { 
+			name = "africa_north_window"
+			position = { x = 308 y = 241}
+			
+			iconType = {
+				name ="africa_north1"
+				spriteType = "GFX_conflicts_map_africa_north"
+				position = { x=0 y=0 } 
+				frame = 1
+			}
+			iconType = {
+				name ="africa_north2"
+				spriteType = "GFX_conflicts_map_africa_north"
+				position = { x=0 y=0 } 
+				frame = 2
+			}		
+		}
+		containerWindowType	= { 
+			name = "africa_south_window"
+			position = { x = 361 y = 331}
+			
+			iconType = {
+				name ="africa_south1"
+				spriteType = "GFX_conflicts_map_africa_south"
+				position = { x=0 y=0 } 
+				frame = 1
+			}
+			iconType = {
+				name ="africa_south2"
+				spriteType = "GFX_conflicts_map_africa_south"
+				position = { x=0 y=0 } 
+				frame = 2
+			}		
+		}
+		containerWindowType	= { 
+			name = "africa_west_window"
+			position = { x = 308 y = 276}
+			
+			iconType = {
+				name ="africa_west1"
+				spriteType = "GFX_conflicts_map_africa_west"
+				position = { x=0 y=0 } 
+				frame = 1
+			}
+			iconType = {
+				name ="africa_west2"
+				spriteType = "GFX_conflicts_map_africa_west"
+				position = { x=0 y=0 } 
+				frame = 2
+			}		
+		}
+		
+		containerWindowType	= { 
+			name = "america_brazil_window"
+			position = { x = 207 y = 302}
+			
+			iconType = {
+				name ="america_brazil1"
+				spriteType = "GFX_conflicts_map_america_brazil"
+				position = { x=0 y=0 } 
+				frame = 1
+			}
+			iconType = {
+				name ="america_brazil2"
+				spriteType = "GFX_conflicts_map_america_brazil"
+				position = { x=0 y=0 } 
+				frame = 2
+			}		
+		}
+		containerWindowType	= { 
+			name = "america_central_window"
+			position = { x =114 y = 250}
+			
+			iconType = {
+				name ="america_central1"
+				spriteType = "GFX_conflicts_map_america_central"
+				position = { x=0 y=0 } 
+				frame = 1
+			}
+			iconType = {
+				name ="america_central2"
+				spriteType = "GFX_conflicts_map_america_central"
+				position = { x=0 y=0 } 
+				frame = 2
+			}		
+		}
+		containerWindowType	= { 
+			name = "america_south_window"
+			position = { x =188 y = 318}
+			
+			iconType = {
+				name ="america_south1"
+				spriteType = "GFX_conflicts_map_america_south"
+				position = { x=0 y=0 } 
+				frame = 1
+			}
+			iconType = {
+				name ="america_south2"
+				spriteType = "GFX_conflicts_map_america_south"
+				position = { x=0 y=0 } 
+				frame = 2
+			}		
+		}
+		containerWindowType	= { 
+			name = "america_north_window"
+			position = { x = 27 y = 100}
+			
+			iconType = {
+				name ="america_north1"
+				spriteType = "GFX_conflicts_map_america_north"
+				position = { x=0 y=0 } 
+				frame = 1
+			}
+			iconType = {
+				name ="america_north2"
+				spriteType = "GFX_conflicts_map_america_north"
+				position = { x=0 y=0 } 
+				frame = 2
+			}		
+		}
+		
+		containerWindowType	= { 
+			name = "asia_east_window"
+			position = { x = 477 y = 198}
+			
+			iconType = {
+				name ="asia_east1"
+				spriteType = "GFX_conflicts_map_asia_east"
+				position = { x=0 y=0 } 
+				frame = 1
+			}
+			iconType = {
+				name ="asia_east2"
+				spriteType = "GFX_conflicts_map_asia_east"
+				position = { x=0 y=0 } 
+				frame = 2
+			}		
+		}
+		containerWindowType	= { 
+			name = "asia_south_window"
+			position = { x = 456 y = 240}
+			
+			iconType = {
+				name ="asia_south1"
+				spriteType = "GFX_conflicts_map_asia_south"
+				position = { x=0 y=0 } 
+				frame = 1
+			}
+			iconType = {
+				name ="asia_south2"
+				spriteType = "GFX_conflicts_map_asia_south"
+				position = { x=0 y=0 } 
+				frame = 2
+			}		
+		}
+		containerWindowType	= { 
+			name = "asia_south_east_window"
+			position = { x = 511 y = 259}
+			
+			iconType = {
+				name ="asia_south_east1"
+				spriteType = "GFX_conflicts_map_asia_south_east"
+				position = { x=0 y=0 } 
+				frame = 1
+			}
+			iconType = {
+				name ="asia_south_east2"
+				spriteType = "GFX_conflicts_map_asia_south_east"
+				position = { x=0 y=0 } 
+				frame = 2
+			}		
+		}
+		containerWindowType	= { 
+			name = "asia_west_window"
+			position = { x = 389 y = 230}
+			
+			iconType = {
+				name ="asia_west1"
+				spriteType = "GFX_conflicts_map_asia_west"
+				position = { x=0 y=0 } 
+				frame = 1
+			}
+			iconType = {
+				name ="asia_west2"
+				spriteType = "GFX_conflicts_map_asia_west"
+				position = { x=0 y=0 } 
+				frame = 2
+			}		
+		}
+		containerWindowType	= { 
+			name = "europe_east_window"
+			position = { x = 361 y = 198}
+			
+			iconType = {
+				name ="europe_east1"
+				spriteType = "GFX_conflicts_map_europe_east"
+				position = { x=0 y=0 } 
+				frame = 1
+			}
+			iconType = {
+				name ="europe_east2"
+				spriteType = "GFX_conflicts_map_europe_east"
+				position = { x=0 y=0 } 
+				frame = 2
+			}		
+		}
+		containerWindowType	= { 
+			name = "europe_scandinavia_window"
+			position = { x = 292 y = 113}
+			
+			iconType = {
+				name ="europe_scandinavia1"
+				spriteType = "GFX_conflicts_map_europe_scandinavia"
+				position = { x=0 y=0 } 
+				frame = 1
+			}
+			iconType = {
+				name ="europe_scandinavia2"
+				spriteType = "GFX_conflicts_map_europe_scandinavia"
+				position = { x=0 y=0 } 
+				frame = 2
+			}		
+		}
+		containerWindowType	= { 
+			name = "europe_west_window"
+			position = { x = 320 y = 189}
+			
+			iconType = {
+				name ="europe_west1"
+				spriteType = "GFX_conflicts_map_europe_west"
+				position = { x=0 y=0 } 
+				frame = 1
+			}
+			iconType = {
+				name ="europe_west2"
+				spriteType = "GFX_conflicts_map_europe_west"
+				position = { x=0 y=0 } 
+				frame = 2
+			}		
+		}
+		
+		containerWindowType	= { 
+			name = "oceania_window"
+			position = { x = 552 y = 335}
+			
+			iconType = {
+				name ="oceania1"
+				spriteType = "GFX_conflicts_map_oceania"
+				position = { x=0 y=0 } 
+				frame = 1
+			}
+			iconType = {
+				name ="oceania2"
+				spriteType = "GFX_conflicts_map_oceania"
+				position = { x=0 y=0 } 
+				frame = 2
+			}		
+		}
+		containerWindowType	= { 
+			name = "russia_central_window"
+			position = { x = 432 y = 111}
+			
+			iconType = {
+				name ="russia_central1"
+				spriteType = "GFX_conflicts_map_russia_central"
+				position = { x=0 y=0 } 
+				frame = 1
+			}
+			iconType = {
+				name ="russia_central2"
+				spriteType = "GFX_conflicts_map_russia_central"
+				position = { x=0 y=0 } 
+				frame = 2
+			}		
+		}
+		containerWindowType	= { 
+			name = "russia_east_window"
+			position = { x = 502 y = 132}
+			
+			iconType = {
+				name ="russia_east1"
+				spriteType = "GFX_conflicts_map_russia_east"
+				position = { x=0 y=0 } 
+				frame = 1
+			}
+			iconType = {
+				name ="russia_east2"
+				spriteType = "GFX_conflicts_map_russia_east"
+				position = { x=0 y=0 } 
+				frame = 2
+			}		
+		}
+		containerWindowType	= { 
+			name = "russia_west_window"
+			position = { x = 377 y = 109}
+			
+			iconType = {
+				name ="russia_west1"
+				spriteType = "GFX_conflicts_map_russia_west"
+				position = { x=0 y=0 } 
+				frame = 1
+			}
+			iconType = {
+				name ="russia_west2"
+				spriteType = "GFX_conflicts_map_russia_west"
+				position = { x=0 y=0 } 
+				frame = 2
+			}		
+		}
+
+	}
+}

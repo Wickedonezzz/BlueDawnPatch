@@ -1,0 +1,488 @@
+﻿capital = 282
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+
+	set_technology = {
+		destroyer_hull_1960 = 1
+		destroyer_hull_1980 = 1
+		destroyer_hull_1990 = 1
+		attack_submarine_hull_1960 = 1
+		attack_submarine_hull_1980 = 1
+		attack_submarine_hull_1990 = 1
+	}
+}
+set_technology = {
+	infantry_weapons_1960 = 1
+	infantry_weapons_1980 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_tank_weapons_1980 = 1
+	infantry_anti_air_weapons_1960 = 1
+	tech_support = 1
+	tech_motorised_1960 = 1
+	tech_train_1960 = 1
+	mbt_tank_1960 = 1
+	mbt_tank_1970 = 1
+	mbt_tank_1980 = 1
+	mbt_tank_1990 = 1
+	ifv_tank_1970 = 1
+	ifv_tank_1980 = 1
+	ifv_tank_1990 = 1
+	apc_tank_1960 = 1
+	apc_tank_1970 = 1
+	apc_tank_1980 = 1
+	spaa_tank_1960 = 1
+	spaa_tank_1980 = 1
+	towed_artillery_1960 = 1
+	motorised_artillery_1960 = 1
+	motorised_artillery_1970 = 1
+	rocket_artillery_1960 = 1
+	attacker_1960 = 1
+	attacker_1970 = 1
+	heli_transport_1960 = 1
+	heli_attack_1970 = 1
+	support_tech_engineers_1960 = 1
+	support_tech_militarypolice_1960 = 1
+	support_tech_hospital_1960 = 1
+	support_tech_maintenance_1960 = 1
+	support_tech_logistics_1960 = 1
+	support_tech_recon_1960 = 1
+	naval_transport_1960 = 1
+		naval_transport_1980 = 1
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		recon_vehicle_1960 = 1
+		recon_vehicle_1980 = 1
+	}
+}
+
+set_oob = "JAP_2000"
+set_air_oob = "JAP_2000_air"
+
+set_stability = 0.2
+set_war_support = 0.8
+
+set_research_slots = 4
+
+set_convoys = 200
+recruit_character = JAP_Kazuo_Shii
+recruit_character = JAP_keizō_obuchi
+recruit_character = JAP_yoshiro_mori
+recruit_character = JAP_tetsuzo_fuwa
+recruit_character = JAP_junichiro_koizumi
+recruit_character = JAP_takenori_kanzaki
+recruit_character = JAP_Ryutaro_Hashimoto
+recruit_character = JAP_Naoto_Kan 
+recruit_character = JAP_Yukio_Hatoyama
+
+
+add_ideas = JAP_article_9
+
+add_ideas = usa_aligned_nation
+
+add_ideas = volunteer_only
+
+country_lock_all_division_template = yes
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 0
+	socialism = 12
+	social_democracy = 4
+	liberalism = 27
+	democratic = 47
+	neutrality = 0
+	paternal_autocracy = 0
+	fascism = 10
+}
+
+# Naval Variants #
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "JAP_2000_naval_mtg"
+
+	# Attack Submarines #
+	create_equipment_variant = {
+		name = "Yushio Class"
+		type = attack_submarine_hull_1
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = sub_electrical_systems_1
+			fixed_ship_engine_slot = sub_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_2
+			custom_ship_torpedo_slot = ship_torpedo_sub_2
+			custom_slot_1 = ship_torpedo_sub_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Harushio Class"
+		type = attack_submarine_hull_1
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = sub_electrical_systems_3
+			fixed_ship_engine_slot = sub_engine_diesel_3
+			fixed_ship_sonar_slot = sub_sonar_2
+			custom_ship_torpedo_slot = ship_torpedo_sub_2
+			custom_slot_1 = ship_torpedo_sub_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Oyashio Class"
+		type = attack_submarine_hull_3
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = sub_electrical_systems_3
+			fixed_ship_engine_slot = sub_engine_diesel_3
+			fixed_ship_sonar_slot = sub_sonar_3
+			custom_ship_torpedo_slot = ship_torpedo_sub_2
+			custom_slot_1 = ship_torpedo_sub_1
+			custom_slot_2 = empty
+		}
+		obsolete = no
+	}
+
+	# Frigates #
+	create_equipment_variant = {
+		name = "Chikugo Class"
+		type = destroyer_hull_1
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = anti_air_1
+			fixed_ship_defensive_slot_2 = empty
+			fixed_ship_aviation_slot = empty
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = aswrl_1
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = empty
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Ishikari Class"
+		type = destroyer_hull_2
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = small_surface_engine_diesel_2
+			fixed_ship_sonar_slot = sub_sonar_2
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = empty
+			fixed_ship_defensive_slot_2 = empty
+			fixed_ship_aviation_slot = empty
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = cruise_missile_2
+			custom_slot_4 = aswrl_1
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Yubari Class"
+		type = destroyer_hull_2
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = small_surface_engine_diesel_2
+			fixed_ship_sonar_slot = sub_sonar_2
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = empty
+			fixed_ship_defensive_slot_2 = empty
+			fixed_ship_aviation_slot = empty
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = cruise_missile_2
+			custom_slot_4 = aswrl_1
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Abukuma Class"
+		type = destroyer_hull_3
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = small_surface_engine_diesel_3
+			fixed_ship_sonar_slot = sub_sonar_2
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = ciws_1
+			fixed_ship_defensive_slot_2 = empty
+			fixed_ship_aviation_slot = empty
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = cruise_missile_2
+			custom_slot_4 = aswrl_1
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = no
+	}
+
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Yamagumo Class"
+		type = destroyer_hull_1
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = empty
+			fixed_ship_defensive_slot_2 = empty
+			fixed_ship_aviation_slot = empty
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = aswrl_1
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = empty
+			custom_slot_4 = aswrl_1
+			custom_ship_rear_cannon_slot = naval_gun_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Takatsuki Class"
+		type = destroyer_hull_1
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = empty
+			fixed_ship_defensive_slot_2 = empty
+			fixed_ship_aviation_slot = empty
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = aswrl_1
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = empty
+			custom_slot_4 = aswrl_1
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Haruna Class"
+		type = destroyer_hull_1
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = sam_missile_2
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = aswrl_1
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = empty
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = naval_gun_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Tachikaze Class"
+		type = destroyer_hull_1
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = sam_missile_1
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = empty
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = aswrl_1
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = empty
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Shirane Class"
+		type = destroyer_hull_1
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_2
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = sam_missile_2
+			fixed_ship_defensive_slot_2 = empty
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = aswrl_1
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = empty
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = naval_gun_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Hatsuyuki Class"
+		type = destroyer_hull_2
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_2
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = sam_missile_2
+			fixed_ship_defensive_slot_2 = empty
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = cruise_missile_2
+			custom_slot_4 = aswrl_1
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Hatakaze Class"
+		type = destroyer_hull_2
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = small_surface_engine_diesel_2
+			fixed_ship_sonar_slot = sub_sonar_2
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = sam_missile_1
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = cruise_missile_2
+			custom_slot_4 = aswrl_1
+			custom_ship_rear_cannon_slot = naval_gun_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Asagiri Class"
+		type = destroyer_hull_2
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = small_surface_engine_diesel_2
+			fixed_ship_sonar_slot = sub_sonar_2
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = sam_missile_2
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = cruise_missile_2
+			custom_slot_4 = aswrl_1
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Kongo Class"
+		type = destroyer_hull_3
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_3
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_3
+			fixed_ship_radar_slot = ship_radar_3
+			fixed_ship_defensive_slot_1 = sam_missile_2
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = cruise_missile_2
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Murasame Class"
+		type = destroyer_hull_3
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_3
+			fixed_ship_engine_slot = small_surface_engine_diesel_2
+			fixed_ship_sonar_slot = sub_sonar_3
+			fixed_ship_radar_slot = ship_radar_3
+			fixed_ship_defensive_slot_1 = sam_missile_2
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = cruise_missile_2
+			custom_slot_4 = aswrl_1
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = no
+	}
+}
+country_event = {
+    id = japan_mod.1
+    days = 134
+}
+country_event = {
+    id = japan_mod.2
+    days = 481
+}
+country_event = {
+    id = japan_mod.3
+    days = 1418 
+}
+country_event = {
+    id = japan_mod.4
+    days = 1178 
+}

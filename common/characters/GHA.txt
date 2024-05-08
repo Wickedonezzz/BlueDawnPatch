@@ -1,0 +1,33 @@
+characters = {
+
+	GHA_jerry_rawlings = {
+		name = "Jerry Rawlings"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Africa/Jerry_Rawlings.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	GHA_john_kufuor = {
+		name = "John Kufuor"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Africa/kufuor.png"
+			}
+		}
+		country_leader = {
+			ideology = liberalism_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

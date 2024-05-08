@@ -1,0 +1,66 @@
+﻿TUR_INF_01 = 
+{
+	name = "Border Defence Division"
+
+	for_countries = { TUR }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry_unit" "militia_unit" }
+
+	fallback_name = "%d Border Defence Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st Border Defence Division" }
+		2 = { "2nd Border Defence Division" }
+		3 = { "3rd Border Defence Division" }
+		4 = { "4th Border Defence Division" }
+		5 = { "5th Border Defence Division" }
+		6 = { "6th Border Defence Division" }
+		7 = { "7th Border Defence Division" }
+		8 = { "8th Border Defence Division" }
+		9 = { "9th Border Defence Division" }
+		10 = { "10th Border Defence Division" }
+		11 = { "11th Border Defence Division" }
+		12 = { "12th Border Defence Division" }
+		13 = { "13th Border Defence Division" }
+		14 = { "14th Border Defence Division" }
+		15 = { "15th Border Defence Division" }
+		16 = { "16th Border Defence Division" }
+		17 = { "17th Border Defence Division" }
+		18 = { "18th Border Defence Division" }
+		19 = { "19th Border Defence Division" }
+		20 = { "20th Border Defence Division" }
+		21 = { "21st Border Defence Division" }
+		22 = { "22nd Border Defence Division" }
+		23 = { "23rd Border Defence Division" }
+		24 = { "24th Border Defence Division" }
+		25 = { "25th Border Defence Division" }
+		26 = { "26th Border Defence Division" }
+		27 = { "27th Border Defence Division" }
+		28 = { "28th Border Defence Division" }
+		29 = { "29th Border Defence Division" }
+		30 = { "30th Border Defence Division" }
+		31 = { "31st Border Defence Division" }
+		32 = { "32nd Border Defence Division" }
+		33 = { "33rd Border Defence Division" }
+		34 = { "34th Border Defence Division" }
+		35 = { "35th Border Defence Division" }
+		36 = { "36th Border Defence Division" }
+		37 = { "37th Border Defence Division" }
+		38 = { "38th Border Defence Division" }
+		39 = { "39th Border Defence Division" }
+		40 = { "40th Border Defence Division" }
+		41 = { "41st Border Defence Division" }
+		42 = { "42nd Border Defence Division" }
+		43 = { "43rd Border Defence Division" }
+		44 = { "44th Border Defence Division" }
+		45 = { "45th Border Defence Division" }
+		46 = { "46th Border Defence Division" }
+		47 = { "47th Border Defence Division" }
+		48 = { "48th Border Defence Division" }
+		49 = { "49th Border Defence Division" }
+	}
+}

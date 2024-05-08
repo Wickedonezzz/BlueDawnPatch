@@ -1,0 +1,24 @@
+capital = 705
+
+##oob = "STP_1936"
+
+set_research_slots = 3
+
+recruit_character = STP_miguel_trovoada
+
+set_politics = {
+	ruling_party = liberalism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	liberalism = 59
+	democratic = 10
+	communism = 4
+	reformed_communism = 0
+	paternal_autocracy = 0
+	fascism = 2
+	neutrality = 25
+}

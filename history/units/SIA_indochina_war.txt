@@ -1,0 +1,189 @@
+division_template = { # Light Infantry Division #
+	name = "Thahan Phran"
+	division_names_group = GENERIC_INF_01
+
+	regiments = {
+		infantry_unit = { x = 0 y = 0 }
+		infantry_unit = { x = 0 y = 1 }
+		infantry_unit = { x = 0 y = 2 }
+		militia_unit = { x = 1 y = 0 }
+		militia_unit = { x = 1 y = 1 }
+        militia_unit = { x = 1 y = 2 }
+		militia_unit =  {x = 1 y = 3 }
+	}
+	support = {
+
+	}
+	priority = 0
+}
+division_template = { # Reconnaissance Division #
+	name = "Reconnaissance Division"
+	division_names_group = GENERIC_RCN_01
+
+	regiments = {
+		infantry_unit = { x = 0 y = 0 }
+		infantry_unit = { x = 0 y = 1 }
+		infantry_unit = { x = 0 y = 2 }
+		infantry_unit = { x = 0 y = 3 }
+		infantry_unit = { x = 0 y = 4 }
+		recon_vehicle_armor = { x = 1 y = 0 }
+		recon_vehicle_armor = { x = 1 y = 1 }
+		towed_artillery_unit = { x = 2 y = 0 }
+		towed_artillery_unit = { x = 2 y = 1 }
+	}
+	support = {
+		armoured_recon = { x = 0 y = 0 }
+		recon_drone_company = { x = 0 y = 1 }
+
+	}
+	priority = 1
+}
+division_template = { # Mechanised Division #
+	name = "Mechanised Division"
+	division_names_group = GENERIC_MEC_01
+
+	regiments = {
+		heavy_infantry_unit = { x = 0 y = 0 }
+		heavy_infantry_unit = { x = 0 y = 1 }
+		heavy_infantry_unit = { x = 0 y = 2 }
+		heavy_infantry_unit = { x = 0 y = 3 }
+		heavy_infantry_unit = { x = 0 y = 4 }
+		infantry_unit = { x = 1 y = 0 }
+		infantry_unit = { x = 1 y = 1 }
+		infantry_unit = { x = 1 y = 2 }
+		infantry_unit = { x = 1 y = 3 }
+		infantry_unit = { x = 2 y = 0 }
+		infantry_unit = { x = 2 y = 1 }
+		infantry_unit = { x = 2 y = 2 }
+		towed_artillery_unit = { x = 3 y = 0 }
+      towed_artillery_unit = { x = 3 y = 1 }
+
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		towed_artillery_support_unit = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		transport_heli_company = { x = 0 y = 3 }
+		spaa_vehicle_support_armor = { x = 0 y = 4 }
+	}
+	priority = 1
+}
+division_template = { # Infantry Division #
+	name = "Infantry Division"
+	division_names_group = GENERIC_INF_01
+
+	regiments = {
+		infantry_unit = { x = 0 y = 0 }
+		infantry_unit = { x = 0 y = 1 }
+		infantry_unit = { x = 0 y = 2 }
+		infantry_unit = { x = 0 y = 3 }
+		infantry_unit = { x = 0 y = 4 }
+        infantry_unit = { x = 1 y = 0 }
+        infantry_unit = { x = 1 y = 1 }
+		infantry_unit = { x = 1 y = 2 }
+		infantry_unit = { x = 1 y = 3 }
+		towed_artillery_unit = { x = 2 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	    logistics_company = { x = 0 y = 2 }
+           towed_artillery_support_unit = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+
+
+units = {
+    #Thahan Phran
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7408
+		division_template = "Thahan Phran"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.03
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1488
+		division_template = "Thahan Phran"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.03
+	}
+	#Reconnaissance Division
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 12373
+		division_template = "Reconnaissance Division"
+		force_equipment_variants = {
+			recon_vehicle_equipment_0 = { owner = "ENG" }
+			drone_recon_equipment_0 = { owner = "ISR" }
+			heli_transport_equipment_0 = { owner = "USA" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.03
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7236
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_2 = { owner = "CAN" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.03
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 7559
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_2 = { owner = "CAN" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.03
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 7559
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_2 = { owner = "CAN" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.03
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10293
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			apc_tank_equipment_0 = { owner = "USA" }
+			spaa_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_1 = { owner = "USA" }
+			heli_transport_equipment_0 = { owner = "USA" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.03
+	}
+}

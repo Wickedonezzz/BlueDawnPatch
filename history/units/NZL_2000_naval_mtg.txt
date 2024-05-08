@@ -1,0 +1,17 @@
+units = {
+	fleet = {
+		name = "New Zealand Royal Fleet"
+		naval_base = 4543 # Devonport #
+		task_force = {
+			name = "New Zealand Royal Surface Fleet"
+			location = 4543 # Devonport #
+			ship = { name = "HMNZS Te Kaha" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = NZL creator = AST version_name = "Anzac Class" } } }
+			ship = { name = "HMNZS Te Mana" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = NZL creator = AST version_name = "Anzac Class" } } }
+			ship = { name = "HMNZS Canterbury" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = NZL creator = ENG version_name = "Leander Class" } } }
+			ship = { name = "HMNZS Wellington" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = NZL creator = ENG version_name = "Leander Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

@@ -1,0 +1,45 @@
+﻿capital = 544
+
+set_technology = {
+	infantry_weapons_1960 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_air_weapons_1960 = 1
+	tech_support = 1
+	tech_motorised_1960 = 1
+	tech_train_1960 = 1
+	mbt_tank_1960 = 1
+	ifv_tank_1970 = 1
+	apc_tank_1960 = 1
+	towed_artillery_1960 = 1
+	heli_transport_1960 = 1
+	heli_attack_1970 = 1
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		recon_vehicle_1960 = 1
+	}
+}
+set_oob = "MZB_2000"
+set_air_oob = "MZB_2000_air"
+
+add_ideas = extensive_conscription
+
+set_convoys = 5
+
+recruit_character = MZB_joaquim
+
+add_ideas = ussr_aligned_nation
+
+set_politics = {
+	ruling_party = socialism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	socialism = 53
+    democratic = 47
+}

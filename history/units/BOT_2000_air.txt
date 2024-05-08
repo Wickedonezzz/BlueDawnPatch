@@ -1,0 +1,23 @@
+﻿air_wings = {
+	# Land Wings #
+	542 = {
+		# Fighters -- F-5
+		fighter_equipment_0 =  { # F-5 #
+			owner = "BOT" 
+			creator = USA
+			amount = 13
+		}
+
+		# Transports -- CN-235, C-130
+		transport_plane_equipment_1 =  { # CN-235 #
+			owner = "BOT"
+			creator = SPR
+			amount = 2
+		}
+		transport_plane_equipment_1 =  { # C-130 #
+			owner = "BOT"
+			creator = USA
+			amount = 3
+		}
+	}
+}

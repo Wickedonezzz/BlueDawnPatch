@@ -1,0 +1,41 @@
+﻿capital = 741
+
+#set_oob = "CAM_2000"
+#set_air_oob = "CAM_2000_air"
+
+recruit_character =  CMK_Norodom_Ranariddh 
+
+set_technology = {
+	infantry_weapons_1960 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_air_weapons_1960 = 1
+	tech_support = 1
+	tech_motorised_1960 = 1
+	towed_artillery_1960 = 1
+	rocket_artillery_1960 = 1
+	mbt_tank_1960 = 1
+	apc_tank_1960 = 1
+}
+
+set_research_slots = 2
+
+set_convoys = 12
+
+set_war_support = 0.5
+set_stability = 0.4
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.2.16"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+
+
+set_popularities = {
+	fascism = 30
+	democratic = 10
+        reformed_communism = 10
+		neutrality = 50
+}

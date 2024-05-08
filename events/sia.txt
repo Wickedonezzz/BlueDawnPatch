@@ -1,0 +1,46 @@
+add_namespace = thailand
+
+#coup#
+country_event = {
+	id = thailand.1
+	title = thailand.1.t
+	desc = thailand.1.d
+	picture = GFX_report_event_spark
+
+	fire_only_once = yes
+        
+       is_triggered_only = yes
+
+		#rip#
+	option = {
+		name = thailand.1.a
+		news_event = { id = old_times_news.51 }
+		retire_country_leader = yes
+		promote_character = SIA_Surayud_Chulanont
+                set_party_name = { 
+			ideology = paternal_autocracy
+			long_name = SIA_military_gov_long
+			name = SIA_military_gov
+		}
+                  set_politics = {
+			ruling_party = paternal_autocracy
+		}
+	}
+}
+#mobilize army
+country_event = {
+	id = thailand.2
+	title = thailand.2.t
+	desc = thailand.2.d
+	picture = GFX_report_event_spark
+
+	fire_only_once = yes
+        
+       is_triggered_only = yes
+
+		#rip#
+	option = {
+		name = thailand.2.a
+		load_oob = SIA_indochina_war
+	}
+}

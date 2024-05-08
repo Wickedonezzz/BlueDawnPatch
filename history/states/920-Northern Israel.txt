@@ -1,0 +1,29 @@
+
+state={
+	id=920
+	name="STATE_920"
+
+	history={
+		owner = ISR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+
+		}
+		victory_points = {
+			1065 1 
+		}
+		add_core_of = PAL
+		add_core_of = ISR
+
+	}
+
+	provinces={
+		1065 1201 13645 13646 
+	}
+	manpower=5637300
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

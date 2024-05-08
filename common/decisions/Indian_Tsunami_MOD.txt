@@ -1,0 +1,200 @@
+indian_tsunami_category_request_aid = {
+	
+	indian_tsunami_decision_request_aid_minor = {
+
+		icon = GFX_decision_gre_investment_decisions
+
+		priority = 10
+
+		modifier {
+		}
+
+		cost = 10
+
+		ai_will_do = {
+		}
+	}
+
+	indian_tsunami_decision_request_aid_major = {
+
+		icon = GFX_decision_gre_investment_decisions
+
+		priority = 9
+
+		modifier {
+		}
+
+		cost = 30
+
+		ai_will_do = {
+		}
+	}
+
+}
+
+indian_tsunami_category_provide_aid = {
+
+	## Generic ##
+	indian_tsunami_decision_provide_aid_economic_minor = {
+
+		icon = GFX_decision_gre_investment_decisions
+
+		priority = 19
+
+		modifier {
+		}
+
+		cost = 20
+
+		ai_will_do = {
+		}
+	}
+	indian_tsunami_decision_provide_aid_economic_major = {
+
+		icon = GFX_decision_gre_investment_decisions
+
+		priority = 18
+
+		modifier {
+		}
+
+		cost = 50
+
+		ai_will_do = {
+		}
+	}
+	indian_tsunami_decision_provide_aid_relief_supplies = {
+
+		icon = GFX_decision_medical_aid
+
+		priority = 20
+
+		modifier {
+		}
+
+		cost = 5
+
+		ai_will_do = {
+		}
+	}
+
+	## Country-specific ##
+	indian_tsunami_decision_provide_aid_naval_visit = {
+
+		icon = GFX_decision_generic_naval
+
+		priority = 10
+
+		allowed = {
+			OR = {
+				tag = USA
+				tag = SOV
+			}
+		}
+
+		available = {
+			OR = {
+				ships_in_area = {
+					area = 101
+					size > 2
+				}
+				ships_in_area = {
+					area = 60
+					size > 2
+				}
+				ships_in_area = {
+					area = 71
+					size > 2
+				}
+				ships_in_area = {
+					area = 72
+					size > 2
+				}
+			}
+		}
+
+		modifier {
+		}
+
+		custom_cost_trigger = {
+			command_power > 14
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_CP_15_PP_50
+
+		ai_will_do = {
+		}
+	}
+	indian_tsunami_decision_provide_aid_send_army = {
+
+		icon = GFX_decision_generic_military
+
+		priority = 9
+
+		allowed = {
+			OR = {
+				tag = USA
+				tag = SOV
+				tag = PRC
+			}
+		}
+
+		available = {
+			has_army_manpower = {
+				size > 10000
+			}
+		}
+
+		modifier {
+		}
+
+		custom_cost_trigger = {
+			command_power > 9
+			has_political_power > 59
+		}
+		custom_cost_text = decision_cost_CP_10_PP_60
+
+		ai_will_do = {
+		}
+	}
+	indian_tsunami_decision_provide_aid_domestic_bases = {
+
+		icon = GFX_decision_generic_wreckers
+
+		priority = 8
+
+		allowed = {
+			tag = AST
+		}
+
+		modifier {
+		}
+
+		cost = 50
+
+		ai_will_do = {
+		}
+	}
+	indian_tsunami_decision_provide_aid_eu_funding = {
+
+		icon = GFX_decision_eu_economy
+
+		priority = 8
+
+		allowed = {
+			tag = GER
+		}
+
+		available = {
+			has_idea = GER_eu
+		}
+
+		modifier {
+		}
+
+		cost = 50
+
+		ai_will_do = {
+		}
+	}
+}

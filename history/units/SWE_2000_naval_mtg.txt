@@ -1,0 +1,90 @@
+units = {
+	fleet = {
+		name = "Svenska Flottan"
+		naval_base = 11215 # Karlskrona #
+		task_force = {
+			name = "Svenska Ubåtsflottan"
+			location = 11215 # Karlskrona #
+			ship = { name = "HMS Gotland" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = SWE version_name = "Gotland Class" } } }
+			ship = { name = "HMS Uppland" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = SWE version_name = "Gotland Class" } } }
+			ship = { name = "HMS Halland" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = SWE version_name = "Gotland Class" } } }
+			ship = { name = "HMS Västergötland" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = SWE version_name = "Västergötland Class" } } }
+			ship = { name = "HMS Hälsingland" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = SWE version_name = "Västergötland Class" } } }
+			ship = { name = "HMS Södermanland" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = SWE version_name = "Västergötland Class" } } }
+			ship = { name = "HMS Östergötland" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = SWE version_name = "Västergötland Class" } } }
+			ship = { name = "HMS Näcken" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = SWE version_name = "Näcken Class" } } }
+			ship = { name = "HMS Najad" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = SWE version_name = "Näcken Class" } } }
+			ship = { name = "HMS Neptun" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = SWE version_name = "Näcken Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+	# Corvettes #
+	add_equipment_production = {
+		equipment = {
+			type = corvette_hull_4
+			creator = "SWE" 
+			version_name = "Visby Class"
+		}
+		name = "HMS Visby"
+		requested_factories = 1
+		progress = 0.32
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = corvette_hull_4
+			creator = "SWE" 
+			version_name = "Visby Class"
+		}
+		name = "HMS Helsingborg"
+		requested_factories = 1
+		progress = 0.29
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = corvette_hull_4
+			creator = "SWE" 
+			version_name = "Visby Class"
+		}
+		name = "HMS Härnösand"
+		requested_factories = 1
+		progress = 0.24
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = corvette_hull_4
+			creator = "SWE" 
+			version_name = "Visby Class"
+		}
+		name = "HMS Nyköping"
+		requested_factories = 1
+		progress = 0.19
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = corvette_hull_4
+			creator = "SWE" 
+			version_name = "Visby Class"
+		}
+		name = "HMS Karlstad"
+		requested_factories = 1
+		progress = 0.07
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = corvette_hull_4
+			creator = "SWE" 
+			version_name = "Visby Class"
+		}
+		name = "HMS Uddevalla"
+		requested_factories = 1
+		progress = 0.01
+		amount = 1
+	}
+}

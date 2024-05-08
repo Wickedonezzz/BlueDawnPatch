@@ -1,0 +1,66 @@
+﻿SOV_PAR_02 = 
+{
+	name = "Spetsnaz Divisions"
+
+	for_countries = { SOV }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper_unit" }
+
+	fallback_name = "%d Spetsnaz Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st Spetsnaz Division" }
+		2 = { "2nd Spetsnaz Division" }
+		3 = { "3rd Spetsnaz Division" }
+		4 = { "4th Spetsnaz Division" }
+		5 = { "5th Spetsnaz Division" }
+		6 = { "6th Spetsnaz Division" }
+		7 = { "7th Spetsnaz Division" }
+		8 = { "8th Spetsnaz Division" }
+		9 = { "9th Spetsnaz Division" }
+		10 = { "10th Spetsnaz Division" }
+		11 = { "11th Spetsnaz Division" }
+		12 = { "12th Spetsnaz Division" }
+		13 = { "13th Spetsnaz Division" }
+		14 = { "14th Spetsnaz Division" }
+		15 = { "15th Spetsnaz Division" }
+		16 = { "16th Spetsnaz Division" }
+		17 = { "17th Spetsnaz Division" }
+		18 = { "18th Spetsnaz Division" }
+		19 = { "19th Spetsnaz Division" }
+		20 = { "20th Spetsnaz Division" }
+		21 = { "21st Spetsnaz Division" }
+		22 = { "22nd Spetsnaz Division" }
+		23 = { "23rd Spetsnaz Division" }
+		24 = { "24th Spetsnaz Division" }
+		25 = { "25th Spetsnaz Division" }
+		26 = { "26th Spetsnaz Division" }
+		27 = { "27th Spetsnaz Division" }
+		28 = { "28th Spetsnaz Division" }
+		29 = { "29th Spetsnaz Division" }
+		30 = { "30th Spetsnaz Division" }
+		31 = { "31st Spetsnaz Division" }
+		32 = { "32nd Spetsnaz Division" }
+		33 = { "33rd Spetsnaz Division" }
+		34 = { "34th Spetsnaz Division" }
+		35 = { "35th Spetsnaz Division" }
+		36 = { "36th Spetsnaz Division" }
+		37 = { "37th Spetsnaz Division" }
+		38 = { "38th Spetsnaz Division" }
+		39 = { "39th Spetsnaz Division" }
+		40 = { "40th Spetsnaz Division" }
+		41 = { "41st Spetsnaz Division" }
+		42 = { "42nd Spetsnaz Division" }
+		43 = { "43rd Spetsnaz Division" }
+		44 = { "44th Spetsnaz Division" }
+		45 = { "45th Spetsnaz Division" }
+		46 = { "46th Spetsnaz Division" }
+		47 = { "47th Spetsnaz Division" }
+		48 = { "48th Spetsnaz Division" }
+		49 = { "49th Spetsnaz Division" }
+	}
+}

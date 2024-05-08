@@ -1,0 +1,89 @@
+# Scripted AI desire for peace actions.
+# See documentation.info file for more detailed scripting information.
+
+peace_ai_desires = {
+
+    do_grab_stuff_near_us = {
+        peace_action_type = take_states
+        enable = {
+            ROOT.FROM.FROM.FROM = {
+                OR = {
+                    any_neighbor_state = {
+                        OR = {
+                            is_owned_by = ROOT.FROM
+                        }
+                    }
+                    is_claimed_by = ROOT.FROM
+                }
+            }
+            ROOT = {
+                tag = ROOT.FROM
+            }
+        }
+        ai_desire = 1000
+    }
+	
+	dont_puppet_bro_desire = {
+        peace_action_type = puppet
+        enable = {
+            ROOT = { 
+                has_government = communism
+				has_government = reformed_communism
+                has_government = socialism
+                has_government = social_democracy
+                has_government = liberalism
+                has_government = democratic
+                has_government = neutrality
+                has_government = paternal_autocracy
+                has_government = fascism
+                has_government = anarchism
+            }
+            FROM = { 
+                has_government = communism
+				has_government = reformed_communism
+                has_government = socialism
+                has_government = social_democracy
+                has_government = liberalism
+                has_government = democratic
+                has_government = neutrality
+                has_government = paternal_autocracy
+                has_government = fascism
+                has_government = anarchism
+            }			
+        }
+
+        ai_desire = -9999
+    }
+
+    dont_liberate_bro_desire = {
+        peace_action_type = liberate
+        enable = {
+            ROOT = { 
+                has_government = communism
+				has_government = reformed_communism
+                has_government = socialism
+                has_government = social_democracy
+                has_government = liberalism
+                has_government = democratic
+                has_government = neutrality
+                has_government = paternal_autocracy
+                has_government = fascism
+                has_government = anarchism
+            }
+			FROM = { 
+                has_government = communism
+				has_government = reformed_communism
+                has_government = socialism
+                has_government = social_democracy
+                has_government = liberalism
+                has_government = democratic
+                has_government = neutrality
+                has_government = paternal_autocracy
+                has_government = fascism
+                has_government = anarchism
+            }
+        }
+        ai_desire = -9999
+    }
+
+}

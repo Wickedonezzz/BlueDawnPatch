@@ -1,0 +1,57 @@
+ideas = {
+country = {
+	
+		EGY_nasser_dream_live_on = {
+			name = EGY_nasser_dream_live_on_name
+
+			removal_cost = -1
+
+			picture = EGY_nasser
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.05
+                war_support_factor = 0.1
+                political_power_gain = 0.1
+                drift_defence_factor = 0.2
+                army_org_factor = 0.05
+			}
+		}
+        EGY_islamist_terroist = {
+			name = EGY_islamist_terroist_name
+
+			removal_cost = -1
+
+			picture = UGA_islam_power
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.1
+                recruitable_population_factor = -0.05
+			}
+		}
+        EGY_idealist_revolution = {
+			name = EGY_idealist_revolution_name
+
+			removal_cost = -1
+
+			picture = EGY_idealist_revolution
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				war_support_factor = -0.05
+                political_power_gain = -0.05
+			}
+		}
+	}
+}
+

@@ -1,0 +1,67 @@
+characters = {
+
+	CAM_Hun_Sen = {
+		name = "Hun Sen"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CAM/Hun_Sen.dds"
+			}
+		}
+		country_leader = {
+			ideology = market_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+        CAM_Chea_Sim = {
+		name = "Chea Sim"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CAM/Chea_Sim.png"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+        
+        CAM_Tea_Banh = {
+		name = "Tea Banh"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CAM/Tea_Banh.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	CAM_Ke_Kim_Yan = {
+		name = "Ke Kim Yan"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CAM/Ke_Kim_Yan.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+}

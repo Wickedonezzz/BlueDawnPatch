@@ -1,0 +1,20 @@
+on_actions = {
+	
+	on_startup = {
+		effect = {
+			random_country = {
+				limit = {
+					tag = THIS
+				}
+				find_doomsday_minutes = yes
+			}
+		}
+	}
+	
+	on_daily = {
+		effect = {
+			find_doomsday_minutes = yes
+		}
+	}
+	
+}

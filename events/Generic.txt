@@ -1,0 +1,17 @@
+﻿add_namespace = ai_mod
+country_event = {
+	id = ai_mod.1
+	title = ai_mod.1.t
+	desc = ai_mod.1.d
+	picture = GFX_report_event_SOV_1991
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ai_mod.1.a
+
+		country_lock_all_division_template = yes
+
+		
+}
+}

@@ -1,0 +1,59 @@
+equipments = {
+
+	atomic_bomb_equipment = {
+		is_archetype = yes
+		is_buildable = yes
+		type = missile
+		picture = archetype_atomic_bomb
+		group_by = archetype
+		sprite = missile_default
+
+		interface_category = interface_category_air
+
+		build_cost_ic = 90
+		resources = {
+			steel = 2
+			tungsten = 1
+			uranium = 3
+		}
+
+		can_be_lend_leased = {
+			always = no
+		}
+	}
+	atomic_bomb_equipment_1 = {
+		year = 1960
+
+		archetype = atomic_bomb_equipment
+		priority = 100
+	}
+
+	hydrogen_bomb_equipment = {
+		is_archetype = yes
+		is_buildable = yes
+		type = missile
+		picture = archetype_atomic_bomb
+		group_by = archetype
+		sprite = missile_default
+
+		interface_category = interface_category_air
+
+		build_cost_ic = 130
+		resources = {
+			steel = 3
+			tungsten = 2
+			uranium = 5
+		}
+
+		can_be_lend_leased = {
+			always = no
+		}
+	}
+	hydrogen_bomb_equipment_1 = {
+		year = 1960
+
+		archetype = hydrogen_bomb_equipment
+		priority = 100
+	}
+
+}

@@ -1,0 +1,27 @@
+characters = {
+
+	MNO_nikolai_yevmenov = {
+		name = "Nikolai Yevmenov"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Nikolai_Yevmenov.dds"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		navy_leader={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+
+}

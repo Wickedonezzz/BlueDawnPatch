@@ -1,0 +1,166 @@
+opinion_modifiers = {
+
+	USA_misdirected_foreign_policy_opinion = {
+		value = -20
+	}
+	USA_high_tariffs_opinion = {
+		value = -25
+	}
+	USA_ridiculous_tariffs_opinion = {
+		value = -50
+	}
+	USA_call_to_arms_opinion = {
+		value = 20
+	}
+	
+	IRQ_alternate_trade_partner_opinion = {
+		trade = yes
+		value = 10
+	}
+	IRQ_abandoned_dollar_opinion = {
+		value = -15
+	}
+	IRQ_improve_saudi_relations_opinion = {
+		value = 25
+	}
+	IRQ_soviet_support_opinion = {
+		value = 10
+	}
+	IRQ_iran_aircraft_option_1 = {
+		value = 20
+	}
+	IRQ_iran_aircraft_option_2 = {
+		value = 10
+	}
+	IRQ_iran_aircraft_option_3 = {
+		value = -15
+	}
+	IRQ_dogs_of_the_west_opinion = {
+		value = -75
+	}
+
+	SOV_pugo_visit_opinion = {
+		value = 25
+	}
+
+	SOV_pugo_trade_agreement_opinion = {
+		value = 20
+	}
+
+	SOV_pugo_cooperation_opinion = {
+		value = 40
+	}
+
+	SOV_blockades_opinion = {
+		value = -35
+	}
+
+	SOV_easing_the_tensions_opinion = {
+		value = 25
+	}
+
+	SOV_treaty_success_opinion = {
+		value = 35
+	}
+
+	SOV_treaty_fail_opinion = {
+		value = -25
+	}
+
+	SOV_trade_success_opinion = {
+		value = 10
+	}
+
+	SOV_trade_fail_opinion = {
+		value = -10
+	}
+
+	SOV_salt_success_opinion = {
+		value = 15
+	}
+
+	SOV_salt_fail_opinion = {
+		value = -15
+	}
+
+	SOV_comecon_opinion = {
+		value = 10
+	}
+
+	SOV_export_opinion = {
+		trade = yes
+		value = 25
+	}
+
+	SOV_support = {
+		trade = yes
+		value = 25
+	}
+
+	SOV_cold_war = {
+		value = 125
+	}
+
+	YUG_cut_contacts = {
+		value = -25
+	}
+
+	VIN_trade_with_China = {
+		trade = yes
+		value = 25
+	}
+        VIN_trade_with_EU = {
+		trade = yes
+		value = 15
+	}
+
+	nonexistant_relations_opinion = {
+		value = -100
+	}
+	
+	SAF_anglo_american_coal_foundation_opinion = {
+		value = 5
+	}
+	SAF_fuel_american_friends_opinion = {
+		value = 5
+	}
+	SAF_fuel_american_agreement_opinion = {
+		value = 5
+	}
+	SAF_increase_relations_usa_opinion = {
+		value = 50
+	}
+	SAF_increase_reliance_dollar_opinion = {
+		value = 10
+	}
+	SAF_increase_reliance_pound_opinion = {
+		value = 10
+	}
+	SAF_reconnect_with_crown_opinion = {
+		value = 20
+	}
+	SAF_increase_relations_commonwealth_opinion = {
+		value = 10
+	}
+	
+	embargo = {
+		value = -100
+		trade = yes
+	}
+	
+	supported_the_enemy = {
+		value = -75	
+	}
+	supported_the_enemy_trade = {
+		value = -75	
+		trade = yes
+	}
+	
+	supported_us = {
+		value = 75			
+	}
+	supported_us_trade = {
+		value = 75			
+		trade = yes
+	}	
+}

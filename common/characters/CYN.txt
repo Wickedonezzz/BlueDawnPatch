@@ -1,0 +1,18 @@
+characters = {
+
+	CYN_rauf_denkas = {
+		name = "Rauf Denkas"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CYN/Rauf_Denktas.png"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

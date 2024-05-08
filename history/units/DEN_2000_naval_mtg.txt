@@ -1,0 +1,45 @@
+units = {
+	fleet = {
+		name = "Danske Flade"
+		naval_base = 6364 # Aarhus #
+		task_force = {
+			name = "Danske Flade"
+			location = 6364 # Aarhus #
+			ship = { name = "HDMS Thetis" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = DEN version_name = "Thetis Class" } } }
+			ship = { name = "HDMS Triton" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = DEN version_name = "Thetis Class" } } }
+			ship = { name = "HDMS Vædderen" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = DEN version_name = "Thetis Class" } } }
+			ship = { name = "HDMS Hvidbjørnen" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = DEN version_name = "Thetis Class" } } }
+			ship = { name = "HDMS Beskytteren" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = DEN version_name = "Beskytteren Class" } } }
+
+			ship = { name = "HDMS Niels Juel" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = DEN version_name = "Niels Juel Class" } } }
+			ship = { name = "HDMS Olfert Fischer" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = DEN version_name = "Niels Juel Class" } } }
+			ship = { name = "HDMS Peter Tordenskiold" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = DEN version_name = "Niels Juel Class" } } }
+		}
+		task_force = {
+			name = "Dansk Ubadsflade"
+			location = 6364 # Aarhus #
+			ship = { name = "HDMS Narhvalen" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = DEN creator = GER version_name = "Type 205 Class" } } }
+			ship = { name = "HDMS Nordkaperen" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = DEN creator = GER version_name = "Type 205 Class" } } }
+			ship = { name = "HDMS Tumleren" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = DEN creator = GER version_name = "Type 207 Class" } } }
+			ship = { name = "HDMS Sælen" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = DEN creator = GER version_name = "Type 207 Class" } } }
+			ship = { name = "HDMS Springeren" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = DEN creator = GER version_name = "Type 207 Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+	## Construction Agreements ##
+	if = {
+		limit = { has_dlc = "Death or Dishonor" }
+		GER = {
+			create_production_license = {
+				target = DEN
+				equipment = {
+					type = attack_submarine_hull_1
+					version_name = "Type 205 Class"
+				}
+				cost_factor = 0
+			}
+		}
+	}
+}

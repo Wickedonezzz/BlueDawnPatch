@@ -1,0 +1,33 @@
+characters = {
+
+	EST_lennart_meri = {
+		name = "Lennart Meri"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EST/Lennart_Meri.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	EST_edgar_savissar = {
+		name = "Edgar Savissar"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EST/Edgar_Savissar.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

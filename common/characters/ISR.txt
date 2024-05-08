@@ -1,0 +1,51 @@
+characters = {
+
+	ISR_ezer_weizman = {
+		name = "Ezer Weizman"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ISR/ezer_weizman.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	ISR_ehud_barak = {
+		name = "Ehud Barak"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ISR/Ehud_Barak.png"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	ISR_udi_adam = {
+		name = "Udi Adam"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ISR/Udi_Adam.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+}

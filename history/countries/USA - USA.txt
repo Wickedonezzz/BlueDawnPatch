@@ -1,0 +1,1392 @@
+﻿capital = 361
+
+set_oob = "USA_2000"
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "USA_2000_naval_mtg"
+
+	set_technology = {
+		attack_submarine_hull_1960 = 1
+		attack_submarine_hull_1980 = 1
+		attack_submarine_hull_1990 = 1
+		attack_submarine_hull_2000 = 1
+		cruise_submarine_hull_1960 = 1
+		ballistic_submarine_hull_1960 = 1
+		ballistic_submarine_hull_1980 = 1
+		corvette_hull_1960 = 1
+		destroyer_hull_1960 = 1
+		destroyer_hull_1980 = 1
+		destroyer_hull_1990 = 1
+		cruiser_hull_1960 = 1
+		cruiser_hull_1980 = 1
+		battleship_hull_1940 = 1
+		carrier_hull_1960 = 1
+		carrier_hull_1980 = 1
+		carrier_hull_2000 = 1
+		naval_engine_diesel_1960 = 1
+		naval_engine_diesel_1980 = 1
+		naval_engine_nuclear_1960 = 1
+		naval_engine_nuclear_1980 = 1
+		naval_engine_nuclear_1990 = 1
+		naval_sonar_1960 = 1
+		naval_sonar_1980 = 1
+		naval_sonar_1990 = 1
+		torpedo_launcher_1960 = 1
+		torpedo_launcher_1980 = 1
+		torpedo_launcher_2000 = 1
+		torpedo_upgrade_1960 = 1
+		torpedo_upgrade_1980 = 1
+		aswrl_1960 = 1
+		naval_gun_1960 = 1
+		naval_gun_1980 = 1
+		naval_gun_ammo_1960 = 1
+		naval_gun_ammo_1980 = 1
+		ciws_1980 = 1
+		carrier_catapult_1960 = 1
+		carrier_catapult_1980 = 1
+		carrier_catapult_2000 = 1
+		naval_transport_1960 = 1
+		naval_transport_1980 = 1
+		amphibious_hull_1960 = 1
+		amphibious_hull_1980 = 1
+		naval_training_1960 = 1
+		naval_training_1980 = 1
+		naval_training_2000 = 1
+		early_carrier_operations = 1
+		modern_carrier_operations = 1
+		damage_training_1960 = 1
+		damage_training_1980 = 1
+		damage_training_2000 = 1
+		damage_design_1970 = 1
+		damage_design_1990 = 1
+	}
+	else = {
+		#set_naval_oob = ""
+	}
+}
+set_air_oob = "USA_2000_air"
+set_technology = {
+	fighter_1960 = 1
+	interceptor_1960 = 1
+	carrier_fighter_1960 = 1
+	fighter_1970 = 1
+	carrier_fighter_1970 = 1
+	fighter_1980 = 1
+	carrier_fighter_1980 = 1
+	fighter_1990 = 1
+	carrier_fighter_1990 = 1
+	carrier_fighter_2000 = 1
+	stealth_fighter_2000 = 1
+	attacker_1960 = 1
+	carrier_attacker_1960 = 1
+	attacker_1970 = 1
+	carrier_attacker_1970 = 1
+	attacker_1980 = 1
+	strike_bomber_1960 = 1
+	strategic_bomber_1960 = 1
+	strategic_bomber_1980 = 1
+	stealth_bomber_2000 = 1
+	heli_transport_1960 = 1
+	heli_transport_1970 = 1
+	heli_transport_1990 = 1
+	heli_attack_1970 = 1
+	heli_attack_1990 = 1
+	heli_naval_1970 = 1
+	heli_naval_1990 = 1
+	drone_recon_1980 = 1
+	drone_recon_1990 = 1
+	drone_recon_2000 = 1
+	mbt_tank_1960 = 1
+	mbt_tank_1970 = 1
+	mbt_tank_1980 = 1
+	mbt_tank_1990 = 1
+	tank_ammo_1960 = 1
+	tank_ammo_1970 = 1
+	tank_ammo_1980 = 1
+	tank_ammo_1990 = 1
+	tank_aps_soft = 1
+	ifv_tank_1970 = 1
+	ifv_tank_1980 = 1
+	ifv_tank_1990 = 1
+	ifv_anti_tank_missile_1 = 1
+	ifv_anti_tank_missile_2 = 1
+	apc_tank_1960 = 1
+	apc_tank_1970 = 1
+	apc_tank_1980 = 1
+	apc_tank_1990 = 1
+	spaa_tank_1960 = 1
+	infantry_weapons_1960 = 1
+	infantry_weapons_1980 = 1
+	support_weapons_1960 = 1
+	support_weapons_1980 = 1
+	support_weapons_1990 = 1
+	support_weapons_1995 = 1
+	night_vision_gen_1 = 1
+	night_vision_gen_2 = 1
+	thermal_vision_gen_1 = 1
+	thermal_vision_gen_2 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_tank_weapons_1980 = 1
+	infantry_anti_tank_weapons_2000 = 1
+	infantry_anti_air_weapons_1960 = 1
+	infantry_anti_air_weapons_1980 = 1
+	paratrooper_tech_1960 = 1
+	paratrooper_tech_1980 = 1
+	marine_tech_1960 = 1
+	marine_tech_1980 = 1
+	marine_tech_2000 = 1
+	towed_artillery_1960 = 1
+	towed_artillery_1980 = 1
+	motorised_artillery_1960 = 1
+	motorised_artillery_1970 = 1
+	motorised_artillery_1980 = 1
+	motorised_artillery_1990 = 1
+	rocket_artillery_1960 = 1
+	rocket_artillery_1970 = 1
+	rocket_artillery_1980 = 1
+	tech_air_burst_shells = 1
+	tech_improved_artillery_ammo = 1
+	tech_guided_artillery_ammo_1 = 1
+	tech_manoeuvre_tactics = 1
+	tech_artillery_guidance_systems_1 = 1
+	tech_artillery_guidance_systems_2 = 1
+	tech_support = 1
+	support_tech_engineers_1960 = 1
+	support_tech_engineers_1980 = 1
+	support_tech_militarypolice_1960 = 1
+	support_tech_militarypolice_1980 = 1
+	support_tech_recon_1960 = 1
+	support_tech_recon_1980 = 1
+	support_tech_hospital_1960 = 1
+	support_tech_hospital_1980 = 1
+	support_tech_maintenance_1960 = 1
+	support_tech_maintenance_1980 = 1
+	support_tech_logistics_1960 = 1
+	support_tech_logistics_1980 = 1
+	support_tech_logistics_2000 = 1
+	tech_motorised_1960 = 1
+	tech_motorised_1980 = 1
+	tech_train_1960 = 1
+
+	tech_modern_manufacturing = 1
+	tech_containerisation = 1
+	tech_lean_manufacturing = 1
+	tech_globalised_economy = 1
+	tech_modern_factories = 1
+	tech_digital_control = 1
+	tech_basic_automation = 1
+	tech_automated_factories = 1
+	tech_modern_construction = 1
+	tech_prefabrication = 1
+	tech_computer_aided_design = 1
+	tech_modern_build_codes = 1
+	tech_basic_resource_extraction = 1
+	tech_improved_resource_extraction = 1
+	tech_rotary_drilling = 1
+	tech_hydraulic_fracturing = 1
+	tech_directional_drilling = 1
+	tech_automated_drilling_rigs = 1
+
+	computing_tech_1960 = 1
+	computing_tech_1980 = 1
+	computing_tech_1990 = 1
+	computing_tech_2000 = 1
+	radio_tech_1960 = 1
+	radio_tech_1980 = 1
+	radio_tech_2000 = 1
+	naval_radar_1960 = 1
+	naval_radar_1980 = 1
+	naval_radar_1990 = 1
+
+	nuclear_research_tech = 1
+	nuclear_reactor_tech_1 = 1
+	nuclear_reactor_tech_2 = 1
+	nuclear_reactor_tech_3 = 1
+	#atomic_bomb_tech = 1
+	#hydrogen_bomb_tech = 1
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		recon_vehicle_1960 = 1
+		recon_vehicle_1980 = 1
+	}
+}
+
+set_research_slots = 5
+set_stability = 0.75
+set_war_support = 0
+set_convoys = 500
+
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_intelligence_agency = {
+		name = "Central Intelligence Agency"
+		icon = "GFX_intelligence_agency_logo_generic_1"
+	}
+}
+
+create_import = {
+	resource = chromium
+	factories = 5
+	exporter = SAF
+}
+create_import = {
+	resource = tungsten
+	factories = 5
+	exporter = POR
+}
+create_import = {
+	resource = tungsten
+	factories = 3
+	exporter = BOL
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 0
+	reformed_communism = 0
+	social_democracy = 32
+	liberalism = 33
+	democratic = 35
+	neutrality = 0
+	paternal_autocracy = 0
+	fascism = 0
+}
+
+add_ideas = free_trade
+
+add_ideas = USA_the_constitution
+add_ideas = USA_three_party_primacy
+add_ideas = USA_second_amendment
+add_ideas = USA_stagnating_economy
+add_ideas = USA_misdirected_foreign_policy
+add_ideas = USA_military_spending
+add_ideas = USA_last_bastion
+
+add_ideas = usa_aligned_nation
+add_ideas = nation_status_superpower
+
+add_dynamic_modifier = { modifier = USA_cold_war}
+
+# leaders #
+recruit_character = USA_dan_quayle
+recruit_character = USA_george_bush
+recruit_character = USA_john_mccain
+recruit_character = USA_undecided_candidate_dem
+recruit_character = USA_al_gore
+recruit_character = USA_undecided_candidate_reform
+recruit_character = USA_donald_trump
+recruit_character = USA_dick_cheney
+# advisors #
+recruit_character = USA_tom_ridge
+recruit_character = USA_paul_o_neill
+recruit_character = USA_colin_powell
+# generals #
+recruit_character = USA_william_kernan
+recruit_character = USA_john_hendrix
+recruit_character = USA_thomas_schwartz
+recruit_character = USA_peter_schoomaker
+recruit_character = USA_eric_shinseki
+recruit_character = USA_jack_keane
+recruit_character = USA_john_abrams
+recruit_character = USA_hugh_shelton
+recruit_character = USA_tommy_franks
+# admirals #
+recruit_character = USA_thomas_fargo
+recruit_character = USA_frank_bowman
+recruit_character = USA_dennis_blair
+recruit_character = USA_william_fallon
+recruit_character = USA_richard_mies
+recruit_character = USA_james_ellis
+recruit_character = USA_vernon_clark
+recruit_character = USA_robert_natter
+
+create_faction = "North Atlantic Treaty Organization"
+USA = {
+	add_to_faction = ENG
+	add_to_faction = CAN
+	add_to_faction = FRA
+	add_to_faction = GER
+	add_to_faction = ITA
+	add_to_faction = ICE
+	add_to_faction = SPR
+	add_to_faction = CZE
+	add_to_faction = POR
+	add_to_faction = NOR
+	add_to_faction = GER
+	add_to_faction = DEN
+	add_to_faction = BEL
+	add_to_faction = HOL
+	add_to_faction = LUX
+	add_to_faction = TUR
+	add_to_faction = GRE
+}
+
+diplomatic_relation = {
+	country = AST
+	relation = docking_rights
+}
+diplomatic_relation = {
+	country = BAH
+	relation = docking_rights
+}
+diplomatic_relation = {
+	country = BHR
+	relation = docking_rights
+}
+diplomatic_relation = {
+	country = ELS
+	relation = docking_rights
+}
+diplomatic_relation = {
+	country = DJI
+	relation = docking_rights
+}
+diplomatic_relation = {
+	country = JAP
+	relation = docking_rights
+}
+diplomatic_relation = {
+	country = SKR
+	relation = docking_rights
+}
+diplomatic_relation = {
+	country = KUW
+	relation = docking_rights
+}
+diplomatic_relation = {
+	country = OMA
+	relation = docking_rights
+}
+diplomatic_relation = {
+	country = PHI
+	relation = docking_rights
+}
+diplomatic_relation = {
+	country = QAT
+	relation = docking_rights
+}
+diplomatic_relation = {
+	country = SAU
+	relation = docking_rights
+}
+diplomatic_relation = {
+	country = SIN
+	relation = docking_rights
+}
+diplomatic_relation = {
+	country = UAE
+	relation = docking_rights
+}
+
+diplomatic_relation = {
+	country = CMR
+	relation = military_access
+}
+diplomatic_relation = {
+	country = ISR
+	relation = military_access
+}
+diplomatic_relation = {
+	country = JAP
+	relation = military_access
+}
+diplomatic_relation = {
+	country = KUW
+	relation = military_access
+}
+diplomatic_relation = {
+	country = SKR
+	relation = military_access
+}
+diplomatic_relation = {
+	country = SAU
+	relation = military_access
+}
+
+diplomatic_relation = {
+	country = AST
+	relation = guarantee
+}
+diplomatic_relation = {
+	country = NZL
+	relation = guarantee
+}
+diplomatic_relation = {
+	country = JAP
+	relation = guarantee
+}
+diplomatic_relation = {
+	country = PHI
+	relation = guarantee
+}
+diplomatic_relation = {
+	country = BRM
+	relation = guarantee
+}
+
+#USA = {
+#	if = {
+#		limit = {
+#			has_idea = USA_misdirected_foreign_policy
+#		}
+#		set_rule = {
+#			can_not_declare_war = yes
+#			can_send_volunteers = no
+#		}
+#	}
+#}
+
+add_opinion_modifier = { target = LBA modifier = HISTORIC_usa_libya_usa_opinion }
+add_opinion_modifier = { target = IRQ modifier = HISTORIC_gulf_war_coalition_opinion }
+
+# Naval Variants #
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	# Attack Submarines #
+	create_equipment_variant = {
+		name = "Tench GUPPY II Class"
+		type = attack_submarine_hull_1
+		name_group = USA_NAVAL_NAME_FISH
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = sub_electrical_systems_1
+			fixed_ship_engine_slot = sub_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			custom_ship_torpedo_slot = ship_torpedo_sub_2
+			custom_slot_1 = ship_torpedo_sub_2
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Tang Class"
+		type = attack_submarine_hull_1
+		name_group = USA_NAVAL_NAME_FISH
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = sub_electrical_systems_1
+			fixed_ship_engine_slot = sub_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			custom_ship_torpedo_slot = ship_torpedo_sub_2
+			custom_slot_1 = ship_torpedo_sub_2
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Sturgeon Class"
+		type = attack_submarine_hull_1
+		name_group = USA_NAVAL_NAME_FISH
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = sub_electrical_systems_1
+			fixed_ship_engine_slot = sub_engine_nuclear_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			custom_ship_torpedo_slot = ship_torpedo_sub_1
+			custom_slot_1 = cruise_missile_2
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Narwhal Class"
+		type = attack_submarine_hull_1
+		name_group = USA_NAVAL_NAME_FISH
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = sub_electrical_systems_1
+			fixed_ship_engine_slot = sub_engine_nuclear_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			custom_ship_torpedo_slot = ship_torpedo_sub_1
+			custom_slot_1 = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Los Angeles Flight I Class"
+		type = attack_submarine_hull_2
+		name_group = USA_NAVAL_NAME_CITIES
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = sub_electrical_systems_1
+			fixed_ship_engine_slot = sub_engine_nuclear_2
+			fixed_ship_sonar_slot = sub_sonar_1
+			custom_ship_torpedo_slot = ship_torpedo_sub_2
+			custom_slot_1 = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Los Angeles Flight II Class"
+		type = attack_submarine_hull_2
+		name_group = USA_NAVAL_NAME_CITIES
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = sub_electrical_systems_1
+			fixed_ship_engine_slot = sub_engine_nuclear_2
+			fixed_ship_sonar_slot = sub_sonar_1
+			custom_ship_torpedo_slot = ship_torpedo_sub_2
+			custom_slot_1 = cruise_missile_2
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Los Angeles Flight III Class"
+		type = attack_submarine_hull_2
+		name_group = USA_NAVAL_NAME_CITIES
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = sub_electrical_systems_1
+			fixed_ship_engine_slot = sub_engine_nuclear_2
+			fixed_ship_sonar_slot = sub_sonar_2
+			custom_ship_torpedo_slot = ship_torpedo_sub_2
+			custom_slot_1 = cruise_missile_2
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Seawolf Class"
+		type = attack_submarine_hull_3
+		name_group = USA_NAVAL_NAME_FISH
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = sub_electrical_systems_3
+			fixed_ship_engine_slot = sub_engine_nuclear_3
+			fixed_ship_sonar_slot = sub_sonar_2
+			custom_ship_torpedo_slot = ship_torpedo_sub_3
+			custom_slot_1 = ship_torpedo_sub_3
+			custom_slot_2 = empty
+		}
+		obsolete = no
+	}
+	create_equipment_variant = {
+		name = "Virginia Class"
+		type = attack_submarine_hull_4
+		name_group = USA_NAVAL_NAME_STATES
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = sub_electrical_systems_3
+			fixed_ship_engine_slot = sub_engine_nuclear_3
+			fixed_ship_sonar_slot = sub_sonar_2
+			custom_ship_torpedo_slot = ship_torpedo_sub_3
+			custom_slot_1 = ship_torpedo_sub_3
+			custom_slot_2 = empty
+		}
+		obsolete = no
+	}
+
+	# Ballistic Missile Submarines #
+	create_equipment_variant = {
+		name = "Ohio Class"
+		type = ballistic_submarine_hull_2
+		name_group = USA_NAVAL_NAME_STATES
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = sub_electrical_systems_2
+			fixed_ship_engine_slot = sub_engine_nuclear_2
+			fixed_ship_sonar_slot = sub_sonar_1
+			custom_ship_torpedo_slot = ship_torpedo_sub_2
+			custom_slot_1 = ballistic_missile_2
+			custom_sub_ballistic_missile_slot_1 = ballistic_missile_2
+			custom_sub_ballistic_missile_slot_2 = ballistic_missile_2
+			custom_sub_ballistic_missile_slot_3 = ballistic_missile_2
+			custom_sub_ballistic_missile_slot_4 = ballistic_missile_2
+			custom_sub_ballistic_missile_slot_5 = ballistic_missile_2
+		}
+		obsolete = yes
+	}
+
+	# Corvettes #
+	create_equipment_variant = {
+		name = "Admirable Class"
+		type = corvette_hull_1
+		name_group = USA_NAVAL_NAME_SAILORS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = empty
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = anti_air_1
+			fixed_ship_defensive_slot_2 = empty
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = empty
+			custom_slot_2 = empty
+			custom_slot_3 = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Auk Class"
+		type = corvette_hull_1
+		name_group = USA_NAVAL_NAME_SAILORS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = anti_air_1
+			fixed_ship_defensive_slot_2 = empty
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = empty
+			custom_slot_2 = empty
+			custom_slot_3 = empty
+		}
+		obsolete = yes
+	}
+
+	# Frigates #
+	create_equipment_variant = {
+		name = "Barnegat Class"
+		type = destroyer_hull_1
+		name_group = USA_NAVAL_NAME_SAILORS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = empty
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = sam_missile_2
+			fixed_ship_defensive_slot_2 = anti_air_1
+			fixed_ship_aviation_slot = empty
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = cruise_missile_1
+			custom_slot_2 = empty
+			custom_slot_3 = empty
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Tacoma Class"
+		type = destroyer_hull_1
+		name_group = USA_NAVAL_NAME_CITIES
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = anti_air_1
+			fixed_ship_defensive_slot_2 = anti_air_1
+			fixed_ship_aviation_slot = empty
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = aswrl_1
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = empty
+			custom_slot_4 = depth_charges_1
+			custom_ship_rear_cannon_slot = naval_gun_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Cannon Class"
+		type = destroyer_hull_1
+		name_group = USA_NAVAL_NAME_SAILORS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = empty
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = anti_air_1
+			fixed_ship_defensive_slot_2 = anti_air_1
+			fixed_ship_aviation_slot = empty
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = empty
+			custom_slot_2 = empty
+			custom_slot_3 = empty
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = naval_gun_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Edsall Class"
+		type = destroyer_hull_1
+		name_group = USA_NAVAL_NAME_SAILORS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = empty
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = anti_air_1
+			fixed_ship_defensive_slot_2 = anti_air_1
+			fixed_ship_aviation_slot = empty
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = empty
+			custom_slot_2 = empty
+			custom_slot_3 = empty
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = naval_gun_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Claud Jones Class"
+		type = destroyer_hull_1
+		name_group = USA_NAVAL_NAME_SAILORS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_2
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = anti_air_1
+			fixed_ship_defensive_slot_2 = empty
+			fixed_ship_aviation_slot = empty
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = empty
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = empty
+			custom_slot_4 = depth_charges_1
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Garcia Class"
+		type = destroyer_hull_1
+		name_group = USA_NAVAL_NAME_SAILORS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = empty
+			fixed_ship_defensive_slot_2 = empty
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = aswrl_1
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = empty
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = naval_gun_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Bronstein Class"
+		type = destroyer_hull_1
+		name_group = USA_NAVAL_NAME_SAILORS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = empty
+			fixed_ship_defensive_slot_2 = empty
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_2
+			custom_slot_1 = aswrl_1
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = empty
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = naval_gun_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Knox Class"
+		type = destroyer_hull_1
+		name_group = USA_NAVAL_NAME_SAILORS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = ciws_1
+			fixed_ship_defensive_slot_2 = empty
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = cruise_missile_2
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Oliver Hazard Perry Class"
+		type = destroyer_hull_1
+		name_group = USA_NAVAL_NAME_SAILORS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = sam_missile_2
+			fixed_ship_defensive_slot_2 = empty
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = cruise_missile_1
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = empty
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = yes
+	}
+
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Fletcher Class"
+		type = destroyer_hull_1
+		name_group = USA_NAVAL_NAME_SAILORS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = empty
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = anti_air_1
+			fixed_ship_defensive_slot_2 = anti_air_1
+			fixed_ship_aviation_slot = empty
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = empty
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = empty
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = naval_gun_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Allen M. Sumner FRAM-II Class"
+		type = destroyer_hull_1
+		name_group = USA_NAVAL_NAME_SAILORS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = sam_missile_1
+			fixed_ship_defensive_slot_2 = anti_air_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = cruise_missile_2
+			custom_slot_4 = aswrl_1
+			custom_ship_rear_cannon_slot = naval_gun_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Gearing Class"
+		type = destroyer_hull_1
+		name_group = USA_NAVAL_NAME_SAILORS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = anti_air_1
+			fixed_ship_defensive_slot_2 = anti_air_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = sam_missile_1
+			custom_slot_4 = aswrl_1
+			custom_ship_rear_cannon_slot = naval_gun_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Crosley Class"
+		type = destroyer_hull_1
+		name_group = USA_NAVAL_NAME_SAILORS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = anti_air_1
+			fixed_ship_defensive_slot_2 = anti_air_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = empty
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = empty
+			custom_slot_4 = depth_charges_1
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Charles F. Adams Class"
+		type = destroyer_hull_1
+		name_group = USA_NAVAL_NAME_SAILORS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_2
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = sam_missile_1
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = empty
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = sam_missile_1
+			custom_slot_4 = aswrl_1
+			custom_ship_rear_cannon_slot = naval_gun_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Spruance Class"
+		type = destroyer_hull_1
+		name_group = USA_NAVAL_NAME_SAILORS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = sam_missile_2
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_2
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = cruise_missile_2
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = naval_gun_2
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Kidd Class"
+		type = destroyer_hull_2
+		name_group = USA_NAVAL_NAME_SAILORS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = sam_missile_2
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_2
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = empty
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = naval_gun_2
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Arleigh Burke Flight I Class"
+		type = destroyer_hull_3
+		name_group = USA_NAVAL_NAME_SAILORS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_3
+			fixed_ship_engine_slot = small_surface_engine_diesel_2
+			fixed_ship_sonar_slot = sub_sonar_2
+			fixed_ship_radar_slot = ship_radar_3
+			fixed_ship_defensive_slot_1 = sam_missile_2
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_2
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_2
+			custom_slot_3 = cruise_missile_2
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = naval_gun_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Arleigh Burke Flight II Class"
+		type = destroyer_hull_3
+		name_group = USA_NAVAL_NAME_SAILORS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_3
+			fixed_ship_engine_slot = small_surface_engine_diesel_2
+			fixed_ship_sonar_slot = sub_sonar_2
+			fixed_ship_radar_slot = ship_radar_3
+			fixed_ship_defensive_slot_1 = sam_missile_2
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_2
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_2
+			custom_slot_3 = cruise_missile_2
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = naval_gun_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Arleigh Burke Flight IIA 54 Class"
+		type = destroyer_hull_3
+		name_group = USA_NAVAL_NAME_SAILORS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_4
+			fixed_ship_engine_slot = small_surface_engine_diesel_2
+			fixed_ship_sonar_slot = sub_sonar_3
+			fixed_ship_radar_slot = ship_radar_3
+			fixed_ship_defensive_slot_1 = sam_missile_3
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = naval_helicopter_2
+			custom_ship_cannon_slot = naval_gun_2
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_2
+			custom_slot_3 = cruise_missile_2
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = naval_gun_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Arleigh Burke Flight IIA 62 Class"
+		type = destroyer_hull_3
+		name_group = USA_NAVAL_NAME_SAILORS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_4
+			fixed_ship_engine_slot = small_surface_engine_diesel_2
+			fixed_ship_sonar_slot = sub_sonar_3
+			fixed_ship_radar_slot = ship_radar_3
+			fixed_ship_defensive_slot_1 = sam_missile_3
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = naval_helicopter_2
+			custom_ship_cannon_slot = naval_gun_2
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_2
+			custom_slot_3 = cruise_missile_2
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = naval_gun_1
+		}
+		obsolete = no
+	}
+
+	# Cruisers #
+	create_equipment_variant = {
+		name = "Belknap Class"
+		type = cruiser_hull_1
+		name_group = USA_NAVAL_NAME_SAILORS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = large_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = sam_missile_2
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_2
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = ciws_1
+			custom_slot_4 = empty
+			custom_slot_5 = empty
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Leahy Class"
+		type = cruiser_hull_1
+		name_group = USA_NAVAL_NAME_SAILORS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = large_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = sam_missile_2
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = empty
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = ciws_1
+			custom_slot_4 = empty
+			custom_slot_5 = aswrl_1
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "California Class"
+		type = cruiser_hull_1
+		name_group = USA_NAVAL_NAME_STATES
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = surface_engine_nuclear_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = sam_missile_1
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_2
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = ciws_1
+			custom_slot_4 = empty
+			custom_slot_5 = empty
+			custom_ship_rear_cannon_slot = naval_gun_2
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Virginia Class"
+		type = cruiser_hull_1
+		name_group = USA_NAVAL_NAME_STATES
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = surface_engine_nuclear_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = sam_missile_2
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_2
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = ciws_1
+			custom_slot_4 = cruise_missile_2
+			custom_slot_5 = empty
+			custom_ship_rear_cannon_slot = naval_gun_2
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Ticonderoga Class"
+		type = cruiser_hull_2
+		name_group = USA_NAVAL_NAME_BATTLES
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = large_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = sam_missile_2
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_2
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = ciws_1
+			custom_slot_4 = empty
+			custom_slot_5 = empty
+			custom_ship_rear_cannon_slot = naval_gun_2
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Ticonderoga VLS Class"
+		type = cruiser_hull_2
+		name_group = USA_NAVAL_NAME_BATTLES
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = large_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = sam_missile_2
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_2
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = sam_missile_2
+			custom_slot_4 = cruise_missile_2
+			custom_slot_5 = empty
+			custom_ship_rear_cannon_slot = naval_gun_2
+		}
+		obsolete = yes
+	}
+
+	# Battleships #
+	create_equipment_variant = {
+		name = "Iowa Class"
+		type = battleship_hull_1
+		name_group = USA_NAVAL_NAME_STATES
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = large_surface_engine_diesel_1
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_armor_slot = ship_armor_1
+			fixed_ship_defensive_slot_1 = ciws_1
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_heavy_battery_slot_1 = ship_heavy_battery_1
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = cruise_missile_2
+			custom_slot_3 = empty
+			custom_slot_4 = ciws_1
+			custom_ship_heavy_battery_slot_2 = ship_heavy_battery_1
+			custom_ship_aviation_slot = empty
+		}
+		obsolete = yes
+	}
+
+	# Carriers #
+	create_equipment_variant = {
+		name = "Kitty Hawk Class"
+		type = carrier_hull_1
+		name_group = USA_NAVAL_NAME_HISTORIC
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = large_surface_engine_diesel_1
+			fixed_ship_sonar_slot = empty
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = sam_missile_2
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_custom_slot = naval_helicopter_2
+			custom_ship_ramp_slot = ship_carrier_catapult_steam_1
+			custom_ship_hangar_slot_1 = ship_carrier_hangar_1
+			custom_ship_hangar_slot_2 = ship_carrier_hangar_1
+			custom_slot_1 = empty
+			custom_slot_2 = ciws_1
+			custom_ship_aviation_slot_1 = naval_helicopter_2
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "John F. Kennedy Class"
+		type = carrier_hull_1
+		name_group = USA_NAVAL_NAME_LEADERS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = large_surface_engine_diesel_1
+			fixed_ship_sonar_slot = empty
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = sam_missile_2
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_custom_slot = naval_helicopter_2
+			custom_ship_ramp_slot = ship_carrier_catapult_steam_1
+			custom_ship_hangar_slot_1 = ship_carrier_hangar_1
+			custom_ship_hangar_slot_2 = ship_carrier_hangar_1
+			custom_slot_1 = empty
+			custom_slot_2 = ciws_1
+			custom_ship_aviation_slot_1 = naval_helicopter_2
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Enterprise Class"
+		type = carrier_hull_1
+		name_group = USA_NAVAL_NAME_HISTORIC
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = surface_engine_nuclear_1
+			fixed_ship_sonar_slot = empty
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = sam_missile_2
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_custom_slot = naval_helicopter_2
+			custom_ship_ramp_slot = ship_carrier_catapult_steam_1
+			custom_ship_hangar_slot_1 = ship_carrier_hangar_1
+			custom_ship_hangar_slot_2 = ship_carrier_hangar_1
+			custom_slot_1 = empty
+			custom_slot_2 = ciws_1
+			custom_ship_aviation_slot_1 = naval_helicopter_2
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Nimitz Class"
+		type = carrier_hull_1
+		name_group = USA_NAVAL_NAME_LEADERS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_3
+			fixed_ship_engine_slot = surface_engine_nuclear_1
+			fixed_ship_sonar_slot = empty
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = sam_missile_2
+			fixed_ship_defensive_slot_2 = sam_missile_2
+			fixed_ship_custom_slot = naval_helicopter_1
+			custom_ship_ramp_slot = ship_carrier_catapult_steam_2
+			custom_ship_hangar_slot_1 = ship_carrier_hangar_1
+			custom_ship_hangar_slot_2 = ship_carrier_hangar_1
+			custom_slot_1 = empty
+			custom_slot_2 = sam_missile_2
+			custom_ship_aviation_slot_1 = naval_helicopter_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Theodore Roosevelt Class"
+		type = carrier_hull_2
+		name_group = USA_NAVAL_NAME_LEADERS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = surface_engine_nuclear_1
+			fixed_ship_sonar_slot = empty
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = sam_missile_2
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_custom_slot = naval_helicopter_1
+			custom_ship_ramp_slot = ship_carrier_catapult_steam_2
+			custom_ship_hangar_slot_1 = ship_carrier_hangar_1
+			custom_ship_hangar_slot_2 = ship_carrier_hangar_1
+			custom_slot_1 = empty
+			custom_slot_2 = ciws_1
+			custom_ship_aviation_slot_1 = naval_helicopter_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Ronald Reagan Class"
+		type = carrier_hull_3
+		name_group = USA_NAVAL_NAME_LEADERS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = surface_engine_nuclear_1
+			fixed_ship_sonar_slot = empty
+			fixed_ship_radar_slot = ship_radar_3
+			fixed_ship_defensive_slot_1 = sam_missile_2
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_custom_slot = naval_helicopter_1
+			custom_ship_ramp_slot = ship_carrier_catapult_steam_3
+			custom_ship_hangar_slot_1 = ship_carrier_hangar_1
+			custom_ship_hangar_slot_2 = ship_carrier_hangar_1
+			custom_slot_1 = empty
+			custom_slot_2 = ciws_1
+			custom_ship_aviation_slot_1 = naval_helicopter_1
+			custom_ship_aviation_slot_2 = naval_helicopter_1
+		}
+		obsolete = no
+	}
+}

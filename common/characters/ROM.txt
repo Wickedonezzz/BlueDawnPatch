@@ -1,0 +1,113 @@
+characters = {
+
+	## Leaders ##
+
+	ROM_emil_constantinescu = {
+		name = "Emil Constantinescu"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ROM/Emil_Constantinescu.png"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	ROM_corneliu_vadim_tudor = { 
+		name = "Corneliu Vadim Tudor"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ROM/Tudor.png"
+			}
+		}
+		country_leader = {
+			ideology = ultranationalism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	ROM_ion_iliescu = {
+		name = "Ion Iliescu"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ROM/Ion_Iliescu.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	ROM_ion_iliescu1 = {
+		name = "Iulian Vlad"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ROM/Iulian_Vlad.png"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	ROM_miron_cozma = {
+		name = "Miron Cozma"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ROM/Miron_Cozma.png"
+			}
+		}
+		country_leader = {
+			ideology = libertarian_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}	
+
+	## Generals ##
+
+	ROM_mircea_chelaru = {
+		name = "Mircea Chelaru"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ROM/Mircea_Chelaru.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	ROM_gheorghe_catrina = {
+		name = "Gheorghe Catrina"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ROM/Gheorghe_Catrina.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+}

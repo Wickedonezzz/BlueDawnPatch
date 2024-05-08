@@ -1,0 +1,48 @@
+characters = {
+
+	CZE_vaclav_havel = {
+		name = "Vaclav Havel"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CZE/Vaclav_Havel.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	CZE_miroslav_stepan = {
+		name = "Miroslav Stepan"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CZE/miroslav_stepan.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	CZE_milos_jakes = {
+		name = "Miloš Jakeš"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CZE/Milos_Jakes.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

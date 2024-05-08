@@ -1,0 +1,63 @@
+characters = {
+
+	SKR_kim_dae-jung = {
+		name = "Kim Dae-jung"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SKR/Kim_Dae-jung.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	SKR_roh_moo_hyun = {
+		name = "Roh Moo-hyun"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SKR/roh_moo_hyun.png"
+			}
+		}
+		country_leader = {
+			ideology = liberalism_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}	
+	
+	SKR_lee_myung_bak = {
+		name = "Lee Myung-Bak"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SKR/lee_myung_bak.png"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}	
+
+	SKR_sknlfpc = {
+		name = "South Korean National Liberation Front Preparation Committee"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SKR/sknlfpc.png"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}	
+
+}

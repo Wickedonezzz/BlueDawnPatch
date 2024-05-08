@@ -1,0 +1,109 @@
+ideas = {
+	
+	country = {
+	
+		east_europe_eastern_threat = {
+			name = east_europe_eastern_threat_name
+
+			removal_cost = -1
+
+			cancel = {
+				OR = {
+					is_puppet_of = SOV
+					has_global_flag = ussr_putin_collapse
+				}
+			}
+
+			picture = eastern_threat_icon
+			
+			allowed = {
+				always = no
+			}
+			
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.15
+			}
+			
+			modifier = {
+				army_core_defence_factor = 0.05
+				stability_factor = -0.05
+				custom_modifier_tooltip = cannot_join_nato
+
+			}
+			
+		}
+
+		ROM_betrayed_revolution = {
+			name = ROM_betrayed_revolution_name
+
+			removal_cost = -1
+
+			cancel = {
+				is_puppet_of = SOV
+			}
+
+			picture = ROM_betrayed_revolution_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.15
+			}
+		}
+
+		FIN_neutrality = {
+			name = FIN_neutrality_name
+
+			removal_cost = -1
+
+			cancel = {
+				OR = {
+					is_puppet_of = SOV
+					is_puppet_of = USA
+				}
+			}
+
+			picture = FIN_neutrality_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.2
+				war_support_factor = -0.15
+			}
+		}
+
+		east_europe_privatization = {
+			name = east_europe_privatization_name
+
+			removal_cost = -1
+
+			cancel = {
+				is_puppet_of = SOV
+			}
+
+			picture = SOV_privatization_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_gain = -0.05
+				stability_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.05
+			        production_speed_arms_factory_factor = -0.1
+			        production_speed_industrial_complex_factor = -0.05
+			        consumer_goods_factor = 0.30
+			}
+		}
+	}
+}	

@@ -1,0 +1,1089 @@
+characters = {
+
+	YUG_slobodan_milošević = {
+		name = "Slobodan Milošević"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/Slobodan_Milošević.dds"
+				small = "gfx/leaders/YUG/Slobodan_Milošević_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = market_socialism
+			traits = {}
+			expire = "2050.3.1"
+			id = -1
+		}
+	}
+
+	YUG_seselj_and_stambolic = {
+		name = "Vojislav Šešelj/Ivan Stambolić"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/Vojislav_Seselj.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {}
+			expire = "2050.3.1"
+			id = -1
+		}
+	}
+
+	YUG_stambolic = {
+		name = "Ivan Stambolić"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/stambolic.png"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {}
+			expire = "2050.3.1"
+			id = -1
+		}
+	}
+
+	YUG_seselj = {
+		name = "Vojislav Šešelj"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/Vojislav_Seselj.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {serbian_ultranationalist}
+			expire = "2050.3.1"
+			id = -1
+		}
+	}
+
+	YUG_markovic = {
+		name = "Mirjana Marković"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/Mirjana_Markovic.png"
+				small = "gfx/leaders/YUG/mirjana_markovic_small.png"				
+			}
+		}
+		country_leader = {
+			ideology = revolutionary_socialism
+			traits = {}
+			expire = "2050.3.1"
+			id = -1
+		}
+		advisor={
+			cost = 100
+			slot = political_advisor
+			idea_token = YUG_markovic
+			allowed = {
+				original_tag = YUG
+			}
+			available = {
+				has_completed_focus = YUG_milosevic_renewed_mandate
+			}
+			
+			traits = {
+				prime_minister
+			}
+		}		
+	}
+
+	YUG_vulin = {
+		name = "Aleksandar Vulin"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/Aleksandar_Vulin.png"
+			}
+		}
+		country_leader = {
+			ideology = libertarian_socialism
+			traits = {}
+			expire = "2050.3.1"
+			id = -1
+		}
+	}
+
+	YUG_joska = {
+		name = "Josip Joška Broz"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/Joska.dds"
+				small = "gfx/leaders/YUG/Joska_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1"
+			id = -1
+		}
+		advisor={
+			cost = 100			
+			slot = political_advisor
+			idea_token = YUG_joska
+			allowed = {
+				original_tag = YUG
+			}
+			available = {
+				OR = {
+				has_government = communism
+				has_government = socialism
+				}
+				NOT = {has_country_flag = yug_joska_has_been_forced_into_retirement}
+			}
+			
+			traits = {
+				prime_minister
+			}
+		}
+	}
+	
+	YUG_đinđiću_pederu = {
+		name = "Zoran Đinđić"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/Zoran_Đinđić.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy_sub
+			traits = {}
+			expire = "2050.3.1"
+			id = -1
+		}
+	}
+	
+	YUG_matvejevic = {
+		name = "Predrag Matvejević"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/matvejevic.png"
+			}
+		}
+		country_leader = {
+			ideology = liberalism_sub
+			traits = {}
+			expire = "2050.3.1"
+			id = -1
+		}
+	}
+	
+	YUG_ubased = {
+		name = "Bosnian and Albanian Resistance"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/unbased_squad.dds"
+			}
+		}
+		country_leader = {
+			ideology = sunni_islamism
+			traits = {}
+			expire = "2050.3.1"
+			id = -1
+		}
+	}
+
+	YUG_marko_milosevic = {
+		name = "Marko Milosevic"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/marko_milosevic.png"
+			}
+		}
+		country_leader = {
+			ideology = market_socialism
+			traits = {}
+			expire = "2050.3.1"
+			id = -1
+		}
+	}
+	
+	YUG_branko_kitanovic = {
+		name = "Branko Kitanovic"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/branko_kitanovic.png"
+			}
+		}
+		country_leader = {
+			ideology = anti_revisionism
+			traits = {}
+			expire = "2050.3.1"
+			id = -1
+		}
+	}	
+	
+	YUG_anti_christ = {
+		name = "Yugoslav Administration"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/anti.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {}
+			expire = "2050.3.1"
+			id = -1
+		}
+	}		
+
+	YUG_ratibor_trivunac = {
+		name = "Ratibor Trivunac"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/trivunac.png"
+			}
+		}
+		country_leader = {
+			ideology = anarchism_sub
+			traits = {}
+			expire = "2050.3.1"
+			id = -1
+		}
+	}			
+	
+	## Generals ##
+
+	YUG_momcilo_perisic = {
+		name = "Momčilo Perišić"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YUG/Momcilo_Perisic.dds"
+				small = "gfx/leaders/YUG/Momcilo_Perisic_small.dds"
+			}
+		}
+		advisor={
+			cost = 100			
+			slot = army_chief
+			idea_token = YUG_momcilo_perisic
+			allowed = {
+				original_tag = YUG
+			}
+			
+			traits = {
+				army_chief_offensive_2
+			}
+		}
+		field_marshal={
+			traits={serbian offensive_doctrine}
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	YUG_nebojsa_pavkovic = {
+		name = "Nebojša Pavković"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YUG/Nebojsa_Pavkovic.dds"
+				small = "gfx/leaders/YUG/Nebojsa_Pavkovic_small.dds"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = army_chief
+			idea_token = YUG_nebojsa_pavkovic
+			allowed = {
+				original_tag = YUG
+			}
+			
+			traits = {
+				army_chief_organizational_2
+			}
+		}
+		field_marshal={
+			traits={serbian organisational_leader}
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	YUG_ratko_mladic = {
+		name = "Ratko Mladić"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/troller_of_srebrenica.dds"
+			}
+			army = {
+				large = "gfx/leaders/YUG/troller_of_srebrenica.dds"
+			}
+		}
+		corps_commander={
+			traits={serbian urban_assault_specialist} #trollface
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}	
+	YUG_dragan_paskas = {
+		name = "Dragan Paskaš"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YUG/Dragan_Paskas.dds"
+				small = "gfx/leaders/YUG/Dragan_Paskas_small.dds"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = high_command
+			idea_token = YUG_dragan_paskas
+			allowed = {
+				original_tag = YUG
+			}
+			
+			traits = {
+				army_infantry_2
+			}
+		}
+		corps_commander={
+			traits={serbian infantry_leader commando}
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	YUG_dragoljub_ojdanic = {
+		name = "Dragoljub Ojdanić"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YUG/Dragoljub_Ojdanic.dds"
+				small = "gfx/leaders/YUG/Dragoljub_Ojdanic_small.dds"
+			}
+		}
+		corps_commander={
+			traits={serbian}
+			skill=3
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	YUG_ljubisa_jokic = {  #NOTE : add this guy as the command of the airforce when we deal with the air traits
+		name = "Ljubiša Jokić"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YUG/Ljubisa_Jokic.dds"
+				small = "gfx/leaders/YUG/Ljubisa_Jokic_small.dds"
+			}
+		}
+		advisor={
+			cost = 100			
+			slot = high_command
+			idea_token = YUG_ljubisa_jokic
+			allowed = {
+				original_tag = YUG
+			}
+			
+			traits = {
+				army_concealment_1
+			}
+		}
+		corps_commander={
+			traits={montenegrin}
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	YUG_zivota_panic = {
+		name = "Života Panić"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YUG/Zivota_Panic.dds"
+				small = "gfx/leaders/YUG/Zivota_Panic_small.dds"
+			}
+		}
+		advisor={
+			cost = 100			
+			slot = high_command
+			idea_token = YUG_zivota_panic
+			allowed = {
+				original_tag = YUG
+			}
+			
+			traits = {
+				army_armored_2
+			}
+		}
+		corps_commander={
+			traits={serbian armor_officer}
+			skill=3
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	YUG_pavle_strugar = {
+		name = "Pavle Strugar"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YUG/pavle_strugar.dds"
+				small = "gfx/leaders/YUG/pavle_strugar_small.dds"
+			}
+		}
+
+		corps_commander={
+			traits={montenegrin}
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	YUG_bozidar_gelic = {
+		name = "Bozidar Gelic"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YUG/bozidar_gelic.png"
+				small = "gfx/leaders/YUG/pavle_strugar_small.png"
+			}
+		}
+
+		corps_commander={
+			traits={serbian}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}	
+	YUG_milan_aksentijevic = {
+		name = "Milan Aksentijevic"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YUG/milan_aksentijevic.png"
+				small = "gfx/leaders/YUG/milan_aksentijevic_small.png"
+			}
+		}
+
+		corps_commander={
+			traits={slovenian}
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	YUG_konrad_kolsek = {
+		name = "Konrad Kolsek"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YUG/konrad_kolsek.png"
+				small = "gfx/leaders/YUG/konrad_kolsek_small.png"
+			}
+		}
+
+		corps_commander={
+			traits={slovenian}
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=5
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}	
+
+	
+	YUG_atif_dudakovic = {
+		name = "Atif Dudaković"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BOS/atif_dudakovic.dds"
+			}
+			army = {
+				large = "gfx/leaders/BOS/atif_dudakovic.dds"			
+			}
+		}
+		corps_commander={
+			traits={bosnian}
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=1
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	
+	YUG_arkan = {
+		name = "Arkan"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/arkan.png"
+			}
+			army = {
+				large = "gfx/leaders/YUG/arkan.png"			
+			}
+		}
+		corps_commander={
+			traits={serbian}
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}	
+	
+	## Advisors ##
+
+	YUG_nenad_canak = {
+		name = "Nenad Čanak"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/nenad_canak.png"
+				small = "gfx/leaders/YUG/nenad_canak_small.png"
+			}
+		}
+		advisor={
+			cost = 100			
+			slot = political_advisor
+			idea_token = YUG_nenad_canak
+			allowed = {
+				original_tag = YUG
+			}
+			available = {
+				OR = {
+				has_government = communism
+				has_government = socialism
+				}
+			}
+			
+			traits = {
+				autonomist
+			}
+		}
+	}
+
+	YUG_dragan_veselinov = {
+		name = "Dragan Veselinov"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YUG/dragan_veselinov_small.dds"
+			}
+		}
+		advisor={
+			cost = 100			
+			slot = political_advisor
+			idea_token = YUG_dragan_veselinov
+			allowed = {
+				original_tag = YUG
+			}
+			available = {
+				OR = {
+				has_government = socialism
+				has_completed_focus = YUG_stambolic_a_new_coalition
+				}
+			}
+			
+			traits = {
+				minister_of_finance
+			}
+		}
+	}	
+	
+	YUG_zarko_korac = {
+		name = "Žarko Korać"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YUG/zarko_korac_small.dds"
+			}
+		}
+		advisor={
+			cost = 100			
+			slot = political_advisor
+			idea_token = YUG_zarko_korac
+			allowed = {
+				original_tag = YUG
+			}
+			available = {
+				OR = {
+					has_government = socialism
+					has_completed_focus = YUG_stambolic_a_new_coalition					
+				}	
+			}
+			
+			traits = {
+				minister_of_education
+			}
+		}
+	}
+	
+	YUG_dragan_milovanovic = {
+		name = "Dragan Milovanović"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YUG/dragan_milanovic_small.dds"
+			}
+		}
+		advisor={
+			cost = 100			
+			slot = political_advisor
+			idea_token = YUG_dragan_milovanovic
+			allowed = {
+				original_tag = YUG
+			}
+			available = {
+				OR = {
+				has_government = socialism
+				has_completed_focus = YUG_stambolic_a_new_coalition
+				}
+			}
+			
+			traits = {
+				minister_of_labour
+			}
+		}
+	}
+
+	
+	YUG_stipe_suvar = { 
+		name = "Stipe Suvar"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YUG/stipe_suvar_small.dds" 
+			}
+		}
+		advisor={
+			cost = 100			
+			slot = political_advisor
+			idea_token = YUG_stipe_suvar
+			allowed = {
+				original_tag = YUG
+			}
+			available = {
+				has_completed_focus = YUG_stambolic_yugoslav_liberation_committee
+			}
+			
+			traits = {
+				croat_communist
+
+			}
+			
+		}
+	}	
+
+	YUG_radovan_karadzic = {
+		name = "Radovan Karadzic"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SRP/Karadzic.dds"
+				small = "gfx/leaders/YUG/Karadzic_small.dds"
+			}
+		}
+		advisor={
+			cost = 100			
+			slot = political_advisor
+			idea_token = YUG_radovan_karadzic
+			allowed = {
+				original_tag = YUG
+			}
+			available = {
+				OR = {
+				has_government = fascism
+				has_completed_focus = YUG_milosevic_renewed_mandate
+				}
+			}
+			on_add = {
+				if = {
+					limit = {
+						owner = { NOT = {has_country_flag = karadzic_trait_improved} }
+					}
+			
+					owner = {
+						custom_effect_tooltip = yug_trait_will_be_improved
+						country_event = {id = yug.19 days = 365}
+						set_country_flag = yug_karadzic_employed
+					}
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						owner = { NOT = {has_country_flag = karadzic_trait_improved} }
+					}		
+				
+					owner = {
+						clr_country_flag = yug_karadzic_employed
+					}
+				}	
+			}			
+			
+			traits = {
+				nationalist
+			}
+		}
+	}	
+	
+	YUG_nikola_sainovic = {
+		name = "Nikola Šainović"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/nikola_sainovic.png"
+				small = "gfx/leaders/YUG/nikola_sainovic_small.dds" 
+			}
+		}
+		advisor={
+			cost = 100			
+			slot = political_advisor
+			idea_token = YUG_nikola_sainovic
+			allowed = {
+				original_tag = YUG
+			}
+			available = {
+				has_completed_focus = YUG_milosevic_renewed_mandate
+			}
+			
+			traits = {
+				useful_bureaucrat
+			}
+		}
+	}
+
+	YUG_momir_bulatovic = {
+		name = "Momir Bulatovic"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/momir_bulatovic.png"
+				small = "gfx/leaders/YUG/momir_bulatovic_small.png" 
+			}
+		}
+		advisor={
+			cost = 100			
+			slot = political_advisor
+			idea_token = YUG_momir_bulatovic
+			allowed = {
+				original_tag = YUG
+			}
+			available = {
+				has_completed_focus = YUG_milosevic_renewed_mandate
+			}
+			
+			traits = {
+				loyal_politician
+			}
+		}
+	}	
+	
+	YUG_radomir_markovic = {
+		name = "Radomir Markovic"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/radomir_markovic.dds"
+				small = "gfx/leaders/YUG/radomir_markovic_small.dds" 
+			}
+		}
+		advisor={
+			cost = 100			
+			slot = political_advisor
+			idea_token = YUG_radomir_markovic
+			allowed = {
+				original_tag = YUG
+			}
+			available = {
+				OR = {
+					has_completed_focus = YUG_milosevic_expand_sbd_operations
+					has_completed_focus = YUG_seselj_centralize_the_security_services
+				}
+			}
+			
+			traits = {
+
+			}
+		}
+	}
+	
+	YUG_zoran_lilic = {
+		name = "Zoran Lilic"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YUG/zoran_lilic_small.dds" 
+			}
+		}
+		advisor={
+			cost = 100			
+			slot = political_advisor
+			idea_token = YUG_zoran_lilic
+			allowed = {
+				original_tag = YUG
+			}
+			available = {
+				has_completed_focus = YUG_milosevic_renewed_mandate
+			}
+			
+			traits = {
+				minister_of_education
+			}
+		}
+	}	
+
+	YUG_dragan_tomic = { #money launderer
+		name = "Dragan Tomic"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YUG/dragan_tomic_small.dds" 
+			}
+		}
+		advisor={
+			cost = 100			
+			slot = political_advisor
+			idea_token = YUG_dragan_tomic
+			allowed = {
+				original_tag = YUG
+			}
+			available = {
+				has_completed_focus = YUG_milosevic_renewed_mandate
+			}
+			
+			traits = {
+				wealthy_businessman
+			}
+			
+			on_add = {
+				owner = {
+					subtract_from_variable = {YUG_debt_owe_var = 1}
+					custom_effect_tooltip = yug_our_debts_will_decrease_1_bil
+				}
+			}
+		}
+	}	
+
+
+	YUG_milan_martic = { 
+		name = "Milan Martic"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YUG/milan_martic_small.dds" 
+			}
+		}
+		advisor={
+			cost = 100			
+			slot = political_advisor
+			idea_token = YUG_milan_martic
+			allowed = {
+				original_tag = YUG
+			}
+			available = {
+				OR = {
+					has_government = fascism
+					has_completed_focus = YUG_milosevic_integrate_pcpoy_remmants
+				}	
+			}
+			
+			traits = {
+				croat_serb_nationalist
+
+			}
+			
+		}
+	}	
+
+	YUG_borka_vucic = { 
+		name = "Borka Vucic"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YUG/borka_vucic_small.dds" 
+			}
+		}
+		advisor={
+			cost = 100			
+			slot = political_advisor
+			idea_token = YUG_borka_vucic
+			allowed = {
+				original_tag = YUG
+			}
+			available = {
+				has_completed_focus = YUG_milosevic_renewed_mandate
+			}
+			
+			traits = {
+				banker
+
+			}
+			
+			on_add = {
+				if = {
+					limit = {
+						owner = { NOT = {has_country_flag = vucic_trait_improved} }
+					}
+			
+					owner = {
+						custom_effect_tooltip = yug_trait_will_be_improved
+						country_event = {id = yug.19 days = 365}
+						set_country_flag = yug_vucic_employed
+					}
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						owner = { NOT = {has_country_flag = vucic_trait_improved} }
+					}		
+				
+					owner = {
+						clr_country_flag = yug_vucic_employed
+					}
+				}	
+			}
+			
+		}
+	}	
+	
+	YUG_voja_antonic = {
+		name = "Voja Antonić"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YUG/voja_antonic_small.dds" 
+			}
+		}
+		advisor={
+			cost = 100			
+			slot = political_advisor
+			idea_token = YUG_voja_antonic
+			allowed = {
+				original_tag = YUG
+			}
+			available = {
+				has_completed_focus = YUG_milosevic_improving_the_internet_structure
+			}
+			
+			traits = {
+				computer_designer
+			}
+		}
+	}	
+	
+	
+	YUG_tomislav_nikolic = { 
+		name = "Tomislav Nikolic"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/tomislav_nikolic.png" 
+				small = "gfx/leaders/YUG/tomislav_nikolic_small.dds" 
+			}
+		}
+		advisor={
+			cost = 100			
+			slot = political_advisor
+			idea_token = YUG_tomislav_nikolic
+			allowed = {
+				original_tag = YUG
+			}
+			available = {
+				has_government = fascism
+			}
+			
+			traits = {
+				loyal_politician
+
+			}
+			
+		}
+	}
+
+	YUG_dragan_markovic = { 
+		name = "Dragan Markovic"
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/YUG/dragan_markovic_small.png" 
+			}
+		}
+		advisor={
+			cost = 100			
+			slot = political_advisor
+			idea_token = YUG_tomislav_nikolic
+			allowed = {
+				original_tag = YUG
+			}
+			available = {
+				has_government = fascism
+			}
+			
+			traits = {
+				minister_of_finance
+
+			}
+			
+		}
+	}	
+
+	YUG_pavle = { 
+		name = "Pavle"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/pavle.png" 
+				small = "gfx/leaders/YUG/pavle_small.png" 
+			}
+		}
+		advisor={
+			cost = 100			
+			slot = political_advisor
+			idea_token = YUG_pavle
+			allowed = {
+				original_tag = YUG
+			}
+			available = {
+				has_country_flag = abolished_secularism
+			}
+			
+			traits = {
+				religious_leader
+
+			}
+			
+		}
+	}	
+	
+	## Admirals ##
+
+	YUG_miodrag_jokic = {
+		name = "Miodrag Jokić"
+		portraits = {
+			army = {
+				large = "gfx/leaders/YUG/Miodrag_Jokic.dds"
+			}
+		}
+		navy_leader={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+
+}

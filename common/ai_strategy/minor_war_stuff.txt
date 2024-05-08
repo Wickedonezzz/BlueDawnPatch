@@ -1,0 +1,513 @@
+ethiopia_invading_eritia_properly = {
+	allowed = {
+		original_tag = ETH 
+	}
+
+	enable = {
+		ETH = {has_war_with = ERI}
+		ETH = {has_idea = ETH_operation_weridwali}
+	}
+	abort = {
+
+		ETH = {has_war_with = ETV}
+
+	}
+
+	ai_strategy = {
+		type = prepare_for_war  #Pursues AI to prepare for a war against a specified country, moving troops to their border.
+		id = ERI
+		value = 200
+	}
+	ai_strategy = {
+		type = front_unit_request  #Pursues AI to put more units on a specified land frontline.
+		tag = ERI
+		value = 200
+	}
+	ai_strategy = {
+		type = theatre_distribution_demand_increase   #Pursues AI to put more units in the specified state's theater.	
+		value = 24									#this is the amount of divisions the AI will put
+		id = 550									#this is the state id
+	}
+	
+}
+KOR_prepare_war_with SKR = {
+	allowed = {
+		original_tag = KOR
+	}
+
+	enable = {
+		KOR = {has_war_with = SKR}
+		KOR = {has_idea = KOR_songun }
+	}
+	abort = {
+
+		NOT = {
+		KOR = {has_war_with = SKR}
+		}
+
+	}
+
+	ai_strategy = {
+		type = prepare_for_war  #Pursues AI to prepare for a war against a specified country, moving troops to their border.
+		id = SKR
+		value = 900
+	}
+	ai_strategy = {
+		type = front_unit_request  #Pursues AI to put more units on a specified land frontline.
+		tag = SKR
+		value = 900
+	}
+	
+}
+
+JAP_team_up_with_ROK = {
+	allowed = {
+		original_tag = JAP
+	}
+
+	enable = {
+		SKR = {has_war_with = KOR}
+	}
+	abort = {
+
+		NOT = {
+		KOR = {has_war_with = SKR}
+		}
+
+	}
+
+	ai_strategy = {
+		type = prepare_for_war  #Pursues AI to prepare for a war against a specified country, moving troops to their border.
+		id = KOR
+		value = 200
+	}
+	ai_strategy = {
+		type = front_unit_request  #Pursues AI to put more units on a specified land frontline.
+		tag = KOR
+		value = 900
+	}
+	
+	ai_strategy = {
+    type = force_defend_ally_borders
+    id = SKR
+    value = 900
+}
+	
+}
+CHI_team_up_with_ROK = {
+	allowed = {
+		original_tag = CHI
+	}
+
+	enable = {
+		SKR = {has_war_with = KOR}
+	}
+	abort = {
+
+		NOT = {
+		KOR = {has_war_with = SKR}
+		}
+
+	}
+
+	ai_strategy = {
+		type = prepare_for_war  #Pursues AI to prepare for a war against a specified country, moving troops to their border.
+		id = KOR
+		value = 200
+	}
+	ai_strategy = {
+		type = front_unit_request  #Pursues AI to put more units on a specified land frontline.
+		tag = KOR
+		value = 200
+	}
+	ai_strategy = {
+    type = force_defend_ally_borders
+    id = SKR
+    value = 300
+}
+	
+}
+
+focus_on_dprk = {
+	allowed = {
+		original_tag = PRC
+	}
+
+	enable = {
+		KOR = {has_war_with = SKR}
+	}
+	abort = {
+		NOT = {
+		KOR = {has_war_with = SKR}
+		}
+	}
+
+	ai_strategy = {
+		type = prepare_for_war  #Pursues AI to prepare for a war against a specified country, moving troops to their border.
+		id = SKR
+		value = 900
+	}
+	ai_strategy = {
+		type = front_unit_request  #Pursues AI to put more units on a specified land frontline.
+		tag = SKR
+		value = 900
+	}
+	
+}
+focus_on_cambodia_1 = {
+	allowed = {
+		original_tag = CMK
+	}
+
+	enable = {
+		CMK = {has_war_with = CAM}
+	}
+	abort = {
+		NOT = {
+		CMK = {has_war_with = CAM}
+		}
+	}
+
+	ai_strategy = {
+		type = prepare_for_war  #Pursues AI to prepare for a war against a specified country, moving troops to their border.
+		id = CAM
+		value = 200
+	}
+	ai_strategy = {
+		type = front_unit_request  #Pursues AI to put more units on a specified land frontline.
+		tag = CAM
+		value = 200
+	}
+	
+}
+
+focus_on_cambodia_2 = {
+	allowed = {
+		original_tag = CAM
+	}
+
+	enable = {
+		CAM = {has_war_with = CMK}
+	}
+	abort = {
+		NOT = {
+		CAM = {has_war_with = CMK}
+		}
+	}
+
+	ai_strategy = {
+		type = prepare_for_war  #Pursues AI to prepare for a war against a specified country, moving troops to their border.
+		id = CMK
+		value = 999
+	}
+	ai_strategy = {
+		type = front_unit_request  #Pursues AI to put more units on a specified land frontline.
+		tag = CMK
+		value = 999
+	}
+	
+}
+focus_on_cambodia_2 = {
+	allowed = {
+		original_tag = SIA
+	}
+
+	enable = {
+		SIA = {has_war_with = CAM}
+	}
+	abort = {
+		NOT = {
+		SIA = {has_war_with = CAM}
+		}
+	}
+
+	ai_strategy = {
+		type = front_unit_request  #Pursues AI to put more units on a specified land frontline.
+		tag = CAM
+		value = 200
+	}
+	
+}
+focus_on_cambodia_3 = {
+	allowed = {
+		original_tag = SIA
+	}
+
+	enable = {
+		SIA = {has_war_with = LAO}
+	}
+	abort = {
+		NOT = {
+		SIA = {has_war_with = LAO}
+		}
+	}
+
+	ai_strategy = {
+		type = front_unit_request  #Pursues AI to put more units on a specified land frontline.
+		tag = LAO
+		value = 200
+	}
+	
+}
+focus_on_poland= {
+	allowed = {
+		original_tag = POL
+	}
+
+	enable = {
+		POL = {has_war_with = SOV}
+	}
+	abort = {
+		NOT = {
+		POL = {has_war_with = SOV}
+		}
+	}
+
+	ai_strategy = {
+		type = prepare_for_war  #Pursues AI to prepare for a war against a specified country, moving troops to their border.
+		id = SOV
+		value = 200
+	}
+	ai_strategy = {
+		type = front_unit_request  #Pursues AI to put more units on a specified land frontline.
+		tag = SOV
+		value = 200
+	}
+	
+}
+
+afghanistan_invading_northern_alliance_properly = {
+	allowed = {
+		original_tag = AFG 
+	}
+
+	enable = {
+		AFG = {has_war_with = NRO}
+	}
+	abort = {
+		NOT = {
+		AFG = {has_war_with = NRO}
+		}
+	}
+
+	ai_strategy = {
+		type = prepare_for_war  #Pursues AI to prepare for a war against a specified country, moving troops to their border.
+		id = NRO
+		value = 200
+	}
+	ai_strategy = {
+		type = front_unit_request  #Pursues AI to put more units on a specified land frontline.
+		tag = NRO
+		value = 200
+	}
+	ai_strategy = {
+		type = theatre_distribution_demand_increase   #Pursues AI to put more units in the specified state's theater.	
+		value = 24									#this is the amount of divisions the AI will put
+		id = 267									#this is the state id
+	}
+}
+	SOV_help_pol = {
+		allowed = {
+			original_tag = SOV
+		}
+	
+		enable = {
+			POL = {
+				is_puppet_of = ROOT
+			}
+		}
+		abort = {
+			NOT = {
+				POL = {
+					is_puppet_of = ROOT
+				}
+			}
+		}
+	
+		ai_strategy = {
+			type = send_lend_lease_desire 
+			id = POL
+			value = 200
+		}
+	
+	}
+	SOV_help_hun = {
+		allowed = {
+			original_tag = SOV
+		}
+	
+		enable = {
+			HUN = {
+				is_puppet_of = ROOT
+			}
+		}
+		abort = {
+			NOT = {
+				HUN = {
+					is_puppet_of = ROOT
+				}
+			}
+		}
+	
+		ai_strategy = {
+			type = send_lend_lease_desire 
+			id = HUN
+			value = 200
+		}
+	
+	}
+	SOV_help_rom = {
+		allowed = {
+			original_tag = SOV
+		}
+	
+		enable = {
+			ROM = {
+				is_puppet_of = ROOT
+			}
+		}
+		abort = {
+			NOT = {
+				ROM = {
+					is_puppet_of = ROOT
+				}
+			}
+		}
+	
+		ai_strategy = {
+			type = send_lend_lease_desire 
+			id = ROM
+			value = 200
+		}
+	
+	}
+	SOV_help_bul = {
+		allowed = {
+			original_tag = SOV
+		}
+	
+		enable = {
+			BUL = {
+				is_puppet_of = ROOT
+			}
+		}
+		abort = {
+			NOT = {
+				BUL = {
+					is_puppet_of = ROOT
+				}
+			}
+		}
+	
+		ai_strategy = {
+			type = send_lend_lease_desire 
+			id = BUL
+			value = 200
+		}
+	
+	}
+	SOV_help_slo = {
+		allowed = {
+			original_tag = SOV
+		}
+	
+		enable = {
+			SLO = {
+				is_puppet_of = ROOT
+			}
+		}
+		abort = {
+			NOT = {
+				SLO = {
+					is_puppet_of = ROOT
+				}
+			}
+		}
+	
+		ai_strategy = {
+			type = send_lend_lease_desire 
+			id = SLO
+			value = 200
+		}
+	
+	}
+
+ukraine_cw_war_works_properly = {  #the ukrainin civil war factions somehow dont attack each other. heres the fix to that (ai is legit handicapped sometimes)
+	allowed = {
+		OR = {
+			original_tag = OUN 
+			original_tag = UCR 
+			original_tag = UKR 
+			original_tag = DPR 
+			
+		}
+	}
+
+	enable = {
+		has_global_flag = ussr_putin_collapse		
+	}
+	abort = {
+		has_war = no
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = UKR
+		value = 200
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = UKR
+		value = 200
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = UCR
+		value = 200
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = UCR
+		value = 200
+	}
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = OUN
+		value = 200
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = OUN
+		value = 200
+	}
+	
+}
+
+focus_on_sierra= {
+	allowed = {
+		original_tag = RUF
+	}
+
+	enable = {
+		RUF = {has_war_with = SIE}
+	}
+	abort = {
+		NOT = {
+		RUF = {has_war_with = SIE}
+		}
+	}
+
+	ai_strategy = {
+		type = prepare_for_war  #Pursues AI to prepare for a war against a specified country, moving troops to their border.
+		id = SIE
+		value = 200
+	}
+	ai_strategy = {
+		type = front_unit_request  #Pursues AI to put more units on a specified land frontline.
+		tag = SIE
+		value = 200
+	}
+	
+}

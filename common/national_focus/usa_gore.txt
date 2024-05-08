@@ -1,0 +1,1037 @@
+﻿focus_tree = {
+	id = usa_gore_focus
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 0
+			tag = USA
+		}
+	}
+	
+	default = no
+	
+	focus = {
+		id = USA_gore_the_gore_presidency
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 40
+		y = 0
+
+		prerequisite = {}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = {id = usa_gore.1}
+		}
+	}
+	
+	focus = {
+		id = USA_gore_draw_up_the_plans
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 39
+		y = 1
+
+		prerequisite = {focus = USA_gore_the_gore_presidency}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = USA_gore_set_the_foundations
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 41
+		y = 1
+
+		prerequisite = {focus = USA_gore_the_gore_presidency}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_towards_a_grand_future
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 40
+		y = 2
+
+		prerequisite = {focus = USA_gore_draw_up_the_plans}
+		prerequisite = {focus = USA_gore_set_the_foundations}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_a_green_future
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 17
+		y = 3
+
+		prerequisite = {focus = USA_gore_towards_a_grand_future}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_towards_clear_skies
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 17
+		y = 4
+
+		prerequisite = {focus = USA_gore_a_green_future}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_cleaning_up_the_ocean
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 9
+		y = 4
+
+		prerequisite = {focus = USA_gore_a_green_future}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_revive_the_clean_water_act
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 9
+		y = 5
+
+		prerequisite = {focus = USA_gore_cleaning_up_the_ocean}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_ensure_clean_water_for_all_americans
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 9
+		y = 6
+
+		prerequisite = {focus = USA_gore_revive_the_clean_water_act}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_sunny_beaches_all_around
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 9
+		y = 8
+
+		prerequisite = {focus = USA_gore_the_blue_ocean_act}
+		prerequisite = {focus = USA_gore_the_plastic_waste_reduction_act}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_keep_plastic_out_of_our_fish
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 11
+		y = 5
+
+		prerequisite = {focus = USA_gore_cleaning_up_the_ocean}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_implement_new_fda_guidelines_for_fish
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 11
+		y = 6
+
+		prerequisite = {focus = USA_gore_keep_plastic_out_of_our_fish}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_the_blue_ocean_act
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 8
+		y = 7
+
+		prerequisite = {focus = USA_gore_harsh_fines_on_dumping_companies}
+		prerequisite = {focus = USA_gore_ensure_clean_water_for_all_americans}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_the_plastic_waste_reduction_act
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 10
+		y = 7
+
+		prerequisite = {focus = USA_gore_implement_new_fda_guidelines_for_fish}
+		prerequisite = {focus = USA_gore_ensure_clean_water_for_all_americans}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_crackdown_on_ocean_dumping
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 7
+		y = 5
+
+		prerequisite = {focus = USA_gore_cleaning_up_the_ocean}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_harsh_fines_on_dumping_companies
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 7
+		y = 6
+
+		prerequisite = {focus = USA_gore_crackdown_on_ocean_dumping}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_talk_with_the_corporations
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 16
+		y = 5
+
+		prerequisite = {focus = USA_gore_towards_clear_skies}
+		mutually_exclusive = {focus = USA_gore_far_too_late_for_peace}
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_working_out_a_deal
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 14
+		y = 6
+
+		prerequisite = {focus = USA_gore_talk_with_the_corporations}
+		mutually_exclusive = {}
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_phasing_out_fossil_fuels
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 14
+		y = 7
+
+		prerequisite = {focus = USA_gore_working_out_a_deal}
+		mutually_exclusive = {}
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_subsidies_for_less_gasses
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 16
+		y = 6
+
+		prerequisite = {focus = USA_gore_talk_with_the_corporations}
+		mutually_exclusive = {}
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_commercial_environmentalism
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 16
+		y = 7
+
+		prerequisite = {focus = USA_gore_subsidies_for_less_gasses}
+		mutually_exclusive = {}
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_far_too_late_for_peace
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 18
+		y = 5
+
+		prerequisite = {focus = USA_gore_towards_clear_skies}
+		mutually_exclusive = {focus = USA_gore_talk_with_the_corporations}
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_the_comprehensive_air_purification_act
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 15
+		y = 8
+
+		prerequisite = {focus = USA_gore_commercial_environmentalism}
+		prerequisite = {focus = USA_gore_phasing_out_fossil_fuels}
+		mutually_exclusive = {}
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_capping_the_pollutants
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 18
+		y = 6
+
+		prerequisite = {focus = USA_gore_far_too_late_for_peace}
+		mutually_exclusive = {}
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_strengthen_the_epa
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 18
+		y = 7
+
+		prerequisite = {focus = USA_gore_capping_the_pollutants}
+		mutually_exclusive = {}
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_launch_ad_campaigns
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 20
+		y = 6
+
+		prerequisite = {focus = USA_gore_far_too_late_for_peace}
+		mutually_exclusive = {}
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_against_the_evil_pollutants
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 20
+		y = 7
+
+		prerequisite = {focus = USA_gore_launch_ad_campaigns}
+		mutually_exclusive = {}
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_the_anti_air_pollution_act
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 19
+		y = 8
+
+		prerequisite = {focus = USA_gore_strengthen_the_epa}
+		prerequisite = {focus = USA_gore_against_the_evil_pollutants}
+		mutually_exclusive = {}
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_blossoming_fields
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 26
+		y = 4
+
+		prerequisite = {focus = USA_gore_a_green_future}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_expand_our_national_parks
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 24
+		y = 5
+
+		prerequisite = {focus = USA_gore_blossoming_fields}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_curb_logging
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 28
+		y = 5
+
+		prerequisite = {focus = USA_gore_blossoming_fields}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_reaffirm_federal_protections
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 23
+		y = 6
+
+		prerequisite = {focus = USA_gore_expand_our_national_parks}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_begin_the_plant_a_tree_movement
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 25
+		y = 6
+
+		prerequisite = {focus = USA_gore_expand_our_national_parks}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_increase_wood_imports
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 27
+		y = 6
+
+		prerequisite = {focus = USA_gore_curb_logging}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_leash_the_logger_companies
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 29
+		y = 6
+
+		prerequisite = {focus = USA_gore_curb_logging}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_never_again_deforestation
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 24
+		y = 7
+
+		prerequisite = {focus = USA_gore_reaffirm_federal_protections}
+		prerequisite = {focus = USA_gore_begin_the_plant_a_tree_movement}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_a_steady_balance
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 28
+		y = 7
+
+		prerequisite = {focus = USA_gore_increase_wood_imports}
+		prerequisite = {focus = USA_gore_leash_the_logger_companies}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_a_possible_jumping_point
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 26
+		y = 8
+
+		prerequisite = {focus = USA_gore_never_again_deforestation}
+		prerequisite = {focus = USA_gore_a_steady_balance}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_work_with_disney
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 24
+		y = 9
+
+		prerequisite = {focus = USA_gore_a_possible_jumping_point}
+		mutually_exclusive = {focus = USA_gore_on_our_own}
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_on_our_own
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 28
+		y = 9
+
+		prerequisite = {focus = USA_gore_a_possible_jumping_point}
+		mutually_exclusive = {focus = USA_gore_work_with_disney}
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_dont_shoot_bambi
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 23
+		y = 10
+
+		prerequisite = {focus = USA_gore_work_with_disney}
+		mutually_exclusive = {}
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_a_beloved_image
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 25
+		y = 10
+
+		prerequisite = {focus = USA_gore_work_with_disney}
+		mutually_exclusive = {}
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_love_mother_nature
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 24
+		y = 11
+
+		prerequisite = {focus = USA_gore_dont_shoot_bambi}
+		prerequisite = {focus = USA_gore_a_beloved_image}
+		mutually_exclusive = {}
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_the_nature_in_with_patriotism
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 27
+		y = 10
+
+		prerequisite = {focus = USA_gore_on_our_own}
+		mutually_exclusive = {}
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_chat_with_green_conservatives
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 29
+		y = 10
+
+		prerequisite = {focus = USA_gore_on_our_own}
+		mutually_exclusive = {}
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = USA_gore_the_eagles_forest
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 28
+		y = 11
+
+		prerequisite = {focus = USA_gore_the_nature_in_with_patriotism}
+		prerequisite = {focus = USA_gore_chat_with_green_conservatives}
+		mutually_exclusive = {}
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+}

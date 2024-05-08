@@ -1,0 +1,9 @@
+air_wings = {
+	# Land Wings #
+	670 = {
+		# Fighters #
+		fighter_equipment_0 = { owner = "SOV" amount = 12 }
+		# Transport #
+		transport_plane_equipment_1 = { owner = "SOV" amount = 8 }
+	}
+}

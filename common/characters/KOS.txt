@@ -1,0 +1,147 @@
+characters = {
+
+	KOS_kosovo_liberation_army = {
+		name = "Kosovo Liberation Army"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KOS/liberation_army.dds"
+			}
+			army = {
+				large = "gfx/leaders/KOS/liberation_army.dds"			
+			}
+		}
+		country_leader = {
+			ideology = nationalist_military_junta
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	KOS_sylejman_selimi = { 
+		name = "Sylejman Selimi"
+		portraits = {
+			army = {
+				large = "gfx/leaders/KOS/selimi.png"			
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}	
+	
+	KOS_gezim_ostreni = { 
+		name = "Gezim Ostreni"
+		portraits = {
+			army = {
+				large = "gfx/leaders/KOS/ostreni.png"			
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	
+	KOS_muhamet_xhemajli = { 
+		name = "Muhamet Xhemajli"
+		portraits = {
+			army = {
+				large = "gfx/leaders/KOS/xhemajli.png"			
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=5
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=-1
+		}
+		country_leader = {
+			ideology = ultranationalism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}			
+	}		
+
+	KOS_salih_mustafa = { 
+		name = "Salih Mustafa"
+		portraits = {
+			army = {
+				large = "gfx/leaders/KOS/salih_mustafa.png"			
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=4
+			attack_skill=6
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}		
+	}	
+
+	KOS_jakup_asipi = { 
+		name = "Jakup Asipi"
+		portraits = {
+			army = {
+				large = "gfx/leaders/KOS/jakup_asipi.png"			
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=4
+			attack_skill=3
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
+		}
+		country_leader = {
+			ideology = sunni_islamism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}				
+	}
+	
+	KOS_hashim_thaci = {
+		name = "Hashim Thaci"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KOS/Hashim_Thaci.dds"
+			}
+			army = {
+				large = "gfx/leaders/KOS/Hashim_Thaci.dds"			
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+}

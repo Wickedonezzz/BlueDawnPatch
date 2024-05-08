@@ -1,0 +1,29 @@
+
+state={
+	id=934
+	name="STATE_934"
+	manpower = 664610
+	state_category = pastoral
+
+	history={
+		add_core_of = BHR
+		owner = BHR
+		victory_points = {
+			13257 1
+		}
+		buildings = {
+			infrastructure = 2
+			synthetic_refinery = 1
+			air_base = 2
+			13257 = {
+				naval_base = 3
+			}
+		}
+	}
+
+	provinces={
+		13257
+	}
+
+	local_supplies=0.0 
+}

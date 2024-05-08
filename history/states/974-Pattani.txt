@@ -1,0 +1,26 @@
+state={
+	id=974
+	name="STATE_974"
+	history={
+		owner = SIA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 1
+			air_base = 1
+			12131 = {
+				naval_base = 2
+
+			}
+		}
+		add_core_of = PTN
+	}
+	provinces={
+		1279 4297 12131 
+	}
+	manpower=2056881
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

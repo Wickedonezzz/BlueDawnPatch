@@ -1,0 +1,77 @@
+﻿
+RCK_INF_01 = 
+{
+	name = "Infantry Division"
+
+	for_countries = { RCK }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry_unit" }
+
+	fallback_name = "%s Rassemblement pour la démocratie congolaise Forces rebelles"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%s Rassemblement pour la démocratie congolaise Forces rebelles" }
+		2 = { "%s Rassemblement pour la démocratie congolaise Forces rebelles" }
+		3 = { "%s Rassemblement pour la démocratie congolaise Forces rebelles" }
+		4 = { "%s Rassemblement pour la démocratie congolaise Forces rebelles" }
+		5 = { "%s Rassemblement pour la démocratie congolaise Forces rebelles" }
+		6 = { "%s Rassemblement pour la démocratie congolaise Forces rebelles" }
+		7 = { "%s Rassemblement pour la démocratie congolaise Forces rebelles" }
+		8 = { "%s Rassemblement pour la démocratie congolaise Forces rebelles" }
+		9 = { "%s Rassemblement pour la démocratie congolaise Forces rebelles" }
+		10 = { "%s Rassemblement pour la démocratie congolaise Forces rebelles" }
+		11 = { "%s Rassemblement pour la démocratie congolaise Forces rebelles" }
+		12 = { "%s Rassemblement pour la démocratie congolaise Forces rebelles" }
+		13 = { "%s Rassemblement pour la démocratie congolaise Forces rebelles" }
+		14 = { "%s Rassemblement pour la démocratie congolaise Forces rebelles" }
+		15 = { "%s Rassemblement pour la démocratie congolaise Forces rebelles" }
+		16 = { "%s Rassemblement pour la démocratie congolaise Forces rebelles" }
+		17 = { "%s Rassemblement pour la démocratie congolaise Forces rebelles" }
+		18 = { "%s Rassemblement pour la démocratie congolaise Forces rebelles" }
+		19 = { "%s Rassemblement pour la démocratie congolaise Forces rebelles" }
+		20 = { "%s Rassemblement pour la démocratie congolaise Forces rebelles" }		
+	}
+}
+
+RCK_INF_02 = 
+{
+	name = "Infantry Division"
+
+	for_countries = { RCK }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry_unit" }
+
+	fallback_name = "%s Rassemblement pour la Démocratie Congolaise Forces Rebelles - Division Artillerie"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%s Rassemblement pour la Démocratie Congolaise Forces Rebelles - Division Artillerie" }
+		2 = { "%s Rassemblement pour la Démocratie Congolaise Forces Rebelles - Division Artillerie" }
+		3 = { "%s Rassemblement pour la Démocratie Congolaise Forces Rebelles - Division Artillerie" }
+		4 = { "%s Rassemblement pour la Démocratie Congolaise Forces Rebelles - Division Artillerie" }
+		5 = { "%s Rassemblement pour la Démocratie Congolaise Forces Rebelles - Division Artillerie" }
+		6 = { "%s Rassemblement pour la Démocratie Congolaise Forces Rebelles - Division Artillerie" }
+		7 = { "%s Rassemblement pour la Démocratie Congolaise Forces Rebelles - Division Artillerie" }
+		8 = { "%s Rassemblement pour la Démocratie Congolaise Forces Rebelles - Division Artillerie" }
+		9 = { "%s Rassemblement pour la Démocratie Congolaise Forces Rebelles - Division Artillerie" }
+		10 = { "%s Rassemblement pour la Démocratie Congolaise Forces Rebelles - Division Artillerie" }
+		11 = { "%s Rassemblement pour la Démocratie Congolaise Forces Rebelles - Division Artillerie" }
+		12 = { "%s Rassemblement pour la Démocratie Congolaise Forces Rebelles - Division Artillerie" }
+		13 = { "%s Rassemblement pour la Démocratie Congolaise Forces Rebelles - Division Artillerie" }
+		14 = { "%s Rassemblement pour la Démocratie Congolaise Forces Rebelles - Division Artillerie" }
+		15 = { "%s Rassemblement pour la Démocratie Congolaise Forces Rebelles - Division Artillerie" }
+		16 = { "%s Rassemblement pour la Démocratie Congolaise Forces Rebelles - Division Artillerie" }
+		17 = { "%s Rassemblement pour la Démocratie Congolaise Forces Rebelles - Division Artillerie" }
+		18 = { "%s Rassemblement pour la Démocratie Congolaise Forces Rebelles - Division Artillerie" }
+		19 = { "%s Rassemblement pour la Démocratie Congolaise Forces Rebelles - Division Artillerie" }
+		20 = { "%s Rassemblement pour la Démocratie Congolaise Forces Rebelles - Division Artillerie" }		
+	}
+}
+

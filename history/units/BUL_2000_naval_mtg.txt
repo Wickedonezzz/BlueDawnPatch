@@ -1,0 +1,27 @@
+units = {
+	fleet = {
+		name = "Bŭlgarski Flot"
+		naval_base = 9783 # Varna #
+		task_force = {
+			name = "Bŭlgarski Flot"
+			location = 9783 # Varna #
+			ship = { name = "BNG Smeli" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = BUL creator = SOV version_name = "Koni I Class (Pr. 1159)" } } }
+
+			ship = { name = "BNS Reshitelni" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = BUL creator = SOV version_name = "Pauk Class (Pr. 12412)" } } }
+			ship = { name = "BNS Bodri" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = BUL creator = SOV version_name = "Pauk Class (Pr. 12412)" } } }
+			ship = { name = "BNS PLK-33" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = BUL creator = SOV version_name = "Poti Class (Pr. 204)" } } }
+			ship = { name = "BNS PLK-35" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = BUL creator = SOV version_name = "Poti Class (Pr. 204)" } } }
+			ship = { name = "BNS PLK-41" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = BUL creator = SOV version_name = "Poti Class (Pr. 204)" } } }
+			ship = { name = "BNS PLK-42" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = BUL creator = SOV version_name = "Poti Class (Pr. 204)" } } }
+		}
+		task_force = {
+			name = "Bŭlgarski Podvoden Flot"
+			location = 9783 # Varna #
+			ship = { name = "BNS Slava" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = BUL creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "BNS Nadezhda" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = BUL creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

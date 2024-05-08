@@ -1,0 +1,16 @@
+﻿air_wings = {
+	# Land Wings #
+	545 = {
+		# Fighters -- J-7, Hunter
+		fighter_equipment_0 =  { # J-7 #
+			owner = "ZIM" 
+			creator = PRC
+			amount = 12
+		}
+		fighter_equipment_0 =  { # Hunter #
+			owner = "ZIM" 
+			creator = ENG
+			amount = 11
+		}
+	}
+}

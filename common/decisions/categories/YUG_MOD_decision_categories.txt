@@ -1,0 +1,195 @@
+yug_debug = {
+	icon = GFX_decision_category_generic_economy
+	picture = GFX_decision_cat_generic_factory
+	
+	allowed = {
+	is_debug = yes
+	}
+	
+	visible = {
+	is_debug = yes
+	}
+	priority = 150
+}
+
+yug_debt_decision_category = {
+	icon = GFX_decision_category_gre_paying_ifc_debt
+	picture = GFX_decision_cat_generic_factory
+	
+	allowed = {
+	
+	}
+	
+	visible = {
+	}
+	priority = 100
+}
+
+yug_deal_with_uprisings = {
+	icon = GFX_decision_category_spr_political_assassination
+	picture = GFX_decision_cat_generic_army
+	
+	allowed = {
+	}
+	
+	visible = {
+		NOT = {
+			OR = {
+			has_country_flag = bos_uprising_started
+			has_country_flag = kos_uprising_started
+			}
+		}
+	}
+	priority = 200
+}
+
+yug_uprising = {
+	icon = GFX_decision_category_army_reform
+	picture = GFX_decision_cat_generic_army
+	
+	allowed = {
+	}
+	
+	visible = {
+		has_country_flag = yug_mass_rebellions
+		NOT = {
+		has_country_flag = yug_wars_reached_conclusion
+		}
+	}
+	priority = 250
+}
+
+yug_rebuilding_our_industry = {
+	icon = GFX_decision_category_generic_economy
+	picture = GFX_decision_cat_generic_factory
+	
+	allowed = {
+	}
+	
+	visible = {
+	}
+	priority = 150
+}
+
+yug_opening_new_factories = {
+	icon = GFX_decision_category_generic_industry
+	picture = GFX_decision_cat_generic_factory
+	
+	allowed = {
+	}
+	
+	visible = {
+	}
+	priority = 150
+}
+
+yug_yugoslavia_ussr_war = {
+	icon = GFX_decision_category_SOV_civil_war
+	picture = GFX_decision_cat_generic_army
+	
+	allowed = {
+	}
+	
+	visible = {
+	}
+	priority = 999
+}
+
+yug_remmants_of_the_old_gov = {
+	icon = GFX_decision_category_saf_anti_colonialist_crusade
+	picture = GFX_decision_cat_generic_army 
+	
+	allowed = {
+	}
+	
+	visible = {
+	}
+	priority = 55
+}
+
+yug_stambolic_yugoslav_liberation_committee_category = {
+	icon = GFX_decision_category_saf_anti_colonialist_crusade
+	
+	allowed = {
+	}
+	
+	visible = {
+		NOT = {has_country_flag = has_country_flag = yug_defeated}
+	}
+	priority = 55
+}
+
+
+yug_stambolic_a_new_yugoslavia_category = {
+	icon = GFX_decision_category_generic_communism
+	
+	allowed = {
+	}
+	
+	visible = {
+		NOT = {has_country_flag = has_country_flag = yug_defeated}
+	}
+	priority = 55
+}
+
+yug_seselj_restructuring_of_the_state = {
+	icon = GFX_decision_category_SWI_imperial_council
+	
+	allowed = {
+	}
+	
+	visible = {
+		NOT = {has_country_flag = has_country_flag = yug_defeated}
+	}
+	priority = 55
+}
+
+yug_milosevic_the_great_progress_campaign = {
+	icon = GFX_decision_category_generic_economy
+	picture = GFX_decision_cat_generic_factory 
+	
+	allowed = {
+		original_tag = YUG
+	}
+	
+	visible = {
+		NOT = {has_completed_focus = YUG_milosevic_finish_the_program}
+	}
+	priority = 55
+}
+
+yug_post_defeat_cat = {
+	icon = GFX_decision_category_saf_anti_colonialist_crusade
+	
+	allowed = {
+		OR = {
+			original_tag = YUG
+			original_tag = VOJ
+			original_tag = SER
+		}	
+	}
+	
+	visible = {
+		OR = {
+			has_country_flag = yug_defeated
+			has_global_flag = yug_total_collapse
+		}
+	}
+	priority = 55
+}
+
+YUG_rebels_management_category = {
+	icon = GFX_decision_category_border_conflicts
+	
+	allowed = {
+		original_tag = YUG
+	}
+	
+	visible = {
+		NOT = {
+		has_country_flag = yug_mass_rebellions
+		has_country_flag = yug_neg_win
+		}
+	}
+	priority = 999
+}

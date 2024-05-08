@@ -1,0 +1,24 @@
+
+state={
+	id=884
+	name="STATE_884"
+
+	history={
+		owner = SPL
+		add_core_of = SPL
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		2096 10859 10877 12800 12887 13397 13400 
+	}
+	manpower=1040121
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

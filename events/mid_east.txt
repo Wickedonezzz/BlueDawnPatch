@@ -1,0 +1,87 @@
+add_namespace = palisr
+add_namespace = syria
+
+#Camp David Summmit fails#
+#country_event = {
+#	id = palisr.1
+#	title = palisr.1.t
+#	desc = palisr.1.d
+#	picture = GFX_report_event_spark
+#	
+#	trigger = {
+#	date > 2000.5.29
+#	original_tag = ISR
+#	country_exists = PAL
+#	country_exists = ISR
+#	}
+#
+#	fire_only_once = yes
+#
+#		#yes#
+#	option = {
+#		name = palisr.1.a
+#		news_event = {id = old_times_news.34}
+#		PAL = {country_event = {id = palisr.2 days = 2}}
+#		add_stability = -0.10
+#		ai_chance = {
+#		factor = 100
+#		}
+#	}
+#}
+
+#second intifada#
+#country_event = {
+#	id = palisr.2
+#	title = palisr.2.t
+#	desc = palisr.2.d
+#	picture = GFX_report_event_spark
+#	
+#	is_triggered_only = yes
+#
+#	fire_only_once = yes
+#
+#		#yes#
+#	option = {
+#		name = palisr.2.a
+#		news_event = {id = old_times_news.35 days = 1}
+#		add_ideas = PAL_second_intifada
+#		PAL = {
+#		    declare_war_on = {
+#               target = ISR
+#                type = annex_everything
+#            }
+#		}
+#		ISR = {
+#			add_timed_idea = {
+#			idea = ISR_political_instability days = 50
+#			}
+#			add_ideas = ISR_zionist_volunteers
+#		}
+#		ai_chance = {
+#		factor = 100
+#		}
+#	}
+#}
+
+#hafez al assad passes away#
+country_event = {
+	id = syria.1
+	title = syria.1.t
+	desc = syria.1.d
+	picture = GFX_report_event_spark
+	
+	trigger = {
+	date > 2000.6.10
+	original_tag = SYR
+
+	}
+
+	fire_only_once = yes
+
+		#rip#
+	option = {
+		name = syria.1.a
+		news_event = {id = old_times_news.38}
+		retire_country_leader = yes
+	}
+}

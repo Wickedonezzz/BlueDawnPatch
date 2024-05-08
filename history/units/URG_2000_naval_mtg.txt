@@ -1,0 +1,16 @@
+units = {
+	fleet = {
+		name = "Flota de Uruguay"
+		naval_base = 10362 # Montevideo #
+		task_force = {
+			name = "Flota de Superficie de Uruguay"
+			location = 10362 # Montevideo #
+			ship = { name = "ROU Uruguay" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = URG creator = FRA version_name = "Commandant Rivière Class" } } }
+			ship = { name = "ROU General Artigas" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = URG creator = FRA version_name = "Commandant Rivière Class" } } }
+			ship = { name = "ROU Montevideo" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = URG creator = FRA version_name = "Commandant Rivière Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

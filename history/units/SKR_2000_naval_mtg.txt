@@ -1,0 +1,119 @@
+units = {
+	fleet = {
+		name = "Daehanmingug Hamdae"
+		naval_base = 13457 # Busan #
+		task_force = {
+			name = "Daehanmingug Susanghamdae"
+			location = 13457 # Busan #
+			ship = { name = "ROKS Gwanggaeto Daewang" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = SKR version_name = "Gwanggaeto Daewang Class" } } }
+			ship = { name = "ROKS Uljimundok" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = SKR version_name = "Gwanggaeto Daewang Class" } } }
+			ship = { name = "ROKS Ulsan" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = SKR version_name = "Ulsan Class" } } }
+			ship = { name = "ROKS Seoul" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = SKR version_name = "Ulsan Class" } } }
+			ship = { name = "ROKS Chungnam" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = SKR version_name = "Ulsan Class" } } }
+			ship = { name = "ROKS Masan" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = SKR version_name = "Ulsan Class" } } }
+			ship = { name = "ROKS Kyongbuk" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = SKR version_name = "Ulsan Class" } } }
+			ship = { name = "ROKS Chonnam" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = SKR version_name = "Ulsan Class" } } }
+			ship = { name = "ROKS Cheju" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = SKR version_name = "Ulsan Class" } } }
+			ship = { name = "ROKS Pusan" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = SKR version_name = "Ulsan Class" } } }
+			ship = { name = "ROKS Cheongju" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = SKR version_name = "Ulsan Class" } } }
+			ship = { name = "ROKS Chungbuk" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = SKR creator = USA version_name = "Gearing Class" } } }
+			ship = { name = "ROKS Jeonbuk" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = SKR creator = USA version_name = "Gearing Class" } } }
+			ship = { name = "ROKS Daejeon" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = SKR creator = USA version_name = "Gearing Class" } } }
+			ship = { name = "ROKS Gwangju" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = SKR creator = USA version_name = "Gearing Class" } } }
+			ship = { name = "ROKS Gangwon" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = SKR creator = USA version_name = "Gearing Class" } } }
+			ship = { name = "ROKS Jeju" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = SKR creator = USA version_name = "Crosley Class" } } }
+
+			ship = { name = "ROKS Donghae" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SKR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Suwon" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SKR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Gangneung" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SKR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Anyang" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SKR version_name = "Donghae Class" } } }
+			ship = { name = "ROKS Pohang" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SKR version_name = "Pohang Class" } } }
+			ship = { name = "ROKS Gunsan" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SKR version_name = "Pohang Class" } } }
+			ship = { name = "ROKS Guengju" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SKR version_name = "Pohang Class" } } }
+			ship = { name = "ROKS Mokpo" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SKR version_name = "Pohang Class" } } }
+			ship = { name = "ROKS Gimcheon" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SKR version_name = "Pohang Class" } } }
+			ship = { name = "ROKS Chungju" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SKR version_name = "Pohang Class" } } }
+			ship = { name = "ROKS Jinju" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SKR version_name = "Pohang Class" } } }
+			ship = { name = "ROKS Yeosu" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SKR version_name = "Pohang Class" } } }
+			ship = { name = "ROKS Jinhae" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SKR version_name = "Pohang Class" } } }
+			ship = { name = "ROKS Suncheon" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SKR version_name = "Pohang Class" } } }
+			ship = { name = "ROKS Iksan" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SKR version_name = "Pohang Class" } } }
+			ship = { name = "ROKS Wonju" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SKR version_name = "Pohang Class" } } }
+			ship = { name = "ROKS Andong" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SKR version_name = "Pohang Class" } } }
+			ship = { name = "ROKS Cheonan" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SKR version_name = "Pohang Class" } } }
+			ship = { name = "ROKS Seongnam" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SKR version_name = "Pohang Class" } } }
+			ship = { name = "ROKS Bucheon" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SKR version_name = "Pohang Class" } } }
+			ship = { name = "ROKS Jecheon" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SKR version_name = "Pohang Class" } } }
+			ship = { name = "ROKS Daecheon" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SKR version_name = "Pohang Class" } } }
+			ship = { name = "ROKS Sokcho" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SKR version_name = "Pohang Class" } } }
+			ship = { name = "ROKS Yeongju" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SKR version_name = "Pohang Class" } } }
+			ship = { name = "ROKS Namwon" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SKR version_name = "Pohang Class" } } }
+			ship = { name = "ROKS Gwangmyeong" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SKR version_name = "Pohang Class" } } }
+			ship = { name = "ROKS Sinseong" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SKR version_name = "Pohang Class" } } }
+			ship = { name = "ROKS Gongju" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SKR version_name = "Pohang Class" } } }
+		}
+		task_force = {
+			name = "Daehanmingug Jamsuhamhamdae"
+			location = 13457 # Busan #
+			ship = { name = "ROKS Chang Bogo" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = SKR creator = GER version_name = "Type 209/1200 Class" } } }
+			ship = { name = "ROKS Lee Chun" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = SKR creator = GER version_name = "Type 209/1200 Class" } } }
+			ship = { name = "ROKS Choi Muson" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = SKR creator = GER version_name = "Type 209/1200 Class" } } }
+			ship = { name = "ROKS Park Wi" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = SKR creator = GER version_name = "Type 209/1200 Class" } } }
+			ship = { name = "ROKS Lee Jongmu" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = SKR creator = GER version_name = "Type 209/1200 Class" } } }
+			ship = { name = "ROKS Jung Woon" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = SKR creator = GER version_name = "Type 209/1200 Class" } } }
+			ship = { name = "ROKS Lee Sunsin" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = SKR creator = GER version_name = "Type 209/1200 Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+	# Destroyer #
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_hull_3
+			creator = "SKR" 
+			version_name = "Gwanggaeto Daewang Class"
+		}
+		name = "ROKS Yangmanchun"
+		requested_factories = 1
+		progress = 0.83
+		amount = 1
+	}
+	# Attack Submarine #
+	add_equipment_production = {
+		equipment = {
+			type = attack_submarine_hull_1
+			creator = "GER" 
+			version_name = "Type 209/1200 Class"
+		}
+		name = "ROKS Na Daeyong"
+		requested_factories = 1
+		progress = 0.81
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = attack_submarine_hull_1
+			creator = "GER" 
+			version_name = "Type 209/1200 Class"
+		}
+		name = "ROKS Lee Eokgi"
+		requested_factories = 1
+		progress = 0.61
+		amount = 1
+	}
+
+	if = {
+		limit = { has_dlc = "Death or Dishonor" }
+		GER = {
+			create_production_license = {
+				target = SKR
+				equipment = {
+					type = attack_submarine_hull_1
+					version_name = "Type 209/1200 Class"
+				}
+				cost_factor = 0
+			}
+		}
+	}
+}

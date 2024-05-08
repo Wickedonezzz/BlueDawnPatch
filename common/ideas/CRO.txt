@@ -1,0 +1,103 @@
+ideas = {
+	
+	country = {
+	
+		CRO_aftermath_of_the_krajina_war = {
+			name = CRO_aftermath_of_the_krajina_war_name
+
+			removal_cost = -1
+
+			picture = CRO_aftermath_of_the_krajina_war_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				war_support_factor = -0.20
+				training_time_army_factor = -0.05
+			}
+		}
+
+		CRO_tudmanism = {
+			name = CRO_tudmanism_name
+
+			removal_cost = -1
+
+			picture = CRO_tudman_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				war_support_factor = 0.25
+				stability_factor = -0.15
+				neutrality_drift = 0.02
+				fascism_drift = 0.01
+				drift_defence_factor = 0.5
+			}
+			
+			targeted_modifier = {
+				tag = YUG
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}			
+		}
+
+		CRO_tudmanism_2 = {
+			name = CRO_tudmanism_2_name
+
+			removal_cost = -1
+
+			picture = CRO_tudman_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				war_support_factor = 0.25
+				stability_factor = -0.15				
+				neutrality_drift = 0.02
+				fascism_drift = 0.01
+				drift_defence_factor = 0.5
+			}
+			
+			targeted_modifier = {
+				tag = YUG
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}			
+		}
+
+		CRO_tudmanism_3 = {
+			name = CRO_tudmanism_3_name
+
+			removal_cost = -1
+
+			picture = CRO_tudman_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.15
+				stability_factor = 0.15		
+				war_support_factor = 0.15
+				drift_defence_factor = 0.25
+			}
+			
+			targeted_modifier = {
+				tag = YUG
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}			
+		}
+
+	}
+
+}

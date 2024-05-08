@@ -1,0 +1,17 @@
+units = {
+	fleet = {
+		name = "Ustul Alkhalij Alfarisii"
+		naval_base = 8051 # Qatar #
+		task_force = {
+			name = "Al'ustul Alsathiu Lilkhalij Alfarisii"
+			location = 8051 # Qatar #
+			ship = { name = "Barzan" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = QAT version_name = "Barzan Class" } } }
+			ship = { name = "Huwar" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = QAT version_name = "Barzan Class" } } }
+			ship = { name = "Al Udeid" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = QAT version_name = "Barzan Class" } } }
+			ship = { name = "Al Deebeel" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = QAT version_name = "Barzan Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

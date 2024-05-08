@@ -1,0 +1,22 @@
+﻿capital = 692
+
+##oob = ""
+
+set_convoys = 5
+
+recruit_character = BAS_frank_savage
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1999.5.17"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 47
+	communism = 5
+	reformed_communism = 0
+	paternal_autocracy = 0
+	fascism = 7
+	neutrality = 41
+}

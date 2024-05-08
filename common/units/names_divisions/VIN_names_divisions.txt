@@ -1,0 +1,116 @@
+﻿VIN_INF_01 = 
+{
+	name = "Armoured Infantry Divisions"
+
+	for_countries = { VIN }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry_unit" }
+
+	fallback_name = "%d Armoured Infantry Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st Armoured Infantry Division" }
+		2 = { "2nd Armoured Infantry Division" }
+		3 = { "3rd Armoured Infantry Division" }
+		4 = { "4th Armoured Infantry Division" }
+		5 = { "5th Armoured Infantry Division" }
+		6 = { "6th Armoured Infantry Division" }
+		7 = { "7th Armoured Infantry Division" }
+		8 = { "8th Armoured Infantry Division" }
+		9 = { "9th Armoured Infantry Division" }
+		10 = { "10th Armoured Infantry Division" }
+		11 = { "11th Armoured Infantry Division" }
+		12 = { "12th Armoured Infantry Division" }
+		13 = { "13th Armoured Infantry Division" }
+		14 = { "14th Armoured Infantry Division" }
+		15 = { "15th Armoured Infantry Division" }
+		16 = { "16th Armoured Infantry Division" }
+		17 = { "17th Armoured Infantry Division" }
+		18 = { "18th Armoured Infantry Division" }
+		19 = { "19th Armoured Infantry Division" }
+		20 = { "20th Armoured Infantry Division" }
+		21 = { "21st Armoured Infantry Division" }
+		22 = { "22nd Armoured Infantry Division" }
+		23 = { "23rd Armoured Infantry Division" }
+		24 = { "24th Armoured Infantry Division" }
+		25 = { "25th Armoured Infantry Division" }
+		26 = { "26th Armoured Infantry Division" }
+		27 = { "27th Armoured Infantry Division" }
+		28 = { "28th Armoured Infantry Division" }
+		29 = { "29th Armoured Infantry Division" }
+		30 = { "30th Armoured Infantry Division" }
+		31 = { "31st Armoured Infantry Division" }
+		32 = { "32nd Armoured Infantry Division" }
+		33 = { "33rd Armoured Infantry Division" }
+		34 = { "34th Armoured Infantry Division" }
+		35 = { "35th Armoured Infantry Division" }
+		36 = { "36th Armoured Infantry Division" }
+		37 = { "37th Armoured Infantry Division" }
+		38 = { "38th Armoured Infantry Division" }
+		39 = { "39th Armoured Infantry Division" }
+		40 = { "40th Armoured Infantry Division" }
+		41 = { "41st Armoured Infantry Division" }
+		42 = { "42nd Armoured Infantry Division" }
+		43 = { "43rd Armoured Infantry Division" }
+		44 = { "44th Armoured Infantry Division" }
+		45 = { "45th Armoured Infantry Division" }
+		46 = { "46th Armoured Infantry Division" }
+		47 = { "47th Armoured Infantry Division" }
+		48 = { "48th Armoured Infantry Division" }
+		49 = { "49th Armoured Infantry Division" }
+		50 = { "50th Armoured Infantry Division" }
+		51 = { "51st Armoured Infantry Division" }
+		52 = { "52nd Armoured Infantry Division" }
+		53 = { "53rd Armoured Infantry Division" }
+		54 = { "54th Armoured Infantry Division" }
+		55 = { "55th Armoured Infantry Division" }
+		56 = { "56th Armoured Infantry Division" }
+		57 = { "57th Armoured Infantry Division" }
+		58 = { "58th Armoured Infantry Division" }
+		59 = { "59th Armoured Infantry Division" }
+		60 = { "60th Armoured Infantry Division" }
+		61 = { "61st Armoured Infantry Division" }
+		62 = { "62nd Armoured Infantry Division" }
+		63 = { "63rd Armoured Infantry Division" }
+		64 = { "64th Armoured Infantry Division" }
+		65 = { "65th Armoured Infantry Division" }
+		66 = { "66th Armoured Infantry Division" }
+		67 = { "67th Armoured Infantry Division" }
+		68 = { "68th Armoured Infantry Division" }
+		69 = { "69th Armoured Infantry Division" }
+		70 = { "70th Armoured Infantry Division" }
+		71 = { "71st Armoured Infantry Division" }
+		72 = { "72nd Armoured Infantry Division" }
+		73 = { "73rd Armoured Infantry Division" }
+		74 = { "74th Armoured Infantry Division" }
+		75 = { "75th Armoured Infantry Division" }
+		76 = { "76th Armoured Infantry Division" }
+		77 = { "77th Armoured Infantry Division" }
+		78 = { "78th Armoured Infantry Division" }
+		79 = { "79th Armoured Infantry Division" }
+		80 = { "80th Armoured Infantry Division" }
+		81 = { "81st Armoured Infantry Division" }
+		82 = { "82nd Armoured Infantry Division" }
+		83 = { "83rd Armoured Infantry Division" }
+		84 = { "84th Armoured Infantry Division" }
+		85 = { "85th Armoured Infantry Division" }
+		86 = { "86th Armoured Infantry Division" }
+		87 = { "87th Armoured Infantry Division" }
+		88 = { "88th Armoured Infantry Division" }
+		89 = { "89th Armoured Infantry Division" }
+		90 = { "90th Armoured Infantry Division" }
+		91 = { "91st Armoured Infantry Division" }
+		92 = { "92nd Armoured Infantry Division" }
+		93 = { "93rd Armoured Infantry Division" }
+		94 = { "94th Armoured Infantry Division" }
+		95 = { "95th Armoured Infantry Division" }
+		96 = { "96th Armoured Infantry Division" }
+		97 = { "97th Armoured Infantry Division" }
+		98 = { "98th Armoured Infantry Division" }
+		99 = { "99th Armoured Infantry Division" }
+	}
+}

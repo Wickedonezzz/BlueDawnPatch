@@ -1,0 +1,458 @@
+#Titles
+defined_text = {
+    name = get_super_event_title
+	
+    text = {
+        trigger = {
+            has_global_flag = SAF_war_super_event
+        }
+        localization_key = "sp_event_South_Africa_War"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = YUG_War
+        }
+        localization_key = "sp_event_Yugo_War"
+    }
+
+	text = {
+        trigger = {
+            has_global_flag = Soviet_Melancholy
+        }
+        localization_key = "sp_event_Soviet_Melancholy"
+    }
+
+	text = {
+        trigger = {
+            has_global_flag = SOV_Chinese_War
+        }
+        localization_key = "sp_event_Sino_Sov_War"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Eastern_War
+        }
+        localization_key = "sp_event_Eastern_War"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Soviet_Dissolution
+        }
+        localization_key = "sp_event_Soviet_Dissolution"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Red_Susk
+        }
+        localization_key = "sp_event_Red_Susk"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Soviet_Civil_War
+        }
+        localization_key = "sp_event_Soviet_Civil_War"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Indochina_War
+        }
+        localization_key = "sp_event_Indochinese_War"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = WW3
+        }
+        localization_key = "sp_event_World_War_3"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Great_Asian_War
+        }
+        localization_key = "sp_event_GAW"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Navy_Unification
+        }
+        localization_key = "sp_event_navy"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Zyuganov_Unification
+        }
+        localization_key = "sp_event_zyuganov_baklanov"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = VDV_Unification
+        }
+        localization_key = "sp_event_vdv"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Dugin_Unification
+        }
+        localization_key = "sp_event_dugin"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Medvedev_Unification
+        }
+        localization_key = "sp_event_medvedev"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Yazov_Unification
+        }
+        localization_key = "sp_event_yazov"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Lukashenko_Unification
+        }
+        localization_key = "sp_event_lukashenko"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = KGB_Unification
+        }
+        localization_key = "sp_event_kgb"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Udaltsov_Unification
+        }
+        localization_key = "sp_event_udaltsov"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Pugo_Unification
+        }
+        localization_key = "sp_event_pugo"
+    }
+	
+}
+
+#Remarks
+defined_text = {
+    name = get_super_event_remark
+    
+    text = { 
+        trigger = {
+            has_global_flag = SAF_war_super_event
+        }
+        localization_key = "sp_event_South_Africa_War_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Indochina_War
+        }
+        localization_key = "sp_event_Indochinese_War_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = YUG_War
+        }
+        localization_key = "sp_event_Yugo_War_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Soviet_Civil_War
+        }
+        localization_key = "sp_event_Soviet_Civil_War_REMARK"
+    }
+
+	text = {
+        trigger = {
+            has_global_flag = Soviet_Melancholy
+        }
+        localization_key = "sp_event_Soviet_Melancholy_REMARK"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = SOV_Chinese_War
+        }
+        localization_key = "sp_event_Sino_Sov_War_REMARK"
+    }
+
+	text = {
+        trigger = {
+            has_global_flag = Eastern_War
+        }
+        localization_key = "sp_event_Eastern_War_REMARK"
+    }
+
+	text = {
+        trigger = {
+            has_global_flag = Soviet_Dissolution
+        }
+        localization_key = "sp_event_Soviet_Dissolution_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Red_Susk
+        }
+        localization_key = "sp_event_Red_Susk_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = WW3
+        }
+        localization_key = "sp_event_World_War_3_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Great_Asian_War
+        }
+        localization_key = "sp_event_GAW_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Navy_Unification
+        }
+        localization_key = "sp_event_navy_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Zyuganov_Unification
+        }
+        localization_key = "sp_event_zyuganov_baklanov_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = VDV_Unification
+        }
+        localization_key = "sp_event_vdv_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Dugin_Unification
+        }
+        localization_key = "sp_event_dugin_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Medvedev_Unification
+        }
+        localization_key = "sp_event_medvedev_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Yazov_Unification
+        }
+        localization_key = "sp_event_yazov_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Lukashenko_Unification
+        }
+        localization_key = "sp_event_lukashenko_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = KGB_Unification
+        }
+        localization_key = "sp_event_kgb_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Udaltsov_Unification
+        }
+        localization_key = "sp_event_udaltsov_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Pugo_Unification
+        }
+        localization_key = "sp_event_pugo_REMARK"
+    }
+	
+}
+
+#Quotes
+defined_text = {
+    name = get_super_event_quote
+    
+    text = {
+        trigger = {
+            has_global_flag = SAF_war_super_event
+        }
+        localization_key = "sp_event_South_Africa_War_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Indochina_War
+        }
+        localization_key = "sp_event_Indochinese_War_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Soviet_Civil_War
+        }
+        localization_key = "sp_event_Soviet_Civil_War_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = YUG_War
+        }
+        localization_key = "sp_event_Yugo_War_QUOTE"
+    }
+
+	text = {
+        trigger = {
+            has_global_flag = Soviet_Melancholy
+        }
+        localization_key = "sp_event_Soviet_Melancholy_QUOTE"
+    }
+	
+	text = {
+        trigger = {
+            has_global_flag = SOV_Chinese_War
+        }
+        localization_key = "sp_event_Sino_Sov_War_QUOTE"
+    }
+
+	text = {
+        trigger = {
+            has_global_flag = Eastern_War
+        }
+        localization_key = "sp_event_Eastern_War_QUOTE"
+    }
+
+	text = {
+        trigger = {
+            has_global_flag = Soviet_Dissolution
+        }
+        localization_key = "sp_event_Soviet_Dissolution_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Red_Susk
+        }
+        localization_key = "sp_event_Red_Susk_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = WW3
+        }
+        localization_key = "sp_event_World_War_3_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Great_Asian_War
+        }
+        localization_key = "sp_event_GAW_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Navy_Unification
+        }
+        localization_key = "sp_event_navy_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Zyuganov_Unification
+        }
+        localization_key = "sp_event_zyuganov_baklanov_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = VDV_Unification
+        }
+        localization_key = "sp_event_vdv_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Dugin_Unification
+        }
+        localization_key = "sp_event_dugin_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Medvedev_Unification
+        }
+        localization_key = "sp_event_medvedev_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Yazov_Unification
+        }
+        localization_key = "sp_event_yazov_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Lukashenko_Unification
+        }
+        localization_key = "sp_event_lukashenko_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = KGB_Unification
+        }
+        localization_key = "sp_event_kgb_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Udaltsov_Unification
+        }
+        localization_key = "sp_event_udaltsov_QUOTE"
+    }
+
+    text = {
+        trigger = {
+            has_global_flag = Pugo_Unification
+        }
+        localization_key = "sp_event_pugo_QUOTE"
+    }
+	
+}

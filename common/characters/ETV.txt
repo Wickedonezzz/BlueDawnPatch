@@ -1,0 +1,47 @@
+characters = {
+
+	ETV_collective_leadership = {
+		name = "Collective Leadership"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Africa/ETV_collective_leadership.dds"
+			}
+		}
+		country_leader = {
+			ideology =  market_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	ETV_meles_zenawi = {
+		name = "Meles Zenawi"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Africa/Meles_Zenawi.png"
+			}
+		}
+		country_leader = {
+			ideology =  market_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	ETV_tamrat_layne = {
+		name = "Tamrat Layne"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Africa/Tamrat_Layne.png"
+			}
+		}
+		country_leader = {
+			ideology =  conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+}

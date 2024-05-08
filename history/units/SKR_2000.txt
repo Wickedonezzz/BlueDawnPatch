@@ -1,0 +1,947 @@
+division_template = { # Infantry Division #
+	name = "Infantry Division"
+	division_names_group = GENERIC_INF_01
+
+	regiments = {
+		main_battle_tank_armor = { x = 0 y = 0 }
+		main_battle_tank_armor = { x = 0 y = 1 }
+		infantry_unit = { x = 1 y = 0 }
+		infantry_unit = { x = 1 y = 1 }
+		infantry_unit = { x = 1 y = 2 }
+		infantry_unit = { x = 1 y = 3 }
+		infantry_unit = { x = 1 y = 4 }
+		infantry_unit = { x = 2 y = 0 }
+		infantry_unit = { x = 2 y = 1 }
+		infantry_unit = { x = 2 y = 2 }
+		infantry_unit = { x = 2 y = 3 }
+		towed_artillery_unit = { x = 3 y = 0 }
+		towed_artillery_unit = { x = 3 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		maintenance_company = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		towed_artillery_support_unit = { x = 0 y = 4 }
+	}
+	priority = 1
+}
+division_template = { # Mechanised Division #
+	name = "Mechanised Division"
+	division_names_group = GENERIC_MEC_01
+
+	regiments = {
+		main_battle_tank_armor = { x = 0 y = 0 }
+		main_battle_tank_armor = { x = 0 y = 1 }
+		main_battle_tank_armor = { x = 0 y = 2 }
+		spaa_vehicle_armor = { x = 0 y = 3 }
+		heavy_infantry_unit = { x = 1 y = 0 }
+		heavy_infantry_unit = { x = 1 y = 1 }
+		heavy_infantry_unit = { x = 1 y = 2 }
+		heavy_infantry_unit = { x = 1 y = 3 }
+		motorised_artillery_unit = { x = 2 y = 0 }
+		motorised_artillery_unit = { x = 2 y = 1 }
+		motorised_artillery_unit = { x = 2 y = 2 }
+		rocket_artillery_unit = { x = 2 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		transport_heli_company = { x = 0 y = 3 }
+		attack_heli_company = { x = 0 y = 4 }
+	}
+	priority = 1
+}
+division_template = { # Infantry Division #
+	name = "Light Infantry Division"
+	division_names_group = GENERIC_INF_01
+
+	regiments = {
+		infantry_unit = { x = 0 y = 0 }
+		infantry_unit = { x = 0 y = 1 }
+		infantry_unit = { x = 0 y = 2 }
+		infantry_unit = { x = 0 y = 3 }
+		infantry_unit = { x = 0 y = 4 }
+		infantry_unit = { x = 1 y = 0 }
+		infantry_unit = { x = 1 y = 1 }
+		infantry_unit = { x = 1 y = 2 }
+		infantry_unit = { x = 1 y = 3 }
+        towed_artillery_unit = { x = 2 y = 0 }
+	}
+	support = {
+		towed_artillery_support_unit = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		engineer = { x = 0 y = 3 }
+	}
+	priority = 1
+}
+division_template = { # Mechanised Division #
+	name = "Mechanised Division 2"
+	division_names_group = GENERIC_MEC_01
+
+	regiments = {
+		heavy_infantry_unit = { x = 0 y = 0 }
+		heavy_infantry_unit = { x = 0 y = 1 }
+		heavy_infantry_unit = { x = 0 y = 2 }
+		heavy_infantry_unit = { x = 0 y = 3 }
+		heavy_infantry_unit = { x = 0 y = 4 }
+		heavy_infantry_unit = { x = 1 y = 0 }
+		heavy_infantry_unit = { x = 1 y = 1 }
+		heavy_infantry_unit = { x = 1 y = 2 }
+		heavy_infantry_unit = { x = 1 y = 3 }
+		towed_artillery_unit = { x = 2 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		spaa_vehicle_support_armor = { x = 0 y = 1 }
+		towed_artillery_support_unit = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		motorised_artillery_support_unit = { x = 0 y = 4 }
+	}
+	priority = 1
+}
+division_template = { # Marine Division #
+	name = "Marine Division"
+	division_names_group = GENERIC_MRN_01
+
+	regiments = {
+		marine_unit = { x = 0 y = 0 }
+		marine_unit = { x = 0 y = 1 }
+		marine_unit = { x = 0 y = 2 }
+		marine_unit = { x = 0 y = 3 }
+		marine_unit = { x = 0 y = 4 }
+		towed_artillery_unit = { x = 1 y = 0 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }
+		transport_heli_company = { x = 0 y = 1 }
+		attack_heli_company = { x = 0 y = 2 }
+	}
+	priority = 2
+}
+
+units = {
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 7125
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SKR" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 1148
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SKR" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7021
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SKR" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 7125
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SKR" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 10115
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SKR" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 12085
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SKR" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 12011
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SKR" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 13439
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 13440
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 13439
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 12060
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 12089
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 13440
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 10110
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = 7175
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = 7221
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location = 9936
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 9936
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.01
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 13434
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.01
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 22
+		}
+		location = 4126
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.01
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 23
+		}
+		location = 10085
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.01
+	}
+
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10085
+		division_template = "Light Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.01
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 7125
+		division_template = "Light Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.01
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 4056
+		division_template = "Light Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.01
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 1148
+		division_template = "Light Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.01
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7221
+		division_template = "Light Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.01
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 4103
+		division_template = "Light Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.01
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 1081
+		division_template = "Light Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.01
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 10036
+		division_template = "Light Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.01
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 4086
+		division_template = "Light Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.01
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 4086
+		division_template = "Light Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.01
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 13453
+		division_template = "Light Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.01
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 13453
+		division_template = "Light Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.01
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 4056
+		division_template = "Light Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.01
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 4056
+		division_template = "Light Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.01
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 7125
+		division_template = "Light Infantry Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_2 = { owner = "SKR" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.01
+	}
+
+	# Mechanised Division #
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7221
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SKR" }
+			spaa_tank_equipment_0 = { owner = "USA" }
+			apc_tank_equipment_2 = { owner = "SKR" }
+			motorised_artillery_equipment_3 = { owner = "USA" }
+			rocket_artillery_equipment_3 = { owner = "SKR" }
+			heli_transport_equipment_1 = { owner = "USA" }
+			heli_attack_equipment_0 = { owner = "USA" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 12011
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SKR" }
+			spaa_tank_equipment_0 = { owner = "USA" }
+			apc_tank_equipment_2 = { owner = "SKR" }
+			motorised_artillery_equipment_3 = { owner = "USA" }
+			rocket_artillery_equipment_3 = { owner = "SKR" }
+			heli_transport_equipment_1 = { owner = "USA" }
+			heli_attack_equipment_0 = { owner = "USA" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 11977
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SKR" }
+			spaa_tank_equipment_0 = { owner = "USA" }
+			apc_tank_equipment_2 = { owner = "SKR" }
+			motorised_artillery_equipment_3 = { owner = "USA" }
+			rocket_artillery_equipment_3 = { owner = "SKR" }
+			heli_transport_equipment_1 = { owner = "USA" }
+			heli_attack_equipment_0 = { owner = "USA" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10036
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SKR" }
+			spaa_tank_equipment_0 = { owner = "USA" }
+			apc_tank_equipment_2 = { owner = "SKR" }
+			motorised_artillery_equipment_3 = { owner = "USA" }
+			rocket_artillery_equipment_3 = { owner = "SKR" }
+			heli_transport_equipment_1 = { owner = "USA" }
+			heli_attack_equipment_0 = { owner = "USA" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.02
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 10036
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SKR" }
+			spaa_tank_equipment_0 = { owner = "USA" }
+			apc_tank_equipment_2 = { owner = "SKR" }
+			motorised_artillery_equipment_3 = { owner = "USA" }
+			rocket_artillery_equipment_3 = { owner = "SKR" }
+			heli_transport_equipment_1 = { owner = "USA" }
+			heli_attack_equipment_0 = { owner = "USA" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10036
+		division_template = "Mechanised Division 2"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SKR" }
+			spaa_tank_equipment_0 = { owner = "USA" }
+			apc_tank_equipment_2 = { owner = "SKR" }
+			motorised_artillery_equipment_3 = { owner = "USA" }
+			rocket_artillery_equipment_3 = { owner = "SKR" }
+			heli_transport_equipment_1 = { owner = "USA" }
+			heli_attack_equipment_0 = { owner = "USA" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.02
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 11977
+		division_template = "Mechanised Division 2"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SKR" }
+			spaa_tank_equipment_0 = { owner = "USA" }
+			apc_tank_equipment_2 = { owner = "SKR" }
+			motorised_artillery_equipment_3 = { owner = "USA" }
+			rocket_artillery_equipment_3 = { owner = "SKR" }
+			heli_transport_equipment_1 = { owner = "USA" }
+			heli_attack_equipment_0 = { owner = "USA" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 7221
+		division_template = "Mechanised Division 2"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SKR" }
+			spaa_tank_equipment_0 = { owner = "USA" }
+			apc_tank_equipment_2 = { owner = "SKR" }
+			motorised_artillery_equipment_3 = { owner = "USA" }
+			rocket_artillery_equipment_3 = { owner = "SKR" }
+			heli_transport_equipment_1 = { owner = "USA" }
+			heli_attack_equipment_0 = { owner = "USA" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+
+	# Marine Division #
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4056
+		division_template = "Marine Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_2 = { owner = "SKR" }
+			heli_transport_equipment_1 = { owner = "USA" }
+			heli_attack_equipment_0 = { owner = "USA" }
+		}
+		start_experience_factor = 0.30
+		start_equipment_factor = 0.90
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1177
+		division_template = "Marine Division"
+		force_equipment_variants = {
+			towed_artillery_equipment_2 = { owner = "SKR" }
+			heli_transport_equipment_1 = { owner = "USA" }
+			heli_attack_equipment_0 = { owner = "USA" }
+		}
+		start_experience_factor = 0.30
+		start_equipment_factor = 0.90
+	}
+}
+instant_effect = {
+
+	# Stockpile #
+        add_equipment_to_stockpile = {
+		type = infantry_weapons_2
+		amount = 7000
+		producer = SKR
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_weapons_1
+		amount = 27000
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 2000
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 650
+		producer = SKR
+	}
+        add_equipment_to_stockpile = {
+		type = motorised_equipment_1
+		amount = 1100
+		producer = SKR
+	}
+        add_equipment_to_stockpile = {
+		type = infantry_anti_air_weapons_2
+		amount = 200
+		producer = USA
+	}
+        add_equipment_to_stockpile = {
+		type = infantry_anti_air_weapons_1
+		amount = 500
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_anti_tank_weapons_2
+		amount = 500
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_anti_tank_weapons_1
+		amount = 800
+		producer = USA
+	}
+
+	add_equipment_to_stockpile = {
+		type = mbt_tank_equipment_2
+		amount = 80
+		producer = SKR
+	}
+	add_equipment_to_stockpile = {
+		type = mbt_tank_equipment_0
+		amount = 630
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = apc_tank_equipment_2
+		amount = 1090
+		producer = SKR
+	}
+	add_equipment_to_stockpile = {
+		type = apc_tank_equipment_1
+		amount = 200
+		producer = ITA
+	}
+	add_equipment_to_stockpile = {
+		type = apc_tank_equipment_1
+		amount = 60
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = apc_tank_equipment_0
+		amount = 560
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = towed_artillery_equipment_2
+		amount = 510
+		producer = SKR
+	}
+	add_equipment_to_stockpile = {
+		type = towed_artillery_equipment_1
+		amount = 1800
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = motorised_artillery_equipment_3
+		amount = 770
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = motorised_artillery_equipment_1
+		amount = 10
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = rocket_artillery_equipment_3
+		amount = 70
+		producer = SKR
+	}
+	add_equipment_to_stockpile = {
+		type = rocket_artillery_equipment_3
+		amount = 30
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = heli_attack_equipment_0
+		amount = 57
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = heli_transport_equipment_0
+		amount = 38
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = heli_transport_equipment_1
+		amount = 3
+		producer = FRA
+	}
+	add_equipment_to_stockpile = {
+		type = heli_transport_equipment_1
+		amount = 47
+		producer = USA
+	}
+}

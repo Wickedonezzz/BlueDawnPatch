@@ -1,0 +1,48 @@
+﻿capital = 869
+
+set_technology = {
+	infantry_weapons_1960 = 1
+	support_weapons_1960 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_air_weapons_1960 = 1
+	tech_support = 1
+	tech_motorised_1960 = 1
+	tech_train_1960 = 1
+	mbt_tank_1960 = 1
+	mbt_tank_1970 = 1
+	mbt_tank_1980 = 1
+	mbt_tank_1990 = 1
+	apc_tank_1960 = 1
+	spaa_tank_1960 = 1
+	towed_artillery_1960 = 1
+	heli_transport_1960 = 1
+	drone_recon_1980 = 1
+}
+
+add_ideas = {
+	service_by_requirement
+}
+
+add_ideas = usa_aligned_nation
+
+recruit_character = SIA_Surayud_Chulanont_1
+recruit_character = SIA_Sonthi_Boonyaratglin_1
+recruit_character = SIA_Songkitti_Jaggabatara_1
+recruit_character = SIA_Saprang_Kalayanamitr_1
+recruit_character = SIA_Chaiyasit_Shinawatra_1
+
+set_politics = {
+	ruling_party = paternal_autocracy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 10
+	liberalism = 5
+	fascism = 35
+	paternal_autocracy = 50
+}
+
+
+set_research_slots = 3

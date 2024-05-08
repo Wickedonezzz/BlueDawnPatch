@@ -1,0 +1,37 @@
+units = {
+	fleet = {
+		name = "Frota Atlântica"
+		naval_base = 11805 # Lisbon #
+		task_force = {
+			name = "Frota de Superfície do Atlântico"
+			location = 11805 # Lisbon #
+			ship = { name = "NRP Vasco da Gama" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = POR version_name = "Vasco da Gama Class" } } }
+			ship = { name = "NRP Álvares Cabral" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = POR version_name = "Vasco da Gama Class" } } }
+			ship = { name = "NRP Corte-Real" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = POR version_name = "Vasco da Gama Class" } } }
+			ship = { name = "NRP Comandante João Belo" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = POR creator = FRA version_name = "Commandant Rivière Class" } } }
+			ship = { name = "NRP Comandante Hermenegildo Capelo" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = POR creator = FRA version_name = "Commandant Rivière Class" } } }
+			ship = { name = "NRP Comandante Sacadura Cabral" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = POR creator = FRA version_name = "Commandant Rivière Class" } } }
+
+			ship = { name = "NRP António Enes" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = POR version_name = "João Coutinho Class" } } }
+			ship = { name = "NRP João Coutinho" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = POR version_name = "João Coutinho Class" } } }
+			ship = { name = "NRP Jacinto Cândido" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = POR version_name = "João Coutinho Class" } } }
+			ship = { name = "NRP General Pereira d'Eça" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = POR version_name = "João Coutinho Class" } } }
+			ship = { name = "NRP Augusto Castilho" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = POR version_name = "João Coutinho Class" } } }
+			ship = { name = "NRP Honório Barreto" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = POR version_name = "João Coutinho Class" } } }
+			ship = { name = "NRP Baptista de Andrade" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = POR version_name = "Baptista de Andrade Class" } } }
+			ship = { name = "NRP João Roby" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = POR version_name = "Baptista de Andrade Class" } } }
+			ship = { name = "NRP Afonso Cerqueira" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = POR version_name = "Baptista de Andrade Class" } } }
+			ship = { name = "NRP Oliveira e Carmo" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = POR version_name = "Baptista de Andrade Class" } } }
+		}
+		task_force = {
+			name = "Frota de Submarinos do Atlântico"
+			location = 11805 # Lisbon #
+			ship = { name = "NRP Albacora" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = POR creator = FRA version_name = "Daphne Class" } } }
+			ship = { name = "NRP Barracuda" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = POR creator = FRA version_name = "Daphne Class" } } }
+			ship = { name = "NRP Delfim" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = POR creator = FRA version_name = "Daphne Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

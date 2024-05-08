@@ -1,0 +1,582 @@
+﻿focus_tree = {
+	id = ussr_focus
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	
+	default = no
+
+	focus = {
+		id = SOV_morning_in_moscow
+		icon = GFX_focus_SOV_morning_in_moscow
+		x = 6
+		y = 0
+
+		prerequisite = { }
+		mutually_exclusive = { }
+		
+		cost = 0.5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			SOV = {
+		        country_event = {id = ussr.1}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_status_of_the_union
+		icon = GFX_focus_SOV_status_of_union
+		x = 0
+		y = 1
+
+		prerequisite = {focus = SOV_morning_in_moscow}
+		mutually_exclusive = { }
+		relative_position_id = SOV_morning_in_moscow
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 5
+			SOV = {
+				country_event = { id = ussr.2 }
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_spectre_of_militarism
+		icon = GFX_focus_SOV_spectre_of_militarism
+		x = -2
+		y = 1
+
+		prerequisite = {focus = SOV_status_of_the_union}
+		mutually_exclusive = { }
+		relative_position_id = SOV_status_of_the_union
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_to_variable = {sov_militarist_influence_var = 10}
+			custom_effect_tooltip = army_10_influence_increase
+			army_experience = 15
+			SOV = {
+				country_event = { id = ussr.73 }
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_stagnating_economy
+		icon = GFX_focus_SOV_economy_report
+		x = 0
+		y = 1
+
+		prerequisite = {focus = SOV_status_of_the_union}
+		mutually_exclusive = { }
+		relative_position_id = SOV_status_of_the_union
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			SOV = {
+				country_event = { id = ussr.3 }
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_rising_dissidence
+		icon = GFX_focus_SOV_rising_dissidence
+		x = 2
+		y = 1
+
+		prerequisite = {focus = SOV_status_of_the_union}
+		mutually_exclusive = { }
+		relative_position_id = SOV_status_of_the_union
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			SOV = {
+				country_event = { id = ussr.77 }
+			}
+			subtract_from_variable = {sov_hardliner_influence_var = 10}
+			custom_effect_tooltip = hardliner_10_influence_decrease
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			} 
+			add_stability = -0.05
+		}
+	}
+	
+	focus = {
+		id = SOV_yanayev_final_weeks
+		icon = GFX_focus_SOV_yanayev_final_weeks
+		x = 0
+		y = 1
+
+		prerequisite = {focus = SOV_spectre_of_militarism}
+		prerequisite = {focus = SOV_stagnating_economy}
+		prerequisite = {focus = SOV_rising_dissidence}
+		mutually_exclusive = { }
+		relative_position_id = SOV_stagnating_economy
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 20
+			add_stability = -0.05
+		}
+	}
+
+	focus = {
+		id = SOV_economic_reforms
+		icon = GFX_focus_SOV_economic_reforms
+		x = -3
+		y = 1
+
+		prerequisite = {focus = SOV_yanayev_final_weeks}
+		mutually_exclusive = { }
+		relative_position_id = SOV_yanayev_final_weeks
+		
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			swap_ideas = {
+				add_idea = SOV_stagnating_economy_1
+				remove_idea = SOV_stagnating_economy
+			}
+			add_to_variable = {sov_hardliner_influence_var = 5}
+			custom_effect_tooltip = hardliner_5_influence_increase
+		}
+	}
+
+	focus = {
+		id = SOV_decrease_commodity_production
+		icon = GFX_focus_SOV_decrease_commodities
+		x = -2
+		y = 1
+
+		prerequisite = {focus = SOV_economic_reforms}
+		mutually_exclusive = { }
+		relative_position_id = SOV_economic_reforms
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			custom_effect_tooltip = reformist_5_influence_increase
+			add_to_variable = {sov_reformist_influence_var = 5}
+			add_timed_idea = {
+				idea = SOV_decreased_commodity_production
+				days = 100
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_working_around_clock
+		icon = GFX_focus_SOV_work_around_the_clock
+		x = 0
+		y = 1
+
+		prerequisite = {focus = SOV_economic_reforms}
+		mutually_exclusive = { }
+		relative_position_id = SOV_economic_reforms
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_stability = -0.05
+			random_list = {
+				50 = {
+					add_offsite_building = { type = industrial_complex level = 2 }
+				}
+				50 = {
+					add_offsite_building = { type = arms_factory level = 2 }			
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_defund_the_military
+		icon = GFX_focus_SOV_defund_military
+		x = 2
+		y = 1
+
+		prerequisite = {focus = SOV_economic_reforms}
+		mutually_exclusive = { }
+		relative_position_id = SOV_economic_reforms
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			SOV = {
+				country_event = { id = ussr.4 }
+			}
+			swap_ideas = {
+				add_idea = SOV_stagnating_economy_2
+				remove_idea = SOV_stagnating_economy_1
+			}
+			subtract_from_variable = {sov_militarist_influence_var = 5}
+			custom_effect_tooltip = army_5_influence_decrease
+		}
+	}
+
+	focus = {
+		id = SOV_quantity_over_quality
+		icon = GFX_focus_SOV_quantity_over_quality
+		x = 0
+		y = 1
+
+		prerequisite = {focus = SOV_decrease_commodity_production}
+		prerequisite = {focus = SOV_working_around_clock}
+		prerequisite = {focus = SOV_defund_the_military}
+		mutually_exclusive = { }
+		relative_position_id = SOV_working_around_clock
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_timed_idea = {
+				idea = SOV_quantity_over_quality
+				days = 75
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_administrative_reforms
+		icon = GFX_focus_SOV_administrative_reforms
+		x = 3
+		y = 1
+
+		prerequisite = {focus = SOV_yanayev_final_weeks}
+		mutually_exclusive = { }
+		relative_position_id = SOV_yanayev_final_weeks
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_political_power = -100
+		add_stability = 0.10
+			add_to_variable = {sov_hardliner_influence_var = 10}
+			custom_effect_tooltip = hardliner_10_influence_increase
+
+			add_to_variable = {sov_reformist_influence_var = 5}
+			custom_effect_tooltip = reformist_5_influence_increase
+		}
+	}
+
+	focus = {
+		id = SOV_calm_party_factionalism
+		icon = GFX_focus_SOV_calm_party_factionalism
+		x = -2
+		y = 1
+
+		prerequisite = {focus = SOV_administrative_reforms}
+		mutually_exclusive = { }
+		relative_position_id = SOV_administrative_reforms
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+          			add_stability = 0.08
+                    add_war_support = 0.03
+					add_political_power = -20
+          			add_popularity = {
+          			    ideology = communism
+          			    popularity = -0.065
+          			}
+		}
+	}
+
+	focus = {
+		id = SOV_talk_krychkov
+		icon = GFX_focus_SOV_talk_krychkov
+		x = 0
+		y = 1
+
+		prerequisite = {focus = SOV_administrative_reforms}
+		mutually_exclusive = { }
+		relative_position_id = SOV_administrative_reforms
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_to_variable = {sov_kgb_influence_var = 10 }
+			custom_effect_tooltip = kgb_10_influence_increase
+			add_to_variable = {sov_hardliner_influence_var = 10}
+			custom_effect_tooltip = hardliner_10_influence_increase
+			add_stability = 0.05
+			add_political_power = 15
+			SOV = {
+				country_event = { id = ussr.69 }
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_make_concessions
+		icon = GFX_SOV_keep_your_friend_close
+		x = 2
+		y = 1
+
+		prerequisite = {focus = SOV_administrative_reforms}
+		mutually_exclusive = { }
+		relative_position_id = SOV_administrative_reforms
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_party_infighting
+				add_idea = SOV_party_infighting_1
+			}
+          	add_political_power = 50
+			subtract_from_variable = {sov_hardliner_influence_var = 5 }
+            		custom_effect_tooltip = hardliner_5_influence_decrease
+			add_to_variable = {sov_militarist_influence_var = 5}
+			custom_effect_tooltip = army_5_influence_increase
+			add_to_variable = {sov_kgb_influence_var = 5}
+			custom_effect_tooltip = kgb_5_influence_increase
+			add_to_variable = {sov_reformist_influence_var = 5}
+			custom_effect_tooltip = reformist_5_influence_increase
+			add_stability=0.02
+			
+		}
+	}
+
+	focus = {
+		id = SOV_address_the_party
+		icon = GFX_focus_SOV_address_the_party
+		x = 0
+		y = 1
+
+		prerequisite = {focus = SOV_calm_party_factionalism}
+		prerequisite = {focus = SOV_talk_krychkov}
+		prerequisite = {focus = SOV_make_concessions}
+		mutually_exclusive = { }
+		relative_position_id = SOV_talk_krychkov
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			SOV = {
+				country_event = { id = ussr.34 }
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_this_isnt_working
+		icon = GFX_focus_SOV_this_isnt_working
+		x = 3
+		y = 1
+
+		prerequisite = {focus = SOV_quantity_over_quality}
+		prerequisite = {focus = SOV_address_the_party}
+		mutually_exclusive = { }
+		relative_position_id = SOV_quantity_over_quality
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_stability = -0.03
+			SOV = {
+				country_event = { id = ussr.33 }
+			}
+		}
+	}
+
+	focus = {
+        	id = SOV_yanayev's_resignation
+        	icon = GFX_focus_SOV_yanayevs_resignation
+        	x = 0
+        	y = 1
+		prerequisite = {focus = SOV_this_isnt_working}
+		relative_position_id = SOV_this_isnt_working
+               
+		cost = 2
+		ai_will_do = {
+			factor = 100
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			SOV = {
+				country_event = { id = ussr.5 }
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_party_meeting
+		icon = GFX_focus_SOV_party_meeting
+		x = 0
+		y = 1
+
+		prerequisite = {focus = SOV_yanayev's_resignation}
+		mutually_exclusive = { }
+		relative_position_id = SOV_yanayev's_resignation
+		
+		cost = 0.5
+		ai_will_do = {
+			factor = 100
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		if = {
+		limit = {is_ai = no}
+		
+			SOV = {
+				country_event = { id = ussr.6 }
+			}
+		
+		}
+		
+		else_if = {
+		limit = {is_ai = yes}
+		
+			SOV = {
+				country_event = { id = ussr_ai.1 }
+			}
+		
+		}
+
+			
+		}
+	}
+
+}

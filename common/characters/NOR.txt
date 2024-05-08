@@ -1,0 +1,33 @@
+characters = {
+
+	NOR_kjell_bondevik = {
+		name = "Kjell Bondevik"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NOR/Kjell_Bondevik.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	NOR_zafer_gozet = {
+		name = "Zafer Gözet"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NOR/zafer_gozet.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}	
+
+}

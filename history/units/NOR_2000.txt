@@ -1,0 +1,132 @@
+division_template = { # Mechanised Division #
+	name = "Mechanised Division"
+	division_names_group = GENERIC_MEC_01
+
+	regiments = {
+		main_battle_tank_armor = { x = 0 y = 0 }
+		infantry_fighting_vehicle_armor = { x = 0 y = 1 }
+		heavy_infantry_unit = { x = 1 y = 0 }
+		heavy_infantry_unit = { x = 1 y = 1 }
+		infantry_unit = { x = 2 y = 0 }
+		infantry_unit = { x = 2 y = 1 }
+		infantry_unit = { x = 2 y = 2 }
+		infantry_unit = { x = 2 y = 3 }
+		motorised_artillery_unit = { x = 3 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+
+units = {
+	# Mechanised Division #
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9096
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "GER" }
+			ifv_tank_equipment_2 = { owner = "SWE" }
+			apc_tank_equipment_2 = { owner = "FIN" }
+			motorised_artillery_equipment_3 = { owner = "USA" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3145
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "GER" }
+			ifv_tank_equipment_2 = { owner = "SWE" }
+			apc_tank_equipment_0 = { owner = "USA" }
+			motorised_artillery_equipment_3 = { owner = "USA" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3021
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "GER" }
+			ifv_tank_equipment_2 = { owner = "SWE" }
+			apc_tank_equipment_0 = { owner = "USA" }
+			motorised_artillery_equipment_3 = { owner = "USA" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+}
+instant_effect = {
+
+	# Stockpile #
+        add_equipment_to_stockpile = {
+		type = infantry_weapons_1
+		amount = 2500
+		producer = GER
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 500
+		producer = GER
+	}
+        add_equipment_to_stockpile = { 
+		type = motorised_equipment_1
+		amount = 100
+		producer = GER
+	}
+        add_equipment_to_stockpile = {
+		type = infantry_anti_air_weapons_1
+		amount = 300
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_anti_tank_weapons_1
+		amount = 300
+		producer = USA
+	}
+
+	add_equipment_to_stockpile = {
+		type = mbt_tank_equipment_1
+		amount = 70
+		producer = GER
+	}
+	add_equipment_to_stockpile = {
+		type = ifv_tank_equipment_1
+		amount = 50
+		producer = NOR
+	}
+	add_equipment_to_stockpile = {
+		type = towed_artillery_equipment_1
+		amount = 50
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = motorised_artillery_equipment_3
+		amount = 40
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = rocket_artillery_equipment_3
+		amount = 10
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = heli_transport_equipment_1
+		amount = 18
+		producer = USA
+	}
+}

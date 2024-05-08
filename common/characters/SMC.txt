@@ -1,0 +1,60 @@
+characters = {
+
+	SMC_aleksandr_galkin = {
+		name = "Aleksandr Galkin"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Aleksandr_Galkin.dds"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		field_marshal={
+			traits={ }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	SMC_igor_artyomov = {
+		name = "Igor Artyomov"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/post_putin/Igor_Artyomov.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	SMC_anton_bakov = {
+		name = "Anton Bakov"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/post_putin/Anton_Bakov.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

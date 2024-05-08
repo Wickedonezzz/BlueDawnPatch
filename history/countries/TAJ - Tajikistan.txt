@@ -1,0 +1,20 @@
+﻿capital = 742
+
+##oob = ""
+
+set_convoys = 5
+
+recruit_character = TAJ_emomali_rahmon
+
+set_politics = {
+	ruling_party = paternal_autocracy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 21
+	paternal_autocracy = 39
+	communism = 35
+	neutrality = 5
+}

@@ -1,0 +1,18 @@
+characters = {
+
+	RCK_Ernest_Wamba_dia_Wamba = {
+		name = "Ernest Wamba dia Wamba"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RCK/Ernest_Wamba_dia_Wamba.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

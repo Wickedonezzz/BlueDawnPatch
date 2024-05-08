@@ -1,0 +1,27 @@
+state={
+	id=952
+	name="STATE_952"
+	history={
+		owner = LES
+		add_core_of = LES
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 3
+			air_base = 1
+
+		}
+
+		victory_points = {
+			4556 3 
+		}
+
+	}
+	provinces={
+		4556 
+	}
+	manpower=1999000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = large_town
+}

@@ -1,0 +1,3989 @@
+focus_tree = {
+	id = ussr_ryzhkov_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+		tag = SOV
+		add = 0
+		}
+	}
+	
+	default = no
+	
+	shared_focus = SOV_mil_the_soviet_armed_forces
+	
+	focus = {
+		id = SOV_ryz_the_reformer
+		icon = GFX_focus_SOV_gensec_ryzhkov
+		x = 10
+		y = 0
+
+		prerequisite = {}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 15
+			SOV = {
+			country_event = {id = ussr.86}
+			}
+			unlock_decision_category_tooltip = sov_ryz_agenda_cat
+			set_variable = {sov_hardliner_status_var = 45}
+			set_variable = {sov_reform_prog_var = 1}
+			set_variable = {sov_ryz_militarist_alliance_var = 55}
+			set_variable = {sov_ryz_kgb_alliance_var = 55}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_unfinished_business
+		icon = GFX_focus_SOV_a_change_in_course
+		x = 10
+		y = 1
+
+		prerequisite = { focus = SOV_ryz_the_reformer }
+		mutually_exclusive = { }
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 15
+			add_stability = 0.05
+			add_to_variable = {sov_reformist_influence_var = 10}
+			custom_effect_tooltip = reformist_10_influence_increase
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_reshuffle_politburo
+		icon = GFX_focus_SOV_restructuring_politburo
+		x = 8
+		y = 2
+
+		prerequisite = { focus = SOV_ryz_unfinished_business }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_to_variable = {sov_reformist_influence_var = 5}
+			custom_effect_tooltip = reformist_5_influence_increase
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_preparing_the_ground
+		icon = GFX_focus_SOV_reform_the_CPSU
+		x = 10
+		y = 2
+
+		prerequisite = { focus = SOV_ryz_unfinished_business }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 25
+			SOV = {
+			country_event = {id = ussr.91}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_limited_pardons
+		icon = GFX_focus_SOV_reformer
+		x = 12
+		y = 2
+
+		prerequisite = { focus = SOV_ryz_unfinished_business }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_to_variable = {sov_reformist_influence_var = 5}
+			custom_effect_tooltip = reformist_5_influence_increase
+			subtract_from_variable = {sov_militarist_influence_var = 5}
+            		custom_effect_tooltip = army_5_influence_decrease
+			subtract_from_variable = {sov_hardliner_influence_var = 5}
+            		custom_effect_tooltip = hardliner_5_influence_decrease
+			swap_ideas = {
+				remove_idea = SOV_party_infighting_1
+				add_idea = SOV_party_infighting_ryz
+			}
+			SOV = {
+			country_event = {id = ussr.87}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_prepare_for_reforms
+		icon = GFX_focus_SOV_reform_or_die
+		x = 10
+		y = 3
+
+		prerequisite = { focus = SOV_ryz_reshuffle_politburo }
+		prerequisite = { focus = SOV_ryz_preparing_the_ground }
+		prerequisite = { focus = SOV_ryz_limited_pardons }
+		mutually_exclusive = { }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			swap_ideas = {
+				add_idea = SOV_memories_of_perestroika_1
+				remove_idea = SOV_memories_of_perestroika
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_present_economic_zone_to_plenum
+		icon = GFX_focus_SOV_propse_to_committee
+		x = 8
+		y = 4
+
+		prerequisite = { focus = SOV_ryz_prepare_for_reforms }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_form_the_sez_committee
+		icon = GFX_focus_SOV_sez_committee
+		x = 7
+		y = 5
+
+		prerequisite = { focus = SOV_ryz_present_economic_zone_to_plenum }
+		mutually_exclusive = { }
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 15
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_lessons_from_kadar
+		icon = GFX_focus_SOV_kadar1
+		x = 9
+		y = 5
+
+		prerequisite = { focus = SOV_ryz_present_economic_zone_to_plenum }
+		mutually_exclusive = { }
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_to_variable = {sov_reformist_influence_var = 5}
+			custom_effect_tooltip = reformist_5_influence_increase
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_easing_the_party_pressure
+		icon = GFX_focus_SOV_status_of_the_party
+		x = 12
+		y = 4
+
+		prerequisite = { focus = SOV_ryz_prepare_for_reforms }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_stability = 0.1
+			subtract_from_variable = {sov_militarist_influence_var = 5}
+            		custom_effect_tooltip = army_5_influence_decrease
+			subtract_from_variable = {sov_hardliner_influence_var = 10}
+            		custom_effect_tooltip = hardliner_10_influence_decrease
+			swap_ideas = {
+				remove_idea = SOV_party_infighting_ryz
+				add_idea = SOV_party_infighting_ryz_1
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_approaching_the_kgb
+		icon = GFX_focus_SOV_putin_connections
+		x = 11
+		y = 5
+
+		prerequisite = { focus = SOV_ryz_easing_the_party_pressure }
+		mutually_exclusive = { }
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			SOV = {
+			country_event = {id = ussr.88}
+			}
+			add_stability = -0.05
+			add_to_variable = {sov_kgb_influence_var = 10}
+			custom_effect_tooltip = kgb_10_influence_increase
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_fill_commission_with_reformists
+		icon = GFX_focus_SOV_ligachyovs_commission
+		x = 13
+		y = 5
+
+		prerequisite = { focus = SOV_ryz_easing_the_party_pressure }
+		mutually_exclusive = { }
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_stability = -0.05
+			add_to_variable = {sov_reformist_influence_var = 10}
+			custom_effect_tooltip = reformist_10_influence_increase
+                                add_popularity = {
+                                    ideology = reformed_communism
+                                    popularity = 0.1
+                                }
+                                add_popularity = {
+                                    ideology = socialism
+                                    popularity = 0.05
+                                }
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_astrakhan_special_economic_zone
+		icon = GFX_focus_SOV_astrakhan_economic_zone
+		x = 10
+		y = 6
+
+		prerequisite = { focus = SOV_ryz_form_the_sez_committee }
+		prerequisite = { focus = SOV_ryz_lessons_from_kadar }
+		prerequisite = { focus = SOV_ryz_approaching_the_kgb }
+		prerequisite = { focus = SOV_ryz_fill_commission_with_reformists }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 35
+				add_ideas = SOV_ryz_astrakhan
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_adapt_limited_perestroika
+		icon = GFX_focus_SOV_limited_perestroika
+		x = 7
+		y = 7
+
+		prerequisite = { focus = SOV_ryz_astrakhan_special_economic_zone }
+		mutually_exclusive = { focus = SOV_ryz_adapting_the_chinese_model }
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 25
+			add_stability = -0.05
+			swap_ideas = {
+				add_idea = SOV_memories_of_perestroika_1
+				remove_idea = SOV_memories_of_perestroika_2
+			}
+			add_ideas = SOV_ryz_limited_perestroika
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_lower_market_prices
+		icon = GFX_focus_SOV_lower_prices
+		x = 5
+		y = 8
+
+		prerequisite = { focus = SOV_ryz_adapt_limited_perestroika }
+		mutually_exclusive = { }
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_timed_idea = {
+ 			    idea = SOV_ryz_decreased_prices
+			    days = 200
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_affirmative_action_towards_minorities
+		icon = GFX_focus_SOV_continue_russification
+		x = 7
+		y = 8
+
+		prerequisite = { focus = SOV_ryz_adapt_limited_perestroika }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			subtract_from_variable = {sov_hardliner_influence_var = 10}
+            		custom_effect_tooltip = hardliner_10_influence_decrease
+			swap_ideas = {
+				remove_idea = SOV_rising_separatism
+				add_idea = SOV_rising_separatism_ryz
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_cut_taxes
+		icon = GFX_focus_SOV_lift_tax
+		x = 9
+		y = 8
+
+		prerequisite = { focus = SOV_ryz_adapt_limited_perestroika }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			swap_ideas = {
+				add_idea = SOV_ryz_limited_perestroika_1 
+				remove_idea = SOV_ryz_limited_perestroika 
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_end_censorship
+		icon = GFX_focus_SOV_censored_not
+		x = 6
+		y = 9
+
+		prerequisite = { focus = SOV_ryz_lower_market_prices }
+		prerequisite = { focus = SOV_ryz_affirmative_action_towards_minorities }
+		prerequisite = { focus = SOV_ryz_cut_taxes }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_to_variable = {sov_reformist_influence_var = 10}
+			custom_effect_tooltip = reformist_10_influence_increase
+			add_stability = -0.1
+			add_political_power = -30
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_allow_small_buisneses
+		icon = GFX_focus_SOV_limited_liberalization
+		x = 8
+		y = 9
+
+		prerequisite = { focus = SOV_ryz_lower_market_prices }
+		prerequisite = { focus = SOV_ryz_affirmative_action_towards_minorities }
+		prerequisite = { focus = SOV_ryz_cut_taxes }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			swap_ideas = {
+				add_idea = SOV_ryz_limited_perestroika_2 
+				remove_idea = SOV_ryz_limited_perestroika_1
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_socialism_with_human_face
+		icon = GFX_focus_SOV_socialism_with_human_face
+		x = 7
+		y = 10
+
+		prerequisite = { focus = SOV_ryz_end_censorship }
+		prerequisite = { focus = SOV_ryz_allow_small_buisneses }
+		mutually_exclusive = { }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_to_variable = {sov_reformist_influence_var = 10}
+			custom_effect_tooltip = reformist_10_influence_increase
+			subtract_from_variable = {sov_militarist_influence_var = 10}
+            		custom_effect_tooltip = army_10_influence_decrease
+			subtract_from_variable = {sov_hardliner_influence_var = 10}
+            		custom_effect_tooltip = hardliner_10_influence_decrease
+                        add_ideas = SOV_ryz_socialism_with_human_face
+			swap_ideas = {
+				add_idea = SOV_ryz_limited_perestroika_3 
+				remove_idea = SOV_ryz_limited_perestroika_2
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_adapting_the_chinese_model
+		icon = GFX_focus_SOV_guidance_from_chinese
+		x = 13
+		y = 7
+
+		prerequisite = { focus = SOV_ryz_astrakhan_special_economic_zone }
+		mutually_exclusive = { focus = SOV_ryz_adapt_limited_perestroika }
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = -25
+			add_stability = 0.05
+			swap_ideas = {
+				add_idea = SOV_stagnating_economy_ryzh
+				remove_idea = SOV_stagnating_economy_2
+			}
+			add_ideas = SOV_ryz_market_socialism
+			add_to_variable = {sov_reformist_influence_var = 5}
+			custom_effect_tooltip = reformist_5_influence_increase
+			add_to_variable = {sov_militarist_influence_var = 10}
+			custom_effect_tooltip = army_10_influence_increase
+			add_to_variable = {sov_hardliner_influence_var = 10}
+			custom_effect_tooltip = hardliner_10_influence_increase
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_suppression_of_too_liberal_elements
+		icon = GFX_focus_SOV_suppress_the_too_libs
+		x = 11
+		y = 8
+
+		prerequisite = { focus = SOV_ryz_adapting_the_chinese_model }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			subtract_from_variable = {sov_reformist_influence_var = 10}
+            		custom_effect_tooltip = reformist_10_influence_decrease
+			add_to_variable = {sov_militarist_influence_var = 5}
+			custom_effect_tooltip = army_5_influence_increase
+			add_to_variable = {sov_hardliner_influence_var = 10}
+			custom_effect_tooltip = hardliner_10_influence_increase
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_combat_poverty
+		icon = GFX_VIN_focus_fight_poverty
+		x = 13
+		y = 8
+
+		prerequisite = { focus = SOV_ryz_adapting_the_chinese_model }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 35
+			add_stability = 0.15
+			swap_ideas = {
+				add_idea = SOV_ryz_market_socialism_1 
+				remove_idea = SOV_ryz_market_socialism
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_provide_substities
+		icon = GFX_focus_SOV_provide_subsidies
+		x = 15
+		y = 8
+
+		prerequisite = { focus = SOV_ryz_adapting_the_chinese_model }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_timed_idea = {
+ 			    idea = SOV_ryz_substidies
+			    days = 365
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_limiting_censorship
+		icon = GFX_focus_SOV_limiting_censorship
+		x = 12
+		y = 9
+
+		prerequisite = { focus = SOV_ryz_suppression_of_too_liberal_elements }
+		prerequisite = { focus = SOV_ryz_combat_poverty }
+		prerequisite = { focus = SOV_ryz_provide_substities }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 30
+			add_stability = -0.15
+                                add_popularity = {
+                                    ideology = reformed_communism 
+                                    popularity = 0.05
+                                }
+                                add_popularity = {
+                                    ideology = socialism 
+                                    popularity = 0.05
+                                }
+                                add_popularity = {
+                                    ideology = liberalism
+                                    popularity = 0.03
+                                }
+                                add_popularity = {
+                                    ideology = social_democracy
+                                    popularity = 0.05
+                                }
+                                add_popularity = {
+                                    ideology = fascism 
+                                    popularity = 0.02
+                                }
+			add_to_variable = {sov_reformist_influence_var = 5}
+            		custom_effect_tooltip = reformist_5_influence_increase
+			subtract_from_variable = {sov_militarist_influence_var = 10}
+			custom_effect_tooltip = army_5_influence_decrease
+			subtract_from_variable = {sov_hardliner_influence_var = 10}
+			custom_effect_tooltip = hardliner_10_influence_decrease
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_educational_reforms
+		icon = GFX_focus_SOV_educational_reforms
+		x = 14
+		y = 9
+
+		prerequisite = { focus = SOV_ryz_suppression_of_too_liberal_elements }
+		prerequisite = { focus = SOV_ryz_combat_poverty }
+		prerequisite = { focus = SOV_ryz_provide_substities }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_timed_idea = {
+ 			    idea = SOV_ryz_education 
+			    days = 400
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_flow_of_markets
+		icon = GFX_focus_SOV_market_socialismus
+		x = 13
+		y = 10
+
+		prerequisite = { focus = SOV_ryz_limiting_censorship }
+		prerequisite = { focus = SOV_ryz_educational_reforms }
+		mutually_exclusive = { }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			swap_ideas = {
+				add_idea = SOV_ryz_market_socialism_2 
+				remove_idea = SOV_ryz_market_socialism_1
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_hardliners_not_so_happy
+		icon = GFX_focus_SOV_hardliners_not_happy
+		x = 10
+		y = 11
+
+		prerequisite = { focus = SOV_ryz_socialism_with_human_face  focus = SOV_ryz_flow_of_markets }
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			SOV = {
+			country_event = {id = ussr.94}
+			}
+			add_stability = -0.1
+			add_to_variable = {sov_hardliner_influence_var = 20}
+			custom_effect_tooltip = hardliner_20_influence_increase
+			add_to_variable = {sov_militarist_influence_var = 15}
+			custom_effect_tooltip = army_15_influence_increase
+			subtract_from_variable = {sov_reformist_influence_var = 15}
+            		custom_effect_tooltip = reformist_15_influence_decrease
+		}
+	}
+
+
+	focus = {
+		id = SOV_ryz_attempt_recounciliation
+		icon = GFX_SOV_keep_your_friend_close
+		x = 7
+		y = 12
+
+		prerequisite = { focus = SOV_ryz_hardliners_not_so_happy }
+		mutually_exclusive = { focus = SOV_ryz_harsh_measures }
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 35
+			add_stability = 0.05
+			add_ideas = SOV_ryz_balance
+			add_to_variable = {sov_reformist_influence_var = 10}
+            		custom_effect_tooltip = reformist_10_influence_increase
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_increase_party_oversight
+		icon = GFX_focus_SOV_increase_party_oversight
+		x = 5
+		y = 13
+
+		prerequisite = { focus = SOV_ryz_attempt_recounciliation }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_ryz_balance
+				add_idea = SOV_ryz_balance_1 
+			}
+			add_to_variable = {sov_hardliner_influence_var = 10}
+			custom_effect_tooltip = hardliner_10_influence_increase
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_prioritze_political_stability
+		icon = GFX_SOV_fighting_the_factionalism
+		x = 5
+		y = 14
+
+		prerequisite = { focus = SOV_ryz_increase_party_oversight }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_roll_back_radical_reforms
+		icon = GFX_focus_SOV_not_today_gorbie
+		x = 5
+		y = 15
+
+		prerequisite = { focus = SOV_ryz_prioritze_political_stability }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = -35
+			subtract_from_variable = {sov_reformist_influence_var = 10}
+            		custom_effect_tooltip = reformist_10_influence_decrease
+			add_to_variable = {sov_hardliner_influence_var = 10}
+			custom_effect_tooltip = hardliner_10_influence_increase
+			add_to_variable = {sov_militarist_influence_var = 10}
+			custom_effect_tooltip = army_10_influence_increase
+			swap_ideas = {
+				remove_idea = SOV_ryz_balance_1
+				add_idea = SOV_ryz_balance_2 
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_contact_the_militarists
+		icon = GFX_focus_SOV_Military_Reinassence
+		x = 7
+		y = 13
+
+		prerequisite = { focus = SOV_ryz_attempt_recounciliation }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 20
+			add_to_variable = {sov_reformist_influence_var = 5}
+            		custom_effect_tooltip = reformist_5_influence_increase
+			add_to_variable = {sov_militarist_influence_var = 10}
+			custom_effect_tooltip = army_10_influence_increase
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_yazovs_commission
+		icon = GFX_focus_SOV_yazovs_commission
+		x = 7
+		y = 14
+
+		prerequisite = { focus = SOV_ryz_contact_the_militarists }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_war_support = 0.1
+			army_experience = -20
+			add_to_variable = {sov_militarist_influence_var = 10}
+			custom_effect_tooltip = army_10_influence_increase
+			add_to_variable = {sov_reformist_influence_var = 5}
+			custom_effect_tooltip = reformist_5_influence_increase
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_contact_the_hardliners
+		icon = GFX_focus_SOV_pugo_loyalty
+		x = 9
+		y = 13
+
+		prerequisite = { focus = SOV_ryz_attempt_recounciliation }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 20
+			add_to_variable = {sov_reformist_influence_var = 5}
+            		custom_effect_tooltip = reformist_5_influence_increase
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_balancing_the_politburo
+		icon = GFX_focus_SOV_balance_politburo
+		x = 9
+		y = 14
+
+		prerequisite = { focus = SOV_ryz_contact_the_hardliners }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_stability = 0.05
+			add_to_variable = {sov_hardliner_influence_var = 5}
+			custom_effect_tooltip = hardliner_5_influence_increase
+			add_to_variable = {sov_reformist_influence_var = 5}
+            		custom_effect_tooltip = reformist_5_influence_increase
+			swap_ideas = {
+				remove_idea = SOV_party_infighting_1
+				add_idea = SOV_party_infighting_ryz_1
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_compromise_with_zyuganov
+		icon = GFX_focus_SOV_zyuganov_party_face
+		x = 8
+		y = 15
+
+		prerequisite = { focus = SOV_ryz_yazovs_commission }
+		prerequisite = { focus = SOV_ryz_balancing_the_politburo }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = -25
+			add_stability = 0.1
+			add_to_variable = {sov_hardliner_influence_var = 10}
+			custom_effect_tooltip = hardliner_10_influence_increase
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_a_crisis_avoided
+		icon = GFX_focus_SOV_crisis_averted
+		x = 7
+		y = 16
+
+		prerequisite = { focus = SOV_ryz_compromise_with_zyuganov }
+		prerequisite = { focus = SOV_ryz_roll_back_radical_reforms }
+		mutually_exclusive = { }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 20
+			swap_ideas = {
+				remove_idea = SOV_ryz_balance_2
+				add_idea = SOV_ryz_balance_3 days = 200 
+			}
+			remove_ideas = SOV_party_infighting_ryz_2
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_harsh_measures
+		icon = GFX_focus_SOV_diplo_in_chaos
+		x = 13
+		y = 12
+
+		prerequisite = { focus = SOV_ryz_hardliners_not_so_happy }
+		mutually_exclusive = { focus = SOV_ryz_attempt_recounciliation }
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			SOV = {
+			country_event = {id = ussr.92}
+			}
+			add_political_power = 40
+			add_stability = 0.05
+			add_idea = SOV_ryz_increase_reforms
+			add_to_variable = {sov_reformist_influence_var = 10}
+            		custom_effect_tooltip = reformist_10_influence_increase
+			subtract_from_variable = {sov_hardliner_influence_var = 5}
+            		custom_effect_tooltip = hardliner_5_influence_decrease
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_campaign_against_corruption
+		icon = GFX_SOV_crackdown_on_corruption
+		x = 15
+		y = 13
+
+		prerequisite = { focus = SOV_ryz_harsh_measures }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_stability = -0.05
+			add_political_power = 15
+			subtract_from_variable = {sov_hardliner_influence_var = 10}
+            		custom_effect_tooltip = hardliner_10_influence_decrease
+			swap_ideas = {
+				remove_idea = SOV_ryz_increase_reforms
+				add_idea = SOV_ryz_increase_reforms_1
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_fire_lower_eschalones
+		icon = GFX_focus_SOV_fire_lower_echelons
+		x = 15
+		y = 14
+
+		prerequisite = { focus = SOV_ryz_campaign_against_corruption }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 35
+			add_manpower = -2000
+			add_to_variable = {sov_reformist_influence_var = 10}
+            		custom_effect_tooltip = reformist_10_influence_increase
+			swap_ideas = {
+				remove_idea = SOV_ryz_increase_reforms_1
+				add_idea = SOV_ryz_increase_reforms_2
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_increase_reforms
+		icon = GFX_focus_SOV_economic_reforms
+		x = 15
+		y = 15
+
+		prerequisite = { focus = SOV_ryz_fire_lower_eschalones }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_stability = 0.05
+			subtract_from_variable = {sov_hardliner_influence_var = 10}
+            		custom_effect_tooltip = hardliner_10_influence_decrease
+			swap_ideas = {
+				remove_idea = SOV_ryz_increase_reforms_2
+				add_idea = SOV_ryz_increase_reforms_3 days = 200
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_reach_out_to_putin
+		icon = GFX_focus_SOV_middle_line
+		x = 11
+		y = 13
+
+		prerequisite = { focus = SOV_ryz_harsh_measures }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 20
+			add_to_variable = {sov_reformist_influence_var = 5}
+            		custom_effect_tooltip = reformist_5_influence_increase
+			add_to_variable = {sov_kgb_influence_var = 10}
+			custom_effect_tooltip = kgb_10_influence_increase
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_kgb_on_the_stage
+		icon = GFX_focus_SOV_KGB_ensure
+		x = 11
+		y = 14
+
+		prerequisite = { focus = SOV_ryz_reach_out_to_putin }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_stability = 0.05
+			add_to_variable = {sov_kgb_influence_var = 10}
+			custom_effect_tooltip = kgb_10_influence_increase
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_reach_out_to_central_committee
+		icon = GFX_focus_SOV_party_meeting
+		x = 13
+		y = 13
+
+		prerequisite = { focus = SOV_ryz_harsh_measures }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 25
+			add_stability = -0.05
+			subtract_from_variable = {sov_hardliner_influence_var = 10}
+            		custom_effect_tooltip = hardliner_10_influence_decrease
+			subtract_from_variable = {sov_militarist_influence_var = 5}
+            		custom_effect_tooltip = army_5_influence_decrease
+			swap_ideas = {
+				remove_idea = SOV_party_infighting_1
+				add_idea = SOV_party_infighting_ryz_2
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_ligachyovs_commission
+		icon = GFX_focus_SOV_gromov
+		x = 13
+		y = 14
+
+		prerequisite = { focus = SOV_ryz_reach_out_to_central_committee }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 15
+			add_war_support = -0.15
+			army_experience = 15
+			add_to_variable = {sov_reformist_influence_var = 10}
+            		custom_effect_tooltip = reformist_10_influence_increase
+			subtract_from_variable = {sov_militarist_influence_var = 10}
+            		custom_effect_tooltip = army_10_influence_decrease
+				remove_ideas = SOV_dmitry_yazov
+				add_ideas = SOV_boris_gromov
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_race_against_time
+		icon = GFX_SOV_time_for_action
+		x = 12
+		y = 15
+
+		prerequisite = { focus = SOV_ryz_kgb_on_the_stage }
+		prerequisite = { focus = SOV_ryz_ligachyovs_commission }
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 35
+			add_to_variable = {sov_reformist_influence_var = 5}
+            		custom_effect_tooltip = reformist_5_influence_increase
+			subtract_from_variable = {sov_hardliner_influence_var = 10}
+            		custom_effect_tooltip = hardliner_10_influence_decrease
+			subtract_from_variable = {sov_militarist_influence_var = 10}
+            		custom_effect_tooltip = army_10_influence_decrease
+		}
+	}
+
+
+	focus = {
+		id = SOV_ryz_hardliners_crushed
+		icon = GFX_focus_SOV_hardliners_crushed
+		x = 13
+		y = 16
+
+		prerequisite = { focus = SOV_ryz_race_against_time }
+		prerequisite = { focus = SOV_ryz_increase_reforms }
+		mutually_exclusive = { }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_stability = 0.2
+			SOV = {
+			country_event = {id = ussr.93}
+			}
+		   hidden_effect = {
+			remove_ideas = SOV_boris_pugo
+			remove_ideas = SOV_dmitry_yazov
+		   }
+			remove_ideas = SOV_party_infighting_ryz_2
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_gensec_ryzhkov
+		icon = GFX_focus_SOV_gensec_ryzhkov
+		x = 10
+		y = 17
+
+		prerequisite = { focus = SOV_ryz_hardliners_crushed  focus = SOV_ryz_a_crisis_avoided }
+		mutually_exclusive = { }
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 45
+			add_stability = 0.15
+			remove_ideas = SOV_memories_of_august_coup
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_economy
+		icon = GFX_focus_SOV_matter_of_economy
+		x = 9
+		y = 18
+
+		prerequisite = { focus = SOV_ryz_gensec_ryzhkov }
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_military
+		icon = GFX_focus_SOV_army_reform
+		x = 11
+		y = 18
+
+		prerequisite = { focus = SOV_ryz_gensec_ryzhkov }
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_dealing_with_ssrs
+		icon = GFX_focus_SOV_dealing_with_ssrs
+		x = 10
+		y = 19
+
+		prerequisite = { focus = SOV_ryz_economy }
+		prerequisite = { focus = SOV_ryz_military }
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_crackdown_on_separatism
+		icon = GFX_focus_SOV_crack_nationalism
+		x = 7
+		y = 20
+		
+		
+		prerequisite = {focus = SOV_ryz_dealing_with_ssrs } 
+		mutually_exclusive = { focus = SOV_ryz_negotiations }
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			custom_effect_tooltip = sov_army_finished_yazov_tt
+			set_country_flag = sov_crackdown_yazov
+			add_political_power = -50
+			add_manpower = -3500
+		}
+	}
+	
+	focus = {
+		id = SOV_ryz_crackdown_lithuenia
+		icon = GFX_focus_SOV_crush_lith
+		x = 5
+		y = 21
+
+		prerequisite = {focus = SOV_ryz_crackdown_on_separatism } 
+		mutually_exclusive = { }
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		
+		completion_reward = {
+		11 = { set_demilitarized_zone = no }
+		784 = { set_demilitarized_zone = no }
+		815 = { set_demilitarized_zone = no }
+		814 = { set_demilitarized_zone = no }
+		189 = { set_demilitarized_zone = no }
+		188 = { set_demilitarized_zone = no }
+		set_country_flag = crackdown_lithuenia
+		unlock_decision_category_tooltip = sov_crackdown_lithuenia
+			add_political_power = -50
+			add_manpower = -3500
+			set_variable = { lit_resistance = 65 }
+			set_variable = { lit_stab_level = 45 }
+		}
+	}
+	
+	focus = {
+		id = SOV_ryz_reassure_ukraine
+		icon = GFX_focus_SOV_crackdown_ukraine
+		x = 7
+		y = 21
+		
+		prerequisite = {focus = SOV_ryz_crackdown_on_separatism } 
+		mutually_exclusive = { }
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		
+		
+		completion_reward = {
+
+			add_political_power = 50
+			add_manpower = -7500
+			set_variable = { ukr_resistance = 45 }
+			set_variable = { ukr_stab_level = 60 }
+			unlock_decision_category_tooltip = sov_crackdown_ukraine
+			set_country_flag = crackdown_ukraine
+		}
+	}
+	
+
+	focus = {
+		id = SOV_ryz_crackdown_chechenya
+		icon = GFX_focus_SOV_chechnia_secured
+		x = 9
+		y = 21
+
+		prerequisite = {focus = SOV_ryz_crackdown_on_separatism } 
+		mutually_exclusive = { }
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		
+		
+		completion_reward = {
+		set_variable = { cin_resistance = 75 }
+		set_variable = { cin_stab_level = 30 }
+		821 = { set_demilitarized_zone = no }
+		unlock_decision_category_tooltip = sov_crackdown_chechenya
+		set_country_flag = crackdown_chechenya
+			add_manpower = -10000
+		}
+	}
+	
+	focus = {
+		id = SOV_ryz_prepare_4_future
+		icon = GFX_focus_SOV_prep_future
+		x = 7
+		y = 22
+
+		prerequisite = {focus = SOV_ryz_crackdown_chechenya}
+		prerequisite = {focus = SOV_ryz_reassure_ukraine} 
+		prerequisite = {focus = SOV_ryz_crackdown_lithuenia}
+		available = {
+		has_country_flag = finished_crackdown_lithuenia
+		has_country_flag = finished_crackdown_chechenya
+		has_country_flag = finished_crackdown_ukraine
+		}
+		mutually_exclusive = { }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		
+		
+		completion_reward = {
+		add_stability = 0.03
+		remove_ideas = SOV_rising_separatism
+
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_negotiations
+		icon = GFX_focus_SOV_Unification_talk
+		x = 13
+		y = 20
+		
+		
+		prerequisite = {focus = SOV_ryz_dealing_with_ssrs } 
+		mutually_exclusive = {focus = SOV_ryz_crackdown_on_separatism }
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			custom_effect_tooltip = sov_army_finished_yazov_tt
+			set_country_flag = sov_crackdown_yazov
+			add_political_power = -50
+			add_manpower = -3500
+		}
+	}
+	
+	focus = {
+		id = SOV_ryz_lithuanian_assr
+		icon = GFX_focus_SOV_lithuanian_assr
+		x = 11
+		y = 21
+
+		prerequisite = {focus = SOV_ryz_negotiations } 
+		mutually_exclusive = { }
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_ryz_ukrainian
+		icon = GFX_focus_SOV_ukraine_autonomy
+		x = 13
+		y = 21
+		
+		prerequisite = {focus = SOV_ryz_negotiations } 
+		mutually_exclusive = { }
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		
+		
+		completion_reward = {
+		}
+	}
+	
+
+	focus = {
+		id = SOV_ryz_chechen_autonomy
+		icon = GFX_focus_SOV_chechen_autonomy
+		x = 15
+		y = 21
+
+		prerequisite = {focus = SOV_ryz_negotiations } 
+		mutually_exclusive = { }
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		
+		
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_ryz_setting_better_way
+		icon = GFX_focus_SOV_super_power
+		x = 13
+		y = 22
+
+		prerequisite = {focus = SOV_ryz_chechen_autonomy}
+		prerequisite = {focus = SOV_ryz_ukrainian} 
+		prerequisite = {focus = SOV_ryz_lithuanian_assr}
+		available = {
+		}
+		mutually_exclusive = { }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		
+		
+		completion_reward = {
+		add_stability = 0.2
+		remove_ideas = SOV_rising_separatism
+
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_secure_union
+		icon = GFX_focus_SOV_secure_union
+		x = 10
+		y = 24
+
+		prerequisite = {focus = SOV_ryz_prepare_4_future focus = SOV_ryz_setting_better_way}
+		available = {
+		}
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		
+		
+		completion_reward = {
+		add_stability = 0.1
+
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_ryzhkov_doctrine
+		icon = GFX_focus_SOV_ryzhkov_doctrine
+		x = 22
+		y = 19
+
+		prerequisite = { focus = SOV_ryz_economy }
+		prerequisite = { focus = SOV_ryz_military }
+		mutually_exclusive = { }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = SOV_ryzhkov_doctrine
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_found_csto
+		icon = GFX_focus_SOV_csto
+		x = 22
+		y = 20
+
+		prerequisite = { focus = SOV_ryz_ryzhkov_doctrine }
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		set_faction_name = CSTO
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_dealing_with_former_ssrs
+		icon = GFX_SOV_little_traitors
+		x = 22
+		y = 21
+
+		prerequisite = { focus = SOV_ryz_found_csto }
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		unlock_decision_category_tooltip = sov_reinteg_decisions_via_peace
+		set_country_flag = SOV_referandums_decisions_start
+		set_variable = { azr_ref_support = 25 }
+		set_variable = { arm_ref_support = 35 }
+		set_variable = { lat_ref_support = 10 }
+		set_variable = { est_ref_support = 15 }
+		
+		add_stability = 0.05
+		}
+	}
+
+	
+	focus = {
+		id = SOV_ryz_mediate_talks
+		icon = GFX_focus_SOV_mediate
+		x = 21
+		y = 22
+
+		prerequisite = {focus = SOV_ryz_dealing_with_former_ssrs}
+		mutually_exclusive = {focus = SOV_ryz_soviet_peacekeepers}
+		
+		cost = 1.5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		
+		
+		completion_reward = {
+		add_to_variable = { azr_ref_support = 20 }
+		custom_effect_tooltip = sov_ryz_ref_incrase_by_20_azr		
+		add_to_variable = { arm_ref_support = 5 }
+		custom_effect_tooltip = sov_ryz_ref_incrase_by_5_arm
+		
+		add_political_power = -25
+			add_days_mission_timeout = {
+				mission = sov_referandums_timeclock
+				days = 20
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_soviet_peacekeepers
+		icon = GFX_focus_SOV_soviet_peacekeepers
+		x = 19
+		y = 22
+
+		prerequisite = {focus = SOV_ryz_dealing_with_former_ssrs}
+		mutually_exclusive = {focus = SOV_ryz_mediate_talks}
+		
+		cost = 1.5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		
+		
+		completion_reward = {
+		add_to_variable = { azr_ref_support = 5 }
+		custom_effect_tooltip = sov_ryz_ref_incrase_by_5_azr		
+		add_to_variable = { arm_ref_support = 20 }
+		custom_effect_tooltip = sov_ryz_ref_incrase_by_20_arm
+		add_political_power = -25
+			add_days_mission_timeout = {
+				mission = sov_referandums_timeclock
+				days = 10
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_investments
+		icon = GFX_focus_SOV_invest_in_baltics
+		x = 23
+		y = 22
+
+		prerequisite = {focus = SOV_ryz_dealing_with_former_ssrs}
+		mutually_exclusive = {focus = SOV_ryz_preassure}
+		
+		cost = 1.5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		
+		
+		completion_reward = {
+		add_to_variable = { lat_ref_support = 5 }
+		custom_effect_tooltip = sov_ryz_ref_incrase_by_5_lat
+		add_to_variable = { est_ref_support = 15 }
+		custom_effect_tooltip = sov_ryz_ref_incrase_by_15_est
+			229 ={	
+				
+				add_extra_state_shared_building_slots = 1
+				
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			230 ={	
+				
+				add_extra_state_shared_building_slots = 1
+				
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			812 ={	
+				
+				add_extra_state_shared_building_slots = 1
+				
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			808 ={	
+				
+				add_extra_state_shared_building_slots = 1
+				
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_days_mission_timeout = {
+				mission = sov_referandums_timeclock
+				days = 10
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_preassure
+		icon = GFX_focus_SOV_old_way
+		x = 25
+		y = 22
+
+		prerequisite = {focus = SOV_ryz_dealing_with_former_ssrs}
+		mutually_exclusive = {focus = SOV_ryz_investments}
+		
+		cost = 1.5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		
+		
+		completion_reward = {
+		add_to_variable = { lat_ref_support = 15 }
+		custom_effect_tooltip = sov_ryz_ref_incrase_by_15_lat
+		add_to_variable = { est_ref_support = 5 }
+		custom_effect_tooltip = sov_ryz_ref_incrase_by_5_est
+		add_political_power = -25
+			add_days_mission_timeout = {
+				mission = sov_referandums_timeclock
+				days = -10
+			}
+		}
+	}
+	
+		
+	focus = {
+		id = SOV_ryz_contact_russians
+		icon = GFX_focus_SOV_contact_russians
+		x = 22
+		y = 23
+
+		prerequisite = {focus = SOV_ryz_mediate_talks focus = SOV_ryz_soviet_peacekeepers}
+		prerequisite = {focus = SOV_ryz_preassure focus = SOV_ryz_investments}
+		mutually_exclusive = {}
+		
+		cost = 1.5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		
+		
+		completion_reward = {
+		add_to_variable = { lat_ref_support = 10 }
+		custom_effect_tooltip = sov_ryz_ref_incrase_by_10_lat		
+		add_to_variable = { est_ref_support = 10 }
+		custom_effect_tooltip = sov_ryz_ref_incrase_by_10_est
+		
+		add_political_power = -50
+			add_days_mission_timeout = {
+				mission = sov_referandums_timeclock
+				days = 10
+			}
+		}
+	}
+
+
+	focus = {
+		id = SOV_ryz_call_for_referendums
+		icon = GFX_focus_SOV_demand_referendums
+		x = 22
+		y = 24
+
+		prerequisite = {focus = SOV_ryz_contact_russians}
+		mutually_exclusive = {}
+		
+		cost = 1.5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		
+		
+		completion_reward = {
+		custom_effect_tooltip = sov_gorby_ref_incrase_by_10
+		add_to_variable = { azr_ref_support = 10 }
+		add_to_variable = { arm_ref_support = 10 }
+		add_to_variable = { lat_ref_support = 10 }
+		add_to_variable = { est_ref_support = 10 }
+			AZR = {
+				add_popularity = {
+					ideology = reformed_communism
+					popularity = 0.05
+				}
+			}
+			ARM = {
+				add_popularity = {
+					ideology = reformed_communism
+					popularity = 0.05
+				}
+			}
+			LAT = {
+				add_popularity = {
+					ideology = reformed_communism
+					popularity = 0.05
+				}
+			}
+			EST = {
+				add_popularity = {
+					ideology = reformed_communism
+					popularity = 0.05
+				}
+			}
+
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_ties_wp
+		icon = GFX_focus_SOV_rebirth_of_warsaw_pact
+		x = 36
+		y = 20
+
+		prerequisite = { focus = SOV_ryz_ryzhkov_doctrine }
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_bulgaria
+		icon = GFX_focus_SOV_bulgaria
+		x = 28
+		y = 21
+
+		prerequisite = { focus = SOV_ryz_ties_wp }
+		mutually_exclusive = { }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 50
+			custom_effect_tooltip = sov_bulgaria_var_increase_15		
+			add_to_variable = {sov_bulgaria_var = 15}
+			SOV_ryz_clamper = yes
+			unlock_decision_tooltip = sov_ryz_increase_kgb_presence_bul
+		}
+	}
+
+	focus = {
+		id = SOV_utilize_slavic_brotherhood
+		icon = GFX_focus_SOV_bulgar_ties
+		x = 27
+		y = 22
+
+		prerequisite = { focus = SOV_bulgaria }
+		mutually_exclusive = { }
+		available = {
+			custom_trigger_tooltip = {
+			tooltip = sov_bulgaria_var_is_35
+			check_variable = {sov_bulgaria_var > 34}
+			}
+		}
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_war_support = 0.10
+			BUL = {
+				add_war_support = 0.10
+			}
+			custom_effect_tooltip = sov_bulgaria_var_increase_15		
+			add_to_variable = {sov_bulgaria_var = 15}
+			SOV_ryz_clamper = yes
+			unlock_decision_tooltip = sov_ryz_utilize_brotherhood_bul
+		}
+	}
+
+	focus = {
+		id = SOV_steel_trade
+		icon = GFX_focus_SOV_csto
+		x = 29
+		y = 22
+
+		prerequisite = { focus = SOV_bulgaria }
+		mutually_exclusive = { }
+		available = {
+			custom_trigger_tooltip = {
+			tooltip = sov_bulgaria_var_is_65
+			check_variable = {sov_bulgaria_var > 64}
+			}
+		}
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		add_political_power = 100
+		BUL = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}
+		}
+			add_resource = {
+				type = steel
+				amount = 25
+				state = 48
+			}
+		}
+		custom_effect_tooltip = sov_bulgaria_var_increase_15		
+		add_to_variable = {sov_bulgaria_var = 15}
+		SOV_ryz_clamper = yes
+		unlock_decision_tooltip = sov_ryz_increase_trade_dependency_bul
+	}
+
+	focus = {
+		id = SOV_make_it_clear
+		icon = GFX_focus_SOV_make_it_clear
+		x = 28
+		y = 23
+
+		prerequisite = { focus = SOV_utilize_slavic_brotherhood }
+		prerequisite = { focus = SOV_steel_trade }
+		mutually_exclusive = { }
+		available = {
+			custom_trigger_tooltip = {
+			tooltip = sov_bulgaria_var_is_100
+			check_variable = {sov_bulgaria_var > 99}
+			}
+		}
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			BUL = {country_event = {id = bulgaria_mod.2}}
+		}
+	}
+
+	focus = {
+		id = SOV_romania
+		icon = GFX_focus_SOV_romania
+		x = 32
+		y = 21
+
+		prerequisite = { focus = SOV_ryz_ties_wp }
+		mutually_exclusive = { }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 50
+			custom_effect_tooltip = sov_romania_var_increase_15		
+			add_to_variable = {sov_romania_var = 15}
+			SOV_ryz_clamper = yes
+			unlock_decision_tooltip = sov_ryz_increase_kgb_presence_rom			
+		}
+	}
+
+	focus = {
+		id = SOV_chauchescu
+		icon = GFX_focus_SOV_condemn_chauchescu
+		x = 31
+		y = 22
+
+		prerequisite = { focus = SOV_romania }
+		mutually_exclusive = { }
+		available = {
+			custom_trigger_tooltip = {
+			tooltip = sov_romania_var_is_35
+			check_variable = {sov_romania_var > 34}
+			}
+		}
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = -40
+			add_stability = 0.10
+			ROM = {
+				add_stability = 0.10
+			}
+			custom_effect_tooltip = sov_romania_var_increase_15		
+			add_to_variable = {sov_romania_var = 15}
+			SOV_ryz_clamper = yes			
+			unlock_decision_tooltip = sov_ryz_increase_political_influence_rom
+		}
+	}
+
+	focus = {
+		id = SOV_aiding_workers
+		icon = GFX_focus_SOV_aiding_workers
+		x = 33
+		y = 22
+
+		prerequisite = { focus = SOV_romania }
+		mutually_exclusive = { }
+		available = {
+			custom_trigger_tooltip = {
+			tooltip = sov_romania_var_is_65
+			check_variable = {sov_romania_var > 64}
+			}
+		}		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			ROM = {
+				add_political_power = -150
+				add_popularity = {
+					ideology = socialism
+					popularity = 0.10
+				}
+			}
+			custom_effect_tooltip = sov_romania_var_increase_15		
+			add_to_variable = {sov_romania_var = 15}
+			SOV_ryz_clamper = yes	
+			unlock_decision_tooltip = sov_ryz_fund_the_workers_rom			
+		}
+	}
+
+	focus = {
+		id = SOV_just_a_little_preaussre
+		icon = GFX_focus_SOV_pressure
+		x = 32
+		y = 23
+
+		prerequisite = { focus = SOV_chauchescu }
+		prerequisite = { focus = SOV_aiding_workers }
+		mutually_exclusive = { }
+		available = {
+			custom_trigger_tooltip = {
+			tooltip = sov_romania_var_is_100
+			check_variable = {sov_romania_var > 99}
+			}
+		}		
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			custom_effect_tooltip = sov_romania_time
+			ROM = {country_event = {id = romania_mod.2}}
+		}
+	}
+
+	focus = {
+		id = SOV_hungary
+		icon = GFX_focus_SOV_hungary
+		x = 36
+		y = 21
+
+		prerequisite = { focus = SOV_ryz_ties_wp }
+		mutually_exclusive = { }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+			custom_effect_tooltip = sov_hungary_var_increase_15		
+			add_to_variable = {sov_hungary_var = 15}
+			unlock_decision_tooltip = sov_ryz_increase_kgb_presence_hun				
+		}
+	}
+
+	focus = {
+		id = SOV_isolate_hungary
+		icon = GFX_focus_SOV_isolate_hungary
+		x = 35
+		y = 22
+
+		prerequisite = { focus = SOV_hungary }
+		mutually_exclusive = { }
+		available = {
+			custom_trigger_tooltip = {
+			tooltip = sov_hungary_var_is_35
+			check_variable = {sov_hungary_var > 34}
+			}
+		}	
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			HUN = {
+				add_stability = -0.10
+			}
+			custom_effect_tooltip = sov_hungary_var_increase_15		
+			add_to_variable = {sov_hungary_var = 15}	
+			unlock_decision_tooltip = sov_ryz_isolate_economy_hun	
+		}
+	}
+
+	focus = {
+		id = SOV_arm_rebels
+		icon = GFX_focus_SOV_fund_anti_hungarian_terrorists
+		x = 37
+		y = 22
+
+		prerequisite = { focus = SOV_hungary }
+		mutually_exclusive = { }
+		available = {
+			custom_trigger_tooltip = {
+			tooltip = sov_hungary_var_is_65
+			check_variable = {sov_hungary_var > 64}
+			}
+		}	
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 50
+			army_experience = 50
+			HUN = {
+				add_stability = -0.20
+				army_experience = -100
+				add_war_support = -0.20
+				add_popularity = {
+					ideology = reformed_communism
+					popularity = 0.15
+				}
+			}
+			custom_effect_tooltip = sov_hungary_var_increase_25		
+			add_to_variable = {sov_hungary_var = 25}	
+			unlock_decision_tooltip = sov_ryz_fund_rebels_hun				
+		}
+	}
+
+	focus = {
+		id = SOV_a_small_reminder
+		icon = GFX_focus_SOV_reminder
+		x = 36
+		y = 23
+
+		prerequisite = { focus = SOV_isolate_hungary }
+		prerequisite = { focus = SOV_arm_rebels }
+		mutually_exclusive = { }
+		available = {
+			custom_trigger_tooltip = {
+			tooltip = sov_hungary_var_is_100
+			check_variable = {sov_hungary_var > 99}
+			}
+		}		
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+				declare_war_on = {
+					target = HUN
+					type = annex_everything
+				}
+				if = {
+					limit = {HUN = {has_government = fascism}}
+					news_event = {id = old_times_news.157}					
+				}
+				else = {
+					news_event = {id = old_times_news.156}					
+				}
+		}
+	}
+
+	focus = {
+		id = SOV_slovakia
+		icon = GFX_focus_SOV_czechoslovak
+		x = 40
+		y = 21
+
+		prerequisite = { focus = SOV_ryz_ties_wp }
+		mutually_exclusive = { }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 50
+			custom_effect_tooltip = sov_slovakia_var_increase_15		
+			add_to_variable = {sov_slovakia_var = 15}
+			SOV_ryz_clamper = yes		
+			unlock_decision_tooltip = sov_ryz_increase_kgb_presence_slo				
+			
+		}
+	}
+
+	focus = {
+		id = SOV_apology
+		icon = GFX_focus_SOV_sorry
+		x = 39
+		y = 22
+
+		prerequisite = { focus = SOV_slovakia }
+		mutually_exclusive = { }
+		available = {
+			custom_trigger_tooltip = {
+			tooltip = sov_slovakia_var_is_35
+			check_variable = {sov_slovakia_var > 34}
+			}
+		}	
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			army_experience = -25
+			add_war_support = -0.15
+			add_opinion_modifier = {
+				target = CZE
+				modifier = large_increase
+			}		
+			add_opinion_modifier = {
+				target = SLO
+				modifier = large_increase
+			}		
+			custom_effect_tooltip = sov_slovakia_var_increase_15		
+			add_to_variable = {sov_slovakia_var = 15}
+			SOV_ryz_clamper = yes		
+			unlock_decision_tooltip = sov_ryz_increase_political_influence_slo				
+			
+		}
+	}
+
+	focus = {
+		id = SOV_support_new_socialism
+		icon = GFX_focus_SOV_csto
+		x = 41
+		y = 22
+
+		prerequisite = { focus = SOV_slovakia }
+		mutually_exclusive = { }
+		available = {
+			custom_trigger_tooltip = {
+			tooltip = sov_slovakia_var_is_65
+			check_variable = {sov_slovakia_var > 64}
+			}
+		}
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 50
+			SLO = {
+				add_popularity = {
+				ideology = socialism
+				popularity = 0.10	
+				}
+				add_popularity = {
+				ideology = reformed_communism
+				popularity = 0.10	
+				}				
+			
+			}
+			custom_effect_tooltip = sov_slovakia_var_increase_25		
+			add_to_variable = {sov_slovakia_var = 25}
+			SOV_ryz_clamper = yes
+			unlock_decision_tooltip = sov_ryz_increase_economic_influence_slo				
+
+		}
+	}
+
+	focus = {
+		id = SOV_a_very_soviet_revolution
+		icon = GFX_focus_SOV_a_very_soviet_revolution
+		x = 40
+		y = 23
+
+		prerequisite = { focus = SOV_apology }
+		prerequisite = { focus = SOV_support_new_socialism }
+		mutually_exclusive = { }
+		available = {
+			custom_trigger_tooltip = {
+			tooltip = sov_slovakia_var_is_100
+			check_variable = {sov_slovakia_var > 99}
+			}
+		}
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			custom_effect_tooltip = sov_slovakia_time
+			SLO = {country_event = {id = slovakia_mod.1}}
+		}
+	}
+
+	focus = {
+		id = SOV_poland
+		icon = GFX_focus_SOV_poland
+		x = 44
+		y = 21
+
+		prerequisite = { focus = SOV_ryz_ties_wp }
+		mutually_exclusive = { }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			POL = {country_event = {id = poland_mod.2}}
+			unlock_decision_tooltip = sov_ryz_increase_political_influence_pol
+		}
+	}
+
+	focus = {
+		id = SOV_hardline_approach
+		icon = GFX_focus_SOV_flame
+		x = 43
+		y = 22
+
+		prerequisite = { focus = SOV_poland }
+		mutually_exclusive = { }
+
+		available = {
+			custom_trigger_tooltip = {
+			tooltip = sov_poland_var_is_35
+			check_variable = {sov_poland_var > 34}
+			}
+		}		
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 50
+			unlock_decision_tooltip = sov_ryz_increase_kgb_presence_pol
+			add_to_variable = {sov_poland_var = 25}
+			custom_effect_tooltip = sov_poland_var_increase_25
+			
+		}
+	}
+
+	focus = {
+		id = SOV_backup
+		icon = GFX_focus_SOV_shooting_tank
+		x = 45
+		y = 22
+
+		prerequisite = { focus = SOV_poland }
+		mutually_exclusive = { }
+
+		available = {
+			custom_trigger_tooltip = {
+			tooltip = sov_poland_var_is_65
+			check_variable = {sov_poland_var > 64}
+			}
+		}		
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_war_support = 0.10
+			unlock_decision_tooltip = sov_ryz_increase_military_presence_pol			
+			add_to_variable = {sov_poland_var = 15}
+			custom_effect_tooltip = sov_poland_var_increase_15		
+		}
+	}
+
+	focus = {
+		id = SOV_polish_gamble
+		icon = GFX_focus_SOV_polish_gamble
+		x = 44
+		y = 23
+
+		prerequisite = { focus = SOV_hardline_approach }
+		prerequisite = { focus = SOV_backup }
+		
+		available = {
+			custom_trigger_tooltip = {
+			tooltip = sov_poland_var_is_100
+			check_variable = {sov_poland_var > 99}
+			}
+		}
+		
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			if = {
+				limit = {has_country_flag = sov_pol_accepted}
+				SOV = { add_to_faction = POL }
+				country_event = {id = ussr_foreign_policy.8}
+			}
+			else_if = {
+				declare_war_on = {
+					target = POL
+					type = annex_everything
+				}
+				news_event = {id = old_times_news.155}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_state_visit
+		icon = GFX_focus_SOV_visit_to_wp
+		x = 36
+		y = 24
+
+		prerequisite = { focus = SOV_make_it_clear }
+		prerequisite = { focus = SOV_just_a_little_preaussre }
+		prerequisite = { focus = SOV_a_small_reminder }
+		prerequisite = { focus = SOV_a_very_soviet_revolution }
+		prerequisite = { focus = SOV_polish_gamble }
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+
+
+	focus = {
+		id = SOV_ryz_global_policy
+		icon = GFX_SOV_compromise_with_the_usa
+		x = 50
+		y = 20
+
+		prerequisite = {focus = SOV_ryz_ryzhkov_doctrine}
+		mutually_exclusive = { }
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_warming
+		icon = GFX_focus_SOV_warming
+		x = 48
+		y = 21
+
+		prerequisite = {focus = SOV_ryz_global_policy}
+		mutually_exclusive = {focus = SOV_ryz_multipolarity}
+		
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			USA = {
+		        country_event = {id = usa_wienna.3}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_norm_with_eu_and_nato
+		icon = GFX_focus_SOV_trade_eu
+		x = 49
+		y = 22
+
+		prerequisite = {focus = SOV_ryz_warming}
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			ENG = {
+		        country_event = {id = usa_wienna.4}
+			}
+			GER = {
+		        country_event = {id = usa_wienna.4}
+			}
+			FRA = {
+		        country_event = {id = usa_wienna.4}
+			}
+			USA = {
+		        country_event = {id = usa_wienna.4}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_soviet_tourism
+		icon = GFX_focus_SOV_soviet_tourism
+		x = 49
+		y = 23
+
+		prerequisite = {focus = SOV_ryz_norm_with_eu_and_nato}
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = -0.15
+			add_stability = -0.1
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_end_cold_war
+		icon = GFX_SOV_easing_the_tensions
+		x = 47
+		y = 22
+
+		prerequisite = {focus = SOV_ryz_warming}
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			USA = {
+		        country_event = {id = usa_wienna.5}
+			}
+
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_consumer_goods
+		icon = GFX_focus_SOV_world_market_trade
+		x = 47
+		y = 23
+
+		prerequisite = {focus = SOV_ryz_end_cold_war}
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			USA = {
+		        country_event = {id = usa_wienna.1}
+			}
+
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_multipolarity
+		icon = GFX_focus_SOV_multipolarity
+		x = 52
+		y = 21
+
+		prerequisite = {focus = SOV_ryz_global_policy}
+		mutually_exclusive = {focus = SOV_ryz_warming}
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_ideas = SOV_putin_multipolarity 
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_comecon
+		icon = GFX_focus_SOV_spread_COMECON_to_potential_allies
+		x = 51
+		y = 22
+
+		prerequisite = {focus = SOV_ryz_multipolarity}
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_putin_multipolarity
+				add_idea = SOV_putin_multipolarity_1
+			}
+			add_opinion_modifier = {
+			target = POL
+			modifier = SOV_comecon_opinion
+			}
+			add_opinion_modifier = {
+			target = SLO
+			modifier = SOV_comecon_opinion
+			}
+			add_opinion_modifier = {
+			target = HUN
+			modifier = SOV_comecon_opinion
+			}
+			add_opinion_modifier = {
+			target = ROM
+			modifier = SOV_comecon_opinion
+			}
+			add_opinion_modifier = {
+			target = BUL
+			modifier = SOV_comecon_opinion
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_wp_ties
+		icon = GFX_SOV_increase_ties_with_warsaw_pact
+		x = 51
+		y = 23
+
+		prerequisite = {focus = SOV_ryz_comecon}
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 15
+			add_ideas = SOV_increased_wp_spending
+			POL = {
+			add_ideas = SOV_increased_presence
+		        }
+			SLO = {
+			add_ideas = SOV_increased_presence
+		        }
+			HUN = {
+			add_ideas = SOV_increased_presence
+		        }
+			ROM = {
+			add_ideas = SOV_increased_presence
+		        }
+			BUL = {
+			add_ideas = SOV_increased_presence
+		        }
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_chinese_trade
+		icon = GFX_focus_SOV_sino_sov_trade
+		x = 53
+		y = 22
+
+		prerequisite = {focus = SOV_ryz_multipolarity}
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 20
+			PRC = {
+		        country_event = {id = prc.1}
+			}
+			add_opinion_modifier = {
+			target = PRC
+			modifier = SOV_pugo_trade_agreement_opinion
+			}
+
+			PRC = {
+			add_opinion_modifier = {
+			target = SOV
+			modifier = SOV_pugo_trade_agreement_opinion
+			}
+	            }
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_africa
+		icon = GFX_focus_SOV_comecon_in_africa
+		x = 53
+		y = 23
+
+		prerequisite = {focus = SOV_ryz_chinese_trade}
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_global_union
+		icon = GFX_SOV_fighting_the_factionalism
+		x = 50
+		y = 24
+
+		prerequisite = {focus = SOV_ryz_soviet_tourism focus = SOV_ryz_africa}
+		prerequisite = {focus = SOV_ryz_consumer_goods focus = SOV_ryz_wp_ties}
+		mutually_exclusive = { }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 45
+			add_stability = 0.1
+
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_middle_east
+		icon = GFX_focus_SOV_middle_east
+		x = 57
+		y = 20
+
+		prerequisite = {focus = SOV_ryz_ryzhkov_doctrine}
+		mutually_exclusive = { }
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_iraq
+		icon = GFX_focus_SOV_iraq
+		x = 55
+		y = 21
+
+		prerequisite = {focus = SOV_ryz_middle_east}
+		mutually_exclusive = {}
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_condemn_saddam
+		icon = GFX_focus_SOV_saddam
+		x = 55
+		y = 22
+
+		prerequisite = {focus = SOV_ryz_iraq}
+		mutually_exclusive = {}
+		
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_limiting_support
+		icon = GFX_focus_SOV_not_yet
+		x = 55
+		y = 23
+
+		prerequisite = {focus = SOV_ryz_condemn_saddam}
+		mutually_exclusive = {}
+		
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_a_new_old_protege
+		icon = GFX_focus_SOV_protege
+		x = 55
+		y = 24
+
+		prerequisite = {focus = SOV_ryz_limiting_support}
+		mutually_exclusive = {}
+		
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_iran
+		icon = GFX_focus_SOV_iran
+		x = 57
+		y = 21
+
+		prerequisite = {focus = SOV_ryz_middle_east}
+		mutually_exclusive = {}
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_iran_relations
+		icon = GFX_focus_SOV_warming
+		x = 57
+		y = 22
+
+		prerequisite = {focus = SOV_ryz_iran}
+		mutually_exclusive = {}
+		
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_oil_investment
+		icon = GFX_focus_IRQ_oil
+		x = 57
+		y = 23
+
+		prerequisite = {focus = SOV_ryz_iran_relations}
+		mutually_exclusive = {}
+		
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_caspian_sea_trade_zone
+		icon = GFX_focus_SOV_caspian_trade_zone
+		x = 57
+		y = 24
+
+		prerequisite = {focus = SOV_ryz_oil_investment}
+		mutually_exclusive = {}
+		
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_israel
+		icon = GFX_focus_SOV_israel_policy
+		x = 59
+		y = 21
+
+		prerequisite = {focus = SOV_ryz_middle_east}
+		mutually_exclusive = {}
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_supplying_hezbollah
+		icon = GFX_focus_SOV_hezbollah
+		x = 59
+		y = 22
+
+		prerequisite = {focus = SOV_ryz_israel}
+		mutually_exclusive = {}
+		
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_increase_presence_in_egypt
+		icon = GFX_focus_SOV_increase_presence_in_egypt2
+		x = 59
+		y = 23
+
+		prerequisite = {focus = SOV_ryz_supplying_hezbollah}
+		mutually_exclusive = {}
+		
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_condemn_israel
+		icon = GFX_focus_IRQ_death_israel
+		x = 59
+		y = 24
+
+		prerequisite = {focus = SOV_ryz_increase_presence_in_egypt}
+		mutually_exclusive = {}
+		
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_moy_adress
+		icon = GFX_focus_SOV_moy_adress
+		x = 19
+		y = 25
+
+		prerequisite = {focus = SOV_ryz_secure_union }
+		prerequisite = {focus = SOV_ryz_call_for_referendums}
+		prerequisite = {focus = SOV_ryz_state_visit}
+		prerequisite = {focus = SOV_ryz_global_union}
+		prerequisite = {focus = SOV_ryz_a_new_old_protege}
+		prerequisite = {focus = SOV_ryz_caspian_sea_trade_zone}
+		prerequisite = {focus = SOV_ryz_condemn_israel}
+		mutually_exclusive = { }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+
+		}
+	}
+
+
+####ECONOMY####
+
+
+	focus = {
+		id = SOV_ryz_new_way_for_union
+		icon = GFX_focus_SOV_great_industry
+		x = 24
+		y = 0
+		prerequisite = {}
+		available = {
+		has_country_flag = economy_for_ryzhkov
+		}  
+		mutually_exclusive = { }
+		
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+        ###OLD WAY###
+
+	focus = {
+		id = SOV_ryz_compromised_solution
+		icon = GFX_focus_SOV_compromise_solution
+		x = 21
+		y = 1
+		prerequisite = {focus = SOV_ryz_new_way_for_union}  
+		mutually_exclusive = {focus = SOV_put_new}
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = -50
+			add_ideas = SOV_Putin_old_economy
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_meet_domestic
+		icon = GFX_focus_SOV_deals_with_local_investors1
+		x = 22
+		y = 2
+		prerequisite = {focus = SOV_ryz_compromised_solution}  
+		mutually_exclusive = { }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+
+			821 = {
+                		add_extra_state_shared_building_slots = 2
+
+                		add_building_construction = {
+                    			type = infrastructure
+                    			level = 2
+                    			instant_build = yes
+                		}
+           		 }
+
+			232 = {
+                		add_extra_state_shared_building_slots = 2
+
+                		add_building_construction = {
+                    			type = infrastructure
+                    			level = 2
+                    			instant_build = yes
+                		}
+           		 }
+
+			234 = {
+                		add_extra_state_shared_building_slots = 2
+
+                		add_building_construction = {
+                    			type = infrastructure
+                    			level = 2
+                    			instant_build = yes
+                		}
+           		 }
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_keep_army_happy
+		icon = GFX_focus_SOV_fight_mil_oligarchy
+		x = 22
+		y = 3
+		prerequisite = {focus = SOV_ryz_meet_domestic}  
+		mutually_exclusive = { }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			245 = {
+                		add_extra_state_shared_building_slots = 2
+
+                		add_building_construction = {
+                    			type = infrastructure
+                    			level = 2
+                    			instant_build = yes
+                		}
+           		 }
+
+			193 = {
+                		add_extra_state_shared_building_slots = 1
+
+                		add_building_construction = {
+                    			type = infrastructure
+                    			level = 1
+                    			instant_build = yes
+                		}
+           		 }
+
+			196 = {
+                		add_extra_state_shared_building_slots = 1
+
+                		add_building_construction = {
+                    			type = infrastructure
+                    			level = 1
+                    			instant_build = yes
+                		}
+           		 }
+			221 = {
+                		add_extra_state_shared_building_slots = 2
+
+                		add_building_construction = {
+                    			type = infrastructure
+                    			level = 2
+                    			instant_build = yes
+                		}
+           		 }
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_restart_ogas
+		icon = GFX_focus_SOV_OGAS_in_industry
+		x = 22
+		y = 4
+		prerequisite = {focus = SOV_ryz_keep_army_happy}  
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 20
+				swap_ideas = {
+					remove_idea = SOV_Putin_old_economy
+					add_idea = SOV_Putin_old_economy2
+				}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_introduce_ogas
+		icon = GFX_focus_SOV_computerize_military_economy
+		x = 22
+		y = 5
+		prerequisite = {focus = SOV_ryz_restart_ogas}  
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 35
+				swap_ideas = {
+					remove_idea = SOV_Putin_old_economy2
+					add_idea = SOV_Putin_old_economy3
+				}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_expand_1996
+		icon = GFX_focus_SOV_revisit_1996_reforms
+		x = 19
+		y = 2
+		prerequisite = {focus = SOV_ryz_compromised_solution}  
+		mutually_exclusive = { }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_political_power = 20
+			add_stability = 0.1
+			add_ideas = SOV_put_rep
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_focus_on_light_industry
+		icon = GFX_focus_SOV_world_market_trade
+		x = 20
+		y = 3
+		prerequisite = {focus = SOV_ryz_expand_1996}  
+		mutually_exclusive = {focus = SOV_ryz_reform_heavy_industry}
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_put_rep
+				add_idea = SOV_put_rep_3
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_consumer_sector
+		icon = GFX_focus_SOV_socialism_with_putins_characterisitics
+		x = 20
+		y = 4
+		prerequisite = {focus = SOV_ryz_focus_on_light_industry}  
+		mutually_exclusive = { }
+		
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = SOV_put_rep_3
+				add_idea = SOV_put_rep_4
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_expand_comodity_production
+		icon = GFX_focus_SOV_made_in_ussr
+		x = 20
+		y = 5
+		prerequisite = {focus = SOV_ryz_consumer_sector}  
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+				add_ideas = SOV_made_in_ussr
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_reform_heavy_industry
+		icon = GFX_SOV_mobilize_industry
+		x = 18
+		y = 3
+		prerequisite = {focus = SOV_ryz_expand_1996}  
+		mutually_exclusive = {focus = SOV_ryz_focus_on_light_industry}
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_put_rep
+				add_idea = SOV_put_rep_1
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_resource_sector
+		icon = GFX_focus_SOV_defund_military
+		x = 18
+		y = 4
+		prerequisite = {focus = SOV_ryz_reform_heavy_industry}  
+		mutually_exclusive = { }
+		
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			add_war_support = -0.1
+			swap_ideas = {
+			                remove_idea = SOV_militarised_industry 
+			                add_idea = SOV_militarised_industry_putin
+			            }
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_self_management
+		icon = GFX_focus_SOV_initial_reform
+		x = 18
+		y = 5
+		prerequisite = {focus = SOV_ryz_resource_sector}  
+		mutually_exclusive = { }
+		
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_put_rep_1
+				add_idea = SOV_put_rep_2
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_ryz_steady
+		icon = GFX_focus_SOV_invest_in_capital_cities
+		x = 21
+		y = 6
+		prerequisite = {focus = SOV_ryz_self_management focus = SOV_ryz_expand_comodity_production} 
+		prerequisite = {focus = SOV_ryz_introduce_ogas} 
+		mutually_exclusive = { }
+		
+		cost = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_stagnating_economy_2
+				add_idea = SOV_put_stagnating_economy_3
+			}
+		}
+	}
+
+}

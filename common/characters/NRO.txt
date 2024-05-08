@@ -1,0 +1,144 @@
+characters = {
+
+	NRO_northern_alliance = {
+		name = "Northern Alliance"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NRO/Northern_Alliance.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {guerilla_fighter}
+			desc = nothern_alliance_DESC
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	NRO_muhammad_mohaqiq   = {
+		name = "Muhammad Mohaqiq"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NRO/Muhammad_Mohaqiq.dds"			
+			}
+			army = {
+				large = "gfx/leaders/NRO/Muhammad_Mohaqiq.dds"			
+			}
+		}
+		
+		country_leader = {
+			ideology = shia_islamism
+			traits = {}
+			desc = muhammad_mohaqiq_DESC
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		
+		corps_commander ={
+			traits={ }
+			skill=3
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+		
+	}
+
+	
+	NRO_ahmad_shah_massoud = {
+		name = "Ahmad Shah Massoud"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NRO/Ahmad_Shah_Massoud.dds"
+			}
+			army = {
+				large = "gfx/leaders/NRO/Ahmad_Shah_Massoud.dds"			
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		
+		field_marshal={
+			traits={ }
+			skill=6
+			attack_skill=5
+			defense_skill=6
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=-1
+		}
+		
+	}
+	
+	NRO_abdul_rashid_dostum  = {
+		name = "Abdul Rashid Dostum"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NRO/Abdul_Rashid_Dostum.dds"
+			}
+			army = {
+				large = "gfx/leaders/NRO/Abdul_Rashid_Dostum.dds"			
+			}
+		}
+		country_leader = {
+			ideology = democratic_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		
+		corps_commander ={
+			traits={ }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=5
+			logistics_skill=2
+			legacy_id=-1
+		}
+		
+	}
+	
+	NRO_atta_muhammad_nur  = {
+		name = "Atta Muhammad Nur"
+		portraits = {
+			army = {
+				large = "gfx/leaders/NRO/Atta_Muhammad_Nur.dds"			
+			}
+		}
+
+		corps_commander ={
+			traits={ }
+			skill=3
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=-1
+		}
+		
+	}
+	
+	NRO_mohammad_najibullah = {
+		name = "Mohammad Najibullah"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NRO/Mohammad_Najibullah.dds"
+			}
+		}
+		country_leader = {
+			ideology = democratic_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+}

@@ -1,0 +1,126 @@
+saf_deal_with_insurgents = {
+	icon = GFX_decision_category_army_reform
+	picture = GFX_decision_category_south_africa_army_photo
+	
+	allowed = {
+	}
+	
+	visible = {
+	}
+	priority = 200
+}
+saf_category_request_foreign_weapons = {
+	icon = GFX_decision_category_generic_arms_trade
+	
+	allowed = {
+		original_tag = SAF
+	}
+	
+	visible = {
+		original_tag = SAF
+		SAF = {
+			has_completed_focus = SAF_parliment_buy_foreign_armaments
+		}
+	}
+	priority = 5
+}
+saf_category_purchase_foreign_navy_designs = {
+	icon = GFX_decision_category_generic_arms_trade
+	picture = GFX_decision_cat_saf_foreign_navy_designs
+	
+	allowed = {
+		original_tag = SAF
+	}
+	
+	visible = {
+		original_tag = SAF
+		SAF = {
+			has_completed_focus = SAF_parliment_navy_western_designs
+		}
+	}
+	priority = 6
+}
+saf_debug = {
+	icon = GFX_decision_category_generic_crisis
+	
+	allowed = {
+		original_tag = SAF
+	}
+	
+	visible = {
+		is_debug = yes
+	}
+	priority = 1000
+}
+saf_great_game = {
+	icon = GFX_decision_category_generic_crisis
+	picture = GFX_decision_category_south_africa_army_photo
+	
+	scripted_gui = saf_great_game_gui
+	
+	allowed = {
+		original_tag = SAF
+	}
+	
+	visible = {
+		original_tag = SAF
+		SAF = {
+			has_completed_focus = SAF_the_great_game
+		}
+	}
+	priority = 100
+}
+saf_viljoen_cult_of_personality = {
+	icon = GFX_decision_cat_saf_viljoen_cult_of_personality
+	picture = GFX_decision_category_south_africa_army_photo
+	
+	allowed = {
+		original_tag = SAF
+	}
+	
+	visible = {
+		#original_tag = SAF
+		#SAF = {
+		#	has_completed_focus = SAF_the_marshal_of_south_africa
+		#}
+		always = no
+	}
+	priority = 100
+}
+saf_viljoen_pacification = {
+	icon = GFX_decision_category_generic_crisis
+	picture = GFX_decision_category_south_africa_army_photo
+	
+	scripted_gui = saf_pacification_gui
+	
+	allowed = {
+		original_tag = SAF
+	}
+	on_map_area  = {
+		target_array = SAF.SAF_states_that_can_rebel_array
+		name = saf_viljoen_pacification_map_area
+		zoom = 850
+		target_root_trigger = {
+			tag = SAF
+		}
+	}
+	visible = {
+		NOT = { has_country_flag = saf_nation_pacified }
+		NOT = { has_country_flag = saf_nation_collapsed }
+		always = yes
+		has_completed_focus = SAF_stabilise_the_new_conquered_territories
+	}
+	priority = 100
+}
+
+saf_collapse = {
+	icon = GFX_decision_category_army_reform
+	picture = GFX_decision_category_south_africa_army_photo
+	
+	allowed = {
+	}
+	
+	visible = {
+	}
+	priority = 200
+}

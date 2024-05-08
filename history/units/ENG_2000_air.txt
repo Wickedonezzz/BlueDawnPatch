@@ -1,0 +1,108 @@
+air_wings = {
+	# Land Wings #
+	51 = {
+		# Fighters -- Harrier
+		fighter_equipment_1 = { # Harrier #
+			owner = "ENG" 
+			creator = ENG
+			amount = 45
+		}
+	}
+	121 = {
+		# Interceptors -- Tornado ADV
+		interceptor_equipment_2 = { # Tornado ADV #
+			owner = "ENG" 
+			creator = ENG
+			amount = 48
+		}
+
+		# Attackers -- Tornado IDS
+		attacker_equipment_2 = { # Tornado IDS #
+			owner = "ENG" 
+			creator = ENG
+			amount = 32
+		}
+	}
+	125 = {
+		# Attackers -- Tornado IDS
+		attacker_equipment_2 = { # Tornado IDS #
+			owner = "ENG" 
+			creator = ENG
+			amount = 40
+		}
+	}
+	129 = {
+		# Interceptors -- Tornado ADV
+		interceptor_equipment_2 = { # Tornado ADV #
+			owner = "ENG" 
+			creator = ENG
+			amount = 45
+		}
+
+		# Attackers -- Tornado IDS, Jaguar
+		attacker_equipment_2 = { # Tornado IDS #
+			owner = "ENG" 
+			creator = ENG
+			amount = 49
+		}
+		attacker_equipment_1 = { # Jaguar #
+			owner = "ENG" 
+			creator = ENG
+			amount = 43
+		}
+	}
+	129 = {
+		# Transports -- C-130
+		transport_plane_equipment_1 = { # C-130 #
+			owner = "ENG"
+			creator = USA
+			amount = 13
+		}
+	}
+	128 = {
+		# Transports -- C-130
+		transport_plane_equipment_1 = { # C-130 #
+			owner = "ENG"
+			creator = USA
+			amount = 18
+		}
+		transport_plane_equipment_1 = { # C-130 #
+			owner = "ENG"
+			creator = USA
+			amount = 17
+		}
+	}
+	299 = {
+		# Fighters -- Harrier
+		fighter_equipment_1 = { # Harrier #
+			owner = "ENG" 
+			creator = ENG
+			amount = 8
+		}
+
+		# Transports -- C-130, BAe-748
+		transport_plane_equipment_1 = { # C-130 #
+			owner = "ENG"
+			creator = USA
+			amount = 3
+		}
+		transport_plane_equipment_1 = { # BAe-748 #
+			owner = "ENG"
+			creator = ENG
+			amount = 1
+		}
+	}
+
+	# Carrier Wings #
+	"HMS Invincible" = {
+		carrier_fighter_equipment_1 = { owner = "ENG" amount = 8 }
+	}
+	"HMS Illustrious" = {
+		carrier_fighter_equipment_3 = { owner = "ENG" amount = 4 }
+		carrier_fighter_equipment_1 = { owner = "ENG" amount = 6 }
+	}
+	"HMS Ark Royal" = {
+		carrier_fighter_equipment_3 = { owner = "ENG" amount = 4 }
+		carrier_fighter_equipment_1 = { owner = "ENG" amount = 6 }
+	}
+}

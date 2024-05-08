@@ -1,0 +1,119 @@
+units = {
+	fleet = {
+		name = "Home Fleet"
+		naval_base = 9458 # Portsmouth #
+		task_force = {
+			name = "Portsmouth Surface Fleet"
+			location = 9458 # Portsmouth #
+			ship = { name = "HMS Invincible" definition = carrier equipment = { carrier_hull_2 = { amount = 1 owner = ENG version_name = "Invincible Class" } } }
+			ship = { name = "HMS Illustrious" definition = carrier equipment = { carrier_hull_2 = { amount = 1 owner = ENG version_name = "Invincible Class" } } }
+			ship = { name = "HMS Ark Royal" definition = carrier equipment = { carrier_hull_2 = { amount = 1 owner = ENG version_name = "Invincible Class" } } }
+
+			ship = { name = "HMS Norfolk" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = ENG version_name = "Norfolk Class" } } }
+			ship = { name = "HMS Marlborough" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = ENG version_name = "Norfolk Class" } } }
+			ship = { name = "HMS Lancaster" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = ENG version_name = "Norfolk Class" } } }
+			ship = { name = "HMS Iron Duke" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = ENG version_name = "Norfolk Class" } } }
+			ship = { name = "HMS Montrose" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = ENG version_name = "Norfolk Class" } } }
+			ship = { name = "HMS Westminster" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = ENG version_name = "Norfolk Class" } } }
+			ship = { name = "HMS Boxer" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = ENG version_name = "Broadsword Batch 2 Class" } } }
+			ship = { name = "HMS Beaver" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = ENG version_name = "Broadsword Batch 2 Class" } } }
+			ship = { name = "HMS Brave" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = ENG version_name = "Broadsword Batch 2 Class" } } }
+			ship = { name = "HMS Coventry" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = ENG version_name = "Broadsword Batch 2 Class" } } }
+			ship = { name = "HMS Birmingham" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = ENG version_name = "Sheffield Batch 1 Class" } } }
+			ship = { name = "HMS Newcastle" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = ENG version_name = "Sheffield Batch 1 Class" } } }
+			ship = { name = "HMS Glasgow" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = ENG version_name = "Sheffield Batch 1 Class" } } }
+			ship = { name = "HMS Cardiff" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = ENG version_name = "Sheffield Batch 1 Class" } } }
+			ship = { name = "HMS Exeter" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = ENG version_name = "Sheffield Batch 2 Class" } } }
+			ship = { name = "HMS Southampton" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = ENG version_name = "Sheffield Batch 2 Class" } } }
+			ship = { name = "HMS Liverpool" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = ENG version_name = "Sheffield Batch 2 Class" } } }
+			ship = { name = "HMS Nottingham" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = ENG version_name = "Sheffield Batch 2 Class" } } }
+			ship = { name = "HMS Manchester" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = ENG version_name = "Sheffield Batch 3 Class" } } }
+			ship = { name = "HMS Gloucester" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = ENG version_name = "Sheffield Batch 3 Class" } } }
+			ship = { name = "HMS Edinburgh" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = ENG version_name = "Sheffield Batch 3 Class" } } }
+			ship = { name = "HMS York" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = ENG version_name = "Sheffield Batch 3 Class" } } }
+		}
+		task_force = {
+			name = "Devonport Surface Fleet"
+			location = 540 # Devonport #
+			ship = { name = "HMS Argyll" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = ENG version_name = "Norfolk Class" } } }
+			ship = { name = "HMS Monmouth" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = ENG version_name = "Norfolk Class" } } }
+			ship = { name = "HMS Northumberland" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = ENG version_name = "Norfolk Class" } } }
+			ship = { name = "HMS Richmond" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = ENG version_name = "Norfolk Class" } } }
+			ship = { name = "HMS Somerset" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = ENG version_name = "Norfolk Class" } } }
+			ship = { name = "HMS Grafton" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = ENG version_name = "Norfolk Class" } } }
+			ship = { name = "HMS Sutherland" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = ENG version_name = "Norfolk Class" } } }
+			ship = { name = "HMS London" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = ENG version_name = "Broadsword Batch 2 Class" } } }
+			ship = { name = "HMS Sheffield" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = ENG version_name = "Broadsword Batch 2 Class" } } }
+			ship = { name = "HMS Cornwall" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = ENG version_name = "Broadsword Batch 3 Class" } } }
+			ship = { name = "HMS Cumberland" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = ENG version_name = "Broadsword Batch 3 Class" } } }
+			ship = { name = "HMS Campbeltown" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = ENG version_name = "Broadsword Batch 3 Class" } } }
+			ship = { name = "HMS Chatham" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = ENG version_name = "Broadsword Batch 3 Class" } } }
+		}
+		task_force = {
+			name = "Devonport Submarine Fleet"
+			location = 540 # Devonport #
+			ship = { name = "HMS Upholder" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = ENG version_name = "Upholder Class" } } }
+			ship = { name = "HMS Unseen" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = ENG version_name = "Upholder Class" } } }
+			ship = { name = "HMS Ursula" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = ENG version_name = "Upholder Class" } } }
+			ship = { name = "HMS Unicorn" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = ENG version_name = "Upholder Class" } } }
+			ship = { name = "HMS Trafalgar" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = ENG version_name = "Trafalgar Class" } } }
+			ship = { name = "HMS Turbulent" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = ENG version_name = "Trafalgar Class" } } }
+			ship = { name = "HMS Tireless" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = ENG version_name = "Trafalgar Class" } } }
+			ship = { name = "HMS Torbay" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = ENG version_name = "Trafalgar Class" } } }
+			ship = { name = "HMS Trenchant" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = ENG version_name = "Trafalgar Class" } } }
+			ship = { name = "HMS Triumph" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = ENG version_name = "Trafalgar Class" } } }
+			ship = { name = "HMS Superb" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = ENG version_name = "Swiftsure Class" } } }
+			ship = { name = "HMS Sceptre" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = ENG version_name = "Swiftsure Class" } } }
+		}
+		task_force = {
+			name = "Clyde Submarine Fleet"
+			location = 6395 # Clyde #
+			ship = { name = "HMS Talent" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = ENG version_name = "Trafalgar Class" } } }
+			ship = { name = "HMS Sovereign" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = ENG version_name = "Swiftsure Class" } } }
+			ship = { name = "HMS Spartan" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = ENG version_name = "Swiftsure Class" } } }
+			ship = { name = "HMS Splendid" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = ENG version_name = "Swiftsure Class" } } }
+
+			ship = { name = "HMS Vanguard" definition = ballistic_submarine equipment = { ballistic_submarine_hull_2 = { amount = 1 owner = ENG version_name = "Vanguard Class" } } }
+			ship = { name = "HMS Victorious" definition = ballistic_submarine equipment = { ballistic_submarine_hull_2 = { amount = 1 owner = ENG version_name = "Vanguard Class" } } }
+			ship = { name = "HMS Vigilant" definition = ballistic_submarine equipment = { ballistic_submarine_hull_2 = { amount = 1 owner = ENG version_name = "Vanguard Class" } } }
+			ship = { name = "HMS Vengenace" definition = ballistic_submarine equipment = { ballistic_submarine_hull_2 = { amount = 1 owner = ENG version_name = "Vanguard Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+	# Frigate #
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_hull_3
+			creator = "ENG" 
+			version_name = "Norfolk Class"
+		}
+		name = "HMS Kent"
+		requested_factories = 1
+		progress = 0.86
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_hull_3
+			creator = "ENG" 
+			version_name = "Norfolk Class"
+		}
+		name = "HMS Portland"
+		requested_factories = 1
+		progress = 0.60
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_hull_3
+			creator = "ENG" 
+			version_name = "Norfolk Class"
+		}
+		name = "HMS St. Albans"
+		requested_factories = 1
+		progress = 0.23
+		amount = 1
+	}
+}

@@ -1,0 +1,235 @@
+﻿##### USSR NAME LISTS #####
+
+### SUBMARINES ###
+SOV_SS_NUMERICAL = {
+	name = "Soviet Diesel Attack Submarines"
+
+	for_countries = { SOV }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	ship_types = { attack_submarine_hull }
+	
+	fallback_name = "B-%d"
+	
+	ordered = {
+	}
+}
+SOV_SSN_NUMERICAL = {
+	name = "Soviet Nuclear Attack Submarines"
+
+	for_countries = { SOV }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	ship_types = { attack_submarine_hull }
+	
+	fallback_name = "K-%d"
+	
+	ordered = {
+	}
+}
+SOV_SSGN_NUMERICAL = {
+	name = "Soviet Cruise Missile Submarines"
+
+	for_countries = { SOV }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	ship_types = { cruise_submarine_hull }
+	
+	fallback_name = "K-%d"
+	
+	ordered = {
+	}
+}
+SOV_SSBN_NUMERICAL = {
+	name = "Soviet Ballistic Missile Submarines"
+
+	for_countries = { SOV }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	ship_types = { ballistic_submarine_hull }
+	
+	fallback_name = "K-%d"
+	
+	ordered = {
+	}
+}
+SOV_TYPHOON_NUMERICAL = {
+	name = "Soviet Heavy Ballistic Missile Submarines"
+
+	for_countries = { SOV }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	ship_types = { ballistic_submarine_hull }
+	
+	fallback_name = "TK-%d"
+	
+	ordered = {
+	}
+}
+
+### SURFACE SHIPS ###
+SOV_CORVETTE_NUMERICAL = {
+	name = "Soviet Corvettes"
+
+	for_countries = { SOV }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	ship_types = { corvette_hull }
+	
+	fallback_name = "MPK-%d"
+	
+	ordered = {
+	}
+}
+SOV_MISSILE_CORVETTE_NUMERICAL = {
+	name = "Soviet Missile Corvettes"
+
+	for_countries = { SOV }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	ship_types = { corvette_hull }
+	
+	fallback_name = "MRK-%d"
+	
+	ordered = {
+	}
+}
+SOV_MISSILE_BOAT_NUMERICAL = {
+	name = "Soviet Missile Boats"
+
+	for_countries = { SOV }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	ship_types = { corvette_hull }
+	
+	fallback_name = "R-%d"
+	
+	ordered = {
+	}
+}
+SOV_GUARD_NUMERICAL = {
+	name = "Soviet Guard Ships"
+
+	for_countries = { SOV }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	ship_types = { corvette_hull }
+	
+	fallback_name = "SKR-%d"
+	
+	ordered = {
+	}
+}
+
+### GENERIC ###
+SOV_NAVAL_NAME_CITIES = {
+	name = "Soviet Cities"
+
+	for_countries = { SOV }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	
+	unique = {
+		"Kronshtadt" "Irkutsk" "Voronezh" "Smolensk" "Chelyabinsk" "Vilyuchinsk" "Tver" "Orel" "Omsk" "Kursk" "Tomsk" "Belgorod" "Severodvinsk" "Vologda" "Yaroslavl" "Kaluga" "Vladikavkaz" "Magnitogorsk" "Lipetsk" "Kazan" "Novosibirsk" "Sevastopol" "Krasnoyarsk" "Arkhangelsk" "Perm" "Ulyanovsk" "Voronezh" "Vladivostok" "Nizhniy Novgorod" "Pskov" "Murmansk" "Krasnodar" "Chita" "Vyborg" "Kamchatsk" "Komsomolsk-on-Amur" "Krasnokamensk" "Mogocha" "Novorossiysk" "Rostov-on-Don" "Stary Oskol" "Krasnodar" "Velikiy Novgorod" "Kolpino" "Petropavlovsk-Kamchatsky" "Volkhov" "Magadan" "Ufa" "Mozhaysk" "Yakutsk" "Petrozavodsk"
+	}
+}
+SOV_NAVAL_NAME_CAPITALS = {
+	name = "Soviet Capital Cities"
+
+	for_countries = { SOV }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	
+	unique = {
+		"Minsk" "Tbilisi" "Kiev" "Moskva" "Vilnius" "Tashkent" "Frunze" "Dushanbe" "Alma-Ata" "Kishinev" "Ashkhabad"
+	}
+}
+SOV_NAVAL_NAME_ADMIRALS = {
+	name = "Soviet Admirals"
+
+	for_countries = { SOV }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	
+	unique = {
+		"Admiral Panteleyev" "Admiral Isakov" "Admiral Yegorov" "Admiral Kapitanets" "Admiral Yegorov" "Admiral Lobov" "Admiral Sorokin" "Admiral Zozulya" "Admiral Kapitanets" "Vitse-admiral Abashvili" "Admiral Kharlamov" "Vitse-admiral Yegipko" "Vitse-admiral Vekman" "Vitse-admiral Martynyuk" "Admiral Smirnov" "Admiral Alekseev" "Admiral Basistiy" "Admiral Chernavin" "Admiral Berzin" "Admiral Gromov" "Admiral Zhiltsov" "Admiral Kitkin" "Admiral Zakharov" "Admiral Altfater" "Admiral Sergeyev" "Vitse-admiral Golosov" "Admiral Khronopulo" "Admiral Levchenko" "Admiral Berg" "Admiral Kasatonov" "Admiral Chabanenko" "Admiral Kuznetsov" "Admiral Vinogradov" "Vitse-admiral Stepanov" "Admiral Alafuzov" "Admiral Makarov" "Admiral Fokin" "Admiral Lunin" "Admiral Vladimirsky" "Admiral Shchedrin" "Admiral Mikhailin" "Admiral Gorshkov" "Admiral Spiridonov" "Admiral Berens" "Vitse-admiral Kulakov" "Admiral Yumashev" "Admiral Galler" "Admiral Tributs"
+	}
+}
+SOV_NAVAL_NAME_ADJECTIVES = {
+	name = "Soviet Adjectives"
+
+	for_countries = { SOV }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	
+	unique = {
+		"Krasivyy" "Zharkiy" "Pechalnyy" "Plokhoy" "Priyatnyy" "Schastlivyy" "Molodoy" "Bol'shoy" "Chistyy" "Krepkiy" "Blizkiy" "Skuchnyy" "Udobnyy" "Tvordyy" "Chastyy" "Prostoy" "Vysokiy" "Skoryy" "Kholodnyy" "Pervyy" "Bystryy" "Malenkiy" "Trudnyy" "Gromkiy" "Medlennyy" "Tomnyy" "Sil'nyy" "Tolstyy" "Dorogoy" "Glavnyy" "Chastnyy" "Vazhnyy" "Novyy" "Staryy" "Strogiy" "Khoroshiy" "Ostryy" "Deshovyy" "Toplyy" "Yarkiy" "Interesnyy" "Gustoy" "Spokoynyy" "Sukhoy" "Posledniy" "Myagkiy" "Logkiy" "Dobryy" "Ryaznyy" "Steregushchyy" "Soobrazitelny" "Boikyy" "Sovereshennyy" "Stoikyy" "Gromkyy" "Strogyy" "Rezkyy" "Groznyy" "Bravyy" "Gremyashchyy" "Provornyy" "Buinyy" "Razumnyy" "Bystryy" "Retivyy" "Derzky"
+	}
+}
+SOV_NAVAL_NAME_LEADERS = {
+	name = "Soviet Leaders"
+
+	for_countries = { SOV }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	
+	unique = {
+		"Leonid Brezhnev" "Georgy Malenkov" "Konstantin Chernenko" "Vyacheslav Molotov" "Gennady Yanayev" "Nikita Krushchev" "Mikhail Gorbachev"
+	}
+}

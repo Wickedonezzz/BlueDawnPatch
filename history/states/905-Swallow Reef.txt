@@ -1,0 +1,27 @@
+state={
+	id=905
+	name="STATE_905"
+	manpower=70
+
+	state_category = tiny_island
+
+	history={
+		owner = MAL
+		add_claim_by = CHI
+		add_claim_by = PRC
+		add_claim_by = VIN
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+			13261 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		13261
+	}
+
+	local_supplies=0.0 
+}

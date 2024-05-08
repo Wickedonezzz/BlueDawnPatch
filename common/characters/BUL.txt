@@ -1,0 +1,60 @@
+characters = {
+
+	BUL_petar_stoyanov = {
+		name = "Petar Stoyanov"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BUL/Petar_Stoyanov.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	BUL_alexander_lilov = {
+		name = "Alexander Lilov"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BUL/Alexander_Lilov.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	BUL_simeon = {
+		name = "Simeon Saxe-Coburg-Gotha"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BUL/simeon.png"
+			}
+		}
+		country_leader = {
+			ideology = liberalism_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}		
+	BUL_aleksandar_paunov = {
+		name = "Aleksandar Paunov"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BUL/paunov.png"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}	
+
+}

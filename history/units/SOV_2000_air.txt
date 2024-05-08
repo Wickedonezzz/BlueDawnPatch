@@ -1,0 +1,509 @@
+air_wings = {
+	# Land Wings #
+	219 = { # Moscow #
+		# Fighters #
+		fighter_equipment_3 = { owner = "SOV" amount = 40 }
+		fighter_equipment_2 = { owner = "SOV" amount = 32 }
+		fighter_equipment_2 = { owner = "SOV" amount = 43 }
+		# Interceptor #
+		interceptor_equipment_2 = { owner = "SOV" amount = 47 }
+		interceptor_equipment_2 = { owner = "SOV" amount = 43 }
+		# CAS #
+		attacker_equipment_2 = { owner = "SOV" amount = 43 }
+		attacker_equipment_2 = { owner = "SOV" amount = 6 }
+		attacker_equipment_1 = { owner = "SOV" amount = 46 }
+		attacker_equipment_1 = { owner = "SOV" amount = 50 }
+		# Strike Bomber #
+		strike_bomber_equipment_1 = { owner = "SOV" amount = 18 }
+		strike_bomber_equipment_1 = { owner = "SOV" amount = 20 }
+		strike_bomber_equipment_1 = { owner = "SOV" amount = 6 }
+		strike_bomber_equipment_0 = { owner = "SOV" amount = 19 }
+		strike_bomber_equipment_0 = { owner = "SOV" amount = 15 }
+		# Strategic Bomber #
+		strategic_bomber_equipment_0 = { owner = "SOV" amount = 20 }
+		strategic_bomber_equipment_0 = { owner = "SOV" amount = 19 }
+		# Transport #
+		transport_plane_equipment_1 = { owner = "SOV" amount = 20 }
+		transport_plane_equipment_1 = { owner = "SOV" amount = 20 }
+		transport_plane_equipment_1 = { owner = "SOV" amount = 20 }
+		transport_plane_equipment_1 = { owner = "SOV" amount = 16 }
+	}
+	195 = { # Leningrad #
+		# Fighters #
+		fighter_equipment_3 = { owner = "SOV" amount = 39 }
+		fighter_equipment_2 = { owner = "SOV" amount = 40 }
+		fighter_equipment_2 = { owner = "SOV" amount = 36 }
+		# Interceptor #
+		interceptor_equipment_2 = { owner = "SOV" amount = 41 }
+		# CAS #
+		attacker_equipment_1 = { owner = "SOV" amount = 48 }
+		attacker_equipment_1 = { owner = "SOV" amount = 27 }
+		# Strike Bomber #
+		strike_bomber_equipment_1 = { owner = "SOV" amount = 17 }
+		# Transport #
+		transport_plane_equipment_1 = { owner = "SOV" amount = 20 }
+		transport_plane_equipment_1 = { owner = "SOV" amount = 17 }
+	}
+	206 = { # Minsk #
+		# Fighters #
+		fighter_equipment_2 = { owner = "SOV" amount = 50 }
+		fighter_equipment_2 = { owner = "SOV" amount = 43 }
+		# Interceptor #
+		interceptor_equipment_2 = { owner = "SOV" amount = 42 }
+		interceptor_equipment_2 = { owner = "SOV" amount = 39 }
+		# CAS #
+		attacker_equipment_2 = { owner = "SOV" amount = 24 }
+		attacker_equipment_2 = { owner = "SOV" amount = 17 }
+		attacker_equipment_1 = { owner = "SOV" amount = 33 }
+		attacker_equipment_1 = { owner = "SOV" amount = 35 }
+		attacker_equipment_1 = { owner = "SOV" amount = 25 }
+		# Strike Bomber #
+		strike_bomber_equipment_1 = { owner = "SOV" amount = 20 }
+		# Strategic Bomber #
+		strategic_bomber_equipment_0 = { owner = "SOV" amount = 17 }
+		strategic_bomber_equipment_0 = { owner = "SOV" amount = 13 }
+		# Transport #
+		transport_plane_equipment_1 = { owner = "SOV" amount = 15 }
+	}
+	202 = { # Kiev #
+		# Fighters #
+		fighter_equipment_2 = { owner = "SOV" amount = 48 }
+		fighter_equipment_2 = { owner = "SOV" amount = 47 }
+		# Interceptor #
+		interceptor_equipment_1 = { owner = "SOV" amount = 37 }
+		interceptor_equipment_0 = { owner = "SOV" amount = 36 }
+		# CAS #
+		attacker_equipment_1 = { owner = "SOV" amount = 42 }
+		attacker_equipment_1 = { owner = "SOV" amount = 44 }
+		attacker_equipment_1 = { owner = "SOV" amount = 35 }
+		# Strike Bomber #
+		strike_bomber_equipment_1 = { owner = "SOV" amount = 19 }
+		strike_bomber_equipment_1 = { owner = "SOV" amount = 18 }
+		# Strategic Bomber #
+		strategic_bomber_equipment_0 = { owner = "SOV" amount = 16 }
+	}
+	137 = { # Crimea #
+		# Fighters #
+		fighter_equipment_2 = { owner = "SOV" amount = 35 }
+		fighter_equipment_2 = { owner = "SOV" amount = 40 }
+		# CAS #
+		attacker_equipment_1 = { owner = "SOV" amount = 39 }
+		# Strike Bomber #
+		strike_bomber_equipment_1 = { owner = "SOV" amount = 16 }
+		strike_bomber_equipment_1 = { owner = "SOV" amount = 15 }
+	}
+	763 = { # Kaliningrad #
+		# Fighters #
+		fighter_equipment_2 = { owner = "SOV" amount = 48 }
+		fighter_equipment_2 = { owner = "SOV" amount = 46 }
+		fighter_equipment_2 = { owner = "SOV" amount = 48 }
+		# Interceptor #
+		interceptor_equipment_2 = { owner = "SOV" amount = 16 }
+		# CAS #
+		attacker_equipment_2 = { owner = "SOV" amount = 39 }
+		attacker_equipment_1 = { owner = "SOV" amount = 33 }
+		attacker_equipment_1 = { owner = "SOV" amount = 32 }
+		attacker_equipment_1 = { owner = "SOV" amount = 30 }
+		# Strike Bomber #
+		strike_bomber_equipment_1 = { owner = "SOV" amount = 19 }
+		# Transport #
+		transport_plane_equipment_1 = { owner = "SOV" amount = 14 }
+		transport_plane_equipment_1 = { owner = "SOV" amount = 8 }
+	}
+	213 = { # Murmansk #
+		# Fighters #
+		fighter_equipment_2 = { owner = "SOV" amount = 33 }
+		# Interceptor #
+		interceptor_equipment_2 = { owner = "SOV" amount = 38 }
+		# CAS #
+		attacker_equipment_1 = { owner = "SOV" amount = 43 }
+		attacker_equipment_1 = { owner = "SOV" amount = 13 }
+		# Strike Bomber #
+		strike_bomber_equipment_1 = { owner = "SOV" amount = 17 }
+	}
+	217 = { # Volgograd #
+		# Fighters #
+		fighter_equipment_2 = { owner = "SOV" amount = 41 }
+		fighter_equipment_2 = { owner = "SOV" amount = 26 }
+		# Interceptor #
+		interceptor_equipment_1 = { owner = "SOV" amount = 19 }
+		interceptor_equipment_0 = { owner = "SOV" amount = 16 }
+		# CAS #
+		attacker_equipment_1 = { owner = "SOV" amount = 24 }
+		attacker_equipment_1 = { owner = "SOV" amount = 36 }
+		attacker_equipment_1 = { owner = "SOV" amount = 35 }
+		# Strike Bomber #
+		strike_bomber_equipment_1 = { owner = "SOV" amount = 16 }
+		strike_bomber_equipment_1 = { owner = "SOV" amount = 15 }
+		# Strategic Bomber #
+		strategic_bomber_equipment_1 = { owner = "SOV" amount = 19 }
+		strategic_bomber_equipment_1 = { owner = "SOV" amount = 10 }
+		strategic_bomber_equipment_1 = { owner = "SOV" amount = 17 }
+		# Transport #
+		transport_plane_equipment_1 = { owner = "SOV" amount = 20 }
+		transport_plane_equipment_1 = { owner = "SOV" amount = 13 }
+	}
+	231 = { # Georgia #
+		# Fighters #
+		fighter_equipment_1 = { owner = "SOV" amount = 33 }
+		fighter_equipment_1 = { owner = "SOV" amount = 29 }
+		# Interceptor #
+		interceptor_equipment_0 = { owner = "SOV" amount = 26 }
+		# CAS #
+		attacker_equipment_2 = { owner = "SOV" amount = 45 }
+		attacker_equipment_2 = { owner = "SOV" amount = 20 }
+		attacker_equipment_1 = { owner = "SOV" amount = 26 }
+		# Strike Bomber #
+		strike_bomber_equipment_0 = { owner = "SOV" amount = 14 }
+	}
+	78 = { # Bessarabia #
+		# Fighters #
+		fighter_equipment_2 = { owner = "SOV" amount = 40 }
+		# CAS #
+		attacker_equipment_2 = { owner = "SOV" amount = 37 }
+		attacker_equipment_1 = { owner = "SOV" amount = 47 }
+		attacker_equipment_1 = { owner = "SOV" amount = 29 }
+		# Strike Bomber #
+		strike_bomber_equipment_1 = { owner = "SOV" amount = 13 }
+		strike_bomber_equipment_0 = { owner = "SOV" amount = 6 }
+	}
+	91 = { # Lwow #
+		# Fighters #
+		fighter_equipment_2 = { owner = "SOV" amount = 36 }
+		# CAS #
+		attacker_equipment_2 = { owner = "SOV" amount = 44 }
+		attacker_equipment_1 = { owner = "SOV" amount = 16 }
+	}
+	242 = { # Smolensk #
+		# Fighters #
+		fighter_equipment_2 = { owner = "SOV" amount = 43 }
+		# Interceptor #
+		interceptor_equipment_0 = { owner = "SOV" amount = 44 }
+		# CAS #
+		attacker_equipment_1 = { owner = "SOV" amount = 29 }
+		attacker_equipment_1 = { owner = "SOV" amount = 31 }
+		# Strike Bomber #
+		strike_bomber_equipment_0 = { owner = "SOV" amount = 7 }
+		# Strategic Bomber #
+		strategic_bomber_equipment_0 = { owner = "SOV" amount = 18 }
+		strategic_bomber_equipment_0 = { owner = "SOV" amount = 16 }
+	}
+	209 = { # Pskov #
+		# Fighters #
+		fighter_equipment_2 = { owner = "SOV" amount = 42 }
+		# Interceptor #
+		interceptor_equipment_1 = { owner = "SOV" amount = 37 }
+		# CAS #
+		attacker_equipment_2 = { owner = "SOV" amount = 36 }
+		attacker_equipment_1 = { owner = "SOV" amount = 15 }
+		# Strike Bomber #
+		strike_bomber_equipment_1 = { owner = "SOV" amount = 5 }
+	}
+	398 = { # Perm #
+		# Interceptor #
+		interceptor_equipment_2 = { owner = "SOV" amount = 37 }
+		interceptor_equipment_2 = { owner = "SOV" amount = 40 }
+		interceptor_equipment_1 = { owner = "SOV" amount = 29 }
+		interceptor_equipment_1 = { owner = "SOV" amount = 31 }
+	}
+	585 = { # Navoi #
+		# Fighters #
+		fighter_equipment_1 = { owner = "SOV" amount = 43 }
+		fighter_equipment_1 = { owner = "SOV" amount = 38 }
+		# Interceptor #
+		interceptor_equipment_1 = { owner = "SOV" amount = 40 }
+		# CAS #
+		attacker_equipment_2 = { owner = "SOV" amount = 41 }
+		attacker_equipment_1 = { owner = "SOV" amount = 16 }
+	}
+	572 = { # Chelyabinsk #
+		# Fighters #
+		fighter_equipment_3 = { owner = "SOV" amount = 24 }
+		fighter_equipment_2 = { owner = "SOV" amount = 39 }
+		# Interceptor #
+		interceptor_equipment_1 = { owner = "SOV" amount = 38 }
+		interceptor_equipment_0 = { owner = "SOV" amount = 29 }
+		# CAS #
+		attacker_equipment_1 = { owner = "SOV" amount = 44 }
+		attacker_equipment_1 = { owner = "SOV" amount = 26 }
+		# Strike Bomber #
+		strike_bomber_equipment_0 = { owner = "SOV" amount = 15 }
+	}
+	566 = { # Irkutsk #
+		# Fighters #
+		fighter_equipment_2 = { owner = "SOV" amount = 44 }
+		# Interceptor #
+		interceptor_equipment_2 = { owner = "SOV" amount = 36 }
+		interceptor_equipment_2 = { owner = "SOV" amount = 39 }
+		# CAS #
+		attacker_equipment_1 = { owner = "SOV" amount = 45 }
+		attacker_equipment_1 = { owner = "SOV" amount = 39 }
+		attacker_equipment_1 = { owner = "SOV" amount = 44 }
+	}
+	408 = { # Vladivostok #
+		# Fighters #
+		fighter_equipment_2 = { owner = "SOV" amount = 47 }
+		fighter_equipment_2 = { owner = "SOV" amount = 45 }
+		# CAS #
+		attacker_equipment_2 = { owner = "SOV" amount = 39 }
+		attacker_equipment_1 = { owner = "SOV" amount = 26 }
+		# Strike Bomber #
+		strike_bomber_equipment_1 = { owner = "SOV" amount = 19 }
+		strike_bomber_equipment_0 = { owner = "SOV" amount = 16 }
+		# Transport #
+		transport_plane_equipment_1 = { owner = "SOV" amount = 17 }
+	}
+	409 = { # Khabarovsk #
+		# Interceptor #
+		interceptor_equipment_0 = { owner = "SOV" amount = 36 }
+		interceptor_equipment_0 = { owner = "SOV" amount = 41 }
+		# CAS #
+		attacker_equipment_1 = { owner = "SOV" amount = 37 }
+		attacker_equipment_1 = { owner = "SOV" amount = 35 }
+		attacker_equipment_1 = { owner = "SOV" amount = 40 }
+		# Strike Bomber #
+		strike_bomber_equipment_1 = { owner = "SOV" amount = 17 }
+	}
+	574 = { # Yakutsk #
+		# Interceptor #
+		interceptor_equipment_2 = { owner = "SOV" amount = 40 }
+		interceptor_equipment_2 = { owner = "SOV" amount = 35 }
+		interceptor_equipment_1 = { owner = "SOV" amount = 49 }
+		interceptor_equipment_0 = { owner = "SOV" amount = 16 }
+	}
+	221 = { # Kharkov #
+		# Fighters #
+		fighter_equipment_1 = { owner = "SOV" amount = 43 }
+		# CAS #
+		attacker_equipment_1 = { owner = "SOV" amount = 36 }
+		# Strike Bomber #
+		strike_bomber_equipment_0 = { owner = "SOV" amount = 18 }
+	}
+	234 = { # Krasnodar #
+		# Fighters #
+		fighter_equipment_1 = { owner = "SOV" amount = 50 }
+		fighter_equipment_1 = { owner = "SOV" amount = 44 }
+		# CAS #
+		attacker_equipment_1 = { owner = "SOV" amount = 29 }
+		attacker_equipment_1 = { owner = "SOV" amount = 50 }
+		attacker_equipment_1 = { owner = "SOV" amount = 37 }
+		# Strike Bomber #
+		strike_bomber_equipment_0 = { owner = "SOV" amount = 13 }
+		# Transport #
+		transport_plane_equipment_1 = { owner = "SOV" amount = 19 }
+		transport_plane_equipment_1 = { owner = "SOV" amount = 11 }
+	}
+	89 = { # Stanislawow #
+		# Fighters #
+		fighter_equipment_1 = { owner = "SOV" amount = 45 }
+		# CAS #
+		attacker_equipment_1 = { owner = "SOV" amount = 24 }
+	}
+	199 = { # Khmelnytskyi #
+		# Fighters #
+		fighter_equipment_1 = { owner = "SOV" amount = 41 }
+		# CAS #
+		attacker_equipment_1 = { owner = "SOV" amount = 36 }
+		attacker_equipment_1 = { owner = "SOV" amount = 36 }
+	}
+	94 = { # Polesie #
+		# Fighters #
+		fighter_equipment_1 = { owner = "SOV" amount = 40 }
+		# CAS #
+		attacker_equipment_1 = { owner = "SOV" amount = 35 }
+		attacker_equipment_1 = { owner = "SOV" amount = 41 }
+		attacker_equipment_1 = { owner = "SOV" amount = 19 }
+	}
+	207 = { # Vitebsk #
+		# Fighters #
+		fighter_equipment_2 = { owner = "SOV" amount = 43 }
+		fighter_equipment_2 = { owner = "SOV" amount = 26 }
+		fighter_equipment_1 = { owner = "SOV" amount = 45 }
+		fighter_equipment_1 = { owner = "SOV" amount = 38 }
+		# Interceptor #
+		interceptor_equipment_2 = { owner = "SOV" amount = 17 }
+		interceptor_equipment_0 = { owner = "SOV" amount = 31 }
+		# CAS #
+		attacker_equipment_1 = { owner = "SOV" amount = 36 }
+		attacker_equipment_1 = { owner = "SOV" amount = 40 }
+		attacker_equipment_1 = { owner = "SOV" amount = 29 }
+		# Strike Bomber #
+		strike_bomber_equipment_1 = { owner = "SOV" amount = 19 }
+	}
+	208 = { # Luga #
+		# Fighters #
+		fighter_equipment_1 = { owner = "SOV" amount = 47 }
+		# CAS #
+		attacker_equipment_1 = { owner = "SOV" amount = 43 }
+	}
+	260 = { # Voronezh #
+		# Fighters #
+		fighter_equipment_1 = { owner = "SOV" amount = 45 }
+		# CAS #
+		attacker_equipment_1 = { owner = "SOV" amount = 47 }
+		attacker_equipment_1 = { owner = "SOV" amount = 43 }
+	}
+	222 = { # Orel #
+		# Fighters #
+		fighter_equipment_1 = { owner = "SOV" amount = 46 }
+		# CAS #
+		attacker_equipment_1 = { owner = "SOV" amount = 43 }
+		attacker_equipment_1 = { owner = "SOV" amount = 26 }
+	}
+	589 = { # Ayaguz #
+		# Fighters #
+		fighter_equipment_1 = { owner = "SOV" amount = 49 }
+		# CAS #
+		attacker_equipment_1 = { owner = "SOV" amount = 34 }
+	}
+	590 = { # Akmolinsk #
+		# Fighters #
+		fighter_equipment_2 = { owner = "SOV" amount = 41 }
+		fighter_equipment_1 = { owner = "SOV" amount = 37 }
+		fighter_equipment_1 = { owner = "SOV" amount = 25 }
+		# Interceptor #
+		interceptor_equipment_2 = { owner = "SOV" amount = 37 }
+		# CAS #
+		attacker_equipment_1 = { owner = "SOV" amount = 49 }
+		attacker_equipment_1 = { owner = "SOV" amount = 45 }
+		attacker_equipment_1 = { owner = "SOV" amount = 46 }
+		# Strike Bomber #
+		strike_bomber_equipment_1 = { owner = "SOV" amount = 17 }
+		strike_bomber_equipment_0 = { owner = "SOV" amount = 18 }
+		# Strategic Bomber #
+		strategic_bomber_equipment_0 = { owner = "SOV" amount = 19 }
+		strategic_bomber_equipment_0 = { owner = "SOV" amount = 16 }
+		strategic_bomber_equipment_0 = { owner = "SOV" amount = 14 }
+		# Transport #
+		transport_plane_equipment_1 = { owner = "SOV" amount = 20 }
+		transport_plane_equipment_1 = { owner = "SOV" amount = 13 }
+	}
+	568 = { # Krasnoyarsk #
+		# Fighters #
+		fighter_equipment_1 = { owner = "SOV" amount = 43 }
+		# CAS #
+		attacker_equipment_1 = { owner = "SOV" amount = 44 }
+		attacker_equipment_1 = { owner = "SOV" amount = 40 }
+	}
+	657 = { # Birobidzhan #
+		# Fighters #
+		fighter_equipment_1 = { owner = "SOV" amount = 44 }
+		# CAS #
+		attacker_equipment_1 = { owner = "SOV" amount = 38 }
+	}
+
+	# Carrier Wings #
+	"Ulyanovsk" = {
+		carrier_fighter_equipment_3 = { owner = "SOV" amount = 10 }
+		carrier_fighter_equipment_3 = { owner = "SOV" amount = 10 }
+		carrier_fighter_equipment_3 = { owner = "SOV" amount = 10 }
+		carrier_fighter_equipment_3 = { owner = "SOV" amount = 6 }
+	}
+	"Murmansk" = {
+		carrier_fighter_equipment_3 = { owner = "SOV" amount = 10 }
+		carrier_fighter_equipment_3 = { owner = "SOV" amount = 6 }
+	}
+	"Baku" = {
+		carrier_fighter_equipment_3 = { owner = "SOV" amount = 2 }
+		carrier_fighter_equipment_2 = { owner = "SOV" amount = 9 }
+	}
+	"Vladivostok" = {
+		carrier_fighter_equipment_3 = { owner = "SOV" amount = 10 }
+		carrier_fighter_equipment_3 = { owner = "SOV" amount = 9 }
+	}
+	"Novorossiysk" = {
+		carrier_fighter_equipment_3 = { owner = "SOV" amount = 5 }
+		carrier_fighter_equipment_2 = { owner = "SOV" amount = 10 }
+		carrier_fighter_equipment_2 = { owner = "SOV" amount = 1 }
+	}
+}
+instant_effect = {
+	# Fighter #
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_2
+			creator = "SOV"
+		}
+		requested_factories = 3
+		progress = 0.72
+		efficiency = 47
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_3
+			creator = "SOV"
+		}
+		requested_factories = 1
+		progress = 0.81
+		efficiency = 17
+	}
+	# Carrier Fighter #
+	add_equipment_production = {
+		equipment = {
+			type = carrier_fighter_equipment_3
+			creator = "SOV"
+		}
+		requested_factories = 1
+		progress = 0.47
+		efficiency = 13
+	}
+	# Interceptor #
+	add_equipment_production = {
+		equipment = {
+			type = interceptor_equipment_2
+			creator = "SOV"
+		}
+		requested_factories = 2
+		progress = 0.55
+		efficiency = 40
+	}
+	# Attacker #
+	add_equipment_production = {
+		equipment = {
+			type = attacker_equipment_2
+			creator = "SOV"
+		}
+		requested_factories = 2
+		progress = 0.03
+		efficiency = 38
+	}
+	add_equipment_production = {
+		equipment = {
+			type = attacker_equipment_1
+			creator = "SOV"
+		}
+		requested_factories = 1
+		progress = 0.16
+		efficiency = 32
+	}
+	# Strike Bomber #
+	add_equipment_production = {
+		equipment = {
+			type = strike_bomber_equipment_1
+			creator = "SOV"
+		}
+		requested_factories = 1
+		progress = 0.72
+		efficiency = 34
+	}
+	# Strategic Bomber #
+	add_equipment_production = {
+		equipment = {
+			type = strategic_bomber_equipment_1
+			creator = "SOV"
+		}
+		requested_factories = 1
+		progress = 0.46
+		efficiency = 31
+	}
+	# Transport #
+	add_equipment_production = {
+		equipment = {
+			type = transport_plane_equipment_1
+			creator = "SOV"
+		}
+		requested_factories = 2
+		progress = 0.26
+		efficiency = 33
+	}
+}

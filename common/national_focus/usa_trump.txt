@@ -1,0 +1,974 @@
+﻿focus_tree = {
+	id = usa_trump_focus
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 0
+			tag = USA
+		}
+	}
+	
+	default = no
+	shared_focus = USA_the_giant_wakes_again
+	
+	focus = {
+		id = USA_trump_trump_in_office
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 10
+		y = 0
+
+		prerequisite = {}
+		mutually_exclusive = { }
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		country_event = {id = usa_trump.1}
+		}
+	}
+	
+	focus = {
+		id = USA_trump_the_wild_man_from_new_york
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 1
+
+		prerequisite = {focus = USA_trump_trump_in_office}
+		mutually_exclusive = { }
+		relative_position_id = USA_trump_trump_in_office
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_a_businessman_doing_business
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -1
+		y = 2
+
+		prerequisite = {focus = USA_trump_the_wild_man_from_new_york}
+		mutually_exclusive = { }
+		relative_position_id = USA_trump_trump_in_office
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_playboy_populism
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 1
+		y = 2
+
+		prerequisite = {focus = USA_trump_the_wild_man_from_new_york}
+		mutually_exclusive = { }
+		relative_position_id = USA_trump_trump_in_office
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_we_will_make_america_strong_again
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -6
+		y = 3
+
+		prerequisite = {focus = USA_trump_a_businessman_doing_business}
+		mutually_exclusive = { }
+		relative_position_id = USA_trump_trump_in_office
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_the_swamp_before_us
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 1
+
+		prerequisite = {focus = USA_trump_we_will_make_america_strong_again}
+		mutually_exclusive = { }
+		relative_position_id = USA_trump_we_will_make_america_strong_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_to_go_where_no_third_party_has
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -1
+		y = 2
+
+		prerequisite = {focus = USA_trump_the_swamp_before_us}
+		mutually_exclusive = {focus = USA_trump_fix_the_electoral_collage}
+		relative_position_id = USA_trump_we_will_make_america_strong_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_reformists_at_the_helm
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -2
+		y = 3
+
+		prerequisite = {focus = USA_trump_to_go_where_no_third_party_has}
+		relative_position_id = USA_trump_we_will_make_america_strong_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}	
+	
+	focus = {
+		id = USA_trump_a_new_two_party_model
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -1
+		y = 4
+
+		prerequisite = {focus = USA_trump_reformists_at_the_helm}
+		relative_position_id = USA_trump_we_will_make_america_strong_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}	
+	
+	focus = {
+		id = USA_trump_fix_the_electoral_collage
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 1
+		y = 2
+
+		prerequisite = {focus = USA_trump_the_swamp_before_us}
+		mutually_exclusive = { focus = USA_trump_to_go_where_no_third_party_has}
+		relative_position_id = USA_trump_we_will_make_america_strong_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_draining_the_washington_boys
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 3
+
+		prerequisite = {focus = USA_trump_to_go_where_no_third_party_has focus = USA_trump_fix_the_electoral_collage}
+		relative_position_id = USA_trump_we_will_make_america_strong_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_coalign_with_minor_parties
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 2
+		y = 3
+
+		prerequisite = {focus = USA_trump_fix_the_electoral_collage}
+		relative_position_id = USA_trump_we_will_make_america_strong_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}	
+	
+	focus = {
+		id = USA_trump_kill_the_two_party_dichotomy
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 1
+		y = 4
+
+		prerequisite = {focus = USA_trump_coalign_with_minor_parties}
+		relative_position_id = USA_trump_we_will_make_america_strong_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_perots_pride
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 5
+
+		prerequisite = {focus = USA_trump_a_new_two_party_model focus = USA_trump_kill_the_two_party_dichotomy}
+		relative_position_id = USA_trump_we_will_make_america_strong_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_we_will_make_america_wealthy_again
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 3
+
+		prerequisite = {focus = USA_trump_a_businessman_doing_business focus = USA_trump_playboy_populism}
+		mutually_exclusive = { }
+		relative_position_id = USA_trump_trump_in_office
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_putting_our_money_where_our_mouth_is
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -1
+		y = 1
+
+		prerequisite = {focus = USA_trump_we_will_make_america_wealthy_again}
+		mutually_exclusive = { }
+		relative_position_id = USA_trump_we_will_make_america_wealthy_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_NAFTA_needs_no_quarter
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -3
+		y = 2
+
+		prerequisite = {focus = USA_trump_putting_our_money_where_our_mouth_is}
+		mutually_exclusive = { }
+		relative_position_id = USA_trump_we_will_make_america_wealthy_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_the_terrors_of_taxation
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -1
+		y = 2
+
+		prerequisite = {focus = USA_trump_putting_our_money_where_our_mouth_is}
+		mutually_exclusive = { }
+		relative_position_id = USA_trump_we_will_make_america_wealthy_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_embrace_the_tariffs
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -1
+		y = 3
+
+		prerequisite = {focus = USA_trump_NAFTA_needs_no_quarter}
+		prerequisite = {focus = USA_trump_the_terrors_of_taxation}
+		mutually_exclusive = {focus = USA_trump_trade_war}
+		relative_position_id = USA_trump_we_will_make_america_wealthy_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_friends_in_europe
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -2
+		y = 4
+
+		prerequisite = {focus = USA_trump_embrace_the_tariffs}
+		mutually_exclusive = { }
+		relative_position_id = USA_trump_we_will_make_america_wealthy_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = USA_trump_americas_people_first
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 1
+		y = 1
+
+		prerequisite = {focus = USA_trump_we_will_make_america_wealthy_again}
+		mutually_exclusive = { }
+		relative_position_id = USA_trump_we_will_make_america_wealthy_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = USA_trump_affordable_medicine_advancement_act
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 3
+		y = 2
+
+		prerequisite = {focus = USA_trump_americas_people_first}
+		mutually_exclusive = { }
+		relative_position_id = USA_trump_we_will_make_america_wealthy_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_subsidies_for_social_wellbeing
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 1
+		y = 2
+
+		prerequisite = {focus = USA_trump_americas_people_first}
+		mutually_exclusive = { }
+		relative_position_id = USA_trump_we_will_make_america_wealthy_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_trade_war
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 1
+		y = 3
+
+		prerequisite = {focus = USA_trump_affordable_medicine_advancement_act}
+		prerequisite = {focus = USA_trump_subsidies_for_social_wellbeing}
+		mutually_exclusive = {focus = USA_trump_embrace_the_tariffs}
+		relative_position_id = USA_trump_we_will_make_america_wealthy_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_beak_back_beijings_beast
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 2
+		y = 4
+
+		prerequisite = {focus = USA_trump_trade_war}
+		mutually_exclusive = { }
+		relative_position_id = USA_trump_we_will_make_america_wealthy_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = USA_trump_revive_the_industrial_base
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 4
+
+		prerequisite = {focus = USA_trump_embrace_the_tariffs focus = USA_trump_trade_war}
+		mutually_exclusive = { }
+		relative_position_id = USA_trump_we_will_make_america_wealthy_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_trump_brand_economy
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 5
+
+		prerequisite = {focus = USA_trump_friends_in_europe focus = USA_trump_beak_back_beijings_beast}
+		mutually_exclusive = { }
+		relative_position_id = USA_trump_we_will_make_america_wealthy_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_we_will_make_america_proud_again
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 6
+		y = 3
+
+		prerequisite = {focus = USA_trump_playboy_populism}
+		mutually_exclusive = { }
+		relative_position_id = USA_trump_trump_in_office
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_johnny_get_your_guns
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -2
+		y = 1
+
+		prerequisite = {focus = USA_trump_we_will_make_america_proud_again}
+		mutually_exclusive = { }
+		relative_position_id = USA_trump_we_will_make_america_proud_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_american_values_first
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 1
+
+		prerequisite = {focus = USA_trump_we_will_make_america_proud_again}
+		mutually_exclusive = { }
+		relative_position_id = USA_trump_we_will_make_america_proud_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_an_evangelical_ethos
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 2
+		y = 1
+
+		prerequisite = {focus = USA_trump_we_will_make_america_proud_again}
+		mutually_exclusive = { }
+		relative_position_id = USA_trump_we_will_make_america_proud_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_moderate_populism
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -1
+		y = 2
+
+		prerequisite = {focus = USA_trump_johnny_get_your_guns}
+		prerequisite = {focus = USA_trump_american_values_first}
+		mutually_exclusive = {focus = USA_trump_the_conservative_crown}
+		relative_position_id = USA_trump_we_will_make_america_proud_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_play_all_sides
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -1
+		y = 3
+
+		prerequisite = {focus = USA_trump_moderate_populism}
+		mutually_exclusive = { }
+		relative_position_id = USA_trump_we_will_make_america_proud_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_reformists_rally_for_what
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = -2
+		y = 4
+
+		prerequisite = {focus = USA_trump_play_all_sides}
+		mutually_exclusive = { }
+		relative_position_id = USA_trump_we_will_make_america_proud_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+	id = USA_trump_the_conservative_crown
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 1
+		y = 2
+
+		prerequisite = {focus = USA_trump_american_values_first}
+		prerequisite = {focus = USA_trump_an_evangelical_ethos}
+		mutually_exclusive = {focus = USA_trump_moderate_populism}
+		relative_position_id = USA_trump_we_will_make_america_proud_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_make_liberals_cry_again
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 1
+		y = 3
+
+		prerequisite = {focus = USA_trump_the_conservative_crown}
+		mutually_exclusive = { }
+		relative_position_id = USA_trump_we_will_make_america_proud_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_heavy_handed_immigration_reform
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 2
+		y = 4
+
+		prerequisite = {focus = USA_trump_make_liberals_cry_again}
+		mutually_exclusive = { }
+		relative_position_id = USA_trump_we_will_make_america_proud_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_constitutional_affirmations
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 4
+
+		prerequisite = {focus = USA_trump_make_liberals_cry_again focus = USA_trump_play_all_sides}
+		mutually_exclusive = { }
+		relative_position_id = USA_trump_we_will_make_america_proud_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_all_aboard_the_trump_train #the icon for this better be thomas the tank engine with trump photoshoped on it
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 5
+		
+		prerequisite = {focus = USA_trump_constitutional_affirmations}
+		prerequisite = {focus = USA_trump_reformists_rally_for_what focus = USA_trump_heavy_handed_immigration_reform}
+		mutually_exclusive = { }
+		relative_position_id = USA_trump_we_will_make_america_proud_again
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_trump_and_we_will_make_america_great_again
+		icon = GFX_USA_focus_aftermath_of_uneasy_90s
+		x = 0
+		y = 9
+		
+		prerequisite = {focus = USA_trump_perots_pride}
+		prerequisite = {focus = USA_trump_trump_brand_economy}
+		prerequisite = {focus = USA_trump_all_aboard_the_trump_train}
+		mutually_exclusive = { }
+		relative_position_id = USA_trump_trump_in_office
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		completion_reward = {
+		
+		}
+	}
+}

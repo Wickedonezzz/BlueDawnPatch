@@ -1,0 +1,75 @@
+ideas = {
+	
+country = {
+	ITA_second_republic = {
+	name = ITA_second_republic_name
+
+	removal_cost = -1
+
+	picture = ITA_second_republic
+
+	allowed = {
+		always = no
+	}
+
+	modifier = {
+		war_support_factor = 0.1
+		political_power_gain = 0.2
+        army_core_attack_factor = 0.025
+		army_core_defence_factor = 0.025
+	}
+}
+ITA_third_republic = {
+	name = "The Third Republic"
+
+	removal_cost = -1
+
+	picture = ITA_third_republic
+
+	allowed = {
+		always = no
+	}
+
+	modifier = {
+		war_support_factor = 0.1
+		political_power_gain = 0.2
+        army_core_attack_factor = 0.025
+		army_core_defence_factor = 0.025
+	}
+}
+ITA_mafia = {
+	name = ITA_mafia_name
+
+	removal_cost = -1
+
+	picture = ITA_mafia
+
+	allowed = {
+		always = no
+	}
+
+	modifier = {
+		stability_factor = -0.05
+		political_advisor_cost_factor = 0.25
+		political_power_gain = -0.5
+	}
+}
+ITA_ciampi_gov = {
+	name = ITA_ciampi_gov_name
+
+	removal_cost = -1
+
+	picture = ITA_Ciampi_gov
+
+	allowed = {
+		always = no
+	}
+
+	modifier = {
+		war_support_factor = 0.1
+		stability_factor = 0.1
+		political_power_gain = 0.1
+	}
+}
+	}
+}

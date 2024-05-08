@@ -1,0 +1,78 @@
+﻿air_wings = {
+	# Land Wings #
+	10 = {
+		# Fighters -- MiG-21, MiG-29
+		fighter_equipment_2 =  { # MiG-29 #
+			owner = "POL" 
+			creator = SOV
+			amount = 13
+		}
+		fighter_equipment_0 =  { # MiG-21 #
+			owner = "POL" 
+			creator = SOV
+			amount = 50
+		}
+		fighter_equipment_0 =  { # MiG-21 #
+			owner = "POL" 
+			creator = SOV
+			amount = 17
+		}
+
+		# Attackers -- Su-20, Su-22
+		attacker_equipment_1 =  { # Su-20, Su-22 #
+			owner = "POL" 
+			creator = SOV
+			amount = 22
+		}
+
+		# Transports -- An-26
+		transport_plane_equipment_1 =  {
+			owner = "POL"
+			creator = SOV
+			amount = 10
+		}
+	}
+	85 = {
+		# Fighters -- MiG-21, MiG-23
+		fighter_equipment_1 =  { # MiG-23 #
+			owner = "POL" 
+			creator = SOV
+			amount = 29
+		}
+		fighter_equipment_0 =  { # MiG-21 #
+			owner = "POL" 
+			creator = SOV
+			amount = 42
+		}
+
+		# Attackers -- Su-20, Su-22
+		attacker_equipment_1 =  { # Su-20, Su-22 #
+			owner = "POL" 
+			creator = SOV
+			amount = 37
+		}
+	}
+	86 = {
+		# Fighters -- MiG-21
+		fighter_equipment_0 =  { # MiG-21 #
+			owner = "POL" 
+			creator = SOV
+			amount = 43
+		}
+
+		# Attackers -- Su-20, Su-22
+		attacker_equipment_1 =  { # Su-20, Su-22 #
+			owner = "POL" 
+			creator = SOV
+			amount = 44
+		}
+	}
+	88 = {
+		# Fighters -- MiG-21
+		fighter_equipment_0 =  { # MiG-21 #
+			owner = "POL" 
+			creator = SOV
+			amount = 42
+		}
+	}
+}

@@ -1,0 +1,33 @@
+characters = {
+
+	MAD_andry_rajoelina = {
+		name = "Andry Rajoelina"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Africa/Andry_Rajoelina.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	MAD_didier_ratsiraka = {
+		name = "Didier Ratsiraka"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Africa/Didier_Ratsiraka.png"
+			}
+		}
+		country_leader = {
+			ideology = market_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

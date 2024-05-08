@@ -1,0 +1,33 @@
+characters = {
+
+	LIT_mil_command = {
+		name = "United Military Command"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LIT/lith.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	LIT_rec_aut = {
+		name = "Lithuanian Reconstruction Authority"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LIT/lith.dds"
+			}
+		}
+		country_leader = {
+			ideology = paternal_autocracy_sub 
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

@@ -1,0 +1,85 @@
+characters = {
+
+	BOS_bosnia_liberation_army = {
+		name = "Bosnia Liberation Army"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BOS/liberation_army.dds"
+			}
+			army = {
+				large = "gfx/leaders/BOS/liberation_army.dds"			
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	BOS_sefer_halilovic = {
+		name = "Sefer Halilovic"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BOS/halilovic.png"
+			}
+			army = {
+				large = "gfx/leaders/BOS/halilovic.png"			
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}		
+		corps_commander={
+			traits={infantry_leader}
+			skill=3
+			attack_skill=5
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	
+	BOS_sakib_mahmuljin = {
+		name = "Sakib Mahmuljin"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BOS/sakib_mahmuljin.png"
+			}
+			army = {
+				large = "gfx/leaders/BOS/sakib_mahmuljin.png"			
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}	
+	
+	BOS_gladimir_gojer = {
+		name = "Gradimir Gojer"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BOS/gojer.dds"
+			}
+
+		}
+		country_leader = {
+			ideology = social_democracy_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+}

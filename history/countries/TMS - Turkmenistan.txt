@@ -1,0 +1,21 @@
+﻿capital = 584
+
+##oob = ""
+
+set_convoys = 5
+
+recruit_character = TMS_saparmurat_niyazov
+recruit_character = TMS_saparmurat_niyazov_pat
+
+set_politics = {
+	ruling_party = reformed_communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	communism = 21
+	paternal_autocracy = 35
+	reformed_communism = 35
+	neutrality = 9
+}

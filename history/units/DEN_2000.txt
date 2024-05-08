@@ -1,0 +1,124 @@
+division_template = { # Mechanised Division #
+	name = "Mechanised Division"
+	division_names_group = GENERIC_MEC_01
+
+	regiments = {
+		main_battle_tank_armor = { x = 0 y = 0 }
+		heavy_infantry_unit = { x = 1 y = 0 }
+		heavy_infantry_unit = { x = 1 y = 1 }
+		heavy_infantry_unit = { x = 1 y = 2 }
+		heavy_infantry_unit = { x = 1 y = 3 }
+		motorised_artillery_unit = { x = 2 y = 0 }
+		towed_artillery_unit = { x = 2 y = 1 }
+		towed_artillery_unit = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		motorised_recon = { x = 0 y = 1 }
+		transport_heli_company = { x = 0 y = 2 }
+	}
+	priority = 1
+}
+
+units = {
+	# Mechanised Division #
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6393
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "GER" }
+			apc_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_1 = { owner = "USA" }
+			motorised_artillery_equipment_1 = { owner = "USA" }
+			heli_transport_equipment_0 = { owner = "USA" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3277
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "GER" }
+			apc_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_1 = { owner = "USA" }
+			motorised_artillery_equipment_1 = { owner = "USA" }
+			heli_transport_equipment_0 = { owner = "USA" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+}
+instant_effect = {
+
+	# Stockpile #
+        add_equipment_to_stockpile = {
+		type = infantry_weapons_2
+		amount = 2500
+		producer = CAN
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 500
+		producer = SWI
+	}
+        add_equipment_to_stockpile = { 
+		type = motorised_equipment_1
+		amount = 120
+		producer = SWE
+	}
+        add_equipment_to_stockpile = {
+		type = infantry_anti_air_weapons_1
+		amount = 200
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_anti_tank_weapons_1
+		amount = 200
+		producer = SWE
+	}
+
+	add_equipment_to_stockpile = {
+		type = mbt_tank_equipment_1
+		amount = 160
+		producer = GER
+	}
+	add_equipment_to_stockpile = {
+		type = mbt_tank_equipment_2
+		amount = 20
+		producer = GER
+	}
+	add_equipment_to_stockpile = {
+		type = recon_vehicle_equipment_2
+		amount = 40
+		producer = SWI
+	}
+	add_equipment_to_stockpile = {
+		type = apc_tank_equipment_0
+		amount = 450
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = towed_artillery_equipment_1
+		amount = 110
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = motorised_artillery_equipment_1
+		amount = 20
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = rocket_artillery_equipment_3
+		amount = 10
+		producer = USA
+	}
+}

@@ -1,0 +1,104 @@
+# possible - filters out achivements on game start so we dont have to check everything all the 
+#time
+## happened - checks if achivement happened
+#
+###########################
+## 1 VERY EASY ACHIEVEMENTS
+#############################
+
+unique_id = red_dusk_achievements
+
+bricks_and_rubble = {
+	
+	possible = {
+		has_start_date < 2000.01.02
+	}
+	
+	happened = {
+		tag = IRQ
+		has_country_flag = IRQ_won_against_USA
+	}
+}
+
+hot_war_get_it = {
+	
+	possible = {
+		has_start_date < 2000.01.02
+	}
+	
+	happened = {
+			OR = {
+			tag = USA
+			tag = SOV
+			}
+			has_country_flag = won_cold_war
+	}
+}
+
+dugins_wet_dream = {
+	
+	possible = {
+		has_start_date < 2000.01.02
+	}
+	
+	happened = {
+		tag = SOV
+		has_country_flag = this_achievement_isnt_implemented_yet
+		#im gonna code the required stuff later
+		
+	}
+}
+
+vladdys_blunder = {
+	
+	possible = {
+		has_start_date < 2000.01.02
+	}
+	
+	happened = {
+		tag = SOV
+		has_country_flag = this_achievement_isnt_implemented_yet
+		#im gonna code the required stuff later
+		
+	}
+}
+
+another_mans_fortune = {
+	
+	possible = {
+		has_start_date < 2000.01.02
+	}
+	
+	happened = {
+		tag = SOV
+		has_country_flag = this_achievement_isnt_implemented_yet
+		#im gonna code the required stuff later
+		
+	}
+}
+
+nine_elevent = {
+	
+	possible = {
+		has_start_date < 2000.01.02
+	}
+	
+	happened = {
+		tag = NRO
+		owns_state = 267
+		date < 2001.09.11
+	}
+}
+
+why_tho = {
+	
+	possible = {
+		has_start_date < 2000.01.02
+	}
+	
+	happened = {
+		is_ironman = yes
+
+	}
+}
+

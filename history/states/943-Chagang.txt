@@ -1,0 +1,26 @@
+state={
+	id=943
+	name="STATE_943"
+	history={
+		owner = KOR
+		add_core_of = SKR
+		add_core_of = KOR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 2
+
+		}
+	}
+	provinces={
+		852 912 978 3912 9790 9795 9918 11775 11828 11835 11896 13432
+	}
+	resources = {
+		steel = 23
+		aluminium = 1
+	}
+	manpower=3299830
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=town
+}

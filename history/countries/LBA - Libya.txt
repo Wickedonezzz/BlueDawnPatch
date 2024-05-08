@@ -1,0 +1,39 @@
+﻿capital = 448
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+
+	set_technology = {
+		corvette_hull_1960 = 1
+		destroyer_hull_1960 = 1
+	}
+}
+
+set_convoys = 20
+
+recruit_character = LBA_muammar_gaddafi
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 25
+	socialism = 20
+	communism = 5
+	fascism = 45
+	paternal_autocracy = 5
+}
+
+add_opinion_modifier = { target = USA modifier = HISTORIC_usa_libya_lba_opinion }
+add_opinion_modifier = { target = ISR modifier = HISTORIC_israel_hostile_30_opinion }
+
+# Naval Variants #
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "LBA_2000_naval_mtg"
+}

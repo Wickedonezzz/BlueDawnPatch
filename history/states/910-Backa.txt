@@ -1,0 +1,32 @@
+
+state={
+	id=910
+	name="STATE_910"
+
+	history={
+		owner = YUG
+		controller = YUG
+		buildings = {
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 1
+		}
+		add_core_of = YUG
+		add_core_of = SER
+		add_core_of = CRO
+		victory_points = {
+			619 4 #ojisek
+		}
+		victory_points = {
+			13355 3 #vukovar
+		}		
+	}
+
+	provinces={
+		619 3623 11577 13355 
+	}
+	manpower=1022524
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

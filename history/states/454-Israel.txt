@@ -1,0 +1,35 @@
+
+state={
+	id=454
+	name="STATE_454"
+
+	history={
+		owner = ISR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
+			dockyard = 1
+			air_base = 9
+			4206 = {
+				naval_base = 3
+
+			}
+
+		}
+		victory_points = {
+			4206 10 
+		}
+		add_core_of = PAL
+		add_core_of = ISR
+
+	}
+
+	provinces={
+		4206 13639 13642 13643 
+	}
+	manpower=355000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

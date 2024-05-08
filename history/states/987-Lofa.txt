@@ -1,0 +1,29 @@
+state={
+	id=987
+	name="STATE_987"
+	history={
+		owner = LUR
+		add_core_of = LIB
+		add_core_of = LUR
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 2
+
+		}
+		victory_points = {
+			13498 5
+		}
+		victory_points = {
+			13501 3 
+		}		
+	}
+	provinces={
+		13498 13499 13500 13501 13532  
+	}
+	
+	manpower=954000
+	state_category=rural		
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,15 @@
+units = {
+	fleet = {
+		name = "Suomen laivasto"
+		naval_base = 3083 # Turku #
+		task_force = {
+			name = "Suomen laivasto"
+			location = 3083 # Turku #
+			ship = { name = "Turunmaa" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = FIN version_name = "Turunmaa Class" } } }
+			ship = { name = "Karjala" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = FIN version_name = "Turunmaa Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

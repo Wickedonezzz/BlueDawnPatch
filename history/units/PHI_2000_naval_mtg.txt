@@ -1,0 +1,25 @@
+units = {
+	fleet = {
+		name = "Hukbong Dagat ng Pilipinas"
+		naval_base = 10265 # Manila #
+		task_force = {
+			name = "Hukbong Dagat ng Pilipinas"
+			location = 10265 # Manila #
+			ship = { name = "BRP Rajah Humabon" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PHI creator = USA version_name = "Cannon Class" } } }
+
+			ship = { name = "BRP Samar" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = PHI creator = USA version_name = "Admirable Class" } } }
+			ship = { name = "BRP Miguel Malvar" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = PHI creator = USA version_name = "Admirable Class" } } }
+			ship = { name = "BRP Sultan Kudarat" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = PHI creator = USA version_name = "Admirable Class" } } }
+			ship = { name = "BRP Datu Marikudo" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = PHI creator = USA version_name = "Admirable Class" } } }
+			ship = { name = "BRP Cebu" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = PHI creator = USA version_name = "Admirable Class" } } }
+			ship = { name = "BRP Negros Occidental" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = PHI creator = USA version_name = "Admirable Class" } } }
+			ship = { name = "BRP Pangasinan" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = PHI creator = USA version_name = "Admirable Class" } } }
+			ship = { name = "BRP Iloilo" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = PHI creator = USA version_name = "Admirable Class" } } }
+			ship = { name = "BRP Rizal" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = PHI creator = USA version_name = "Auk Class" } } }
+			ship = { name = "BRP Quezon" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = PHI creator = USA version_name = "Auk Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

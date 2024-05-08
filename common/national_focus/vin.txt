@@ -1,0 +1,3735 @@
+focus_tree = {
+	id = vin
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = VIN
+		}
+	}
+	
+	####STARTING TREE###
+        	
+	#New Millennium, New Vietnam
+	focus = {
+		id = VIN_newmillenniumnewvietnam
+		icon = VIN_new_vietnam
+		x = 7
+		y = 0
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+            completion_reward = {
+			add_political_power = 20
+			VIN = {
+				country_event = { id = vin.1 }
+			}
+
+		}
+	}
+
+	#Healing Scars of War
+	focus = {
+		id = VIN_healing_scars_of_war
+		icon = GFX_focus_VIN_helping_hand
+		x = 3
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_newmillenniumnewvietnam  }
+         completion_reward = {
+			swap_ideas = {
+	     remove_idea = VIN_fifty_years_resistance
+		 add_idea = VIN_fifty_years_resistance_1
+        }
+		VIN = {
+				country_event = { id = vin.5 }
+			}
+			}
+	}
+
+	#Status of the Economy
+	focus = {
+		id = VIN_status_of_the_economy
+		icon = GFX_focus_SOV_great_industry
+		x = 7
+		y = 1
+		cost = 2
+        completion_reward = {
+		VIN = {
+				country_event = { id = vin.4 }
+			}
+		}
+		
+		prerequisite = { focus = VIN_newmillenniumnewvietnam  }
+	}
+
+	#Our Place in the World
+	focus = {
+		id = VIN_our_place_in_the_world
+		icon = VIN_our_place
+		x = 12
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+		add_political_power = 50
+		}
+		prerequisite = { focus = VIN_newmillenniumnewvietnam  }
+	}
+
+	#Open Stock Market
+	focus = {
+		id = VIN_open_stock_market
+		icon = VIN_open_stock
+		x = 6
+		y = 2
+		cost = 3
+		prerequisite = { focus = VIN_status_of_the_economy  }
+		completion_reward = { 
+		add_political_power = 30
+		add_stability = -0.03
+        VIN = {
+				country_event = { id = vin.2 }
+			}
+
+		add_ideas = export_focus
+
+		}
+	}
+
+	#Sign Vietnam - US Trade Agreement
+	focus = {
+		id = VIN_sign_vietnam__us_trade_agreement
+		icon = VIN_trade_US
+		x = 6
+		y = 3
+		cost = 5
+		prerequisite = { focus = VIN_open_stock_market  }
+		completion_reward = {
+		add_opinion_modifier = { target = USA modifier = medium_increase } 
+		USA = { 
+		add_opinion_modifier = { target = VIN modifier = medium_increase }
+		}
+		swap_ideas = {
+		remove_idea = VIN_doi_moi
+		add_idea = VIN_doi_moi_1
+		}
+		VIN = {
+				country_event = { id = vin.3 }
+			}
+	}
+	}
+
+	#Support State-owned Enterprise
+	focus = {
+		id = VIN_support_stateowned_enterprise
+		icon = VIN_support_enterprise
+		x = 8
+		y = 2
+		cost = 3
+          prerequisite = { focus = VIN_status_of_the_economy }
+		completion_reward = {
+	   add_stability = 0.04
+	   swap_ideas = {
+	   remove_idea = VIN_corruption_1
+	   add_idea = VIN_corruption_2
+       }
+	    916 = { 
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+	type = industrial_complex
+	level = 1
+	instant_build = yes
+		}
+	   }
+		
+
+	}
+	}
+	
+
+	#Expand Collectivization
+	focus = {
+		id = VIN_expand_collectivization
+		icon = VIN_hop_tac_xa
+		x = 8
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_support_stateowned_enterprise  }
+		completion_reward = {
+		add_ideas = VIN_agriculture_development_plan
+		}
+	}
+
+	#Socialist-oriented Market Economy
+	focus = {
+		id = VIN_socialistoriented_market_economy
+		icon = generic_soc_market
+		x = 7
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_expand_collectivization  } prerequisite = { focus = VIN_sign_vietnam__us_trade_agreement  }
+		completion_reward = {
+		set_politics = {
+			ruling_party = reformed_communism
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = reformed_communism
+			popularity = 0.5
+		}
+			hidden_effect = {
+	country_event = { id =	vin.49 } days = 5
+	}
+	}
+	}
+
+	#Improve Veteran Welfare
+	focus = {
+		id = VIN_improve_veteran_welfare
+		icon = VIN_improve_veteran_welfare
+		x = 2
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_healing_scars_of_war  }
+		completion_reward = { 
+			add_stability= 0.03
+			add_war_support = 0.03
+		}
+	}
+
+	#Help Martyrs Family
+	focus = {
+		id = VIN_help_martyrs_family
+		icon = VIN_help_family
+		x = 4
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_healing_scars_of_war  }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = VIN_fifty_years_resistance_1
+		add_idea = VIN_fifty_years_resistance_2
+	}
+	}
+	}
+
+	#Red Indochina
+	focus = {
+		id = VIN_red_indochina
+		icon = VIN_red_indochina
+		x = 12
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_our_place_in_the_world  }
+		completion_reward = {
+		add_opinion_modifier = { target = CAM modifier = medium_increase } 
+			add_opinion_modifier = { target = LAO modifier = medium_increase } 
+        CAM = { 
+		add_opinion_modifier = { target = VIN modifier = medium_increase }
+		}
+		LAO = { 
+		add_opinion_modifier = { target = VIN modifier = medium_increase }
+		}
+	}
+	}
+
+	#Improve relations with China
+	focus = {
+		id = VIN_improve_relations_with_china
+		icon = VIN_China_coop
+		x = 14
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_our_place_in_the_world  }
+		completion_reward = {
+		add_opinion_modifier = { target = PRC modifier = medium_increase } 
+     PRC = { 
+	add_opinion_modifier = { target = VIN modifier = medium_increase }
+	 }
+	}
+	}
+
+	#Soviet Brother
+	focus = {
+		id = VIN_soviet_brother
+		icon = VIN_SOV_friendship
+		x = 10
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_our_place_in_the_world  }
+		completion_reward = {
+		add_opinion_modifier = { target = SOV modifier = large_increase } 
+        SOV = { 
+		add_opinion_modifier = { target = VIN modifier = large_increase }
+		}
+	}
+	}
+
+	#Mutual Defense Treaty
+	focus = {
+		id = VIN_mutual_defense_treaty
+		icon = GFX_focus_generic_treaty
+		x = 12
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_red_indochina  }
+		completion_reward = {
+		diplomatic_relation = { 
+	    country = CAM 
+	    relation = guarantee 
+	    active = yes
+      } 
+	    diplomatic_relation = { 
+	    country = LAO
+	    relation = guarantee 
+	    active = yes
+    }
+
+				country_event = { id = vin.7 }
+
+    hidden_effect = {
+	SIA = {
+				country_event = { id = thailand.1 days = 5 }  
+			}
+			}
+	}
+	}
+
+	#Ask for aid
+	focus = {
+		id = VIN_ask_for_aid
+		icon = GFX_focus_IRQ_moscow
+		x = 10
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_soviet_brother  }
+		completion_reward = {
+		  add_equipment_to_stockpile = {
+				type = motorised_equipment
+				amount = 200
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = mbt_tank_equipment
+				amount = 100
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+				type = ifv_tank_equipment_0
+				amount = 120
+				producer = SOV
+			}
+			add_equipment_to_stockpile = {
+			   type = infantry_weapons
+			   amount = 5000
+			   producer = SOV
+			   }
+		}
+	}
+
+	#Strengthen Economic Cooperation
+	focus = {
+		id = VIN_strengthen_economic_cooperation
+		icon = VIN_coop
+		x = 14
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+            prerequisite = { focus = VIN_improve_relations_with_china  }
+	 completion_reward = {
+	 VIN = {
+				add_opinion_modifier = { target = PRC modifier = VIN_trade_with_China }
+			}
+	}
+	}
+
+	#Continue the Neutrality Policy
+	focus = {
+		id = VIN_continue_the_neutrality_policy
+		icon = GFX_goal_generic_neutrality_focus
+		x = 12
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_strengthen_economic_cooperation  } prerequisite = { focus = VIN_ask_for_aid  } prerequisite = { focus = VIN_mutual_defense_treaty  }
+		completion_reward = {
+		hidden_effect = { remove_ideas = ussr_aligned_nation }
+		custom_effect_tooltip = remove_ussr
+	    add_war_support = 0.05
+	}
+	}
+
+	#9th Party Congress
+	focus = {
+		id = VIN_9th_party_congress
+		icon = VIN_congress
+		x = 7
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_the_greatest_generation  } prerequisite = { focus = VIN_continue_the_neutrality_policy  } prerequisite = { focus = VIN_socialistoriented_market_economy  }
+	completion_reward = {
+	country_event = { id = vin.8 }
+	}
+
+	}
+
+
+	#Increase Budget of the Veterans Association
+	focus = {
+		id = VIN_increase_budget_of_the_veterans_association
+		icon = VIN_fund_veteran
+		x = 3
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_help_martyrs_family  } prerequisite = { focus = VIN_improve_veteran_welfare  }
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = VIN_fifty_years_resistance_2 
+		add_idea = VIN_fifty_years_resistance_3
+	}
+	}
+	}
+
+	#The Greatest Generation
+	focus = {
+		id = VIN_the_greatest_generation
+		icon = VIN_greatest_generation
+		x = 3
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_increase_budget_of_the_veterans_association  }
+        completion_reward = { 
+		swap_ideas = {
+		remove_idea = VIN_fifty_years_resistance_3
+		add_idea = VIN_fifty_years_resistance_4
+	}
+	country_event = { id= vin.6 }
+
+	}
+	}
+	
+	#######After the congress#####
+	#Draft New Constitution
+	focus = {
+		id = VIN_draft_new_constitution
+		icon = GFX_VIN_focus_hien_phap_2001
+		x = 2
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = Chairman_Nong_Duc_Manh }
+		mutually_exclusive = { focus = VIN_Amendment_to_the_1992_Constitution }
+        completion_reward = { 
+		add_political_power = -100
+		add_stability = 0.05
+		add_popularity = {
+			ideology = reformed_communism
+			popularity = 0.1
+		}
+		swap_ideas = {
+		remove_idea = VIN_doi_moi_1
+		add_idea = VIN_doi_moi_2_hien_phap_1
+	}
+	    add_ideas = VIN_socialist_law_state
+	}
+	}
+	
+	#Amendment to the 1992 Constitution
+	focus = {
+		id = VIN_Amendment_to_the_1992_Constitution
+		icon = GFX_VIN_focus_hien_phap_1992
+		x = 4
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = Chairman_Nong_Duc_Manh }
+		mutually_exclusive = { focus = VIN_draft_new_constitution }
+        completion_reward = { 
+		add_political_power = -50
+		add_stability = 0.03
+		add_popularity = {
+			ideology = reformed_communism
+			popularity = 0.05
+		}
+	    swap_ideas = {
+		remove_idea = VIN_doi_moi_1
+		add_idea = VIN_doi_moi_2_hien_phap_2
+	}
+	    add_ideas = VIN_socialist_law_state
+	}
+	}
+
+	#New Genenral Scretary
+	focus = {
+		id = Chairman_Nong_Duc_Manh
+		icon = GFX_VIN_focus_Nong_Duc_Manh_gen_sec
+		x = 7
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+			always = no
+		}
+        completion_reward = {
+     add_political_power = 100		
+	}
+	}
+	#Amendment of the Labor Code
+	focus = {
+		id = Amendment_of_the_Labor_Code
+		icon = GFX_VIN_focus_labour_code
+		x = 3
+		y = 8
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_draft_new_constitution  focus = VIN_Amendment_to_the_1992_Constitution}
+        completion_reward = {	
+		if = {
+				limit = {
+					has_completed_focus = VIN_Amendment_to_the_1992_Constitution
+				}
+			
+			swap_ideas = {
+			remove_idea = VIN_doi_moi_2_hien_phap_2
+			add_idea =  VIN_doi_moi_3_labour_code_2
+		}
+			}
+			else = {
+			swap_ideas = {
+			remove_idea = VIN_doi_moi_2_hien_phap_1
+			add_idea =  VIN_doi_moi_3_labour_code_1
+				}
+			}
+			country_event = vin.31
+	}
+	}
+	#The Path to Industrialization
+	focus = {
+		id = VIN_Path_to_Industrialization
+		icon = GFX_VIN_focus_industrial_plan
+		x = 3
+		y = 9
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = Amendment_of_the_Labor_Code}
+        completion_reward = {	
+		add_ideas = VIN_Industrialization_plan
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = industry
+       }
+	}
+	}
+	#No time to waste
+	focus = {
+		id = VIN_No_time_to_waste
+		icon = GFX_focus_SOV_initial_reform
+		x = 2
+		y = 10
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = { focus = VIN_steady_forward}
+			prerequisite = { focus = VIN_Path_to_Industrialization}
+			available = {has_country_flag = vin_fast_industrialization}
+        completion_reward = {
+     swap_ideas = {
+     remove_idea = VIN_Industrialization_plan
+	 add_idea = VIN_Industrialization_plan_fast_1
+	}
+	}
+	}
+	#Labour is glorious
+	focus = {
+		id = VIN_Labour_is_glorious
+		icon = GFX_generic_worker_glory
+		x = 2
+		y = 11
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_No_time_to_waste}
+        completion_reward = {	
+		if = {
+				limit = {
+					has_completed_focus = VIN_open_more_industrial_zones
+				}
+			
+			swap_ideas = {
+			remove_idea = VIN_Industrialization_plan_fast_3
+			add_idea =  VIN_Industrialization_plan_fast_4
+		}
+			}
+			else = {
+			swap_ideas = {
+			remove_idea = VIN_Industrialization_plan_fast_1
+			add_idea =  VIN_Industrialization_plan_fast_2
+				}
+			}
+	}
+	}
+	#open more industrial zones
+	focus = {
+		id = VIN_open_more_industrial_zones
+		icon = GFX_focus_SAF_modernize_our_industry
+		x = 0
+		y = 11
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_No_time_to_waste}
+        completion_reward = {
+        if = {
+				limit = {
+					has_completed_focus = VIN_Labour_is_glorious
+				}
+			
+			swap_ideas = {
+			remove_idea = VIN_Industrialization_plan_fast_2
+			add_idea =  VIN_Industrialization_plan_fast_5
+		}
+			}
+			else = {
+			swap_ideas = {
+			remove_idea = VIN_Industrialization_plan_fast_1
+			add_idea =  VIN_Industrialization_plan_fast_4
+				}
+			}
+		swap_ideas = {
+		remove_idea = VIN_agriculture_development_plan
+		add_idea = VIN_agriculture_development_plan_industry 
+		}
+          			
+	}
+	}
+
+	#Steady Forward
+	focus = {
+		id = VIN_steady_forward
+		icon = GFX_VIN_focus_stable_economy
+		x = 4
+		y = 10
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_Path_to_Industrialization}
+		available = {has_country_flag = vin_small_industry}
+		mutually_exclusive = { focus = VIN_No_time_to_waste }
+        completion_reward = {
+        swap_ideas = {
+        remove_idea = VIN_Industrialization_plan
+		add_idea = VIN_Industrialization_plan_steady
+		}
+		
+	}
+	}
+	#Agriculture is the key to Industrialization
+	focus = {
+		id = VIN_Agriculture_is_the_key_to_Industrialization
+		icon = GFX_VIN_focus_farmer_great
+		x = 4
+		y = 11
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_steady_forward}
+        completion_reward = {	
+		swap_ideas = {
+		add_idea = VIN_agriculture_development_plan_steady
+		remove_idea = VIN_agriculture_development_plan
+	}
+	}
+	}
+	#Focus on light industries
+	focus = {
+		id = VIN_Focus_on_light_industries_first
+		icon = GFX_VIN_focus_light_industry
+		x = 6
+		y = 11
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_steady_forward}
+        completion_reward = {	
+		swap_ideas = { 
+		add_idea = VIN_Industrialization_plan_steady_1
+		remove_idea = VIN_Industrialization_plan_steady
+		}
+	}
+	}
+	#State visit to Laos
+	focus = {
+		id = VIN_visit_Laos
+		icon = GFX_VIN_focus_state_visit_to_lao
+		x = 11
+		y = 7
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = Chairman_Nong_Duc_Manh }
+        completion_reward = {	
+		LAO = {
+		set_politics = {
+			ruling_party = reformed_communism
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = reformed_communism
+			popularity = 0.5
+		}
+			}
+	}
+	}
+	#The Art of Diplomacy
+	focus = {
+		id = VIN_art_of_diplomacy
+		icon = GFX_VIN_focus_art_of_diplo
+		x = 11
+		y = 8
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_visit_Laos}
+        completion_reward = {	
+		country_event = vin.16
+	}
+	}
+	#Focus on the socialist countries
+	focus = {
+		id = VIN_Focus_on_the_socialist_country
+		icon = GFX_VIN_focus_communism
+		x = 9
+		y = 9
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_art_of_diplomacy}
+		mutually_exclusive = { focus = VIN_Look_to_capitalist_world }
+        completion_reward = {	
+	}
+	}
+	
+	#A message to China
+	focus = {
+		id = VIN_A_message_to_China
+		icon = GFX_VIN_focus_chinese_message
+		x = 8
+		y = 10
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_Focus_on_the_socialist_country}
+        completion_reward = {	
+		diplomatic_relation = { 
+	    country = PRC
+	    relation = non_aggression_pact
+	    active = yes
+      } 
+	}
+	}
+
+	#A hand shake with Soviet Ambassador
+	focus = {
+		id = VIN_A_hand_shake_with_Soviet_Ambassador
+		icon = GFX_SOV_keep_your_friend_close
+		x = 10
+		y = 10
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_Focus_on_the_socialist_country}
+        completion_reward = {	
+		add_popularity = {
+			ideology = communism 
+			popularity = 0.05
+		}
+		SOV = { 
+		diplomatic_relation = { 
+	    country = VIN
+	    relation = guarantee 
+	    active = yes
+      }
+	   VIN = { 
+		diplomatic_relation = { 
+	    country = SOV
+	    relation = docking_rights
+	    active = yes
+      }
+    }	  
+	}
+	}
+	}
+	#Flight to Pyongyang
+	focus = {
+		id = VIN_Flight_to_Pyongyang
+		icon = GFX_VIN_focus_best_korea
+		x = 9
+		y = 11
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_A_hand_shake_with_Soviet_Ambassador}
+		prerequisite = { focus = VIN_A_message_to_China }
+        completion_reward = {	
+		add_opinion_modifier = { target = KOR modifier = large_increase } 
+		KOR = { 
+		add_opinion_modifier = { target = VIN modifier = large_increase }
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = infantry_weapons
+       }
+	   country_event = vin.17
+	}
+	}
+	#Look to capitalist world
+	focus = {
+		id = VIN_Look_to_capitalist_world
+		icon = GFX_VIN_focus_liberal
+		x = 13
+		y = 9
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_art_of_diplomacy}
+		mutually_exclusive = { focus = VIN_Focus_on_the_socialist_country }
+        completion_reward = {	
+	}
+	}
+	#ASEAN things
+	focus = {
+		id = VIN_appoarch_ASEAN_countries
+		icon = GFX_VIN_focus_ASEAN
+		x = 12
+		y = 10
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_Look_to_capitalist_world}
+        completion_reward = {	
+		add_ideas = SIA_asean_observer_states
+	}
+	}
+	#Visit Japan
+	focus = {
+		id = VIN_visit_Japan
+		icon = GFX_VIN_focus_visit_japon
+		x = 14
+		y = 10
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_Look_to_capitalist_world}
+        completion_reward = {	
+		VIN = {
+				add_opinion_modifier = { target = JAP modifier = VIN_trade_with_China }
+			}
+		add_opinion_modifier = { target = JAP modifier = medium_increase } 
+		JAP = { 
+		add_opinion_modifier = { target = VIN modifier = medium_increase }
+		}
+	}
+	}
+	#Negotiating with the EU
+	focus = {
+		id = VIN_Negotiating_with_EU
+		icon = GFX_VIN_focus_EU_generic
+		x = 13
+		y = 11
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_appoarch_ASEAN_countries}
+		prerequisite = { focus = VIN_visit_Japan }
+        completion_reward = {	
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.05
+		}
+		add_political_power = 50
+		VIN = {
+				add_opinion_modifier = { target = GER modifier = VIN_trade_with_EU }
+				add_opinion_modifier = { target = FRA modifier = VIN_trade_with_EU }
+				add_opinion_modifier = { target = ENG modifier = VIN_trade_with_EU }
+			}
+	}
+	}
+	#2002 ELection
+	focus = {
+		id = VIN_2002_election
+		icon = GFX_VIN_focus_2002_election
+		x = 7
+		y = 12
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_Negotiating_with_EU focus = VIN_Flight_to_Pyongyang}
+		prerequisite = { focus = VIN_open_more_industrial_zones focus = VIN_Agriculture_is_the_key_to_Industrialization} 
+		prerequisite = { focus = VIN_Labour_is_glorious focus = VIN_Focus_on_light_industries_first} 		
+		completion_reward = {
+		country_event = vin.19 
+     }
+	}
+	#11th National Assembly
+	focus = {
+		id = VIN_national_assembly_meeting
+		icon = GFX_VIN_focus_national_congress
+		x = 7
+		y = 13
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		available = {
+			always = no
+		}
+		prerequisite = { focus = VIN_2002_election }
+		completion_reward = {
+		
+     }
+	}
+	#7th 5 year plan
+	focus = {
+		id = VIN_7th_5_year_plan
+		icon = GFX_VIN_focus_5plan
+		x = 2
+		y = 14
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_national_assembly_meeting }
+		completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = industry
+       }
+     }
+	}
+	
+	#Resources
+	focus = {
+		id = VIN_golden_forest_silver_sea
+		icon = GFX_focus_generic_construct
+		x = 6
+		y = 15
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_7th_5_year_plan }
+		completion_reward = {
+		set_technology = {
+    tech_basic_resource_extraction  = 1
+      }
+	  add_ideas = VIN_resources_increase
+     }
+	}
+	#Land Resources
+	focus = {
+		id = VIN_land_resources
+		icon = GFX_focus_SAF_open_mines
+		x = 4
+		y = 16
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_golden_forest_silver_sea }
+		mutually_exclusive = { focus = VIN_eye_on_east_sea }
+		completion_reward = {
+		add_tech_bonus = {
+    bonus = 0.5
+    uses = 1
+    category = excavation_tech
+}
+     }
+	}
+
+	#Rubber
+	focus = {
+		id = VIN_rubber
+		icon = GFX_focus_generic_rubber
+		x = 3
+		y = 17
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_land_resources }
+		completion_reward = {
+		286 = {
+				add_resource = {
+					type = rubber
+					amount = 20
+				}
+			}
+     }
+	}
+	#Tungsten
+	focus = {
+		id = VIN_tungsten
+		icon = GFX_focus_generic_aluminum
+		x = 5
+		y = 17
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_land_resources }
+		completion_reward = {
+		916 = {
+				add_resource = {
+					type = tungsten
+					amount = 8
+				}
+			}
+     }
+	}
+	#Steel
+	focus = {
+		id = VIN_steel
+		icon = GFX_focus_SAF_build_new_coal_factories
+		x = 4
+		y = 18
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_tungsten }
+		prerequisite = { focus = VIN_rubber }
+		completion_reward = {
+		916 = {
+				add_resource = {
+					type = steel
+					amount = 10
+				}
+			}
+		create_import = {
+				resource = steel
+				amount = 15
+				exporter = SOV
+			}
+	 modify_building_resources = {
+    building = industrial_complex
+    resource = steel
+    amount = 1
+    }
+     }
+	}
+	#Oil
+	focus = {
+		id = VIN_eye_on_east_sea
+		icon = GFX_VIN_focus_eye_on_east_sea
+		x = 8
+		y = 16
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_golden_forest_silver_sea }
+		mutually_exclusive = { focus = VIN_land_resources }
+		completion_reward = {
+		add_tech_bonus = {
+    bonus = 0.5
+    uses = 1
+    category = mod_cat_oil
+}
+     }
+	}
+	#Oil with Soviet
+	focus = {
+		id = VIN_oil_with_Soviet
+		icon = GFX_VIN_focus_soviet_oil
+		x = 7
+		y = 17
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_eye_on_east_sea }
+		completion_reward = {
+		907 = {
+				add_resource = {
+					type = oil
+					amount = 30
+				}
+			}
+		SOV = {
+		create_import = {
+				resource = oil
+				amount = 10
+				exporter = VIN
+			}
+		}
+		
+     }
+	}
+	#Build more synthetic
+	focus = {
+		id = VIN_synthetic
+		icon = GFX_focus_IRQ_increase_oil_production
+		x = 9
+		y = 17
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_eye_on_east_sea }
+		completion_reward = {
+		 916 = { 
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+	type = synthetic_refinery
+	level = 1
+	instant_build = yes
+		}
+	   }
+	   swap_ideas = {
+	   remove_idea =  VIN_resources_increase
+	   add_idea =  VIN_resources_increase_2 
+	   }
+	  modify_building_resources = {
+    building = synthetic_refinery
+    resource = oil
+    amount = 2
+}
+     }
+	}
+	#Increase Oil Reserve
+	focus = {
+		id = VIN_oil_reserve
+		icon = GFX_VIN_focus_fuel
+		x = 8
+		y = 18
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_synthetic }
+		prerequisite = { focus = VIN_oil_with_Soviet }
+		completion_reward = {
+		 671 = { 
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+	type = fuel_silo
+	level = 1
+	instant_build = yes
+		}
+	   }
+	   add_fuel = 400000
+     }
+     }
+	#Invest North
+	focus = {
+		id = VIN_invest_north
+		icon = GFX_VIN_focus_invest_north
+		x = -4
+		y = 15
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_7th_5_year_plan }
+		mutually_exclusive = { focus = VIN_invest_south }
+		completion_reward = {
+		 916 = { 
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+	type = industrial_complex
+	level = 1
+	instant_build = yes
+		}
+	   }
+	   671 = { 
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+	type = industrial_complex
+	level = 1
+	instant_build = yes
+		}
+	   }
+	   671 = { 
+		add_building_construction = {
+	type = infrastructure
+	level = 1
+	instant_build = yes
+		}
+	   }
+	   	973 = {
+			add_dynamic_modifier = {
+				modifier = VIN_invest_in_north
+			}	
+		}
+     }
+	}
+	#Hai Phong Port
+	focus = {
+		id = VIN_Hai_Phong_port
+		icon = GFX_VIN_focus_haipohong_port
+		x = -4
+		y = 16
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_invest_north }
+		completion_reward = {
+		916 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 4119
+				}
+				
+	
+			}
+		 916 = { 
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+	type = dockyard
+	level = 1
+	instant_build = yes
+		}
+	   }
+     }
+	}
+	#Invest South
+	focus = {
+		id = VIN_invest_south
+		icon = GFX_VIN_focus_invest_south
+		x = 0
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_7th_5_year_plan }
+		mutually_exclusive = { focus = VIN_invest_north }
+		completion_reward = {
+		 286 = { 
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+	type = industrial_complex
+	level = 1
+	instant_build = yes
+		}
+	   }
+	   915 = { 
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+	type = industrial_complex
+	level = 1
+	instant_build = yes
+		}
+	   }
+	   915 = { 
+		add_building_construction = {
+	type = infrastructure
+	level = 1
+	instant_build = yes
+		}
+	   }
+	   	286 = {
+			add_dynamic_modifier = {
+				modifier = VIN_invest_in_south
+			}	
+		}
+	   	915 = {
+			add_dynamic_modifier = {
+				modifier = VIN_invest_in_south
+			}	
+		}		
+     }
+	    
+	}
+	#Sai Gon Port
+	focus = {
+		id = VIN_Sai_Gon_port
+		icon = GFX_VIN_focus_saigon_port
+		x = 0
+		y = 16
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_invest_south }
+		completion_reward = {
+		286 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 4401
+				}
+				
+	
+			}
+		 286 = { 
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+	type = dockyard
+	level = 1
+	instant_build = yes
+		}
+	   }
+     }
+	}
+	#Railway transportation
+	focus = {
+		id = VIN_rail_way
+		icon = GFX_focus_generic_railroad
+		x = -2
+		y = 17
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_Hai_Phong_port  focus = VIN_Sai_Gon_port }
+		completion_reward = {
+		build_railway = {
+					level = 3
+					build_only_on_allied = yes
+					controller_priority = {
+						base = 1
+
+					}
+					fallback = yes
+					path = { 4075 1185 11936 10016 4397 12297 7280 1302 4379 10309 10137 4255 1300 4334 4405 10162 1285 12204 10232 12232 4401}
+					start_province = 4057
+					target_province = 4401
+				}
+		
+     }
+	}
+	#Defense Industry
+	focus = {
+		id = VIN_defense_industry
+		icon = GFX_VIN_focus_quoc_phong
+		x = -2
+		y = 18
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_rail_way }
+		completion_reward = {
+		 916 = { 
+		add_extra_state_shared_building_slots = 2
+		add_building_construction = {
+	type = arms_factory
+	level = 2
+	instant_build = yes
+		}
+	   }
+	    916 = { 
+		add_building_construction = {
+	type = anti_air_building
+	level = 1
+	instant_build = yes
+		}
+	   }
+	  add_tech_bonus = {
+    bonus = 0.5
+    uses = 1
+    category = radar_tech
+}
+     }
+	}
+	#For A Socialist Society
+	focus = {
+		id = VIN_socialist_society
+		icon = GFX_focus_SOV_soviet_culture
+		x = 15
+		y = 14
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_national_assembly_meeting }
+		completion_reward = {
+		add_popularity = {
+       ideology = reformed_communism
+      popularity = 0.03
+     }
+	 add_stability = 0.02
+	 add_war_support = 0.02
+	 add_ideas =  VIN_socialist_society
+     }
+	 
+	}
+	#Social Protection
+	focus = {
+		id = VIN_social_protection_program
+		icon = GFX_focus_SOV_economic_reforms
+		x = 15
+		y = 15
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_socialist_society }
+		completion_reward = {
+		swap_ideas = { 
+		remove_idea = VIN_socialist_society
+		add_idea = VIN_socialist_society_1
+		}
+		add_political_power = -100
+     }
+	}
+	#The Fight Against Poverty
+	focus = {
+		id = VIN_fight_poverty
+		icon = GFX_VIN_focus_fight_poverty
+		x = 13
+		y = 16
+		cost = 1.5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_social_protection_program }
+		completion_reward = {
+		add_political_power = -150
+		add_stability = 0.02
+		add_war_support = 0.02
+		VIN_poverty_rate_poverty_rate_debug_reset = yes
+     }
+	 }
+	#Programme 135
+	focus = {
+		id = VIN_Programme_135
+		icon = GFX_focus_SOV_return_to_latin_alphabet
+		x = 12
+		y = 17
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_fight_poverty }
+		completion_reward = {
+		swap_ideas = { 
+		remove_idea = VIN_socialist_society_1
+		add_idea = VIN_socialist_society_2
+		}
+		add_political_power = -100
+		add_popularity = {
+       ideology = reformed_communism
+      popularity = 0.03
+     }
+	 swap_ideas = { 
+		remove_idea = VIN_corruption_2
+		add_idea = VIN_corruption_3
+		}
+	 unlock_decision_tooltip = VIN_developing_essential_infrastructure
+	 unlock_decision_tooltip = VIN_support_production_development_and_economic_restructuring
+	 unlock_decision_tooltip = VIN_local_staff_training
+	 unlock_decision_tooltip = VIN_improve_and_expand_public_services
+	 unlock_decision_tooltip = VIN_social_housing_project
+     }
+	 }
+	 #Job security for workers
+	focus = {
+		id = VIN_job_security
+		icon = GFX_focus_SOV_aiding_workers
+		x = 14
+		y = 17
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_fight_poverty }
+		completion_reward = {
+		add_manpower = 25000
+		add_political_power = -50
+		add_stability = 0.02
+		unlock_decision_tooltip = VIN_job_security_and_income_for_employees
+		unlock_decision_tooltip = VIN_open_vocational_training_center
+     }
+	 }
+	#Salary reform
+	focus = {
+		id = VIN_salary_reform
+		icon = GFX_VIN_focus_salary_reform
+		x = 13
+		y = 18
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_job_security }
+		prerequisite = { focus = VIN_Programme_135 }
+		completion_reward = {
+		swap_ideas = { 
+		remove_idea = VIN_socialist_society_2
+		add_idea = VIN_socialist_society_3
+		}
+		add_political_power = -100
+		unlock_decision_tooltip = VIN_increase_common_salary
+		unlock_decision_tooltip = VIN_increase_minimum_wage
+     }
+	 }
+	#Ensure Social Security
+	focus = {
+		id = VIN_ensure_social_security
+		icon = GFX_focus_geneirc_socialist_law
+		x = 17
+		y = 16
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		available = {
+		has_completed_focus = VIN_salary_reform
+		}
+		prerequisite = { focus = VIN_social_protection_program }
+		completion_reward = {
+		add_political_power = -100
+		swap_ideas = { 
+		remove_idea = VIN_socialist_law_state
+		add_idea = VIN_socialist_law_state_2
+		}
+     }
+	 }
+	 #Towards universal health insurance
+	focus = {
+		id = VIN_universal_health_insurance
+		icon = GFX_focus_generic_field_hostpital
+		x = 16
+		y = 17
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_ensure_social_security }
+		completion_reward = {
+		swap_ideas = { 
+		remove_idea = VIN_socialist_society_3
+		add_idea = VIN_socialist_society_4
+		}
+     }
+	 }
+	#Education Reform
+	focus = {
+		id = VIN_education_reform
+		icon = GFX_VIN_focus_edu_reform
+		x = 18
+		y = 17
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_ensure_social_security }
+		completion_reward = {
+		swap_ideas = { 
+		remove_idea = VIN_corruption_3
+		add_idea = VIN_corruption_4
+		}
+		
+      add_research_slot = 1
+     }
+	 }
+	#Massive anti-crime campaign
+	focus = {
+		id = VIN_anti_crime_campaign
+		icon = GFX_VIN_focus_police
+		x = 17
+		y = 18
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_education_reform }
+		prerequisite = { focus = VIN_universal_health_insurance }
+		completion_reward = {
+		add_equipment_to_stockpile = {
+    type = infantry_weapons
+    amount = -100
+    producer = VIN
+     }
+	 add_manpower = -10
+	 swap_ideas = {
+	 add_idea = VIN_socialist_law_state_3
+	 remove_idea = VIN_socialist_law_state_2
+	 }
+     }
+	 }
+	 
+	 #####INDOCHINA WAR######
+	 focus = {
+		id = VIN_chaos_in_cambodia
+		icon = GFX_VIN_focus_chaos_in_cambodia
+		x = 7
+		y = 20
+		cost = 2
+		available = {
+			always = no
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		completion_reward = {
+	
+     }
+	 }
+	 focus = {
+		id = VIN_ready_the_army
+		icon = GFX_VIN_focus_ready_army
+		x = 7
+		y = 21
+		cost = 0.5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_chaos_in_cambodia }
+		completion_reward = {
+			army_experience = 100
+			add_command_power = 100
+			add_ideas = VIN_ready_the_army
+			SIA = {
+				country_event =  thailand.2
+			}
+			hidden_effect = {
+				SIA = {
+				diplomatic_relation = { 
+					country = CMK
+					relation = guarantee 
+					active = yes
+				
+			}
+		}
+     }
+	 }
+	}
+	 
+	 focus = {
+		id = VIN_call_laos_ally
+		icon = GFX_VIN_focus_laos_army
+		x = 6
+		y = 22
+		cost = 0.5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_ready_the_army }
+		completion_reward = {
+	   LAO = { 
+		army_experience = 100
+		add_equipment_to_stockpile = {
+			type = infantry_weapons
+			amount = 1800
+			producer = SOV
+		}
+		add_equipment_to_stockpile = {
+			type = mbt_tank_equipment
+			amount = 50
+			producer = SOV
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 100
+			producer = SOV
+		}
+	   }
+	   give_military_access = LAO
+     }
+	 }
+	 focus = {
+		id = VIN_mobilize_their_army
+		icon = GFX_focus_mobilize
+		x = 6
+		y = 23
+		cost = 0.5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_call_laos_ally }
+		completion_reward = {
+			LAO = {
+				load_oob = LAO_indochina_war
+			}
+     }
+	 }
+	 focus = {
+		id = VIN_reorganize_cambodian_army
+		icon = GFX_VIN_focus_cambodian_army
+		x = 8
+		y = 22
+		cost = 0.5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_ready_the_army }
+		completion_reward = {
+			CAM = { 
+				
+				add_equipment_to_stockpile = {
+					type = infantry_weapons
+					amount = 2500
+					producer = SOV
+				}
+				add_equipment_to_stockpile = {
+					type = mbt_tank_equipment
+					amount = 50
+					producer = SOV
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 100
+					producer = SOV
+				}
+				create_field_marshal = {
+					name = "Heng Sarim"
+					picture = "Heng_Samrin.png"
+					skill = 2
+					attack_skill = 2
+					defense_skill = 3
+					planning_skill = 2
+					logistics_skill = 1
+				}
+			   }
+			   give_military_access = CAM
+     }
+	 }
+	 focus = {
+		id = VIN_send_military_advisor
+		icon = GFX_VIN_focus_advisor
+		x = 8
+		y = 23
+		cost = 0.5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_reorganize_cambodian_army }
+		completion_reward = {
+			CAM = {
+				army_experience = 100
+				add_ideas = CAM_vin_advisor
+			}
+			set_nationality = {
+				target_country = CAM
+				character = VIN_Nguyen_Trung_Thu
+			}
+		}
+     }
+	 
+	 focus = {
+		id = VIN_begin_the_liberation_war
+		icon = GFX_VIN_focus_liberate_cambodia
+		x = 7
+		y = 24
+		cost = 1.8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_send_military_advisor }
+		prerequisite = { focus = VIN_mobilize_their_army }
+		completion_reward = {
+			hidden_effect = {
+			SIA = {
+				create_faction = "Indochina War - Anti Communist Faction"
+				SIA = { add_to_faction = CMK }
+				add_ideas =  VIN_Indochina_war
+				add_war_support = 0.1
+			}
+			CAM = {
+				create_faction = "Indochina War - Communist Faction"
+				CAM = { add_to_faction = LAO }
+			}
+			CAM = {
+			declare_war_on = {
+				target = CMK
+				type = annex_everything
+				
+			}
+			add_war_support = 0.35
+		     }
+			LAO = {
+				declare_war_on = {
+					target = CMK
+					type = annex_everything
+				}
+				add_ideas =  VIN_Indochina_war
+				add_war_support = 0.4
+				
+			}
+		}
+			custom_effect_tooltip = vin_indochina_war
+			CAM = {
+				add_ideas = CAM_indochina_war 
+
+			}
+			hidden_effect = {
+				CMK = {
+					add_ideas = CAM_indochina_war 
+				}
+			}
+			hidden_effect = {
+				news_event = { id = old_times_news.88 }
+		
+				 }
+			add_ideas =  VIN_Indochina_war
+			add_ideas = VIN_increased_volunteers
+			remove_ideas = VIN_ready_the_army
+			country_event = vin.34
+			set_country_flag = VIN_indochina_war_started
+     }
+	 }
+	 focus = {
+		id = VIN_mobilize_the_economy
+		icon = GFX_focus_generic_war_communism
+		x = 11
+		y = 25
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_begin_the_liberation_war }
+		available = { has_idea = VIN_Indochina_war }
+		completion_reward = {
+			add_ideas = war_economy
+			add_political_power = -200
+     }
+	 }
+	 focus = {
+		id = VIN_aid_cambodia
+		icon = VIN_aid_cam
+		x = 10
+		y = 26
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_mobilize_the_economy }
+		available = { has_idea = VIN_Indochina_war }
+		completion_reward = {
+			CAM = {
+			add_offsite_building = { type = arms_factory level = 2 }
+			add_equipment_to_stockpile = {
+					type = infantry_weapons
+					amount = 2500
+					producer = SOV
+				}
+			}
+		
+     }
+	 }
+	 focus = {
+		id = VIN_aid_laos
+		icon = VIN_aid_laos
+		x = 12
+		y = 26
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_mobilize_the_economy }
+		available = { has_idea = VIN_Indochina_war }
+		completion_reward = {
+
+			LAO = {
+				add_offsite_building = { type = arms_factory level = 1 }
+				add_equipment_to_stockpile = {
+					type = infantry_weapons
+					amount = 2500
+					producer = SOV
+				}
+				}
+     }
+	 }
+	 focus = {
+		id = VIN_seek_help
+		icon = GFX_focus_SOV_fund_the_communist_world
+		x = 11
+		y = 27
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_aid_cambodia }
+		prerequisite = { focus = VIN_aid_laos }
+		available = { has_idea = VIN_Indochina_war }
+		completion_reward = {
+		SOV = {
+		country_event = {id = vin.27}
+		}
+		PRC = {
+		country_event = {id = vin.27}
+		}		
+     }
+	 }
+	 focus = {
+		id = VIN_volunteer_army
+		icon = VIN_vietnamese_volunteer_army
+		x = 3
+		y = 25
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_begin_the_liberation_war }
+		available = { has_idea = VIN_Indochina_war }
+		completion_reward = {
+			CAM = {
+				add_manpower = 80000
+			}
+			LAO = {
+				add_manpower = 50000
+			}
+			add_political_power = 50
+     }
+	 }
+	 focus = {
+		id = VIN_the_righteous_war
+		icon = GFX_focus_VIN_righteous_war
+		x = 7
+		y = 26
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_volunteer_army }
+		available = { has_idea = VIN_Indochina_war }
+		completion_reward = {
+			add_war_support = 0.05
+			swap_ideas = {
+				add_idea = VIN_increased_volunteers_1
+				remove_idea = VIN_increased_volunteers
+			}
+     }
+	 }
+	 focus = {
+		id = VIN_for_cambodia
+		icon = GFX_SOV_increase_ties_with_warsaw_pact
+		x = 6
+		y = 27
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_the_righteous_war }
+		available = { has_idea = VIN_Indochina_war }
+		completion_reward = {
+			CAM = {
+				add_war_support = 0.05
+				add_popularity = {
+			ideology = reformed_communism
+			popularity = 0.05
+			swap_ideas = {
+				add_idea = CAM_vin_advisor_1
+				remove_idea =  CAM_vin_advisor
+			}
+		}
+			}
+     }
+	 }
+	 focus = {
+		id = VIN_for_us
+		icon = GFX_focus_VIN_for_the_fatherland
+		x = 8
+		y = 27
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_the_righteous_war }
+		available = { has_idea = VIN_Indochina_war }
+		completion_reward = {
+			add_stability = 0.05
+			swap_ideas = {
+				add_idea = VIN_increased_volunteers_2
+				remove_idea = VIN_increased_volunteers_1
+			}
+     }
+	 }
+	 focus = {
+		id = VIN_HQ
+		icon = GFX_VIN_focus_command_hq
+		x = 3
+		y = 26
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_volunteer_army }
+		available = { has_idea = VIN_Indochina_war }
+		completion_reward = {
+			add_ideas = VIN_operation_cam 
+     }
+	 }
+	 focus = {
+		id = VIN_ensure_supply
+		icon = GFX_focus_SOV_the_road_of_life
+		x = 2
+		y = 27
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_HQ }
+		available = { has_idea = VIN_Indochina_war }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = VIN_operation_cam
+				add_idea = VIN_operation_cam_1
+			}
+     }
+	 }
+	 focus = {
+		id = VIN_call_the_airforce
+		icon = GFX_focus_IRQ_planes
+		x = 4
+		y = 27
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_HQ }
+		available = { has_idea = VIN_Indochina_war }
+		completion_reward = {
+			add_timed_idea = {
+    idea = VIN_call_air_force 
+    days = 180
+}
+     }
+	 }
+	 focus = {
+		id = VIN_war_in_the_shadow
+		icon = GFX_VIN_focus_TBQP
+		x = 0
+		y = 26
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_volunteer_army }
+		available = { has_idea = VIN_Indochina_war }
+		completion_reward = {
+		if = {																			  #just pirate the dlcs
+			limit = {has_dlc = "La Resistance"}											  #What if they dont pirate dlcs #Fuck em
+	
+			add_intel = {
+    target = SIA
+    civilian_intel = 20
+    army_intel = 20
+    navy_intel = 10
+    airforce_intel = 20
+}
+	add_intel = {
+    target = CMK
+    civilian_intel = 20
+    army_intel = 20
+    navy_intel = 10
+    airforce_intel = 20
+}
+		}
+		else = {
+		add_manpower = 1000
+		}
+
+     }
+	 }
+	 focus = {
+		id = VIN_sabotage_FUNCINPEC
+		icon = GFX_focus_VIN_sabotage_cam
+		x = 0
+		y = 27
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_war_in_the_shadow }
+		available = { has_idea = VIN_Indochina_war }
+		completion_reward = {
+			CMK = {
+				add_war_support = -0.08
+				add_stability = -0.05
+			}
+     }
+	 }
+    ######POST WAR####
+	focus = {
+		id = VIN_victory
+		icon = GFX_VIN_focus_chaos_in_cambodia
+		x = 26
+		y = 9
+		cost = 2
+		available = {
+			always = no
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		mutually_exclusive = { focus = VIN_defeat }
+		completion_reward = {
+	
+     }
+	 }
+	 focus = {
+		id = VIN_sia_garrison_troops
+		icon = GFX_focus_mobilize
+		x = 26
+		y = 10
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_victory }
+		completion_reward = {
+			add_ideas = VIN_garrison_troop
+	 SIA = {
+		add_ideas = VIN_garrison_troop_for_SIA
+	 }
+     }
+	 }
+	 focus = {
+		id = VIN_communist_thailand
+		icon = GFX_VIN_focus_com_thailand
+		x = 25
+		y = 11
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_sia_garrison_troops }
+		mutually_exclusive = { focus = VIN_unity_thailand }
+		completion_reward = {
+			SIA = {
+				add_popularity = {
+					ideology = reformed_communism
+					popularity = 0.2
+				}
+				add_stability = -0.2
+				set_party_name = { 
+					ideology = reformed_communism
+					long_name = "Phak Khommiwnit Haeng Prathet Thai (Communist Party of Thailand)"
+					name = "Communist Party of Thailand"
+				}	
+			}
+			add_stability = 0.02
+	
+     }
+	 
+	 }
+	 focus = {
+		id = VIN_unity_thailand
+		icon = GFX_VIN_focus_united_red_sia
+		x = 27
+		y = 11
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_sia_garrison_troops }
+		mutually_exclusive = { focus = VIN_communist_thailand }
+		completion_reward = {
+			SIA = {
+				set_popularities = {
+					social_democracy = 40
+					communism = 20
+					reformed_communism = 40
+				}
+				set_party_name = { 
+					ideology = reformed_communism
+					long_name = "Socialist Unity Party of Thailand"
+					name = "Socialist Unity Party of Thailand"
+				}	
+				add_stability = 0.03
+     }
+	 add_stability = -0.03
+
+	  }
+	}
+	  focus = {
+		id = VIN_red_sia_army
+		icon = GFX_VIN_focus_thai_people_army
+		x = 26
+		y = 12
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_unity_thailand 
+ focus = VIN_communist_thailand }
+		completion_reward = {
+			hidden_effect = {
+				SIA = {
+					load_oob = SIA_commie
+				 }
+			}
+			custom_effect_tooltip = VIN_rebuild_thai_army	
+	
+     }
+	  }
+	  focus = {
+		id = VIN_rebuild_cambodia
+		icon = GFX_focus_generic_construct_2
+		x = 26
+		y = 13
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_red_sia_army }
+		completion_reward = {
+	   LAO = {
+		add_timed_idea = {
+			idea = CAM_rebuild
+			days = 180
+		} 
+	   }
+	   CAM = { 
+		add_timed_idea = {
+		idea = CAM_rebuild
+		days = 180
+	} 
+}
+	SIA = { 
+		add_timed_idea = {
+		idea = CAM_rebuild
+		days = 180
+	} 
+}
+    hidden_effect = {
+		complete_national_focus = VIN_nong_duc_manh
+	}
+     }
+	  }
+
+	 focus = {
+		id = VIN_defeat
+		icon = GFX_VIN_focus_chaos_in_cambodia
+		x = 30
+		y = 9
+		cost = 2
+		available = {
+			always = no
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		mutually_exclusive = { focus = VIN_victory }
+		completion_reward = {
+	
+     }
+	 }
+	 focus = {
+		id = VIN_unavoidable_crisis
+		icon = GFX_VIN_focus_chaos_in_cambodia
+		x = 30
+		y = 10
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_defeat }
+		completion_reward = {
+	add_ideas =   VIN_economic_crisis
+     }
+	 }
+	 focus = {
+		id = VIN_salvage_what_we_can
+		icon = GFX_VIN_focus_chaos_in_cambodia
+		x = 29
+		y = 11
+		cost = 2
+
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_unavoidable_crisis }
+		completion_reward = {
+	  add_manpower = 100000
+	  add_stability = -0.2
+	  CAM = {
+		set_nationality = {
+				target_country = VIN
+				character = CAM_Tea_Banh
+			}
+	  }
+	  CAM = {
+			set_nationality = {
+				target_country = VIN
+				character = CAM_Ke_Kim_Yan
+			}
+	  }
+		LAO = {
+			set_nationality = {
+				target_country = VIN
+				character = LAO_Douangchay_Phichit
+			}
+			
+		}
+	 }
+	 }
+	  focus = {
+		id = VIN_who_to_blame
+		icon = GFX_VIN_focus_chaos_in_cambodia
+		x = 31
+		y = 11
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_unavoidable_crisis }
+		completion_reward = {
+	  add_ideas = VIN_party_infighting 
+     }
+	 }
+	  focus = {
+		id = VIN_a_change_in_course
+		icon = GFX_VIN_focus_chaos_in_cambodia
+		x = 30
+		y = 12
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_who_to_blame }
+		prerequisite = {focus = VIN_salvage_what_we_can
+		 }
+		completion_reward = {
+	complete_national_focus = VIN_rise_of_reformist
+	swap_ideas = {
+		add_idea = VIN_four_pillars_2
+		remove_idea = VIN_four_pillars_1
+	}
+     }
+	 }
+	 
+	 ###NONG DUC MANH PATH#####
+	 focus = {
+		id = VIN_nong_duc_manh
+		icon = GFX_VIN_focus_Nong_Duc_Manh_gen_sec
+		x = 30
+		y = 15
+		cost = 2
+		available = {
+			always = no
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		
+	
+		completion_reward = {
+	
+     }
+	 }
+	 focus = {
+		id = VIN_symbol_of_stability
+		icon = GFX_focus_VIN_manh_symbol
+		x = 30
+		y = 16
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_nong_duc_manh }
+	
+		completion_reward = {
+			add_country_leader_trait = symbol_of_unity_and_stability
+			add_stability = 0.03
+			add_popularity = {
+				ideology = reformed_communism
+				popularity = 0.02
+			}
+           
+     }
+	 }
+	 focus = {
+		id = VIN_socialist_patriotism
+		icon = GFX_focus_generic_socialist_fist
+		x = 25
+		y = 17
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_symbol_of_stability }
+	
+		completion_reward = {
+	   add_ideas = VIN_soc_pat
+	   country_event = { id = vin.35 }
+
+     }
+	 }
+	 focus = {
+		id = VIN_promote_ethnic_unity
+		icon = GFX_focus_generic_socialism_unity
+		x = 24
+		y = 18
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_socialist_patriotism }
+	
+		completion_reward = {
+	    add_ideas = VIN_great_national_unity_bloc
+		country_event = {
+			id = vin.38
+		}
+     }
+	 }
+	 focus = {
+		id = VIN_embrace_collectivism
+		icon = GFX_focus_ICE_embrace_the_workers_revolution
+		x = 26
+		y = 18
+		cost = 2
+
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_socialist_patriotism }
+	
+		completion_reward = {
+	    swap_ideas = {
+				remove_idea = VIN_soc_pat
+				add_idea = VIN_soc_pat_1
+
+		}
+     }
+	 }
+	 focus = {
+		id = VIN_status_quo
+		icon = GFX_focus_SOV_keep_old_guard
+		x = 25
+		y = 19
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_promote_ethnic_unity }
+		prerequisite = { focus = VIN_embrace_collectivism }
+	completion_reward = {
+	add_ideas = VIN_status_quo_party 
+     }
+	 }
+	 focus = {
+		id = VIN_social_contact
+		icon = GFX_SOV_prepare_the_inevitable
+		x = 22
+		y = 20
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_status_quo}
+	
+		completion_reward = {
+			swap_ideas = {
+				add_idea = VIN_soc_pat_2
+				remove_idea = VIN_soc_pat_1
+			}
+	 }
+	 }
+	 focus = {
+		id = VIN_stregthen_fatherland_front
+		icon = GFX_focus_VIN_fatherland_front
+		x = 24
+		y = 20
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_status_quo }
+	
+		completion_reward = {
+			swap_ideas = {
+			remove_idea = VIN_great_national_unity_bloc
+			add_idea = VIN_great_national_unity_bloc_1
+			}
+	 }
+	 }
+	 focus = {
+		id = VIN_minor_anti_corruption_campaign
+		icon = GFX_SOV_clear_politburo
+		x = 26
+		y = 20
+		cost = 2
+
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_status_quo}
+	
+		completion_reward = {
+			swap_ideas = {
+				remove_idea =  VIN_corruption_4
+				add_idea = VIN_corruption_nong_duc_manh
+			}
+	 }
+	 }
+	 focus = {
+		id = VIN_army_modernization_1
+		icon = VIN_PAVN
+		x = 28
+		y = 20
+		cost = 2
+
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_status_quo }
+	
+		completion_reward = {
+			complete_national_focus = VIN_army
+	 }
+	 }
+	 focus = {
+		id = VIN_united_party
+		icon = GFX_focus_VIN_the_party
+		x = 25
+		y = 21
+		cost = 2
+
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_minor_anti_corruption_campaign }
+		prerequisite = { focus = VIN_stregthen_fatherland_front }
+		prerequisite = { focus = VIN_social_contact }
+		prerequisite = { focus = VIN_army_modernization_1 }
+	
+		completion_reward = {
+			remove_ideas = VIN_party_infighting
+			country_event = { id= vin.48 }
+	 }
+	 }
+	 focus = {
+		id = VIN_nong_duc_manh_economy
+		icon = GFX_VIN_focus_chaos_in_cambodia
+		x = 35
+		y = 17
+		cost = 2
+
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_symbol_of_stability }
+	
+		completion_reward = {
+			swap_ideas = {
+				add_idea = VIN_western_embargo_1
+				remove_idea = VIN_western_embargo
+			}
+	 }
+	 }
+	 focus = {
+		id = VIN_industrial_powerhouse
+		icon = GFX_focus_SOV_sez_committee
+		x = 35
+		y = 18
+		cost = 2
+	
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_nong_duc_manh_economy }
+	
+		completion_reward = {
+			swap_ideas = {
+				add_idea = VIN_western_embargo_2
+				remove_idea = VIN_western_embargo_1
+			}
+	 }
+	 }
+	 focus = {
+		id = VIN_self_reliant
+		icon = GFX_focus_generic_economic_planning
+		x = 33
+		y = 19
+		cost = 2
+		prerequisite = { focus = VIN_industrial_powerhouse }
+	
+		completion_reward = {
+			if = { # Dream focus #
+				limit = {
+					VIN = { has_idea = VIN_western_embargo_2 }
+				}
+				swap_ideas = {
+					add_idea = VIN_western_embargo_3a
+					remove_idea = VIN_western_embargo_2
+				}
+			}
+			else_if = { # Dream focus + Cooperation focus #
+				limit = {
+					VIN = { has_idea = VIN_western_embargo_4a }
+				}
+				swap_ideas = {
+					add_idea = VIN_western_embargo_3b
+					remove_idea = VIN_western_embargo_4a
+				}
+			}
+			else_if = { # Dream focus + Cooperation focus + Party focus #
+				limit = {
+					VIN = { has_idea = VIN_western_embargo_5a }
+				}
+				swap_ideas = {
+					add_idea = VIN_western_embargo_3c
+					remove_idea = VIN_western_embargo_5a
+				}
+			}
+		}
+	 }
+	 focus = {
+		id = VIN_invest_science_and_tech
+		icon = GFX_focus_generic_tech_improve
+		x = 31
+		y = 20
+		cost = 2
+
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_self_reliant }
+	
+		completion_reward = {
+			add_research_slot = 1
+			if = { # Dream focus + Reliant #
+				limit = {
+					VIN = { has_idea = VIN_western_embargo_3a }
+				}
+				swap_ideas = {
+					add_idea = VIN_western_embargo_6a
+					remove_idea = VIN_western_embargo_3a
+				}
+			}
+			else_if = { # Dream focus + Reliant + Labour #
+				limit = {
+					VIN = { has_idea = VIN_western_embargo_7a }
+				}
+				swap_ideas = {
+					add_idea = VIN_western_embargo_8a
+					remove_idea = VIN_western_embargo_7a
+				}
+			}
+			else_if = { # Dream focus + Reliant + Cooperation #
+				limit = {
+					VIN = { has_idea = VIN_western_embargo_3b }
+				}
+				swap_ideas = {
+					add_idea = VIN_western_embargo_4b
+					remove_idea = VIN_western_embargo_3b
+				}
+			}
+			else_if = { # Dream focus + Reliant + Cooperation + Labour #
+				limit = {
+					VIN = { has_idea = VIN_western_embargo_4c }
+				}
+				swap_ideas = {
+					add_idea = VIN_western_embargo_4d
+					remove_idea = VIN_western_embargo_4c
+				}
+			}
+			else_if = { # Dream focus + Reliant + Cooperation + Party #
+				limit = {
+					VIN = { has_idea = VIN_western_embargo_3c }
+				}
+				swap_ideas = {
+					add_idea = VIN_western_embargo_9b
+					remove_idea = VIN_western_embargo_3c
+				}
+			}
+			else_if = { # Dream focus + Reliant + Cooperation + Party + Labour #
+				limit = {
+					VIN = { has_idea = VIN_western_embargo_9a }
+				}
+				swap_ideas = {
+					add_idea = VIN_western_embargo_9c
+					remove_idea = VIN_western_embargo_9a
+				}
+			}
+	 	}
+	 }
+	 focus = {
+		id = VIN_skilled_labour_force
+		icon = GFX_focus_SOV_quantity_over_quality
+		x = 33
+		y = 20
+		cost = 2
+
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_self_reliant }
+	
+		completion_reward = {
+			if = { # Dream focus + Reliant #
+				limit = {
+					VIN = { has_idea = VIN_western_embargo_3a }
+				}
+				swap_ideas = {
+					add_idea = VIN_western_embargo_7a
+					remove_idea = VIN_western_embargo_3a
+				}
+			}
+			else_if = { # Dream focus + Reliant + Science #
+				limit = {
+					VIN = { has_idea = VIN_western_embargo_6a }
+				}
+				swap_ideas = {
+					add_idea = VIN_western_embargo_8a
+					remove_idea = VIN_western_embargo_6a
+				}
+			}
+			else_if = { # Dream focus + Reliant + Cooperation #
+				limit = {
+					VIN = { has_idea = VIN_western_embargo_3b }
+				}
+				swap_ideas = {
+					add_idea = VIN_western_embargo_4c
+					remove_idea = VIN_western_embargo_3b
+				}
+			}
+			else_if = { # Dream focus + Reliant + Cooperation + Science #
+				limit = {
+					VIN = { has_idea = VIN_western_embargo_4b }
+				}
+				swap_ideas = {
+					add_idea = VIN_western_embargo_4d
+					remove_idea = VIN_western_embargo_4b
+				}
+			}
+			else_if = { # Dream focus + Reliant + Cooperation + Party #
+				limit = {
+					VIN = { has_idea = VIN_western_embargo_3c }
+				}
+				swap_ideas = {
+					add_idea = VIN_western_embargo_9a
+					remove_idea = VIN_western_embargo_3c
+				}
+			}
+			else_if = { # Dream focus + Reliant + Cooperation + Party + Science #
+				limit = {
+					VIN = { has_idea = VIN_western_embargo_9b }
+				}
+				swap_ideas = {
+					add_idea = VIN_western_embargo_9c
+					remove_idea = VIN_western_embargo_9b
+				}
+			}
+	 	}
+	 }
+	  focus = {
+		id = VIN_cooperation
+		icon = GFX_focus_generic_liberalization_economy
+		x = 37
+		y = 19
+		cost = 2
+
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_industrial_powerhouse }
+	
+		completion_reward = {
+			if = { # Dream focus #
+				limit = {
+					VIN = { has_idea = VIN_western_embargo_2 }
+				}
+				swap_ideas = {
+					add_idea = VIN_western_embargo_4a
+					remove_idea = VIN_western_embargo_2
+				}
+			}
+			else_if = { # Dream focus + Self Reliant #
+				limit = {
+					VIN = { has_idea = VIN_western_embargo_3a }
+				}
+				swap_ideas = {
+					add_idea = VIN_western_embargo_3b
+					remove_idea = VIN_western_embargo_3a
+				}
+			}
+			else_if = { # Dream focus + Self Reliant + Science #
+				limit = {
+					VIN = { has_idea = VIN_western_embargo_6a }
+				}
+				swap_ideas = {
+					add_idea = VIN_western_embargo_4b
+					remove_idea = VIN_western_embargo_6a
+				}
+			}
+			else_if = { # Dream focus + Self Reliant + Labour #
+				limit = {
+					VIN = { has_idea = VIN_western_embargo_7a }
+				}
+				swap_ideas = {
+					add_idea = VIN_western_embargo_4c
+					remove_idea = VIN_western_embargo_7a
+				}
+			}
+			else_if = { # Dream focus + Self Reliant + Science + Labour #
+				limit = {
+					VIN = { has_idea = VIN_western_embargo_8a }
+				}
+				swap_ideas = {
+					add_idea = VIN_western_embargo_4d
+					remove_idea = VIN_western_embargo_8a
+				}
+			}
+		}
+	 }
+	 focus = {
+		id = VIN_indochina_economic_sphere
+		icon = GFX_focus_VIN_economic_sphere
+		x = 37
+		y = 20
+		cost = 2
+
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_cooperation }
+	
+		completion_reward = {
+			country_event = { id = vin.39 }
+	 }
+	 }
+	 focus = {
+		id = VIN_allow_party_member
+		icon = GFX_focus_VIN_allow_party_member
+		x = 39
+		y = 20
+		cost = 2
+
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_cooperation }
+	
+		completion_reward = {
+			if = { # Dream focus + Cooperation #
+				limit = {
+					VIN = { has_idea = VIN_western_embargo_4a }
+				}
+				swap_ideas = {
+					add_idea = VIN_western_embargo_5a
+					remove_idea = VIN_western_embargo_4a
+				}
+			}
+			else_if = { # Dream focus + Cooperation + Reliant #
+				limit = {
+					VIN = { has_idea = VIN_western_embargo_3b }
+				}
+				swap_ideas = {
+					add_idea = VIN_western_embargo_3c
+					remove_idea = VIN_western_embargo_3b
+				}
+			}
+			else_if = { # Dream focus + Cooperation + Reliant + Labour #
+				limit = {
+					VIN = { has_idea = VIN_western_embargo_4c }
+				}
+				swap_ideas = {
+					add_idea = VIN_western_embargo_9a
+					remove_idea = VIN_western_embargo_4c
+				}
+			}
+			else_if = { # Dream focus + Cooperation + Reliant + Science #
+				limit = {
+					VIN = { has_idea = VIN_western_embargo_4b }
+				}
+				swap_ideas = {
+					add_idea = VIN_western_embargo_9b
+					remove_idea = VIN_western_embargo_4b
+				}
+			}
+			else_if = { # Dream focus + Cooperation + Reliant + Science + Labour #
+				limit = {
+					VIN = { has_idea = VIN_western_embargo_4d }
+				}
+				swap_ideas = {
+					add_idea = VIN_western_embargo_9c
+					remove_idea = VIN_western_embargo_4d
+				}
+			}
+			add_stability = -0.1
+			country_event = {
+				id = vin.50
+			}
+	 	}
+	 }
+	 focus = {
+		id = VIN_20years_industrialisation
+		icon = GFX_focus_SOV_fund_russian_industries
+		x = 35
+		y = 21
+		cost = 2
+
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_indochina_economic_sphere }
+		prerequisite = { focus = VIN_allow_party_member }
+		prerequisite = { focus = VIN_skilled_labour_force }
+		prerequisite = { focus = VIN_invest_science_and_tech }
+	
+		completion_reward = {
+			add_timed_idea = {
+				idea = VIN_industrialization_in_20
+				days = 3000
+			}
+	 }
+	 }
+	 focus = {
+		id = VIN_10th_congress
+		icon = GFX_VIN_focus_chaos_in_cambodia
+		x = 30
+		y = 22
+		cost = 2
+        available = {
+			date > 2006.4.1
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_20years_industrialisation }
+		prerequisite = { focus = VIN_united_party }
+
+	
+		completion_reward = {
+			country_event = { id= vin.41 }
+	 }
+	 }
+	 focus = {
+		id = VIN_nguyen_phu_trong_1
+		icon = GFX_focus_VIN_nguyen_phu_trong
+		x = 34
+		y = 23
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_10th_congress }
+	
+		completion_reward = {
+         hidden_effect = {
+			remove_country_leader_trait = symbol_of_unity_and_stability
+		 }
+	 }
+	 }
+	 #Central Steering Committee for Anti-Corruption 
+	 focus = {
+		id = VIN_trong_anti_corruption_campaign
+		icon = GFX_focus_VIN_the_party
+		x = 34
+		y = 24
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_nguyen_phu_trong_1 }
+	
+		completion_reward = {
+			swap_ideas = {
+				add_idea = VIN_corruption_nong_duc_manh_1
+                remove_idea = VIN_corruption_nong_duc_manh
+			}
+          country_event = { id = vin.43 }
+	 }
+	 }
+	 #blazing furnace
+	 focus = {
+		id = VIN_blazing_furnace
+		icon = GFX_focus_VIN_trong_anti_corrupt
+		x = 32
+		y = 25
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_trong_anti_corruption_campaign }
+	
+		completion_reward = {
+			add_stability = -0.05
+			swap_ideas = {
+				add_idea = VIN_corruption_nong_duc_manh_2
+				remove_idea = VIN_corruption_nong_duc_manh_1
+			}
+	 }
+	 }
+	 
+	 focus = {
+		id = VIN_no_exception
+		icon = GFX_generic_anti_corruption
+		x = 32
+		y = 26
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_blazing_furnace }
+	
+		completion_reward = {
+			swap_ideas = {
+				add_idea = VIN_corruption_nong_duc_manh_3
+				remove_idea = VIN_corruption_nong_duc_manh_2
+			}
+	 }
+	 }
+	 focus = {
+		id = VIN_anti_revisionism
+		icon = GFX_focus_generic_leninism
+		x = 36
+		y = 25
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_trong_anti_corruption_campaign }
+	
+		completion_reward = {
+			add_popularity = {
+				ideology = reformed_communism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			swap_ideas = {
+				add_idea = VIN_status_quo_party_1
+				remove_idea = VIN_status_quo_party
+			}
+			country_event = { id = vin.44 }
+	 }
+	 }
+	 focus = {
+		id = VIN_promote_self_crit
+		icon = GFX_focus_generic_talk
+		x = 36
+		y = 26
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_anti_revisionism }
+	
+		completion_reward = {
+			country_event = { id = vin.45 }
+			add_political_power = 50
+	 }
+	 }
+	 focus = {
+		id = VIN_path_to_socialism
+		icon = GFX_VIN_focus_ho_chi_minh
+		x = 34
+		y = 27
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_promote_self_crit }
+		prerequisite = { focus = VIN_no_exception }
+	
+		completion_reward = {
+         swap_ideas = {
+			add_idea =  VIN_industrialization_in_20_1
+			remove_idea = VIN_industrialization_in_20
+		 }
+		 remove_ideas = VIN_party_infighting
+		 country_event = { id = vin.46 }
+	 }
+	 }
+	 focus = {
+		id = VIN_nguyen_van_an
+		icon = GFX_VIN_focus_chaos_in_cambodia
+		x = 26
+		y = 23
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_10th_congress }
+	
+		completion_reward = {
+
+	 }
+	 }
+	 ###REFORMIST PATH#####
+	 focus = {
+		id = VIN_rise_of_reformist
+		icon = GFX_VIN_focus_Nong_Duc_Manh_gen_sec
+		x = 57
+		y = 15
+		cost = 2
+		available = {
+			always = no
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		
+	
+		completion_reward = {
+	
+     }
+	 }
+	 focus = {
+		id = VIN_ngueyn_minh_triet
+		icon = GFX_focus_VIN_nguyen_minh_triet
+		x = 49
+		y = 16
+		cost = 2
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "'Ngueyn Minh Triet' was elected in the 11th National Assembly"		
+				has_country_flag = VIN_ngueyn_minh_triet_enable
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_rise_of_reformist }
+	
+		completion_reward = {
+			hidden_effect = {
+	retire_country_leader = yes
+		}
+		promote_character = VIN_Nguyen_Minh_Triet
+		
+	   add_popularity = {
+			ideology = reformed_communism
+			popularity = 0.1
+		}
+		swap_ideas = {
+			add_idea = VIN_party_infighting_triet_1 
+			remove_idea = VIN_party_infighting 
+		}
+		add_ideas = VIN_refomrist_arise
+
+     }
+	 }
+	 focus = {
+		id = VIN_heir_of_vo_van_kiet
+		icon = GFX_focus_VIN_heir_of_vo_van_kiet
+		x = 49
+		y = 17
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_ngueyn_minh_triet }
+	
+		completion_reward = {
+	   add_country_leader_trait = heir_of_vo_van_kiet
+	   country_event = {
+		id = vin.51
+	   }
+     }
+	 }
+
+	  focus = {
+		id = VIN_begin_the_democratization
+		icon = GFX_focus_generic_liberty
+		x = 46
+		y = 18
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_heir_of_vo_van_kiet }
+	
+		completion_reward = {
+	
+     }
+	 }
+	 focus = {
+		id = VIN_relax_censorship
+		icon = GFX_VIN_focus_Nong_Duc_Manh_gen_sec
+		x = 44
+		y = 19
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_begin_the_democratization }
+	
+		completion_reward = {
+	
+     }
+	 }
+	 focus = {
+		id = VIN_always_alert
+		icon = GFX_VIN_focus_Nong_Duc_Manh_gen_sec
+		x = 44
+		y = 20
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_relax_censorship }
+	
+		completion_reward = {
+	      
+     }
+	 }
+	 focus = {
+		id = VIN_national_harmony
+		icon = GFX_VIN_focus_Nong_Duc_Manh_gen_sec
+		x = 48
+		y = 19
+		cost = 2
+	
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_begin_the_democratization }
+	
+		completion_reward = {
+	
+     }
+	 }
+	  focus = {
+		id = VIN_vietnam_for_all
+		icon = GFX_VIN_focus_Nong_Duc_Manh_gen_sec
+		x = 48
+		y = 20
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_begin_the_democratization }
+	
+		completion_reward = {
+	
+     }
+	 }
+	 focus = {
+		id = VIN_united_front_strategy
+		icon = GFX_VIN_focus_Nong_Duc_Manh_gen_sec
+		x = 46
+		y = 21
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_always_alert }
+		prerequisite = { focus = VIN_vietnam_for_all }
+	
+		completion_reward = {
+	
+     }
+	 }
+	  focus = {
+		id = VIN_economic_liberalization
+		icon = GFX_focus_SOV_limited_liberalization
+		x = 53
+		y = 18
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_heir_of_vo_van_kiet }
+
+		completion_reward = {
+	
+     }
+	 }
+	 focus = {
+		id = VIN_equitization_of_state-owned_enterprises
+		icon = GFX_VIN_focus_Nong_Duc_Manh_gen_sec
+		x = 51
+		y = 19
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus = VIN_economic_liberalization }
+
+		completion_reward = {
+
+	
+     }
+	 }
+	 focus = {
+		id = VIN_price_control
+		icon = GFX_VIN_focus_Nong_Duc_Manh_gen_sec
+		x = 51
+		y = 20
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus =  VIN_equitization_of_state-owned_enterprises }
+
+		completion_reward = {
+
+	
+     }
+	 }
+	 focus = {
+		id = VIN_army_reform_triet
+		icon = GFX_VIN_focus_Nong_Duc_Manh_gen_sec
+		x = 53
+		y = 19
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus =  VIN_economic_liberalization }
+
+		completion_reward = { 
+        complete_national_focus = VIN_army
+	 }
+	 }
+	  focus = {
+		id = VIN_army_reform_limit_corp
+		icon = GFX_VIN_focus_Nong_Duc_Manh_gen_sec
+		x = 53
+		y = 20
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus =  VIN_army_reform_triet }
+
+		completion_reward = { 
+        
+	 }
+	 }
+	 focus = {
+		id = VIN_attrack_foreign_investment
+		icon = GFX_VIN_focus_Nong_Duc_Manh_gen_sec
+		x = 55
+		y = 19
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus =  VIN_economic_liberalization }
+
+		completion_reward = { 
+        
+	 }
+	 }
+	 focus = {
+		id = VIN_coop_national_burgoeis
+		icon = GFX_VIN_focus_Nong_Duc_Manh_gen_sec
+		x = 55
+		y = 20
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus =  VIN_attrack_foreign_investment
+		completion_reward = { 
+        
+	 }
+	 }
+	 }
+	  focus = {
+		id = VIN_miracle_on_red_river
+		icon = GFX_VIN_focus_Nong_Duc_Manh_gen_sec
+		x = 53
+		y = 21
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus =  VIN_coop_national_burgoeis }
+			prerequisite = { focus =  VIN_army_reform_limit_corp }
+				prerequisite = { focus =  VIN_price_control }
+		completion_reward = { 
+        
+	 }
+	 }
+	 focus = {
+		id = VIN_new_dawn
+		icon = GFX_VIN_focus_Glorious_labourer
+		x = 49
+		y = 22
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus =  VIN_miracle_on_red_river }
+			prerequisite = { focus =  VIN_united_front_strategy }
+	
+		completion_reward = { 
+        
+	 }
+	 }
+	 ###THE GAMER#####
+	 focus = {
+		id = VIN_mr_X
+		icon = GFX_VIN_focus_Nong_Duc_Manh_gen_sec
+		x = 63
+		y = 16
+		cost = 2
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "'Ngueyn Tan Dung' was elected in the 11th National Assembly"		
+				has_country_flag = VIN_mr_x_enable
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus =  VIN_rise_of_reformist }
+		completion_reward = { 
+        
+	 }
+	 }
+	 focus = {
+		id = VIN_silence_opposition
+		icon = GFX_VIN_focus_Nong_Duc_Manh_gen_sec
+		x = 61
+		y = 17
+		cost = 2
+		available = {
+			always = no
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus =  VIN_mr_X }
+		completion_reward = { 
+        
+	 }
+	 }
+	 focus = {
+		id = VIN_form_his_own_faction
+		icon = GFX_VIN_focus_Nong_Duc_Manh_gen_sec
+		x = 63
+		y = 17
+		cost = 2
+		available = {
+			always = no
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus =  VIN_mr_X }
+		completion_reward = { 
+        
+	 }
+	 }
+	 focus = {
+		id = VIN_appoint_Vu_Huy_Hoang
+		icon = GFX_VIN_focus_Nong_Duc_Manh_gen_sec
+		x = 65
+		y = 17
+		cost = 2
+		available = {
+			always = no
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus =  VIN_mr_X }
+		completion_reward = { 
+        
+	 }
+	 }
+	 focus = {
+		id = VIN_massive_privization
+		icon = GFX_VIN_focus_Nong_Duc_Manh_gen_sec
+		x = 63
+		y = 18
+		cost = 2
+		available = {
+			always = no
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+		prerequisite = { focus =  VIN_appoint_Vu_Huy_Hoang }
+		prerequisite = { focus =  VIN_form_his_own_faction }
+		prerequisite = { focus =  VIN_silence_opposition }
+		completion_reward = { 
+        
+	 }
+	 }
+	
+	#######MILITARY########
+	#PAVN
+	focus = {
+		id = VIN_army
+		icon = VIN_PAVN
+		x = 27
+		y = 0
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = {  }
+		available = {
+        always = no
+        }
+        completion_reward = { 
+        army_experience = 50
+		air_experience = 50
+		navy_experience = 50
+	  }
+	  }
+	#Modernization
+	focus = {
+		id = VIN_army_reform
+		icon = VIN_army_modernization
+		x = 27
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_army }
+        completion_reward = { 
+      
+	  }
+	  }
+	#Ground Force
+	focus = {
+		id = VIN_ground_force
+		icon = VIN_luc_quan
+		x = 27
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_army_reform }
+        completion_reward = { 
+      
+	  }
+	  }
+	 #Navy
+	 focus = {
+		id = VIN_navy
+		icon = VIN_hai_quan
+		x = 23
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_army_reform }
+        completion_reward = { 
+      
+	  }
+	  }
+	 #Air Force
+	 focus = {
+		id = VIN_air_force
+		icon = VIN_khong_quan
+		x = 31
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_army_reform }
+        completion_reward = { 
+      
+	  }
+	  }
+	 #Elite Army
+	 focus = {
+		id = VIN_elite_army
+		icon = VIN_khong_quan
+		x = 26
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_ground_force }
+        completion_reward = { 
+      
+	  }
+	  mutually_exclusive = { 
+			focus = VIN_grand_army
+		}
+	  }
+	 #Grand Army
+	 focus = {
+		id = VIN_grand_army
+		icon = VIN_khong_quan
+		x = 28
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_ground_force }
+        completion_reward = { 
+      
+	  }
+	  mutually_exclusive = { 
+			focus = VIN_elite_army
+		}
+	  }
+	#Expand Reserve
+	 focus = {
+		id = VIN_expand_reserve
+		icon = VIN_khong_quan
+		x = 28
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_ground_force }
+        completion_reward = { 
+      
+	  }
+	  }
+	 #Small Arm Production
+	 focus = {
+		id = VIN_arms_production
+		icon = GFX_focus_SOV_quantity_over_quality
+		x = 28
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_expand_reserve }
+        completion_reward = { 
+      
+	  }
+	  }
+	 #No More Conscription
+	 focus = {
+		id = VIN_end_conscription
+		icon = VIN_khong_quan
+		x = 26
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_elite_army }
+        completion_reward = { 
+      
+	  }
+
+	  }
+	 #Mobile Armed Force
+	 focus = {
+		id = VIN_mobile_force
+		icon = VIN_khong_quan
+		x = 26
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_end_conscription }
+        completion_reward = { 
+      
+	  }
+
+	  }
+	 #Surface
+	 focus = {
+		id = VIN_surface_fleet
+		icon = VIN_hai_quan
+		x = 22
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_navy }
+        completion_reward = { 
+      
+	  }
+	  }
+	 #submarine
+	 focus = {
+		id = VIN_submarine
+		icon = VIN_hai_quan
+		x = 24
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VIN_navy }
+        completion_reward = { 
+      
+	  }
+	  }
+}

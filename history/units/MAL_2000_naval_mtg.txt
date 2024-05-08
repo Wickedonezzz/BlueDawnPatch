@@ -1,0 +1,23 @@
+units = {
+	fleet = {
+		name = "Armada Malaysia"
+		naval_base = 10297 # Lumut #
+		task_force = {
+			name = "Armada Permukaan Malaysia"
+			location = 10297 # Lumut #
+			ship = { name = "KD Jebat" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = MAL version_name = "Jebat Class" } } }
+			ship = { name = "KD Lekiu" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = MAL version_name = "Jebat Class" } } }
+			ship = { name = "KD Kasturi" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = MAL version_name = "Kasturi Class" } } }
+			ship = { name = "KD Lekir" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = MAL version_name = "Kasturi Class" } } }
+			ship = { name = "KD Rahmat" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = MAL version_name = "Rahmat Class" } } }
+
+			ship = { name = "KD Laksamana Hang Nadim" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = MAL creator = IRQ version_name = "Assad Class" } } }
+			ship = { name = "KD Laksamana Tun Abdul Jamil" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = MAL creator = IRQ version_name = "Assad Class" } } }
+			ship = { name = "KD Laksamana Muhammad Amin" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = MAL creator = IRQ version_name = "Assad Class" } } }
+			ship = { name = "KD Laksamana Tan Pusmah" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = MAL creator = IRQ version_name = "Assad Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

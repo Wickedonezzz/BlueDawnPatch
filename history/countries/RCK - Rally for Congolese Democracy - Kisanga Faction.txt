@@ -1,0 +1,65 @@
+﻿capital = 718
+
+set_convoys = 5
+
+set_oob = "RCK_2000"
+
+recruit_character = RCK_Ernest_Wamba_dia_Wamba
+
+add_ideas = COG_africas_world_war
+add_ideas = RCD_tensions
+
+add_ideas = war_economy
+
+add_ideas = usa_aligned_nation
+
+add_ideas = extensive_conscription 
+
+set_technology = {
+	infantry_weapons_1960 = 1
+	towed_artillery_1960 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_air_weapons_1960 = 1
+}
+declare_war_on = {
+	target = COG
+	type = topple_government
+}
+
+set_politics = {
+	ruling_party = liberalism
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 0
+	reformed_communism = 0
+	social_democracy = 5
+	liberalism = 45
+	democratic = 30
+	neutrality = 0
+	paternal_autocracy = 0
+	fascism = 20
+}
+
+diplomatic_relation = {
+	country = RGO
+	relation = military_access
+}
+
+diplomatic_relation = {
+	country = BRD
+	relation = military_access
+}
+
+diplomatic_relation = {
+	country = RWA
+	relation = military_access
+}
+
+diplomatic_relation = {
+	country = UGA
+	relation = military_access
+}

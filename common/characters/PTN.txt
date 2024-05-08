@@ -1,0 +1,18 @@
+characters = {
+
+	PTN_kabir_abdul_rahman = {
+		name = "Kabir Abdul Rahman"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PTN/Kabir_Abdul_Rahman.dds"
+			}
+		}
+		country_leader = {
+			ideology = sunni_islamism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

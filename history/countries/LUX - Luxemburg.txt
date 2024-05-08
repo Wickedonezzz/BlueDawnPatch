@@ -1,0 +1,41 @@
+﻿capital = 8
+
+set_war_support = 0.1
+set_stability = 0.8
+
+set_technology = {
+	infantry_weapons_1960 = 1
+	infantry_weapons_1980 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_air_weapons_1960 = 1
+	tech_support = 1
+	tech_motorised_1960 = 1
+	tech_train_1960 = 1
+}
+
+set_oob = "LUX_2000"
+
+recruit_character = LUX_jean_claude
+recruit_character = LUX_ali_ruckert
+
+add_ideas = GER_eu
+
+add_ideas = usa_aligned_nation
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 0
+	reformed_communism = 4
+	social_democracy = 24
+	liberalism = 32
+	democratic = 40
+	neutrality = 0
+	paternal_autocracy = 0
+	fascism = 0
+}

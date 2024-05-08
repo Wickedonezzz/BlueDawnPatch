@@ -1,0 +1,57 @@
+air_wings = {
+	# Land Wings #
+	178 = {
+		# Carrier Fighters -- F/A-18
+		carrier_fighter_equipment_2 =  { # F/A-18 #
+			owner = "SPR" 
+			creator = USA
+			amount = 40
+		}
+	}
+	41 = {
+		# Carrier Fighters -- F/A-18
+		carrier_fighter_equipment_2 =  { # F/A-18 #
+			owner = "SPR" 
+			creator = USA
+			amount = 50
+		}
+
+		# Transports -- C-130, CN-235
+		transport_plane_equipment_1 =  { # C-130 #
+			owner = "SPR"
+			creator = USA
+			amount = 7
+		}
+		transport_plane_equipment_1 =  { # CN-235 #
+			owner = "SPR"
+			creator = SPR
+			amount = 18
+		}
+	}
+	169 = {
+		# Fighters -- Mirage F-1, F-5
+		fighter_equipment_1 =  { # Mirage F-1 #
+			owner = "SPR" 
+			creator = FRA
+			amount = 29
+		}
+		fighter_equipment_0 =  { # F-5 #
+			owner = "SPR" 
+			creator = USA
+			amount = 35
+		}
+	}
+	166 = {
+		# Fighters -- Mirage F-1
+		fighter_equipment_1 =  { # Mirage F-1 #
+			owner = "SPR" 
+			creator = FRA
+			amount = 36
+		}
+	}
+
+	# Carrier Wings #
+	"Príncipe de Asturias" = {
+		carrier_fighter_equipment_3 = { owner = "ENG" amount = 8 }
+	}
+}

@@ -1,0 +1,59 @@
+air_wings = {
+	# Land Wings #
+	47 = {
+		# Fighters -- F-5, F-4, F-16, Mirage F1, Mirage 2000
+		fighter_equipment_2 = { # F-16 #
+			owner = "GRE" 
+			creator = USA
+			amount = 36
+		}
+		fighter_equipment_2 = { # Mirage 2000 #
+			owner = "GRE" 
+			creator = FRA
+			amount = 34
+		}
+		fighter_equipment_1 = { # Mirage F1 #
+			owner = "GRE" 
+			creator = FRA
+			amount = 27
+		}
+		fighter_equipment_0 = { # F-5, F-4 #
+			owner = "GRE" 
+			creator = USA
+			amount = 45
+		}
+
+		# Transports -- C-130
+		transport_plane_equipment_1 = { # C-130 #
+			owner = "GRE"
+			creator = USA
+			amount = 15
+		}
+	}
+	182 = {
+		# Fighters -- F-5, F-4, F-16
+		fighter_equipment_2 = { # F-16 #
+			owner = "GRE" 
+			creator = USA
+			amount = 39
+		}
+		fighter_equipment_0 = { # F-5, F-4 #
+			owner = "GRE" 
+			creator = USA
+			amount = 48
+		}
+	}
+	186 = {
+		# Fighters -- F-5, F-4
+		fighter_equipment_0 = { # F-5, F-4 #
+			owner = "GRE" 
+			creator = USA
+			amount = 47
+		}
+		fighter_equipment_0 = { # F-5, F-4 #
+			owner = "GRE" 
+			creator = USA
+			amount = 42
+		}
+	}
+}

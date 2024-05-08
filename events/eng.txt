@@ -1,0 +1,187 @@
+add_namespace = england_mod
+
+# 2005 General Election #
+country_event = {
+	id = england_mod.1
+	title = england_mod.1.t
+	desc = england_mod.1.d
+	picture = GFX_report_event_spark
+
+	trigger = {
+		original_tag = ENG
+		date > 2005.5.1
+		country_exists = ENG
+		ENG = {	is_puppet = no }
+	}
+	
+	fire_only_once = yes
+
+	# Labour Win #
+	option = {
+		name = england_mod.1.a
+		ai_chance = {
+			factor = 75
+		}
+
+		ENG = {
+			set_popularities = {
+				social_democracy = 36
+				liberalism = 25
+				democratic = 34
+				neutrality = 3
+				fascism = 2
+			}
+		}
+	}
+	# Coalition #
+	option = {
+		name = england_mod.1.b
+		ai_chance = {
+			factor = 14
+		}
+
+		ENG = {
+			set_popularities = {
+				social_democracy = 31
+				liberalism = 0
+				democratic = 61
+				neutrality = 6
+				fascism = 2
+			}
+
+			set_politics = {
+				ruling_party = democratic
+			}
+
+			set_party_name = {
+				ideology = democratic
+				long_name = "Conservative-Liberal Democrats Coalition"
+				name = "Conservative-LD Coalition"
+			}
+		}
+	}
+	# Conservative Win #
+	option = {
+		name = england_mod.1.c
+		ai_chance = {
+			factor = 11
+		}
+
+		ENG = {
+			set_popularities = {
+				social_democracy = 29
+				liberalism = 23
+				democratic = 41
+				neutrality = 5
+				fascism = 2
+			}
+
+			set_politics = {
+				ruling_party = democratic
+			}
+
+			if = {
+				limit = {
+					has_idea = GER_eu
+				}
+				country_event = {
+					id = england_mod.2
+					days = 200
+					random_days = 400
+				}
+			}
+		}
+	}
+}
+# Brexit #
+country_event = {
+	id = england_mod.2
+	title = england_mod.2.t
+	desc = england_mod.2.d
+	picture = GFX_report_event_spark
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	# Brexit #
+	option = {
+		name = england_mod.2.a
+		ai_chance = {
+			factor = 50
+		}
+
+		ENG = {
+			if = {
+				limit = {
+					has_idea = GER_eu
+				}
+				remove_ideas = GER_eu
+
+				country_event = {
+					id = england_mod.3
+					days = 150
+					random_days = 300
+				}
+				news_event = old_times_news.104
+			}
+		}
+	}
+	# Remain #
+	option = {
+		name = england_mod.2.b
+		ai_chance = {
+			factor = 50
+		}
+
+		if = {
+			limit = {
+				ENG = { has_idea = GER_eu }
+			}
+			news_event = old_times_news.105
+		}
+	}
+}
+# Scottish Independence #
+country_event = {
+	id = england_mod.3
+	title = england_mod.3.t
+	desc = england_mod.3.d
+	picture = GFX_report_event_spark
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	# Leave #
+	option = {
+		name = england_mod.3.a
+		ai_chance = {
+			factor = 90
+		}
+
+		release = SCO
+		SCO = {
+			inherit_technology = ENG
+			add_ideas = ENG_commonwelth
+		}
+		ENG = {
+			diplomatic_relation = {
+				country = SCO
+				relation = docking_rights
+			}
+		}
+		USA = { add_to_faction = SCO }
+
+		news_event = old_times_news.106
+	}
+	# Remain #
+	option = {
+		name = england_mod.3.b
+		ai_chance = {
+			factor = 10
+		}
+
+		news_event = old_times_news.107
+	}
+}

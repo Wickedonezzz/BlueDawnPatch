@@ -1,0 +1,24 @@
+state={
+	id=992
+	name="STATE_992"
+	history={
+		owner = LIB
+		add_core_of = LIB
+		add_core_of = LUR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			8006 3 
+		}		
+	}	
+	provinces={
+		8006 13516 13517 
+	}
+	manpower=354000
+	state_category=large_city	
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,90 @@
+﻿air_wings = {
+	# Land Wings #
+	901 = {
+		# Fighters -- J-6, F-4E, J-7, F-16
+		fighter_equipment_2 =  { # F-16 #
+			owner = "EGY" 
+			creator = USA
+			amount = 50
+		}
+		fighter_equipment_2 =  { # F-16 #
+			owner = "EGY" 
+			creator = USA
+			amount = 39
+		}
+		fighter_equipment_0 =  { # F-4E #
+			owner = "EGY" 
+			creator = USA
+			amount = 28
+		}
+		fighter_equipment_0 =  { # J-6/7 #
+			owner = "EGY" 
+			creator = PRC
+			amount = 48
+		}
+
+		# Attackers -- Alpha Jet, Mirage 5
+		attacker_equipment_1 =  { # Alpha Jet #
+			owner = "EGY" 
+			creator = FRA
+			amount = 41
+		}
+		attacker_equipment_0 =  { # Mirage 5 #
+			owner = "EGY" 
+			creator = FRA
+			amount = 32
+		}
+
+		# Transports -- DHC-5D
+		transport_plane_equipment_1 =  { # DHC-5D #
+			owner = "EGY"
+			creator = CAN
+			amount = 5
+		}
+	}
+	447 = {
+		# Fighters -- J-6, J-7, F-16, Mirage 2000
+		fighter_equipment_2 =  { # F-16 #
+			owner = "EGY" 
+			creator = USA
+			amount = 42
+		}
+		fighter_equipment_2 =  { # Mirage 2000 #
+			owner = "EGY" 
+			creator = FRA
+			amount = 18
+		}
+		fighter_equipment_0 =  { # J-6/7 #
+			owner = "EGY" 
+			creator = PRC
+			amount = 49
+		}
+
+		# Attackers -- Mirage 5
+		attacker_equipment_0 =  { # Mirage 5 #
+			owner = "EGY" 
+			creator = FRA
+			amount = 41
+		}
+
+		# Transports -- C-130H
+		transport_plane_equipment_1 =  { # C-130H #
+			owner = "EGY"
+			creator = USA
+			amount = 19
+		}
+	}
+	978 = {
+		# Fighters -- MiG-21, F-16
+		fighter_equipment_2 =  { # F-16 #
+			owner = "EGY" 
+			creator = USA
+			amount = 39
+		}
+		fighter_equipment_0 =  { # MiG-21 #
+			owner = "EGY" 
+			creator = SOV
+			amount = 40
+		}
+	}
+}

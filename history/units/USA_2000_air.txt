@@ -1,0 +1,456 @@
+air_wings = {
+	# Land Wings #
+	463 = { # Alaska #
+		# Fighters #
+		stealth_fighter_equipment_0 = { owner = "USA" amount = 17 }
+		fighter_equipment_3 = { owner = "USA" amount = 48 }
+		fighter_equipment_3 = { owner = "USA" amount = 49 }
+		fighter_equipment_2 = { owner = "USA" amount = 50 }
+		# CAS #
+		attacker_equipment_2 = { owner = "USA" amount = 46 }
+		# Transport #
+		transport_plane_equipment_1 = { owner = "USA" amount = 20 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 19 }
+	}
+	379 = { # Nevada #
+		# Strategic Bombers #
+		stealth_bomber_equipment_0 = { owner = "USA" amount = 18 }
+		stealth_bomber_equipment_0 = { owner = "USA" amount = 18 }
+	}
+	390 = { # South Dakota #
+		# Fighters #
+		fighter_equipment_2 = { owner = "USA" amount = 46 }
+		# Strategic Bombers #
+		strategic_bomber_equipment_1 = { owner = "USA" amount = 20 }
+		strategic_bomber_equipment_1 = { owner = "USA" amount = 18 }
+	}
+	375 = { # Texas #
+		# Strategic Bombers #
+		strategic_bomber_equipment_1 = { owner = "USA" amount = 20 }
+		strategic_bomber_equipment_1 = { owner = "USA" amount = 17 }
+		strategic_bomber_equipment_1 = { owner = "USA" amount = 19 }
+		# Transport #
+		transport_plane_equipment_1 = { owner = "USA" amount = 20 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 17 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 18 }
+	}
+	371 = { # Louisiana #
+		# Strategic Bombers #
+		strategic_bomber_equipment_0 = { owner = "USA" amount = 19 }
+		strategic_bomber_equipment_0 = { owner = "USA" amount = 16 }
+		strategic_bomber_equipment_0 = { owner = "USA" amount = 18 }
+		strategic_bomber_equipment_0 = { owner = "USA" amount = 17 }
+	}
+	389 = { # North Dakota #
+		# Strategic Bombers #
+		strategic_bomber_equipment_0 = { owner = "USA" amount = 17 }
+		strategic_bomber_equipment_0 = { owner = "USA" amount = 17 }
+	}
+	525 = { # Kyonggi #
+		# Fighters #
+		fighter_equipment_2 = { owner = "USA" amount = 49 }
+		fighter_equipment_1 = { owner = "USA" amount = 42 }
+		# CAS #
+		attacker_equipment_2 = { owner = "USA" amount = 49 }
+	}
+	125 = { # East Anglia #
+		# CAS #
+		attacker_equipment_2 = { owner = "USA" amount = 50 }
+	}
+	51 = { # Rhineland #
+		# CAS #
+		attacker_equipment_2 = { owner = "USA" amount = 47 }
+		attacker_equipment_2 = { owner = "USA" amount = 39 }
+	}
+	42 = { # Moselland #
+		# Fighters #
+		fighter_equipment_3 = { owner = "USA" amount = 50 }
+		fighter_equipment_2 = { owner = "USA" amount = 49 }
+		fighter_equipment_2 = { owner = "USA" amount = 50 }
+		fighter_equipment_1 = { owner = "USA" amount = 48 }
+		# CAS #
+		attacker_equipment_2 = { owner = "USA" amount = 43 }
+	}
+	376 = { # New Mexico #
+		# Fighters #
+		fighter_equipment_2 = { owner = "USA" amount = 50 }
+		fighter_equipment_1 = { owner = "USA" amount = 47 }
+		# CAS #
+		attacker_equipment_2 = { owner = "USA" amount = 45 }
+	}
+	395 = { # Illinois #
+		# Fighters #
+		fighter_equipment_2 = { owner = "USA" amount = 50 }
+		# Transport #
+		transport_plane_equipment_1 = { owner = "USA" amount = 17 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 16 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 20 }
+	}
+	359 = { # New Jersey #
+		# Transport #
+		transport_plane_equipment_1 = { owner = "USA" amount = 19 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 19 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 18 }
+	}
+	378 = { # California #
+		# Fighters #
+		fighter_equipment_2 = { owner = "USA" amount = 50 }
+		# Transport #
+		transport_plane_equipment_1 = { owner = "USA" amount = 20 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 19 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 20 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 14 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 19 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 15 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 18 }
+	}
+	366 = { # Florida #
+		# Fighters #
+		fighter_equipment_3 = { owner = "USA" amount = 39 }
+		fighter_equipment_2 = { owner = "USA" amount = 50 }
+		fighter_equipment_2 = { owner = "USA" amount = 46 }
+		fighter_equipment_1 = { owner = "USA" amount = 50 }
+		fighter_equipment_1 = { owner = "USA" amount = 48 }
+		fighter_equipment_1 = { owner = "USA" amount = 43 }
+		# Transport #
+		transport_plane_equipment_1 = { owner = "USA" amount = 20 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 19 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 20 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 20 }
+	}
+	361 = { # Maryland #
+		# Fighters #
+		fighter_equipment_2 = { owner = "USA" amount = 47 }
+		# Transport #
+		transport_plane_equipment_1 = { owner = "USA" amount = 20 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 20 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 19 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 20 }
+	}
+	370 = { # Tennessee / Mississippi #
+		# Transport #
+		transport_plane_equipment_1 = { owner = "USA" amount = 19 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 20 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 18 }
+	}
+	629 = { # Hawaii #
+		# Fighters #
+		fighter_equipment_1 = { owner = "USA" amount = 50 }
+		# Transport #
+		transport_plane_equipment_1 = { owner = "USA" amount = 17 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 19 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 20 }
+	}
+	42 = { # Maryland #
+		# Transport #
+		transport_plane_equipment_1 = { owner = "USA" amount = 17 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 20 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 20 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 15 }
+	}
+	372 = { # Arkansas #
+		# Fighters #
+		fighter_equipment_2 = { owner = "USA" amount = 50 }
+		# Transport #
+		transport_plane_equipment_1 = { owner = "USA" amount = 20 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 19 }
+	}
+	363 = { # North Carolina #
+		# Transport #
+		transport_plane_equipment_1 = { owner = "USA" amount = 16 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 20 }
+	}
+	362 = { # Virginia #
+		# Fighters #
+		fighter_equipment_2 = { owner = "USA" amount = 48 }
+		fighter_equipment_1 = { owner = "USA" amount = 46 }
+		fighter_equipment_1 = { owner = "USA" amount = 45 }
+		# Transport #
+		transport_plane_equipment_1 = { owner = "USA" amount = 20 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 15 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 20 }
+	}
+	282 = { # Kanto #
+		# Transport #
+		transport_plane_equipment_1 = { owner = "USA" amount = 20 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 19 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 20 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 18 }
+	}
+	327 = { # Manila #
+		# Transport #
+		transport_plane_equipment_1 = { owner = "USA" amount = 20 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 13 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 20 }
+	}
+	128 = { # West Midlands #
+		# Transport #
+		transport_plane_equipment_1 = { owner = "USA" amount = 20 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 14 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 20 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 17 }
+		transport_plane_equipment_1 = { owner = "USA" amount = 19 }
+	}
+	380 = { # Utah #
+		# Fighters #
+		fighter_equipment_2 = { owner = "USA" amount = 45 }
+		fighter_equipment_2 = { owner = "USA" amount = 49 }
+		fighter_equipment_2 = { owner = "USA" amount = 47 }
+	}
+	533 = { # Misawa #
+		# Fighters #
+		fighter_equipment_2 = { owner = "USA" amount = 39 }
+		fighter_equipment_2 = { owner = "USA" amount = 50 }
+	}
+	364 = { # South Carolina #
+		# Fighters #
+		fighter_equipment_2 = { owner = "USA" amount = 49 }
+		fighter_equipment_2 = { owner = "USA" amount = 50 }
+		fighter_equipment_2 = { owner = "USA" amount = 50 }
+		fighter_equipment_2 = { owner = "USA" amount = 42 }
+	}
+	377 = { # Arizona #
+		# Fighters #
+		fighter_equipment_2 = { owner = "USA" amount = 48 }
+		fighter_equipment_2 = { owner = "USA" amount = 46 }
+		fighter_equipment_2 = { owner = "USA" amount = 49 }
+		fighter_equipment_2 = { owner = "USA" amount = 49 }
+	}
+	365 = { # Georgia #
+		# Fighters #
+		fighter_equipment_2 = { owner = "USA" amount = 48 }
+		fighter_equipment_2 = { owner = "USA" amount = 44 }
+		fighter_equipment_2 = { owner = "USA" amount = 50 }
+	}
+	393 = { # Michigan #
+		# Fighters #
+		fighter_equipment_2 = { owner = "USA" amount = 49 }
+	}
+	382 = { # Colorado #
+		# Fighters #
+		fighter_equipment_2 = { owner = "USA" amount = 50 }
+	}
+	392 = { # Iowa #
+		# Fighters #
+		fighter_equipment_2 = { owner = "USA" amount = 49 }
+		fighter_equipment_2 = { owner = "USA" amount = 50 }
+	}
+	374 = { # Oklahoma #
+		# Fighters #
+		fighter_equipment_2 = { owner = "USA" amount = 50 }
+	}
+	357 = { # Vermont #
+		# Fighters #
+		fighter_equipment_2 = { owner = "USA" amount = 47 }
+	}
+	367 = { # Alabama #
+		# Fighters #
+		fighter_equipment_2 = { owner = "USA" amount = 50 }
+	}
+	396 = { # Indiana #
+		# Fighters #
+		fighter_equipment_2 = { owner = "USA" amount = 49 }
+	}
+	394 = { # Wisconsin #
+		# Fighters #
+		fighter_equipment_2 = { owner = "USA" amount = 48 }
+	}
+	391 = { # Minnesota #
+		# Fighters #
+		fighter_equipment_2 = { owner = "USA" amount = 50 }
+	}
+	656 = { # Kuwait #
+		# Fighters #
+		fighter_equipment_2 = { owner = "USA" amount = 47 }
+	}
+	526 = { # Okinawa #
+		# Fighters #
+		fighter_equipment_1 = { owner = "USA" amount = 46 }
+	}
+	100 = { # Iceland #
+		# Fighters #
+		fighter_equipment_3 = { owner = "USA" amount = 45 }
+	}
+	346 = { # Konya #
+		# Fighters #
+		fighter_equipment_1 = { owner = "USA" amount = 50 }
+	}
+	856 = { # Jeddah #
+		# Fighters #
+		fighter_equipment_1 = { owner = "USA" amount = 47 }
+	}
+	373 = { # Missouri #
+		# Fighters #
+		fighter_equipment_1 = { owner = "USA" amount = 50 }
+	}
+	385 = { # Oregon #
+		# Fighters #
+		fighter_equipment_1 = { owner = "USA" amount = 50 }
+		fighter_equipment_1 = { owner = "USA" amount = 50 }
+	}
+
+	# Carrier Wings #
+	"USS Theodore Roosevelt" = {
+		carrier_fighter_equipment_3 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_3 = { owner = "USA" amount = 8 }
+		carrier_fighter_equipment_2 = { owner = "USA" amount = 6 }
+		carrier_attacker_equipment_1 = { owner = "USA" amount = 10 }
+		carrier_attacker_equipment_1 = { owner = "USA" amount = 8 }
+		carrier_attacker_equipment_0 = { owner = "USA" amount = 10 }
+	}
+	"USS George Washington" = {
+		carrier_fighter_equipment_3 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_3 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_3 = { owner = "USA" amount = 4 }
+		carrier_attacker_equipment_1 = { owner = "USA" amount = 10 }
+		carrier_attacker_equipment_1 = { owner = "USA" amount = 10 }
+		carrier_attacker_equipment_1 = { owner = "USA" amount = 4 }
+		carrier_attacker_equipment_0 = { owner = "USA" amount = 10 }
+	}
+	"USS John C. Stennis" = {
+		carrier_fighter_equipment_3 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_3 = { owner = "USA" amount = 8 }
+		carrier_fighter_equipment_2 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_2 = { owner = "USA" amount = 7 }
+		carrier_attacker_equipment_1 = { owner = "USA" amount = 7 }
+		carrier_attacker_equipment_0 = { owner = "USA" amount = 10 }
+	}
+	"USS Harry S. Truman" = {
+		carrier_fighter_equipment_3 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_3 = { owner = "USA" amount = 8 }
+		carrier_fighter_equipment_2 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_2 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_2 = { owner = "USA" amount = 4 }
+		carrier_attacker_equipment_0 = { owner = "USA" amount = 10 }
+	}
+	"USS Nimitz" = {
+		carrier_fighter_equipment_2 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_2 = { owner = "USA" amount = 5 }
+		carrier_fighter_equipment_1 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_1 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_1 = { owner = "USA" amount = 4 }
+		carrier_attacker_equipment_1 = { owner = "USA" amount = 9 }
+		carrier_attacker_equipment_0 = { owner = "USA" amount = 10 }
+	}
+	"USS Dwight D. Eisenhower" = {
+		carrier_fighter_equipment_3 = { owner = "USA" amount = 8 }
+		carrier_fighter_equipment_2 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_1 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_1 = { owner = "USA" amount = 6 }
+		carrier_attacker_equipment_1 = { owner = "USA" amount = 10 }
+		carrier_attacker_equipment_1 = { owner = "USA" amount = 4 }
+		carrier_attacker_equipment_0 = { owner = "USA" amount = 10 }
+	}
+	"USS Enterprise" = {
+		carrier_fighter_equipment_4 = { owner = "USA" amount = 5 }
+		carrier_fighter_equipment_3 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_2 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_2 = { owner = "USA" amount = 8 }
+	}
+	"USS America" = {
+		carrier_fighter_equipment_2 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_2 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_2 = { owner = "USA" amount = 4 }
+		carrier_fighter_equipment_1 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_1 = { owner = "USA" amount = 10 }
+		carrier_attacker_equipment_0 = { owner = "USA" amount = 10 }
+		carrier_attacker_equipment_0 = { owner = "USA" amount = 2 }
+	}
+	"USS Carl Vinson" = {
+		carrier_fighter_equipment_3 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_3 = { owner = "USA" amount = 4 }
+		carrier_fighter_equipment_2 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_2 = { owner = "USA" amount = 8 }
+		carrier_attacker_equipment_1 = { owner = "USA" amount = 10 }
+		carrier_attacker_equipment_1 = { owner = "USA" amount = 2 }
+		carrier_attacker_equipment_0 = { owner = "USA" amount = 10 }
+	}
+	"USS Constellation" = {
+		carrier_fighter_equipment_3 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_2 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_2 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_2 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_2 = { owner = "USA" amount = 6 }
+	}
+	"USS Abraham Lincoln" = {
+		carrier_fighter_equipment_2 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_2 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_2 = { owner = "USA" amount = 4 }
+		carrier_fighter_equipment_1 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_1 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_1 = { owner = "USA" amount = 4 }
+		carrier_attacker_equipment_0 = { owner = "USA" amount = 10 }
+	}
+	"USS John F. Kennedy" = {
+		carrier_fighter_equipment_2 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_2 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_2 = { owner = "USA" amount = 4 }
+		carrier_fighter_equipment_1 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_1 = { owner = "USA" amount = 10 }
+	}
+	"USS Kitty Hawk" = {
+		carrier_fighter_equipment_1 = { owner = "USA" amount = 10 }
+		carrier_fighter_equipment_1 = { owner = "USA" amount = 9 }
+		carrier_attacker_equipment_0 = { owner = "USA" amount = 7 }
+	}
+}
+instant_effect = {
+	# Fighter #
+	add_equipment_production = {
+		equipment = {
+			type = stealth_fighter_equipment_0
+			creator = "USA"
+		}
+		requested_factories = 2
+		progress = 0.27
+		efficiency = 26
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_3
+			creator = "USA"
+		}
+		requested_factories = 3
+		progress = 0.73
+		efficiency = 40
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_2
+			creator = "USA"
+		}
+		requested_factories = 3
+		progress = 0.52
+		efficiency = 48
+	}
+	# Carrier Fighter #
+	add_equipment_production = {
+		equipment = {
+			type = carrier_fighter_equipment_4
+			creator = "USA"
+		}
+		requested_factories = 2
+		progress = 0.05
+		efficiency = 41
+	}
+	# Stealth Bomber #
+	add_equipment_production = {
+		equipment = {
+			type = stealth_bomber_equipment_0
+			creator = "USA"
+		}
+		requested_factories = 1
+		progress = 0.97
+		efficiency = 21
+	}
+	# Transport #
+	add_equipment_production = {
+		equipment = {
+			type = transport_plane_equipment_1
+			creator = "USA"
+		}
+		requested_factories = 2
+		progress = 0.40
+		efficiency = 35
+	}
+}

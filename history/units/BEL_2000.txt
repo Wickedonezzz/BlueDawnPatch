@@ -1,0 +1,172 @@
+division_template = { # Mechanised Division #
+	name = "Mechanised Division"
+	division_names_group = GENERIC_MEC_01
+
+	regiments = {
+		main_battle_tank_armor = { x = 0 y = 0 }
+		main_battle_tank_armor = { x = 0 y = 1 }
+		infantry_fighting_vehicle_armor = { x = 0 y = 2 }
+		infantry_fighting_vehicle_armor = { x = 0 y = 3 }
+		spaa_vehicle_armor = { x = 0 y = 4 }
+		heavy_infantry_unit = { x = 1 y = 0 }
+		heavy_infantry_unit = { x = 1 y = 1 }
+		heavy_infantry_unit = { x = 1 y = 2 }
+		heavy_infantry_unit = { x = 1 y = 3 }
+		heavy_infantry_unit = { x = 2 y = 0 }
+		heavy_infantry_unit = { x = 2 y = 1 }
+		heavy_infantry_unit = { x = 2 y = 2 }
+		heavy_infantry_unit = { x = 2 y = 3 }
+		motorised_artillery_unit = { x = 3 y = 0 }
+		motorised_artillery_unit = { x = 3 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		field_hospital = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		transport_heli_company = { x = 0 y = 3 }
+	}
+	priority = 1
+}
+division_template = { # Paratrooper Division #
+	name = "Paratrooper Division"
+	division_names_group = GENERIC_PAR_01
+
+	regiments = {
+		recon_vehicle_armor = { x = 0 y = 0 }
+		recon_vehicle_armor = { x = 0 y = 1 }
+		infantry_fighting_vehicle_armor = { x = 0 y = 2 }
+		paratrooper_unit = { x = 1 y = 0 }
+		paratrooper_unit = { x = 1 y = 1 }
+		paratrooper_unit = { x = 1 y = 2 }
+		paratrooper_unit = { x = 1 y = 3 }
+		paratrooper_unit = { x = 1 y = 4 }
+		towed_artillery_unit = { x = 2 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		transport_heli_company = { x = 0 y = 1 }
+		recon_drone_company = { x = 0 y = 2 }
+	}
+	priority = 2
+}
+
+units = {
+	# Mechanised Division #
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6537
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "GER" }
+			ifv_tank_equipment_0 = { owner = "USA" }
+			apc_tank_equipment_0 = { owner = "USA" }
+			spaa_tank_equipment_0 = { owner = "GER" }
+			motorised_artillery_equipment_3 = { owner = "USA" }
+			heli_transport_equipment_1 = { owner = "ITA" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+
+	# Paratrooper Division #
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11419
+		division_template = "Paratrooper Division"
+		force_equipment_variants = {
+			recon_vehicle_equipment_0 = { owner = "ENG" }
+			ifv_tank_equipment_0 = { owner = "USA" }
+			heli_transport_equipment_1 = { owner = "ITA" }
+			drone_recon_equipment_0 = { owner = "BEL" }
+			towed_artillery_equipment_3 = { owner = "FRA" }
+		}
+		start_experience_factor = 0.30
+		start_equipment_factor = 0.90
+	}
+}
+instant_effect = {
+
+	# Stockpile #
+        add_equipment_to_stockpile = {
+		type = infantry_weapons_2
+		amount = 3500
+		producer = BEL
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 500
+		producer = BEL
+	}
+        add_equipment_to_stockpile = {
+		type = motorised_equipment_1
+		amount = 100
+		producer = GER
+	}
+        add_equipment_to_stockpile = {
+		type = motorised_equipment_1
+		amount = 150
+		producer = ITA
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_anti_tank_weapons_1
+		amount = 300
+		producer = USA
+	}
+
+	add_equipment_to_stockpile = {
+		type = mbt_tank_equipment_1
+		amount = 70
+		producer = GER
+	}
+	add_equipment_to_stockpile = {
+		type = ifv_tank_equipment_0
+		amount = 180
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = apc_tank_equipment_0
+		amount = 130
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = apc_tank_equipment_2
+		amount = 140
+		producer = ENG
+	}
+	add_equipment_to_stockpile = {
+		type = apc_tank_equipment_3
+		amount = 50
+		producer = AUS
+	}
+	add_equipment_to_stockpile = {
+		type = recon_vehicle_equipment_0
+		amount = 50
+		producer = ENG
+	}
+	add_equipment_to_stockpile = {
+		type = spaa_tank_equipment_0
+		amount = 30
+		producer = GER
+	}
+	add_equipment_to_stockpile = {
+		type = towed_artillery_equipment_1
+		amount = 20
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = towed_artillery_equipment_3
+		amount = 60
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = heli_transport_equipment_0
+		amount = 30
+		producer = FRA
+	}
+}

@@ -1,0 +1,59 @@
+characters = {
+
+	LUR_sekou_conneh = {
+		name = "Sekou Conneh"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Africa/sekou_conneh.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		corps_commander={
+			traits={jungle_rat}
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+	LUR_george_weah = {
+		name = "George Weah"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Africa/george_weah.png"
+			}
+		}
+		country_leader = {
+			ideology = liberalism_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+
+	}
+
+	LUR_sirleaf = {
+		name = "Ellen Johnson Sirleaf"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Africa/sirleaf.png"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+
+	}
+
+}

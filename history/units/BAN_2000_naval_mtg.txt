@@ -1,0 +1,29 @@
+units = {
+	fleet = {
+		name = "Banladesa Naubahara"
+		naval_base = 11929 # Dhaka #
+		task_force = {
+			name = "Banladesa Naubahara"
+			location = 11929 # Dhaka #
+			ship = { name = "BNS Osman" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = BAN creator = PRC version_name = "Type 053H1 Class" } } }
+			ship = { name = "BNS Ali Haider" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = BAN creator = ENG version_name = "Leopard Class" } } }
+			ship = { name = "BNS Abu Bakr" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = BAN creator = ENG version_name = "Leopard Class" } } }
+			ship = { name = "BNS Umar Farooq" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = BAN creator = ENG version_name = "Salisbury Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+	# Frigates #
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_hull_4
+			creator = "BAN" 
+			version_name = "Bangabandhu Class"
+		}
+		name = "BNS Bangabandhu"
+		requested_factories = 1
+		progress = 0.30
+		amount = 1
+	}
+}

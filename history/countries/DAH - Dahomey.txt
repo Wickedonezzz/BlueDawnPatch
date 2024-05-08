@@ -1,0 +1,21 @@
+﻿capital = 776
+
+set_convoys = 10
+
+add_ideas = west_africa_ECOWAS
+
+recruit_character = DAH_mathieu
+
+set_politics = {
+	ruling_party = socialism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	social_democracy = 23
+	democratic = 10
+	liberalism = 25
+	socialism = 32
+	fascism = 10
+}

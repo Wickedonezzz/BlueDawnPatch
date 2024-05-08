@@ -1,0 +1,55 @@
+﻿capital = 812
+
+set_oob = "EST_2000"
+
+set_technology = {
+	tech_support = 1
+	tech_train_1960 = 1
+	spaa_tank_1960 = 1
+	infantry_weapons_1960 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_air_weapons_1960 = 1
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		recon_vehicle_1960 = 1
+	}
+}
+
+add_ideas = east_europe_eastern_threat
+add_ideas = east_europe_privatization
+
+add_ideas = {
+	limited_conscription
+}
+
+set_research_slots = 3
+
+set_convoys = 5
+
+recruit_character = EST_lennart_meri
+recruit_character = EST_edgar_savissar
+
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 0
+	reformed_communism = 0
+	social_democracy = 15
+	liberalism = 20
+	democratic = 50
+	neutrality = 0
+	paternal_autocracy = 0
+	fascism = 15
+}
+
+add_opinion_modifier = { target = SOV modifier = HISTORIC_baltic_ussr_opinion }

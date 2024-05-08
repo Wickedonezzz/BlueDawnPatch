@@ -1,0 +1,44 @@
+﻿capital = 267
+
+oob = "AFG_2000"
+
+recruit_character = AFG_mullah_omar
+
+recruit_character = AFG_dadullah
+recruit_character = AFG_jalaluddin_haqqani
+
+add_ideas = AFG_hardened_fighters
+add_ideas = AFG_islamic_fanaticism
+
+add_ideas = war_economy
+add_ideas = extensive_conscription
+
+declare_war_on = {
+	target = NRO
+	type = topple_government
+}
+
+
+set_technology = {
+	infantry_weapons_1960 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_air_weapons_1960 = 1
+	mbt_tank_1960 = 1
+	towed_artillery_1960 = 1
+	ifv_tank_1970 = 1
+}
+
+set_politics = {
+	ruling_party = paternal_autocracy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	fascism = 15
+	communism = 10
+	paternal_autocracy = 75
+}
+
+add_opinion_modifier = { target = ISR modifier = HISTORIC_israel_hostile_30_opinion }

@@ -1,0 +1,42 @@
+add_namespace = cyprus
+
+# take your referendum pill, schizo
+country_event = {
+	id = cyprus.1
+	title = cyprus.1.t
+	desc = cyprus.1.d
+	picture = GFX_nothing
+	
+	trigger = {
+		original_tag = CYP
+		date > 2004.04.23
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		name = cyprus.1.a
+		set_cosmetic_tag = CYP_united
+		annex_country = {
+			target = CYN
+			transfer_troops = yes
+		}
+		add_ideas = GER_eu
+		TUR = {
+			diplomatic_relation = {
+				country = CYP
+				relation = military_access
+				active = yes
+			}
+		}
+		ai_chance = {
+		factor = 35
+		}
+	}
+	option = {
+		name = cyprus.1.b
+		ai_chance = {
+		factor = 40
+		}
+	}
+}

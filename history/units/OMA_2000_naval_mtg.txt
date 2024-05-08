@@ -1,0 +1,15 @@
+units = {
+	fleet = {
+		name = "Ustul Eumaan"
+		naval_base = 10760 # Seeb #
+		task_force = {
+			name = "Ustul Eumaan Alsathii"
+			location = 10760 # Seeb #
+			ship = { name = "SNV Qahir Al Amwaj" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = OMA version_name = "Qahir Al Amwaj Class" } } }
+			ship = { name = "SNV Al Muazzar" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = OMA version_name = "Qahir Al Amwaj Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

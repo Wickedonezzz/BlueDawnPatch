@@ -1,0 +1,1193 @@
+ideas = {
+
+	country = {
+          USA_korea_war = {
+			name = "Intervention in Korean War"
+
+			removal_cost = -1
+
+			picture = USA_the_constitution_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				send_volunteer_size = 12
+			}
+		}
+		USA_the_constitution = {
+			name = USA_the_constitution_name
+
+			removal_cost = -1
+
+			picture = USA_the_constitution_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.25
+			}
+		}
+
+		USA_three_party_primacy = {
+			name = USA_three_party_primacy_name
+
+			removal_cost = -1
+
+			picture = USA_three_party_primacy_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = -0.05
+			}
+		}
+
+		USA_second_amendment = {
+			name = USA_second_amendment_name
+
+			removal_cost = -1
+
+			picture = USA_second_amendment_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				resistance_growth_on_our_occupied_states = 1.0
+				compliance_growth_on_our_occupied_states = -0.5
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+				recruitable_population_factor = 0.1
+			}
+		}
+
+		USA_stagnating_economy = {
+			name = USA_stagnating_economy_name
+
+			removal_cost = -1
+
+			picture = USA_stagnating_economy_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_buildings_factor = -0.1
+				min_export = 0.1
+			}
+		}
+
+		USA_misdirected_foreign_policy = {
+			name = USA_misdirected_foreign_policy_name
+
+			removal_cost = -1
+
+			picture = USA_misdirected_foreign_policy_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				war_support_factor = -0.1
+				#custom_modifier_tooltip = USA_misdirected_foreign_policy_tooltip
+			}
+
+		}
+
+		USA_military_spending = {
+			name = USA_military_spending_name
+
+			removal_cost = -1
+
+			picture = USA_military_spending_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				economy_cost_factor = 1.5
+				mobilization_laws_cost_factor = 2.0
+				military_leader_cost_factor = 1.5
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+
+		USA_last_bastion = {
+			name = USA_last_bastion_name
+
+			removal_cost = -1
+
+			picture = USA_last_bastion_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+			}
+		}
+		USA_war_support = {
+			name = USA_war_support_name
+
+			removal_cost = -1
+
+			#picture =
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				war_support_factor = 0.30
+				stability_factor = -0.10
+				consumer_goods_factor = -0.30
+				economy_cost_factor = 1.0
+				production_speed_arms_factory_factor = 0.5
+				faction_trade_opinion_factor = 0.2
+			}
+		}
+
+		##QUAYLE/START TREE##
+
+		USA_worker_strikes = {
+			name = USA_worker_strikes_name
+
+			removal_cost = -1
+
+			#picture =
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+			consumer_goods_factor = 0.30
+			political_power_factor = -0.10
+			}
+		}
+
+		USA_three_party_primacy_1 = {
+			name = USA_three_party_primacy_name
+
+			removal_cost = -1
+
+			picture = USA_three_party_primacy_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = -0.10
+			}
+		}
+		##ECONOMY IMPROVEMENT##
+
+		USA_stagnating_economy_1 = {
+			name = USA_stagnating_economy_name
+
+			removal_cost = -1
+
+			picture = USA_stagnating_economy_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_buildings_factor = -0.05
+				min_export = 0.1
+			}
+		}
+
+		USA_stagnating_economy_2 = {
+			name = USA_stagnating_economy_name
+
+			removal_cost = -1
+
+			picture = USA_stagnating_economy_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_buildings_factor = -0.05
+				min_export = 0.1
+				research_speed_factor = 0.05
+
+			}
+		}
+
+		USA_stagnating_economy_3 = {
+			name = USA_stagnating_economy_name
+
+			removal_cost = -1
+
+			picture = USA_stagnating_economy_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_industrial_complex_factor = -0.05
+				min_export = 0.1
+				research_speed_factor = 0.05
+
+			}
+		}
+
+		USA_stagnating_economy_4 = {
+			name = USA_stagnating_economy_name
+
+			removal_cost = -1
+
+			picture = USA_stagnating_economy_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				min_export = 0.1
+				research_speed_factor = 0.05
+			}
+		}
+
+		USA_economic_miracle = {
+			name = USA_economic_miracle_name
+
+			removal_cost = -1
+
+			picture = USA_stagnating_economy_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				research_speed_factor = 0.05
+				conversion_cost_civ_to_mil_factor = -0.2
+				conversion_cost_mil_to_civ_factor = -0.2
+				consumer_goods_factor = -0.40
+			}
+		}
+
+		##BUSH##
+
+		USA_republicans_and_the_internet = {
+			name = USA_republicans_and_the_internet_name
+
+			removal_cost = -1
+
+			#picture =
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+			research_speed_factor = -0.10
+			consumer_goods_factor = 0.30
+			}
+		}
+
+		USA_republicans_and_the_internet_fre_buff = {
+			name = USA_republicans_and_the_internet_name
+
+			removal_cost = -1
+
+			#picture =
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+			research_speed_factor = -0.10
+			}
+		}
+
+		USA_republicans_and_the_internet_pat_buff = {
+			name = USA_republicans_and_the_internet_name
+
+			removal_cost = -1
+
+			#picture =
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+			research_speed_factor = -0.05
+			consumer_goods_factor = 0.30
+			}
+		}
+
+		USA_republicans_and_the_internet_pat_buff_2 = {
+			name = USA_republicans_and_the_internet_name
+
+			removal_cost = -1
+
+			#picture =
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+			consumer_goods_factor = 0.30
+			}
+		}
+
+		USA_bush_family_legacy = {
+			name = USA_bush_family_legacy_name
+
+			removal_cost = -1
+
+			#picture =
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+			political_power_factor = 0.10
+			stability_factor = -0.05
+			}
+		}
+
+		USA_bush_family_legacy_1 = {
+			name = USA_bush_family_legacy_name
+
+			removal_cost = -1
+
+			#picture =
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+			political_power_factor = 0.10
+			stability_factor = -0.025
+			}
+		}
+
+		USA_bush_family_legacy_2 = {
+			name = USA_bush_family_legacy_name
+
+			removal_cost = -1
+
+			#picture =
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+			political_power_factor = 0.10
+			stability_factor = 0.075
+			}
+		}
+
+
+		USA_bush_family_legacy_3 = {
+			name = USA_bush_family_legacy_name
+
+			removal_cost = -1
+
+			#picture =
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+			political_power_factor = 0.15
+			stability_factor = 0.075
+			consumer_goods_factor = -0.15
+			}
+		}
+
+		USA_bush_family_legacy_4 = {
+			name = USA_bush_family_legacy_name
+
+			removal_cost = -1
+
+			#picture =
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+			political_power_factor = 0.20
+			stability_factor = 0.075
+			consumer_goods_factor = -0.15
+			conscription_factor = 0.02
+			}
+		}
+
+		USA_bush_family_legacy_5 = {
+			name = USA_bush_family_legacy_name
+
+			removal_cost = -1
+
+			#picture =
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+			political_power_factor = 0.20
+			stability_factor = 0.0125
+			consumer_goods_factor = -0.15
+			conscription_factor = 0.02
+			}
+		}
+
+		USA_bush_family_legacy_final = {
+			name = USA_bush_family_legacy_name
+
+			removal_cost = -1
+
+			#picture =
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+			political_power_factor = 0.35
+			stability_factor = 0.0175
+			consumer_goods_factor = -0.15
+			conscription_factor = 0.02
+			stability_weekly_factor = 0.01
+			}
+		}
+
+
+		USA_social_soldiering_1 = {
+			name = USA_social_soldiering_name
+
+			removal_cost = -1
+
+			#picture =
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+
+			}
+		}
+
+		USA_social_soldiering_2 = {
+			name = USA_social_soldiering_name
+
+			removal_cost = -1
+
+			#picture =
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+			stability_factor = 0.05
+			monthly_population = 0.1
+			}
+		}
+
+		USA_social_soldiering_3 = {
+			name = USA_social_soldiering_name
+
+			removal_cost = -1
+
+			#picture =
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+			stability_factor = 0.1
+			monthly_population = 0.1
+			consumer_goods_factor = -0.15
+			}
+		}
+
+		USA_social_soldiering_4 = {
+			name = USA_social_soldiering_name
+
+			removal_cost = -1
+
+			#picture =
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+			stability_factor = 0.1
+			monthly_population = 0.1
+			production_speed_buildings_factor = 0.10
+			consumer_goods_factor = -0.15
+			}
+		}
+
+		USA_social_soldiering_final = {
+			name = USA_social_soldiering_name
+
+			removal_cost = -1
+
+			#picture =
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+			stability_factor = 0.2
+			monthly_population = 0.1
+			production_speed_buildings_factor = 0.10
+			consumer_goods_factor = -0.15
+			political_power_factor = 0.05
+			democratic_drift = 0.25
+			communism_drift = -0.05
+			}
+		}
+
+		USA_second_amendment_bush_buff = {
+			name = USA_second_amendment_name
+
+			removal_cost = -1
+
+			picture = USA_second_amendment_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				resistance_growth_on_our_occupied_states = 1.0
+				compliance_growth_on_our_occupied_states = -0.5
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.25
+				recruitable_population_factor = -0.15
+			}
+		}
+
+		USA_research_reluctancy = {
+				name = USA_research_reluctancy_name
+
+				removal_cost = -1
+
+				#picture =
+
+				allowed = {
+					always = no
+				}
+
+				research_bonus = {
+					infantry_weapons = -0.20
+					artillery = -0.20
+					motorized_equipment = -0.10
+					armor = -0.10
+					naval_equipment = -0.15
+					air_equipment = -0.15
+				}
+
+				modifier = {
+				production_factory_efficiency_gain_factor = 0.20
+				}
+
+		}
+
+		USA_military_spending_2 = {
+			name = USA_military_spending_name
+
+			removal_cost = -1
+
+			picture = USA_military_spending_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				economy_cost_factor = 1.0
+				mobilization_laws_cost_factor = 1.5
+				military_leader_cost_factor = 1.5
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+
+		USA_military_spending_3 = {
+			name = USA_military_spending_name
+
+			removal_cost = -1
+
+			picture = USA_military_spending_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				economy_cost_factor = 1.0
+				mobilization_laws_cost_factor = 1.5
+				military_leader_cost_factor = 1.25
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+
+		USA_misdirected_foreign_policy_2 = {
+			name = USA_misdirected_foreign_policy_name
+
+			removal_cost = -1
+
+			picture = USA_misdirected_foreign_policy_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				custom_modifier_tooltip = USA_misdirected_foreign_policy_tooltip_2
+			}
+
+		}
+
+		USA_patriot_act_lar = {
+			name = USA_patriot_act_name
+
+			removal_cost = -1
+
+			#picture = USA_misdirected_foreign_policy_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				decryption = 2
+				operative_slot = 1
+			}
+
+		}
+
+		USA_patriot_act_lar_2 = {
+			name = USA_patriot_act_name
+
+			removal_cost = -1
+
+			#picture = USA_misdirected_foreign_policy_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				decryption = 2
+				encryption = 2
+				operative_slot = 1
+				agency_upgrade_time = 0.33
+			}
+
+		}
+
+		USA_the_nsa_lar = {
+			name = USA_the_nsa_name
+
+			removal_cost = -1
+
+			#picture = USA_misdirected_foreign_policy_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				decryption = 2
+				encryption = 2
+				operative_slot = 1
+				agency_upgrade_time = 0.33
+				political_power_factor = 0.05
+				stability_factor = -0.05
+			}
+
+		}
+
+		USA_patriot_act = {
+			name = USA_patriot_act_name
+
+			removal_cost = -1
+
+			#picture = USA_misdirected_foreign_policy_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				encryption_factor = 0.2
+				decryption_factor = 0.2
+				political_power_gain = 0.1
+			}
+
+		}
+
+		USA_patriot_act_2 = {
+			name = USA_patriot_act_name
+
+			removal_cost = -1
+
+			#picture = USA_misdirected_foreign_policy_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				encryption_factor = 0.35
+				decryption_factor = 0.35
+				political_power_gain = 0.15
+			}
+
+		}
+
+		USA_the_nsa = {
+			name = USA_the_nsa_name
+
+			removal_cost = -1
+
+			#picture = USA_misdirected_foreign_policy_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				encryption_factor = 0.35
+				decryption_factor = 0.35
+				political_power_gain = 0.15
+				political_power_factor = 0.05
+				stability_factor = -0.05
+			}
+
+		}
+
+		USA_overhauled_border_security = {
+			name = USA_overhauled_border_security_name
+
+			removal_cost = -1
+
+			#picture = USA_misdirected_foreign_policy_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_bunker_factor = 0.2
+			}
+
+		}
+
+		USA_overhauled_immigration_laws = {
+			name = USA_overhauled_immigration_laws_name
+
+			removal_cost = -1
+
+			#picture = USA_misdirected_foreign_policy_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				monthly_population = 0.2
+			}
+
+		}
+
+		USA_three_party_primacy_2 = {
+			name = USA_three_party_primacy_name
+
+			removal_cost = -1
+
+			picture = USA_three_party_primacy_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_gain = -0.05
+			}
+		}
+	}
+
+	### Designers ###
+
+	tank_manufacturer = {
+
+		designer = yes
+
+		USA_design_bureau_udi = {
+
+			picture = USA_design_bureau_udi_icon
+
+			allowed = {
+				original_tag = USA
+			}
+
+			traits = {
+				USA_design_bureau_udi_trait
+			}
+
+		}
+		USA_design_bureau_general_dynamics = {
+
+			picture = USA_design_bureau_general_dynamics_icon
+
+			allowed = {
+				original_tag = USA
+			}
+
+			research_bonus = {
+				mod_cat_mbt = 0.1
+				mod_cat_apc = 0.1
+			}
+
+			traits = {
+				USA_design_bureau_general_dynamics_trait
+			}
+
+		}
+
+	}
+
+	naval_manufacturer = {
+
+		designer = yes
+
+		USA_design_bureau_ingalls = {
+
+			picture = USA_design_bureau_ingalls_icon
+
+			allowed = {
+				original_tag = USA
+			}
+
+			research_bonus = {
+				mod_cat_attack_submarine = 0.05
+				mod_cat_destroyer = 0.05
+				mod_cat_cruiser = 0.05
+				mod_cat_amphibious_ship = 0.05
+			}
+
+			traits = {
+				USA_design_bureau_ingalls_trait
+			}
+
+		}
+		USA_design_bureau_bath_works = {
+
+			picture = USA_design_bureau_bath_works_icon
+
+			allowed = {
+				original_tag = USA
+			}
+
+			research_bonus = {
+				mod_cat_destroyer = 0.1
+				mod_cat_cruiser = 0.05
+			}
+
+			traits = {
+				USA_design_bureau_bath_works_trait
+			}
+
+		}
+		USA_design_bureau_fincantieri = {
+
+			picture = USA_design_bureau_fincantieri_icon
+
+			allowed = {
+				original_tag = USA
+			}
+
+			research_bonus = {
+				mod_cat_corvette = 0.05
+				mod_cat_destroyer = 0.05
+			}
+
+			traits = {
+				USA_design_bureau_fincantieri_trait
+			}
+
+		}
+		USA_design_bureau_austal = {
+
+			picture = USA_design_bureau_austal_icon
+
+			allowed = {
+				original_tag = USA
+			}
+
+			research_bonus = {
+				mod_cat_corvette = 0.1
+			}
+
+			traits = {
+				USA_design_bureau_austal_trait
+			}
+
+		}
+		USA_design_bureau_newport_news = {
+
+			picture = USA_design_bureau_newport_news_icon
+
+			allowed = {
+				original_tag = USA
+			}
+
+			research_bonus = {
+				mod_cat_carrier = 0.1
+			}
+
+			traits = {
+				USA_design_bureau_newport_news_trait
+			}
+
+		}
+		USA_design_bureau_electric_boat = {
+
+			picture = USA_design_bureau_electric_boat_icon
+
+			allowed = {
+				original_tag = USA
+			}
+
+			research_bonus = {
+				mod_cat_submarine = 0.15
+			}
+
+			traits = {
+				USA_design_bureau_electric_boat_trait
+			}
+
+		}
+
+	}
+
+	aircraft_manufacturer = {
+
+		designer = yes
+
+		USA_design_bureau_lockheed = {
+
+			picture = USA_design_bureau_lockheed_icon
+
+			allowed = {
+				original_tag = USA
+			}
+
+			research_bonus = {
+				mod_cat_stealth_fighter = 0.1
+			}
+
+			traits = {
+				USA_design_bureau_lockheed_trait
+			}
+
+		}
+		USA_design_bureau_boeing = {
+
+			picture = USA_design_bureau_boeing_icon
+
+			allowed = {
+				original_tag = USA
+			}
+
+			research_bonus = {
+				mod_cat_attack_helicopter = 0.1
+			}
+
+			traits = {
+				USA_design_bureau_boeing_trait
+			}
+
+		}
+		USA_design_bureau_grumman = {
+
+			picture = USA_design_bureau_grumman_icon
+
+			allowed = {
+				original_tag = USA
+			}
+
+			research_bonus = {
+				mod_cat_stealth_bomber = 0.1
+				mod_cat_uav = 0.1
+			}
+
+			traits = {
+				USA_design_bureau_grumman_trait
+			}
+
+		}
+		USA_design_bureau_raytheon = {
+
+			picture = USA_design_bureau_raytheon_icon
+
+			allowed = {
+				original_tag = USA
+			}
+
+			research_bonus = {
+				mod_cat_aircraft = 0.1
+				mod_cat_uav = 0.1
+			}
+
+			traits = {
+				USA_design_bureau_raytheon_trait
+			}
+
+		}
+		USA_design_bureau_general_atomics = {
+
+			picture = USA_design_bureau_general_atomics_icon
+
+			allowed = {
+				original_tag = USA
+			}
+
+			research_bonus = {
+				mod_cat_uav = 0.15
+			}
+
+			traits = {
+				USA_design_bureau_general_atomics_trait
+			}
+
+		}
+		USA_design_bureau_sikorsky = {
+
+			picture = USA_design_bureau_sikorsky_icon
+
+			allowed = {
+				original_tag = USA
+			}
+
+			research_bonus = {
+				mod_cat_transport_helicopter = 0.15
+			}
+
+			traits = {
+				USA_design_bureau_sikorsky_trait
+			}
+
+		}
+		USA_design_bureau_bell = {
+
+			picture = USA_design_bureau_bell_icon
+
+			allowed = {
+				original_tag = USA
+			}
+
+			research_bonus = {
+				mod_cat_helicopter = 0.05
+			}
+
+			traits = {
+				USA_design_bureau_bell_trait
+			}
+
+		}
+
+	}
+
+	materiel_manufacturer = {
+
+		designer = yes
+
+		USA_design_bureau_lockheed_missiles = {
+
+			picture = USA_design_bureau_lockheed_missiles_icon
+
+			allowed = {
+				original_tag = USA
+			}
+
+			research_bonus = {
+				mod_cat_missile = 0.1
+			}
+
+			traits = {
+				USA_design_bureau_lockheed_missiles_trait
+			}
+
+		}
+		USA_design_bureau_colt = {
+
+			picture = USA_design_bureau_colt_icon
+
+			allowed = {
+				original_tag = USA
+			}
+
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+
+			traits = {
+				USA_design_bureau_colt_trait
+			}
+
+		}
+		USA_design_bureau_oshkosh = {
+
+			picture = USA_design_bureau_oshkosh_icon
+
+			allowed = {
+				original_tag = USA
+			}
+
+			research_bonus = {
+				mod_cat_truck = 0.1
+			}
+
+			traits = {
+				USA_design_bureau_oshkosh_trait
+			}
+
+		}
+
+	}
+
+}

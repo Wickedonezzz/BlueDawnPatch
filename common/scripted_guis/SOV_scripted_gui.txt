@@ -1,0 +1,176 @@
+scripted_gui = {
+
+	sov_party_factionalism_gui = {
+		window_name = "sov_party_factionalism_window"
+		context_type = decision_category
+
+		visible = {
+			original_tag = SOV
+		}
+		
+			triggers = {
+			 	sov_hardliner_hat_icon_visible = {
+			 		has_country_flag = sov_hardliner_rules_nation_flag
+			 	}
+			 	
+			 	sov_reformist_hat_icon_visible = {
+			 		has_country_flag = sov_reformist_rules_nation_flag
+			 	}
+			 	
+			 	sov_military_hat_icon_visible = {
+			 		has_country_flag = sov_military_rules_nation_flag
+			 	}
+		 	
+			 	sov_kgb_hat_icon_visible = {
+			 		has_country_flag = sov_kgb_rules_nation_flag
+			 	}
+			}
+	}
+
+	sov_ryz_east_europe_gui = {
+		window_name = "sov_east_europe_window"
+		context_type = decision_category
+
+		visible = {
+			original_tag = SOV
+		}
+		effects = {
+			poland1_click = {
+				SOV_clicked_on_poland_effect = yes
+			}
+			poland2_click = {
+				SOV_clicked_on_poland_effect = yes				
+			}
+			poland3_click = {
+				SOV_clicked_on_poland_effect = yes						
+			}
+			poland4_click = {
+				SOV_clicked_on_poland_effect = yes						
+			}
+			
+			romania1_click = {
+				SOV_clicked_on_romania_effect = yes						
+			}
+			romania2_click = {
+				SOV_clicked_on_romania_effect = yes			
+			}
+			romania3_click = {
+				SOV_clicked_on_romania_effect = yes			
+			}
+			romania4_click = {
+				SOV_clicked_on_romania_effect = yes				
+			}	
+
+			hungary1_click = {
+				SOV_clicked_on_hungary_effect = yes		
+			}
+			hungary2_click = {
+				SOV_clicked_on_hungary_effect = yes					
+			}
+			hungary3_click = {
+				SOV_clicked_on_hungary_effect = yes					
+			}
+			hungary4_click = {
+				SOV_clicked_on_hungary_effect = yes					
+			}	
+
+			bulgaria1_click = {
+				SOV_clicked_on_bulgaria_effect = yes			
+			}
+			bulgaria2_click = {
+				SOV_clicked_on_bulgaria_effect = yes				
+			}
+			bulgaria3_click = {
+				SOV_clicked_on_bulgaria_effect = yes			
+			}
+			bulgaria4_click = {
+				SOV_clicked_on_bulgaria_effect = yes
+			}
+
+			slovakia1_click = {
+				SOV_clicked_on_slovakia_effect = yes			
+			}
+			slovakia2_click = {
+				SOV_clicked_on_slovakia_effect = yes				
+			}
+			slovakia3_click = {
+				SOV_clicked_on_slovakia_effect = yes			
+			}
+			slovakia4_click = {
+				SOV_clicked_on_slovakia_effect = yes
+			}
+					
+			sov_x_button_click = {
+				clr_country_flag = poland_clicked			
+				clr_country_flag = romania_clicked
+				clr_country_flag = hungary_clicked	
+				clr_country_flag = bulgaria_clicked
+				clr_country_flag = slovakia_clicked
+			}
+		}
+		triggers = {
+			states_grid_visible = { always = yes }
+			poland1_visible = { check_variable = { sov_poland_var < 40 } NOT = {has_war_with = POL}}
+			poland2_visible = { check_variable = { sov_poland_var > 39 } check_variable = { sov_poland_var < 70 } NOT = {has_war_with = POL}}	
+			poland3_visible = { check_variable = { sov_poland_var > 69 } check_variable = { sov_poland_var < 100 } NOT = {has_war_with = POL}}						
+			poland4_visible = { check_variable = { sov_poland_var > 99 } NOT = {has_war_with = POL}}
+			poland5_visible = { has_war_with = POL }
+			
+			poland_box_popup_visible = {
+				OR = {
+					has_country_flag = poland_clicked 
+					has_country_flag = romania_clicked
+					has_country_flag = hungary_clicked	
+					has_country_flag = bulgaria_clicked		
+					has_country_flag = slovakia_clicked
+				}
+			}
+			sov_x_button_visible = {
+				OR = {
+					has_country_flag = poland_clicked 
+					has_country_flag = romania_clicked
+					has_country_flag = hungary_clicked
+					has_country_flag = bulgaria_clicked
+					has_country_flag = slovakia_clicked
+				}
+			}
+			
+			poland_support_text_visible = {has_country_flag = poland_clicked} 
+			poland_text_visible = {has_country_flag = poland_clicked} 
+			
+			romania1_visible = { check_variable = { sov_romania_var < 40 }}
+			romania2_visible = { check_variable = { sov_romania_var > 39 } check_variable = { sov_romania_var < 70 }}	
+			romania3_visible = { check_variable = { sov_romania_var > 69 } check_variable = { sov_romania_var < 100 }}						
+			romania4_visible = { check_variable = { sov_romania_var > 99 }}		
+
+			romania_support_text_visible = {has_country_flag = romania_clicked} 
+			romania_text_visible = {has_country_flag = romania_clicked} 		
+
+			hungary1_visible = { check_variable = { sov_hungary_var < 40 } NOT = {has_war_with = HUN}}
+			hungary2_visible = { check_variable = { sov_hungary_var > 39 } check_variable = { sov_hungary_var < 70 } NOT = {has_war_with = HUN}}	
+			hungary3_visible = { check_variable = { sov_hungary_var > 69 } check_variable = { sov_hungary_var < 100 } NOT = {has_war_with = HUN}}						
+			hungary4_visible = { check_variable = { sov_hungary_var > 99 } NOT = {has_war_with = HUN}}
+			hungary5_visible = { has_war_with = HUN }
+
+			hungary_support_text_visible = {has_country_flag = hungary_clicked} 
+			hungary_text_visible = {has_country_flag = hungary_clicked} 	
+
+			bulgaria1_visible = { check_variable = { sov_bulgaria_var < 40 }}
+			bulgaria2_visible = { check_variable = { sov_bulgaria_var > 39 } check_variable = { sov_bulgaria_var < 70 }}	
+			bulgaria3_visible = { check_variable = { sov_bulgaria_var > 69 } check_variable = { sov_bulgaria_var < 100 }}						
+			bulgaria4_visible = { check_variable = { sov_bulgaria_var > 99 }}
+
+			bulgaria_support_text_visible = {has_country_flag = bulgaria_clicked} 
+			bulgaria_text_visible = {has_country_flag = bulgaria_clicked} 	
+
+			slovakia1_visible = { check_variable = { sov_slovakia_var < 40 }}
+			slovakia2_visible = { check_variable = { sov_slovakia_var > 39 } check_variable = { sov_slovakia_var < 70 }}	
+			slovakia3_visible = { check_variable = { sov_slovakia_var > 69 } check_variable = { sov_slovakia_var < 100 }}						
+			slovakia4_visible = { check_variable = { sov_slovakia_var > 99 }}
+
+			slovakia_support_text_visible = {has_country_flag = slovakia_clicked} 
+			slovakia_text_visible = {has_country_flag = slovakia_clicked}			
+		}
+	}
+	
+}

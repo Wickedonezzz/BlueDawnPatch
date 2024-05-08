@@ -1,0 +1,239 @@
+division_template = { # Infantry Division #
+	name = "Infantry Division"
+	division_names_group = GENERIC_INF_01
+
+	regiments = {
+		recon_vehicle_armor = { x = 0 y = 0 }
+		heavy_infantry_unit = { x = 1 y = 0 }
+		infantry_unit = { x = 2 y = 0 }
+		infantry_unit = { x = 2 y = 1 }
+		infantry_unit = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		towed_artillery_support_unit = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+division_template = { # Infantry Division #
+	name = "Light Infantry Division"
+	division_names_group = GENERIC_INF_01
+
+	regiments = {
+		infantry_unit = { x = 0 y = 0 }
+		infantry_unit = { x = 1 y = 0 }
+		infantry_unit = { x = 2 y = 0 }
+		infantry_unit = { x = 2 y = 1 }
+		infantry_unit = { x = 2 y = 2 }
+	}
+	support = {
+	}
+	priority = 1
+}
+division_template = { # Infantry Division #
+	name = "Gendarmerie"
+	division_names_group = GENERIC_INF_01
+
+	regiments = {
+		infantry_unit = { x = 0 y = 0 }
+		infantry_unit = { x = 1 y = 0 }
+		infantry_unit = { x = 2 y = 0 }
+		infantry_unit = { x = 2 y = 1 }
+		infantry_unit = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+	priority = 2
+}
+division_template = { # Infantry Division #
+	name = "Militia Divison"
+	division_names_group = GENERIC_INF_01
+
+	regiments = {
+		militia_unit = { x = 0 y = 0 }
+		militia_unit = { x = 0 y = 1 }
+        militia_unit = { x = 0 y = 2 }
+		militia_unit =  {x = 0 y = 3 }
+		militia_unit =  {x = 0 y = 4 }
+	}
+	support = {
+	}
+	priority = 0
+}
+
+
+units = {
+	# Militia Division #
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8214
+		division_template = "Militia Divison"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.75
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 8214
+		division_template = "Militia Divison"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.75
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 13292
+		division_template = "Militia Divison"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.75
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 13292
+		division_template = "Militia Divison"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.75
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12963
+		division_template = "Militia Divison"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.75
+	}
+	# Infantry Division #
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13289
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			recon_vehicle_equipment_0 = { owner = "ENG" }
+			apc_tank_equipment_2 = { owner = "ENG" }
+			towed_artillery_equipment_1 = { owner = "ENG" }
+		}
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.75
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 12963
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			recon_vehicle_equipment_0 = { owner = "USA" }
+			apc_tank_equipment_0 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "ENG" }
+		}
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.75
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12963
+		division_template = "Light Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.75
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8214
+		division_template = "Gendarmerie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+}
+instant_effect = {
+
+	# Stockpile #
+        add_equipment_to_stockpile = {
+		type = infantry_weapons_1
+		amount = 600
+		producer = SOV
+	}
+        add_equipment_to_stockpile = {
+		type = infantry_weapons_1
+		amount = 600
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 150
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 150
+		producer = ENG
+	}
+        add_equipment_to_stockpile = {
+		type = motorised_equipment_1
+		amount = 100
+		producer = FRA
+	}
+        add_equipment_to_stockpile = {
+		type = motorised_equipment_1
+		amount = 100
+		producer = GER
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_anti_tank_weapons_1
+		amount = 75
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_anti_tank_weapons_1
+		amount = 75
+		producer = FRA
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_anti_tank_weapons_1
+		amount = 75
+		producer = SWE
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_anti_air_weapons_2
+		amount = 150
+		producer = SOV
+	}
+
+	add_equipment_to_stockpile = {
+		type = mbt_tank_equipment_1
+		amount = 30
+		producer = AUS
+	}
+	add_equipment_to_stockpile = {
+		type = heli_transport_equipment_1
+		amount = 5
+		producer = FRA
+	}
+	add_equipment_to_stockpile = {
+		type = heli_transport_equipment_1
+		amount = 5
+		producer = USA
+	}
+}

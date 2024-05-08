@@ -1,0 +1,174 @@
+air_wings = {
+	# Land Wings #
+	439 = {
+		# Fighters -- MiG-29, MiG-21
+		fighter_equipment_2 =  { # MiG-29 #
+			owner = "RAJ" 
+			creator = SOV
+			amount = 35
+		}
+		fighter_equipment_0 =  { # MiG-21 #
+			owner = "RAJ" 
+			creator = SOV
+			amount = 41
+		}
+		fighter_equipment_0 =  { # MiG-21 #
+			owner = "RAJ" 
+			creator = SOV
+			amount = 45
+		}
+
+		# Attackers -- MiG-27, Jaguar
+		attacker_equipment_1 =  { # Jaguar #
+			owner = "RAJ" 
+			creator = ENG
+			amount = 44
+		}
+		attacker_equipment_1 =  { # MiG-27 #
+			owner = "RAJ" 
+			creator = SOV
+			amount = 49
+		}
+
+		# Transports -- An-32, Il-76
+		transport_plane_equipment_1 =  { # An-32, Il-76 #
+			owner = "RAJ"
+			creator = SOV
+			amount = 20
+		}
+		transport_plane_equipment_1 =  { # An-32, Il-76 #
+			owner = "RAJ"
+			creator = SOV
+			amount = 16
+		}
+	}
+	437 = {
+		# Fighters -- MiG-29, MiG-21
+		fighter_equipment_2 =  { # MiG-29 #
+			owner = "RAJ" 
+			creator = SOV
+			amount = 29
+		}
+		fighter_equipment_0 =  { # MiG-21 #
+			owner = "RAJ" 
+			creator = SOV
+			amount = 40
+		}
+		fighter_equipment_0 =  { # MiG-21 #
+			owner = "RAJ" 
+			creator = SOV
+			amount = 43
+		}
+
+		# Attackers -- MiG-27, Jaguar
+		attacker_equipment_1 =  { # Jaguar #
+			owner = "RAJ" 
+			creator = ENG
+			amount = 44
+		}
+		attacker_equipment_1 =  { # MiG-27 #
+			owner = "RAJ" 
+			creator = SOV
+			amount = 50
+		}
+
+		# Transports -- An-32, Il-76
+		transport_plane_equipment_1 =  { # An-32, Il-76 #
+			owner = "RAJ"
+			creator = SOV
+			amount = 20
+		}
+	}
+	429 = {
+		# Fighters -- MiG-21
+		fighter_equipment_0 =  { # MiG-21 #
+			owner = "RAJ" 
+			creator = SOV
+			amount = 47
+		}
+
+		# Transports -- An-32, Il-76
+		transport_plane_equipment_1 =  { # An-32, Il-76 #
+			owner = "RAJ"
+			creator = SOV
+			amount = 20
+		}
+		transport_plane_equipment_1 =  { # An-32, Il-76 #
+			owner = "RAJ"
+			creator = SOV
+			amount = 14
+		}
+	}
+	423 = {
+		# Fighters -- MiG-23
+		fighter_equipment_1 =  { # MiG-23 #
+			owner = "RAJ" 
+			creator = SOV
+			amount = 38
+		}
+
+		# Transports -- An-32, Il-76
+		transport_plane_equipment_1 =  { # An-32, Il-76 #
+			owner = "RAJ"
+			creator = SOV
+			amount = 20
+		}
+	}
+	438 = {
+		# Fighters -- Mirage 2000, MiG-21
+		fighter_equipment_2 =  { # Mirage 2000 #
+			owner = "RAJ" 
+			creator = FRA
+			amount = 35
+		}
+		fighter_equipment_0 =  { # MiG-21 #
+			owner = "RAJ" 
+			creator = SOV
+			amount = 46
+		}
+
+		# Attackers -- MiG-27
+		attacker_equipment_1 =  { # MiG-27 #
+			owner = "RAJ" 
+			creator = SOV
+			amount = 48
+		}
+
+		# Transports -- BAe-748
+		transport_plane_equipment_1 =  { # BAe-748 #
+			owner = "RAJ"
+			creator = ENG
+			amount = 19
+		}
+		transport_plane_equipment_1 =  { # BAe-748 #
+			owner = "RAJ"
+			creator = ENG
+			amount = 9
+		}
+	}
+	434 = {
+		# Fighters -- MiG-23, MiG-21
+		fighter_equipment_1 =  { # MiG-23 #
+			owner = "RAJ" 
+			creator = SOV
+			amount = 41
+		}
+		fighter_equipment_0 =  { # MiG-21 #
+			owner = "RAJ" 
+			creator = SOV
+			amount = 42
+		}
+
+		# Transports -- An-32, Il-76
+		transport_plane_equipment_1 =  { # An-32, Il-76 #
+			owner = "RAJ"
+			creator = SOV
+			amount = 20
+		}
+	}
+
+	# Carrier Wings #
+	"INS Viraat" = {
+		carrier_fighter_equipment_1 = { owner = "ENG" amount = 12 }
+	}
+}

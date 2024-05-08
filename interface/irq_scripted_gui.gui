@@ -1,0 +1,231 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "kurd_resistance_stuff_gui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 200 }
+		
+		instantTextBoxType = {
+			name ="kurd_progress_bar_explanation"
+			position = { x = 20 y = 10 }
+			font = "hoi_30header"
+			text = "kurd_progress_bar_explanation_loc"
+			format = center
+			maxHeight = 0
+			maxWidth = 500
+		}
+		
+		instantTextBoxType = {
+			name ="kurd_resistance_percantage_in_gui"
+			position = { x = 5 y = 150 }
+			font = "hoi_18mbs"
+			text = "IRQ_kurd_res_percantage_explanation"
+			format = center
+			maxHeight = 0
+			maxWidth = 500
+		}
+		
+		iconType = {
+			name ="kurd_resistance_bar"
+			spriteType = "GFX_kurd_resistance_bar"
+			position = { x=50 y=100 }
+		}
+	}
+
+	containerWindowType = {
+		name = "irq_a_new_state_gui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 600 }
+		
+		instantTextBoxType = {
+			name ="management_of_the_uar"
+			position = { x = 5 y = 0 }
+			font = "hoi_30header"
+			text = "management_of_the_uar_loc"
+			format = center
+			maxHeight = 0
+			maxWidth = 500
+		}
+		
+		instantTextBoxType = {
+			name ="centralization_percantage_in_gui"
+			position = { x = 20 y = 477 }
+			font = "hoi_18mbs"
+			text = "IRQ_centralization_percantage_explanation"
+			format = center
+			maxHeight = 0
+			maxWidth = 500
+		}
+		
+		instantTextBoxType = {
+			name ="uar_stability_percantage_in_gui"
+			position = { x = 35 y = 400 }
+			font = "hoi_18mbs"
+			text = "IRQ_uar_stability_percantage_explanation"
+			format = center
+			maxHeight = 0
+			maxWidth = 500
+		}
+		iconType = {
+			name ="centralization_icon"
+			spriteType = "GFX_centralization_icon"
+			position = { x=55	 y=450 } 
+			pdx_tooltip = irq_uar_centralization_tt
+
+		}
+		
+		iconType = {
+			name ="uar_stability_icon"
+			spriteType = "GFX_uar_stability_icon"
+			position = { x=45	 y=350 }
+			pdx_tooltip = irq_uar_stability_tt
+
+		}
+		
+		iconType = {
+			name ="saddam_eagle"
+			spriteType = "GFX_saddam_eagle"
+			position = { x=155	 y=90 }
+
+		}
+
+	}
+
+	containerWindowType = {
+		name = "irq_decision_ui_kurdish_factions_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 740 }
+
+		instantTextBoxType = {
+			name ="kurdish_factions_header"
+			position = { x = 150 y = 0 }
+			font = "hoi_24header"
+			text = "IRQ_kurdish_factions_header"
+			format = center
+			maxHeight = 24
+		}
+		instantTextBoxType = {
+			name ="kurdish_factions_descriptions"
+			position = { x = 20 y = 40 }
+			font = "hoi_16mbs"
+			text = "IRQ_kurdish_factions_descriptions"
+			format = center
+			maxWidth = 450
+		}
+		instantTextBoxType = {
+			name ="kurdish_factions_list"
+			position = { x = 20 y = 140 }
+			font = "hoi_18mbs"
+			text = "IRQ_kurdish_factions_list"
+			format = left
+		}
+		instantTextBoxType = {
+			name ="kurdish_factions_unity"
+			position = { x = 70 y = 480 }
+			font = "hoi_18mbs"
+			text = "IRQ_kurdish_factions_unity"
+			format = left
+		}
+		instantTextBoxType = {
+			name ="kurdish_factions_list_descriptions"
+			position = { x = 260 y = 135 }
+			font = "hoi_16mbs"
+			text = "IRQ_kurdish_factions_list_descriptions"
+			format = centre
+			maxWidth = 220
+		}
+
+		iconType = {
+			name ="kurdish_icon"
+			spriteType = "GFX_decision_gui_kurdish_sun"
+			position = { x = 30 y = 520 }
+		}
+	}
+
+	containerWindowType = {
+		name = "irq_decision_ui_contest_nofly_zone_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 540 }
+
+		iconType = {
+			name ="iraq_nofly_zone_map_icon"
+			spriteType = "GFX_decision_gui_iraq_nofly_zone_map"
+			position = { x = 15 y = 20 }
+		}
+		iconType = {
+			name ="iraq_nofly_zone_map_arrows_icon"
+			spriteType = "GFX_decision_gui_iraq_nofly_zone_map_arrows"
+			position = { x = 170 y = 20 }
+		}
+
+		instantTextBoxType = {
+			name ="iraq_nofly_zone_map_status_list_headers_1"
+			position = { x = 320 y = 25 }
+			font = "hoi_18mbs"
+			text = "IRQ_nofly_zone_map_status_list_headers_1"
+			format = left
+		}
+		instantTextBoxType = {
+			name ="iraq_nofly_zone_map_status_list_1"
+			position = { x = 320 y = 45 }
+			font = "hoi_16mbs"
+			text = "IRQ_nofly_zone_map_status_list_1"
+			format = left
+			maxWidth = 170
+		}
+		instantTextBoxType = {
+			name ="iraq_nofly_zone_map_status_list_headers_2"
+			position = { x = 320 y = 105 }
+			font = "hoi_18mbs"
+			text = "IRQ_nofly_zone_map_status_list_headers_2"
+			format = left
+		}
+		instantTextBoxType = {
+			name ="iraq_nofly_zone_map_status_list_2"
+			position = { x = 320 y = 125 }
+			font = "hoi_16mbs"
+			text = "IRQ_nofly_zone_map_status_list_2"
+			format = left
+			maxWidth = 170
+		}
+		instantTextBoxType = {
+			name ="iraq_nofly_zone_map_status_list_headers_3"
+			position = { x = 320 y = 185 }
+			font = "hoi_18mbs"
+			text = "IRQ_nofly_zone_map_status_list_headers_3"
+			format = left
+		}
+		instantTextBoxType = {
+			name ="iraq_nofly_zone_map_status_list_3"
+			position = { x = 320 y = 205 }
+			font = "hoi_16mbs"
+			text = "IRQ_nofly_zone_map_status_list_3"
+			format = left
+			maxWidth = 170
+		}
+		instantTextBoxType = {
+			name ="iraq_nofly_zone_map_status_list_headers_4"
+			position = { x = 320 y = 265 }
+			font = "hoi_18mbs"
+			text = "IRQ_nofly_zone_map_status_list_headers_4"
+			format = left
+		}
+		instantTextBoxType = {
+			name ="iraq_nofly_zone_map_status_list_4"
+			position = { x = 320 y = 285 }
+			font = "hoi_16mbs"
+			text = "IRQ_nofly_zone_map_status_list_4"
+			format = left
+			maxWidth = 170
+		}
+
+		instantTextBoxType = {
+			name ="iraq_nofly_zone_map_descriptions"
+			position = { x = 20 y = 340 }
+			font = "hoi_16mbs"
+			text = "IRQ_nofly_zone_map_descriptions"
+			format = left
+			maxWidth = 440
+		}
+	}
+}

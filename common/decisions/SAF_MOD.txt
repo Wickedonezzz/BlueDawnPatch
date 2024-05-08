@@ -1,0 +1,2832 @@
+saf_debug = {
+	saf_cdebugs = {
+
+		icon = GFX_decision_generic_assassination
+
+		
+		visible = {
+			always = yes
+		}
+		cost = 0
+		#days_remove = 25
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = { 
+			saf_pacification_collapse = yes
+		}
+	}
+}
+
+saf_deal_with_insurgents = {
+	
+	saf_timer_clock_end_of_operations = {                          
+		allowed = {
+		}                
+         
+		available = {    
+		has_country_flag = saf_end_of_operations_reached
+        }
+		
+		activation = {                          
+			has_country_flag = saf_started_to_deal_with_insurgents
+			NOT = {
+				has_global_flag = anc_uprising_begun
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = saf_end_of_operations_reached
+			}
+		}  
+		  
+		
+		  
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 150            
+		timeout_effect = {
+		custom_effect_tooltip = SAF_insurgent_mechanic_explanation	
+			IF = {
+				limit = { 			 
+					check_variable = {
+						anc_fight_strength > 25
+					}
+				}
+				set_country_flag = saf_end_of_operations_reached
+				set_global_flag = anc_organized_start
+			}
+			ELSE_IF = {
+				limit = {
+					check_variable = {
+						anc_fight_strength < 26
+					}
+				}
+				set_country_flag = saf_end_of_operations_reached
+				set_global_flag = anc_disorganized_start
+			}
+		
+		
+		}
+		
+        complete_effect = {
+        }
+	}
+	
+	saf_continue_forced_removels = {
+
+		icon = GFX_decision_generic_assassination
+
+		allowed = {
+		}
+		available = {
+			NOT = {
+			has_country_flag = saf_end_of_operations_reached
+			}
+		}
+		visible = {
+			has_country_flag = saf_started_to_deal_with_insurgents
+			NOT = {
+			has_country_flag = saf_end_of_operations_reached
+			}
+		}
+		modifier {
+		weekly_manpower = -500
+		}
+		cost = 15
+		days_remove = 25
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		remove_effect = { 
+			custom_effect_tooltip = SAF_decrases_the_figthing_strength_of_rebels_by_5
+			add_to_variable = {anc_fight_strength = -5}
+
+		}
+	}
+	
+	saf_deploy_the_police_force = {
+
+		icon = GFX_decision_generic_assassination
+
+		allowed = {
+		
+		}
+		available = {
+			NOT = {
+			has_country_flag = saf_end_of_operations_reached
+			}
+			divisions_in_state = {
+				state = 719	
+				size > 2
+			}
+		}
+		visible = {
+			has_country_flag = saf_started_to_deal_with_insurgents
+			NOT = {
+			has_country_flag = saf_end_of_operations_reached
+			}
+			}
+		modifier {
+		weekly_manpower = -43
+		}
+		cost = 25
+		days_remove = 5
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		remove_effect = { 
+			custom_effect_tooltip = SAF_decrases_the_figthing_strength_of_rebels_by_10
+			add_to_variable = {anc_fight_strength = -10}
+
+		}
+	}
+	
+	saf_deploy_the_army = {
+
+		icon = GFX_decision_generic_assassination
+
+		allowed = {
+		
+		}
+		available = {
+			NOT = {
+			has_country_flag = saf_end_of_operations_reached
+			}
+			divisions_in_state = {
+				state = 923	
+				size > 5
+			}
+		}
+		visible = {
+			has_country_flag = saf_started_to_deal_with_insurgents
+			NOT = {
+			has_country_flag = saf_end_of_operations_reached
+			}
+		}
+		modifier {
+		weekly_manpower = -43
+		}
+		cost = 10
+		days_remove = 5
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		remove_effect = { 
+			custom_effect_tooltip = SAF_decrases_the_figthing_strength_of_rebels_by_10
+			add_to_variable = {anc_fight_strength = -10}
+
+		}
+	}
+
+}
+
+saf_category_request_foreign_weapons = {
+
+	## United States ##
+
+	SAF_request_foreign_weapons_usa_small_decision = {
+
+		icon = GFX_decision_generic_industry
+
+		priority = 10
+
+		fire_only_once = yes
+
+		cost = 50
+
+		visible = {
+			original_tag = SAF
+		}
+
+		available = {
+			AND = {
+				country_exists = SAF
+				country_exists = USA
+				NOT = {
+					SAF = {
+						has_war_with = USA
+					}
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = SAF }
+				NOT = { country_exists = USA }
+				SAF = {
+					has_war_with = USA
+				}
+			}
+		}
+
+		complete_effect = {
+			SAF = {
+				add_equipment_to_stockpile = {
+					type = infantry_weapons
+					amount = 60
+					producer = USA
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 70
+					producer = USA
+				}
+			}
+		}
+
+		ai_will_do = {
+		}
+
+	}
+	SAF_request_foreign_weapons_usa_medium_decision = {
+
+		icon = GFX_decision_generic_industry
+
+		priority = 9
+
+		fire_only_once = yes
+
+		cost = 75
+
+		visible = {
+			original_tag = SAF
+		}
+
+		available = {
+			AND = {
+				country_exists = SAF
+				country_exists = USA
+				NOT = {
+					SAF = {
+						has_war_with = USA
+					}
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = SAF }
+				NOT = { country_exists = USA }
+				SAF = {
+					has_war_with = USA
+				}
+			}
+		}
+
+		complete_effect = {
+			SAF = {
+				add_equipment_to_stockpile = {
+					type = infantry_weapons
+					amount = 120
+					producer = USA
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 150
+					producer = USA
+				}
+			}
+		}
+
+		ai_will_do = {
+		}
+
+	}
+	SAF_request_foreign_weapons_usa_large_decision = {
+
+		icon = GFX_decision_generic_industry
+
+		priority = 8
+
+		fire_only_once = yes
+
+		cost = 100
+
+		visible = {
+			original_tag = SAF
+		}
+
+		available = {
+			AND = {
+				country_exists = SAF
+				country_exists = USA
+				NOT = {
+					SAF = {
+						has_war_with = USA
+					}
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = SAF }
+				NOT = { country_exists = USA }
+				SAF = {
+					has_war_with = USA
+				}
+			}
+		}
+
+		complete_effect = {
+			SAF = {
+				add_equipment_to_stockpile = {
+					type = infantry_weapons
+					amount = 225
+					producer = USA
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 240
+					producer = USA
+				}
+			}
+		}
+
+		ai_will_do = {
+		}
+
+	}
+
+	## France ##
+
+	SAF_request_foreign_weapons_fra_small_decision = {
+
+		icon = GFX_decision_generic_industry
+
+		priority = 7
+
+		fire_only_once = yes
+
+		cost = 50
+
+		visible = {
+			original_tag = SAF
+		}
+
+		available = {
+			AND = {
+				country_exists = SAF
+				country_exists = FRA
+				NOT = {
+					SAF = {
+						has_war_with = FRA
+					}
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = SAF }
+				NOT = { country_exists = FRA }
+				SAF = {
+					has_war_with = FRA
+				}
+			}
+		}
+
+		complete_effect = {
+			SAF = {
+				add_equipment_to_stockpile = {
+					type = infantry_weapons
+					amount = 60
+					producer = FRA
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 70
+					producer = FRA
+				}
+			}
+		}
+
+		ai_will_do = {
+		}
+
+	}
+	SAF_request_foreign_weapons_fra_medium_decision = {
+
+		icon = GFX_decision_generic_industry
+
+		priority = 6
+
+		fire_only_once = yes
+
+		cost = 75
+
+		visible = {
+			original_tag = SAF
+		}
+
+		available = {
+			AND = {
+				country_exists = SAF
+				country_exists = FRA
+				NOT = {
+					SAF = {
+						has_war_with = FRA
+					}
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = SAF }
+				NOT = { country_exists = FRA }
+				SAF = {
+					has_war_with = FRA
+				}
+			}
+		}
+
+		complete_effect = {
+			SAF = {
+				add_equipment_to_stockpile = {
+					type = infantry_weapons
+					amount = 120
+					producer = FRA
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 150
+					producer = FRA
+				}
+			}
+		}
+
+		ai_will_do = {
+		}
+
+	}
+	SAF_request_foreign_weapons_fra_large_decision = {
+
+		icon = GFX_decision_generic_industry
+
+		priority = 5
+
+		fire_only_once = yes
+
+		cost = 100
+
+		visible = {
+			original_tag = SAF
+		}
+
+		available = {
+			AND = {
+				country_exists = SAF
+				country_exists = FRA
+				NOT = {
+					SAF = {
+						has_war_with = FRA
+					}
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = SAF }
+				NOT = { country_exists = FRA }
+				SAF = {
+					has_war_with = FRA
+				}
+			}
+		}
+
+		complete_effect = {
+			SAF = {
+				add_equipment_to_stockpile = {
+					type = infantry_weapons
+					amount = 225
+					producer = FRA
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 240
+					producer = FRA
+				}
+			}
+		}
+
+		ai_will_do = {
+		}
+
+	}
+
+	## United Kingdom ##
+
+	SAF_request_foreign_weapons_eng_small_decision = {
+
+		icon = GFX_decision_generic_industry
+
+		priority = 4
+
+		fire_only_once = yes
+
+		cost = 50
+
+		visible = {
+			original_tag = SAF
+		}
+
+		available = {
+			AND = {
+				country_exists = SAF
+				country_exists = ENG
+				NOT = {
+					SAF = {
+						has_war_with = ENG
+					}
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = SAF }
+				NOT = { country_exists = ENG }
+				SAF = {
+					has_war_with = ENG
+				}
+			}
+		}
+
+		complete_effect = {
+			SAF = {
+				add_equipment_to_stockpile = {
+					type = infantry_weapons
+					amount = 60
+					producer = ENG
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 70
+					producer = ENG
+				}
+			}
+		}
+
+		ai_will_do = {
+		}
+
+	}
+	SAF_request_foreign_weapons_eng_medium_decision = {
+
+		icon = GFX_decision_generic_industry
+
+		priority = 3
+
+		fire_only_once = yes
+
+		cost = 75
+
+		visible = {
+			original_tag = SAF
+		}
+
+		available = {
+			AND = {
+				country_exists = SAF
+				country_exists = ENG
+				NOT = {
+					SAF = {
+						has_war_with = ENG
+					}
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = SAF }
+				NOT = { country_exists = ENG }
+				SAF = {
+					has_war_with = ENG
+				}
+			}
+		}
+
+		complete_effect = {
+			SAF = {
+				add_equipment_to_stockpile = {
+					type = infantry_weapons
+					amount = 120
+					producer = ENG
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 150
+					producer = ENG
+				}
+			}
+		}
+
+		ai_will_do = {
+		}
+
+	}
+	SAF_request_foreign_weapons_eng_large_decision = {
+
+		icon = GFX_decision_generic_industry
+
+		priority = 2
+
+		fire_only_once = yes
+
+		cost = 100
+
+		visible = {
+			original_tag = SAF
+		}
+
+		available = {
+			AND = {
+				country_exists = SAF
+				country_exists = ENG
+				NOT = {
+					SAF = {
+						has_war_with = ENG
+					}
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = SAF }
+				NOT = { country_exists = ENG }
+				SAF = {
+					has_war_with = ENG
+				}
+			}
+		}
+
+		complete_effect = {
+			SAF = {
+				add_equipment_to_stockpile = {
+					type = infantry_weapons
+					amount = 225
+					producer = ENG
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 240
+					producer = ENG
+				}
+			}
+		}
+
+		ai_will_do = {
+		}
+
+	}
+
+}
+
+saf_category_purchase_foreign_navy_designs = {
+
+	## United Kingdom ##
+
+	SAF_foreign_navy_designs_eng_submarine = {
+
+		icon = GFX_decision_generic_submarine
+
+		priority = 10
+
+		fire_only_once = yes
+		days_remove = 30
+
+		cost = 75
+
+		visible = {
+			original_tag = SAF
+		}
+
+		available = {
+			AND = {
+				country_exists = SAF
+				country_exists = ENG
+				NOT = {
+					SAF = {
+						has_war_with = ENG
+					}
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = SAF }
+				NOT = { country_exists = ENG }
+				SAF = {
+					has_war_with = ENG
+				}
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = { has_dlc = "Death or Dishonor" }
+				ENG = {
+					create_production_license = {
+						target = SAF
+						equipment = {
+							type = attack_submarine_hull_2
+							version_name = "Upholder Class"
+						}
+						cost_factor = 0
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+		}
+
+	}
+
+	## France ##
+
+	SAF_foreign_navy_designs_fra_submarine = {
+
+		icon = GFX_decision_generic_submarine
+
+		priority = 9
+
+		fire_only_once = yes
+		days_remove = 30
+
+		cost = 150
+
+		visible = {
+			original_tag = SAF
+		}
+
+		available = {
+			AND = {
+				country_exists = SAF
+				country_exists = FRA
+				NOT = {
+					SAF = {
+						has_war_with = FRA
+					}
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = SAF }
+				NOT = { country_exists = FRA }
+				SAF = {
+					has_war_with = FRA
+				}
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = { has_dlc = "Death or Dishonor" }
+				FRA = {
+					create_production_license = {
+						target = SAF
+						equipment = {
+							type = attack_submarine_hull_4
+							version_name = "Scorpène Class"
+						}
+						cost_factor = 0
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+		}
+
+	}
+	SAF_foreign_navy_designs_fra_ship = {
+
+		icon = GFX_decision_generic_ship
+
+		priority = 8
+
+		fire_only_once = yes
+		days_remove = 45
+
+		cost = 200
+
+		visible = {
+			original_tag = SAF
+		}
+
+		available = {
+			AND = {
+				country_exists = SAF
+				country_exists = FRA
+				NOT = {
+					SAF = {
+						has_war_with = FRA
+					}
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = SAF }
+				NOT = { country_exists = FRA }
+				SAF = {
+					has_war_with = FRA
+				}
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = { has_dlc = "Death or Dishonor" }
+				FRA = {
+					create_production_license = {
+						target = SAF
+						equipment = {
+							type = destroyer_hull_3
+							version_name = "La Fayette Class"
+						}
+						cost_factor = 0
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+		}
+
+	}
+
+	## Germany ##
+
+	SAF_foreign_navy_designs_ger_submarine_modern = {
+
+		icon = GFX_decision_generic_submarine
+
+		priority = 7
+
+		fire_only_once = yes
+		days_remove = 30
+
+		cost = 150
+
+		visible = {
+			original_tag = SAF
+		}
+
+		available = {
+			AND = {
+				country_exists = SAF
+				country_exists = GER
+				NOT = {
+					SAF = {
+						has_war_with = GER
+					}
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = SAF }
+				NOT = { country_exists = GER }
+				SAF = {
+					has_war_with = GER
+				}
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = { has_dlc = "Death or Dishonor" }
+				GER = {
+					create_production_license = {
+						target = SAF
+						equipment = {
+							type = attack_submarine_hull_4
+							version_name = "Type 214 Class"
+						}
+						cost_factor = 0
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+		}
+
+	}
+	SAF_foreign_navy_designs_ger_submarine_old = {
+
+		icon = GFX_decision_generic_submarine
+
+		priority = 6
+
+		fire_only_once = yes
+		days_remove = 30
+
+		cost = 50
+
+		visible = {
+			original_tag = SAF
+		}
+
+		available = {
+			AND = {
+				country_exists = SAF
+				country_exists = GER
+				NOT = {
+					SAF = {
+						has_war_with = GER
+					}
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = SAF }
+				NOT = { country_exists = GER }
+				SAF = {
+					has_war_with = GER
+				}
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = { has_dlc = "Death or Dishonor" }
+				GER = {
+					create_production_license = {
+						target = SAF
+						equipment = {
+							type = attack_submarine_hull_1
+							version_name = "Type 209/1400 Class"
+						}
+						cost_factor = 0
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+		}
+
+	}
+	SAF_foreign_navy_designs_ger_ship = {
+
+		icon = GFX_decision_generic_ship
+
+		priority = 5
+
+		fire_only_once = yes
+		days_remove = 45
+
+		cost = 150
+
+		visible = {
+			original_tag = SAF
+		}
+
+		available = {
+			AND = {
+				country_exists = SAF
+				country_exists = GER
+				NOT = {
+					SAF = {
+						has_war_with = GER
+					}
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = SAF }
+				NOT = { country_exists = GER }
+				SAF = {
+					has_war_with = GER
+				}
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					NOT = {
+						SAF = { has_tech = destroyer_hull_1990 }
+					}
+				}
+				set_technology = {
+					destroyer_hull_1990 = 1
+				}
+			}
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+
+				create_equipment_variant = {
+					name = "Amatola Class"
+					type = destroyer_hull_3
+					#name_group = 
+					parent_version = 0
+					modules = {
+						fixed_ship_systems_slot = surface_electrical_systems_3
+						fixed_ship_engine_slot = small_surface_engine_diesel_2
+						fixed_ship_sonar_slot = sub_sonar_4
+						fixed_ship_radar_slot = ship_radar_3
+						fixed_ship_defensive_slot_1 = sam_missile_3
+						fixed_ship_defensive_slot_2 = sam_missile_3
+						fixed_ship_aviation_slot = naval_helicopter_2
+						custom_ship_cannon_slot = naval_gun_2
+						custom_slot_1 = cruise_missile_2
+						custom_slot_2 = ship_torpedo_surface_1
+						custom_slot_3 = cruise_missile_2
+						custom_slot_4 = empty
+						custom_ship_rear_cannon_slot = empty
+					}
+					obsolete = no
+				}
+			}
+		}
+
+		ai_will_do = {
+		}
+
+	}
+
+}
+
+saf_great_game = {
+	
+	saf_great_game_countdown = {
+		priority = 50
+		name = saf_great_game_countdown
+		icon = burning_flag
+		available = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = saf_great_game_countdown_trigger_tt
+					check_variable = { great_game_progress_var = 100 }
+				}
+				custom_trigger_tooltip = {
+					tooltip = saf_great_game_countdown_trigger_anti_tt
+					check_variable = { great_game_progress_var = 0 }
+				}
+			}
+		}
+		days_mission_timeout = 100
+		fire_only_once = yes
+		activation = {
+			always = no
+		}
+		visible = {
+			has_country_flag = saf_great_game_countdown
+		}
+		timeout_effect = {
+			custom_effect_tooltip = saf_great_game_countdown_tt
+			saf_meiring_succeeds = yes
+			hidden_effect = {
+				retire_character = SAF_georg_meiring
+				country_event = saf_hidden.3
+			}
+		}
+	}
+	saf_hold_speech = {
+		priority = 10
+		name = saf_hold_speech
+		icon = eng_propaganda_campaigns
+		allowed = { original_tag = SAF }
+		#available = { always = yes }
+		visible = { has_active_mission = saf_great_game_countdown }
+		cancel_if_not_visible = yes
+		cost = 20
+		days_remove = 14
+		remove_effect = {
+			set_temp_variable = { great_game_increase_influence_viljoen = 3 }
+			saf_great_game_compute_new_infulence = yes
+		}
+	}
+	saf_hold_grand_speech = {
+		priority = 10
+		name = saf_hold_grand_speech
+		icon = eng_propaganda_campaigns
+		allowed = { original_tag = SAF }
+		available = { always = yes }
+		visible = { has_active_mission = saf_great_game_countdown }
+		cancel_if_not_visible = yes
+		cost = 50
+		days_remove = 35
+		remove_effect = {
+			set_temp_variable = { great_game_increase_influence_viljoen = 5 }
+			saf_great_game_compute_new_infulence = yes
+		}
+	}
+	saf_birbe_meirings_guard = {
+		priority = 10
+		name = saf_birbe_meirings_guard
+		icon = generic_political_discourse
+		allowed = { original_tag = SAF }
+		available = { always = yes }
+		visible = { has_active_mission = saf_great_game_countdown }
+		cancel_if_not_visible = yes
+		cost = 75
+		days_remove = 59
+		remove_effect = {
+			set_temp_variable = { great_game_increase_influence_viljoen = 30 }
+			saf_great_game_compute_new_infulence = yes
+		}
+	}
+	saf_publicly_denounce_meiring = {
+		priority = 10
+		name = saf_publicly_denounce_meiring
+		icon = generic_speech
+		allowed = { original_tag = SAF }
+		available = { always = yes }
+		visible = { has_active_mission = saf_great_game_countdown }
+		cancel_if_not_visible = yes
+		cost = 100
+		complete_effect = {
+			set_temp_variable = { great_game_increase_influence_viljoen = 13 }
+			saf_great_game_compute_new_infulence = yes
+		}
+	}
+	saf_abduct_meirings_officers = {
+		priority = 10
+		name = saf_abduct_meirings_officers
+		icon = generic_arrest
+		allowed = { original_tag = SAF }
+		available = { always = yes }
+		visible = { has_active_mission = saf_great_game_countdown }
+		cancel_if_not_visible = yes
+		cost = 150
+		days_remove = 79
+		remove_effect = {
+			set_temp_variable = { great_game_increase_influence_viljoen = 15 }
+			saf_great_game_compute_new_infulence = yes
+		}
+	}
+	saf_plant_false_information_on_meiring = {
+		priority = 10
+		name = saf_plant_false_information_on_meiring
+		icon = SWI_expand_covert_operations
+		allowed = { original_tag = SAF }
+		available = { always = yes }
+		visible = { has_active_mission = saf_great_game_countdown }
+		cancel_if_not_visible = yes
+		cost = 200
+		days_remove = 140
+		remove_effect = {
+			set_temp_variable = { great_game_increase_influence_viljoen = 20 }
+			saf_great_game_compute_new_infulence = yes
+		}
+	}
+	saf_proofs_about_viljoens_treason = {
+		priority = 10
+		name = saf_proofs_about_viljoens_treason
+		icon = eng_propaganda_campaigns
+		allowed = { original_tag = SAF }
+		visible = { always = no }
+		days_remove = 30
+		remove_effect = {
+			meiring_select_decision = yes
+			set_temp_variable = { great_game_increase_influence_meiring = 15 }
+			saf_great_game_compute_new_infulence = yes
+		}
+	}
+	saf_spread_propaganda = {
+		priority = 10
+		name = saf_spread_propaganda
+		icon = eng_propaganda_campaigns
+		allowed = { original_tag = SAF }
+		visible = { always = no }
+		days_remove = 30
+		remove_effect = {
+			meiring_select_decision = yes
+			set_temp_variable = { great_game_increase_influence_meiring = 30 }
+			saf_great_game_compute_new_infulence = yes
+		}
+	}
+	saf_expand_meiring_influence = {
+		priority = 10
+		name = saf_expand_meiring_influence
+		icon = eng_propaganda_campaigns
+		allowed = { original_tag = SAF }
+		visible = { always = no }
+		days_remove = 30
+		remove_effect = {
+			meiring_select_decision = yes
+			set_temp_variable = { great_game_increase_influence_meiring = 5 }
+			saf_great_game_compute_new_infulence = yes
+		}
+	}
+}
+saf_viljoen_cult_of_personality = {
+	
+	saf_add_cult_of_personality_influence = {
+		priority = 10
+		name = saf_add_cult_of_personality_influence
+		icon = eng_propaganda_campaigns
+		allowed = { original_tag = SAF }
+		#visible = { always = no }
+		days_remove = 5
+		complete_effect = {
+			set_temp_variable = { viljoen_cop_change_influence = 70 }
+			saf_viljoen_cop_compute_new_infulence = yes
+		}
+	}
+}
+saf_viljoen_pacification = {
+	
+	saf_reset_turmoil = {
+		priority = 10
+		name = saf_reset_turmoil
+		icon = eng_propaganda_campaigns
+		allowed = { original_tag = SAF }
+		visible = { is_debug = yes }
+		complete_effect = {
+			#saf_clr_turmoil = yes
+			hidden_effect = { saf_start_random_weighted_turmoil = yes }
+		}
+	}
+	saf_pacification_increase_stability = {
+		priority = 10
+		icon = GFX_decision_generic_civil_support
+		cost = 10
+		fire_only_once = no   
+		allowed = { original_tag = SAF }
+
+		state_target = yes
+		on_map_mode = map_only
+		target_trigger = {
+			FROM = { 
+				is_owned_by = ROOT
+				is_in_array = { SAF.SAF_states_that_can_rebel_array = THIS }
+			}
+		}
+		target_root_trigger = { 
+			original_tag = SAF
+		}
+		visible = {
+			NOT = { has_country_flag = saf_nation_pacified }
+			custom_trigger_tooltip = { 
+				tooltip = saf_pacification_increase_stability_trigger_tt 
+				check_variable = { saf_increasing_stability < 2 } 
+			}   
+		}
+		available = { always = yes }
+
+		days_remove = 30
+		remove_trigger = {
+			FROM = { is_core_of = ROOT }
+		}
+		complete_effect = {
+			add_to_variable = { saf_increasing_stability = 1 }
+		}
+		remove_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			if = { limit = { FROM = { OR = { state = 540 state = 888 state = 889 } } } add_to_variable = { turmoil_angola = saf_state_turmoil_amount_to_reduce_temp } }
+			if = { limit = { FROM = { OR = { state = 542 } } } add_to_variable = { turmoil_botswana = saf_state_turmoil_amount_to_reduce_temp } }
+			if = { limit = { FROM = { OR = { state = 769 } } } add_to_variable = { turmoil_burundi = saf_state_turmoil_amount_to_reduce_temp } }
+			if = { limit = { FROM = { OR = { state = 295 state = 538 state = 718 state = 9299 state = 930 state = 931 state = 932 state = 933 state = 958 state = 796 } } } add_to_variable = { turmoil_congo = saf_state_turmoil_amount_to_reduce_temp } }
+			if = { limit = { FROM = { OR = { state = 772 } } } add_to_variable = { turmoil_rcg = saf_state_turmoil_amount_to_reduce_temp } }
+			if = { limit = { FROM = { OR = { state = 951 } } } add_to_variable = { turmoil_eswatini = saf_state_turmoil_amount_to_reduce_temp } }
+			if = { limit = { FROM = { OR = { state = 539 } } } add_to_variable = { turmoil_gabon = saf_state_turmoil_amount_to_reduce_temp } }
+			if = { limit = { FROM = { OR = { state = 297 } } } add_to_variable = { turmoil_guinea = saf_state_turmoil_amount_to_reduce_temp } }
+			if = { limit = { FROM = { OR = { state = 547 state = 897 state = 898 state = 899  } } } add_to_variable = { turmoil_kenya = saf_state_turmoil_amount_to_reduce_temp } }
+			if = { limit = { FROM = { OR = { state = 952 } } } add_to_variable = { turmoil_lesotho = saf_state_turmoil_amount_to_reduce_temp } }
+			if = { limit = { FROM = { OR = { state = 543 } } } add_to_variable = { turmoil_madagascar = saf_state_turmoil_amount_to_reduce_temp } }
+			if = { limit = { FROM = { OR = { state = 770 } } } add_to_variable = { turmoil_malawi = saf_state_turmoil_amount_to_reduce_temp } }
+			if = { limit = { FROM = { OR = { state = 544 state = 890 state = 891 } } } add_to_variable = { turmoil_mozambique = saf_state_turmoil_amount_to_reduce_temp } }
+			if = { limit = { FROM = { OR = { state = 541 state = 980 } } } add_to_variable = { turmoil_namibia = saf_state_turmoil_amount_to_reduce_temp } }
+			if = { limit = { FROM = { OR = { state = 768 } } } add_to_variable = { turmoil_rwanda = saf_state_turmoil_amount_to_reduce_temp } }
+			if = { limit = { FROM = { OR = { state = 546 } } } add_to_variable = { turmoil_tanzania = saf_state_turmoil_amount_to_reduce_temp } }
+			if = { limit = { FROM = { OR = { state = 548 } } } add_to_variable = { turmoil_uganda = saf_state_turmoil_amount_to_reduce_temp } }
+			if = { limit = { FROM = { OR = { state = 771 } } } add_to_variable = { turmoil_zambia = saf_state_turmoil_amount_to_reduce_temp } }
+			if = { limit = { FROM = { OR = { state = 545 } } } add_to_variable = { turmoil_zimbabwe = saf_state_turmoil_amount_to_reduce_temp } }
+			custom_effect_tooltip = saf_pacification_increase_stability_effect_tt
+			hidden_effect = { saf_claim_states_to_be_pacified = yes saf_calculate_mean_stability = yes }
+			add_to_variable = { saf_increasing_stability = -1 }
+		}
+	}
+	saf_states_economic_development_2 = {
+		priority = 10
+		name = saf_states_economic_development
+		icon = GFX_decision_generic_construction
+		allowed = { original_tag = SAF }
+		visible = { check_variable = { saf_states_economic_development = 540 } }
+        days_remove = 30
+		cost = 10
+		complete_effect = {
+			hidden_effect = { add_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+		}
+        remove_effect = {
+			hidden_effect = { remove_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 10 }
+			add_to_variable = { turmoil_angola = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			var:saf_states_economic_development = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			saf_states_economic_development = yes
+        }
+	}
+	saf_states_economic_development_3 = {
+		priority = 10
+		name = saf_states_economic_development
+		icon = GFX_decision_generic_construction
+		allowed = { original_tag = SAF }
+		visible = { check_variable = { saf_states_economic_development = 542 } }
+        days_remove = 30
+		cost = 10
+		complete_effect = {
+			hidden_effect = { add_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+		}
+        remove_effect = {
+			hidden_effect = { remove_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 10 }
+			add_to_variable = { turmoil_botswana = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			var:saf_states_economic_development = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			saf_states_economic_development = yes
+        }
+	}
+	saf_states_economic_development_4 = {
+		priority = 10
+		name = saf_states_economic_development
+		icon = GFX_decision_generic_construction
+		allowed = { original_tag = SAF }
+		visible = { check_variable = { saf_states_economic_development = 295 } }
+        days_remove = 30
+		cost = 10
+		complete_effect = {
+			hidden_effect = { add_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+		}
+        remove_effect = {
+			hidden_effect = { remove_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 10 }
+			add_to_variable = { turmoil_burundi = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			var:saf_states_economic_development = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			saf_states_economic_development = yes
+        }
+	}
+	saf_states_economic_development_5 = {
+		priority = 10
+		name = saf_states_economic_development
+		icon = GFX_decision_generic_construction
+		allowed = { original_tag = SAF }
+		visible = { check_variable = { saf_states_economic_development = 796 } }
+        days_remove = 30
+		cost = 10
+		complete_effect = {
+			hidden_effect = { add_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+		}
+        remove_effect = {
+			hidden_effect = { remove_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 10 }
+			add_to_variable = { turmoil_congo = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			var:saf_states_economic_development = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			saf_states_economic_development = yes
+        }
+	}
+	saf_states_economic_development_6 = {
+		priority = 10
+		name = saf_states_economic_development
+		icon = GFX_decision_generic_construction
+		allowed = { original_tag = SAF }
+		visible = { check_variable = { saf_states_economic_development = 772 } }
+        days_remove = 30
+		cost = 10
+		complete_effect = {
+			hidden_effect = { add_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+		}
+        remove_effect = {
+			hidden_effect = { remove_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 10 }
+			add_to_variable = { turmoil_rcg = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			var:saf_states_economic_development = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			saf_states_economic_development = yes
+        }
+	}
+	saf_states_economic_development_7 = {
+		priority = 10
+		name = saf_states_economic_development
+		icon = GFX_decision_generic_construction
+		allowed = { original_tag = SAF }
+		visible = { check_variable = { saf_states_economic_development = 951 } }
+        days_remove = 30
+		cost = 10
+		complete_effect = {
+			hidden_effect = { add_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+		}
+        remove_effect = {
+			hidden_effect = { remove_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 10 }
+			add_to_variable = { turmoil_eswatini = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			var:saf_states_economic_development = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			saf_states_economic_development = yes
+        }
+	}
+	saf_states_economic_development_8 = {
+		priority = 10
+		name = saf_states_economic_development
+		icon = GFX_decision_generic_construction
+		allowed = { original_tag = SAF }
+		visible = { check_variable = { saf_states_economic_development = 539 } }
+        days_remove = 30
+		cost = 10
+		complete_effect = {
+			hidden_effect = { add_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+		}
+        remove_effect = {
+			hidden_effect = { remove_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 10 }
+			add_to_variable = { turmoil_gabon = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			var:saf_states_economic_development = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			saf_states_economic_development = yes
+        }
+	}
+	saf_states_economic_development_9 = {
+		priority = 10
+		name = saf_states_economic_development
+		icon = GFX_decision_generic_construction
+		allowed = { original_tag = SAF }
+		visible = { check_variable = { saf_states_economic_development = 297 } }
+        days_remove = 30
+		cost = 10
+		complete_effect = {
+			hidden_effect = { add_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+		}
+        remove_effect = {
+			hidden_effect = { remove_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 10 }
+			add_to_variable = { turmoil_guinea = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			var:saf_states_economic_development = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			saf_states_economic_development = yes
+        }
+	}
+	saf_states_economic_development_10 = {
+		priority = 10
+		name = saf_states_economic_development
+		icon = GFX_decision_generic_construction
+		allowed = { original_tag = SAF }
+		visible = { check_variable = { saf_states_economic_development = 547 } }
+        days_remove = 30
+		cost = 10
+		complete_effect = {
+			hidden_effect = { add_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+		}
+        remove_effect = {
+			hidden_effect = { remove_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 10 }
+			add_to_variable = { turmoil_kenya = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			var:saf_states_economic_development = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			saf_states_economic_development = yes
+        }
+	}
+	saf_states_economic_development_11 = {
+		priority = 10
+		name = saf_states_economic_development
+		icon = GFX_decision_generic_construction
+		allowed = { original_tag = SAF }
+		visible = { check_variable = { saf_states_economic_development = 952 } }
+        days_remove = 30
+		cost = 10
+		complete_effect = {
+			hidden_effect = { add_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+		}
+        remove_effect = {
+			hidden_effect = { remove_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 10 }
+			add_to_variable = { turmoil_lesotho = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			var:saf_states_economic_development = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			saf_states_economic_development = yes
+        }
+	}
+	saf_states_economic_development_12 = {
+		priority = 10
+		name = saf_states_economic_development
+		icon = GFX_decision_generic_construction
+		allowed = { original_tag = SAF }
+		visible = { check_variable = { saf_states_economic_development = 543 } }
+        days_remove = 30
+		cost = 10
+		complete_effect = {
+			hidden_effect = { add_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+		}
+        remove_effect = {
+			hidden_effect = { remove_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 10 }
+			add_to_variable = { turmoil_madagascar = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			var:saf_states_economic_development = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			saf_states_economic_development = yes
+        }
+	}
+	saf_states_economic_development_13 = {
+		priority = 10
+		name = saf_states_economic_development
+		icon = GFX_decision_generic_construction
+		allowed = { original_tag = SAF }
+		visible = { check_variable = { saf_states_economic_development = 770 } }
+        days_remove = 30
+		cost = 10
+		complete_effect = {
+			hidden_effect = { add_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+		}
+        remove_effect = {
+			hidden_effect = { remove_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 10 }
+			add_to_variable = { turmoil_malawi = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			var:saf_states_economic_development = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			saf_states_economic_development = yes
+        }
+	}
+	saf_states_economic_development_14 = {
+		priority = 10
+		name = saf_states_economic_development
+		icon = GFX_decision_generic_construction
+		allowed = { original_tag = SAF }
+		visible = { check_variable = { saf_states_economic_development = 544 } }
+        days_remove = 30
+		cost = 10
+		complete_effect = {
+			hidden_effect = { add_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+		}
+        remove_effect = {
+			hidden_effect = { remove_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 10 }
+			add_to_variable = { turmoil_mozambique = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			var:saf_states_economic_development = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			saf_states_economic_development = yes
+        }
+	}
+	saf_states_economic_development_15 = {
+		priority = 10
+		name = saf_states_economic_development
+		icon = GFX_decision_generic_construction
+		allowed = { original_tag = SAF }
+		visible = { check_variable = { saf_states_economic_development = 541 } }
+        days_remove = 30
+		cost = 10
+		complete_effect = {
+			hidden_effect = { add_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+		}
+        remove_effect = {
+			hidden_effect = { remove_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 10 }
+			add_to_variable = { turmoil_namibia = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			var:saf_states_economic_development = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			saf_states_economic_development = yes
+        }
+	}
+	saf_states_economic_development_16 = {
+		priority = 10
+		name = saf_states_economic_development
+		icon = GFX_decision_generic_construction
+		allowed = { original_tag = SAF }
+		visible = { check_variable = { saf_states_economic_development = 768 } }
+        days_remove = 30
+		cost = 10
+		complete_effect = {
+			hidden_effect = { add_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+		}
+        remove_effect = {
+			hidden_effect = { remove_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 10 }
+			add_to_variable = { turmoil_rwanda = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			var:saf_states_economic_development = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			saf_states_economic_development = yes
+        }
+	}
+	saf_states_economic_development_17 = {
+		priority = 10
+		name = saf_states_economic_development
+		icon = GFX_decision_generic_construction
+		allowed = { original_tag = SAF }
+		visible = { check_variable = { saf_states_economic_development = 546 } }
+        days_remove = 30
+		cost = 10
+		complete_effect = {
+			hidden_effect = { add_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+		}
+        remove_effect = {
+			hidden_effect = { remove_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 10 }
+			add_to_variable = { turmoil_tanzania = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			var:saf_states_economic_development = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			saf_states_economic_development = yes
+        }
+	}
+	saf_states_economic_development_18 = {
+		priority = 10
+		name = saf_states_economic_development
+		icon = GFX_decision_generic_construction
+		allowed = { original_tag = SAF }
+		visible = { check_variable = { saf_states_economic_development = 548 } }
+        days_remove = 30
+		cost = 10
+		complete_effect = {
+			hidden_effect = { add_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+		}
+        remove_effect = {
+			hidden_effect = { remove_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 10 }
+			add_to_variable = { turmoil_uganda = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			var:saf_states_economic_development = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			saf_states_economic_development = yes
+        }
+	}
+	saf_states_economic_development_19 = {
+		priority = 10
+		name = saf_states_economic_development
+		icon = GFX_decision_generic_construction
+		allowed = { original_tag = SAF }
+		visible = { check_variable = { saf_states_economic_development = 771 } }
+        days_remove = 30
+		cost = 10
+		complete_effect = {
+			hidden_effect = { add_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+		}
+        remove_effect = {
+			hidden_effect = { remove_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 10 }
+			add_to_variable = { turmoil_zambia = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			var:saf_states_economic_development = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			saf_states_economic_development = yes
+        }
+	}
+	saf_states_economic_development_20 = {
+		priority = 10
+		name = saf_states_economic_development
+		icon = GFX_decision_generic_construction
+		allowed = { original_tag = SAF }
+		visible = { check_variable = { saf_states_economic_development = 545 } }
+        days_remove = 30
+		cost = 10
+		complete_effect = {
+			hidden_effect = { add_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+		}
+        remove_effect = {
+			hidden_effect = { remove_dynamic_modifier = { modifier = SAF_pacification_civ_use } }
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 10 }
+			add_to_variable = { turmoil_zimbabwe = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			var:saf_states_economic_development = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			saf_states_economic_development = yes
+        }
+	}
+	
+	saf_state_turmoil_brewing_angola_1 = {
+		name = saf_state_turmoil_brewing_angola
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 540
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_angola > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 540 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 540 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_angola = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_angola = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_angola_2 = {
+		name = saf_state_turmoil_brewing_angola
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 888
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_angola > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 888 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 888 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_angola = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_angola = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_angola_3 = {
+		name = saf_state_turmoil_brewing_angola
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 889
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_angola > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 889 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 889 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_angola = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_angola = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_botswana_1 = {
+		name = saf_state_turmoil_brewing_botswana
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 542
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_botswana > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 542 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 542 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_botswana = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_botswana = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_burundi_1 = {
+		name = saf_state_turmoil_brewing_burundi
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 769
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_burundi > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 769 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 769 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_burundi = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_burundi = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_congo_1 = {
+		name = saf_state_turmoil_brewing_congo
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 295
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_congo > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 295 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 295 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_congo = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_congo = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_congo_2 = {
+		name = saf_state_turmoil_brewing_congo
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 538
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_congo > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 538 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 538 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_congo = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_congo = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_congo_3 = {
+		name = saf_state_turmoil_brewing_congo
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 718
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_congo > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 718 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 718 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_congo = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_congo = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_congo_4 = {
+		name = saf_state_turmoil_brewing_congo
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 929
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_congo > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 929 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 929 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_congo = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_congo = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_congo_5 = {
+		name = saf_state_turmoil_brewing_congo
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 930
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_congo > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 930 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 930 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_congo = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_congo = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_congo_6 = {
+		name = saf_state_turmoil_brewing_congo
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 931
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_congo > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 931 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 931 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_congo = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_congo = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_congo_7 = {
+		name = saf_state_turmoil_brewing_congo
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 932
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_congo > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 932 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 932 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_congo = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_congo = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_congo_8 = {
+		name = saf_state_turmoil_brewing_congo
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 933
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_congo > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 933 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 933 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_congo = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_congo = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_congo_9 = {
+		name = saf_state_turmoil_brewing_congo
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 958
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_congo > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 958 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 958 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_congo = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_congo = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_congo_10 = {
+		name = saf_state_turmoil_brewing_congo
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 796
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_congo > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 796 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 796 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_congo = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_congo = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_rcg_1 = {
+		name = saf_state_turmoil_brewing_congo
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 772
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_rcg > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 772 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 772 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_rcg = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_rcg = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_eswatini_1 = {
+		name = saf_state_turmoil_brewing_eswatini
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 951
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_eswatini > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 951 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 951 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_eswatini = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_eswatini = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_gabon_1 = {
+		name = saf_state_turmoil_brewing_gabon
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 539
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_gabon > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 539 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 539 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_gabon = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_gabon = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_guinea_1 = {
+		name = saf_state_turmoil_brewing_guinea
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 297
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_guinea > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 297 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 297 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_guinea = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_guinea = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_kenya_1 = {
+		name = saf_state_turmoil_brewing_kenya
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 547
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_kenya > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 547 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 547 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_kenya = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_kenya = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_kenya_2 = {
+		name = saf_state_turmoil_brewing_kenya
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 897
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_kenya > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 897 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 897 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_kenya = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_kenya = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_kenya_3 = {
+		name = saf_state_turmoil_brewing_kenya
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 898
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_kenya > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 898 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 898 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_kenya = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_kenya = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_kenya_4 = {
+		name = saf_state_turmoil_brewing_kenya
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 899
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_kenya > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 899 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 899 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_kenya = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_kenya = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_lesotho_1 = {
+		name = saf_state_turmoil_brewing_lesotho
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 952
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_lesotho > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 952 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 952 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_lesotho = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_lesotho = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_madagascar_1 = {
+		name = saf_state_turmoil_brewing_madagascar
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 543
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_madagascar > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 543 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 543 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_madagascar = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_madagascar = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_malawi_1 = {
+		name = saf_state_turmoil_brewing_malawi
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 770
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_malawi > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 770 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 770 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_malawi = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_malawi = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_mozambique_1 = {
+		name = saf_state_turmoil_brewing_mozambique
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 544
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_mozambique > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 544 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 544 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_mozambique = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_mozambique = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_mozambique_2 = {
+		name = saf_state_turmoil_brewing_mozambique
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 890
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_mozambique > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 890 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 890 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_mozambique = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_mozambique = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_mozambique_3 = {
+		name = saf_state_turmoil_brewing_mozambique
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 891
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_mozambique > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 891 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 891 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_mozambique = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_mozambique = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_namibia_1 = {
+		name = saf_state_turmoil_brewing_namibia
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 541
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_namibia > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 541 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 541 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_namibia = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_namibia = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_namibia_2 = {
+		name = saf_state_turmoil_brewing_namibia
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 980
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_namibia > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 980 }
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 980 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_namibia = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_namibia = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_rwanda_1 = {
+		name = saf_state_turmoil_brewing_rwanda
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 768
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_rwanda > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 768 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 768 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_rwanda = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_rwanda = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_tanzania_1 = {
+		name = saf_state_turmoil_brewing_tanzania
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 546
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_tanzania > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 546 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 546 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_tanzania = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_tanzania = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_uganda_1 = {
+		name = saf_state_turmoil_brewing_uganda
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 548
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_uganda > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 548 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 548 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_uganda = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_uganda = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_zambia_1 = {
+		name = saf_state_turmoil_brewing_zambia
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 771
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_zambia > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 771 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 771 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_zambia = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_zambia = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+	saf_state_turmoil_brewing_zimbabwe_1 = {
+		name = saf_state_turmoil_brewing_zimbabwe
+		icon = GFX_decision_generic_ignite_civil_war
+		available = { 
+			divisions_in_state = {
+				size > 5
+				state = 545
+			}
+			custom_trigger_tooltip = { tooltip = saf_state_turmoil_available_tt check_variable = { turmoil_zimbabwe > 30 } }
+		}
+		activation = { always = no }
+		highlight_states = { 
+			highlight_state_targets = { state = 545 } 
+		}
+		is_good = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			set_temp_variable = { saf_state_turmoil_rebel_state_temp = 545 }
+			saf_state_turmoil_rebel = yes
+			set_variable = { turmoil_zimbabwe = 0 }
+			custom_effect_tooltip = saf_state_turmoil_timeout_tt
+			saf_calculate_mean_stability = yes
+		}
+		complete_effect = {
+			set_temp_variable = { saf_state_turmoil_amount_to_reduce_temp = 15 }
+			add_to_variable = { turmoil_zimbabwe = saf_state_turmoil_amount_to_reduce_temp }
+			custom_effect_tooltip = saf_state_turmoil_complete_tt
+			saf_calculate_mean_stability = yes
+		}
+	}
+}
+
+saf_collapse = {
+
+	victory_in_south_africa = {
+		allowed = {
+			OR = {
+				original_tag = FCD
+				original_tag = BFS
+				original_tag = SNF
+			}	
+		}		
+		visible = {
+			SAF = {has_completed_focus = SAF_goodnight_south_africa}
+		}
+		available = {
+			has_war = no
+			921 = {
+				is_owned_by = FROM
+			}
+		}
+		
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 50
+		}
+        complete_effect = {
+			set_capital = {
+				state = 921
+				remember_old_capital = no
+			}
+			every_owned_state = {
+				add_core_of = FROM
+			}
+			if = {
+			limit = {NOT = {original_tag = BFS}}
+			set_cosmetic_tag = FCD_SNF_collapse_won
+			}
+        }		
+		
+	}
+
+}

@@ -1,0 +1,142 @@
+characters = {
+
+	## Leaders ##
+
+	ENG_tony_blair = {
+		name = "Tony Blair"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ENG/Tony_Blair.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	ENG_michael_howard = {
+		name = "Michael Howard"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ENG/Michael_Howard.png"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	## Generals ##
+
+	ENG_michael_jackson = {
+		name = "Sir Michael David Jackson"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ENG/Michael_Jackson.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=4
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	ENG_rupert_smith = {
+		name = "Sir Rupert Anthony Smith"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ENG/Rupert_Smith.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	ENG_michael_walker = {
+		name = "Michael John Dawson Walker"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ENG/Michael_Walker.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	ENG_charles_guthrie = {
+		name = "Charles Ronald Llewelyn Guthrie"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ENG/Charles_Guthrie.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	## Admirals ##
+
+	ENG_michael_boyce = {
+		name = "Michael Cecil Boyce"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ENG/Michael_Boyce.png"
+			}
+		}
+		navy_leader={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=2
+			legacy_id=-1
+		}
+	}
+	ENG_peter_abbott = {
+		name = "Sir Peter Charles Abbott"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ENG/Peter_Abbott.png"
+			}
+		}
+		navy_leader={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=2
+			legacy_id=-1
+		}
+	}
+
+}

@@ -1,0 +1,42 @@
+characters = {
+
+	TFM_alexander_bortnikov = {
+		name = "Alexander Bortnikov"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/post_putin/alexander_bortnikov.dds"
+			}
+		}
+		country_leader = {
+			ideology = paternal_autocracy_sub 
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	TFM_vladimir_bakin = {
+		name = "Vladimir Bakin"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/Vladimir_Bakin.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		field_marshal={
+			traits={ }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+}

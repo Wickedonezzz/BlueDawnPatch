@@ -1,0 +1,19 @@
+### INFLUENCE NORTH KOREA ###
+
+debug_decisions = {
+	icon = GFX_decision_prc_vs_sov
+	
+	
+	allowed = {
+		is_debug = yes
+	}
+	
+	visible = {
+		is_debug = yes
+	}
+
+	priority = 999999999999999999
+
+}
+
+

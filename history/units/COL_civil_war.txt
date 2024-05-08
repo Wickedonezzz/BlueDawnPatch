@@ -1,0 +1,112 @@
+﻿division_template = {
+	name = "Infantry Division"
+	division_names_group = GENERIC_INF_01
+
+	regiments = {
+		infantry_unit = { x = 0 y = 0 }
+		infantry_unit = { x = 0 y = 1 }
+		infantry_unit = { x = 0 y = 2 }
+		infantry_unit = { x = 0 y = 3 }		
+		towed_artillery_unit = { x = 1 y = 0 }
+
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Militia Division"
+	division_names_group = GENERIC_INF_01
+
+	regiments = {
+		militia_unit = { x = 0 y = 0 }
+		militia_unit = { x = 0 y = 1 }
+		militia_unit = { x = 0 y = 2 }
+		militia_unit = { x = 0 y = 3 }		
+		militia_unit = { x = 1 y = 0 }
+		militia_unit = { x = 1 y = 1 }		
+		militia_unit = { x = 1 y = 2 }		
+		militia_unit = { x = 1 y = 3 }		
+
+	}
+	priority = 1
+}
+
+units = {
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 1
+			}
+			location = 8056
+			division_template = "Infantry Division"		# Regular Infantry
+			start_experience_factor = 0.4
+			start_equipment_factor = 0.9
+
+		}
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 2
+			}
+			location = 10747
+			division_template = "Infantry Division"		# Regular Infantry
+			start_experience_factor = 0.6
+			start_equipment_factor = 0.7
+
+		}
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 2
+			}
+			location = 4969
+			division_template = "Infantry Division"		# Regular Infantry
+			start_experience_factor = 0.2
+			start_equipment_factor = 0.5
+
+		}
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 3
+			}
+			location = 7993
+			division_template = "Infantry Division"		# Regular Infantry
+			start_experience_factor = 0.2
+			start_equipment_factor = 0.9
+
+		}
+
+			
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_weapons_1
+			creator = "SOV"
+		}
+		requested_factories = 10
+		progress = 0.1
+		efficiency = 50
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = towed_artillery_equipment_1
+			creator = "SOV"
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 50
+	}
+
+}

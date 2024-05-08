@@ -1,0 +1,59 @@
+﻿capital = 659
+
+oob = "DYR_2000"
+
+set_stability = 0.4
+set_war_support = 0.65
+set_convoys = 25
+
+recruit_character = DYR_Ali_Salem_al_Beidh 
+recruit_character = DYR_arab_socialist_union_party
+recruit_character = DYR_jaafar_mohammed_saad
+
+add_ideas = ussr_aligned_nation
+add_ideas = DYR_bastion_of_communism_me
+
+add_ideas = {
+	extensive_conscription
+	limited_exports
+}
+
+set_technology = {
+	infantry_weapons_1960 = 1
+	support_weapons_1960 = 1
+	support_weapons_1980 = 1
+	night_vision_gen_1 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_tank_weapons_1980 = 1
+	infantry_anti_air_weapons_1960 = 1
+	infantry_anti_air_weapons_1980 = 1
+	marine_tech_1960 = 1
+	tech_support = 1
+	support_tech_engineers_1960 = 1
+	support_tech_militarypolice_1960 = 1
+	support_tech_hospital_1960 = 1
+	support_tech_maintenance_1960 = 1
+	support_tech_logistics_1960 = 1
+	tech_motorised_1960 = 1
+	tech_train_1960 = 1
+	mbt_tank_1960 = 1
+	ifv_tank_1970 = 1
+	apc_tank_1960 = 1
+	spaa_tank_1960 = 1
+	towed_artillery_1960 = 1
+	motorised_artillery_1960 = 1
+	rocket_artillery_1960 = 1
+}
+
+set_politics = {
+	ruling_party = reformed_communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	communism = 28
+    reformed_communism = 52
+	socialism = 15
+	fascism = 5
+}

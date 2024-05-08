@@ -1,0 +1,53 @@
+﻿capital = 230 #Yerevan, Armenia
+
+set_oob = "ARM_2000"
+set_air_oob = "ARM_2000_air"
+
+set_technology = {
+	infantry_weapons_1960 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_air_weapons_1960 = 1
+	tech_support = 1
+	tech_motorised_1960 = 1
+	tech_train_1960 = 1
+	towed_artillery_1960 = 1
+	rocket_artillery_1960 = 1
+	mbt_tank_1960 = 1
+	ifv_tank_1970 = 1
+	apc_tank_1960 = 1
+	heli_attack_1970 = 1
+}
+
+add_ideas = {
+	extensive_conscription
+}
+add_ideas = AZR_karabakh_war
+add_ideas = east_europe_privatization
+add_ideas = east_europe_eastern_threat
+
+set_research_slots = 3
+
+recruit_character = ARM_robert_kocharyan
+recruit_character = ARM_vladimir_movsisyan
+recruit_character = ARM_serzh_sargsyan
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 0
+	reformed_communism = 0
+	social_democracy = 10
+	liberalism = 10
+	democratic = 40
+	neutrality = 0
+	paternal_autocracy = 0
+	fascism = 40
+}
+
+add_opinion_modifier = { target = SOV modifier = HISTORIC_baltic_ussr_opinion }
+add_opinion_modifier = { target = AZR modifier = HISTORIC_amernia_azerbaijan_opinion }

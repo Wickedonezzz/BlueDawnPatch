@@ -1,0 +1,18 @@
+characters = {
+
+	TRI_arthur_robinson = {
+		name = "Arthur Napoleon Raymond Robinson"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TRI/Arthur_Robinson.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

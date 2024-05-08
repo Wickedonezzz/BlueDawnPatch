@@ -1,0 +1,16 @@
+state={
+	id=996
+	name="STATE_996"
+	history={
+		owner = UNI
+		add_core_of = UNI
+		add_core_of = ANG
+	}	
+	provinces={
+		13518 13528 13529 13530 
+	}
+	manpower=254634
+	state_category=rural			
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

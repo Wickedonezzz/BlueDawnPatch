@@ -1,0 +1,25 @@
+air_wings = {
+	
+	933 =  {
+		fighter_equipment_0 =  {
+			owner = "BRD" 
+			creator = SOV
+			amount = 50
+		}
+		fighter_equipment_0 =  {
+			owner = "BRD" 
+			creator = SOV
+			amount = 50
+		}
+		attacker_equipment_1 =  { 
+			owner = "BRD" 
+			creator = SOV
+			amount = 50
+		}
+		attacker_equipment_1 =  { 
+			owner = "BRD" 
+			creator = SOV
+			amount = 50
+		}
+	}
+}

@@ -1,0 +1,91 @@
+ideas = {
+
+	country = {
+
+		CHI_third_taiwan_strait_crisis = {
+			name = CHI_third_taiwan_strait_crisis_idea_name
+
+			removal_cost = -1
+
+			picture = PRC_CHI_third_taiwan_strait_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.15
+				political_power_gain = 0.2
+			}
+		}
+		CHI_last_phase_of_democratization = {
+			name = CHI_last_phase_of_democratization_idea_name
+
+			removal_cost = -1
+
+			picture = CHI_demo
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.1
+				liberalism_drift = 0.01
+                democratic_drift = 0.01
+			}
+		}
+		CHI_lonng_lost_dream = {
+			name = CHI_lonng_lost_dream_idea_name
+
+			removal_cost = -1
+
+			picture = CHI_long_lost_dream
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				war_support_factor = -0.1
+				defence = 0.05
+				naval_invasion_planning_bonus_speed = -0.3
+			}
+		}
+		CHI_KMT_internal_conflict = {
+			name = CHI_KMT_internal_conflict_idea_name
+
+			removal_cost = -1
+
+			picture = CHI_KMT_conflict
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				drift_defence_factor = -0.1
+			}
+		}
+		CHI_economic_miracle = {
+			name = CHI_economic_miracle_idea_name
+
+			removal_cost = -1
+
+			picture = CHI_miracle
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				research_speed_factor = 0.1
+			}
+		}
+
+	}
+
+}

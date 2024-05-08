@@ -1,0 +1,18 @@
+characters = {
+
+	TFL_sergei_ivanov = {
+		name = "Sergei Ivanov"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/post_putin/Sergei_Ivanov.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

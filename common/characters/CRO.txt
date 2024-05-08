@@ -1,0 +1,125 @@
+characters = {
+
+	CRO_stjepan_mjesić = {
+		name = "Stjepan Mjesić"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CRO/Stjepan_Mjesić.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	CRO_ivic_pasalic = {
+		name = "Ivić Pasalić"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CRO/pasalic.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	CRO_anto_dapic = {
+		name = "Anto Đapić"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CRO/anto_dapic.png"
+			}
+		}
+		country_leader = {
+			ideology = ultranationalism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	CRO_ivo_sanader = {
+		name = "Ivo Sanader"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CRO/anto_dapic.png"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}	
+	
+	CRO_ivica_racan = {
+		name = "Ivica Račan"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CRO/ivica_racan.png"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+    
+	CRO_ante_gotovina = {
+		name = "Ante Gotovina"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CRO/ante_gotovina.dds"
+			}
+		}
+
+		corps_commander={
+			traits={}
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	CRO_petar_stipetic = {
+		name = "Petar Stipetic"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CRO/petar_stipetic.png"
+			}
+		}
+
+		corps_commander={
+			traits={}
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}	
+
+	CRO_mladic = {
+		name = "Ratko Mladic"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUG/troller_of_srebrenica.dds"
+			}
+		}
+	}
+
+}

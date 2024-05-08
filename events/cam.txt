@@ -1,0 +1,19 @@
+add_namespace = cambodia
+
+
+#Death to Khmer Rouge#
+country_event = {
+	id = cambodia.1
+	title = cambodia.1.t
+	desc = cambodia.1.d
+	picture = GFX_report_event_spark
+
+	fire_only_once = yes
+        
+       is_triggered_only = yes
+
+	option = {
+		name = cambodia.1.a
+		news_event = { id = old_times_news.73 }
+	}
+}

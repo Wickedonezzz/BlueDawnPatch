@@ -1,0 +1,77 @@
+defined_text = {
+	name = cold_war_loc_thing
+
+	### if you do changes to the file and the error log floods with "invalid idea" erors , just close and reopen the game and its fixed ###
+	### -durango ###
+	
+	text = {
+		trigger = {
+			NOT = {
+			tag = SOV
+			}
+			has_idea = ussr_aligned_nation
+		}
+		localization_key = nation_is_aligned_with_ussr
+	}
+	
+	text = {
+		trigger = {
+			tag = SOV
+			has_idea = ussr_aligned_nation
+		}
+		localization_key = ussr_special_cold_war_text
+	
+	}
+	
+	text = {
+		trigger = {
+			NOT = {
+			tag = USA
+			}
+			has_idea = usa_aligned_nation 
+		}
+		localization_key = nation_is_aligned_with_usa
+	}
+	
+	text = {
+		trigger = {
+			tag = USA
+			has_idea = usa_aligned_nation
+		}
+		localization_key = usa_special_cold_war_text
+	
+	}
+	
+	text = {
+		trigger = {
+			NOT = {
+			tag = PRC
+			}
+			has_idea = china_aligned_nation
+		}
+		localization_key = nation_is_aligned_with_china
+	}
+	
+	text = {
+		trigger = {
+			tag = PRC
+			has_idea = china_aligned_nation
+		}
+		localization_key = china_special_cold_war_text
+	
+	}
+	
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+				has_idea = ussr_aligned_nation
+				has_idea = usa_aligned_nation 
+				has_idea = china_aligned_nation 
+				}
+			}
+		}
+		localization_key = nation_is_aligned_with_noone
+	}
+
+}

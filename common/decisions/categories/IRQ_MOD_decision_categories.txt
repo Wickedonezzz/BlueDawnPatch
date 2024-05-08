@@ -1,0 +1,159 @@
+irq_debug = {
+	icon = GFX_decision_category_spr_political_assassination
+
+	priority = 999
+
+	allowed = {
+		original_tag = IRQ
+		is_debug = yes
+		
+	}
+
+	visible = {
+		original_tag = IRQ
+		is_debug = yes
+		
+	}
+}
+
+irq_deal_with_kurds = {
+	icon = GFX_decision_category_spr_political_assassination
+
+	priority = 10
+
+	scripted_gui = irq_kurd_gui
+
+	allowed = {
+		original_tag = IRQ
+	}
+
+	visible = {
+		original_tag = IRQ
+	}
+}
+
+irq_category_propaganda_machine = {
+	icon = GFX_decision_cat_iraq_propaganda
+	picture = GFX_decision_cat_iraq_photo
+	
+	allowed = {
+		original_tag = IRQ
+	}
+	
+	visible = {
+		original_tag = IRQ
+		IRQ = {
+			has_completed_focus = IRQ_the_propaganda_machine
+		}
+	}
+	priority = 5
+}
+
+irq_category_new_pan_arabism = {
+	icon = GFX_decision_category_generic_arms_trade
+	picture = GFX_decision_cat_iraq_rebuild_navy
+	
+	allowed = {
+		original_tag = IRQ
+	}
+	
+	visible = {
+		original_tag = IRQ
+		has_country_flag = irq_new_pan_arabism
+	}
+	priority = 4
+}
+
+irq_category_a_new_state = {
+	icon = GFX_decision_iraq_eagle
+	
+	allowed = {
+		original_tag = IRQ
+	}
+	
+	scripted_gui = irq_a_new_state_gui
+	
+	visible = {
+		original_tag = IRQ
+		has_country_flag = irq_a_new_state
+	}
+	priority = 4
+}
+
+irq_category_rebuild_navy = {
+	icon = GFX_decision_category_generic_arms_trade
+	picture = GFX_decision_cat_iraq_rebuild_navy
+	
+	allowed = {
+		original_tag = IRQ
+	}
+	
+	visible = {
+		original_tag = IRQ
+		IRQ = {
+			has_completed_focus = IRQ_purchase_foreign_ships
+		}
+	}
+	priority = 5
+}
+
+irq_category_kurdish_factions = {
+	icon = GFX_decision_category_generic_arms_trade
+	
+	allowed = {
+		original_tag = IRQ
+	}
+	
+	visible = {
+		original_tag = IRQ
+		IRQ = { has_country_flag = IRQ_flag_kurdish_factions }
+	}
+
+	scripted_gui = irq_decision_ui_kurdish_factions
+
+	priority = 8
+}
+
+irq_category_request_foreign_aid = {
+	icon = GFX_decision_category_generic_arms_trade
+	picture = GFX_decision_cat_iraq_request_foreign_aid
+	
+	allowed = {
+		original_tag = IRQ
+	}
+	
+	visible = {
+		original_tag = IRQ
+		IRQ = {
+			has_completed_focus = IRQ_request_foreign_aid
+		}
+	}
+	priority = 5
+}
+
+irq_category_contest_nofly_zone = {
+	icon = GFX_decision_category_generic_arms_trade
+	picture = GFX_decision_cat_iraq_contest_nofly_zone
+	
+	allowed = {
+		original_tag = IRQ
+	}
+	
+	visible = {
+		original_tag = IRQ
+		IRQ = {
+			has_completed_focus = IRQ_contest_no-fly_zone
+		}
+		IRQ = {
+			AND = {
+				NOT = { has_completed_focus = IRQ_grant_partial_autonomy }
+				NOT = { IRQ = { has_country_flag = IRQ_no-fly_zone_success_flag } }
+				NOT = { IRQ = { has_country_flag = IRQ_no-fly_zone_failed_flag } }
+			}
+		}
+	}
+
+	scripted_gui = irq_decision_ui_contest_nofly_zone
+
+	priority = 7
+}

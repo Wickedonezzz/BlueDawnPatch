@@ -1,0 +1,1614 @@
+technologies = {
+
+## Trade ##
+
+	tech_modern_manufacturing = {
+
+		production_factory_max_efficiency_factor = 0.1
+		line_change_production_efficiency_factor = 0.1
+		production_factory_start_efficiency_factor = 0.05
+
+		path = {
+			leads_to_tech = tech_containerisation
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 1960
+
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 0 }
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 10
+				is_major = yes
+			}
+			modifier = {
+				factor = 10
+				date > "1995.1.1"
+			}
+		}
+
+		categories = {
+			industry
+		}
+
+	}
+	tech_containerisation = {
+
+		production_factory_max_efficiency_factor = 0.1
+		line_change_production_efficiency_factor = 0.1
+		production_factory_start_efficiency_factor = 0.05
+
+		path = {
+			leads_to_tech = tech_lean_manufacturing
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 1960
+
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 10
+				is_major = yes
+			}
+			modifier = {
+				factor = 10
+				date > "1995.1.1"
+			}
+		}
+
+		categories = {
+			industry
+		}
+
+	}
+	tech_lean_manufacturing = {
+
+		production_factory_max_efficiency_factor = 0.1
+		line_change_production_efficiency_factor = 0.1
+		production_factory_start_efficiency_factor = 0.05
+
+		path = {
+			leads_to_tech = tech_globalised_economy
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_autarky
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 1980
+
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 10
+				is_major = yes
+			}
+			modifier = {
+				factor = 10
+				date > "1995.1.1"
+			}
+		}
+
+		categories = {
+			industry
+		}
+
+	}
+	tech_globalised_economy = {
+
+		production_factory_max_efficiency_factor = 0.05
+		trade_opinion_factor = 0.1
+		consumer_goods_factor = -0.025
+
+		path = {
+			leads_to_tech = tech_basic_international_trade
+			research_cost_coeff = 1
+		}
+
+		XOR = {
+			tech_autarky
+		}
+
+		research_cost = 3
+		start_year = 1980
+
+		folder = {
+			name = industry_folder
+			position = { x = -1 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 5
+				is_major = yes
+			}
+			modifier = {
+				factor = 3
+				date > "1995.1.1"
+			}
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			modifier = {
+				factor = 3
+				tag = PRC
+			}
+		}
+
+		categories = {
+			industry
+		}
+
+	}
+	tech_basic_international_trade = {
+
+		production_factory_max_efficiency_factor = 0.05
+		trade_opinion_factor = 0.1
+		consumer_goods_factor = -0.025
+
+		path = {
+			leads_to_tech = tech_improved_international_trade
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 2000
+
+		folder = {
+			name = industry_folder
+			position = { x = -1 y = 8 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 2
+				tag = USA
+			}
+			modifier = {
+				factor = 2
+				tag = PRC
+			}
+		}
+
+		categories = {
+			industry
+		}
+
+	}
+	tech_improved_international_trade = {
+
+		production_factory_max_efficiency_factor = 0.05
+		trade_opinion_factor = 0.1
+		consumer_goods_factor = -0.025
+
+		path = {
+			leads_to_tech = tech_advanced_international_trade
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 2010
+
+		folder = {
+			name = industry_folder
+			position = { x = -1 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 2
+				tag = USA
+			}
+			modifier = {
+				factor = 2
+				tag = PRC
+			}
+			modifier = {
+				factor = 0
+				date < "2002.1.1"
+			}
+		}
+
+		categories = {
+			industry
+		}
+
+	}
+	tech_advanced_international_trade = {
+
+		production_factory_max_efficiency_factor = 0.05
+		trade_opinion_factor = 0.1
+		consumer_goods_factor = -0.025
+
+		research_cost = 3
+		start_year = 2020
+
+		folder = {
+			name = industry_folder
+			position = { x = -1 y = 12 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 2
+				tag = USA
+			}
+			modifier = {
+				factor = 2
+				tag = PRC
+			}
+			modifier = {
+				factor = 0
+				date < "2010.1.1"
+			}
+		}
+
+		categories = {
+			industry
+		}
+
+	}
+	tech_autarky = {
+
+		production_factory_max_efficiency_factor = 0.05
+		trade_opinion_factor = -0.1
+		global_building_slots = 0.1
+		production_lack_of_resource_penalty_factor = -0.1
+
+		path = {
+			leads_to_tech = tech_basic_self_sustainability
+			research_cost_coeff = 1
+		}
+
+		XOR = {
+			tech_globalised_economy
+		}
+
+		research_cost = 3
+		start_year = 1980
+
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 5
+				is_major = yes
+			}
+			modifier = {
+				factor = 3
+				date > "1995.1.1"
+			}
+			modifier = {
+				factor = 3
+				tag = SOV
+			}
+			modifier = {
+				factor = 3
+				tag = KOR
+			}
+			modifier = {
+				factor = 1
+				has_government = paternal_autocracy
+			}
+			modifier = {
+				factor = 2
+				has_government = fascism
+			}
+			modifier = {
+				factor = 0
+				has_government = social_democracy
+			}
+			modifier = {
+				factor = 0
+				has_government = liberalism
+			}
+			modifier = {
+				factor = 0
+				has_government = democratic
+			}
+			modifier = {
+				factor = 0
+				has_idea = GER_eu
+			}
+		}
+
+		categories = {
+			industry
+		}
+
+	}
+	tech_basic_self_sustainability = {
+
+		production_factory_max_efficiency_factor = 0.05
+		trade_opinion_factor = -0.1
+		global_building_slots = 0.1
+		production_lack_of_resource_penalty_factor = -0.1
+
+		path = {
+			leads_to_tech = tech_improved_self_sustainability
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 2000
+
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 8 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 2
+				tag = SOV
+			}
+			modifier = {
+				factor = 2
+				tag = KOR
+			}
+		}
+
+		categories = {
+			industry
+		}
+
+	}
+	tech_improved_self_sustainability = {
+
+		production_factory_max_efficiency_factor = 0.05
+		trade_opinion_factor = -0.1
+		global_building_slots = 0.1
+		production_lack_of_resource_penalty_factor = -0.1
+
+		path = {
+			leads_to_tech = tech_advanced_self_sustainability
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 2010
+
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 2
+				tag = SOV
+			}
+			modifier = {
+				factor = 2
+				tag = KOR
+			}
+			modifier = {
+				factor = 0
+				date < "2002.1.1"
+			}
+		}
+
+		categories = {
+			industry
+		}
+
+	}
+	tech_advanced_self_sustainability = {
+
+		production_factory_max_efficiency_factor = 0.05
+		trade_opinion_factor = -0.1
+		global_building_slots = 0.1
+		production_lack_of_resource_penalty_factor = -0.1
+
+		research_cost = 3
+		start_year = 2020
+
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 12 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 2
+				tag = SOV
+			}
+			modifier = {
+				factor = 2
+				tag = KOR
+			}
+			modifier = {
+				factor = 0
+				date < "2010.1.1"
+			}
+		}
+
+		categories = {
+			industry
+		}
+
+	}
+
+## Factories ##
+
+	tech_modern_factories = {
+
+		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
+		global_building_slots_factor = 0.20
+
+		path = {
+			leads_to_tech = tech_digital_control
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 1960
+
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 0 }
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 10
+				is_major = yes
+			}
+			modifier = {
+				factor = 10
+				date > "1995.1.1"
+			}
+		}
+
+		categories = {
+			industry
+		}
+
+	}
+	tech_digital_control = {
+
+		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
+		global_building_slots_factor = 0.20
+
+		path = {
+			leads_to_tech = tech_basic_automation
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			computing_tech_1960 = 1
+		}
+
+		research_cost = 3
+		start_year = 1960
+
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 8
+				is_major = yes
+			}
+			modifier = {
+				factor = 8
+				date > "1995.1.1"
+			}
+		}
+
+		categories = {
+			industry
+		}
+
+	}
+	tech_basic_automation = {
+
+		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
+		global_building_slots_factor = 0.20
+
+		path = {
+			leads_to_tech = tech_human_sweatshops
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_automated_factories
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 1980
+
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 4 }
+		}
+
+		dependencies = {
+			computing_tech_1960 = 1
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 5
+				is_major = yes
+			}
+			modifier = {
+				factor = 5
+				date > "1995.1.1"
+			}
+		}
+
+		categories = {
+			industry
+		}
+
+	}
+	tech_human_sweatshops = {
+
+		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
+
+		path = {
+			leads_to_tech = tech_efficient_work_schedules
+			research_cost_coeff = 1
+		}
+
+		XOR = {
+			tech_automated_factories
+		}
+
+		research_cost = 3
+		start_year = 1980
+
+		folder = {
+			name = industry_folder
+			position = { x = -1 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 4
+				tag = PRC
+			}
+			modifier = {
+				factor = 3
+				tag = RAJ
+			}
+			modifier = {
+				factor = 4
+				tag = VIN
+			}
+			modifier = {
+				factor = 2
+				tag = SIA
+			}
+			modifier = {
+				factor = 4
+				tag = LAO
+			}
+			modifier = {
+				factor = 4
+				tag = CAM
+			}
+		}
+
+		categories = {
+			industry
+		}
+
+	}
+	tech_efficient_work_schedules = {
+
+		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
+
+		path = {
+			leads_to_tech = tech_concentrated_industrial_areas
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_national_cargo_network
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 2000
+
+		folder = {
+			name = industry_folder
+			position = { x = -1 y = 8 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+
+		categories = {
+			industry
+		}
+
+	}
+	tech_concentrated_industrial_areas = {
+
+		industrial_capacity_factory = 0.15
+		industrial_capacity_dockyard = 0.15
+		global_building_slots_factor = 0.20
+		production_factory_start_efficiency_factor = 0.1
+
+		path = {
+			leads_to_tech = tech_centralised_directives
+			research_cost_coeff = 1
+		}
+
+		XOR = {
+			tech_national_cargo_network
+		}
+
+		research_cost = 3
+		start_year = 2010
+
+		folder = {
+			name = industry_folder
+			position = { x = -1 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 5
+				num_of_controlled_states < 15
+			}
+			modifier = {
+				factor = 0
+				date < "2002.1.1"
+			}
+		}
+
+		categories = {
+			industry
+		}
+
+	}
+	tech_centralised_directives = {
+
+		industrial_capacity_factory = 0.15
+		industrial_capacity_dockyard = 0.15
+		global_building_slots_factor = 0.20
+		production_factory_start_efficiency_factor = 0.1
+
+		research_cost = 3
+		start_year = 2020
+
+		folder = {
+			name = industry_folder
+			position = { x = -1 y = 12 }
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 5
+				num_of_controlled_states < 15
+			}
+			modifier = {
+				factor = 0
+				date < "2010.1.1"
+			}
+		}
+
+		categories = {
+			industry
+		}
+
+	}
+	tech_automated_factories = {
+
+		industrial_capacity_factory = 0.15
+		industrial_capacity_dockyard = 0.15
+		production_speed_buildings_factor = -0.1
+
+		path = {
+			leads_to_tech = tech_factory_digitisation
+			research_cost_coeff = 1
+		}
+
+		XOR = {
+			tech_human_sweatshops
+		}
+
+		research_cost = 3
+		start_year = 1980
+
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 6 }
+		}
+
+		dependencies = {
+			computing_tech_1960 = 1
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 4
+				is_major = yes
+			}
+		}
+
+		categories = {
+			industry
+		}
+
+	}
+	tech_factory_digitisation = {
+
+		industrial_capacity_factory = 0.15
+		industrial_capacity_dockyard = 0.15
+		production_speed_buildings_factor = -0.1
+
+		path = {
+			leads_to_tech = tech_national_cargo_network
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_concentrated_industrial_areas
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 2000
+
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 8 }
+		}
+
+		dependencies = {
+			computing_tech_1960 = 1
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+
+		categories = {
+			industry
+		}
+
+	}
+	tech_national_cargo_network = {
+
+		industrial_capacity_factory = 0.10
+		industrial_capacity_dockyard = 0.10
+		global_building_slots_factor = 0.20
+		line_change_production_efficiency_factor = 0.2
+		industry_air_damage_factor = -0.2
+
+		path = {
+			leads_to_tech = tech_regional_independence
+			research_cost_coeff = 1
+		}
+
+		XOR = {
+			tech_concentrated_industrial_areas
+		}
+
+		research_cost = 3
+		start_year = 2010
+
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 0
+				date < "2002.1.1"
+			}
+		}
+
+		categories = {
+			industry
+		}
+
+	}
+	tech_regional_independence = {
+
+		industrial_capacity_factory = 0.10
+		industrial_capacity_dockyard = 0.10
+		global_building_slots_factor = 0.20
+		line_change_production_efficiency_factor = 0.2
+		industry_air_damage_factor = -0.2
+
+		research_cost = 3
+		start_year = 2020
+
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 12 }
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 0
+				date < "2010.1.1"
+			}
+		}
+
+		categories = {
+			industry
+		}
+
+	}
+
+## Construction ##
+
+	tech_modern_construction = {
+
+		production_speed_buildings_factor = 0.10
+		industry_repair_factor = 0.10
+
+		path = {
+			leads_to_tech = tech_prefabrication
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 1960
+
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 0 }
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				factor = 10
+				is_major = yes
+			}
+			modifier = {
+				factor = 10
+				date > "1995.1.1"
+			}
+		}
+
+		categories = {
+			construction_tech
+		}
+
+	}
+	tech_prefabrication = {
+
+		production_speed_buildings_factor = 0.10
+		industry_repair_factor = 0.10
+
+		path = {
+			leads_to_tech = tech_computer_aided_design
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 1960
+
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 8
+				is_major = yes
+			}
+			modifier = {
+				factor = 8
+				date > "1995.1.1"
+			}
+		}
+
+		categories = {
+			construction_tech
+		}
+
+	}
+	tech_computer_aided_design = {
+
+		production_speed_buildings_factor = 0.10
+		industry_repair_factor = 0.10
+
+		path = {
+			leads_to_tech = tech_modern_build_codes
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 1980
+
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 4 }
+		}
+
+		dependencies = {
+			computing_tech_1960 = 1
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 6
+				is_major = yes
+			}
+			modifier = {
+				factor = 5
+				date > "1995.1.1"
+			}
+		}
+
+		categories = {
+			construction_tech
+		}
+
+	}
+	tech_modern_build_codes = {
+
+		production_speed_buildings_factor = 0.10
+		industry_repair_factor = 0.10
+
+		path = {
+			leads_to_tech = tech_energy_conservation
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 1980
+
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 5
+				is_major = yes
+			}
+			modifier = {
+				factor = 5
+				date > "1995.1.1"
+			}
+		}
+
+		categories = {
+			construction_tech
+		}
+
+	}
+	tech_energy_conservation = {
+
+		production_speed_buildings_factor = 0.10
+		industry_repair_factor = 0.10
+
+		path = {
+			leads_to_tech = tech_advanced_materials
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 2000
+
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 8 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+		}
+
+		categories = {
+			construction_tech
+		}
+
+	}
+	tech_advanced_materials = {
+
+		production_speed_buildings_factor = 0.10
+		industry_repair_factor = 0.10
+
+		path = {
+			leads_to_tech = tech_ecological_construction
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 2010
+
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 0
+				date < "2002.1.1"
+			}
+		}
+
+		categories = {
+			construction_tech
+		}
+
+	}
+	tech_ecological_construction = {
+
+		production_speed_buildings_factor = 0.10
+		industry_repair_factor = 0.10
+
+		research_cost = 3
+		start_year = 2020
+
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 12 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 0
+				date < "2010.1.1"
+			}
+		}
+
+		categories = {
+			construction_tech
+		}
+
+	}
+
+## Resources ##
+
+	tech_basic_resource_extraction = {
+
+		local_resources_factor = 0.15
+
+		path = {
+			leads_to_tech = tech_improved_resource_extraction
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_rotary_drilling
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 1960
+
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 0 }
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 5
+				is_major = yes
+			}
+			modifier = {
+				factor = 6
+				date > "1995.1.1"
+			}
+		}
+
+		categories = {
+			excavation_tech
+		}
+
+	}
+	tech_improved_resource_extraction = {
+
+		local_resources_factor = 0.15
+
+		path = {
+			leads_to_tech = tech_advanced_resource_extraction
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 1980
+
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+		}
+
+		categories = {
+			excavation_tech
+		}
+
+	}
+	tech_advanced_resource_extraction = {
+
+		local_resources_factor = 0.15
+
+		path = {
+			leads_to_tech = tech_modern_resource_extraction
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 2000
+
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 8 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+
+		categories = {
+			excavation_tech
+		}
+
+	}
+	tech_modern_resource_extraction = {
+
+		local_resources_factor = 0.15
+
+		research_cost = 3
+		start_year = 2020
+
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 12 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 0
+				date < "2010.1.1"
+			}
+		}
+
+		categories = {
+			excavation_tech
+		}
+
+	}
+	tech_rotary_drilling = {
+
+		fuel_gain_factor = 0.2
+		fuel_gain_factor_from_states = 0.1
+
+		path = {
+			leads_to_tech = tech_hydraulic_fracturing
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 1960
+
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 5
+				is_major = yes
+			}
+			modifier = {
+				factor = 5
+				date > "1995.1.1"
+			}
+			modifier = {
+				factor = 8
+				any_owned_state = {
+					has_resources_amount = {
+						resource = oil
+						amount > 9
+					}
+				}
+			}
+		}
+
+		categories = {
+			excavation_tech
+			mod_cat_oil
+		}
+
+	}
+	tech_hydraulic_fracturing = {
+
+		fuel_gain_factor = 0.2
+		fuel_gain_factor_from_states = 0.1
+
+		path = {
+			leads_to_tech = tech_directional_drilling
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 1980
+
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 6
+				any_owned_state = {
+					has_resources_amount = {
+						resource = oil
+						amount > 9
+					}
+				}
+			}
+		}
+
+		categories = {
+			excavation_tech
+			mod_cat_oil
+		}
+
+	}
+	tech_directional_drilling = {
+
+		fuel_gain_factor = 0.2
+		fuel_gain_factor_from_states = 0.1
+
+		path = {
+			leads_to_tech = tech_automated_drilling_rigs
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 1980
+
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 6
+				any_owned_state = {
+					has_resources_amount = {
+						resource = oil
+						amount > 9
+					}
+				}
+			}
+		}
+
+		categories = {
+			excavation_tech
+			mod_cat_oil
+		}
+
+	}
+	tech_automated_drilling_rigs = {
+
+		fuel_gain_factor = 0.2
+		fuel_gain_factor_from_states = 0.1
+
+		path = {
+			leads_to_tech = tech_enhanced_oil_recovery
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 2000
+
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 8 }
+		}
+
+		dependencies = {
+			computing_tech_1960 = 1
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 5
+				any_owned_state = {
+					has_resources_amount = {
+						resource = oil
+						amount > 9
+					}
+				}
+			}
+		}
+
+		categories = {
+			excavation_tech
+			mod_cat_oil
+		}
+
+	}
+	tech_enhanced_oil_recovery = {
+
+		fuel_gain_factor = 0.2
+		fuel_gain_factor_from_states = 0.1
+
+		path = {
+			leads_to_tech = tech_digital_oil_extraction
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 2010
+
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 5
+				any_owned_state = {
+					has_resources_amount = {
+						resource = oil
+						amount > 9
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				date < "2002.1.1"
+			}
+		}
+
+		categories = {
+			excavation_tech
+			mod_cat_oil
+		}
+
+	}
+	tech_digital_oil_extraction = {
+
+		fuel_gain_factor = 0.2
+		fuel_gain_factor_from_states = 0.1
+
+		research_cost = 3
+		start_year = 2020
+
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 12 }
+		}
+
+		dependencies = {
+			computing_tech_1960 = 1
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 5
+				any_owned_state = {
+					has_resources_amount = {
+						resource = oil
+						amount > 9
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				date < "2010.1.1"
+			}
+		}
+
+		categories = {
+			excavation_tech
+			mod_cat_oil
+		}
+
+	}
+
+}

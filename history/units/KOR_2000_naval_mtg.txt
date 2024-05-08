@@ -1,0 +1,84 @@
+units = {
+	fleet = {
+		name = "Bughan Hamdae"
+		naval_base = 4052 # P'yongyang #
+		task_force = {
+			name = "Bughan Susanghamdae"
+			location = 4052 # P'yongyang #
+			ship = { name = "Soho No.1" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = KOR version_name = "Soho Class" } } }
+			ship = { name = "Najin No.1" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = KOR version_name = "Najin Class" } } }
+			ship = { name = "Najin No.2" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = KOR version_name = "Najin Class" } } }
+
+			ship = { name = "No.671" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = KOR creator = SOV version_name = "Fugas Class (Pr. 53)" } } }
+			ship = { name = "No.1003" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = KOR creator = SOV version_name = "Fugas Class (Pr. 53)" } } }
+			ship = { name = "Sariwon No.1" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = KOR version_name = "Sariwon Class" } } }
+			ship = { name = "Sariwon No.2" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = KOR version_name = "Sariwon Class" } } }
+			ship = { name = "Sariwon No.3" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = KOR version_name = "Sariwon Class" } } }
+			ship = { name = "Sariwon No.4" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = KOR version_name = "Sariwon Class" } } }
+		}
+		task_force = {
+			name = "Bughan Jamsuham Hamdae"
+			location = 4052 # P'yongyang #
+			ship = { name = "Sang-O No.2" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = KOR version_name = "Sang-O Class" } } }
+			ship = { name = "Sang-O No.3" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = KOR version_name = "Sang-O Class" } } }
+			ship = { name = "Sang-O No.4" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = KOR version_name = "Sang-O Class" } } }
+			ship = { name = "Sang-O No.5" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = KOR version_name = "Sang-O Class" } } }
+			ship = { name = "Sang-O No.6" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = KOR version_name = "Sang-O Class" } } }
+			ship = { name = "Sang-O No.7" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = KOR version_name = "Sang-O Class" } } }
+			ship = { name = "Sang-O No.8" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = KOR version_name = "Sang-O Class" } } }
+			ship = { name = "Sang-O No.9" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = KOR version_name = "Sang-O Class" } } }
+			ship = { name = "Sang-O No.10" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = KOR version_name = "Sang-O Class" } } }
+			ship = { name = "Sang-O No.11" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = KOR version_name = "Sang-O Class" } } }
+			ship = { name = "Sang-O No.12" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = KOR version_name = "Sang-O Class" } } }
+			ship = { name = "Sang-O No.13" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = KOR version_name = "Sang-O Class" } } }
+			ship = { name = "Sang-O No.14" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = KOR version_name = "Sang-O Class" } } }
+			ship = { name = "Sang-O No.15" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = KOR version_name = "Sang-O Class" } } }
+			ship = { name = "Sang-O No.16" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = KOR version_name = "Sang-O Class" } } }
+			ship = { name = "Sang-O No.17" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = KOR version_name = "Sang-O Class" } } }
+			ship = { name = "Sang-O No.18" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = KOR version_name = "Sang-O Class" } } }
+			ship = { name = "Sang-O No.19" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = KOR version_name = "Sang-O Class" } } }
+			ship = { name = "Sang-O No.20" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = KOR version_name = "Sang-O Class" } } }
+			ship = { name = "Whiskey No.1" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = KOR creator = SOV version_name = "Whiskey Class (Pr. 613)" } } }
+			ship = { name = "Whiskey No.2" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = KOR creator = SOV version_name = "Whiskey Class (Pr. 613)" } } }
+			ship = { name = "Whiskey No.3" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = KOR creator = SOV version_name = "Whiskey Class (Pr. 613)" } } }
+			ship = { name = "Whiskey No.4" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = KOR creator = SOV version_name = "Whiskey Class (Pr. 613)" } } }
+			ship = { name = "Romeo No.1" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = KOR creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Romeo No.2" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = KOR creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Romeo No.3" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = KOR creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Romeo No.4" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = KOR creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Romeo No.6" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = KOR creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Romeo No.7" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = KOR creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Romeo No.8" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = KOR creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Romeo No.9" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = KOR creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Romeo No.10" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = KOR creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Romeo No.11" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = KOR creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Romeo No.12" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = KOR creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Romeo No.13" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = KOR creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Romeo No.14" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = KOR creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Romeo No.15" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = KOR creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Romeo No.16" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = KOR creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Romeo No.17" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = KOR creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Romeo No.18" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = KOR creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Romeo No.19" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = KOR creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Romeo No.20" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = KOR creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Romeo No.21" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = KOR creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "Romeo No.22" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = KOR creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+		}
+	}
+}
+
+instant_effect = {
+	if = {
+		limit = { has_dlc = "Death or Dishonor" }
+		SOV = {
+			create_production_license = {
+				target = KOR
+				equipment = {
+					type = attack_submarine_hull_1
+					version_name = "Romeo Class (Pr. 633)"
+				}
+				cost_factor = 0
+			}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+﻿capital = 980
+
+set_technology = {
+	infantry_weapons_1960 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_air_weapons_1960 = 1
+	tech_support = 1
+	tech_motorised_1960 = 1
+	tech_train_1960 = 1
+	apc_tank_1960 = 1
+	spaa_tank_1960 = 1
+	towed_artillery_1960 = 1
+	rocket_artillery_1960 = 1
+	heli_transport_1960 = 1
+}
+set_oob = "NMB_2000"
+
+add_ideas = volunteer_only
+
+set_convoys = 20
+
+recruit_character = NMB_sam
+
+add_ideas = china_aligned_nation
+set_politics = {
+	ruling_party = socialism
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 0
+	socialism = 50
+	social_democracy = 36
+	liberalism = 4
+	democratic = 10
+	neutrality = 0
+	paternal_autocracy = 0
+	fascism = 0
+}

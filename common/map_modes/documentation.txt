@@ -1,0 +1,73 @@
+
+scripted_map_modes = {
+  cold_war_map = {
+  	top = {
+  		type = country
+  		
+			color = {
+				FROM = {
+					set_temp_variable = { alpha = 25.0 }
+					set_temp_variable = { thickness = 8.0 }
+					if = {
+						limit = {
+						has_idea = ussr_aligned_nation 
+						}
+						set_temp_variable = { red = 0.507 }
+						set_temp_variable = { green = 0 }
+						set_temp_variable = { blue = 0 }
+					}
+					else_if = {
+						limit = {
+						has_idea = usa_aligned_nation
+						}
+						set_temp_variable = { red = 0 }
+						set_temp_variable = { green = 0 }
+						set_temp_variable = { blue = 0.507 }
+					}
+					else_if = {
+						limit = {
+							NOT = {
+								OR = {						
+								has_idea = ussr_aligned_nation 
+								has_idea = usa_aligned_nation
+								has_idea = china_aligned_nation 
+								}
+							}
+						}
+						set_temp_variable = { red = 0.50 }
+						set_temp_variable = { green = 0.50 }
+						set_temp_variable = { blue = 0.50 }
+					}
+					else = {
+						limit = {
+						has_idea = china_aligned_nation 
+						}
+						set_temp_variable = { red = 0.950 }
+						set_temp_variable = { green = 0.354 }
+						set_temp_variable = { blue = 0.354 }
+					}
+				}
+
+			}
+			
+			thickness = no
+  	}
+  	
+  	bottom = {
+  		type = none
+		
+			color = {
+				set_temp_variable = { alpha = 25.0 }
+				set_temp_variable = { thickness = 8.0 }
+			}
+			
+			thickness = yes
+  	}
+  	
+  	far_text = none
+  	near_text = none
+
+ 	update_daily = yes
+ 
+  }
+}

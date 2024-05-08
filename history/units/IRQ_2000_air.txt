@@ -1,0 +1,70 @@
+air_wings = {
+	# Land Wings #
+	291 = {
+		# Fighters -- Mirage F-1EQ, MiG-21, J-7, MiG-23, MiG-29
+		fighter_equipment_2 =  { # MiG-29 #
+			owner = "IRQ" 
+			creator = SOV
+			amount = 10
+		}
+		fighter_equipment_1 =  { # MiG-23 #
+			owner = "IRQ" 
+			creator = SOV
+			amount = 40
+		}
+		fighter_equipment_1 =  { # Mirage F-1EQ #
+			owner = "IRQ" 
+			creator = FRA
+			amount = 45
+		}
+		fighter_equipment_0 =  { # MiG-21 #
+			owner = "IRQ" 
+			creator = SOV
+			amount = 40
+		}
+		fighter_equipment_0 =  { # J-7 #
+			owner = "IRQ" 
+			creator = PRC
+			amount = 35
+		}
+		# Interceptors -- MiG-25
+		interceptor_equipment_1 =  { # MiG-25 #
+			owner = "IRQ" 
+			creator = SOV
+			amount = 5
+		}
+		# Attackers -- Su-20, Su-24, Su-25
+		attacker_equipment_2 =  { # Su-25 #
+			owner = "IRQ" 
+			creator = SOV
+			amount = 15
+		}
+		attacker_equipment_1 =  { # Su-20, Su-24 #
+			owner = "IRQ" 
+			creator = SOV
+			amount = 16
+		}
+		# Strike Bombers -- Tu-22, H-6D
+		strike_bomber_equipment_0 =  { # Tu-22 #
+			owner = "IRQ" 
+			creator = SOV
+			amount = 4
+		}
+		strike_bomber_equipment_0 =  { # H-6D #
+			owner = "IRQ" 
+			creator = PRC
+			amount = 2
+		}
+		# Transports -- Il-76, An-12, An-24, An-26
+		transport_plane_equipment_1 =  {
+			owner = "IRQ" 
+			creator = SOV
+			amount = 20
+		}
+		transport_plane_equipment_1 =  {
+			owner = "IRQ" 
+			creator = SOV
+			amount = 1
+		}
+	}
+}

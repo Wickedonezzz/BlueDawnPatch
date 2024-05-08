@@ -1,0 +1,127 @@
+﻿air_wings = {
+	# Land Wings #
+	417 = {
+		# Fighters -- F-5, J-7, MiG-29
+		fighter_equipment_2 =  { # MiG-29 #
+			owner = "PER" 
+			creator = SOV
+			amount = 18
+		}
+		fighter_equipment_0 =  { # J-7 #
+			owner = "PER" 
+			creator = PRC
+			amount = 12
+		}
+		fighter_equipment_0 =  { # F-5 #
+			owner = "PER" 
+			creator = USA
+			amount = 20
+		}
+
+		# Carrier Fighters -- F-14, F-4
+		carrier_fighter_equipment_1 =  { # F-14 #
+			owner = "PER" 
+			creator = USA
+			amount = 6
+		}
+		carrier_fighter_equipment_0 =  { # F-4 #
+			owner = "PER" 
+			creator = USA
+			amount = 8
+		}
+
+		# Attackers -- Su-25
+		attacker_equipment_2 =  { # Su-25 #
+			owner = "PER" 
+			creator = SOV
+			amount = 7
+		}
+
+		# Transports
+		transport_plane_equipment_1 =  {
+			owner = "PER" 
+			creator = USA
+			amount = 20
+		}
+		transport_plane_equipment_1 =  {
+			owner = "PER" 
+			creator = USA
+			amount = 5
+		}
+		transport_plane_equipment_1 =  {
+			owner = "PER" 
+			creator = PRC
+			amount = 2
+		}
+	}
+	413 = {
+		# Fighters -- F-5
+		fighter_equipment_0 =  { # F-5 #
+			owner = "PER" 
+			creator = USA
+			amount = 20
+		}
+
+		# Carrier Fighters -- F-14, F-4
+		carrier_fighter_equipment_1 =  { # F-14 #
+			owner = "PER" 
+			creator = USA
+			amount = 7
+		}
+		carrier_fighter_equipment_0 =  { # F-4 #
+			owner = "PER" 
+			creator = USA
+			amount = 38
+		}
+
+		# Attackers -- Su-24
+		attacker_equipment_1 =  { # Su-24 #
+			owner = "PER" 
+			creator = SOV
+			amount = 8
+		}
+
+		transport_plane_equipment_1 =  {
+			owner = "PER" 
+			creator = HOL
+			amount = 15
+		}
+	}
+	412 = {
+		# Fighters -- F-5, J-7, MiG-29
+		fighter_equipment_2 =  { # MiG-29 #
+			owner = "PER" 
+			creator = SOV
+			amount = 12
+		}
+		fighter_equipment_0 =  { # J-7 #
+			owner = "PER" 
+			creator = PRC
+			amount = 12
+		}
+		fighter_equipment_0 =  { # F-5 #
+			owner = "PER" 
+			creator = USA
+			amount = 20
+		}
+
+		# Carrier Fighters -- F-14, F-4
+		carrier_fighter_equipment_1 =  { # F-14 #
+			owner = "PER" 
+			creator = USA
+			amount = 12
+		}
+		carrier_fighter_equipment_0 =  { # F-4 #
+			owner = "PER" 
+			creator = USA
+			amount = 20
+		}
+
+		# Attackers -- Su-24
+		attacker_equipment_1 =  { # Su-24 #
+			owner = "PER" 
+			creator = SOV
+			amount = 16
+		}
+	}
+}

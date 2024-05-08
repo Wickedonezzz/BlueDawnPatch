@@ -1,0 +1,88 @@
+add_namespace = taw
+add_namespace = taw_choose
+
+
+country_event = {
+	id = taw_choose.1
+	title = taw_choose.1.t
+	desc = taw_choose.1.d
+	picture = GFX_report_event_ANC_spark
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = taw_choose.1.a	
+        country_event = { id = taw.1 days = 140 }
+		ai_chance = { base = 50 }
+	}
+	option = {
+		name = taw_choose.1.b	
+		ai_chance = { base = 50 }
+		country_event = { id = taw.2 days = 40 }
+	}
+}
+#ILOVEDEMOCRACY#
+country_event = {
+	id = taw.1
+	title = taw.1.t
+	desc = taw.1.d
+	picture = GFX_report_event_ANC_spark
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = taw.1.a	
+		retire_country_leader = yes
+		set_politics = {
+			ruling_party = liberalism
+		}
+		remove_ideas = CHI_last_phase_of_democratization
+		remove_ideas = CHI_KMT_internal_conflict
+		add_popularity = {
+    ideology = liberalism
+    popularity = 0.18
+       }
+	   news_event = { id = old_times_news.177 }
+	}
+}
+#IHATEDEMOCRACY#
+country_event = {
+	id = taw.2
+	title = taw.2.t
+	desc = taw.2.d
+	picture = GFX_report_event_ANC_spark
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = taw.2.a	
+		retire_country_leader = yes
+        promote_character = CHI_lien_chan
+		remove_ideas = CHI_last_phase_of_democratization
+	   news_event = { id = old_times_news.178 }
+	   country_event = { id = taw.3 days = 110 }
+	}
+}
+#Baldman#
+country_event = {
+	id = taw.3
+	title = taw.3.t
+	desc = taw.3.d
+	picture = GFX_report_event_ANC_spark
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = taw.3.a	
+		retire_country_leader = yes
+        promote_character = CHI_Hau_Pei_tsun
+	   news_event = { id = old_times_news.179 }
+	}
+}
+
+
+

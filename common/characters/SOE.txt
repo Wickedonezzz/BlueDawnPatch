@@ -1,0 +1,17 @@
+characters = {
+	SOE_dugin = {
+		name = "Alexandr Dugin"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/post_putin/Aleksandr_Dugin.dds"
+			}
+		}
+		country_leader = {
+			ideology = eurasianism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

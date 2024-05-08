@@ -1,0 +1,107 @@
+division_template = { # Light Infantry Division #
+	name = "Infantry Division"
+	division_names_group = GENERIC_INF_01
+
+	regiments = {
+		infantry_unit  = { x = 0 y = 0 }
+		infantry_unit  = { x = 0 y = 1 }
+	    infantry_unit  = { x = 1 y = 0 }
+		infantry_unit  = { x = 1 y = 1 }
+		infantry_unit = { x = 2 y = 0 }
+		infantry_unit = { x = 2 y = 1 }
+		towed_artillery_unit = { x = 3 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		towed_artillery_support_unit = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+
+division_template = { # Armoured Division #
+	name = "Armoured Division"
+	division_names_group = GENERIC_MBT_01
+
+	regiments = {
+		main_battle_tank_armor = { x = 0 y = 0 }
+		main_battle_tank_armor = { x = 0 y = 1 }
+		main_battle_tank_armor = { x = 0 y = 2 }
+		infantry_fighting_vehicle_armor = { x = 2 y = 0 }
+		heavy_infantry_unit = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		towed_artillery_support_unit = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+
+units = {
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 2103
+		division_template = "Armoured Division"
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.0
+	}
+
+
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 10760
+		division_template = "Armoured Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10760
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10760
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 2103
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 13479
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	
+}

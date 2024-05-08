@@ -1,0 +1,30 @@
+ideas = {
+	
+	country = {
+	
+		SOM_somalian_civil_war = {
+			name = SOM_somalian_civil_war_name
+
+			removal_cost = -1
+
+			picture = SOM_somalian_anarchy_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_factor = -1.00
+				monthly_population = -2.00
+				stability_weekly = -0.05
+				war_support_weekly = -0.05
+				industrial_capacity_factory = -1.00
+				industrial_capacity_dockyard = -1.00
+                                conscription_factor = -1.00
+                                production_speed_buildings_factor = -1.00
+			}
+		}
+
+	}
+
+}

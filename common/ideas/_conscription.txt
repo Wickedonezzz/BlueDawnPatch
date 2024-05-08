@@ -1,0 +1,402 @@
+ideas = {
+	hidden_ideas = {
+	no_reservist = {
+	   removal_cost = -1
+
+				picture = disarmed_nation
+				allowed = {
+					always = no
+				}
+				available = {
+					has_war = yes
+					has_idea = disarmed_nation
+				}
+				on_remove = {
+				   if = {
+						limit = {
+							has_idea = disarmed_nation
+						}
+						add_ideas = no_reservist_1
+					}
+				 }
+
+				modifier = {
+					training_time_factor = 1.0
+					army_org_factor = -0.3
+					war_support_factor = -0.3
+					mobilization_speed = -0.5
+				}
+	   }
+	   no_reservist_1 = {
+			removal_cost = -1
+
+				picture = disarmed_nation
+				allowed = {
+					always = no
+				}
+				available = {
+				has_war = no
+				has_idea = disarmed_nation
+				}
+				 on_remove = {
+				   if = {
+						limit = {
+							has_idea = disarmed_nation
+						}
+						add_ideas = no_reservist
+					}
+				 }
+
+				modifier = {
+					stability_factor = 0.15
+					war_support_factor = -0.1
+					production_speed_buildings_factor = 0.15
+					
+				}
+	   }
+		reservist_very_small = {
+			
+			picture = volunteer_only
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+			available = {
+				has_war = yes
+				has_idea = volunteer_only 
+			}
+			on_remove = {
+			   if = {
+                    limit = {
+                        has_idea = volunteer_only 
+                    }
+                    add_ideas = reservist_very_small_1
+                }
+			 }
+
+			modifier = {
+				training_time_factor = -0.2
+	            mobilization_speed = 0.2
+
+
+			}
+		} 
+		reservist_very_small_1 = {
+			
+			picture = volunteer_only
+			removal_cost = -1
+
+            on_remove = {
+			 if = {
+                    limit = {
+                        has_idea = volunteer_only 
+                    }
+                    add_ideas = reservist_very_small
+                }
+			}
+			allowed = {
+				always = no
+			}
+			available = {
+			has_war = no
+			has_idea = volunteer_only 
+			}
+
+			modifier = {
+				stability_factor = 0.1
+				army_org_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				training_time_factor = 1.0
+				mobilization_speed = -0.5
+			}
+		}
+		reservist_small = {
+			
+			picture = limited_conscription
+			removal_cost = -1
+
+
+			allowed = {
+				always = no
+			}
+			available = {
+				has_war = yes
+				has_idea = limited_conscription
+			}
+			 on_remove = {
+			   if = {
+                    limit = {
+                        has_idea = limited_conscription
+                    }
+                    add_ideas = reservist_small_1
+                }
+			 }
+
+			modifier = {
+				training_time_factor = -0.3
+	            mobilization_speed = 0.3
+ 
+			}
+		} 
+		reservist_small_1 = {
+			
+			picture = limited_conscription
+			removal_cost = -1
+
+             on_remove = {
+			 if = {
+                    limit = {
+                        has_idea = limited_conscription
+                    }
+                    add_ideas = reservist_small
+                }
+			 }
+			allowed = {
+				always = no
+			}
+			available = {
+			has_war = no
+			has_idea = limited_conscription
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				training_time_factor = 1.0
+				mobilization_speed = -0.5
+			}
+		}
+		reservist_medium = {
+		
+			picture = extensive_conscription
+			removal_cost = -1
+
+
+			allowed = {
+				always = no
+			}
+			available = {
+			has_war = yes
+			has_idea = extensive_conscription
+			}
+			on_remove = {
+			   if = {
+                    limit = {
+                        has_idea = extensive_conscription
+                    }
+                    add_ideas = reservist_medium_1
+                }
+			}
+
+			modifier = {
+				training_time_factor = -0.35
+	            mobilization_speed = 0.35
+
+			}
+		} 
+		reservist_medium_1 = {
+			
+			picture = extensive_conscription
+			removal_cost = -1
+
+             on_remove = {
+			 if = {
+                    limit = {
+                        has_idea = extensive_conscription
+                    }
+                    add_ideas = reservist_medium
+                }
+			 }
+			allowed = {
+				always = no
+			}
+			available = {
+				has_war = no
+				has_idea = extensive_conscription
+			}
+
+			modifier = {
+				training_time_factor = 1.0
+				mobilization_speed = -0.5
+			}
+		}
+		reservist_large = {
+			
+			picture = service_by_requirement
+			removal_cost = -1
+
+
+			allowed = {
+				always = no
+			}
+			available = {
+				has_war = yes
+				has_idea = service_by_requirement
+			}
+			on_remove = {
+			   if = {
+                    limit = {
+                        has_idea = service_by_requirement
+                    }
+                    add_ideas = reservist_large_1
+                }
+			 }
+
+			modifier = {
+				training_time_factor = -0.4
+	            mobilization_speed = 0.4
+
+			}
+		} 
+		reservist_large_1 = {
+			
+			picture = service_by_requirement
+			removal_cost = -1
+
+            on_remove = {
+			 if = {
+                    limit = {
+                        has_idea = service_by_requirement
+                    }
+                    add_ideas = reservist_large
+                }
+			 }
+			allowed = {
+				always = no
+			}
+			available = {
+				has_war = no
+				has_idea = service_by_requirement
+			}
+
+			modifier = {
+				war_support_factor = 0.05
+				production_speed_buildings_factor = -0.05
+				training_time_factor = 1.0
+				mobilization_speed = -0.5
+			}
+		}
+		reservist_very_large = {
+		
+			picture = all_adults_serve
+			removal_cost = -1
+
+
+			allowed = {
+				always = no
+			}
+			available = {
+				has_war = yes
+				has_idea = all_adults_serve
+			}
+			 on_remove = {
+			   if = {
+                    limit = {
+                        has_idea = all_adults_serve
+                    }
+                    add_ideas = reservist_very_large_1
+                }
+			 }
+
+			modifier = {
+				training_time_factor = -0.45
+	            mobilization_speed = 0.45
+               production_speed_buildings_factor = -0.15
+				industrial_capacity_factory = -0.2
+				army_org_factor = -0.1
+			}
+		} 
+		reservist_very_large_1 = {
+			
+			picture = all_adults_serve
+			removal_cost = -1
+
+             on_remove = {
+			 if = {
+                    limit = {
+                        has_idea = all_adults_serve
+                    }
+                    add_ideas = reservist_very_large
+                }
+			 }
+			allowed = {
+				always = no
+			}
+			available = {
+			has_war = no
+			has_idea = all_adults_serve
+			}
+
+			modifier = {
+				war_support_factor = 0.1
+				production_speed_buildings_factor = -0.1
+				industrial_capacity_factory = -0.15
+				training_time_factor = 1.0
+				mobilization_speed = -0.5
+			}
+		}
+		reservist_super_large = {
+			
+			picture = scraping_the_barrel
+			removal_cost = -1
+
+
+			allowed = {
+				always = no
+			}
+			available = {
+			has_war = yes
+			has_idea = scraping_the_barrel
+			}
+			 on_remove = {
+			   if = {
+                    limit = {
+                        has_idea = scraping_the_barrel
+                    }
+                    add_ideas = reservist_super_large_1
+                }
+			 }
+
+			modifier = {
+				training_time_factor = -0.5
+	            mobilization_speed = 0.5
+                production_speed_buildings_factor = -0.3
+				industrial_capacity_factory = -0.35
+				army_org_factor = -0.2
+				
+			}
+		} 
+		reservist_super_large_1 = {
+			
+			picture = scraping_the_barrel
+			removal_cost = -1
+
+             on_remove = {
+			 if = {
+                    limit = {
+                        has_idea = scraping_the_barrel
+                    }
+                    add_ideas = reservist_super_large
+                }
+			 }
+			allowed = {
+				always = no
+			}
+			available = {
+			has_war = no
+			has_idea = scraping_the_barrel
+			}
+
+			modifier = {
+				war_support_factor = 0.1
+				production_speed_buildings_factor = -0.2
+				industrial_capacity_factory = -0.3
+				training_time_factor = 1.0
+				mobilization_speed = -0.5
+			}
+		}
+	}
+
+}
+

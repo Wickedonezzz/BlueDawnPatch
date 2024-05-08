@@ -1,0 +1,48 @@
+characters = {
+
+	ARM_robert_kocharyan = {
+		name = "Robert Kocharyan"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ARM/Robert_Kocharyan.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	ARM_serzh_sargsyan = {
+		name = "Serzh Sargsyan"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ARM/Serzh_Sargsyan.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	ARM_vladimir_movsisyan = {
+		name = "Vladimir Movsisyan"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ARM/vladimir_movsisyan.dds"
+			}
+		}
+		country_leader = {
+			ideology = market_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

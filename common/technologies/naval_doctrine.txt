@@ -1,0 +1,942 @@
+technologies = {
+
+	## BASTION ##
+
+	doctrine_naval_bastion = {
+		doctrine_name = "DOCTRINE_BASTION_TITLE"
+
+		xor = { doctrine_naval_strike_force doctrine_naval_coastal } 
+
+		path = {
+			leads_to_tech = doctrine_naval_ballistic_submarine_groups
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = doctrine_naval_strategic_minefields
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = doctrine_naval_air_force_coordination
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_bastion
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 0 y = 0 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	doctrine_naval_ballistic_submarine_groups = {
+		path = {
+			leads_to_tech = doctrine_naval_submarine_wolfpacks
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_bastion
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = -2 y = 2 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	doctrine_naval_submarine_wolfpacks = {
+		path = {
+			leads_to_tech = doctrine_naval_undersea_terrain
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_bastion
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = -2 y = 4 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	doctrine_naval_undersea_terrain = {
+		path = {
+			leads_to_tech = doctrine_naval_carrier_killers
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_bastion
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = -2 y = 6 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	doctrine_naval_carrier_killers = {
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_bastion
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = -1 y = 8 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	doctrine_naval_strategic_minefields = {
+		path = {
+			leads_to_tech = doctrine_naval_picket_patrols
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_bastion
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 0 y = 2 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	doctrine_naval_picket_patrols = {
+		path = {
+			leads_to_tech = doctrine_naval_anti-submarine_barrier
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_bastion
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 0 y = 4 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	doctrine_naval_anti-submarine_barrier = {
+		path = {
+			leads_to_tech = doctrine_naval_carrier_killers
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = doctrine_naval_aircraft-carrying_cruisers
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_bastion
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 0 y = 6 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	doctrine_naval_air_force_coordination = {
+		path = {
+			leads_to_tech = doctrine_naval_aircraft-carrying_cruisers
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_bastion
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 2 y = 2 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	doctrine_naval_aircraft-carrying_cruisers = {
+		path = {
+			leads_to_tech = doctrine_naval_bastion_air_dominance
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_bastion
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 2 y = 8 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	doctrine_naval_bastion_air_dominance = {
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_bastion
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 2 y = 10 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	## STRIKE FORCE ##
+
+	doctrine_naval_strike_force = {
+		doctrine_name = "DOCTRINE_STRIKE_FORCE_TITLE"
+
+		xor = { doctrine_naval_bastion doctrine_naval_coastal } 
+
+		path = {
+			leads_to_tech = doctrine_naval_carrier_battlegroups
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = doctrine_naval_global_convoy_network
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_strike_force
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 0 y = 0 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	doctrine_naval_carrier_battlegroups = {
+		path = {
+			leads_to_tech = doctrine_naval_allied_escorts
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = doctrine_naval_layered_defences
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_strike_force
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 0 y = 2 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	doctrine_naval_allied_escorts = {
+		path = {
+			leads_to_tech = doctrine_naval_unified_naval_command
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_strike_force
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = -2 y = 4 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	doctrine_naval_unified_naval_command = {
+		path = {
+			leads_to_tech = doctrine_naval_multinational_carrier_operations
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_strike_force
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = -2 y = 6 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	doctrine_naval_multinational_carrier_operations = {
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_strike_force
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = -2 y = 8 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	doctrine_naval_layered_defences = {
+		path = {
+			leads_to_tech = doctrine_naval_floating_airfields
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_strike_force
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 0 y = 4 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	doctrine_naval_floating_airfields = {
+		path = {
+			leads_to_tech = doctrine_naval_supercarrier_operations
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_strike_force
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 0 y = 6 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	doctrine_naval_supercarrier_operations = {
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_strike_force
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 0 y = 8 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	doctrine_naval_global_convoy_network = {
+		path = {
+			leads_to_tech = doctrine_naval_convoy_escorts
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_strike_force
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 2 y = 2 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	doctrine_naval_convoy_escorts = {
+		path = {
+			leads_to_tech = doctrine_naval_anti-submarine_operations
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_strike_force
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 2 y = 4 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	doctrine_naval_anti-submarine_operations = {
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_strike_force
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 2 y = 6 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	## COASTAL ##
+
+	doctrine_naval_coastal = {
+		doctrine_name = "DOCTRINE_COASTAL_TITLE"
+
+		xor = { doctrine_naval_bastion doctrine_naval_strike_force } 
+
+		path = {
+			leads_to_tech = doctrine_naval_silent_hunters
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = doctrine_naval_layered_minefields
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = doctrine_naval_strength_in_numbers
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_coastal
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 0 y = 0 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	doctrine_naval_silent_hunters = {
+		path = {
+			leads_to_tech = doctrine_naval_terrain_advantage
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_coastal
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = -2 y = 2 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	doctrine_naval_terrain_advantage = {
+		path = {
+			leads_to_tech = doctrine_naval_transparent_ocean
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_coastal
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = -2 y = 4 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	doctrine_naval_layered_minefields = {
+		path = {
+			leads_to_tech = doctrine_naval_naval_aircraft_patrols
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_coastal
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 0 y = 2 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	doctrine_naval_naval_aircraft_patrols = {
+		path = {
+			leads_to_tech = doctrine_naval_transparent_ocean
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_coastal
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 0 y = 4 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	doctrine_naval_transparent_ocean = {
+		path = {
+			leads_to_tech = doctrine_naval_battlespace_coordination
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_coastal
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = -1 y = 6 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	doctrine_naval_strength_in_numbers = {
+		path = {
+			leads_to_tech = doctrine_naval_little_heavy_hitters
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_coastal
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 2 y = 2 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	doctrine_naval_little_heavy_hitters = {
+		path = {
+			leads_to_tech = doctrine_naval_swarm_tactics
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_coastal
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 2 y = 4 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	doctrine_naval_swarm_tactics = {
+		path = {
+			leads_to_tech = doctrine_naval_battlespace_coordination
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_coastal
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 2 y = 6 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	doctrine_naval_battlespace_coordination = {
+		path = {
+			leads_to_tech = doctrine_naval_secure_coast
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_coastal
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 0 y = 8 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+
+	doctrine_naval_secure_coast = {
+		xp_research_type = navy
+		xp_unlock_cost = 100
+		doctrine = yes	
+		research_cost = 3
+
+		categories = {
+			naval_doctrine
+			mod_cat_doctrine_coastal
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 0 y = 10 }
+		}
+
+		ai_will_do = {
+		}
+
+		ai_research_weights = {
+		}
+	}
+}

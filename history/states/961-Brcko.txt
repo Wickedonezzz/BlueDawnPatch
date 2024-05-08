@@ -1,0 +1,27 @@
+state={
+	id=961
+	name="STATE_961"
+	history={
+		owner = YUG
+		victory_points = {
+			13368 4 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+		add_core_of = YUG
+		add_core_of = BOS
+		set_demilitarized_zone = yes
+
+	}
+	provinces={
+		11574 13360 13368 
+	}
+	manpower=78000
+	buildings_max_level_factor=1.000
+	state_category=city	
+	local_supplies=5.000
+}

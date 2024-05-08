@@ -1,0 +1,18 @@
+﻿capital = 729
+
+set_research_slots = 2
+recruit_character = PTN_kabir_abdul_rahman
+set_politics = {
+	ruling_party = paternal_autocracy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 0
+	paternal_autocracy = 67
+	socialism = 10
+	liberalism = 23
+	democratic = 0
+}

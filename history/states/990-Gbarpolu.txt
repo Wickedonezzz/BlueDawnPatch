@@ -1,0 +1,23 @@
+state={
+	id=990
+	name="STATE_990"
+	history={
+		owner = LIB
+		add_core_of = LIB
+		add_core_of = LUR
+		buildings = {
+			infrastructure = 2
+
+		}
+		victory_points = {
+			13505 3 
+		}				
+	}		
+	provinces={
+		13502 13504 13505 
+	}
+	manpower=754000
+	state_category=large_town	
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

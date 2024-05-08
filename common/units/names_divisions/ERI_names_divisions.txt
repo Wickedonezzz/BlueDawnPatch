@@ -1,0 +1,128 @@
+﻿# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# If we run out of all historical names, the names will be assigned in the old way.
+#
+# Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
+#
+# for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
+#
+# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+#
+# division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template
+#                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
+#                  for example the current one is no longer available due to the can_use trigger saying so).
+#                  In automated choice, the division template must have at least 1 of the following types for it to be chosen.
+#
+# fallback_name - Is going to be used if we run out of the scripted historical names. If you want to use the old division naming
+#                 mechanics to be used for fallbacks, then just skip this option.
+#
+# unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
+#             this option is available here mainly for a mods.
+#
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
+#           Numbers can't repeat in one scope.
+#           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
+#           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
+#           1st argument = The name. It must contain either: 
+#                          %d (for decimal number placement)
+#                          %s (for string number placement - ROMAN numbers like XIV).
+#           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
+#                                      where you choose the historical division name.
+#           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
+#                                      the current game version.
+
+ERI_INF_01 = {
+
+	name = "EPLF Infantry"
+
+	for_countries = { ERI }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry_unit" }
+
+	fallback_name = "%d EPLF Infantry"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st EPLF Infantry" }
+		2 = { "2nd EPLF Infantry" }
+		3 = { "3rd EPLF Infantry" }
+		4 = { "4th EPLF Infantry" }
+		5 = { "5th EPLF Infantry" }
+		6 = { "6th EPLF Infantry" }
+		7 = { "7th EPLF Infantry" }
+		8 = { "8th EPLF Infantry" }
+		9 = { "9th EPLF Infantry" }
+		10 = { "10th EPLF Infantry" }
+		11 = { "11th EPLF Infantry" }
+		12 = { "12th EPLF Infantry" }
+		13 = { "13th EPLF Infantry" }
+		14 = { "14th EPLF Infantry" }
+		15 = { "15th EPLF Infantry" }
+		16 = { "16th EPLF Infantry" }
+		17 = { "17th EPLF Infantry" }
+		18 = { "18th EPLF Infantry" }
+		19 = { "19th EPLF Infantry" }
+		20 = { "20th EPLF Infantry" }
+		21 = { "21th EPLF Infantry" }
+		22 = { "22th EPLF Infantry" }
+		23 = { "23th EPLF Infantry" }
+		24 = { "24th EPLF Infantry" }
+		25 = { "25th EPLF Infantry" }
+		26 = { "26th EPLF Infantry" }
+		27 = { "27th EPLF Infantry" }
+		28 = { "28th EPLF Infantry" }
+		29 = { "29th EPLF Infantry" }
+	}
+}
+
+ERI_ARM_01 = {
+
+	name = "EPLF Tank"
+
+	for_countries = { ERI }
+
+	can_use = { always = yes }
+
+	division_types = { "main_battle_tank_armor" }
+
+	fallback_name = "%d EPLF Tank"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st EPLF Tank" }
+		2 = { "2nd EPLF Tank" }
+		3 = { "3rd EPLF Tank" }
+		4 = { "4th EPLF Tank" }
+		5 = { "5th EPLF Tank" }
+		6 = { "6th EPLF Tank" }
+		7 = { "7th EPLF Tank" }
+		8 = { "8th EPLF Tank" }
+		9 = { "9th EPLF Tank" }
+		10 = { "10th EPLF Tank" }
+		11 = { "11th EPLF Tank" }
+		12 = { "12th EPLF Tank" }
+		13 = { "13th EPLF Tank" }
+		14 = { "14th EPLF Tank" }
+		15 = { "15th EPLF Tank" }
+		16 = { "16th EPLF Tank" }
+		17 = { "17th EPLF Tank" }
+		18 = { "18th EPLF Tank" }
+		19 = { "19th EPLF Tank" }
+		20 = { "20th EPLF Tank" }
+		21 = { "21th EPLF Tank" }
+		22 = { "22th EPLF Tank" }
+		23 = { "23th EPLF Tank" }
+		24 = { "24th EPLF Tank" }
+		25 = { "25th EPLF Tank" }
+		26 = { "26th EPLF Tank" }
+		27 = { "27th EPLF Tank" }
+		28 = { "28th EPLF Tank" }
+		29 = { "29th EPLF Tank" }
+	}
+}
+
+

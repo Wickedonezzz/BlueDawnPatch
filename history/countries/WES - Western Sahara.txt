@@ -1,0 +1,18 @@
+﻿capital = 999
+
+set_convoys = 20
+
+recruit_character = WES_collapsed_authority
+
+set_politics = {
+	ruling_party = socialism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 30
+	fascism = 30
+	communism = 5
+	socialism = 35
+}

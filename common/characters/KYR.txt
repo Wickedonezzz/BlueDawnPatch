@@ -1,0 +1,33 @@
+characters = {
+
+	KYR_absamat_masaliyev = {
+		name = "Absamat Masaliyev"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KYR/absamat_masaliyev.dds"
+			}
+		}
+		country_leader = {
+			ideology = market_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	KYR_kurmanbek_bakiyev = {
+		name = "Kurmanbek Bakiyev"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KYR/Kurmanbek_Bakiyev.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

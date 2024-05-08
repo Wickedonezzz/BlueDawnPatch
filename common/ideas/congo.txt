@@ -1,0 +1,350 @@
+ideas = {
+	
+	country = {
+	
+		COG_africas_world_war = {
+			name = COG_africas_world_war_name
+
+			removal_cost = -1
+
+			cancel = {
+				has_war = no
+			}
+
+			picture = COG_africas_world_war_icon
+			
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_attack_factor = -0.05
+				stability_factor = -0.3
+				monthly_population = -0.7
+				ai_focus_aggressive_factor = 0.5
+				surrender_limit = 0.1
+			}
+		}
+		
+		RCD_tensions = {
+			name = RCD_tensions_name
+
+			removal_cost = -1
+
+			picture = RCD_tensions_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_cost = 0.5
+				stability_weekly_factor	= -0.001
+				war_support_weekly = 0.001
+			}
+			
+		}
+		
+		RCK_RCD_war = {
+			name = RCD_war_name
+
+			removal_cost = -1
+			
+			cancel = {
+				has_war = no
+			}
+			
+			picture = RCD_war_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_cost = 0.25
+			}
+			
+			targeted_modifier = {
+				tag = RGO
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		
+		RGO_RCD_war = {
+			name = RCD_war_name
+
+			removal_cost = -1
+			
+			cancel = {
+				has_war = no
+			}
+			
+			picture = RCD_war_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_cost = 0.25
+			}
+			
+			targeted_modifier = {
+				tag = RCK
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		
+		##Uganda##
+		
+		UGA_increasing_authoritarianism = {
+			name = UGA_increasing_authoritarianism_name
+
+			removal_cost = -1
+			
+			cancel = {
+				is_puppet = yes
+			}
+			
+			picture = UGA_increasing_auth_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_gain = 0.50
+				neutrality_drift = 0.02
+			}
+			
+		}
+		
+		UGA_extreme_authoritarianism = {
+			name = UGA_extreme_authoritarianism_name
+
+			removal_cost = -1
+			
+			cancel = {
+				is_puppet = yes
+			}
+			
+			picture = generic_autho
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_gain = -0.25
+				paternal_autocracy_drift = 0.15
+			}
+			
+		}
+		
+		UGA_extreme_authoritarianism_islamists = {
+			name = UGA_extreme_authoritarianism_name
+
+			removal_cost = -1
+			
+			cancel = {
+				is_puppet = yes
+			}
+			
+			picture = UGA_islam_power
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_gain = -0.50
+				paternal_autocracy_drift = 0.15
+			}
+			
+		}
+		
+		UGA_konys_cult = {
+			name = UGA_konys_cult_name
+
+			removal_cost = -1
+			
+			cancel = {
+				is_puppet = yes
+			}
+			
+			picture = UGA_konys_cult_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.75
+				war_support_weekly = 0.05
+				research_speed_factor = -0.50
+			}
+			
+		}
+		
+		UGA_forced_sharia = {
+			name = UGA_enforced_sharia_name
+
+			removal_cost = -1
+			
+			cancel = {
+				is_puppet = yes
+			}
+			
+			picture = UGA_konys_cult_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				research_speed_factor = -0.40
+			}
+			
+		}
+		
+		UGA_minority_rule = {
+			name = UGA_minority_rule_name
+
+			removal_cost = -1
+			
+			cancel = {
+				is_puppet = yes
+			}
+			
+			picture = UGA_konys_cult_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.85
+				political_power_cost = 1.00
+			}
+			
+		}
+		
+		UGA_an_army_of_criminals = {
+			name = UGA_an_army_of_criminals_name
+
+			removal_cost = -1
+			
+			cancel = {
+				is_puppet = yes
+			}
+			
+			picture = UGA_an_army_of_criminals_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+			}
+			
+		}
+		
+		
+		##Rwanda##
+		
+		RWA_tutsi_dominance = {
+			name = RWA_tutsi_dominance_name
+
+			removal_cost = -1
+			
+			cancel = {
+				is_puppet = yes
+			}
+			
+			picture = RWA_tutsi_dominance_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_gain = 0.75
+				war_support_factor = 0.20
+				stability_factor = -0.30
+			}
+			
+		}
+		
+		RWA_rwandan_genocide_scars = {
+			name = RWA_rwandan_genocide_scars_name
+
+			removal_cost = -1
+			
+			picture = RWA_scars_of_genocide_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				army_attack_factor = -0.05
+				monthly_population = -0.30
+				stability_factor = -0.35
+			}
+			
+		}
+		
+		##Burundi##
+		
+		BRD_tutsi_dominance = {
+			name = BRD_tutsi_dominance_name
+
+			removal_cost = -1
+			
+			cancel = {
+				is_puppet = yes
+			}
+			
+			picture = BRD_tutsi_dominance_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_gain = 0.75
+				war_support_factor = 0.20
+				stability_factor = -0.30
+			}
+			
+		}
+		
+		BRD_civil_war = {
+			name = BRD_civil_war_name
+
+			removal_cost = -1
+			
+			cancel = {
+				is_puppet = yes
+			}
+			
+			picture = BRD_civil_war_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_gain = -0.50
+				stability_factor = -0.50
+			}
+			
+		}
+		
+	}
+}

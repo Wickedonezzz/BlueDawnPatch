@@ -1,0 +1,54 @@
+﻿air_wings = {
+	# Land Wings #
+	139 = {
+		# Fighters -- JA-37
+		fighter_equipment_1 =  { # JA-37 #
+			owner = "SWE" 
+			creator = SWE
+			amount = 43
+		}
+	}
+	140 = {
+		# Fighters -- JAS-39
+		fighter_equipment_3 =  { # JAS-39 #
+			owner = "SWE" 
+			creator = SWE
+			amount = 42
+		}
+	}
+	666 = {
+		# Fighters -- JA-37
+		fighter_equipment_1 =  { # JA-37 #
+			owner = "SWE" 
+			creator = SWE
+			amount = 46
+		}
+
+		# Attackers -- AJS-37
+		attacker_equipment_1 =  { # AJS-37 #
+			owner = "SWE" 
+			creator = SWE
+			amount = 30
+		}
+	}
+	141 = {
+		# Fighters -- JAS-39, JA-37
+		fighter_equipment_3 =  { # JAS-39 #
+			owner = "SWE" 
+			creator = SWE
+			amount = 48
+		}
+		fighter_equipment_1 =  { # JA-37 #
+			owner = "SWE" 
+			creator = SWE
+			amount = 41
+		}
+
+		# Transports -- C-130
+		transport_plane_equipment_1 =  {
+			owner = "SWE"
+			creator = USA
+			amount = 8
+		}
+	}
+}

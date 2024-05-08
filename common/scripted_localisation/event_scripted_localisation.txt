@@ -1,0 +1,72 @@
+defined_text = {
+	name = EVENT_otn_104
+	text = {
+		trigger = {
+			OR = {
+				has_government = communism
+				has_government = reformed_communism
+			}
+		}
+		localization_key = EVENT_otn_104_loc_key_1
+	}
+	text = {
+		trigger = {
+			original_tag = USA
+		}
+		localization_key = EVENT_otn_104_loc_key_2
+	}
+	text = {
+		localization_key = EVENT_otn_104_loc_key_3
+	}
+}
+defined_text = {
+	name = EVENT_otn_105
+	text = {
+		trigger = {
+			OR = {
+				has_government = communism
+				has_government = reformed_communism
+			}
+		}
+		localization_key = EVENT_otn_105_loc_key_1
+	}
+	text = {
+		trigger = {
+			original_tag = SAF
+		}
+		localization_key = EVENT_otn_105_loc_key_2
+	}
+	text = {
+		localization_key = EVENT_otn_105_loc_key_3
+	}
+}
+defined_text = {
+	name = EVENT_otn_106
+	text = {
+		trigger = {
+			OR = {
+				has_government = communism
+				has_government = reformed_communism
+			}
+		}
+		localization_key = EVENT_otn_106_loc_key_1
+	}
+	text = {
+		localization_key = EVENT_otn_106_loc_key_2
+	}
+}
+defined_text = {
+	name = EVENT_otn_107
+	text = {
+		trigger = {
+			OR = {
+				has_government = communism
+				has_government = reformed_communism
+			}
+		}
+		localization_key = EVENT_otn_107_loc_key_1
+	}
+	text = {
+		localization_key = EVENT_otn_107_loc_key_2
+	}
+}

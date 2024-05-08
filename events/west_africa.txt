@@ -1,0 +1,160 @@
+add_namespace = west_africa
+
+# the gov has fallen
+country_event = {
+	id = west_africa.1
+	title = west_africa.1.t
+	desc = west_africa.1.d
+	picture = GFX_report_event_spark
+	
+	trigger = {
+		original_tag = GNA
+		NOT = {
+			country_exists = LUR
+			country_exists = SIE
+		}
+	}
+
+	fire_only_once = yes
+
+		#rip#
+	option = {
+		name = west_africa.1.a
+		remove_ideas = west_africa_ECOWAS
+		
+		set_politics = {
+			ruling_party = paternal_autocracy
+			last_election = "1930.11.9"
+			election_frequency = 48
+			elections_allowed = no
+		}
+
+		set_popularities = {
+			communism = 0
+			reformed_communism = 0
+			social_democracy = 0
+			liberalism = 0
+			democratic = 0
+			neutrality = 50
+			paternal_autocracy = 50
+			fascism = 0
+		}
+	}
+}
+
+# when that election percs hit
+country_event = {
+	id = west_africa.2
+	title = west_africa.2.t
+	desc = west_africa.2.d
+	picture = GFX_report_event_spark
+	
+	trigger = {
+		original_tag = GHA
+		date > 2000.01.28
+	}
+
+	fire_only_once = yes
+
+		#no more succdem#
+	option = {
+		name = west_africa.2.a
+		
+		set_politics = {
+			ruling_party = liberalism
+			last_election = "1936.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		set_popularities = {
+			liberalism = 48
+			social_democracy = 44
+			socialism = 8
+		}
+
+	}
+}
+
+# libera elections
+country_event = {
+	id = west_africa.3
+	title = west_africa.3.t
+	desc = west_africa.3.d
+	picture = GFX_report_event_spark
+
+	is_triggered_only = yes
+
+		#woman#
+	option = {
+		name = west_africa.3.a
+		
+		set_politics = {
+			ruling_party = social_democracy
+			last_election = "1936.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		set_popularities = {
+			liberalism = 30
+			social_democracy = 40
+			socialism = 15
+			fascism = 15
+		}
+
+	}
+	
+		#footballer#
+	option = {
+		name = west_africa.3.a
+		
+		set_politics = {
+			ruling_party = liberalism
+			last_election = "1936.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		set_popularities = {
+			liberalism = 40
+			social_democracy = 30
+			socialism = 15
+			fascism = 15
+		}
+
+	}
+}
+
+
+# liberia - kill sierra
+country_event = {
+	id = west_africa.4
+	title = west_africa.4.t
+	desc = west_africa.4.d
+	picture = GFX_report_event_spark
+
+	trigger = {
+		date > 2002.02.02
+		original_tag = LIB
+		has_war = no
+		SIE = {has_war_with = RUF}
+	}
+
+	fire_only_once = yes
+
+		#kill#
+	option = {
+		name = west_africa.4.a
+		
+		declare_war_on = {
+			target = SIE
+			type = annex_everything
+		}
+		
+		give_military_access = RUF
+		
+		RUF = {
+		give_military_access = LIB
+		}
+
+	}
+	
+}

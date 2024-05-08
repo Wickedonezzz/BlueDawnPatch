@@ -1,0 +1,22 @@
+scripted_gui = {
+
+	nuclear_topbar_gui = {
+		window_name = "nuke_1_counter"
+		context_type = player_context
+		parent_window_token = top_bar
+
+		visible = {
+			always = yes
+		}
+	}
+	nuclear_topbar_gui = {
+		window_name = "nuke_2_counter"
+		context_type = player_context
+		parent_window_token = top_bar
+
+		visible = {
+			always = yes
+		}
+	}
+	
+}

@@ -1,0 +1,31 @@
+﻿capital = 100 #Iceland
+
+set_research_slots = 3
+
+set_convoys = 30
+
+recruit_character = ICE_olafur_ragnar
+
+add_ideas = usa_aligned_nation
+
+set_stability = 0.75
+
+set_politics = {
+	ruling_party = liberalism
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 0
+	reformed_communism = 12
+	social_democracy = 26
+	liberalism = 22
+	democratic = 40
+	neutrality = 0
+	paternal_autocracy = 0
+	fascism = 0
+}
+
+add_ideas = disarmed_nation

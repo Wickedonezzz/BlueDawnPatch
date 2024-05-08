@@ -1,0 +1,25 @@
+units = {
+	fleet = {
+		name = "Jugoslovenska Flota"
+		naval_base = 9809 # Kotor #
+		task_force = {
+			name = "Jugoslovenska Flota"
+			location = 9809 # Kotor #
+			ship = { name = "JRM Kotor" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = YUG version_name = "Kotor Class" } } }
+			ship = { name = "JRM Novi Sad" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = YUG version_name = "Kotor Class" } } }
+			ship = { name = "JRM Beograd" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = YUG creator = SOV version_name = "Koni I Class (Pr. 1159)" } } }
+			ship = { name = "JRM Podgoritsa" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = YUG creator = SOV version_name = "Koni I Class (Pr. 1159)" } } }
+		}
+		task_force = {
+			name = "Jugoslovenska Podmornička Flota"
+			location = 9809 # Kotor #
+			ship = { name = "JRM Junak" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = YUG version_name = "Heroj Class" } } }
+			ship = { name = "JRM Uskok" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = YUG version_name = "Heroj Class" } } }
+			ship = { name = "JRM Sava" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = YUG version_name = "Sava Class" } } }
+			ship = { name = "JRM Drava" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = YUG version_name = "Sava Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

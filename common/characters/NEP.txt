@@ -1,0 +1,78 @@
+characters = {
+
+	NEP_birendra_of_nepal = {
+		name = "Birendra of Nepal"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NEP/Birendra_of_Nepal.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	NEP_dipendra_of_nepal = {
+		name = "Dipendra of Nepal"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NEP/Bipendra_of_Nepal.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	NEP_gyanendra_of_nepal = {
+		name = "Gyanendra of Nepal"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NEP/Gyanendra_of_Nepal.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	NEP_girija_koirala = {
+		name = "Girija Prasad Koirala"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NEP/Girija_Prasad_Koirala.png"
+			}
+		}
+		country_leader = {
+			ideology = democratic_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}	
+	
+	NEP_pushpa_kamal_dahal = {
+		name = "Pushpa Kamal Dahal"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NEP/Pushpa_Kamal_Dahal.png"
+			}
+		}
+		country_leader = {
+			ideology = maoism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}	
+
+}

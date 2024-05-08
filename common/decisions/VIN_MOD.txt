@@ -1,0 +1,457 @@
+VIN_fighting_poverty_category = {
+
+	VIN_fight_against_poverty_mission_deadline = {
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		allowed = {
+		}
+		available = {
+			original_tag = VIN
+			custom_trigger_tooltip = {
+				tooltip = VIN_fight_against_poverty_mission_deadline_tt
+				always = no
+			}
+		}
+		activation = { has_completed_focus = VIN_fight_poverty NOT = { has_country_flag = VIN_eradicating_poverty_completed } }
+		visible = {
+		}
+		#cost = 80
+		ai_will_do = {
+			factor = 100
+		}
+		days_mission_timeout = 1095
+		is_good = yes
+		timeout_effect = { 
+			set_country_flag = VIN_eradicating_poverty_completed
+			if = {
+				limit = {
+					check_variable = {
+						vin_poverty_rate < 17
+					}
+				}
+				swap_ideas = {
+					remove_idea = VIN_socialist_society_4
+					add_idea = VIN_socialist_society_fighting_poverty_1
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						vin_poverty_rate < 19
+					}
+					check_variable = {
+						vin_poverty_rate > 16
+					}
+				}
+				swap_ideas = {
+					remove_idea = VIN_socialist_society_4
+					add_idea = VIN_socialist_society_fighting_poverty_2
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						vin_poverty_rate < 21
+					}
+					check_variable = {
+						vin_poverty_rate > 18
+					}
+				}
+				swap_ideas = {
+					remove_idea = VIN_socialist_society_4
+					add_idea = VIN_socialist_society_fighting_poverty_3
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						vin_poverty_rate > 20
+					}
+				}
+				swap_ideas = {
+					remove_idea = VIN_socialist_society_4
+					add_idea = VIN_socialist_society_fighting_poverty_4
+				}
+			}
+		}
+	}
+	VIN_developing_essential_infrastructure = {
+
+		icon = GFX_decision_generic_construction
+
+		allowed = {
+		}
+		available = {
+			original_tag = VIN
+			has_completed_focus = VIN_Programme_135
+			custom_trigger_tooltip = {
+				tooltip = VIN_fighting_poverty_decision_cap_tt
+				check_variable = {
+					VIN_fighting_poverty_decision_cap < 2
+				}
+			}
+		}
+		visible = {
+			OR = {
+				has_completed_focus = VIN_Programme_135
+				#is_debug = yes
+			}
+			has_active_mission = VIN_fight_against_poverty_mission_deadline
+		}
+		cost = 80
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove  = 30
+		complete_effect = { 
+			add_dynamic_modifier = {
+				modifier = VIN_developing_essential_infrastructure
+				days = 30
+			}
+			add_to_variable = { VIN_fighting_poverty_decision_cap = 1 }
+		}
+		remove_effect = {
+			custom_effect_tooltip = VIN_developing_essential_infrastructure_tt
+			VIN_poverty_rate_daily_change_10_flat = yes
+			add_to_variable = { VIN_fighting_poverty_decision_cap = -1 }
+		}
+	}
+	VIN_support_production_development_and_economic_restructuring = {
+
+		icon = GFX_decision_generic_construction
+
+		allowed = {
+		}
+		available = {
+			original_tag = VIN
+			has_completed_focus = VIN_Programme_135
+			custom_trigger_tooltip = {
+				tooltip = VIN_fighting_poverty_decision_cap_tt
+				check_variable = {
+					VIN_fighting_poverty_decision_cap < 2
+				}
+			}
+		}
+		visible = {
+			OR = {
+				has_completed_focus = VIN_Programme_135
+				#is_debug = yes
+			}
+			has_active_mission = VIN_fight_against_poverty_mission_deadline
+		}
+		cost = 80
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove  = 100
+		complete_effect = { 
+			add_dynamic_modifier = {
+				modifier = VIN_support_production_development_and_economic_restructuring
+				days = 100
+			}
+			add_to_variable = { VIN_fighting_poverty_decision_cap = 1 }
+		}
+		remove_effect = {
+			custom_effect_tooltip = VIN_support_production_development_and_economic_restructuring_tt
+			VIN_poverty_rate_daily_change_12 = yes
+			add_to_variable = { VIN_fighting_poverty_decision_cap = -1 }
+		}
+	}
+	VIN_local_staff_training = {
+
+		icon = GFX_decision_generic_construction
+
+		allowed = {
+		}
+		available = {
+			original_tag = VIN
+			has_completed_focus = VIN_Programme_135
+			custom_trigger_tooltip = {
+				tooltip = VIN_fighting_poverty_decision_cap_tt
+				check_variable = {
+					VIN_fighting_poverty_decision_cap < 2
+				}
+			}
+		}
+		visible = {
+			OR = {
+				has_completed_focus = VIN_Programme_135
+				#is_debug = yes
+			}
+			has_active_mission = VIN_fight_against_poverty_mission_deadline
+		}
+		cost = 80
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove  = 30
+		complete_effect = { 
+			add_dynamic_modifier = {
+				modifier = VIN_local_staff_training
+				days = 30
+			}
+			add_to_variable = { VIN_fighting_poverty_decision_cap = 1 }
+		}
+		remove_effect = {
+			custom_effect_tooltip = VIN_local_staff_training_tt
+			VIN_poverty_rate_daily_change_5 = yes
+			add_to_variable = { VIN_fighting_poverty_decision_cap = -1 }
+		}
+	}
+	VIN_improve_and_expand_public_services = {
+
+		icon = GFX_decision_generic_construction
+
+		allowed = {
+		}
+		available = {
+			original_tag = VIN
+			has_completed_focus = VIN_Programme_135
+			custom_trigger_tooltip = {
+				tooltip = VIN_fighting_poverty_decision_cap_tt
+				check_variable = {
+					VIN_fighting_poverty_decision_cap < 2
+				}
+			}
+		}
+		visible = {
+			OR = {
+				has_completed_focus = VIN_Programme_135
+				#is_debug = yes
+			}
+			has_active_mission = VIN_fight_against_poverty_mission_deadline
+		}
+		cost = 80
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove  = 100
+		complete_effect = { 
+			add_dynamic_modifier = {
+				modifier = VIN_improve_and_expand_public_services
+				days = 100
+			}
+			add_to_variable = { VIN_fighting_poverty_decision_cap = 1 }
+		}
+		remove_effect = {
+			custom_effect_tooltip = VIN_improve_and_expand_public_services_tt
+			VIN_poverty_rate_daily_change_10 = yes
+			add_to_variable = { VIN_fighting_poverty_decision_cap = -1 }
+		}
+	}
+	VIN_social_housing_project = {
+
+		icon = GFX_decision_generic_construction
+
+		allowed = {
+		}
+		available = {
+			original_tag = VIN
+			has_completed_focus = VIN_Programme_135
+			custom_trigger_tooltip = {
+				tooltip = VIN_fighting_poverty_decision_cap_tt
+				check_variable = {
+					VIN_fighting_poverty_decision_cap < 2
+				}
+			}
+		}
+		visible = {
+			OR = {
+				has_completed_focus = VIN_Programme_135
+				#is_debug = yes
+			}
+			has_active_mission = VIN_fight_against_poverty_mission_deadline
+		}
+		cost = 80
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove  = 50
+		complete_effect = { 
+			add_dynamic_modifier = {
+				modifier = VIN_social_housing_project
+				days = 50
+			}
+			add_to_variable = { VIN_fighting_poverty_decision_cap = 1 }
+		}
+		remove_effect = {
+			custom_effect_tooltip = VIN_social_housing_project_tt
+			VIN_poverty_rate_daily_change_10 = yes
+			add_to_variable = { VIN_fighting_poverty_decision_cap = -1 }
+		}
+	}
+	VIN_job_security_and_income_for_employees = {
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+		}
+		available = {
+			original_tag = VIN
+			has_completed_focus = VIN_job_security
+			custom_trigger_tooltip = {
+				tooltip = VIN_fighting_poverty_decision_cap_tt
+				check_variable = {
+					VIN_fighting_poverty_decision_cap < 2
+				}
+			}
+		}
+		visible = {
+			OR = {
+				has_completed_focus = VIN_job_security
+				#is_debug = yes
+			}
+			has_active_mission = VIN_fight_against_poverty_mission_deadline
+		}
+		cost = 80
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove  = 180
+		complete_effect = { 
+			add_dynamic_modifier = {
+				modifier = VIN_job_security_and_income_for_employees
+				days = 180
+			}
+			add_to_variable = { VIN_fighting_poverty_decision_cap = 1 }
+		}
+		remove_effect = {
+			custom_effect_tooltip = VIN_job_security_and_income_for_employees_tt
+			VIN_poverty_rate_daily_change_12 = yes
+			add_to_variable = { VIN_fighting_poverty_decision_cap = -1 }
+		}
+	}
+	VIN_open_vocational_training_center = {
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+		}
+		available = {
+			original_tag = VIN
+			has_completed_focus = VIN_job_security
+			custom_trigger_tooltip = {
+				tooltip = VIN_fighting_poverty_decision_cap_tt
+				check_variable = {
+					VIN_fighting_poverty_decision_cap < 2
+				}
+			}
+		}
+		visible = {
+			OR = {
+				has_completed_focus = VIN_job_security
+				#is_debug = yes
+			}
+			has_active_mission = VIN_fight_against_poverty_mission_deadline
+		}
+		cost = 80
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove  = 120
+		complete_effect = { 
+			add_dynamic_modifier = {
+				modifier = VIN_open_vocational_training_center
+				days = 120
+			}
+			add_to_variable = { VIN_fighting_poverty_decision_cap = 1 }
+		}
+		remove_effect = {
+			custom_effect_tooltip = VIN_open_vocational_training_center_tt
+			VIN_poverty_rate_daily_change_12 = yes
+			add_to_variable = { VIN_fighting_poverty_decision_cap = -1 }
+		}
+	}
+	VIN_increase_common_salary = {
+
+		icon = GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+		}
+		available = {
+			original_tag = VIN
+			has_completed_focus = VIN_salary_reform
+			custom_trigger_tooltip = {
+				tooltip = VIN_fighting_poverty_decision_cap_tt
+				check_variable = {
+					VIN_fighting_poverty_decision_cap < 2
+				}
+			}
+		}
+		visible = {
+			OR = {
+				has_completed_focus = VIN_salary_reform
+				#is_debug = yes
+			}
+			has_active_mission = VIN_fight_against_poverty_mission_deadline
+		}
+		cost = 80
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove  = 300
+		complete_effect = { 
+			add_dynamic_modifier = {
+				modifier = VIN_increase_common_salary
+				days = 300
+			}
+			add_to_variable = { VIN_fighting_poverty_decision_cap = 1 }
+		}
+		remove_effect = {
+			custom_effect_tooltip = VIN_increase_common_salary_tt
+			VIN_poverty_rate_daily_change_15 = yes
+			add_to_variable = { VIN_fighting_poverty_decision_cap = -1 }
+		}
+	}
+	VIN_increase_minimum_wage = {
+
+		icon = GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+		}
+		available = {
+			original_tag = VIN
+			has_completed_focus = VIN_salary_reform
+			custom_trigger_tooltip = {
+				tooltip = VIN_fighting_poverty_decision_cap_tt
+				check_variable = {
+					VIN_fighting_poverty_decision_cap < 2
+				}
+			}
+		}
+		visible = {
+			OR = {
+				has_completed_focus = VIN_salary_reform
+				#is_debug = yes
+			}
+			has_active_mission = VIN_fight_against_poverty_mission_deadline
+		}
+		cost = 80
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove  = 80
+		complete_effect = { 
+			add_dynamic_modifier = {
+				modifier = VIN_increase_minimum_wage
+				days = 80
+			}
+			add_to_variable = { VIN_fighting_poverty_decision_cap = 1 }
+		}
+		remove_effect = {
+			custom_effect_tooltip = VIN_increase_minimum_wage_tt
+			VIN_poverty_rate_daily_change_10 = yes
+			add_to_variable = { VIN_fighting_poverty_decision_cap = -1 }
+		}
+	}
+}

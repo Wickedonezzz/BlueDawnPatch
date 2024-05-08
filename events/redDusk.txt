@@ -1,0 +1,344 @@
+add_namespace = bugkiller
+
+
+#kill iran iraq stalemate
+country_event = {
+	id = bugkiller.1
+	title = bugkiller.1.t
+	desc = bugkiller.1.d
+	picture = GFX_report_event_spark
+
+	trigger = {
+		original_tag = CHA
+		date > 2005.01.15
+	}
+
+	fire_only_once = yes
+
+	hidden = yes
+
+	option = {
+		name = bugkiller.1.a
+		if = {
+			limit = {
+				PER = {surrender_progress > 0.2}
+			}
+			PER = {add_ideas = hidden_army_debuff_big}
+		}
+		else_if = {
+			limit = {
+				IRQ = {surrender_progress > 0.2}
+			}
+			IRQ = {add_ideas = hidden_army_debuff_big}
+		}	
+		else = {
+			random_list = {
+				50 = {
+					IRQ = {add_ideas = hidden_army_debuff_big}
+				}
+				50 = {
+					PER = {add_ideas = hidden_army_debuff_big}
+				}
+			}
+		}
+	}
+}
+
+#great middle east war debug - choose northern ruler
+country_event = {
+	id = bugkiller.2
+	title = bugkiller.2.t
+	desc = bugkiller.2.d
+	picture = GFX_report_event_spark
+
+	is_triggered_only = yes
+
+	option = { #saddam - uar
+		name = bugkiller.2.a 
+		IRQ = {activate_decision = trigger_setup_uar}
+		country_event = {id = bugkiller.3}
+	}
+	
+	option = { #saddam - greater iraq
+		name = bugkiller.2.b 
+		IRQ = {
+			activate_decision = trigger_setup_greater_iraq			
+			complete_national_focus = IRQ_deport_the_iranians
+			complete_national_focus = IRQ_establish_the_brother_nations
+		}		
+		country_event = {id = bugkiller.3}
+
+	}
+	
+	option = { #iran
+		name = bugkiller.2.c 
+			PER = {
+				puppet = IRQ
+				puppet = KUR
+				puppet = SYR
+				country_event = {id = per.1}
+				create_faction = "Islamic Axis"
+			}
+			
+			KUR = { 
+			transfer_state = 925
+			set_cosmetic_tag = KUR_islam_emirite
+				set_politics = {
+					ruling_party = paternal_autocracy
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				set_popularities = {
+					paternal_autocracy = 35
+					social_democracy = 15
+					socialism = 50
+				}
+			}
+			
+			IRQ = {
+				set_cosmetic_tag = IRQ_iran_puppet
+				load_focus_tree = generic_focus
+				set_politics = {
+					ruling_party = paternal_autocracy
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				set_popularities = {
+					paternal_autocracy = 40
+					fascism = 30
+					democratic = 10
+					socialism = 20
+				}
+				
+				set_party_name = {
+					ideology = paternal_autocracy
+					name = IRQ_unbanned_paternal_autocracy_party
+					long_name = IRQ_unbanned_paternal_autocracy_party_long
+				}
+				outlaw_socialism = yes
+				outlaw_nationalism = yes
+				remove_ideas = hidden_army_debuff_big
+			}
+			
+			SYR = {
+				set_cosmetic_tag = SYR_iran_puppet
+				set_politics = {
+					ruling_party = paternal_autocracy
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = no
+				}						
+				set_popularities = {
+					paternal_autocracy = 40
+					democratic = 10
+					socialism = 50
+				}
+				
+				transfer_state = 908
+				transfer_state = 680
+				transfer_state = 677
+				transfer_state = 554
+				remove_alignments = yes
+			}		
+
+			IRQ = {
+				transfer_state = 656
+			}
+		country_event = {id = bugkiller.3}	
+	}	
+	
+	option = { #syria
+		name = bugkiller.2.de
+		SYR = {
+			annex_country = {
+				target = IRQ
+				transfer_troops = yes
+			}
+			set_cosmetic_tag = SYR_uar_cosmetic
+		}
+		country_event = {id = bugkiller.3}
+	}	
+}
+
+#great middle east war debug - scenario chooser 
+country_event = {
+	id = bugkiller.3
+	title = bugkiller.3.t
+	desc = bugkiller.3.d
+	picture = GFX_report_event_spark
+
+	is_triggered_only = yes
+
+	option = { #scenario 1, 3 way war
+		name = bugkiller.3.a 
+			DYR = {
+				annex_country = {
+					target = YEM
+					transfer_troops = no
+				}
+				set_country_flag = DYR_won_civil_war
+				set_country_flag = yem_debug_enable
+				country_event = {id = yemen.2}
+				country_event = {id = baath_cw.1 days = 1}			
+			}		
+	}
+	
+	option = { #scenario 2, 2 way war
+		name = bugkiller.3.b
+			YEM = {
+				annex_country = {
+					target = DYR
+					transfer_troops = no
+				}	
+			}
+			BGD = {
+			set_country_flag = great_middle_east_war_sc_2_debug			
+			country_event = {id = baath_cw.7}
+			}		
+	}	
+}
+
+#kill yemen south yemen stalemate
+country_event = {
+	id = bugkiller.4
+	title = bugkiller.4.t
+	desc = bugkiller.4.d
+	picture = GFX_report_event_spark
+
+	trigger = {
+		original_tag = CHA
+		date > 2005.01.15
+	}
+
+	fire_only_once = yes
+
+	hidden = yes
+
+	option = {
+		name = bugkiller.4.a
+		if = {
+			limit = {
+				DYR = {surrender_progress > 0.1}
+			}
+			DYR = {add_ideas = hidden_army_debuff_big}
+			EGY = {add_ideas = hidden_army_debuff_big}
+		}
+		else_if = {
+			limit = {
+				YEM = {surrender_progress > 0.1}
+			}
+			YEM = {add_ideas = hidden_army_debuff_big}
+			SAU = {add_ideas = hidden_army_debuff_big}
+		}	
+		else = {
+			random_list = {
+				50 = {
+					DYR = {add_ideas = hidden_army_debuff_big}
+					EGY = {add_ideas = hidden_army_debuff_big}
+				}
+				50 = {
+					YEM = {add_ideas = hidden_army_debuff_big}
+					SAU = {add_ideas = hidden_army_debuff_big}
+				}
+			}
+		}
+	}
+}
+
+#fix potential eastern europe bordergore
+country_event = {
+	id = bugkiller.5
+	title = bugkiller.5.t
+	desc = bugkiller.5.d
+	picture = GFX_report_event_spark
+
+	trigger = {
+		original_tag = CHA
+		POL = {is_puppet_of = SOV}
+		SLO = {is_puppet_of = SOV}
+		HUN = {is_puppet_of = SOV}
+		ROM = {is_puppet_of = SOV}
+		BUL = {is_puppet_of = SOV}
+		NOT = {
+			POL = {
+				all_core_state = {is_owned_by = POL}
+			}
+			SLO = {
+				all_core_state = {is_owned_by = SLO}
+			}
+			HUN = {
+				all_core_state = {is_owned_by = HUN}
+			}
+			ROM = {
+				all_core_state = {is_owned_by = ROM}
+			}
+			BUL = {
+				all_core_state = {is_owned_by = BUL}
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+	hidden = yes
+
+	option = {
+		name = bugkiller.5.a
+		every_country = {
+		release = POL
+		release = SLO
+		release = HUN
+		release = ROM
+		release = BUL
+		}
+	}
+}
+
+#fix potential post-un yugo bordergore
+country_event = {
+	id = bugkiller.6
+	title = bugkiller.6.t
+	desc = bugkiller.6.d
+	picture = GFX_report_event_spark
+
+	trigger = {
+		original_tag = CHA
+		YUG = {has_cosmetic_tag = YUG_un}
+		NOT = {
+			YUG = {
+				all_core_state = {is_owned_by = YUG}
+			}
+			CRO = {
+				all_core_state = {is_owned_by = YUG}
+			}
+			SLV = {
+				all_core_state = {is_owned_by = YUG}
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+	hidden = yes
+
+	option = {
+		name = bugkiller.6.a
+		YUG = {
+			every_core_state = {
+				transfer_state_to = YUG
+			}
+		}
+		CRO = {
+			every_core_state = {
+				transfer_state_to = YUG
+			}
+		}
+		SLV = {
+			every_core_state = {
+				transfer_state_to = YUG
+			}
+		}		
+	}
+}

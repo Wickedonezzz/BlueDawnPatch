@@ -1,0 +1,30 @@
+
+state={
+	id=976
+	name="STATE_976"
+	manpower = 1304100
+
+	state_category = town
+
+	history={
+		owner = DYR
+		victory_points = {
+			13466 1
+		}
+		buildings = {
+			infrastructure = 1
+				13466 = {
+					naval_base = 2
+				}
+							industrial_complex = 1
+		}
+		add_core_of = YEM
+                add_core_of = DYR
+	}
+
+	provinces={
+		2029 4976 12894 13079 13465 13466 13467 13468
+	}
+
+	local_supplies=0.0 
+}

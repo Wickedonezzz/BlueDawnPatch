@@ -1,0 +1,18 @@
+characters = {
+
+	COS_miguel_rodriguez = {
+		name = "Miguel Ángel Rodríguez"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/COS/Miguel_Rodriguez.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

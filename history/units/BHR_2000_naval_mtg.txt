@@ -1,0 +1,15 @@
+units = {
+	fleet = {
+		name = "Ustul Albahrayn"
+		naval_base = 13257 # Manama #
+		task_force = {
+			name = "Ustul Albahrayn"
+			location = 13257 # Manama #
+			ship = { name = "RBNS Al Manama" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = BHR version_name = "Al Manama Class" } } }
+			ship = { name = "RBNS Al Muharraq" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = BHR version_name = "Al Manama Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

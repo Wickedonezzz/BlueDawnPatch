@@ -1,0 +1,22 @@
+ideas = {
+	
+country = {
+	FRA_memories_of_the_95_strike = {
+		name = FRA_memories_of_the_95_strike_name
+
+		removal_cost = -1
+
+		picture = FRA_political_violence
+
+		allowed = {
+			always = no
+		}
+
+			modifier = {
+				political_power_gain = -0.2
+				industrial_capacity_factory = -0.1
+				stability_factor = 0.05
+			}
+		}
+	}
+}

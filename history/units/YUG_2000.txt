@@ -1,0 +1,467 @@
+﻿division_template = {
+	name = "JNA Division"
+	division_names_group = YUG_INF_01
+
+	regiments = {
+		infantry_unit = { x = 0 y = 0 }
+		infantry_unit = { x = 0 y = 1 }
+		infantry_unit = { x = 0 y = 2 }
+		infantry_unit = { x = 0 y = 3 }
+		infantry_unit = { x = 1 y = 0 }
+		infantry_unit = { x = 1 y = 1 }
+		infantry_unit = { x = 1 y = 2 }
+		towed_artillery_unit = { x = 2 y = 0 }
+		
+	}
+	
+	support = {
+		recon = { x = 0 y = 0 }
+		towed_artillery_support_unit = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Milicja"
+	division_names_group = YUG_INF_02
+
+	regiments = {
+		militia_unit = { x = 0 y = 0 }
+		militia_unit = { x = 0 y = 1 }
+		militia_unit = { x = 0 y = 2 }
+		militia_unit = { x = 0 y = 3 }
+		militia_unit = { x = 0 y = 4 }	
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		military_police = { x = 0 y = 1 }
+	}	
+	priority = 2
+}
+
+division_template = {
+	name = "Armored Division"
+	division_names_group = YUG_ARM_01
+
+	regiments = {
+		main_battle_tank_armor = { x = 0 y = 0 }
+		main_battle_tank_armor = { x = 0 y = 1 }
+		main_battle_tank_armor = { x = 0 y = 2 }
+		heavy_infantry_unit = { x = 1 y = 0 }
+		heavy_infantry_unit = { x = 1 y = 1 }
+		heavy_infantry_unit = { x = 1 y = 2 }			
+	}
+	priority = 3
+}
+
+division_template = {
+	name = "Motorized Division"
+	division_names_group = YUG_ARM_02
+
+	regiments = {
+		heavy_infantry_unit = { x = 0 y = 0 }
+		heavy_infantry_unit = { x = 0 y = 1 }
+		heavy_infantry_unit = { x = 0 y = 2 }
+		heavy_infantry_unit = { x = 0 y = 3 }		
+		infantry_unit = { x = 1 y = 0 }
+		infantry_unit = { x = 1 y = 1 }
+		towed_artillery_unit = { x = 2 y = 0 }		
+		
+	}
+	
+	support = {
+		recon = { x = 0 y = 0 }
+	}	
+	
+	priority = 4
+}
+
+units = {
+		division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11586
+		division_template = "Armored Division"		# Tank division
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+		}
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 2
+			}
+			location = 11586
+			division_template = "Armored Division"		# Tank division
+			start_experience_factor = 0.2
+			start_equipment_factor = 0.4
+
+		}
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 3
+			}
+			location = 11577
+			division_template = "Motorized Division"		# Motorized division
+			start_experience_factor = 0.2
+			start_equipment_factor = 0.5
+
+		}
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 4
+			}
+			location = 619
+			division_template = "Motorized Division"		# Motorized Infantry
+			start_experience_factor = 0.2
+			start_equipment_factor = 0.7
+
+		}
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 5
+			}
+			location = 3623
+			division_template = "Motorized Division"		# Motorized Infantry
+			start_experience_factor = 0.1
+			start_equipment_factor = 0.3
+
+		}
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 6
+			}
+			location = 619
+			division_template = "Motorized Division"		# Motorized Infantry
+			start_experience_factor = 0.1
+			start_equipment_factor = 0.4
+
+		}
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 7
+			}
+			location = 9602
+			division_template = "Milicja"		# Militia Infantry
+			start_experience_factor = 0.9
+			start_equipment_factor = 0.5
+
+		}
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 8
+			}
+			location = 3882
+			division_template = "Milicja"		# Militia Infantry
+			start_experience_factor = 0.9
+			start_equipment_factor = 0.7
+
+		}
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 9
+			}
+			location = 3617
+			division_template = "Milicja"		# Militia Infantry
+			start_experience_factor = 0.9
+			start_equipment_factor = 0.7
+
+		}
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 10
+			}
+			location = 11577
+			division_template = "JNA Division"		# JNA Infantry
+			start_experience_factor = 0.2
+			start_equipment_factor = 0.5
+
+		}
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 11
+			}
+			location = 11577
+			division_template = "JNA Division"		# JNA Infantry
+			start_experience_factor = 0.2
+			start_equipment_factor = 0.5
+
+		}
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 12
+			}
+			location = 953
+			division_template = "JNA Division"		# JNA Infantry
+			start_experience_factor = 0.1
+			start_equipment_factor = 0.5
+
+		}
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 13
+			}
+			location = 6942
+			division_template = "JNA Division"		# JNA Infantry
+			start_experience_factor = 0.1
+			start_equipment_factor = 0.5
+
+		}
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 14
+			}
+			location = 6942
+			division_template = "JNA Division"		# JNA Infantry
+			start_experience_factor = 0.3
+			start_equipment_factor = 0.8
+
+		}
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 15
+			}
+			location = 6942
+			division_template = "Motorized Division"		# Motorized Infantry
+			start_experience_factor = 0.2
+			start_equipment_factor = 0.6
+
+		}
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 16
+			}
+			location = 13345
+			division_template = "Motorized Division"		# Motorized Infantry
+			start_experience_factor = 0.1
+			start_equipment_factor = 0.6
+
+		}	
+
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 17
+			}
+			location = 13345
+			division_template = "Motorized Division"		# Motorized Infantry
+			start_experience_factor = 0.4
+			start_equipment_factor = 0.6
+
+		}		
+
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 18
+			}
+			location = 11857
+			division_template = "Motorized Division"		# Motorized Infantry
+			start_experience_factor = 0.3
+			start_equipment_factor = 0.6
+
+		}			
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 19
+			}
+			location = 11857
+			division_template = "Armored Division"		# Armored
+			start_experience_factor = 0.3
+			start_equipment_factor = 0.6
+
+		}		
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 20
+			}
+			location = 9821
+			division_template = "Armored Division"		# Armored
+			start_experience_factor = 0.2
+			start_equipment_factor = 0.6
+
+		}				
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 21
+			}
+			location = 9821
+			division_template = "JNA Division"		# JNA infantry
+			start_experience_factor = 0.2
+			start_equipment_factor = 0.6
+
+		}				
+
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 22
+			}
+			location = 9894
+			division_template = "JNA Division"		# JNA infantry
+			start_experience_factor = 0.2
+			start_equipment_factor = 0.6
+
+		}	
+
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 23
+			}
+			location = 3614
+			division_template = "JNA Division"		# JNA infantry
+			start_experience_factor = 0.3
+			start_equipment_factor = 0.6
+
+		}		
+		
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 24
+			}
+			location = 3614
+			division_template = "JNA Division"		# JNA infantry
+			start_experience_factor = 0.6
+			start_equipment_factor = 0.6
+
+		}	
+
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 25
+			}
+			location = 3614
+			division_template = "JNA Division"		# JNA infantry
+			start_experience_factor = 0.6
+			start_equipment_factor = 0.6
+
+		}		
+
+		division = { # 
+			division_name = {
+				is_name_ordered = yes
+				name_order = 26
+			}
+			location = 6953
+			division_template = "JNA Division"		# JNA infantry
+			start_experience_factor = 0.4
+			start_equipment_factor = 0.5
+
+		}			
+		
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_weapons_2
+			creator = "YUG"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = infantry_anti_tank_weapons_1
+			creator = "YUG"
+		}
+		requested_factories = 1
+		progress = 0.21
+		efficiency = 17
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_anti_air_weapons_1
+			creator = "YUG"
+		}
+		requested_factories = 1
+		progress = 0.21
+		efficiency = 17
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = mbt_tank_equipment_3
+			creator = "YUG"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = ifv_tank_equipment_1
+			creator = "YUG"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = towed_artillery_equipment_2
+			creator = "YUG"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "YUG"
+		}
+		requested_factories = 1
+		progress = 0.21
+		efficiency = 17
+	}
+}

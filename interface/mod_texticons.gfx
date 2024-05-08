@@ -1,0 +1,119 @@
+spriteTypes = {
+
+	### text icon ###
+	
+	spriteType = {
+		name = "GFX_influence_decision"
+		texturefile = "gfx/texticons/influence_decision.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_influence_decision_blocked"
+		texturefile = "gfx/texticons/influence_decision_blocked.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_influence_decision_prc"
+		texturefile = "gfx/texticons/influence_decision_prc.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_influence_decision_prc_blocked"
+		texturefile = "gfx/texticons/influence_decision_prc_blocked.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_influence_point_decision"
+		texturefile = "gfx/texticons/influence_point_decision.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_influence_point_decision_blocked"
+		texturefile = "gfx/texticons/influence_point_decision_blocked.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_decision_gui_kurdish_sun"
+		texturefile = "gfx/interface/decisions/decision_gui_kurdish_sun.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_sov_army_faction_texticon"
+		texturefile = "gfx/texticons/sov_army_faction_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_sov_reformist_faction_texticon"
+		texturefile = "gfx/texticons/sov_reformist_faction_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_sov_kgb_faction_texticon"
+		texturefile = "gfx/texticons/sov_kgb_faction_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_sov_hardliner_faction_texticon"
+		texturefile = "gfx/texticons/sov_hardliner_faction_texticon.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_pol_power"
+		texturefile = "gfx/texticons/pol_power_20x20.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_fire_decision"
+		texturefile = "gfx/texticons/fire_decision.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_fire_decision_blocked"
+		texturefile = "gfx/texticons/fire_decision_blocked.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_dollar_decision"
+		texturefile = "gfx/texticons/dollar_decision.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_dollar_decision_blocked"
+		texturefile = "gfx/texticons/dollar_decision_blocked.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_flag_proposal_2_texticon"
+		texturefile = "gfx/texticons/flag_proposal_2.dds"
+		legacy_lazy_load = no
+	}	
+
+	spriteType = {
+		name = "GFX_flag_proposal_1_texticon"
+		texturefile = "gfx/texticons/flag_proposal_1.dds"
+		legacy_lazy_load = no
+	}	
+
+	spriteType = {
+		name = "GFX_flag_proposal_anc_texticon"
+		texturefile = "gfx/texticons/flag_proposal_anc.dds"
+		legacy_lazy_load = no
+	}	
+	
+}

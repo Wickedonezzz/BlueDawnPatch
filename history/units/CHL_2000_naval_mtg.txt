@@ -1,0 +1,29 @@
+units = {
+	fleet = {
+		name = "Flota Chilena"
+		naval_base = 8222 # Valparaíso #
+		task_force = {
+			name = "Flota Chilena"
+			location = 8222 # Valparaíso #
+			ship = { name = "Capitán Prat" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHL creator = ENG version_name = "County Class" } } }
+			ship = { name = "Almirante Cochrane" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHL creator = ENG version_name = "County Class" } } }
+			ship = { name = "Almirante Latorre" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHL creator = ENG version_name = "County Class" } } }
+			ship = { name = "Almirante Blanco" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHL creator = ENG version_name = "County Class" } } }
+			ship = { name = "Almirante Condell" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHL creator = ENG version_name = "Leander Class" } } }
+			ship = { name = "Almirante Lynch" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHL creator = ENG version_name = "Leander Class" } } }
+			ship = { name = "Ministro Zenteno" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHL creator = ENG version_name = "Leander Class" } } }
+			ship = { name = "General Baquedano" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = CHL creator = ENG version_name = "Leander Class" } } }
+		}
+		task_force = {
+			name = "Flota de Submarinos de Chile"
+			location = 8222 # Valparaíso #
+			ship = { name = "Thomson" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = CHL creator = GER version_name = "Type 209/1400 Class" } } }
+			ship = { name = "Simpson" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = CHL creator = GER version_name = "Type 209/1400 Class" } } }
+			ship = { name = "O'Brien" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = CHL creator = ENG version_name = "Oberon Class" } } }
+			ship = { name = "Hyatt" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = CHL creator = ENG version_name = "Oberon Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

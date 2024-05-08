@@ -1,0 +1,170 @@
+division_template = { # Mechanised Division #
+	name = "Mechanised Division"
+	division_names_group = GENERIC_MEC_01
+
+	regiments = {
+		main_battle_tank_armor = { x = 0 y = 0 }
+		recon_vehicle_armor = { x = 0 y = 1 }
+		recon_vehicle_armor = { x = 0 y = 2 }
+		heavy_infantry_unit = { x = 1 y = 0 }
+		heavy_infantry_unit = { x = 1 y = 1 }
+		towed_artillery_unit = { x = 2 y = 0 }
+		towed_artillery_unit = { x = 2 y = 1 }
+		motorised_artillery_unit = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		field_hospital = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		transport_heli_company = { x = 0 y = 3 }
+	}
+	priority = 1
+}
+
+units = {
+	# Mechanised Division #
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7291
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "GER" }
+			apc_tank_equipment_2 = { owner = "USA" }
+			recon_vehicle_equipment_2 = { owner = "CAN" }
+			towed_artillery_equipment_1 = { owner = "USA" }
+			motorised_artillery_equipment_3 = { owner = "USA" }
+			heli_transport_equipment_1 = { owner = "USA" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 7853
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "GER" }
+			apc_tank_equipment_2 = { owner = "USA" }
+			recon_vehicle_equipment_2 = { owner = "CAN" }
+			towed_artillery_equipment_1 = { owner = "USA" }
+			motorised_artillery_equipment_3 = { owner = "USA" }
+			heli_transport_equipment_1 = { owner = "USA" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 6662
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "GER" }
+			apc_tank_equipment_2 = { owner = "USA" }
+			recon_vehicle_equipment_1 = { owner = "CAN" }
+			towed_artillery_equipment_1 = { owner = "USA" }
+			motorised_artillery_equipment_3 = { owner = "USA" }
+			heli_transport_equipment_1 = { owner = "USA" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.85
+	}
+}
+instant_effect = {
+
+	# Stockpile #
+        add_equipment_to_stockpile = {
+		type = infantry_weapons_2
+		amount = 2000
+		producer = CAN
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 300
+		producer = CAN
+	}
+        add_equipment_to_stockpile = {
+		type = motorised_equipment_1
+		amount = 350
+		producer = USA
+	}
+        add_equipment_to_stockpile = {
+		type = motorised_equipment_1
+		amount = 350
+		producer = CAN
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_anti_tank_weapons_1
+		amount = 300
+		producer = USA
+	}
+
+	add_equipment_to_stockpile = {
+		type = mbt_tank_equipment_1
+		amount = 10
+		producer = GER
+	}
+	add_equipment_to_stockpile = {
+		type = recon_vehicle_equipment_1
+		amount = 110
+		producer = CAN
+	}
+	add_equipment_to_stockpile = {
+		type = recon_vehicle_equipment_2
+		amount = 30
+		producer = CAN
+	}
+	add_equipment_to_stockpile = {
+		type = apc_tank_equipment_0
+		amount = 60
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = apc_tank_equipment_1
+		amount = 270
+		producer = CAN
+	}
+	add_equipment_to_stockpile = {
+		type = apc_tank_equipment_2
+		amount = 1060
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = apc_tank_equipment_3
+		amount = 200
+		producer = CAN
+	}
+	add_equipment_to_stockpile = {
+		type = apc_tank_equipment_4
+		amount = 50
+		producer = CAN
+	}
+	add_equipment_to_stockpile = {
+		type = towed_artillery_equipment_1
+		amount = 10
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = towed_artillery_equipment_3
+		amount = 30
+		producer = FRA
+	}
+	add_equipment_to_stockpile = {
+		type = heli_transport_equipment_0
+		amount = 15
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = heli_transport_equipment_1
+		amount = 59
+		producer = USA
+	}
+}

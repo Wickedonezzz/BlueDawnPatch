@@ -1,0 +1,18 @@
+characters = {
+
+	MCU_edmund_ho = {
+		name = "Edmund Ho Hau Wah"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MCU/Edmund_Ho.png"
+			}
+		}
+		country_leader = {
+			ideology = market_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

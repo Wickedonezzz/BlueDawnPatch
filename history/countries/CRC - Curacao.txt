@@ -1,0 +1,22 @@
+﻿capital = 695
+
+##oob = ""
+
+set_convoys = 5
+
+recruit_character = CRC_miguel_pourier
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1999.11.8"
+	election_frequency = 36
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 67
+	communism = 6
+	reformed_communism = 0
+	paternal_autocracy = 0
+	fascism = 4
+	neutrality = 23
+}

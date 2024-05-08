@@ -1,0 +1,272 @@
+﻿capital = 107
+set_oob = "YUG_2000"
+set_air_oob = "YUG_2000_air"
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+
+	set_technology = {
+		destroyer_hull_1960 = 1
+		destroyer_hull_1980 = 1
+		attack_submarine_hull_1960 = 1
+		naval_engine_diesel_1960 = 1
+		naval_engine_diesel_1980 = 1
+		naval_sonar_1960 = 1
+		torpedo_launcher_1960 = 1
+		naval_training_1960 = 1
+		naval_transport_1960 = 1
+		naval_transport_1980 = 1
+	}
+}
+set_technology = {
+	infantry_weapons_1960 = 1
+	infantry_weapons_1980 = 1
+	support_weapons_1960 = 1
+	support_weapons_1980 = 1
+	support_weapons_1990 = 1
+	night_vision_gen_1 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_tank_weapons_1980 = 1
+	infantry_anti_air_weapons_1960 = 1
+	paratrooper_tech_1960 = 1
+	marine_tech_1960 = 1
+	tech_support = 1
+	support_tech_engineers_1960 = 1
+	support_tech_militarypolice_1960 = 1
+	support_tech_militarypolice_1980 = 1
+	support_tech_recon_1960 = 1
+	support_tech_hospital_1960 = 1
+	support_tech_maintenance_1960 = 1
+	support_tech_logistics_1960 = 1
+	tech_motorised_1960 = 1
+	tech_motorised_1980 = 1
+	tech_train_1960 = 1
+	mbt_tank_1960 = 1
+	mbt_tank_1970 = 1
+	mbt_tank_1980 = 1
+	mbt_tank_1990 = 1
+	tank_ammo_1960 = 1
+	tank_ammo_1970 = 1
+	ifv_tank_1970 = 1
+	ifv_tank_1980 = 1
+	ifv_anti_tank_missile_1 = 1
+	apc_tank_1960 = 1
+	apc_tank_1970 = 1
+	apc_tank_1980 = 1
+	spaa_tank_1960 = 1
+	spaa_tank_1980 = 1
+	towed_artillery_1960 = 1
+	towed_artillery_1980 = 1
+	motorised_artillery_1960 = 1
+	motorised_artillery_1970 = 1
+	motorised_artillery_1980 = 1
+	rocket_artillery_1960 = 1
+	rocket_artillery_1970 = 1
+	rocket_artillery_1980 = 1
+	rocket_artillery_1990 = 1
+	tech_artillery_guidance_systems_1 = 1
+	attacker_1960 = 1
+	attacker_1970 = 1
+	heli_transport_1960 = 1
+	heli_transport_1970 = 1
+	heli_attack_1970 = 1
+
+	tech_modern_manufacturing = 1
+	tech_containerisation = 1
+	tech_modern_factories = 1
+	tech_digital_control = 1
+	tech_modern_construction = 1
+	tech_prefabrication = 1
+	tech_basic_resource_extraction = 1
+
+	computing_tech_1960 = 1
+	computing_tech_1980 = 1
+	radio_tech_1960 = 1
+	radio_tech_1980 = 1
+	naval_radar_1960 = 1
+}
+
+set_research_slots = 3
+
+set_convoys = 10
+
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_intelligence_agency = {
+		name = "State Security Service"
+		icon = "GFX_intelligence_agency_logo_generic_1"
+	}
+}
+
+recruit_character = YUG_zivota_panic
+recruit_character = YUG_ljubisa_jokic
+recruit_character = YUG_dragoljub_ojdanic
+recruit_character = YUG_dragan_paskas
+recruit_character = YUG_nebojsa_pavkovic
+recruit_character = YUG_momcilo_perisic
+recruit_character = YUG_slobodan_milošević
+recruit_character = YUG_seselj_and_stambolic
+recruit_character = YUG_stambolic
+recruit_character = YUG_seselj
+recruit_character = YUG_markovic
+recruit_character = YUG_vulin
+recruit_character = YUG_joska
+recruit_character = YUG_ubased
+recruit_character = YUG_marko_milosevic
+recruit_character = YUG_branko_kitanovic
+recruit_character = YUG_đinđiću_pederu
+recruit_character = YUG_matvejevic
+recruit_character = YUG_ratko_mladic
+recruit_character = YUG_miodrag_jokic
+recruit_character = YUG_pavle_strugar
+recruit_character = YUG_bozidar_gelic
+recruit_character = YUG_anti_christ
+recruit_character = YUG_momir_bulatovic
+recruit_character = YUG_ratibor_trivunac
+recruit_character = YUG_arkan
+
+recruit_character = YUG_nenad_canak
+recruit_character = YUG_dragan_veselinov
+recruit_character = YUG_zarko_korac
+recruit_character = YUG_dragan_milovanovic
+recruit_character = YUG_stipe_suvar
+
+recruit_character = YUG_radovan_karadzic
+recruit_character = YUG_nikola_sainovic
+recruit_character = YUG_radomir_markovic
+recruit_character = YUG_zoran_lilic
+recruit_character = YUG_dragan_tomic
+recruit_character = YUG_milan_martic
+recruit_character = YUG_borka_vucic
+recruit_character = YUG_voja_antonic
+recruit_character = YUG_tomislav_nikolic
+recruit_character = YUG_dragan_markovic
+recruit_character = YUG_pavle
+recruit_character = YUG_milan_aksentijevic
+recruit_character = YUG_konrad_kolsek
+recruit_character = YUG_atif_dudakovic
+
+add_ideas = YUG_nebojsa_pavkovic
+
+add_ideas = YUG_dragan_paskas
+add_ideas = YUG_ljubisa_jokic
+add_ideas = YUG_zivota_panic
+
+set_politics = {
+	ruling_party = reformed_communism
+	last_election = "1991.5.3"
+	election_frequency = 36
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 10
+	fascism = 30
+	communism = 30
+	reformed_communism = 20
+	socialism = 10
+}
+
+add_ideas = limited_conscription
+add_manpower = 55000
+
+add_ideas = YUG_after_tito
+add_ideas = YUG_demoralized_army
+add_ideas = YUG_yugoslav_mode_of_socialism
+add_ideas = YUG_broken_brotherhood
+add_ideas = YUG_what_are_we
+
+set_stability = 0.4
+
+add_opinion_modifier = { target = CRO modifier = HISTORIC_yugoslavia_seperatists_opinion }
+add_opinion_modifier = { target = SLV modifier = HISTORIC_yugoslavia_seperatists_opinion }
+
+set_variable = {bosnia_fight_strength = 80}
+set_variable = {albania_fight_strength = 80}
+
+set_variable = {YUG_debt_owe_var = 37}
+
+set_country_flag = yug_imf_time
+
+# Naval Variants #
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "YUG_2000_naval_mtg"
+
+	# Attack Submarines #
+	create_equipment_variant = {
+		name = "Heroj Class"
+		type = attack_submarine_hull_1
+		name_group = YUG_NAVAL_NAME_CAPITALS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = sub_electrical_systems_1
+			fixed_ship_engine_slot = sub_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			custom_ship_torpedo_slot = ship_torpedo_sub_2
+			custom_slot_1 = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Sava Class"
+		type = attack_submarine_hull_1
+		name_group = YUG_NAVAL_NAME_CAPITALS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = sub_electrical_systems_1
+			fixed_ship_engine_slot = sub_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			custom_ship_torpedo_slot = ship_torpedo_sub_2
+			custom_slot_1 = empty
+		}
+		obsolete = yes
+	}
+
+	# Frigates #
+	create_equipment_variant = {
+		name = "Dewantara Class"
+		type = destroyer_hull_2
+		name_group = YUG_NAVAL_NAME_CAPITALS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_2
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = anti_air_1
+			fixed_ship_defensive_slot_2 = empty
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = empty
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Kotor Class"
+		type = destroyer_hull_2
+		name_group = YUG_NAVAL_NAME_CAPITALS
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = small_surface_engine_diesel_2
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = anti_air_1
+			fixed_ship_defensive_slot_2 = anti_air_1
+			fixed_ship_aviation_slot = empty
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = aswrl_1
+			custom_slot_2 = cruise_missile_1
+			custom_slot_3 = sam_missile_2
+			custom_slot_4 = aswrl_1
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = no
+	}
+}

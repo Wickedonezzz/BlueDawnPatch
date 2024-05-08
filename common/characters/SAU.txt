@@ -1,0 +1,66 @@
+characters = {
+
+	SAU_fahd = {
+		name = "Fahd bin Abdulaziz"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SAU/Fahd_bin_Abdulaziz_bin_Abdul_Rahman1.dds"
+			}
+		}
+		country_leader = {
+			ideology = sunni_islamism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	SAU_abdul_nashaba = { 
+		name = "Abdul Samad Al Nashaba"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SAU/Abdul_Nashaba.png"
+			}
+		}
+		country_leader = {
+			ideology = baathist_nationalism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	SAU_al_nasser = { 
+		name = "Abdelkarim Al-Nasser"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SAU/al_nasser.png"
+			}
+		}
+		country_leader = {
+			ideology = shia_islamism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	SAU_ahmad_asiri = {
+		name = "Ahmad Asiri"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SAU/ahmad_asiri.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+}

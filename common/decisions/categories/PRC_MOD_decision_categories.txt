@@ -1,0 +1,19 @@
+### INFLUENCE NORTH KOREA ###
+
+prc_influencing_north_korea = {
+	icon = GFX_decision_prc_vs_sov
+	
+	
+	allowed = {
+		original_tag = PRC
+	}
+	
+	visible = {
+		has_global_flag = influencing_north_korea
+	}
+
+	priority = 150
+
+}
+
+

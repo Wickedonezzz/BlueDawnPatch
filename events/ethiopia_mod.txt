@@ -1,0 +1,349 @@
+add_namespace = ethiopia_mod
+add_namespace = ethiopia_rebel_mod
+
+#Operation Weridwali fails#
+country_event = {
+	id = ethiopia_mod.1
+	title = ethiopia_mod.1.t
+	desc = ethiopia_mod.1.d
+	picture = GFX_report_event_spark
+	
+	trigger = {
+	original_tag = ETH
+	has_war_with = ERI
+	NOT = {has_idea = ETH_operation_weridwali}
+	}
+
+	fire_only_once = yes
+
+		#bruh#
+	option = {
+		name = ethiopia_mod.1.a
+		set_country_flag = eth_weridwali_fails
+		add_stability = -0.30
+		country_event = {id = ethiopia_mod.2 days = 2}
+		
+		ai_chance = {
+		factor = 100
+		}
+	}
+}
+
+#Civil war#
+country_event = {
+	id = ethiopia_mod.2
+	title = ethiopia_mod.2.t
+	desc = ethiopia_mod.2.d
+	picture = GFX_report_event_spark
+	
+	is_triggered_only = yes
+
+		#bruh#
+	option = {
+		name = ethiopia_mod.2.a
+		news_event = {id = old_times_news.54}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.5
+			}
+       add_war_support = 0.05
+		ETV = {
+		transfer_state = 839
+		add_state_core = 839
+		transfer_state = 843
+		add_state_core = 843
+		transfer_state = 842
+		add_state_core = 842
+		transfer_state = 837
+		add_state_core = 837
+		transfer_state = 838
+		add_state_core = 838
+			load_oob = ETV_rebellion
+			declare_war_on = {
+				target = ETH
+				type = annex_everything
+			}
+		inherit_technology = ETH
+		}
+		
+		ERI = {
+		give_military_access = ETV
+		}
+		ETV = {
+		give_military_access = ERI
+		}
+		load_oob = "ETH_emergency_militia"
+					
+			ETH = {
+				transfer_units_fraction= {
+					target = ETV
+					size = 0.3
+					stockpile_ratio = 0.3
+					army_ratio = 0.3
+					navy_ratio = 0.5
+					air_ratio = 0.5
+				}
+			}
+		ai_chance = {
+		factor = 100
+		}
+	}
+	
+			#rebel time#
+	option = {
+		name = ethiopia_mod.2.b
+		news_event = {id = old_times_news.54}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.5
+			}
+		
+		ERI = {
+		give_military_access = ETV
+		}
+		ETV = {
+		give_military_access = ERI
+		}
+		ETH = {
+			load_oob = "ETH_emergency_militia"
+		}
+		add_war_support = 0.05
+		ETV = {
+		transfer_state = 839
+		add_state_core = 839
+		transfer_state = 843
+		add_state_core = 843
+		transfer_state = 842
+		add_state_core = 842
+		transfer_state = 837
+		add_state_core = 837
+		transfer_state = 838
+		add_state_core = 838
+			load_oob = ETV_rebellion
+			declare_war_on = {
+				target = ETH
+				type = annex_everything
+			}
+			ETH = {
+				transfer_units_fraction= {
+					target = ETV
+					size = 0.2
+					stockpile_ratio = 0.3
+					army_ratio = 0.3
+					navy_ratio = 0.5
+					air_ratio = 0.5
+				}
+			}
+			inherit_technology = ETH
+		}
+		ETV = {change_tag_from = ETH }
+		ai_chance = {
+		factor = 0
+		}
+	}
+}		
+
+#we win somehow#
+country_event = {
+	id = ethiopia_mod.3
+	title = ethiopia_mod.3.t
+	desc = ethiopia_mod.3.d
+	picture = GFX_report_event_spark
+	
+	trigger = {
+	original_tag = ETH
+	NOT = {	has_war_with = ERI}
+	NOT = {	has_war_with = ETV}
+	has_country_flag = eth_weridwali_fails
+	}
+
+	fire_only_once = yes
+
+		#veri cool#
+	option = {
+		name = ethiopia_mod.3.a
+		add_stability = 0.35
+		add_war_support = 0.55
+		add_political_power = 150
+			add_popularity = {
+				ideology = communism
+				popularity = 1.0
+			}
+		remove_ideas = ETH_mass_insurgency	
+		news_event = {id =  old_times_news.60} 
+		
+		ai_chance = {
+		factor = 100
+		}
+	}
+}
+
+#rebels crushed#
+country_event = {
+	id = ethiopia_mod.4
+	title = ethiopia_mod.4.t
+	desc = ethiopia_mod.4.d
+	picture = GFX_report_event_spark
+	
+	trigger = {
+	original_tag = ETH
+	NOT = {	has_war_with = ERI}
+	NOT = {	has_war_with = ETV}
+	NOT = {	has_country_flag = eth_weridwali_fails }
+	}
+
+	fire_only_once = yes
+
+		#veri cool#
+	option = {
+		name = ethiopia_mod.4.a
+		add_stability = 0.20
+		add_war_support = 0.20
+		add_political_power = 150
+			add_popularity = {
+				ideology = communism
+				popularity = 0.35
+			}
+		
+		remove_ideas = ETH_mass_insurgency
+		
+		ai_chance = {
+		factor = 100
+		}
+	}
+}
+
+#time to kill Somalia#
+country_event = {
+	id = ethiopia_mod.5
+	title = ethiopia_mod.5.t
+	desc = ethiopia_mod.5.d
+	picture = GFX_report_event_spark
+	
+	trigger = {
+	original_tag = ETH
+	date > 2004.05.05
+	}
+
+	fire_only_once = yes
+
+		#lets go#
+	option = {
+		name = ethiopia_mod.5.a
+		news_event = {id = old_times_news.119}
+			declare_war_on = {
+				target = SOM
+				type = annex_everything
+			}		
+			activate_mission = eth_kill_somalia_timer
+		ai_chance = {
+		factor = 100
+		}
+	}
+}
+
+#time to kill the rest#
+country_event = {
+	id = ethiopia_mod.6
+	title = ethiopia_mod.6.t
+	desc = ethiopia_mod.6.d
+	picture = GFX_report_event_spark
+	
+	trigger = {
+	original_tag = ETH
+	date > 2004.05.05
+	NOT = {country_exists = SOM}
+	}
+
+	fire_only_once = yes
+
+		#lets go#
+	option = {
+		name = ethiopia_mod.6.a
+			declare_war_on = {
+				target = DJI
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SML
+				type = annex_everything
+			}					
+		ai_chance = {
+		factor = 100
+		}
+	}
+}
+
+#gaming#
+country_event = {
+	id = ethiopia_mod.7
+	title = ethiopia_mod.7.t
+	desc = ethiopia_mod.7.d
+	picture = GFX_report_event_spark
+	
+	trigger = {
+	original_tag = ETH
+	date > 2004.05.05
+	NOT = {country_exists = SOM}
+	NOT = {country_exists = SML}	
+	NOT = {country_exists = DJI}		
+	}
+
+	fire_only_once = yes
+
+		#lets go#
+	option = {
+		name = ethiopia_mod.7.a
+		set_cosmetic_tag = ETH_dpsra			
+		ai_chance = {
+		factor = 100
+		}
+	}
+}
+
+#election time for the rebels#
+country_event = {
+	id = ethiopia_rebel_mod.1
+	title = ethiopia_rebel_mod.1.t
+	desc = ethiopia_rebel_mod.1.d
+	picture = GFX_report_event_spark
+	
+	trigger = {
+		has_war = no
+		original_tag = ETV
+	}
+
+	mean_time_to_happen = {
+		days = 150
+		years = 0
+	}
+
+	fire_only_once = yes
+
+		#funny auth reformist commie man#
+	option = {
+		name = ethiopia_rebel_mod.1.a
+		retire_country_leader = yes
+		promote_character = ETV_meles_zenawi
+		set_cosmetic_tag = ETV_republic	
+		ai_chance = {
+		factor = 25
+		}
+	}
+	
+		#con christian guy#
+	option = {
+		name = ethiopia_rebel_mod.1.a
+		retire_country_leader = yes
+		promote_character = ETV_meles_zenawi
+		replace_alignment_to_USA = yes
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+		}
+		set_cosmetic_tag = ETV_republic
+		ai_chance = {
+		factor = 20
+		}
+	}
+}

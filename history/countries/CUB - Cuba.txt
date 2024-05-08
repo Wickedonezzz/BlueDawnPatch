@@ -1,0 +1,38 @@
+﻿capital = 315
+
+#oob = "CUB_1936"
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+
+	set_technology = {
+		corvette_hull_1960 = 1
+	}
+}
+
+set_war_support = 0.1
+set_convoys = 20
+
+recruit_character = CUB_fidel_castro
+
+add_ideas = CUB_embargo
+
+add_ideas = ussr_aligned_nation
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1998.1.10"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	communism = 100
+}
+
+# Naval Variants #
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "CUB_2000_naval_mtg"
+}

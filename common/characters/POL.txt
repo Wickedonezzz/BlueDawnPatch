@@ -1,0 +1,155 @@
+characters = {
+
+	## Leaders ##
+
+	POL_leszek_miller = {
+		name = "Leszek Miller"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POL/miller.png"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	POL_aleksander_kwasniewski = {
+		name = "Aleksander Kwaśniewski"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POL/Aleksander_Kwasniewski.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	POL_wojciech_jaruzelski = {
+		name = "Wojciech Jaruzelski"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POL/Wojciech_Jaruzelski.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	POL_roman_malinowski = {
+		name = "Roman Malinowski"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POL/Roman_Malinowski.dds"
+			}
+		}
+		country_leader = {
+			ideology = market_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}	
+	POL_andrzej_lepper = {
+		name = "Andrzej Lepper"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POL/lepper.png"
+			}
+		}
+		country_leader = {
+			ideology = democratic_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}	
+	POL_marian_krzaklewski = {
+		name = "Marian Krzaklewski"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POL/krzaklewski.png"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}		
+	POL_jaroslaw_kalinowski = {
+		name = "Jaroslaw Kalinowski"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POL/kalinowski.png"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	POL_leszek_balcerowicz = {
+		name = "Leszek Balcerowicz"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POL/balcerowicz.png"
+			}
+		}
+		country_leader = {
+			ideology = liberalism_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}	
+		
+	## Generals ##
+
+	POL_henryk_szumski = {
+		name = "Henryk Szumski"
+		portraits = {
+			army = {
+				large = "gfx/leaders/POL/Henryk_Szumski.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	POL_edward_pietrzyk = {
+		name = "Edward Pietrzyk"
+		portraits = {
+			army = {
+				large = "gfx/leaders/POL/Edward_Pietrzyk.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+}

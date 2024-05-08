@@ -1,0 +1,18 @@
+characters = {
+
+	BAS_frank_savage = {
+		name = "Frank Savage"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BAS/Frank_Savage.dds"
+			}
+		}
+		country_leader = {
+			ideology = moderatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

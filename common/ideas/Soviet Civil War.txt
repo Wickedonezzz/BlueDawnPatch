@@ -1,0 +1,392 @@
+ideas = {
+	
+	country = {
+	
+		SOV_darkets_night = {
+			name = SOV_darkets_night_name
+
+			removal_cost = -1
+
+			picture = SOV_darkest_night_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				political_power_gain = -0.1
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+			}
+		}
+		SOV_true = {
+			name = SOV_true_name
+
+			removal_cost = -1
+
+			picture = SOV_true_revolutionaries_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.05
+				political_power_gain = -0.025
+				army_defence_factor = 0.05
+			}
+		}
+		SOV_new_revolution = {
+			name = SOV_new_revolution_name
+
+			removal_cost = -1
+
+			picture = SOV_a_new_revolution_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = 0.1
+				political_power_gain = -0.05
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+			}
+		}
+		SOV_unions_one_true_leader = {
+			name = SOV_unions_one_true_leader_name
+
+			removal_cost = -1
+
+			picture = SOV_unions_one_true_leader_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = -0.05
+				political_power_gain = -0.025
+				army_attack_factor = 0.05
+				army_defence_factor = 0.075
+			}
+		}
+		TFM_last_defenders = {
+			name = TFM_last_defenders_name
+
+			removal_cost = -1
+
+			picture = TFM_last_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = 0.05
+				political_power_gain = -0.025
+				army_attack_factor = 0.08
+				army_defence_factor = 0.05
+			}
+		}
+		TFL_fortress_leningrad = {
+			name = TFL_fortress_leningrad_name
+
+			removal_cost = -1
+
+			picture = TFL_fortress_leningrad_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.075
+				political_power_gain = -0.05
+				army_defence_factor = 0.1
+			}
+		}
+		RSF_new_october = {
+			name = RSF_new_october_name
+
+			removal_cost = -1
+
+			picture = RSF_new_october_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.075
+				political_power_gain = -0.1
+				army_attack_factor = 0.075
+				army_defence_factor = 0.05
+			}
+		}
+		RSF_unity = {
+			name = RSF_unity_name
+
+			removal_cost = -1
+
+			picture = RSF_factionalism_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.1
+				army_org_factor = -0.15
+			}
+		}
+		RSF_soviet_nationalism = {
+			name = RSF_soviet_nationalism_name
+
+			removal_cost = -1
+
+			picture = SOV_soviet_asthetic_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.075
+				war_support_factor = -0.05
+				political_power_gain = -0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.075
+			}
+		}
+		SMC_whiteguard = {
+			name = SMC_whiteguard_name
+
+			removal_cost = -1
+
+			picture = SMC_legacy_of_white_guards_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				war_support_factor = -0.075
+				army_attack_factor = 0.08
+				army_defence_factor = 0.05
+				army_org_factor = -0.2
+			}
+		}
+		SMC_monarch = {
+			name = SMC_monarch_name
+
+			removal_cost = -1
+
+			picture = SMC_monarch_question_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.05
+			}
+		}
+		FAO_nobody_except_us = {
+			name = FAO_nobody_except_us_name
+
+			removal_cost = -1
+
+			picture = FAO_nobody_except_us_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				war_support_factor = 0.1
+				political_power_gain = -0.1
+				supply_consumption_factor = -0.1
+				breakthrough_factor = 0.05
+				army_attack_factor = 0.05
+			}
+		}
+		KAZ_pugo = {
+			name = KAZ_pugo_name
+
+			removal_cost = -1
+
+			picture = KAZ_pugo_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = -0.05
+				political_power_gain = -0.1
+				army_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+		KAZ_yazov = {
+			name = KAZ_yazov_name
+
+			removal_cost = -1
+
+			picture = KAZ_yazov_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.1
+				political_power_gain = -0.1
+				army_attack_factor = 0.075
+				army_core_defence_factor = 0.025
+			}
+		}
+		RNF_russia_reborn = {
+			name = RNF_russia_reborn_name
+
+			removal_cost = -1
+
+			picture = RNF_russia_reborn_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				war_support_factor = 0.1
+				stability_factor = 0.1
+				political_power_gain = -0.1
+				army_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+		SOE_eurasian_spirit = {
+			name = SOE_eurasian_spirit_name
+
+			removal_cost = -1
+
+			picture = SOV_eurasian_idea_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.15
+				political_power_gain = 0.02
+				army_attack_factor = 0.07
+			}
+		}
+		DPR_one_flag = {
+			name = DON_one_flag_name
+
+			removal_cost = -1
+
+			picture = DON_one_flag_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = 0.05
+				political_power_gain = -0.035
+				army_core_defence_factor = 0.05
+			}
+		}
+		UKR_true = {
+			name = UKR_true_name
+
+			removal_cost = -1
+
+			picture = UKR_soviet_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.05
+				political_power_gain = -0.05
+				army_attack_factor = 0.05
+			}
+		}
+		UCR_true = {
+			name = UCR_true_name
+
+			removal_cost = -1
+
+			picture = UCR_ukraine_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.1
+				political_power_gain = 0.02
+				army_defence_factor = 0.05
+			}
+		}
+		OUN_true = {
+			name = OUN_true_name
+
+			removal_cost = -1
+
+			picture = OUN_bandera_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = 0.15
+				political_power_gain = -0.025
+				army_attack_factor = 0.085
+			}
+		}
+		BLR_batka = {
+			name = BLR_batka_name
+
+			removal_cost = -1
+
+			picture = BLR_batka_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.1
+				political_power_gain = -0.1
+				army_core_defence_factor = 0.05
+			}
+		}
+
+	}
+
+}

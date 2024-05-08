@@ -1,0 +1,41 @@
+state={
+	id=924
+	name="STATE_924"
+	manpower = 4700000
+	
+	state_category = large_town
+
+	resources={
+		oil=72
+		steel = 15
+		tungsten = 10
+	}
+
+	history={
+		owner = IRQ
+		add_core_of = IRQ
+		victory_points = {
+			8001 3
+		}
+		victory_points = {
+			13305 5 
+		}
+		victory_points = {
+			13314 1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+                        arms_factory = 2
+			13305 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		78 2004 2089 7977 8001 12726 12879 13305 13306 13307 13313 13314
+	}
+
+	local_supplies=6.0 
+}

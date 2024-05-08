@@ -1,0 +1,26 @@
+﻿capital = 202 #Kiev
+
+#oob = "UKR_1936"
+
+set_research_slots = 3
+
+recruit_character = UKR_mil_command
+recruit_character = UKR_petro_symonenko
+recruit_character = UKR_petro_symonenko_ml
+recruit_character = UKR_viktor_yushchenko
+recruit_character = UKR_viktor_yanukovych
+
+set_popularities = {
+	democratic = 10
+	fascism = 62
+	neutrality = 15
+	liberalism = 5
+	paternal_autocracy = 8
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}

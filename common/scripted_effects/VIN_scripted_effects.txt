@@ -1,0 +1,39 @@
+VIN_poverty_rate_daily_change_15 = {
+	add_to_variable = { vin_poverty_rate_new_monthly = -0.15 }
+}
+VIN_poverty_rate_daily_change_12 = {
+	add_to_variable = { vin_poverty_rate_new_monthly = -0.12 }
+}
+VIN_poverty_rate_daily_change_10 = {
+	add_to_variable = { vin_poverty_rate_new_monthly = -0.1 }
+}
+VIN_poverty_rate_daily_change_10_flat = {
+	add_to_variable = { vin_poverty_rate = -0.1 }
+}
+VIN_poverty_rate_daily_change_5 = {
+	add_to_variable = { vin_poverty_rate_new_monthly = -0.05 }
+}
+
+VIN_poverty_rate_monthly_change_reset = {
+	#set_variable = { vin_poverty_rate_new_monthly = vin_poverty_rate_daily }
+	add_to_variable = { vin_poverty_rate = vin_poverty_rate_new_monthly }
+
+	#clear_variable = vin_poverty_rate_daily
+}
+
+VIN_poverty_rate_poverty_rate_debug_reset = {
+	clear_variable = vin_poverty_rate
+	clear_variable = vin_poverty_rate_daily
+	clear_variable = VIN_fighting_poverty_decision_cap
+	
+	set_variable = { vin_poverty_rate = 34.3 }
+	set_variable = { vin_poverty_rate_new_monthly = -0.35 }
+	set_variable = { vin_poverty_rate_daily = vin_poverty_rate_new_monthly }
+	
+	activate_mission = VIN_fight_against_poverty_mission_deadline
+}
+
+VIN_debug_reset = {
+	set_country_flag = vin_local_staff_training_flag
+}
+			

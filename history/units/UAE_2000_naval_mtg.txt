@@ -1,0 +1,18 @@
+units = {
+	fleet = {
+		name = "Ustul Al'iimarat"
+		naval_base = 7960 # Abu Dhabi #
+		task_force = {
+			name = "Al'ustul Al'iimaratiu Alsathiu"
+			location = 7960 # Abu Dhabi #
+			ship = { name = "Abu Dhabi" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = UAE creator = HOL version_name = "Kortenaer Class" } } }
+			ship = { name = "Al Emirat" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = UAE creator = HOL version_name = "Kortenaer Class" } } }
+
+			ship = { name = "Murayjib" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = UAE version_name = "Muryajib Class" } } }
+			ship = { name = "Das" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = UAE version_name = "Muryajib Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

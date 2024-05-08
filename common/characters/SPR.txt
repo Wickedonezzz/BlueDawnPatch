@@ -1,0 +1,33 @@
+characters = {
+
+	SPR_josé_aznar = {
+		name = "José Aznar"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SPR/José_Aznar.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	SPR_gaspar_llamazares = {
+		name = "Gaspar Llamazares"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SPR/gaspar_llamazares.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

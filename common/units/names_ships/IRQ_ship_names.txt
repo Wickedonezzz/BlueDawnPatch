@@ -1,0 +1,33 @@
+﻿##### IRQ NAME LISTS #####
+
+### GENERIC ###
+IRQ_NAVAL_NAME_CALIPHATE = {
+	name = "Iraqi Caliphate Generals"
+
+	for_countries = { IRQ }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	
+	unique = {
+		"Musa ibn Nusayr" "Tariq ibn Ziyad" "Abdullah ibn Abi Serh" "Khalid ibn al Walid" "Saad ibn abi Wakkad" "Salah Aldin Ayoobi"
+	}
+}
+IRQ_NAVAL_NAME_GOVERNATES = {
+	name = "Iraqi Governates"
+
+	for_countries = { IRQ }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	
+	unique = {
+		"Al Anbar" "Al Najaf" "Al Muthanna" "Al Basrah" "Thi Qar" "Misan" "Al Qadisiyah" "Karbala" "Babil" "Baghdad" "Wasit" "Diyala" "Salah al-Din" "Kirkuk" "Al Sulaimaniyah" "Arbil" "Nineveh" "Dohuk"
+	}
+}

@@ -1,0 +1,33 @@
+characters = {
+
+	MOL_petru_lucinschi = {
+		name = "Petru Lucinschi"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MOL/petru_lucinschi.dds"
+			}
+		}
+		country_leader = {
+			ideology = market_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	MOL_vladimir_voronin = {
+		name = "Vladimir Voronin"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MOL/Vladimir_Voronin.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

@@ -1,0 +1,160 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "max_units_info"
+		position = { x = 0 y = -172 }
+		size = { width = 546 height = 158 }
+		verticalScrollbar = "right_vertical_slider"
+		Orientation = LOWER_LEFT
+		clipping = yes
+
+		iconType ={
+			name ="max_units_bg"
+			spriteType = "GFX_max_units_bg"
+			position = { x= 13 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType ={
+			name ="fuel_header"
+			spriteType = "GFX_deployment_binding"
+			position = { x= 7 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextboxType = {
+			name = "label"
+			position = { x = 60 y = 7 }
+			font = "hoi_18mbs"
+			text = "Unit Limiter"
+			maxWidth = 300
+			maxHeight = 20
+			format = left
+		}
+
+		iconType = {
+			name = "ground_unit_icon"
+			position = { x=27 y=6 }
+			spriteType = "GFX_ground_unit_icon"
+		}
+
+		iconType = {
+			name = "help_button_icon"
+			position = { x=495 y=5 }
+			spriteType = "GFX_button_help"
+			pdx_tooltip = max_units_info_tt
+		}
+
+		containerWindowType = {
+			name = "max_units_overmiliterisation"
+			position = { x=410 y=6 }
+			clipping = no
+			size = { width=50 height=21 }
+			Orientation = UPPER_LEFT
+
+			iconType = {
+				name = "overmiliterisation_icon_bg"
+				position = { x=0 y=0 }
+				spriteType = "GFX_overmiliterisation_icon_bg"
+			}
+			iconType = {
+				name = "overmiliterisation_icon"
+				position = { x=6 y=4 }
+				spriteType = "GFX_overmiliterisation_icon"
+			}
+
+			instantTextboxType = {
+				name = "label_overmiliterisation"
+				position = { x = 22 y = 3 }
+				font = "hoi_16mbs"
+				text = "UNIT_LIMITER_OVERMILITERISATION"
+				maxWidth = 50
+				maxHeight = 16
+				format = center
+				pdx_tooltip = overmiliterisation_info_tt
+			}
+		}
+
+		instantTextBoxType = {
+			name ="ground_forces_header"
+			position = { x = 0 y = 45 }
+			font = "hoi_24header"
+			text = "ground_forces_header_text"
+			format = center
+			maxHeight = 24
+		}
+		instantTextBoxType = {
+			name ="naval_forces_header"
+			position = { x = 170 y = 45 }
+			font = "hoi_24header"
+			text = "naval_forces_header_text"
+			format = center
+			maxHeight = 24
+		}
+		instantTextBoxType = {
+			name ="air_forces_header"
+			position = { x = 340 y = 45 }
+			font = "hoi_24header"
+			text = "air_forces_header_text"
+			format = center
+			maxHeight = 24
+		}
+
+		instantTextboxType = {
+			name = "label_army_size"
+			position = { x = 18 y = 75 }
+			font = "hoi_18mbs"
+			text = "UNIT_LIMITER_ARMY_SIZE"
+			maxWidth = 165
+			maxHeight = 20
+			format = center
+		}
+		instantTextboxType = {
+			name = "label_navy_size"
+			position = { x = 186 y = 75 }
+			font = "hoi_18mbs"
+			text = "UNIT_LIMITER_NAVY_SIZE"
+			maxWidth = 165
+			maxHeight = 20
+			format = center
+		}
+		instantTextboxType = {
+			name = "label_air_size"
+			position = { x = 360 y = 75 }
+			font = "hoi_18mbs"
+			text = "UNIT_LIMITER_AIR_SIZE"
+			maxWidth = 165
+			maxHeight = 20
+			format = center
+		}
+
+		instantTextboxType = {
+			name = "label_army_size_motorisation"
+			position = { x = 18 y = 105 }
+			font = "hoi_18mbs"
+			text = "UNIT_LIMITER_ARMY_SIZE_MOTORISATION"
+			maxWidth = 165
+			maxHeight = 20
+			format = center
+		}
+		instantTextboxType = {
+			name = "label_navy_size_capital"
+			position = { x = 186 y = 105 }
+			font = "hoi_18mbs"
+			text = "UNIT_LIMITER_NAVY_SIZE_CAPITAL"
+			maxWidth = 165
+			maxHeight = 20
+			format = center
+		}
+		instantTextboxType = {
+			name = "label_air_size_bomber"
+			position = { x = 360 y = 105 }
+			font = "hoi_18mbs"
+			text = "UNIT_LIMITER_AIR_SIZE_BOMBER"
+			maxWidth = 165
+			maxHeight = 20
+			format = center
+		}
+	}
+
+}

@@ -1,0 +1,84 @@
+﻿##### PRC NAME LISTS #####
+
+### SUBMARINES ###
+PRC_SS_NUMERICAL = {
+	name = "Chinese Diesel Attack Submarines"
+
+	for_countries = { PRC }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	ship_types = { attack_submarine_hull }
+	
+	fallback_name = "Changcheng %d"
+	
+	ordered = {
+	}
+}
+PRC_SSN_NUMERICAL = {
+	name = "Chinese Nuclear Submarines"
+
+	for_countries = { PRC }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	ship_types = { attack_submarine_hull ballistic_submarine_hull }
+	
+	fallback_name = "Changzheng %d"
+	
+	ordered = {
+	}
+}
+
+### GENERIC ###
+PRC_NAVAL_NAME_CITIES = {
+	name = "Chinese Cities"
+
+	for_countries = { PRC }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	
+	unique = {
+		"Hangzhou" "Fuzhou" "Taizhou" "Ningbo" "Shenyang" "Shijiazhuang" "Lanzhou" "Haikou" "Changchun" "Zhengzhou" "Jinan" "Xi'an" "Kunming" "Changsha" "Hefei" "Yinchuan" "Xining" "Xiamen" "Urumqi" "Guiyang" "Nanjing" "Taiyuan" "Hohhot" "Chengdu" "Qiqihar" "Zibo" "Tangshan" "Suzhou" "Huainan" "Nanning" "Kaifeng" "Guilin" "Zhanjiang" "Baotou" "Jiaozuo" "Shaoxing" "Lishui" "Nanchang" "Lhasa" "Anshan" "Wuxi" "Dalian" "Yan'an" "Zunyi" "Xiangyang" "Ma'anshan" "Wenzhou" "Xuzhou" "Zhoushan" "Huangshan" "Hengyang" "Yuncheng" "Yulin" "Yiyang" "Changzhou" "Yantai" "Yancheng" "Hengshui" "Liuzhou" "Linyi" "Yueyang" "Weifang" "Sanya" "Huanggang" "Daqing" "Yangzhou" "Handan" "Jingzhou" "Xiangtan" "Binzhou" "Xuchang" "Wuhu" "Rizhao" "Anyang" "Xianning" "Nantong" "Zaozhuang"
+	}
+}
+PRC_NAVAL_NAME_PROVINCES = {
+	name = "Chinese Provinces"
+
+	for_countries = { PRC }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	
+	unique = {
+		"Liaoning" "Shandong" "Fujian" "Hainan" "Hebei" "Guangdong" "Zhejiang" "Jiangsu" "Shanxi" "Henan" "Hubei" "Hunan" "Jiangxi" "Guizhou" "Shaanxi" "Jilin" "Yunnan" "Sichuan" "Heilongjiang" "Gansu" "Qinghai"
+	}
+}
+PRC_NAVAL_NAME_LEADERS = {
+	name = "Chinese Leaders"
+
+	for_countries = { PRC }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	
+	unique = {
+		"Mao Zedong" "Deng Xiaoping" "Jiang Zemin" "Yang Shangkun" "Li Xiannian" "Soong Ching-ling" "Hua Guofeng" "Dong Biwu" "Liu Shaoqi"
+	}
+}

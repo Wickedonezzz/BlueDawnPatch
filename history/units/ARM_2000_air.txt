@@ -1,0 +1,17 @@
+﻿air_wings = {
+	# Land Wings #
+	230 = {
+		# Attackers -- Su-25
+		attacker_equipment_2 =  { # Su-25 #
+			owner = "ARM" 
+			creator = SOV
+			amount = 5
+		}
+		# Transports -- An-24, An-32
+		transport_plane_equipment_1 =  {
+			owner = "ARM"
+			creator = SOV
+			amount = 2
+		}
+	}
+}

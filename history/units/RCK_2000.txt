@@ -1,0 +1,146 @@
+﻿division_template = {
+	name = "Rassemblement pour la démocratie congolaise Forces rebelles"		
+	division_names_group = RCK_INF_01
+
+	regiments = {
+		infantry_unit = { x = 0 y = 0 }
+		infantry_unit = { x = 0 y = 1 }
+		infantry_unit = { x = 0 y = 2 }
+		infantry_unit = { x = 1 y = 0 }
+		infantry_unit = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Kadogos"		
+	division_names_group = COG_INF_03
+
+	regiments = {
+		militia_unit = { x = 0 y = 0 }
+		militia_unit = { x = 0 y = 1 }
+		militia_unit = { x = 0 y = 2 }
+		militia_unit = { x = 1 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Rassemblement pour la Démocratie Congolaise Forces Rebelles - Division Artillerie"		
+	division_names_group = RCK_INF_02
+
+	regiments = {
+		infantry_unit = { x = 0 y = 0 }
+		infantry_unit = { x = 0 y = 1 }
+		infantry_unit = { x = 0 y = 2 }
+		infantry_unit = { x = 0 y = 3 }
+		infantry_unit = { x = 1 y = 0 }
+		towed_artillery_unit = { x = 1 y = 2 }
+		towed_artillery_unit = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	#infantry division
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 988
+		division_template = "Rassemblement pour la démocratie congolaise Forces rebelles"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 8048
+		division_template = "Rassemblement pour la démocratie congolaise Forces rebelles"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 1950
+		division_template = "Rassemblement pour la Démocratie Congolaise Forces Rebelles - Division Artillerie"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 988
+		division_template = "Kadogos"
+		start_experience_factor = -0.3
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 10766
+		division_template = "Kadogos"
+		start_experience_factor = -0.3
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 10951
+		division_template = "Kadogos"
+		start_experience_factor = -0.3
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 10951
+		division_template = "Kadogos"
+		start_experience_factor = -0.3
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 10951
+		division_template = "Kadogos"
+		start_experience_factor = -0.3
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 10951
+		division_template = "Kadogos"
+		start_experience_factor = -0.3
+		start_equipment_factor = 0.5
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_weapons
+			creator = "SOV"
+		}
+		requested_factories = 1
+		progress = 0.86
+		efficiency = 100
+	}
+}

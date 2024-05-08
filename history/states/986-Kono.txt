@@ -1,0 +1,28 @@
+
+state={
+	id=986
+	name="STATE_986"
+
+	history={
+		owner = RUF
+		add_core_of = RUF
+		add_core_of = SIE
+		victory_points = {
+			13485 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		13485 13486 13487 13488 13491 13492 13496 13497 
+	}
+	manpower=1768500
+	state_category=large_town		
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

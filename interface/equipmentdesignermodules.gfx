@@ -1,0 +1,180 @@
+spriteTypes = {
+
+###################################################
+# Contains GFX for the ship modules shown on top of the blue print
+#
+# Names of the modules are normalized and *must* obey the following naming
+# convention.
+#
+# "GFX_SM_ ( SHIP_CLASS ) "_" ( MODULE_KEY ) "_" ( MODIFIER )
+#( MODIFIER ) is optional
+# Where:
+# * SHIP_CLASS looks like "ship_hull_carrier"
+# * MODULE_KEY looks like "ship_light_battery"
+# * COUNTRY MODIFIER looks like "ger" (for Germany for example).
+# Example:
+# Each sprite corresponds to one ship hull type and one module only.
+# * "GFX_SM_ship_hull_carrier_ship_light_battery_ger"
+
+###################################################
+
+	## MOD ##
+
+	spriteType = {
+		name = "GFX_SM_attack_submarine_hull_torpedo"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/submarine/attack_submarine_hull_torpedos.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_attack_submarine_hull_torpedo@highlight"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/submarine/attack_submarine_hull_torpedos@highlight.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_attack_submarine_hull_cruise_missile"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/submarine/attack_submarine_hull_cruise_missile.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_attack_submarine_hull_cruise_missile@highlight"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/submarine/attack_submarine_hull_cruise_missile@highlight.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SM_cruise_submarine_hull_fixed_torpedo"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/submarine/cruise_submarine_hull_fixed_torpedos.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_cruise_submarine_hull_fixed_torpedo@highlight"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/submarine/cruise_submarine_hull_fixed_torpedos@highlight.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_cruise_submarine_hull_custom1_torpedo"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/submarine/cruise_submarine_hull_custom1_torpedo.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_cruise_submarine_hull_custom1_torpedo@highlight"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/submarine/cruise_submarine_hull_custom1_torpedo@highlight.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_cruise_submarine_hull_fixed_cruise_missile"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/submarine/cruise_submarine_hull_fixed_cruise_missile.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_cruise_submarine_hull_fixed_cruise_missile@highlight"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/submarine/cruise_submarine_hull_fixed_cruise_missile@highlight.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SM_ballistic_submarine_hull_fixed_ballistic_missile"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/submarine/ballistic_submarine_hull_fixed_ballistic_missile.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_ballistic_submarine_hull_fixed_ballistic_missile@highlight"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/submarine/ballistic_submarine_hull_fixed_ballistic_missile@highlight.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SM_corvette_hull_helicopter"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/corvette/corvette_hull_helicopter.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_corvette_hull_helicopter@highlight"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/corvette/corvette_hull_helicopter@highlight.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_corvette_hull_ciws_front"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/corvette/corvette_hull_ciws_front.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_corvette_hull_ciws_front@highlight"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/corvette/corvette_hull_ciws_front@highlight.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_corvette_hull_ciws_back"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/corvette/corvette_hull_ciws_back.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_corvette_hull_ciws_back@highlight"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/corvette/corvette_hull_ciws_back@highlight.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_corvette_hull_cannon"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/corvette/corvette_hull_cannon.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_corvette_hull_cannon@highlight"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/corvette/corvette_hull_cannon@highlight.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_corvette_hull_aswrl"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/corvette/corvette_hull_aswrl.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_corvette_hull_aswrl@highlight"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/corvette/corvette_hull_aswrl@highlight.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_corvette_hull_cruise_missile"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/corvette/corvette_hull_cruise_missile.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_corvette_hull_cruise_missile@highlight"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/corvette/corvette_hull_cruise_missile@highlight.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SM_destroyer_hull_helicopter"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/destroyer/destroyer_hull_helicopter.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_destroyer_hull_helicopter@highlight"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/destroyer/destroyer_hull_helicopter@highlight.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_destroyer_hull_cannon"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/destroyer/destroyer_hull_cannon.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_destroyer_hull_cannon@highlight"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/destroyer/destroyer_hull_cannon@highlight.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_destroyer_hull_cannon_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/destroyer/destroyer_hull_cannon_2.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_destroyer_hull_cannon_2@highlight"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/destroyer/destroyer_hull_cannon_2@highlight.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_destroyer_hull_ciws"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/destroyer/destroyer_hull_ciws.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_destroyer_hull_ciws@highlight"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/destroyer/destroyer_hull_ciws@highlight.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_destroyer_hull_aswrl"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/destroyer/destroyer_hull_aswrl.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_destroyer_hull_aswrl@highlight"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/destroyer/destroyer_hull_aswrl@highlight.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_destroyer_hull_torpedo"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/destroyer/destroyer_hull_torpedo.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_destroyer_hull_torpedo@highlight"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/destroyer/destroyer_hull_torpedo@highlight.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_destroyer_hull_cruise_missile"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/destroyer/destroyer_hull_cruise_missile.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_destroyer_hull_cruise_missile@highlight"
+		textureFile = "gfx/interface/equipmentdesigner/naval/topviews/destroyer/destroyer_hull_cruise_missile@highlight.dds"
+	}
+
+}

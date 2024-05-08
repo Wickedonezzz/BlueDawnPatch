@@ -1,0 +1,31 @@
+
+state={
+	id=436
+	name="STATE_436" # Jabalpur
+	manpower = 60385090	
+	
+	state_category = large_town
+	
+	resources={
+		chromium=4 # was: 6
+	}
+
+	history={
+		owner = RAJ
+		add_core_of = RAJ
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 1
+		}
+		victory_points = {
+			4883 5
+		}
+	}
+
+	provinces={
+		1510 4557 4883 4950 4953 7430 7619 8120 10030 10401 10801 10872 12420 12480 12781 12799 12854 
+	}
+
+	local_supplies=0.0 
+}

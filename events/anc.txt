@@ -1,0 +1,328 @@
+add_namespace = anc
+
+#spark#
+country_event = {
+	id = anc.4
+	title = anc.4.t
+	desc = anc.4.d
+	picture = GFX_report_event_ANC_spark
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = anc.4.a	
+		add_political_power = 50
+		add_stability = 0.07
+	}
+}
+
+#fire#
+country_event = {
+	id = anc.5
+	title = anc.5.t
+	desc = anc.5.d
+	picture = GFX_report_event_ANC_fire
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = anc.5.a	
+		add_political_power = 25
+		add_war_support = 0.05
+	}
+}
+
+
+
+#Boers#
+country_event = {
+	id = anc.2
+	title = anc.2.t
+	desc = anc.2.d
+	picture = GFX_report_event_SAF_zimbabwe
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = anc.2.a
+		add_manpower = 2500
+		add_stability = -0.05
+		add_war_support = 0.05
+                add_ideas = ANC_boers_idea
+	
+	}
+	option = {
+		name = anc.2.b	
+		add_stability = 0.1
+		add_war_support = -0.1
+	}
+}
+
+#Land#
+country_event = {
+	id = anc.3
+	title = anc.3.t
+	desc = anc.3.d
+	picture = GFX_report_event_SAF_zimbabwe
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = anc.3.a
+		add_manpower = -500
+		add_stability = -0.15
+		add_war_support = 0.1
+		923 = {
+                		add_extra_state_shared_building_slots = 2
+
+                		add_building_construction = {
+                    		type = industrial_complex
+                    		level = 2
+                    		instant_build = yes
+                		}
+           		 }
+	
+	}
+	option = {
+		name = anc.3.b	
+		add_stability = 0.2
+		add_war_support = -0.05
+		add_manpower = 1500
+	}
+}
+
+#Ask Soviets for Help#
+country_event = {
+	id = anc.1
+	title = anc.1.t
+	desc = anc.1.d
+	picture = GFX_report_event_soviet_aid
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = anc.1.a
+	}
+	option = {
+		trigger = {
+			SOV = {
+				has_equipment = { infantry_weapons > 249 }
+				has_equipment = { support_equipment > 99 }
+				has_equipment = { towed_artillery_equipment > 19 }
+				has_equipment = { mbt_tank_equipment > 14 }
+				has_equipment = { fighter_equipment > 9 }
+			}
+		}
+		name = anc.1.b
+
+		SOV = {
+			send_equipment = {
+				equipment = infantry_weapons
+				amount = 250
+				target = ANC
+			}
+			send_equipment = {
+				equipment = support_equipment
+				amount = 100
+				target = ANC
+			}
+			send_equipment = {
+				equipment = towed_artillery_equipment
+				amount = 20
+				target = ANC
+			}
+			send_equipment = {
+				equipment = mbt_tank_equipment
+				amount = 15
+				target = ANC
+			}
+			send_equipment = {
+				equipment = fighter_equipment
+				amount = 10
+				target = ANC
+			}
+		}
+	}
+}
+
+#army raise fix - DO NOT REMOVE#
+country_event = {
+	id = anc.0
+	title = anc.0.t
+	desc = anc.0.d
+	picture = GFX_report_event_SAF_zimbabwe
+	
+	is_triggered_only = yes
+	
+	hidden = yes
+	
+	option = {
+		name = anc.0.a
+		load_oob = "ANC_rebellion"
+	
+	}
+
+}
+
+#red cross#
+country_event = {
+	id = anc.6
+	title = anc.6.t
+	desc = anc.6.d
+	picture = GFX_report_event_ANC_fire
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = anc.6.a	
+		add_political_power = 25
+		add_war_support = 0.05
+	}
+}
+#hospital#
+country_event = {
+	id = anc.7
+	title = anc.7.t
+	desc = anc.7.d
+	picture = GFX_report_event_ANC_fire
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = anc.7.a	
+		add_political_power = 25
+		add_war_support = 0.05
+	}
+}
+#pardon#
+country_event = {
+	id = anc.8
+	title = anc.8.t
+	desc = anc.8.d
+	picture = GFX_report_event_ANC_fire
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = anc.8.a	
+		add_political_power = 25
+		add_war_support = 0.05
+	}
+}
+#no pardon#
+country_event = {
+	id = anc.9
+	title = anc.9.t
+	desc = anc.9.d
+	picture = GFX_report_event_ANC_fire
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = anc.9.a	
+		add_political_power = 25
+		add_war_support = 0.05
+	}
+}
+#co-operate right#
+country_event = {
+	id = anc.10
+	title = anc.10.t
+	desc = anc.10.d
+	picture = GFX_report_event_ANC_fire
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = anc.10.a	
+		add_political_power = 25
+		add_war_support = 0.05
+		set_country_flag = anc_success_right
+	}
+	option = {
+		name = anc.10.a	
+		add_political_power = 25
+		add_war_support = 0.05
+		set_country_flag = anc_failure_right
+	}
+}
+#co-operate left#
+country_event = {
+	id = anc.11
+	title = anc.11.t
+	desc = anc.11.d
+	picture = GFX_report_event_ANC_fire
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = anc.11.a	
+		add_political_power = 25
+		add_war_support = 0.05
+		set_country_flag = anc_success_left
+	}
+	option = {
+		name = anc.11.a	
+		add_political_power = 25
+		add_war_support = 0.05
+		set_country_flag = anc_failure_left
+	}
+}
+#elctions#
+country_event = {
+	id = anc.12
+	title = anc.12.t
+	desc = anc.12.d
+	picture = GFX_report_event_ANC_fire
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = anc.12.a	
+		add_political_power = 25
+		add_war_support = 0.05
+	}
+}
+#elctions#
+country_event = {
+	id = anc.13
+	title = anc.13.t
+	desc = anc.13.d
+	picture = GFX_report_event_ANC_fire
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = anc.13.a	
+		add_political_power = 25
+		add_war_support = 0.05
+	}
+}
+#elctions#
+country_event = {
+	id = anc.14
+	title = anc.14.t
+	desc = anc.14.d
+	picture = GFX_report_event_ANC_fire
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = anc.14.a	
+		add_political_power = 25
+		add_war_support = 0.05
+	}
+}

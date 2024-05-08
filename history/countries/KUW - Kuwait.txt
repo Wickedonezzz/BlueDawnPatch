@@ -1,0 +1,51 @@
+﻿capital = 656
+
+set_oob = "KUW_2000"
+set_air_oob = "KUW_2000_air"
+
+set_technology = {
+	infantry_weapons_1960 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_air_weapons_1960 = 1
+	tech_support = 1
+	tech_motorised_1960 = 1
+	motorised_artillery_1960 = 1
+	rocket_artillery_1960 = 1
+	mbt_tank_1960 = 1
+	ifv_tank_1970 = 1
+	apc_tank_1960 = 1
+	heli_attack_1970 = 1
+}
+
+set_convoys = 5
+
+add_ideas = {
+	limited_conscription
+}
+
+add_ideas = KUW_oil_producers
+
+recruit_character = KUW_jaber
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 23
+	fascism = 1
+	communism = 1
+	neutrality = 75
+}
+
+add_ideas = usa_aligned_nation
+
+diplomatic_relation = {
+	country = BHR
+	relation = non_aggression_pact
+}
+
+add_opinion_modifier = { target = IRQ modifier = HISTORIC_gulf_war_kuwait_opinion }
+add_opinion_modifier = { target = ISR modifier = HISTORIC_israel_hostile_30_opinion }

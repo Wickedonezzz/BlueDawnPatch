@@ -1,0 +1,134 @@
+characters = {
+
+	## Leaders ##
+
+	GER_gerhard_schroder = {
+		name = "Gerhard Schröder"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/Gerhard_Schröder.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	GER_edmund_stoiber = {
+		name = "Edmund Stoiber"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/Edmund_Stoiber.png"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	GER_guido_westerwelle = {
+		name = "Guido Westerwelle"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/Guido_Westerwelle.png"
+			}
+		}
+		country_leader = {
+			ideology = liberalism_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	GER_udo_voigt_1 = {
+		name = "Udo Voigt"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/Udo_Voigt_1.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	GER_udo_voigt_2 = {
+		name = "Udo Voigt"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/Udo_Voigt_2.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	GER_egon_krenz = {
+		name = "Egon Krenz"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/Egon_Krenz.dds"
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	## Generals ##
+
+	GER_erhard_buhler = {
+		name = "Erhard Bühler"
+		portraits = {
+			army = {
+				large = "gfx/leaders/GER/Erhard_Buhler.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	## Admirals ##
+
+	GER_rainer_feist = {
+		name = "Rainer Feist"
+		portraits = {
+			army = {
+				large = "gfx/leaders/GER/Rainer_Feist.png"
+			}
+		}
+		navy_leader={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+}

@@ -1,0 +1,174 @@
+add_namespace = peacetalks
+
+	#USA - want peace?
+country_event = {
+	id = peacetalks.1
+	title = peacetalks.1.t
+	desc = peacetalks.1.d
+	picture = GFX_report_event_spark
+	
+    is_triggered_only = yes
+
+	fire_only_once = yes
+
+		#ok peace time#
+	option = {
+		name = peacetalks.1.a
+		add_stability = -0.01
+		SOV = {country_event = {id = peacetalks.2}}
+		ai_chance = {
+		factor = 55
+
+		}
+	}
+	
+		#never#
+	option = {
+		name = peacetalks.1.b
+		SOV = {country_event = {id = peacetalks.3}}
+		ai_chance = {
+		factor = 1
+		}
+		
+	}
+}
+
+	#USSR - usa wants peace too
+country_event = {
+	id = peacetalks.2
+	title = peacetalks.2.t
+	desc = peacetalks.2.d
+	picture = GFX_report_event_spark
+	
+    is_triggered_only = yes
+
+	fire_only_once = yes
+
+		#ok peace time#
+	option = {
+		name = peacetalks.2.a
+			set_global_flag = usa_agreed_to_sign_peace_in_europe
+			custom_effect_tooltip = "The effects of the peace deal will happen in 2 days"
+			news_event = {id = old_times_news.103 days = 4}
+			#i tried to make the peace deal by using every_other_country and every_country but for some stupid reason it doesnt work, replace the code below if you can find a fix to that (although the code works)- durangoose
+			SOV = {white_peace = USA}
+			SOV = {white_peace = CAN}
+			SOV = {white_peace = ENG}
+		ai_chance = {
+		factor = 1
+
+		}
+	}
+	
+
+}
+
+	#USSR - usa doesnt wants peace too
+country_event = {
+	id = peacetalks.3
+	title = peacetalks.3.t
+	desc = peacetalks.3.d
+	picture = GFX_report_event_spark
+	
+    is_triggered_only = yes
+
+	fire_only_once = yes
+
+		#ok war time#
+	option = {
+		name = peacetalks.3.a
+		add_War_support = 0.05
+		ai_chance = {
+		factor = 1
+
+		}
+	}
+	
+
+}
+
+	#SOV - want peace?
+country_event = {
+	id = peacetalks.4
+	title = peacetalks.4.t
+	desc = peacetalks.4.d
+	picture = GFX_report_event_spark
+	
+    is_triggered_only = yes
+
+	fire_only_once = yes
+
+		#ok peace time#
+	option = {
+		name = peacetalks.4.a
+		add_stability = -0.01
+		SOV = {country_event = {id = peacetalks.5}}
+		ai_chance = {
+		factor = 55
+
+		}
+	}
+	
+		#never#
+	option = {
+		name = peacetalks.4.b
+		SOV = {country_event = {id = peacetalks.6}}
+		ai_chance = {
+		factor = 1
+		}
+		
+	}
+}
+
+	#USA - ussr wants peace too
+country_event = {
+	id = peacetalks.5
+	title = peacetalks.5.t
+	desc = peacetalks.5.d
+	picture = GFX_report_event_spark
+	
+    is_triggered_only = yes
+
+	fire_only_once = yes
+
+		#ok peace time#
+	option = {
+		name = peacetalks.5.a
+			set_global_flag = sov_agreed_to_sign_peace_in_europe
+			custom_effect_tooltip = "The effects of the peace deal will happen in 2 days"
+			#news_event = {id = old_times_news.103 days = 4}
+			USA = {white_peace = SOV}
+			CAN = {white_peace = SOV}
+			ENG = {white_peace = SOV}
+		ai_chance = {
+		factor = 1
+
+		}
+	}
+	
+
+}
+
+	#USA - ussr doesnt wants peace too
+country_event = {
+	id = peacetalks.6
+	title = peacetalks.6.t
+	desc = peacetalks.6.d
+	picture = GFX_report_event_spark
+	
+    is_triggered_only = yes
+
+	fire_only_once = yes
+
+		#ok war time#
+	option = {
+		name = peacetalks.6.a
+		add_War_support = 0.05
+		ai_chance = {
+		factor = 1
+
+		}
+	}
+	
+
+}

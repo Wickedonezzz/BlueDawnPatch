@@ -1,0 +1,135 @@
+ideas = {
+	
+	country = {
+	
+		CAM_legacy_of_polpot = {
+			name = CAM_legacy_of_polpot_name
+
+			removal_cost = -1
+
+			picture = CAM_legacy_of_polpot_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				war_support_factor = -0.3
+				monthly_population = -0.5
+			}
+		}
+
+		CAM_internal_conflict = {
+			name = CAM_internal_conflict_name
+
+			removal_cost = -1
+
+			picture = CAM_internal_conflict_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.1
+			}
+		}
+		CAM_indochina_war = {
+			name = "Fourth Indochina War"
+
+			removal_cost = -1
+
+			picture = indochina_war_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = 0.1
+				political_power_gain = -0.1
+				monthly_population = -0.4
+				surrender_limit = 0.5
+				army_core_defence_factor = 0.05
+				supply_consumption_factor = -0.1
+			}
+		}
+		CAM_vin_advisor = {
+			name = "Vietnamese Military Advisor"
+
+			removal_cost = -1
+
+			picture = VIN_operation_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				army_org_factor = 0.1
+				land_reinforce_rate = 0.05
+				
+			}
+		}
+		CAM_vin_advisor_1 = 
+		{
+			name = "Vietnamese Military Advisor"
+
+			removal_cost = -1
+
+			picture = VIN_operation_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				army_org_factor = 0.1
+				land_reinforce_rate = 0.05
+				
+			}
+			targeted_modifier = {
+				tag = SIA
+				defense_bonus_against = 0.1
+			}
+		}
+		CAM_rebuild = {
+			name = "Post War Reconstruction"
+
+			removal_cost = -1
+
+			picture = SPA_recovering_from_the_civil_war
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				monthly_population = -0.25
+				industry_repair_factor = 0.1
+				industry_free_repair_factor = 0.35
+			}
+		}
+		CAM_agreesive = {
+			name = "Early War Advantage"
+
+			removal_cost = -1
+
+			picture = FRA_national_mobilization_focus
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				breakthrough_factor = 0.15
+				army_attack_factor = 0.1
+				ai_focus_aggressive_factor = 0.45
+			}
+		}
+
+	}
+
+}

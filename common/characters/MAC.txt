@@ -1,0 +1,22 @@
+characters = {
+
+	HRZ_Boris_Trajkovski = {
+		name = "Boris Trajkovski"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MAC/Boris_Trajkovski.png"
+			}
+			army = {
+				large = "gfx/leaders/MAC/Boris_Trajkovski.png"			
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+
+	}
+
+}

@@ -1,0 +1,22 @@
+﻿capital = 691
+
+##oob = ""
+
+set_convoys = 5
+
+recruit_character = TRI_arthur_robinson
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1997.3.18"
+	election_frequency = 72
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 53
+	communism = 10
+	reformed_communism = 6
+	paternal_autocracy = 17
+	fascism = 5
+	neutrality = 9
+}

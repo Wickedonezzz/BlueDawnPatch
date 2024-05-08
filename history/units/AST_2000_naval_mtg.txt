@@ -1,0 +1,124 @@
+units = {
+	fleet = {
+		name = "East Fleet"
+		naval_base = 12406 # Sydney #
+		task_force = {
+			name = "East Fleet"
+			location = 12406 # Sydney #
+			ship = { name = "HMAS Perth" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = AST creator = USA version_name = "Oliver Hazard Perry Class" } } }
+			ship = { name = "HMAS Hobart" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = AST creator = USA version_name = "Oliver Hazard Perry Class" } } }
+			ship = { name = "HMAS Brisbane" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = AST creator = USA version_name = "Oliver Hazard Perry Class" } } }
+			ship = { name = "HMAS Sydney" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = AST creator = USA version_name = "Oliver Hazard Perry Class" } } }
+			ship = { name = "HMAS Darwin" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = AST creator = USA version_name = "Oliver Hazard Perry Class" } } }
+			ship = { name = "HMAS Melbourne" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = AST creator = USA version_name = "Oliver Hazard Perry Class" } } }
+			ship = { name = "HMAS Newcastle" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = AST creator = USA version_name = "Oliver Hazard Perry Class" } } }
+		}
+	}
+	fleet = {
+		name = "West Fleet"
+		naval_base = 1652 # Perth #
+		task_force = {
+			name = "West Fleet"
+			location = 1652 # Perth #
+			ship = { name = "HMAS Anzac" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = AST version_name = "Anzac Class" } } }
+			ship = { name = "HMAS Arunta" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = AST version_name = "Anzac Class" } } }
+			ship = { name = "HMAS Adelaide" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = AST creator = USA version_name = "Oliver Hazard Perry Class" } } }
+			ship = { name = "HMAS Canberra" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = AST creator = USA version_name = "Oliver Hazard Perry Class" } } }
+		}
+		task_force = {
+			name = "West Submarine Fleet"
+			location = 1652 # Perth #
+			ship = { name = "HMAS Collins" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = AST version_name = "Collins Class" } } }
+			ship = { name = "HMAS Farncomb" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = AST version_name = "Collins Class" } } }
+			ship = { name = "HMAS Waller" definition = attack_submarine equipment = { attack_submarine_hull_3 = { amount = 1 owner = AST version_name = "Collins Class" } } }
+			ship = { name = "HMAS Otama" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = AST creator = ENG version_name = "Oberon Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+	# Frigates #
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_hull_3
+			creator = "AST" 
+			version_name = "Anzac Class"
+		}
+		name = "HMAS Warramunga"
+		requested_factories = 1
+		progress = 0.66
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_hull_3
+			creator = "AST" 
+			version_name = "Anzac Class"
+		}
+		name = "HMAS Stuart"
+		requested_factories = 1
+		progress = 0.35
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_hull_3
+			creator = "AST" 
+			version_name = "Anzac Class"
+		}
+		name = "HMAS Parramatta"
+		requested_factories = 1
+		progress = 0.16
+		amount = 1
+	}
+
+	# Attack Submarines #
+	add_equipment_production = {
+		equipment = {
+			type = attack_submarine_hull_3
+			creator = "AST" 
+			version_name = "Collins Class"
+		}
+		name = "HMAS Dechaineux"
+		requested_factories = 1
+		progress = 0.86
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = attack_submarine_hull_3
+			creator = "AST" 
+			version_name = "Collins Class"
+		}
+		name = "HMAS Sheean"
+		requested_factories = 1
+		progress = 0.84
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = attack_submarine_hull_3
+			creator = "AST" 
+			version_name = "Collins Class"
+		}
+		name = "HMAS Rankin"
+		requested_factories = 1
+		progress = 0.59
+		amount = 1
+	}
+
+	## Construction Agreements ##
+	if = {
+		limit = { has_dlc = "Death or Dishonor" }
+		USA = {
+			create_production_license = {
+				target = AST
+				equipment = {
+					type = destroyer_hull_1
+					version_name = "Oliver Hazard Perry Class"
+				}
+				cost_factor = 0
+			}
+		}
+	}
+}

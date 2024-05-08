@@ -1,0 +1,46 @@
+﻿l_english:
+ WAR_NAME_COG_UGA:0 "Second Congo War"
+ WAR_NAME_UGA_COG:0 "Second Congo War"
+  
+ WAR_NAME_SRL_TAM:0 "Sri Lankan Civil War"
+ WAR_NAME_TAM_SRL:0 "Sri Lankan Civil War"
+ 
+ WAR_NAME_AFG_NRO:0 "Afghan Civil War"
+ WAR_NAME_NRO_AFG:0 "Afghan Civil War" 
+  
+ WAR_NAME_ANG_UNI:0 "Angolan Civil War"
+ WAR_NAME_UNI_ANG:0 "Angolan Civil War" 
+  
+ WAR_NAME_SAF_ANC:0 "South African Civil War"
+ WAR_NAME_ANC_SAF:0 "South African Civil War"  
+  
+ WAR_NAME_COG_RCK:0 "Second Congo War"
+ WAR_NAME_RCK_COG:0 "Second Congo War"   
+ WAR_NAME_COG_RGO:0 "Second Congo War"
+ WAR_NAME_RGO_COG:0 "Second Congo War"   
+  
+ WAR_NAME_RCK_RGO:0 "RCD Civil War"
+ WAR_NAME_RGO_RCK:0 "RCD Civil War"  
+ 
+ WAR_NAME_SUD_SPL:0 "Second Sudanese Civil War"
+ WAR_NAME_SPL_SUD:0 "Second Sudanese Civil War"   
+ 
+ WAR_NAME_SOV_POL:0 "Eastern European War"
+ WAR_NAME_POL_SOV:0 "Eastern European War"  
+
+ WAR_NAME_SOV_USA:0 "World War 3"
+ WAR_NAME_USA_SOV:0 "World War 3"  
+
+ WAR_NAME_YUG_BOS:0 "Yugoslav Civil War"
+ WAR_NAME_BOS_YUG:0 "Yugoslav Civil War"
+
+ WAR_NAME_YUG_CRO:0 "Yugoslav War"
+ WAR_NAME_CRO_YUG:0 "Yugoslav War" 
+
+ WAR_NAME_SAF_UGA:0 "African World War"
+ WAR_NAME_UGA_SAF:0 "African World War" 
+ WAR_NAME_SAF_COG:0 "African World War"
+ WAR_NAME_COG_SAF:0 "African World War" 
+
+ WAR_NAME_PAK_RAJ:0 "Fourth Indo-Pakistani War"
+ WAR_NAME_RAJ_PAK:0 "Fourth Indo-Pakistani War" 

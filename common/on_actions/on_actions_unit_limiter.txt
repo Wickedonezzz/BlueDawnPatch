@@ -1,0 +1,936 @@
+on_actions = {
+	on_startup = {
+
+		## Unit Limiter Mechanics ##
+
+		effect = {
+			every_country = {
+				limit = { exists = yes }
+				#### Current Values ####
+
+				## Army ##
+				set_variable = {
+					var = THIS.temp_var
+					value = THIS.num_battalions
+				}
+				set_variable = {
+					var = THIS.num_battalions_motor
+					value = 0
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_motor
+					value = THIS.num_battalions_with_type@heavy_infantry_unit
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_motor
+					value = THIS.num_battalions_with_type@infantry_fighting_vehicle_armor
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_motor
+					value = THIS.num_battalions_with_type@main_battle_tank_armor
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_motor
+					value = THIS.num_battalions_with_type@recon_vehicle_armor
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_motor
+					value = THIS.num_battalions_with_type@spaa_vehicle_armor
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_motor
+					value = THIS.num_battalions_with_type@motorised_artillery_unit
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_motor
+					value = THIS.num_battalions_with_type@rocket_artillery_unit
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_motor
+					value = THIS.num_battalions_with_type@field_hospital
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_motor
+					value = THIS.num_battalions_with_type@logistics_company
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_motor
+					value = THIS.num_battalions_with_type@maintenance_company
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_motor
+					value = THIS.num_battalions_with_type@motorised_recon
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_motor
+					value = THIS.num_battalions_with_type@armoured_recon
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_motor
+					value = THIS.num_battalions_with_type@spaa_vehicle_support_armor
+				}
+				divide_variable = {
+					var = THIS.num_battalions_motor
+					value = THIS.temp_var
+				}
+
+				## Navy ##
+				set_variable = {
+					var = THIS.num_ships_capital
+					value = 0
+				}
+				add_to_variable = {
+					var = THIS.num_ships_capital
+					value = THIS.num_ships_with_type@carrier
+				}
+				add_to_variable = {
+					var = THIS.num_ships_capital
+					value = THIS.num_ships_with_type@battleship
+				}
+				add_to_variable = {
+					var = THIS.num_ships_capital
+					value = THIS.num_ships_with_type@battlecruiser
+				}
+
+				## Air ##
+				set_variable = {
+					var = THIS.num_bombers
+					value = 0
+				}
+				add_to_variable = {
+					var = THIS.num_bombers
+					value = THIS.num_deployed_planes_with_type@strike_bomber_equipment
+				}
+				add_to_variable = {
+					var = THIS.num_bombers
+					value = THIS.num_deployed_planes_with_type@strategic_bomber_equipment
+				}
+				add_to_variable = {
+					var = THIS.num_bombers
+					value = THIS.num_deployed_planes_with_type@stealth_bomber_equipment
+				}
+
+				#### Maximum Values ####
+
+				## Army ##
+				set_variable = {
+					var = THIS.num_battalions_max
+					value = 0
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_max
+					value = THIS.manpower_k
+				}
+				multiply_variable = {
+					var = THIS.num_battalions_max
+					value = THIS.has_war_support
+				}
+				divide_variable = {
+					var = THIS.num_battalions_max
+					value = 2
+				}
+				set_variable = {
+					var = THIS.temp_num_battalions_1
+					value = THIS.num_owned_states
+				}
+				multiply_variable = {
+					var = THIS.temp_num_battalions_1
+					value = 3
+				}
+				set_variable = {
+					var = THIS.temp_num_battalions_2
+					value = THIS.num_of_military_factories
+				}
+				multiply_variable = {
+					var = THIS.temp_num_battalions_2
+					value = 15
+				}
+				set_variable = {
+					var = THIS.temp_num_battalions_3
+					value = THIS.num_of_available_civilian_factories
+				}
+				multiply_variable = {
+					var = THIS.temp_num_battalions_3
+					value = 12
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_max
+					value = THIS.temp_num_battalions_1
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_max
+					value = THIS.temp_num_battalions_2
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_max
+					value = THIS.temp_num_battalions_3
+				}
+
+				if = {
+					limit = {
+						THIS = { has_idea = nation_status_superpower }
+					}
+					multiply_variable = {
+						var = THIS.num_battalions_max
+						value = 2
+					}
+				}
+
+				## Navy ##
+				set_variable = {
+					var = THIS.num_ships_max
+					value = 0
+				}
+				add_to_variable = {
+					var = THIS.num_ships_max
+					value = THIS.manpower_k
+				}
+				multiply_variable = {
+					var = THIS.num_ships_max
+					value = THIS.has_war_support
+				}
+				divide_variable = {
+					var = THIS.num_ships_max
+					value = 10
+				}
+				set_variable = {
+					var = THIS.temp_num_ships_1
+					value = THIS.num_owned_states
+				}
+				divide_variable = {
+					var = THIS.temp_num_ships_1
+					value = 2
+				}
+				set_variable = {
+					var = THIS.temp_num_ships_2
+					value = THIS.num_of_naval_factories
+				}
+				multiply_variable = {
+					var = THIS.temp_num_ships_2
+					value = 15
+				}
+				add_to_variable = {
+					var = THIS.num_ships_max
+					value = THIS.temp_num_ships_1
+				}
+				add_to_variable = {
+					var = THIS.num_ships_max
+					value = THIS.temp_num_ships_2
+				}
+
+				if = {
+					limit = {
+						THIS = { has_idea = nation_status_superpower }
+					}
+					multiply_variable = {
+						var = THIS.num_ships_max
+						value = 1.5
+					}
+				}
+
+				set_variable = {
+					var = THIS.num_ships_capital_max
+					value = 0
+				}
+				add_to_variable = {
+					var = THIS.num_ships_capital_max
+					value = THIS.num_ships_max
+				}
+				divide_variable = {
+					var = THIS.num_ships_capital_max
+					value = 20
+				}
+
+				## Air ##
+				set_variable = {
+					var = THIS.num_planes_max
+					value = 0
+				}
+				add_to_variable = {
+					var = THIS.num_planes_max
+					value = THIS.manpower_k
+				}
+				multiply_variable = {
+					var = THIS.num_planes_max
+					value = THIS.has_war_support
+				}
+				set_variable = {
+					var = THIS.temp_num_planes_1
+					value = THIS.num_owned_states
+				}
+				multiply_variable = {
+					var = THIS.temp_num_planes_1
+					value = 7
+				}
+				set_variable = {
+					var = THIS.temp_num_planes_2
+					value = THIS.num_of_military_factories
+				}
+				multiply_variable = {
+					var = THIS.temp_num_planes_2
+					value = 30
+				}
+				set_variable = {
+					var = THIS.temp_num_planes_3
+					value = THIS.num_of_available_civilian_factories
+				}
+				multiply_variable = {
+					var = THIS.temp_num_planes_3
+					value = 10
+				}
+				add_to_variable = {
+					var = THIS.num_planes_max
+					value = THIS.temp_num_planes_1
+				}
+				add_to_variable = {
+					var = THIS.num_planes_max
+					value = THIS.temp_num_planes_2
+				}
+				add_to_variable = {
+					var = THIS.num_planes_max
+					value = THIS.temp_num_planes_3
+				}
+
+				if = {
+					limit = {
+						THIS = { has_idea = nation_status_superpower }
+					}
+					multiply_variable = {
+						var = THIS.num_planes_max
+						value = 2
+					}
+				}
+
+				set_variable = {
+					var = THIS.num_bombers_max
+					value = 0
+				}
+				add_to_variable = {
+					var = THIS.num_bombers_max
+					value = THIS.num_planes_max
+				}
+				divide_variable = {
+					var = THIS.num_bombers_max
+					value = 15
+				}
+
+				## Overmiliterisation ##
+				set_variable = {
+					var = THIS.temp_percentage_battalions
+					value = THIS.num_battalions
+				}
+				divide_variable = {
+					var = THIS.temp_percentage_battalions
+					value = THIS.num_battalions_max
+				}
+				subtract_from_variable = {
+					var = THIS.temp_percentage_battalions
+					value = 1
+				}
+				if = {
+					limit = {
+						check_variable = { THIS.temp_percentage_battalions < 0 }
+					}
+					set_variable = {
+						var = THIS.temp_percentage_battalions
+						value = 0
+					}
+				}
+
+				set_variable = {
+					var = THIS.temp_percentage_ships
+					value = THIS.num_ship
+				}
+				divide_variable = {
+					var = THIS.temp_percentage_ships
+					value = THIS.num_ships_max
+				}
+				subtract_from_variable = {
+					var = THIS.temp_percentage_ships
+					value = 1
+				}
+				if = {
+					limit = {
+						check_variable = { THIS.temp_percentage_ships < 0 }
+					}
+					set_variable = {
+						var = THIS.temp_percentage_ships
+						value = 0
+					}
+				}
+
+				set_variable = {
+					var = THIS.temp_percentage_ships_capital
+					value = THIS.num_ships_capital
+				}
+				divide_variable = {
+					var = THIS.temp_percentage_ships_capital
+					value = THIS.num_ships_capital_max
+				}
+				subtract_from_variable = {
+					var = THIS.temp_percentage_ships_capital
+					value = 1
+				}
+				if = {
+					limit = {
+						check_variable = { THIS.temp_percentage_ships_capital < 0 }
+					}
+					set_variable = {
+						var = THIS.temp_percentage_ships_capital
+						value = 0
+					}
+				}
+
+				set_variable = {
+					var = THIS.temp_percentage_planes
+					value = THIS.num_deployed_planes
+				}
+				divide_variable = {
+					var = THIS.temp_percentage_planes
+					value = THIS.num_planes_max
+				}
+				subtract_from_variable = {
+					var = THIS.temp_percentage_planes
+					value = 1
+				}
+				if = {
+					limit = {
+						check_variable = { THIS.temp_percentage_planes < 0 }
+					}
+					set_variable = {
+						var = THIS.temp_percentage_planes
+						value = 0
+					}
+				}
+
+				set_variable = {
+					var = THIS.temp_percentage_bombers
+					value = THIS.num_bombers
+				}
+				divide_variable = {
+					var = THIS.temp_percentage_bombers
+					value = THIS.num_bombers_max
+				}
+				subtract_from_variable = {
+					var = THIS.temp_percentage_bombers
+					value = 1
+				}
+				if = {
+					limit = {
+						check_variable = { THIS.temp_percentage_bombers < 0 }
+					}
+					set_variable = {
+						var = THIS.temp_percentage_bombers
+						value = 0
+					}
+				}
+
+				set_variable = {
+					var = THIS.overmiliterisation_percentage
+					value = 0
+				}
+				add_to_variable = {
+					var = THIS.overmiliterisation_percentage
+					value = THIS.temp_percentage_battalions
+				}
+				add_to_variable = {
+					var = THIS.overmiliterisation_percentage
+					value = THIS.temp_percentage_ships
+				}
+				add_to_variable = {
+					var = THIS.overmiliterisation_percentage
+					value = THIS.temp_percentage_ships_capital
+				}
+				add_to_variable = {
+					var = THIS.overmiliterisation_percentage
+					value = THIS.temp_percentage_planes
+				}
+				add_to_variable = {
+					var = THIS.overmiliterisation_percentage
+					value = THIS.temp_percentage_bombers
+				}
+				divide_variable = {
+					var = THIS.overmiliterisation_percentage
+					value = 5
+				}
+				set_variable = {
+					var = THIS.overmiliterisation_percentage_minus
+					value = THIS.overmiliterisation_percentage
+				}
+				multiply_variable = {
+					var = THIS.overmiliterisation_percentage_minus
+					value = -1
+				}
+
+				add_dynamic_modifier = {
+					modifier = overmiliterisation_modifier
+				}
+			}
+
+		}
+	}
+
+	on_monthly = {
+
+		## Unit Limiter Mechanics ##
+
+		effect = {
+			every_country = {
+				## Army ##
+				set_variable = {
+					var = THIS.temp_var
+					value = THIS.num_battalions
+				}
+				set_variable = {
+					var = THIS.num_battalions_motor
+					value = 0
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_motor
+					value = THIS.num_battalions_with_type@heavy_infantry_unit
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_motor
+					value = THIS.num_battalions_with_type@infantry_fighting_vehicle_armor
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_motor
+					value = THIS.num_battalions_with_type@main_battle_tank_armor
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_motor
+					value = THIS.num_battalions_with_type@recon_vehicle_armor
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_motor
+					value = THIS.num_battalions_with_type@spaa_vehicle_armor
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_motor
+					value = THIS.num_battalions_with_type@motorised_artillery_unit
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_motor
+					value = THIS.num_battalions_with_type@rocket_artillery_unit
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_motor
+					value = THIS.num_battalions_with_type@field_hospital
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_motor
+					value = THIS.num_battalions_with_type@logistics_company
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_motor
+					value = THIS.num_battalions_with_type@maintenance_company
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_motor
+					value = THIS.num_battalions_with_type@motorised_recon
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_motor
+					value = THIS.num_battalions_with_type@armoured_recon
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_motor
+					value = THIS.num_battalions_with_type@spaa_vehicle_support_armor
+				}
+				divide_variable = {
+					var = THIS.num_battalions_motor
+					value = THIS.temp_var
+				}
+
+				## Navy ##
+				set_variable = {
+					var = THIS.num_ships_capital
+					value = 0
+				}
+				add_to_variable = {
+					var = THIS.num_ships_capital
+					value = THIS.num_ships_with_type@carrier
+				}
+				add_to_variable = {
+					var = THIS.num_ships_capital
+					value = THIS.num_ships_with_type@battleship
+				}
+				add_to_variable = {
+					var = THIS.num_ships_capital
+					value = THIS.num_ships_with_type@battlecruiser
+				}
+
+				## Air ##
+				set_variable = {
+					var = THIS.num_bombers
+					value = 0
+				}
+				add_to_variable = {
+					var = THIS.num_bombers
+					value = THIS.num_deployed_planes_with_type@strike_bomber_equipment
+				}
+				add_to_variable = {
+					var = THIS.num_bombers
+					value = THIS.num_deployed_planes_with_type@strategic_bomber_equipment
+				}
+				add_to_variable = {
+					var = THIS.num_bombers
+					value = THIS.num_deployed_planes_with_type@stealth_bomber_equipment
+				}
+
+				#### Maximum Values ####
+
+				## Army ##
+				set_variable = {
+					var = THIS.num_battalions_max
+					value = 0
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_max
+					value = THIS.manpower_k
+				}
+				multiply_variable = {
+					var = THIS.num_battalions_max
+					value = THIS.has_war_support
+				}
+				divide_variable = {
+					var = THIS.num_battalions_max
+					value = 2
+				}
+				set_variable = {
+					var = THIS.temp_num_battalions_1
+					value = THIS.num_owned_states
+				}
+				multiply_variable = {
+					var = THIS.temp_num_battalions_1
+					value = 3
+				}
+				set_variable = {
+					var = THIS.temp_num_battalions_2
+					value = THIS.num_of_military_factories
+				}
+				multiply_variable = {
+					var = THIS.temp_num_battalions_2
+					value = 15
+				}
+				set_variable = {
+					var = THIS.temp_num_battalions_3
+					value = THIS.num_of_available_civilian_factories
+				}
+				multiply_variable = {
+					var = THIS.temp_num_battalions_3
+					value = 12
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_max
+					value = THIS.temp_num_battalions_1
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_max
+					value = THIS.temp_num_battalions_2
+				}
+				add_to_variable = {
+					var = THIS.num_battalions_max
+					value = THIS.temp_num_battalions_3
+				}
+
+				if = {
+					limit = {
+						THIS = { has_idea = nation_status_superpower }
+					}
+					multiply_variable = {
+						var = THIS.num_battalions_max
+						value = 2
+					}
+				}
+
+				## Navy ##
+				set_variable = {
+					var = THIS.num_ships_max
+					value = 0
+				}
+				add_to_variable = {
+					var = THIS.num_ships_max
+					value = THIS.manpower_k
+				}
+				multiply_variable = {
+					var = THIS.num_ships_max
+					value = THIS.has_war_support
+				}
+				divide_variable = {
+					var = THIS.num_ships_max
+					value = 10
+				}
+				set_variable = {
+					var = THIS.temp_num_ships_1
+					value = THIS.num_owned_states
+				}
+				divide_variable = {
+					var = THIS.temp_num_ships_1
+					value = 2
+				}
+				set_variable = {
+					var = THIS.temp_num_ships_2
+					value = THIS.num_of_naval_factories
+				}
+				multiply_variable = {
+					var = THIS.temp_num_ships_2
+					value = 15
+				}
+				add_to_variable = {
+					var = THIS.num_ships_max
+					value = THIS.temp_num_ships_1
+				}
+				add_to_variable = {
+					var = THIS.num_ships_max
+					value = THIS.temp_num_ships_2
+				}
+
+				if = {
+					limit = {
+						THIS = { has_idea = nation_status_superpower }
+					}
+					multiply_variable = {
+						var = THIS.num_ships_max
+						value = 1.5
+					}
+				}
+
+				set_variable = {
+					var = THIS.num_ships_capital_max
+					value = 0
+				}
+				add_to_variable = {
+					var = THIS.num_ships_capital_max
+					value = THIS.num_ships_max
+				}
+				divide_variable = {
+					var = THIS.num_ships_capital_max
+					value = 20
+				}
+
+				## Air ##
+				set_variable = {
+					var = THIS.num_planes_max
+					value = 0
+				}
+				add_to_variable = {
+					var = THIS.num_planes_max
+					value = THIS.manpower_k
+				}
+				multiply_variable = {
+					var = THIS.num_planes_max
+					value = THIS.has_war_support
+				}
+				set_variable = {
+					var = THIS.temp_num_planes_1
+					value = THIS.num_owned_states
+				}
+				multiply_variable = {
+					var = THIS.temp_num_planes_1
+					value = 7
+				}
+				set_variable = {
+					var = THIS.temp_num_planes_2
+					value = THIS.num_of_military_factories
+				}
+				multiply_variable = {
+					var = THIS.temp_num_planes_2
+					value = 30
+				}
+				set_variable = {
+					var = THIS.temp_num_planes_3
+					value = THIS.num_of_available_civilian_factories
+				}
+				multiply_variable = {
+					var = THIS.temp_num_planes_3
+					value = 10
+				}
+				add_to_variable = {
+					var = THIS.num_planes_max
+					value = THIS.temp_num_planes_1
+				}
+				add_to_variable = {
+					var = THIS.num_planes_max
+					value = THIS.temp_num_planes_2
+				}
+				add_to_variable = {
+					var = THIS.num_planes_max
+					value = THIS.temp_num_planes_3
+				}
+
+				if = {
+					limit = {
+						THIS = { has_idea = nation_status_superpower }
+					}
+					multiply_variable = {
+						var = THIS.num_planes_max
+						value = 2
+					}
+				}
+
+				set_variable = {
+					var = THIS.num_bombers_max
+					value = 0
+				}
+				add_to_variable = {
+					var = THIS.num_bombers_max
+					value = THIS.num_planes_max
+				}
+				divide_variable = {
+					var = THIS.num_bombers_max
+					value = 15
+				}
+
+				## Overmiliterisation ##
+				set_variable = {
+					var = THIS.temp_percentage_battalions
+					value = THIS.num_battalions
+				}
+				divide_variable = {
+					var = THIS.temp_percentage_battalions
+					value = THIS.num_battalions_max
+				}
+				subtract_from_variable = {
+					var = THIS.temp_percentage_battalions
+					value = 1
+				}
+				if = {
+					limit = {
+						check_variable = { THIS.temp_percentage_battalions < 0 }
+					}
+					set_variable = {
+						var = THIS.temp_percentage_battalions
+						value = 0
+					}
+				}
+
+				set_variable = {
+					var = THIS.temp_percentage_ships
+					value = THIS.num_ship
+				}
+				divide_variable = {
+					var = THIS.temp_percentage_ships
+					value = THIS.num_ships_max
+				}
+				subtract_from_variable = {
+					var = THIS.temp_percentage_ships
+					value = 1
+				}
+				if = {
+					limit = {
+						check_variable = { THIS.temp_percentage_ships < 0 }
+					}
+					set_variable = {
+						var = THIS.temp_percentage_ships
+						value = 0
+					}
+				}
+
+				set_variable = {
+					var = THIS.temp_percentage_ships_capital
+					value = THIS.num_ships_capital
+				}
+				divide_variable = {
+					var = THIS.temp_percentage_ships_capital
+					value = THIS.num_ships_capital_max
+				}
+				subtract_from_variable = {
+					var = THIS.temp_percentage_ships_capital
+					value = 1
+				}
+				if = {
+					limit = {
+						check_variable = { THIS.temp_percentage_ships_capital < 0 }
+					}
+					set_variable = {
+						var = THIS.temp_percentage_ships_capital
+						value = 0
+					}
+				}
+
+				set_variable = {
+					var = THIS.temp_percentage_planes
+					value = THIS.num_deployed_planes
+				}
+				divide_variable = {
+					var = THIS.temp_percentage_planes
+					value = THIS.num_planes_max
+				}
+				subtract_from_variable = {
+					var = THIS.temp_percentage_planes
+					value = 1
+				}
+				if = {
+					limit = {
+						check_variable = { THIS.temp_percentage_planes < 0 }
+					}
+					set_variable = {
+						var = THIS.temp_percentage_planes
+						value = 0
+					}
+				}
+
+				set_variable = {
+					var = THIS.temp_percentage_bombers
+					value = THIS.num_bombers
+				}
+				divide_variable = {
+					var = THIS.temp_percentage_bombers
+					value = THIS.num_bombers_max
+				}
+				subtract_from_variable = {
+					var = THIS.temp_percentage_bombers
+					value = 1
+				}
+				if = {
+					limit = {
+						check_variable = { THIS.temp_percentage_bombers < 0 }
+					}
+					set_variable = {
+						var = THIS.temp_percentage_bombers
+						value = 0
+					}
+				}
+
+				set_variable = {
+					var = THIS.overmiliterisation_percentage
+					value = 0
+				}
+				add_to_variable = {
+					var = THIS.overmiliterisation_percentage
+					value = THIS.temp_percentage_battalions
+				}
+				add_to_variable = {
+					var = THIS.overmiliterisation_percentage
+					value = THIS.temp_percentage_ships
+				}
+				add_to_variable = {
+					var = THIS.overmiliterisation_percentage
+					value = THIS.temp_percentage_ships_capital
+				}
+				add_to_variable = {
+					var = THIS.overmiliterisation_percentage
+					value = THIS.temp_percentage_planes
+				}
+				add_to_variable = {
+					var = THIS.overmiliterisation_percentage
+					value = THIS.temp_percentage_bombers
+				}
+				divide_variable = {
+					var = THIS.overmiliterisation_percentage
+					value = 5
+				}
+				set_variable = {
+					var = THIS.overmiliterisation_percentage_minus
+					value = THIS.overmiliterisation_percentage
+				}
+				multiply_variable = {
+					var = THIS.overmiliterisation_percentage_minus
+					value = -1
+				}
+			}
+		}
+	}
+
+}

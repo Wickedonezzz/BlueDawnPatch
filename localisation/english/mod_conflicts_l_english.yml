@@ -1,0 +1,6 @@
+﻿l_english:          
+ get_map_logo_gif:0 "[GetMapLogoGif]"
+ doomsday_minutes_get:0 "§R[GetDoomsdayQuote]§!"
+ doomsday_minutes_text:0 "We are [?global.doomsday_minutes|0] minutes away from midnight"
+ doomsday_minutes_1:0 "We are 1 minute away from midnight"
+ doomsday_minutes_0:0 "it's joever"

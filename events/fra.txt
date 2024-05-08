@@ -1,0 +1,223 @@
+add_namespace = france_mod
+
+#ELECTIONS BOI#
+country_event = {
+	id = france_mod.1
+	title = france_mod.1.t
+	desc = france_mod.1.d
+	picture = GFX_report_event_spark
+	
+	trigger = {
+		original_tag = FRA
+		date > 2002.04.15
+	}
+	
+	fire_only_once = yes
+	
+		#succdem time#
+	option = {
+		name = france_mod.1.a
+
+		set_politics = {
+			ruling_party = social_democracy
+			elections_allowed = no
+			last_election = "2000.12.17"
+			election_frequency = 48
+		}
+			
+		add_popularity = {
+			ideology = social_democracy
+			popularity = 0.05
+		}
+		
+		news_event = {id = old_times_news.134}
+			
+		ai_chance = {
+		factor = 40
+		}
+	}
+	
+		#conservative blue#
+	option = {
+		name = france_mod.1.b
+			
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.03
+		}		
+		news_event = {id = old_times_news.133}
+			
+		ai_chance = {
+		factor = 35
+		}
+	}
+
+		#far-right win#
+	option = {
+		name = france_mod.1.c
+			
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+			last_election = "2000.12.17"
+			election_frequency = 48
+		}	
+			
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.15
+		}
+
+		country_event = {id = france_mod.2 days = 30}	
+
+		news_event = {id = old_times_news.135}
+			
+		ai_chance = {
+		factor = 20
+		}
+	}
+
+		#trot win#
+	option = {
+		name = france_mod.1.de
+
+		set_politics = {
+			ruling_party = socialism
+			elections_allowed = no
+			last_election = "2000.12.17"
+			election_frequency = 48
+		}	
+			
+		add_popularity = {
+			ideology = socialism
+			popularity = 0.15
+		}
+		
+		set_party_name = {
+			ideology = socialism
+			name = FRA_socialism_trot_party
+			long_name = FRA_socialism_trot_party_long
+		}
+
+		news_event = {id = old_times_news.136}
+			
+		country_event = {id = france_mod.2 days = 30}	
+			
+		ai_chance = {
+		factor = 15
+		}
+	}
+
+}
+
+#army coup#
+country_event = {
+	id = france_mod.2
+	title = france_mod.2.t
+	desc = france_mod.2.d
+	picture = GFX_report_event_spark
+	
+	is_triggered_only = yes
+	
+		#bye bye#
+	option = {
+		name = france_mod.2.a
+
+		news_event = {id = old_times_news.137}
+		
+		add_country_leader_role = {
+			character = FRA_bruno_cuche
+			promote_leader = yes
+			country_leader = {
+				ideology = military_junta_auth
+			}
+		}
+		
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+			last_election = "2000.12.17"
+			election_frequency = 48
+		}	
+			
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.15
+		}		
+		
+		news_event = {id = old_times_news.137}
+		country_event = {id = france_mod.3 days = 250}	
+			
+		set_party_name = {
+			ideology = socialism
+			name = FRA_socialism_party
+			long_name = FRA_socialism_party_long
+		}	
+			
+		ai_chance = {
+		factor = 40
+		}
+		
+					#no#
+		#option = {
+		#	name = france_mod.2.b
+		#					
+		#	ai_chance = {
+		#	factor = 30
+		#	}
+		#}
+	}
+
+}
+
+#democracy is back woohoo#
+country_event = {
+	id = france_mod.3
+	title = france_mod.3.t
+	desc = france_mod.3.d
+	picture = GFX_report_event_spark
+	
+	is_triggered_only = yes
+	
+		#bye bye#
+	option = {
+		name = france_mod.3.a
+	
+		retire_country_leader = yes
+		
+		set_politics = {
+			ruling_party = liberalism
+			elections_allowed = no
+			last_election = "2000.12.17"
+			election_frequency = 48
+		}	
+			
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.15
+		}		
+
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.15
+		}	
+		add_popularity = {
+			ideology = social_democracy
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+					
+		ai_chance = {
+		factor = 40
+		}
+	}
+
+}
+

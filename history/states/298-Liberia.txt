@@ -1,0 +1,36 @@
+
+state={
+	id=298
+	name="STATE_298"
+	resources={
+		rubber=6.000
+	}
+
+	history={
+		owner = LIB
+		add_core_of = LIB
+		add_core_of = LUR		
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 3
+			arms_factory = 2
+			7959 = {
+				naval_base = 2
+
+			}
+
+		}
+		victory_points = {
+			7959 3 
+		}
+
+	}
+
+	provinces={
+		7959 13508 
+	}
+	manpower=845000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

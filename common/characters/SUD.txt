@@ -1,0 +1,45 @@
+characters = {
+
+	SUD_omar_al_bashir = {
+		name = "Omar Al-Bashir"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Africa/Omar_al-Bashir.dds"
+			}
+		}
+		country_leader = {
+			ideology = paternal_autocracy_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}		
+		field_marshal={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	
+	SUD_army_division_commander_1 = {
+		name = "1st Army Division Command"
+		portraits = {
+			#army = {
+			#	large = "gfx/leaders/Africa/Mengistu_Haile_Mariam.dds"
+			#}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+}

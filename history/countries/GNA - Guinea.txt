@@ -1,0 +1,18 @@
+﻿capital = 780
+
+set_convoys = 10
+
+add_ideas = west_africa_ECOWAS
+
+recruit_character = GNA_kansana_conté
+recruit_character = GNA_fofana
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 100
+}

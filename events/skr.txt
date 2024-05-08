@@ -1,0 +1,169 @@
+add_namespace = skr_mod
+
+#military occ or un time
+country_event = {
+	id = skr_mod.1
+	title = skr_mod.1.t
+	desc = skr_mod.1.d
+	picture = GFX_report_event_spark
+	
+    is_triggered_only = yes
+
+	fire_only_once = yes
+
+		#military occupation, i forgot my percs#
+	option = {
+		name = skr_mod.1.a
+		country_event = {id = skr_mod.4 days = 730}
+		KOR = {
+			transfer_state = 527
+			transfer_state = 945
+			transfer_state = 943
+			transfer_state = 944
+		}
+		puppet = KOR
+		KOR = {
+			add_ideas = KOR_mil_occupation
+			set_politics = {
+				ruling_party = paternal_autocracy
+				elections_allowed = no
+			}			
+			set_cosmetic_tag = KOR_SKR_puppet
+			set_popularities = {
+				communism = 25
+				liberalism = 25
+				fascism = 10
+				paternal_autocracy = 40
+			}
+			set_party_name = {
+				ideology = neutrality
+				name = KOR_neutrality_unbanned_party
+			}	
+			set_party_name = {
+				ideology = paternal_autocracy
+				name = KOR_paternal_autocracy_unbanned_party
+			}			
+			set_party_name = {
+				ideology = liberalism
+				name = KOR_liberalism_unbanned_party
+			}			
+			outlaw_communism = yes
+			outlaw_fascism = yes
+		}		
+	}
+	
+		#united nations occupation#
+	option = {
+		name = skr_mod.1.b
+		KOR = {
+			transfer_state = 527
+			transfer_state = 945
+			transfer_state = 943
+			transfer_state = 944
+		}
+		KOR = {
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}			
+			set_cosmetic_tag = KOR_un
+			set_popularities = {
+				communism = 25
+				liberalism = 25
+				fascism = 10
+				neutrality = 40
+			}
+			set_party_name = {
+				ideology = neutrality
+				name = KOR_neutrality_unbanned_party
+			}	
+			set_party_name = {
+				ideology = paternal_autocracy
+				name = KOR_paternal_autocracy_unbanned_party
+			}			
+			set_party_name = {
+				ideology = liberalism
+				name = KOR_liberalism_unbanned_party
+			}			
+			outlaw_communism = yes
+			outlaw_fascism = yes
+		}
+	}	
+}
+
+#elections 2002
+country_event = {
+	id = skr_mod.2
+	title = skr_mod.2.t
+	desc = skr_mod.2.d
+	picture = GFX_report_event_spark
+	
+    is_triggered_only = yes
+
+	fire_only_once = yes
+
+		#liberals#
+	option = {
+		name = skr_mod.2.a
+		retire_country_leader = yes
+		promote_character = SKR_roh_moo_hyun
+		set_popularities = {
+			liberalism = 49
+			democratic = 47
+			social_democracy = 4
+		}
+	}
+	
+}
+
+#elections 2007
+country_event = {
+	id = skr_mod.3
+	title = skr_mod.3.t
+	desc = skr_mod.3.d
+	picture = GFX_report_event_spark
+	
+      is_triggered_only = yes
+
+	fire_only_once = yes
+
+		#conservatives#
+	option = {
+		name = skr_mod.3.a
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+		}			
+		set_popularities = {
+			democratic = 49
+			liberalism = 26
+			social_democracy = 3
+			neutrality = 22
+		}
+	}
+	
+}
+
+
+
+#unification
+country_event = {
+	id = skr_mod.4
+	title = skr_mod.4.t
+	desc = skr_mod.4.d
+	picture = GFX_report_event_spark
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+		#rip#
+	option = {
+		name = skr_mod.4.a
+		annex_country = {
+			target = KOR
+			transfer_troops = yes
+		}
+
+	}
+}

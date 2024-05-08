@@ -1,0 +1,1452 @@
+occupation_decisions = {
+
+	OCC_SOV_fate_of_eastern_europe = {
+	
+		icon = generic_prepare_civil_war
+	
+		allowed = {
+			original_tag = SOV
+		}
+		available = {
+			always = no
+		}
+		
+		activation = {    
+			NOT = {has_government = fascism}
+			SOV = {
+				owns_state = 10
+				owns_state = 70
+				owns_state = 43
+				owns_state = 46
+			}		
+			OR = {
+				SOV = {owns_state = 48}
+				YUG = {owns_state = 48}
+			}
+		}
+		visible = {
+			has_war = no
+
+		}
+		priority = 9999
+		
+		is_good = yes
+		selectable_mission = no
+		days_mission_timeout = 2
+		ai_will_do = {
+			factor = 0
+		}
+		timeout_effect = { 
+			release = POL
+			puppet = POL
+					POL = {
+						set_cosmetic_tag = POL_com_puppet
+							set_popularities = {
+								democratic = 30
+								fascism = 10
+								communism = 45
+								reformed_communism = 5
+								neutrality = 10
+							}						
+							set_party_name = {
+								ideology = communism
+								name = POL_communism_restored_party
+								long_name = POL_communism_restored_party_long
+							}
+							set_party_name = {
+								ideology = reformed_communism
+								name = POL_reformed_communism_restored_party
+								long_name = POL_reformed_communism_restored_party_long
+							}
+					}
+			release = HUN
+			puppet = HUN
+					HUN = {
+						remove_ideas = HUN_red_scum
+						remove_ideas = HUN_the_century_of_humiliation
+						remove_ideas = HUN_humiliation_revenged
+						set_cosmetic_tag = HUN_com_puppet
+							set_popularities = {
+								democratic = 10
+								fascism = 35
+								communism = 30
+								reformed_communism = 15
+								paternal_autocracy = 10
+							}				
+
+					}	
+			release = ROM
+			puppet = ROM
+					ROM = {
+						set_cosmetic_tag = ROM_com_puppet
+							set_popularities = {
+								democratic = 20
+								fascism = 25
+								communism = 40
+								social_democracy = 10
+								liberalism = 5
+							}	
+
+					}	
+			release = SLO
+			puppet = SLO
+					SLO = {
+						set_cosmetic_tag = SLO_com_puppet
+							set_popularities = {
+								neutrality = 30
+								fascism = 15
+								communism = 30
+								reformed_communism = 15
+								social_democracy = 10
+							}			
+
+					}
+			release = BUL
+			puppet = BUL
+					BUL = {
+						set_cosmetic_tag = BUL_com_puppet
+							set_popularities = {
+								liberalism = 15
+								democratic = 15
+								fascism = 5
+								paternal_autocracy = 5
+								communism = 40
+								socialism = 10
+								social_democracy = 10
+							}								
+					}						
+					
+		}	
+	}
+	
+	OCC_SOV_fate_of_nato_europe = {
+	
+		icon = generic_prepare_civil_war
+	
+		allowed = {
+			original_tag = SOV
+		}
+		available = {
+			always = no
+		}
+		
+		activation = {    
+			has_global_flag = usa_agreed_to_sign_peace_in_europe
+		}
+		visible = {
+			has_war = no
+
+		}
+		priority = 9999
+		
+		is_good = yes
+		fire_only_once = yes
+		selectable_mission = no
+		days_mission_timeout = 2
+		ai_will_do = {
+			factor = 0
+		}
+		timeout_effect = { 
+			ENG = {
+			leave_faction = yes
+			remove_ideas = usa_aligned_state
+			}
+			if = {
+				limit = {country_exists = SCO}
+				SCO = {
+				leave_faction = yes
+				remove_ideas = usa_aligned_state
+				}
+			}
+			release = GER
+			puppet = GER
+					GER = {
+						set_cosmetic_tag = GER_com_puppet
+							add_popularity = {
+								ideology = communism
+								popularity = -0.25
+							}
+							add_popularity = {
+								ideology = reformed_communism
+								popularity = 0.15
+							}
+							add_popularity = {
+								ideology = social_democracy
+								popularity = 0.15
+							}
+					}
+			release = FRA
+			puppet = FRA
+					FRA = {
+						promote_character = FRA_marie_buffet
+						set_cosmetic_tag = FRA_com_puppet
+							add_popularity = {
+								ideology = communism
+								popularity = -0.20
+							}
+							add_popularity = {
+								ideology = socialism
+								popularity = 0.20
+							}
+							add_popularity = {
+								ideology = liberalism
+								popularity = 0.10
+							}
+							add_popularity = {
+								ideology = democratic
+								popularity = 0.10
+							}							
+					}							
+			release = BEL
+			puppet = BEL
+					BEL = {
+						set_cosmetic_tag = BEL_com_puppet
+							add_popularity = {
+								ideology = communism
+								popularity = -0.25
+							}
+							add_popularity = {
+								ideology = fascism
+								popularity = 0.10
+							}
+							add_popularity = {
+								ideology = democratic
+								popularity = 0.20
+							}
+							add_popularity = {
+								ideology = social_democracy
+								popularity = 0.10
+							}									
+							add_popularity = {
+								ideology = liberalism
+								popularity = 0.10
+							}							
+					}	
+			release = HOL
+			puppet = HOL
+					HOL = {
+						set_cosmetic_tag = HOL_com_puppet
+							add_popularity = {
+								ideology = communism
+								popularity = -0.30
+							}
+							add_popularity = {
+								ideology = social_democracy
+								popularity = 0.15
+							}
+							add_popularity = {
+								ideology = liberalism
+								popularity = 0.20
+							}
+							add_popularity = {
+								ideology = democratic
+								popularity = 0.10
+							}							
+					}	
+			release = LUX
+			puppet = LUX
+					LUX = {
+						set_cosmetic_tag = LUX_com_puppet
+							add_popularity = {
+								ideology = communism
+								popularity = -0.20
+							}
+							add_popularity = {
+								ideology = social_democracy
+								popularity = 0.25
+							}
+							add_popularity = {
+								ideology = liberalism
+								popularity = 0.25
+							}
+					}		
+			release = ITA
+			puppet = ITA
+					ITA = {
+						set_cosmetic_tag = ITA_com_puppet
+						swap_ideas = {
+							remove_idea = ITA_second_republic
+							add_idea = ITA_third_republic
+						
+						}
+							add_popularity = {
+								ideology = communism
+								popularity = -0.20
+							}
+							add_popularity = {
+								ideology = socialism
+								popularity = 0.10
+							}
+							add_popularity = {
+								ideology = social_democracy
+								popularity = 0.15
+							}
+							add_popularity = {
+								ideology = democratic
+								popularity = 0.10
+							}
+					}			
+			YUG = {
+				transfer_state = 937
+			}
+			release = SPR
+			puppet = SPR
+					SPR = {
+						set_cosmetic_tag = SPR_com_puppet
+							add_popularity = {
+								ideology = communism
+								popularity = -0.20
+							}
+							add_popularity = {
+								ideology = socialism
+								popularity = 0.15
+							}
+							add_popularity = {
+								ideology = social_democracy
+								popularity = 0.15
+							}
+							add_popularity = {
+								ideology = liberalism
+								popularity = 0.15
+							}
+					}
+			release = POR
+			puppet = POR
+					POR = {
+						set_cosmetic_tag = POR_com_puppet
+							add_popularity = {
+								ideology = communism
+								popularity = -0.20
+							}
+							add_popularity = {
+								ideology = socialism
+								popularity = 0.25
+							}
+							add_popularity = {
+								ideology = social_democracy
+								popularity = 0.25
+							}
+					}	
+			release = DEN
+			puppet = DEN
+					DEN = {
+						set_cosmetic_tag = DEN_com_puppet
+							add_popularity = {
+								ideology = communism
+								popularity = -0.20
+							}
+							add_popularity = {
+								ideology = socialism
+								popularity = 0.25
+							}
+					}	
+			release = NOR
+			puppet = NOR
+					NOR = {
+						set_cosmetic_tag = NOR_com_puppet
+							add_popularity = {
+								ideology = communism
+								popularity = -0.20
+							}
+							add_popularity = {
+								ideology = socialism
+								popularity = 0.15
+							}
+							add_popularity = {
+								ideology = reformed_communism
+								popularity = 0.15
+							}
+					}	
+			if = {
+				limit = {
+					NOT = {CZE = {is_puppet_of = SOV}}
+				}
+				release = CZE
+				puppet = CZE
+						CZE = {
+							set_cosmetic_tag = CZE_com_puppet
+								add_popularity = {
+									ideology = communism
+									popularity = -0.20
+								}
+								add_popularity = {
+									ideology = socialism
+									popularity = 0.15
+								}
+								add_popularity = {
+									ideology = liberalism
+									popularity = 0.25
+								}
+						}	
+			}
+			release = GRE
+			puppet = GRE
+					GRE = {
+						set_cosmetic_tag = GRE_com_puppet
+							add_popularity = {
+								ideology = communism
+								popularity = -0.20
+							}
+							add_popularity = {
+								ideology = socialism
+								popularity = 0.15
+							}
+							add_popularity = {
+								ideology = reformed_communism
+								popularity = 0.05
+							}
+							add_popularity = {
+								ideology = paternal_autocracy
+								popularity = 0.05
+							}
+							add_popularity = {
+								ideology = fascism
+								popularity = 0.10
+							}
+					}	
+			release = TUR
+			puppet = TUR
+					TUR = {
+						set_cosmetic_tag = TUR_com_puppet
+							add_popularity = {
+								ideology = communism
+								popularity = -0.25
+							}
+							add_popularity = {
+								ideology = socialism
+								popularity = 0.15
+							}
+							add_popularity = {
+								ideology = reformed_communism
+								popularity = 0.15
+							}
+							add_popularity = {
+								ideology = fascism
+								popularity = 0.15
+							}
+							add_popularity = {
+								ideology = paternal_autocracy
+								popularity = 0.15
+							}
+					}
+		}	
+	}
+	
+	OCC_SOV_ask_for_peace_with_nato = {
+	
+		icon = generic_prepare_civil_war
+	
+		allowed = {
+			original_tag = SOV
+		}
+		available = {
+			GER = {has_capitulated = yes}
+			LUX = {has_capitulated = yes}
+			HOL = {has_capitulated = yes}
+			BEL = {has_capitulated = yes}
+			ITA = {has_capitulated = yes}
+			SPR = {has_capitulated = yes}	
+			POR = {has_capitulated = yes}			
+			DEN = {has_capitulated = yes}			
+			NOR = {has_capitulated = yes}			
+			GRE = {has_capitulated = yes}			
+			TUR = {has_capitulated = yes}				
+		}
+		
+		visible = {
+			has_war_with = USA
+			NOT = {has_government = fascism}
+		}
+		priority = 9999
+		
+		cost = 0
+		days_remove = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = { 
+			USA = {country_event = {id = peacetalks.1}}
+					
+		}	
+	}
+
+	OCC_USA_ask_for_peace_with_soviet = {
+	
+		icon = generic_prepare_civil_war
+	
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			POL = {has_capitulated = yes}
+			SLO = {has_capitulated = yes}
+			HUN = {has_capitulated = yes}
+			ROM = {has_capitulated = yes}
+			BUL = {has_capitulated = yes}
+			if = {
+				limit = {YUG = {is_in_faction_with = SOV}}
+				YUG = {has_capitulated = yes}				
+				ALB = {has_capitulated = yes}
+					
+			}				
+		}
+		
+		visible = {
+			has_war_with = SOV
+		}
+		priority = 9999
+		
+		cost = 0
+		days_remove = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = { 
+			SOV = {country_event = {id = peacetalks.4}}
+					
+		}	
+	}
+	
+	OCC_USA_fate_of_soviet_europe = {
+	
+		icon = generic_prepare_civil_war
+	
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			always = no
+		}
+		
+		activation = {    
+			has_global_flag = sov_agreed_to_sign_peace_in_europe
+		}
+		visible = {
+			has_war = no
+
+		}
+		priority = 9999
+		
+		is_good = yes
+		fire_only_once = yes
+		selectable_mission = no
+		days_mission_timeout = 2
+		ai_will_do = {
+			factor = 0
+		}
+		timeout_effect = { 
+			end_puppet = POL
+			POL = {
+				set_politics = {
+					ruling_party = social_democracy
+					last_election = "1998.9.8"
+					election_frequency = 36
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 25
+					social_democracy = 47
+					fascism = 13
+					communism = 5
+					neutrality = 10
+				}
+				drop_cosmetic_tag = yes
+			}
+			end_puppet = SLO
+			SLO = {
+				set_politics = {
+					ruling_party = social_democracy
+					last_election = "1930.11.9"
+					election_frequency = 48
+					elections_allowed = no
+				}
+
+				set_popularities = {
+					communism = 3
+					reformed_communism = 0
+					social_democracy = 32
+					liberalism = 0
+					democratic = 20
+					neutrality = 32
+					paternal_autocracy = 10 #hungarian minority 
+					fascism = 3 #SLOTA HOLY SHIT SLOTA PARTY
+				}
+				drop_cosmetic_tag = yes
+			}
+			end_puppet = HUN
+			HUN = {
+				set_politics = {
+					ruling_party = democratic
+					last_election = "2000.3.31"
+					election_frequency = 48
+					elections_allowed = no #elections by events
+				}
+				set_popularities = {
+					democratic = 30
+					socialism = 10
+					social_democracy = 30
+					liberalism = 10
+					fascism = 7
+					paternal_autocracy = 3
+					communism = 4
+					neutrality = 6
+				}
+				drop_cosmetic_tag = yes
+			}
+			end_puppet = ROM
+			ROM = {
+				set_politics = {
+					ruling_party = social_democracy
+					last_election = "1930.11.9"
+					election_frequency = 48
+					elections_allowed = no
+				}
+
+				set_popularities = {
+					communism = 0
+					reformed_communism = 0
+					neutrality = 7 #hungarians
+					social_democracy = 35
+					liberalism = 15
+					democratic = 10
+					neutrality = 6
+					paternal_autocracy = 0
+					fascism = 27
+				}
+				drop_cosmetic_tag = yes
+			}
+			end_puppet = BUL
+			BUL = {
+				set_politics = {
+					ruling_party = democratic
+					last_election = "1930.11.9"
+					election_frequency = 48
+					elections_allowed = no
+				}
+
+				set_popularities = {
+					communism = 0
+					liberalism = 20
+					social_democracy = 36
+					paternal_autocracy = 5
+					democratic = 35
+					neutrality = 4
+					fascism = 0
+				}
+				drop_cosmetic_tag = yes
+			}
+			end_puppet = FIN
+			FIN = {
+				set_politics = {
+					ruling_party = social_democracy
+					last_election = "1930.11.9"
+					election_frequency = 48
+					elections_allowed = no
+				}
+
+				set_popularities = {
+					communism = 0
+					liberalism = 30
+					social_democracy = 29
+					paternal_autocracy = 0
+					democratic = 31
+					neutrality = 0
+					fascism = 10
+				}
+				drop_cosmetic_tag = yes
+			}			
+			USA = { add_to_faction = POL }
+			USA = { add_to_faction = SLO }
+			USA = { add_to_faction = HUN }
+			USA = { add_to_faction = ROM }
+			USA = { add_to_faction = BUL }
+			USA = { add_to_faction = FIN }
+			
+			if = {
+				limit = {YUG = {is_in_faction_with = SOV}}
+				end_puppet = YUG
+				YUG = {
+					set_politics = {
+						ruling_party = liberalism
+						last_election = "1991.5.3"
+						election_frequency = 36
+						elections_allowed = no
+					}
+					
+					set_popularities = {
+						liberalism = 34
+						social_democracy = 15 
+						democratic = 15
+						fascism = 16
+						paternal_autocracy = 5
+						reformed_communism = 15
+						communism = 0
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = YUG
+				}
+				end_puppet = ALB
+				ALB = {
+					set_politics = {
+						ruling_party = socialism
+					}
+					set_popularities = {
+						communism = 0
+						reformed_communism = 5
+						socialism = 40
+						liberalism = 15
+						democratic = 25
+						neutrality = 0
+						fascism = 15
+					}
+					drop_cosmetic_tag = yes
+				}
+				USA = { add_to_faction = YUG }
+				USA = { add_to_faction = ALB }
+			}				
+
+			if = {
+				limit = {CZE = {is_in_faction_with = SOV}}
+				end_puppet = CZE
+				CZE = {
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1930.11.9"
+						election_frequency = 48
+						elections_allowed = no
+					}
+
+					set_popularities = {
+						communism = 15
+						reformed_communism = 0
+						social_democracy = 37
+						liberalism = 13
+						democratic = 25
+						neutrality = 0
+						paternal_autocracy = 0
+						fascism = 10
+					}
+					drop_cosmetic_tag = yes
+				}
+				USA = { add_to_faction = CZE }
+			}
+			
+		}	
+	}
+	
+	ISR_consoom_palestine = {
+		icon = GFX_decision_red_flag_holding_hand
+
+		allowed = {
+			original_tag = ISR
+		}
+		available = {
+			has_war = yes
+		}
+		visible = {
+		}
+		
+		cost = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 99
+		}
+		complete_effect = { 
+			annex_country = {
+				target = PAL
+				transfer_troops = yes
+			}
+			PAL = {
+				set_cosmetic_tag = PAL
+			}
+		}
+	}
+	
+}
+
+foreign_policy = {
+
+	foreign_policy_back_a_side_in_eth = {
+		icon = GFX_decision_red_flag_holding_hand
+
+		allowed = {
+			NOT = {
+			original_tag = ETH
+			original_tag = ERI
+			original_tag = ETV
+			}		
+		}
+		available = {
+		}
+		visible = {
+			ETH = {
+			has_war_with = ERI
+			}
+		}
+		
+		cost = 20
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = { 
+			country_event = {id=foreign_policy.1}
+		}
+	}
+
+	foreign_policy_back_a_side_in_cog = {
+		icon = GFX_decision_red_flag_holding_hand
+
+		allowed = {
+			NOT = {
+			original_tag = COG
+			original_tag = RCK
+			original_tag = RGO
+			}		
+		}
+		available = {
+		}
+		visible = {
+			OR = {
+				COG = {
+				has_war_with = RCK
+				}
+				COG = {
+				has_war_with = RGO
+				}		
+			}
+		}
+		
+		cost = 20
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = { 
+			country_event = {id=foreign_policy.2}
+		}
+	}
+
+	foreign_policy_back_a_side_in_sud = {
+		icon = GFX_decision_red_flag_holding_hand
+
+		allowed = {
+			NOT = {
+				original_tag = SUD
+				original_tag = SPL
+			}		
+		}
+		available = {
+		}
+		visible = {
+			SUD = {
+			has_war_with = SPL
+			}
+		}
+		
+		cost = 20
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = { 
+			country_event = {id=foreign_policy.3}
+		}
+	}
+
+	foreign_policy_back_a_side_in_yem = {
+		icon = GFX_decision_red_flag_holding_hand
+
+		allowed = {
+			NOT = {
+				original_tag = YEM
+				original_tag = SAU
+				original_tag = DYR
+				original_tag = EGY				
+			}		
+		}
+		available = {
+		}
+		visible = {
+			OR = {
+				YEM = {
+				has_war_with = DYR
+				}
+				SAU = {
+				has_war_with = DYR
+				}
+			}	
+			DYR = {
+				NOT = {owns_state = 901}		
+			}
+		}
+		
+		cost = 20
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = { 
+			country_event = {id=foreign_policy.4}
+		}
+	}
+	
+	foreign_policy_back_a_side_in_yug = {
+		icon = GFX_decision_red_flag_holding_hand
+
+		allowed = {
+			NOT = {
+				original_tag = YUG
+				original_tag = BOS
+				original_tag = KOS
+				original_tag = MAC
+				original_tag = HRZ
+				original_tag = CRO
+			}		
+		}
+		available = {
+		}
+		visible = {
+			OR = {
+				YUG = {
+				has_war_with = BOS
+				}
+				YUG = {
+				has_war_with = KOS
+				}			
+			}	
+
+		}
+		
+		cost = 20
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = { 
+			country_event = {id=foreign_policy.5}
+		}
+	}
+
+	foreign_policy_back_a_side_in_saf = {
+		icon = GFX_decision_red_flag_holding_hand
+
+		allowed = {
+			NOT = {
+				original_tag = SAF
+				original_tag = ANC
+			}		
+		}
+		available = {
+		}
+		visible = {
+			SAF = {
+				has_war_with = ANC
+			}
+
+		}
+		
+		cost = 20
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = { 
+			country_event = {id=foreign_policy.6}
+		}
+	}
+
+	foreign_policy_back_a_side_in_great_middle_east_war = {
+		icon = GFX_decision_red_flag_holding_hand
+
+		allowed = {
+			NOT = {
+				original_tag = SAU
+				original_tag = OMA
+				original_tag = UAE				
+				original_tag = DYR
+				tag = BGD
+				
+			}
+		}
+		available = {
+		}
+		visible = {
+			has_global_flag = great_middle_east_war
+			OR = {
+			DYR = {owns_state = 901} #scenario 1
+			country_exists = EGY #scenario 2
+			}
+			OR = {
+				SAU = {
+					has_war_with = DYR
+				}
+				BGD = {
+					has_war_with = SAU
+				}
+				BGD = {
+					has_war_with = DYR
+				}		
+			}
+		}
+		
+		cost = 20
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = { 
+			country_event = {id=foreign_policy.7}
+		}
+	}	
+
+	foreign_policy_back_a_side_in_syr = {
+		icon = GFX_decision_red_flag_holding_hand
+
+		allowed = {
+			NOT = {
+				original_tag = SYR
+				original_tag = IRQ
+			}		
+		}
+		available = {
+		}
+		visible = {
+			IRQ = {
+				has_war_with = SYR
+			}
+
+		}
+		
+		cost = 20
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = { 
+			country_event = {id=foreign_policy.8}
+		}
+	}
+
+	foreign_policy_back_a_side_in_lib = {
+		icon = GFX_decision_red_flag_holding_hand
+
+		allowed = {
+			NOT = {
+				original_tag = LUR
+				original_tag = LIB
+			}		
+		}
+		available = {
+		}
+		visible = {
+			LIB = {
+				has_war_with = LUR
+			}
+
+		}
+		
+		cost = 20
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = { 
+			country_event = {id=foreign_policy.9}
+		}
+	}	
+	
+	foreign_policy_back_a_side_in_sie = {
+		icon = GFX_decision_red_flag_holding_hand
+
+		allowed = {
+			NOT = {
+				original_tag = RUF
+				original_tag = SIE
+			}		
+		}
+		available = {
+		}
+		visible = {
+			RUF = {
+				has_war_with = SIE
+			}
+
+		}
+		
+		cost = 20
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = { 
+			country_event = {id=foreign_policy.10}
+		}
+	}	
+}
+
+generic = {
+
+	eth_kill_somalia_timer = {                          
+		allowed = {
+			original_tag = ETH
+		}                
+        available = {   
+			NOT = {country_exists = SOM}
+        }
+		
+		activation = {
+			has_country_flag = eth_kill_som
+		}
+		visible = {
+
+		}
+		  
+		  
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 235           
+		timeout_effect = {
+			clr_country_flag = eth_kill_som
+			white_peace = {
+				tag = SOM
+			}
+		
+		}
+		
+        complete_effect = {
+			clr_country_flag = eth_kill_som
+
+        }
+	}
+
+	hun_rom_war_timer = {                          
+		allowed = {
+			original_tag = HUN
+		}                
+        available = {   
+			controls_province = 3696
+			controls_province = 713
+			controls_province = 6711
+			controls_province = 9672
+			controls_province = 711
+			controls_province = 9668
+        }
+		
+		activation = {
+			has_country_flag = war_with_rom_rn
+		}
+		visible = {
+
+		}
+		  
+		  
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 300           
+		timeout_effect = {
+			clr_country_flag = war_with_rom_rn
+			ROM = {
+				white_peace = {
+					tag = HUN
+				}
+			}
+			country_event = {id = hungary_mod.2}		
+		}
+		
+        complete_effect = {
+			clr_country_flag = war_with_rom_rn
+			swap_ideas = {
+				remove_idea = HUN_the_century_of_humiliation
+				add_idea = HUN_humiliation_revenged
+			}
+			white_peace = {
+				tag = ROM
+			}
+			transfer_state = 76
+			country_event = {id = hungary_mod.3 days = 30}
+        }
+	}	
+
+	DYR_death = {
+		icon = GFX_decision_red_flag_holding_hand
+
+		allowed = {			
+			original_tag = DYR
+				
+		}
+		available = {
+			NOT = {
+				DYR = {
+					controls_state = 659
+					controls_state = 976
+				}
+			}	
+		}
+		visible = {
+			NOT = {has_country_flag = DYR_won_civil_war}
+		}
+		
+		cost = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 999
+		}
+		complete_effect = { 
+			SAU = {
+				white_peace = DYR
+				white_peace = EGY
+				dismantle_faction = yes
+			}
+
+			YEM = {
+				white_peace = DYR
+				white_peace = EGY
+				annex_country = { target = DYR }
+			}
+		}
+	}		
+
+	DYR_death_me_war = {
+		icon = GFX_decision_red_flag_holding_hand
+
+		allowed = {			
+			original_tag = DYR
+				
+		}
+		available = {
+			NOT = {country_exists = YEM}
+			OR = {
+			has_war_with = BGD
+			has_war_with = SAU
+			}
+			NOT = {
+				DYR = {
+					controls_state = 659
+					controls_state = 976
+				}
+			}	
+		}
+		visible = {
+			has_country_flag = DYR_won_civil_war
+		}
+		
+		cost = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 999
+		}
+		complete_effect = { 
+			country_event = {id = baath_cw.3}
+		}
+	}	
+
+}
+
+soviet_collapse = {
+
+	SC_victory_in_ukraine = {
+		allowed = {
+			OR = {
+				original_tag = UKR
+				original_tag = UCR
+				original_tag = OUN
+				original_tag = DPR
+			}	
+		}		
+		visible = {
+			has_global_flag = ussr_putin_collapse
+		}
+		available = {
+			has_war = no
+			202 = {
+				is_owned_by = FROM
+			}
+		}
+		
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 50
+		}
+        complete_effect = {
+			set_capital = {
+				state = 202
+				remember_old_capital = no
+			}
+			every_owned_state = {
+				add_core_of = FROM
+			}
+
+			if = {
+				limit = {
+					NOT = {
+						original_tag = UKR
+						original_tag = DPR
+					}
+				}
+				set_cosmetic_tag = ukraine_cw_won
+			}
+			if = {
+				limit = {
+					original_tag = DPR
+				}
+				UKR = {
+				remove_state_core = 221
+				remove_state_core = 227
+				remove_state_core = 228			
+				transfer_state = 766
+				}
+				release = UKR
+			}
+			if = {
+				limit = {
+					original_tag = UKR
+				}
+				transfer_state = 766
+			}
+			if = {
+				limit = {
+					original_tag = OUN
+				}
+				declare_war_on = {
+					target = MOL
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = TFK
+					type = annex_everything
+				}				
+			}
+        }		
+		
+	}
+	
+	SC_BLR_invade_moscow = {
+		allowed = {
+			original_tag = BLR
+		}		
+		visible = {
+			has_global_flag = ussr_putin_collapse
+		}
+		available = {
+			has_war = no
+			SOV = {has_war = no}
+			808 = {
+				is_owned_by = BLR
+			}
+		}
+		
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 50
+		}
+        complete_effect = {
+			declare_war_on = {
+				target = SOV
+				type = annex_everything
+			}
+        }		
+		
+	}	
+
+	SC_SOV_invade_murmansk = {
+		allowed = {
+			original_tag = SOV
+		}		
+		visible = {
+			has_global_flag = ussr_putin_collapse
+			has_government = fascism
+		}
+		available = {
+			has_war = no
+		}
+		
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 50
+		}
+        complete_effect = {
+			declare_war_on = {
+				target = MNO
+				type = annex_everything
+			}
+        }		
+		
+	}	
+
+	SC_RPR_SOE_invade_soviet = {
+		allowed = {
+			OR = {
+				original_tag = RPR
+				original_tag = SOE
+			}	
+		}		
+		visible = {
+			has_global_flag = ussr_putin_collapse
+		}
+		available = {
+			has_war = no
+		}
+		
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 50
+		}
+        complete_effect = {
+			declare_war_on = {
+				target = SOV
+				type = annex_everything
+			}
+        }		
+		
+	}	
+
+	SC_RPR_SOE_invade_belarus = {
+		allowed = {
+			OR = {
+				original_tag = RPR
+				original_tag = SOE
+			}	
+		}		
+		visible = {
+			has_global_flag = ussr_putin_collapse
+		}
+		available = {
+			has_war = no
+			NOT = {country_exists = SOV}
+		}
+		
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 50
+		}
+        complete_effect = {
+			declare_war_on = {
+				target = BLR
+				type = annex_everything
+			}
+        }		
+		
+	}	
+
+}

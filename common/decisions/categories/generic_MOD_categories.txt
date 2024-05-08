@@ -1,0 +1,60 @@
+
+occupation_decisions = {
+	icon = GFX_decision_prc_vs_sov
+	
+	
+	allowed = {
+	}
+	
+	visible = {
+	}
+
+	priority = 9999
+
+}
+
+foreign_policy = {
+	icon = GFX_decision_prc_vs_sov
+	
+	
+	allowed = {
+	}
+	
+	visible = {
+		NOT = {
+			original_tag = SOV
+			original_tag = USA
+		}
+	}
+
+	priority = 0
+
+}
+
+generic = {
+	icon = GFX_decision_prc_vs_sov
+	
+	
+	allowed = {
+	}
+	
+	visible = {
+	}
+
+	priority = 9999
+
+}
+
+soviet_collapse = {
+	icon = GFX_decision_prc_vs_sov
+	
+	
+	allowed = {
+	}
+	
+	visible = {
+	}
+
+	priority = 9999
+
+}

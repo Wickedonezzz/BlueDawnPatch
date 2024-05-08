@@ -1,0 +1,37 @@
+units = {
+	fleet = {
+		name = "Flota de Perú"
+		naval_base = 12997 # Callao #
+		task_force = {
+			name = "Flota de superficie de Perú"
+			location = 12997 # Callao #
+			ship = { name = "BAP Almirante Grau" definition = cruiser equipment = { cruiser_hull_1 = { amount = 1 owner = PRU creator = HOL version_name = "De Ruyter Class" } } }
+
+			ship = { name = "BAP Ferré" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRU creator = ENG version_name = "Daring Class" } } }
+			ship = { name = "BAP Carvajal" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRU version_name = "Carvajal Class" } } }
+			ship = { name = "BAP Villavicencio" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRU version_name = "Carvajal Class" } } }
+			ship = { name = "BAP Montero" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRU version_name = "Carvajal Class" } } }
+			ship = { name = "BAP Mariategui" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = PRU version_name = "Carvajal Class" } } }
+
+			ship = { name = "BAP Velarde" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = PRU version_name = "Velarde Class" } } }
+			ship = { name = "BAP Santillana" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = PRU version_name = "Velarde Class" } } }
+			ship = { name = "BAP De Los Heros" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = PRU version_name = "Velarde Class" } } }
+			ship = { name = "BAP Herrera" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = PRU version_name = "Velarde Class" } } }
+			ship = { name = "BAP Larrea" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = PRU version_name = "Velarde Class" } } }
+			ship = { name = "BAP Sánchez Carrión" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = PRU version_name = "Velarde Class" } } }
+		}
+		task_force = {
+			name = "Flota de Submarinos de Perú"
+			location = 12997 # Callao #
+			ship = { name = "BAP Islay" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRU creator = GER version_name = "Type 209/1200 Class" } } }
+			ship = { name = "BAP Arica" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRU creator = GER version_name = "Type 209/1200 Class" } } }
+			ship = { name = "BAP Angamos" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRU creator = GER version_name = "Type 209/1200 Class" } } }
+			ship = { name = "BAP Antofagasta" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRU creator = GER version_name = "Type 209/1200 Class" } } }
+			ship = { name = "BAP Pisagua" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRU creator = GER version_name = "Type 209/1200 Class" } } }
+			ship = { name = "BAP Chipana" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = PRU creator = GER version_name = "Type 209/1200 Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

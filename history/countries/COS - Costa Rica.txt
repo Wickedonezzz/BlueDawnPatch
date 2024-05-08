@@ -1,0 +1,24 @@
+﻿capital = 316
+
+#oob = "COS_1936"
+
+set_war_support = 0.1
+set_convoys = 10
+
+recruit_character = COS_miguel_rodriguez
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1998.5.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 87
+	communism = 3
+	reformed_communism = 0
+	paternal_autocracy = 0
+	fascism = 0
+	neutrality = 10
+}

@@ -1,0 +1,27 @@
+capital = 709
+
+##oob = "SEY_1936"
+
+recruit_character = SEY_france-albert_rene
+
+add_ideas = ussr_aligned_nation
+
+set_research_slots = 3
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 70
+	reformed_communism = 15
+	social_democracy = 15
+	liberalism = 0
+	democratic = 0
+	neutrality = 0
+	paternal_autocracy = 0
+	fascism = 0
+}

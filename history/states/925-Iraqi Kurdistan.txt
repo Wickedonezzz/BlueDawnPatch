@@ -1,0 +1,34 @@
+state={
+	id=925
+	name="STATE_925"
+	manpower = 4700000
+	
+	state_category = large_town
+
+	resources={
+		oil=8
+	}
+
+	history={
+		owner = IRQ
+		add_core_of = KUR
+		victory_points = {
+			3916 5
+		}
+		victory_points = {
+			13317 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 2
+		}
+		set_demilitarized_zone = yes
+	}
+
+	provinces={
+		3916 5014 6826 10811 13315 13317
+	}
+
+	local_supplies=0.0 
+}

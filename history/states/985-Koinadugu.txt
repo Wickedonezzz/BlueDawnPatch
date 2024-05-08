@@ -1,0 +1,28 @@
+
+state={
+	id=985
+	name="STATE_985"
+
+	history={
+		owner = RUF
+		add_core_of = RUF
+		add_core_of = SIE
+		victory_points = {
+			13484 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		13484 13489 13490 
+	}
+	manpower=1468500
+	state_category=rural	
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,86 @@
+SAF_parliment_fuel_shortage_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = SAF_parliment_fuel_shortage_trigger_name
+
+		always = no
+	}
+}
+SAF_states_that_can_rebel = {
+	is_owned_by = SAF
+	NOT = { is_core_of = SAF }
+}
+SAF_states_to_be_pacified = {
+	any_state = {
+		has_state_flag = saf_to_be_pacified
+		is_core_of = PREV
+		is_owned_by = PREV
+	}
+}
+SAF_pacification_check_for_divs = {
+	divisions_in_state = {
+		size > 5
+		state = 540
+	}
+}
+TUR_bosphorus_rules_trigger = {
+	hidden_trigger = {
+		OR = { 
+			AND = {
+				TUR = {
+					controls_state = 797
+				}
+				NOT = { has_war_with = TUR }  	
+				TUR_black_sea_states_trigger = yes
+			}
+			ROOT = {
+				controls_state = 797
+			}
+		}
+	}	
+}
+TUR_dardanelles_rules_trigger = {
+	hidden_trigger = {
+		OR = { 
+			AND = {
+				TUR = {
+					controls_province = 6864
+					controls_province = 849
+				}
+				NOT = { has_war_with = TUR }  	
+				TUR_black_sea_states_trigger = yes 
+			}
+			ROOT = {
+				AND = {
+					controls_province = 6864
+					controls_province = 849
+				}
+			}
+		}
+	}	
+}
+TUR_black_sea_states_trigger = {
+	OR = {
+		owns_state = 211
+		owns_state = 77
+		owns_state = 46
+		owns_state = 766
+		owns_state = 192
+		owns_state = 197
+		owns_state = 196
+		owns_state = 137
+		owns_state = 200
+		owns_state = 227
+		owns_state = 218
+		owns_state = 234
+		owns_state = 233
+		owns_state = 826
+		owns_state = 231
+		owns_state = 354
+		owns_state = 355
+		owns_state = 356
+		owns_state = 347
+		owns_state = 797
+		owns_state = 341
+		owns_state = 340
+	}
+}

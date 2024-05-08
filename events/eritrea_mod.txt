@@ -1,0 +1,20 @@
+add_namespace = eritrea_mod
+
+#emergency divisions raised#
+country_event = {
+	id = eritrea_mod.1
+	title = eritrea_mod.1.t
+	desc = eritrea_mod.1.d
+	picture = GFX_report_event_spark
+	
+	is_triggered_only = yes
+
+		#i love buffin eritrea so they dont get run over by Ethiopia#
+	option = {
+		name = eritrea_mod.1.a
+		
+		ai_chance = {
+		factor = 100
+		}
+	}
+}

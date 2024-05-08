@@ -1,0 +1,30 @@
+characters = {
+
+	HRZ_Milivoj_Petkovic = {
+		name = "Milivoj Petkovic"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HRZ/Milivoj_Petkovic.png"
+			}
+			army = {
+				large = "gfx/leaders/HRZ/Milivoj_Petkovic.png"			
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		corps_commander={
+			traits={skilled_staffer}
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+}

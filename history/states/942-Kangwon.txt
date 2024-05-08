@@ -1,0 +1,28 @@
+state={
+	id=942
+	name="STATE_942"
+	history={
+		owner = SKR
+		add_core_of = SKR
+		add_core_of = KOR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 4
+			12011 = {
+				naval_base = 6
+			}
+			arms_factory = 1
+		}
+		victory_points = {
+			12011 5
+		}
+	}
+	
+	provinces={
+		1148 7021 9936 10036 12011 13439 13441 13444
+	}
+	manpower=2312313
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=large_city
+}

@@ -1,0 +1,30 @@
+state={
+	id=937
+	name="STATE_937"
+	
+	state_category = city
+
+	history={
+		victory_points = {
+			6626 1 
+		}
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+			arms_factory = 1
+			6626 = {
+				naval_base = 5
+			}
+		}
+	}
+
+	provinces={
+		6626
+	}
+	manpower=210000
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}

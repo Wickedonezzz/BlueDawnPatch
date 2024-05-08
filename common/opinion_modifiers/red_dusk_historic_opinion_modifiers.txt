@@ -1,0 +1,61 @@
+opinion_modifiers = {
+
+	HISTORIC_iran_iraq_war_opinion = {
+		value = -50
+	}
+	HISTORIC_falklands_war_eng_opinion = {
+		value = -10
+	}
+	HISTORIC_falklands_war_arg_opinion = {
+		value = -20
+	}
+	HISTORIC_india_pakistan_opinion = {
+		value = -60
+	}
+	HISTORIC_usa_libya_usa_opinion = {
+		value = -25
+	}
+	HISTORIC_usa_libya_lba_opinion = {
+		value = -40
+	}
+	HISTORIC_india_china_raj_opinion = {
+		value = -35
+	}
+	HISTORIC_india_china_prc_opinion = {
+		value = -25
+	}
+	HISTORIC_baltic_ussr_opinion = {
+		value = -35
+	}
+	HISTORIC_israel_palestine_opinion = {
+		value = -100
+	}
+	HISTORIC_amernia_azerbaijan_opinion = {
+		value = -75
+	}
+	HISTORIC_gulf_war_kuwait_opinion = {
+		value = -75
+	}
+	HISTORIC_gulf_war_irq_rest_opinion = {
+		value = -50
+	}
+	HISTORIC_gulf_war_coalition_opinion = {
+		value = -40
+	}
+	HISTORIC_yugoslavia_seperatists_opinion = {
+		value = -40
+	}
+	HISTORIC_cenepa_war_opinion = {
+		value = -50
+	}
+	HISTORIC_israel_hostile_40_opinion = {
+		value = -65
+	}
+	HISTORIC_israel_hostile_30_opinion = {
+		value = -50
+	}
+	HISTORIC_israel_hostile_20_opinion = {
+		value = -35
+	}
+
+}

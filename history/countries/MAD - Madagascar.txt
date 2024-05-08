@@ -1,0 +1,23 @@
+﻿capital = 543
+
+##oob = ""
+
+set_convoys = 5
+
+recruit_character = MAD_andry_rajoelina
+recruit_character = MAD_didier_ratsiraka
+
+add_ideas = china_aligned_nation
+
+set_politics = {
+	ruling_party = reformed_communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 15
+	reformed_communism = 40
+	communism = 20
+	neutrality = 25
+}

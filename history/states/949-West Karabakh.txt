@@ -1,0 +1,25 @@
+state={
+	id=949
+	name="STATE_949"
+	provinces={
+		13318 
+	}
+	
+	history = {
+		owner = ARM
+		buildings = {
+			infrastructure = 2
+			air_base = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = { 13318 5 }
+		add_core_of = ARM
+		add_core_of = AZR
+		set_demilitarized_zone = yes
+	}
+	manpower=24123
+	buildings_max_level_factor=1.000
+	state_category = town
+	local_supplies=0.000
+}

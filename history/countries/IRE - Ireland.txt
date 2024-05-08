@@ -1,0 +1,51 @@
+﻿capital = 113
+
+set_technology = {
+	infantry_weapons_1960 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_air_weapons_1960 = 1
+	tech_support = 1
+	tech_motorised_1960 = 1
+	tech_train_1960 = 1
+	apc_tank_1960 = 1
+	apc_tank_1970 = 1
+	towed_artillery_1960 = 1
+	heli_transport_1960 = 1
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		recon_vehicle_1960 = 1
+	}
+}
+set_oob = "IRE_2000"
+
+add_ideas = volunteer_only
+
+set_research_slots = 3
+
+set_convoys = 10
+
+add_ideas = IRA_good_friday
+
+recruit_character = IRE_mary_mcaleese
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 0
+	reformed_communism = 11
+	social_democracy = 10
+	liberalism = 32
+	democratic = 46
+	neutrality = 0
+	paternal_autocracy = 0
+	fascism = 1
+}

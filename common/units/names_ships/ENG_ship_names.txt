@@ -1,0 +1,138 @@
+﻿##### ENG NAME LISTS #####
+
+### GENERIC ###
+ENG_NAVAL_NAME_CITIES = {
+	name = "British Cities"
+
+	for_countries = { ENG }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	
+	unique = {
+		"HMS Glasgow" "HMS Belfast" "HMS Cardiff" "HMS Birmingham" "HMS Sheffield" "HMS Newcastle" "HMS Edinburgh" "HMS London" "HMS Leeds" "HMS Bradford" "HMS Manchester" "HMS Liverpool" "HMS Bristol" "HMS Leicester" "HMS Wakefield" "HMS Coventry" "HMS Doncaster" "HMS Nottingham" "HMS Sunderland" "HMS Brighton" "HMS Kingston" "HMS Plymouth" "HMS Wolverhampton" "HMS Derby" "HMS Swansea" "HMS Southampton" "HMS Aberdeen" "HMS Westminster" "HMS Portsmouth" "HMS York" "HMS Colchester" "HMS Peterborough" "HMS Oxford" "HMS Canterbury" "HMS Dundee" "HMS Lancaster" "HMS Norwich" "HMS Exeter" "HMS Cambridge" "HMS Gloucester" "HMS Carlisle" "HMS Durham" "HMS Lincoln" "HMS Chester" "HMS Bath" "HMS Bangor" "HMS Inverness" "HMS Perth" "HMS Salisbury"
+	}
+}
+ENG_NAVAL_NAME_ADJECTIVES_A = {
+	name = "Adjectives - A"
+
+	for_countries = { ENG }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	
+	unique = {
+		"HMS Astute" "HMS Ambush" "HMS Artful" "HMS Audacious" "HMS Anson" "HMS Agamemnon" "HMS Ajax" "HMS Amphion" "HMS Alliance" "HMS Artemis" "HMS Acheron" "HMS Antagonist" "HMS Aphrodite" "HMS Approach" "HMS Ardent" "HMS Atlantis" "HMS Admirable" "HMS Adversary" "HMS Awake" "HMS Aztec" "HMS Acasta" "HMS Agate" "HMS Aggressor" "HMS Agile" "HMS Aladdin" "HMS Asgard" "HMS Assurance" "HMS Adept" 
+	}
+}
+ENG_NAVAL_NAME_ADJECTIVES_D = {
+	name = "Adjectives - D"
+
+	for_countries = { ENG }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	
+	unique = {
+		"HMS Daring" "HMS Dauntless" "HMS Diamond" "HMS Dragon" "HMS Defender" "HMS Duncan" "HMS Diana" "HMS Dispatch"
+	}
+}
+ENG_NAVAL_NAME_ADJECTIVES_O = {
+	name = "Adjectives - O"
+
+	for_countries = { ENG }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	
+	unique = {
+		"HMS Oberon" "HMS Ocelot" "HMS Odin" "HMS Olympus" "HMS Onslaught" "HMS Onyx" "HMS Opportune" "HMS Opossum" "HMS Oracle" "HMS Orpheus" "HMS Osiris" "HMS Otter" "HMS Otus"
+	}
+}
+ENG_NAVAL_NAME_ADJECTIVES_S = {
+	name = "Adjectives - S"
+
+	for_countries = { ENG }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	
+	unique = {
+		"HMS Swiftsure" "HMS Sovereign" "HMS Superb" "HMS Sceptre" "HMS Spartan" "HMS Splendid" "HMS Severn"
+	}
+}
+ENG_NAVAL_NAME_ADJECTIVES_T = {
+	name = "Adjectives - T"
+
+	for_countries = { ENG }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	
+	unique = {
+		"HMS Trafalgar" "HMS Turbulent" "HMS Tireless" "HMS Torbay" "HMS Trenchant" "HMS Talent" "HMS Triumph"
+	}
+}
+ENG_NAVAL_NAME_ADJECTIVES_U = {
+	name = "Adjectives - U"
+
+	for_countries = { ENG }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	
+	unique = {
+		"HMS Unity" "HMS Unbeaten" "HMS Undaunted" "HMS Union" "HMS Urchin" "HMS "Ultimatum "HMS Unbroken" "HMS Unison" "HMS United" "HMS Unrivalled" "HMS Unruly" "HMS Unshaken" "HMS Unsparing" "HMS Usurper" "HMS Untamed" "HMS Untiring" "HMS Unswerving" "HMS Upstart" "HMS Upholder" "HMS Unseen" "HMS Ursula" "HMS Unicorn"
+	}
+}
+ENG_NAVAL_NAME_ADJECTIVES_V = {
+	name = "Adjectives - V"
+
+	for_countries = { ENG }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	
+	unique = {
+		"HMS Venturer" "HMS Vigorous" "HMS Virtue" "HMS Vivid" "HMS Voracious" "HMS Variance" "HMS Volatile" "HMS Vortex" "HMS Vulpine" "HMS Vanguard" "HMS Victorious" "HMS Vigilant" "HMS Vengeance"
+	}
+}
+ENG_NAVAL_NAME_FAMOUS = {
+	name = "Famous Warships"
+
+	for_countries = { ENG }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	
+	unique = {
+		"HMS Dreadnought" "HMS Vanguard" "HMS Renown" "HMS Repulse" "HMS Hood" "HMS Warspite" "HMS Valiant" "HMS Revenge" "HMS Prince of Wales" "HMS Ark Royal" "HMS Colossus" "HMS Conqueror" "HMS Thunderer" "HMS Nelson" "HMS Rodney" "HMS Howe" "HMS Invincible"
+	}
+}

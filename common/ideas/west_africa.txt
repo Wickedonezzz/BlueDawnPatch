@@ -1,0 +1,41 @@
+ideas = {
+	
+	country = {
+	
+		west_africa_ECOWAS = {
+			name = ECOWAS_idea_name
+
+			removal_cost = -1
+
+			picture = ECOWAS_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_gain = 0.02
+				consumer_goods_factor = -0.02
+				trade_opinion_factor = 0.20
+			}
+		}
+	
+		RUF_diamond_profits = {
+			name = RUF_diamond_profits_name
+
+			removal_cost = -1
+
+			picture = VIN_corruption_in_goverment_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.20
+				consumer_goods_factor = -0.40
+				industrial_capacity_factory = 0.10
+			}
+		}		
+	}
+}

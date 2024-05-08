@@ -1,0 +1,28 @@
+﻿air_wings = {
+	# Land Wings #
+	455 = {
+		# Fighters -- F-16, F-5, Mirage F1
+		fighter_equipment_2 =  { # F-16 #
+			owner = "JOR" 
+			creator = USA
+			amount = 16
+		}
+		fighter_equipment_1 =  { # Mirage F1 #
+			owner = "JOR" 
+			creator = FRA
+			amount = 40
+		}
+		fighter_equipment_0 =  { # F-5 #
+			owner = "JOR" 
+			creator = USA
+			amount = 50
+		}
+
+		# Transports -- C-130
+		transport_plane_equipment_1 =  { # C-130 #
+			owner = "JOR"
+			creator = USA
+			amount = 8
+		}
+	}
+}

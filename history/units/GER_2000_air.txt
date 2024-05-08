@@ -1,0 +1,108 @@
+﻿air_wings = {
+	# Land Wings #
+	64 = {
+		# Fighters -- MiG-29
+		fighter_equipment_2 = { # MiG-29 #
+			owner = "GER" 
+			creator = SOV
+			amount = 20
+		}
+
+		# Attackers -- Tornado IDS
+		attacker_equipment_2 = { # Tornado IDS #
+			owner = "GER" 
+			creator = GER
+			amount = 49
+		}
+
+		# Transports -- C-160
+		transport_plane_equipment_1 = {
+			owner = "GER"
+			creator = GER
+			amount = 14
+		}
+		# Transports -- C-160
+		transport_plane_equipment_1 = {
+			owner = "GER"
+			creator = GER
+			amount = 15
+		}
+	}
+	51 = {
+		# Fighters -- F-4
+		fighter_equipment_0 = { # F-4 #
+			owner = "GER" 
+			creator = USA
+			amount = 50
+		}
+
+		# Attackers -- Tornado IDS
+		attacker_equipment_2 = { # Tornado IDS #
+			owner = "GER" 
+			creator = GER
+			amount = 47
+		}
+
+		# Transports -- C-160
+		transport_plane_equipment_1 = {
+			owner = "GER"
+			creator = GER
+			amount = 18
+		}
+	}
+	42 = {
+		# Attackers -- Tornado IDS
+		attacker_equipment_2 = { # Tornado IDS #
+			owner = "GER" 
+			creator = GER
+			amount = 50
+		}
+	}
+	58 = {
+		# Attackers -- Tornado IDS
+		attacker_equipment_2 = { # Tornado IDS #
+			owner = "GER" 
+			creator = GER
+			amount = 46
+		}
+
+		# Transports -- C-160
+		transport_plane_equipment_1 = {
+			owner = "GER"
+			creator = GER
+			amount = 17
+		}
+	}
+	56 = {
+		# Fighters -- F-4
+		fighter_equipment_0 = { # F-4 #
+			owner = "GER" 
+			creator = USA
+			amount = 50
+		}
+	}
+	61 = {
+		# Attackers -- Tornado IDS
+		attacker_equipment_2 = { # Tornado IDS #
+			owner = "GER" 
+			creator = GER
+			amount = 49
+		}
+	}
+	52 = {
+		# Fighters -- F-4
+		fighter_equipment_0 = { # F-4 #
+			owner = "GER" 
+			creator = USA
+			amount = 50
+		}
+	}
+	57 = {
+		# Transports -- C-160
+		transport_plane_equipment_1 = {
+			owner = "GER"
+			creator = GER
+			amount = 20
+		}
+	}
+}

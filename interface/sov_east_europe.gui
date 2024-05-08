@@ -1,0 +1,285 @@
+guiTypes = {
+
+	
+	containerWindowType = {
+		name = "sov_east_europe_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 500 }
+		
+		#iconType = {
+		#	name ="poland_neutral_icon"
+		#	spriteType = "GFX_poland_neutral_icon"
+		#	position = { x=55 y=44 } 
+		#	pdx_tooltip = irq_uar_centralization_tt
+		#
+		#}
+		#iconType = {
+		#	name ="poland_good_icon"
+		#	spriteType = "GFX_poland_good_icon"
+		#	position = { x=55 y=44 } 
+		#	pdx_tooltip = irq_uar_centralization_tt
+		#
+		#}	
+
+		containerWindowType	= {  #code template by skylus_regiio s̶t̶o̶l̶e̶n̶ inspiration taken by durangoose :)
+			name = "poland_window"
+			position = { x = 55 y = 44}
+			size = { width = 100% height= 100% }
+			
+			iconType = {
+				name ="poland1"
+				spriteType = "GFX_poland_icon"
+				position = { x=0 y=0 } 
+				frame = 1
+			}
+			iconType = {
+				name ="poland2"
+				spriteType = "GFX_poland_icon"
+				position = { x=0 y=0 } 
+				frame = 2
+			}
+			iconType = {
+				name ="poland3"
+				spriteType = "GFX_poland_icon"
+				position = { x=0 y=0 } 
+				frame = 3
+			}
+			iconType = {
+				name ="poland4"
+				spriteType = "GFX_poland_icon"
+				position = { x=0 y=0 } 
+				frame = 4
+			}
+			iconType = {
+				name ="poland5"
+				spriteType = "GFX_poland_icon"
+				position = { x=0 y=0 } 
+				frame = 5
+			}			
+		}
+		
+		iconType = {
+			name ="poland_box_popup"
+			spriteType = "GFX_small_box_icon"
+			position = { x=270 y=0 } 
+		}
+		
+		iconType = {
+			name ="sov_x_button"
+			spriteType = "GFX_x_button_gui_piece"
+			position = { x=440 y=0 } 
+		}
+
+		instantTextBoxType = {
+			name ="poland_support_text"
+			position = { x = 280 y = 50 }
+			font = "hoi_30header"
+			text = "poland_support_text_loc"
+			format = center
+		}		
+		instantTextBoxType = {
+			name ="poland_text"
+			position = { x = 280 y = 120 }
+			font = "hoi_30header"
+			text = "poland_text_loc"
+			format = center
+		}
+
+		containerWindowType	= { 
+			name = "slovakia_window"
+			position = { x = 104 y = 175}
+			size = { width = 100% height= 100% }
+			
+			iconType = {
+				name ="slovakia1"
+				spriteType = "GFX_slovakia_icon"
+				position = { x=0 y=0 } 
+				frame = 1
+			}
+			iconType = {
+				name ="slovakia2"
+				spriteType = "GFX_slovakia_icon"
+				position = { x=0 y=0 } 
+				frame = 2
+			}
+			iconType = {
+				name ="slovakia3"
+				spriteType = "GFX_slovakia_icon"
+				position = { x=0 y=0 } 
+				frame = 3
+			}
+			iconType = {
+				name ="slovakia4"
+				spriteType = "GFX_slovakia_icon"
+				position = { x=0 y=0 } 
+				frame = 4
+			}
+	
+		}
+		
+		instantTextBoxType = {
+			name ="slovakia_support_text"
+			position = { x = 280 y = 50 }
+			font = "hoi_30header"
+			text = "slovakia_support_text_loc"
+			format = center
+		}		
+		instantTextBoxType = {
+			name ="slovakia_text"
+			position = { x = 280 y = 120 }
+			font = "hoi_30header"
+			text = "slovakia_text_loc"
+			format = center
+		}
+		
+		containerWindowType	= { 
+			name = "hungary_window"
+			position = { x = 90 y = 215}
+			size = { width = 100% height= 100% }
+			
+			iconType = {
+				name ="hungary1"
+				spriteType = "GFX_hungary_icon"
+				position = { x=0 y=0 } 
+				frame = 1
+			}
+			iconType = {
+				name ="hungary2"
+				spriteType = "GFX_hungary_icon"
+				position = { x=0 y=0 } 
+				frame = 2
+			}
+			iconType = {
+				name ="hungary3"
+				spriteType = "GFX_hungary_icon"
+				position = { x=0 y=0 } 
+				frame = 3
+			}
+			iconType = {
+				name ="hungary4"
+				spriteType = "GFX_hungary_icon"
+				position = { x=0 y=0 } 
+				frame = 4
+			}
+			iconType = {
+				name ="hungary5"
+				spriteType = "GFX_hungary_icon"
+				position = { x=0 y=0 } 
+				frame = 5
+				pdx_tooltip = sov_ryz_at_war
+			}
+			
+		}
+		
+		instantTextBoxType = {
+			name ="hungary_support_text"
+			position = { x = 280 y = 50 }
+			font = "hoi_30header"
+			text = "hungary_support_text_loc"
+			format = center
+		}		
+		instantTextBoxType = {
+			name ="hungary_text"
+			position = { x = 280 y = 120 }
+			font = "hoi_30header"
+			text = "hungary_text_loc"
+			format = center
+		}
+
+		containerWindowType	= { 
+			name = "romania_window"
+			position = { x = 185 y = 220}
+			size = { width = 100% height= 100% }
+			
+			iconType = {
+				name ="romania1"
+				spriteType = "GFX_romania_icon"
+				position = { x=0 y=0 } 
+				frame = 1
+			}
+			iconType = {
+				name ="romania2"
+				spriteType = "GFX_romania_icon"
+				position = { x=0 y=0 } 
+				frame = 2
+			}
+			iconType = {
+				name ="romania3"
+				spriteType = "GFX_romania_icon"
+				position = { x=0 y=0 } 
+				frame = 3
+			}
+			iconType = {
+				name ="romania4"
+				spriteType = "GFX_romania_icon"
+				position = { x=0 y=0 } 
+				frame = 4
+			}
+	
+		}
+		
+		instantTextBoxType = {
+			name ="romania_support_text"
+			position = { x = 280 y = 50 }
+			font = "hoi_30header"
+			text = "romania_support_text_loc"
+			format = center
+		}		
+		instantTextBoxType = {
+			name ="romania_text"
+			position = { x = 280 y = 120 }
+			font = "hoi_30header"
+			text = "romania_text_loc"
+			format = center
+		}
+
+		containerWindowType	= { 
+			name = "bulgaria_window"
+			position = { x = 230 y = 340}
+			size = { width = 100% height= 100% }
+			
+			iconType = {
+				name ="bulgaria1"
+				spriteType = "GFX_bulgaria_icon"
+				position = { x=0 y=0 } 
+				frame = 1
+			}
+			iconType = {
+				name ="bulgaria2"
+				spriteType = "GFX_bulgaria_icon"
+				position = { x=0 y=0 } 
+				frame = 2
+			}
+			iconType = {
+				name ="bulgaria3"
+				spriteType = "GFX_bulgaria_icon"
+				position = { x=0 y=0 } 
+				frame = 3
+			}
+			iconType = {
+				name ="bulgaria4"
+				spriteType = "GFX_bulgaria_icon"
+				position = { x=0 y=0 } 
+				frame = 4
+			}
+	
+		}
+		
+		instantTextBoxType = {
+			name ="bulgaria_support_text"
+			position = { x = 280 y = 50 }
+			font = "hoi_30header"
+			text = "bulgaria_support_text_loc"
+			format = center
+		}		
+		instantTextBoxType = {
+			name ="bulgaria_text"
+			position = { x = 280 y = 120 }
+			font = "hoi_30header"
+			text = "bulgaria_text_loc"
+			format = center
+		}		
+		
+	}
+
+}

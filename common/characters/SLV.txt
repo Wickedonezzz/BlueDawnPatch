@@ -1,0 +1,36 @@
+characters = {
+
+	SLV_milan_kucan = {
+		name = "Milan Kučan"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SLV/Milan_Kucan.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	SLV_albin_gutman = {
+		name = "Albin Gutman"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SLV/albin_gutman.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=4
+			attack_skill=4
+			defense_skill=6
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}	
+
+}

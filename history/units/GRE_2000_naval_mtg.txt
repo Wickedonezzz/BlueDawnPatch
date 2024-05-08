@@ -1,0 +1,47 @@
+units = {
+	fleet = {
+		name = "Ellinikós Stólos"
+		naval_base = 4109 # Salamis #
+		task_force = {
+			name = "Ellinikós Stólos"
+			location = 4109 # Salamis #
+			ship = { name = "Hydra" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = GRE version_name = "Hydra Class" } } }
+			ship = { name = "Spetsai" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = GRE version_name = "Hydra Class" } } }
+			ship = { name = "Psara" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = GRE version_name = "Hydra Class" } } }
+			ship = { name = "Salamis" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = GRE version_name = "Hydra Class" } } }
+			ship = { name = "Elli" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = GRE creator = HOL version_name = "Kortenaer Class" } } }
+			ship = { name = "Limnos" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = GRE creator = HOL version_name = "Kortenaer Class" } } }
+			ship = { name = "Adrias" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = GRE creator = HOL version_name = "Kortenaer Class" } } }
+			ship = { name = "Aigaion" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = GRE creator = HOL version_name = "Kortenaer Class" } } }
+			ship = { name = "Navarinon" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = GRE creator = HOL version_name = "Kortenaer Class" } } }
+			ship = { name = "Kountouriotis" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = GRE creator = HOL version_name = "Kortenaer Class" } } }
+			ship = { name = "Ipiros" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = GRE creator = USA version_name = "Knox Class" } } }
+			ship = { name = "Thraki" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = GRE creator = USA version_name = "Knox Class" } } }
+			ship = { name = "Kimon" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = GRE creator = USA version_name = "Charles F. Adams Class" } } }
+			ship = { name = "Nearchos" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = GRE creator = USA version_name = "Charles F. Adams Class" } } }
+			ship = { name = "Formion" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = GRE creator = USA version_name = "Charles F. Adams Class" } } }
+			ship = { name = "Themistoklis" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = GRE creator = USA version_name = "Charles F. Adams Class" } } }
+
+			ship = { name = "Niki" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = GRE creator = GER version_name = "Thetis Class" } } }
+			ship = { name = "Doxa" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = GRE creator = GER version_name = "Thetis Class" } } }
+			ship = { name = "Elevtheria" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = GRE creator = GER version_name = "Thetis Class" } } }
+			ship = { name = "Karteria" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = GRE creator = GER version_name = "Thetis Class" } } }
+			ship = { name = "Agon" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = GRE creator = GER version_name = "Thetis Class" } } }
+		}
+		task_force = {
+			name = "Ellinikós Stólos Ypovrychíon"
+			location = 4109 # Salamis #
+			ship = { name = "Glavkos" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = GRE creator = GER version_name = "Type 209/1100 Class" } } }
+			ship = { name = "Nereus" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = GRE creator = GER version_name = "Type 209/1100 Class" } } }
+			ship = { name = "Triton" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = GRE creator = GER version_name = "Type 209/1100 Class" } } }
+			ship = { name = "Proteus" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = GRE creator = GER version_name = "Type 209/1100 Class" } } }
+			ship = { name = "Poseidon" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = GRE creator = GER version_name = "Type 209/1200 Class" } } }
+			ship = { name = "Amphitriti" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = GRE creator = GER version_name = "Type 209/1200 Class" } } }
+			ship = { name = "Okeanos" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = GRE creator = GER version_name = "Type 209/1200 Class" } } }
+			ship = { name = "Pontos" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = GRE creator = GER version_name = "Type 209/1200 Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

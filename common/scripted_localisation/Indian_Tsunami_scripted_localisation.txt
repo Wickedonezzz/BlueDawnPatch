@@ -1,0 +1,266 @@
+defined_text = {
+	name = INDTSU_current_support
+	text = {
+		trigger = {
+			has_country_flag = INDTSU_support_country_1
+		}
+		localization_key = INDTSU_loc_key_country_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = INDTSU_support_country_2
+		}
+		localization_key = INDTSU_loc_key_country_2
+	}
+	text = {
+		trigger = {
+			has_country_flag = INDTSU_support_country_3
+		}
+		localization_key = INDTSU_loc_key_country_3
+	}
+	text = {
+		trigger = {
+			has_country_flag = INDTSU_support_country_4
+		}
+		localization_key = INDTSU_loc_key_country_4
+	}
+	text = {
+		trigger = {
+			has_country_flag = INDTSU_support_country_5
+		}
+		localization_key = INDTSU_loc_key_country_5
+	}
+	text = {
+		localization_key = INDTSU_loc_key_country_0
+	}
+}
+defined_text = {
+	name = INDTSU_USA_current_support
+	text = {
+		trigger = {
+			USA = {
+				has_country_flag = INDTSU_support_country_1
+			}
+		}
+		localization_key = INDTSU_loc_key_country_1
+	}
+	text = {
+		trigger = {
+			USA = {
+				has_country_flag = INDTSU_support_country_2
+			}
+		}
+		localization_key = INDTSU_loc_key_country_2
+	}
+	text = {
+		trigger = {
+			USA = {
+				has_country_flag = INDTSU_support_country_3
+			}
+		}
+		localization_key = INDTSU_loc_key_country_3
+	}
+	text = {
+		trigger = {
+			USA = {
+				has_country_flag = INDTSU_support_country_4
+			}
+		}
+		localization_key = INDTSU_loc_key_country_4
+	}
+	text = {
+		trigger = {
+			USA = {
+				has_country_flag = INDTSU_support_country_5
+			}
+		}
+		localization_key = INDTSU_loc_key_country_5
+	}
+	text = {
+		localization_key = INDTSU_loc_key_country_0
+	}
+}
+defined_text = {
+	name = INDTSU_SOV_current_support
+	text = {
+		trigger = {
+			SOV = {
+				has_country_flag = INDTSU_support_country_1
+			}
+		}
+		localization_key = INDTSU_loc_key_country_1
+	}
+	text = {
+		trigger = {
+			SOV = {
+				has_country_flag = INDTSU_support_country_2
+			}
+		}
+		localization_key = INDTSU_loc_key_country_2
+	}
+	text = {
+		trigger = {
+			SOV = {
+				has_country_flag = INDTSU_support_country_3
+			}
+		}
+		localization_key = INDTSU_loc_key_country_3
+	}
+	text = {
+		trigger = {
+			SOV = {
+				has_country_flag = INDTSU_support_country_4
+			}
+		}
+		localization_key = INDTSU_loc_key_country_4
+	}
+	text = {
+		trigger = {
+			SOV = {
+				has_country_flag = INDTSU_support_country_5
+			}
+		}
+		localization_key = INDTSU_loc_key_country_5
+	}
+	text = {
+		localization_key = INDTSU_loc_key_country_0
+	}
+}
+defined_text = {
+	name = INDTSU_PRC_current_support
+	text = {
+		trigger = {
+			PRC = {
+				has_country_flag = INDTSU_support_country_1
+			}
+		}
+		localization_key = INDTSU_loc_key_country_1
+	}
+	text = {
+		trigger = {
+			PRC = {
+				has_country_flag = INDTSU_support_country_2
+			}
+		}
+		localization_key = INDTSU_loc_key_country_2
+	}
+	text = {
+		trigger = {
+			PRC = {
+				has_country_flag = INDTSU_support_country_3
+			}
+		}
+		localization_key = INDTSU_loc_key_country_3
+	}
+	text = {
+		trigger = {
+			PRC = {
+				has_country_flag = INDTSU_support_country_4
+			}
+		}
+		localization_key = INDTSU_loc_key_country_4
+	}
+	text = {
+		trigger = {
+			PRC = {
+				has_country_flag = INDTSU_support_country_5
+			}
+		}
+		localization_key = INDTSU_loc_key_country_5
+	}
+	text = {
+		localization_key = INDTSU_loc_key_country_0
+	}
+}
+defined_text = {
+	name = INDTSU_GER_current_support
+	text = {
+		trigger = {
+			GER = {
+				has_country_flag = INDTSU_support_country_1
+			}
+		}
+		localization_key = INDTSU_loc_key_country_1
+	}
+	text = {
+		trigger = {
+			GER = {
+				has_country_flag = INDTSU_support_country_2
+			}
+		}
+		localization_key = INDTSU_loc_key_country_2
+	}
+	text = {
+		trigger = {
+			GER = {
+				has_country_flag = INDTSU_support_country_3
+			}
+		}
+		localization_key = INDTSU_loc_key_country_3
+	}
+	text = {
+		trigger = {
+			GER = {
+				has_country_flag = INDTSU_support_country_4
+			}
+		}
+		localization_key = INDTSU_loc_key_country_4
+	}
+	text = {
+		trigger = {
+			GER = {
+				has_country_flag = INDTSU_support_country_5
+			}
+		}
+		localization_key = INDTSU_loc_key_country_5
+	}
+	text = {
+		localization_key = INDTSU_loc_key_country_0
+	}
+}
+defined_text = {
+	name = INDTSU_AST_current_support
+	text = {
+		trigger = {
+			AST = {
+				has_country_flag = INDTSU_support_country_1
+			}
+		}
+		localization_key = INDTSU_loc_key_country_1
+	}
+	text = {
+		trigger = {
+			AST = {
+				has_country_flag = INDTSU_support_country_2
+			}
+		}
+		localization_key = INDTSU_loc_key_country_2
+	}
+	text = {
+		trigger = {
+			AST = {
+				has_country_flag = INDTSU_support_country_3
+			}
+		}
+		localization_key = INDTSU_loc_key_country_3
+	}
+	text = {
+		trigger = {
+			AST = {
+				has_country_flag = INDTSU_support_country_4
+			}
+		}
+		localization_key = INDTSU_loc_key_country_4
+	}
+	text = {
+		trigger = {
+			AST = {
+				has_country_flag = INDTSU_support_country_5
+			}
+		}
+		localization_key = INDTSU_loc_key_country_5
+	}
+	text = {
+		localization_key = INDTSU_loc_key_country_0
+	}
+}

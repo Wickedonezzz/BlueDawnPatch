@@ -1,0 +1,32 @@
+
+state={
+	id=839
+	name="STATE_839"
+
+	history={
+		add_extra_state_shared_building_slots = 2
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			2009 2 
+		}
+		victory_points = {
+			13243 1 
+		}
+		owner = ETH
+		add_core_of = ETH
+
+	}
+
+	provinces={
+		2009 12856 13243 13332 
+	}
+	manpower=600000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

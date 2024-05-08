@@ -1,0 +1,112 @@
+add_namespace = peru
+
+#shining path and tupac amaru uprising#
+country_event = {
+	id = peru.1
+	title = peru.1.t
+	desc = peru.1.d
+	picture = GFX_report_event_spark
+
+	fire_only_once = yes
+        
+	trigger = {
+		date > 2002.3.25
+		original_tag = PER
+	}
+
+		#peru is da way#
+	option = {
+		name = peru.1.a
+
+		add_political_power = -200
+		SHP = {
+			transfer_state = 494
+			transfer_state = 492
+		}
+		TPA = {
+			transfer_state = 491
+		}
+		SHP = {
+			declare_war_on = {
+				type = civil_war
+				target = PRU
+			}
+		}
+		SHP = {
+			declare_war_on = {
+				type = annex_everything
+				target = TPA
+			}
+		}
+		TPA = {
+			declare_war_on = {
+				type = civil_war
+				target = PRU
+			}
+		}
+	}
+	
+	option = { ### THE PATH, BABY ###
+		name = peru.2.a
+
+		SHP = { change_tag_from = PRU }
+		add_political_power = -200
+		SHP = {
+			transfer_state = 494
+			transfer_state = 492
+		}
+		TPA = {
+			transfer_state = 491
+		}
+		SHP = {
+			declare_war_on = {
+				type = civil_war
+				target = PRU
+			}
+		}
+		SHP = {
+			declare_war_on = {
+				type = annex_everything
+				target = TPA
+			}
+		}
+		TPA = {
+			declare_war_on = {
+				type = civil_war
+				target = PRU
+			}
+		}
+	}
+	
+	option = {
+		name = peru.3.a
+
+		TPA = { change_tag_from = PRU }
+		add_political_power = -200
+		SHP = {
+			transfer_state = 494
+			transfer_state = 492
+		}
+		TPA = {
+			transfer_state = 491
+		}
+		SHP = {
+			declare_war_on = {
+				type = civil_war
+				target = PRU
+			}
+		}
+		SHP = {
+			declare_war_on = {
+				type = annex_everything
+				target = TPA
+			}
+		}
+		TPA = {
+			declare_war_on = {
+				type = civil_war
+				target = PRU
+			}
+		}
+	}
+}

@@ -1,0 +1,72 @@
+﻿SAF_MEC_01 = 
+{
+	name = "South Africa Task Force Divisions"
+
+	for_countries = { SAF }
+
+	can_use = { always = yes }
+
+	division_types = { "heavy_infantry_unit" }
+
+	fallback_name = "%d South Africa Task Force Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st South Africa Task Force Division" }
+		2 = { "2nd South Africa Task Force Division" }
+		3 = { "3rd South Africa Task Force Division" }
+		4 = { "4th South Africa Task Force Division" }
+		5 = { "5th South Africa Task Force Division" }
+		6 = { "6th South Africa Task Force Division" }
+		7 = { "7th South Africa Task Force Division" }
+		8 = { "8th South Africa Task Force Division" }
+		9 = { "9th South Africa Task Force Division" }
+		10 = { "10th South Africa Task Force Division" }
+		11 = { "11th South Africa Task Force Division" }
+		12 = { "12th South Africa Task Force Division" }
+		13 = { "13th South Africa Task Force Division" }
+		14 = { "14th South Africa Task Force Division" }
+		15 = { "15th South Africa Task Force Division" }
+		16 = { "16th South Africa Task Force Division" }
+		17 = { "17th South Africa Task Force Division" }
+		18 = { "18th South Africa Task Force Division" }
+		19 = { "19th South Africa Task Force Division" }
+	}
+}
+SAF_INF_01 = 
+{
+	name = "National Intelligence Divisions"
+
+	for_countries = { SAF }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry_unit" }
+
+	fallback_name = "%d National Intelligence Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st National Intelligence Division" }
+		2 = { "2nd National Intelligence Division" }
+		3 = { "3rd National Intelligence Division" }
+		4 = { "4th National Intelligence Division" }
+		5 = { "5th National Intelligence Division" }
+		6 = { "6th National Intelligence Division" }
+		7 = { "7th National Intelligence Division" }
+		8 = { "8th National Intelligence Division" }
+		9 = { "9th National Intelligence Division" }
+		10 = { "10th National Intelligence Division" }
+		11 = { "11th National Intelligence Division" }
+		12 = { "12th National Intelligence Division" }
+		13 = { "13th National Intelligence Division" }
+		14 = { "14th National Intelligence Division" }
+		15 = { "15th National Intelligence Division" }
+		16 = { "16th National Intelligence Division" }
+		17 = { "17th National Intelligence Division" }
+		18 = { "18th National Intelligence Division" }
+		19 = { "19th National Intelligence Division" }
+	}
+}

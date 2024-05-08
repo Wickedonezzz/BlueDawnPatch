@@ -1,0 +1,32 @@
+units = {
+	fleet = {
+		name = "Flota del Pacífico"
+		naval_base = 8032 # Manzanillo #
+		task_force = {
+			name = "Flota de superficie del Pacífico"
+			location = 8032 # Manzanillo #
+			ship = { name = "ARM Ilhuicamina" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = MEX creator = USA version_name = "Gearing Class" } } }
+			ship = { name = "ARM Netzahualcóyotl" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = MEX creator = USA version_name = "Gearing Class" } } }
+			ship = { name = "ARM Usumacinta" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = MEX creator = USA version_name = "Crosley Class" } } }
+			ship = { name = "ARM Coahuila" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = MEX creator = USA version_name = "Crosley Class" } } }
+			ship = { name = "ARM Chihuahua" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = MEX creator = USA version_name = "Crosley Class" } } }
+		}
+	}
+	fleet = {
+		name = "Flota del Golfo de México"
+		naval_base = 12810 # Tuxpan #
+		task_force = {
+			name = "Flota de superficie del Golfo de México"
+			location = 12810 # Tuxpan #
+			ship = { name = "ARM Cuitláhuac" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = MEX creator = USA version_name = "Fletcher Class" } } }
+			ship = { name = "ARM Comodoro Manuel Azueta Perillos" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = MEX creator = USA version_name = "Edsall Class" } } }
+			ship = { name = "ARM Nicolás Bravo" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = MEX creator = USA version_name = "Bronstein Class" } } }
+			ship = { name = "ARM Hermenegildo Galeana" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = MEX creator = USA version_name = "Bronstein Class" } } }
+			ship = { name = "ARM Ignacio Allende" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = MEX creator = USA version_name = "Knox Class" } } }
+			ship = { name = "ARM Mariano Abasolo" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = MEX creator = USA version_name = "Knox Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

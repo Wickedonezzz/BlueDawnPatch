@@ -1,0 +1,89 @@
+﻿capital = 901
+
+set_oob = "EGY_2000"
+set_air_oob = "EGY_2000_air"
+
+set_technology = {
+	infantry_weapons_1960 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_air_weapons_1960 = 1
+	tech_support = 1
+	tech_motorised_1960 = 1
+	tech_train_1960 = 1
+	towed_artillery_1960 = 1
+	motorised_artillery_1960 = 1
+	rocket_artillery_1960 = 1
+	mbt_tank_1960 = 1
+	ifv_tank_1970 = 1
+	apc_tank_1960 = 1
+	spaa_tank_1960 = 1
+	heli_transport_1960 = 1
+	heli_attack_1970 = 1
+	drone_recon_1980 = 1
+	support_tech_engineers_1960 = 1
+	support_tech_militarypolice_1960 = 1
+	support_tech_hospital_1960 = 1
+	support_tech_maintenance_1960 = 1
+	support_tech_logistics_1960 = 1
+	support_tech_recon_1960 = 1
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		recon_vehicle_1960 = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+
+	set_technology = {
+		corvette_hull_1960 = 1
+		destroyer_hull_1960 = 1
+		attack_submarine_hull_1960 = 1
+	}
+}
+
+set_convoys = 120
+
+recruit_character = EGY_hosni_mubarak
+recruit_character = EGY_party
+recruit_character = EGY_baath
+recruit_character = EGY_Khaled_Mohieddin
+recruit_character = EGY_sami_hafez_anan
+recruit_character = EGY_ayman_nour
+
+add_ideas = usa_aligned_nation
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 20
+	fascism = 60
+	communism = 10
+	socialism = 10
+	neutrality = 0
+}
+
+add_ideas = {
+	extensive_conscription
+}
+
+add_opinion_modifier = { target = ISR modifier = HISTORIC_israel_hostile_20_opinion }
+
+# Naval Variants #
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "EGY_2000_naval_mtg"
+}
+country_event = {
+    id = egypt.1
+    days = 1069
+}

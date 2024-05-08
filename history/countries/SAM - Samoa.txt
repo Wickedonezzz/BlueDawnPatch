@@ -1,0 +1,22 @@
+﻿capital = 726
+
+##oob = ""
+
+set_convoys = 20
+
+recruit_character = SAM_tuila'epa_malielegaoi
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 71
+	communism = 6
+	reformed_communism = 0
+	paternal_autocracy = 0
+	fascism = 3
+	neutrality = 20
+}

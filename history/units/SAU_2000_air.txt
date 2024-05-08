@@ -1,0 +1,75 @@
+﻿air_wings = {
+	# Land Wings #
+	679 = {
+		# Fighters -- F-5E/F, F-15C/D, F-15S
+		fighter_equipment_3 =  { # F-15S #
+			owner = "SAU" 
+			creator = USA
+			amount = 43
+		}
+		fighter_equipment_1 =  { # F-15C/D #
+			owner = "SAU" 
+			creator = USA
+			amount = 49
+		}
+		fighter_equipment_0 =  { # F-5E/F #
+			owner = "SAU" 
+			creator = USA
+			amount = 28
+		}
+
+		# Interceptors -- Torando ADV
+		interceptor_equipment_2 =  { # Torando ADV #
+			owner = "SAU" 
+			creator = ENG
+			amount = 24
+		}
+	}
+	292 = {
+		# Fighters -- F-5E/F, F-15C/D, F-15S
+		fighter_equipment_3 =  { # F-15S #
+			owner = "SAU" 
+			creator = USA
+			amount = 29
+		}
+		fighter_equipment_1 =  { # F-15C/D #
+			owner = "SAU" 
+			creator = USA
+			amount = 45
+		}
+
+		# Attackers -- Torando IDS
+		attacker_equipment_2 =  { # Torando IDS #
+			owner = "SAU" 
+			creator = ENG
+			amount = 35
+		}
+
+		# Transports -- C-130
+		transport_plane_equipment_1 =  {
+			owner = "SAU"
+			creator = USA
+			amount = 18
+		}
+		transport_plane_equipment_1 =  {
+			owner = "SAU"
+			creator = USA
+			amount = 18
+		}
+	}
+	856 = {
+		# Fighters -- F-5E/F
+		fighter_equipment_0 =  { # F-5E/F #
+			owner = "SAU" 
+			creator = USA
+			amount = 49
+		}
+
+		# Attackers -- Torando IDS
+		attacker_equipment_2 =  { # Torando IDS #
+			owner = "SAU" 
+			creator = ENG
+			amount = 41
+		}
+	}
+}

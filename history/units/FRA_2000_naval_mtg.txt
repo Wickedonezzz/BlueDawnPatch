@@ -1,0 +1,144 @@
+units = {
+	fleet = {
+		name = "Flotte de l'Atlantique"
+		naval_base = 3552 # Brest #
+		task_force = {
+			name = "Flotte de l'Atlantique"
+			location = 3552 # Brest #
+			ship = { name = "Jeanne d'Arc" definition = cruiser equipment = { cruiser_hull_1 = { amount = 1 owner = FRA version_name = "Jeanne d'Arc Class" } } }
+
+			ship = { name = "Aconit" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = FRA version_name = "Aconit Class" } } }
+			ship = { name = "Tourville" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = FRA version_name = "Tourville Class" } } }
+			ship = { name = "Duguay-Trouin" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = FRA version_name = "Tourville Class" } } }
+			ship = { name = "De Grasse" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = FRA version_name = "Tourville Class" } } }
+			ship = { name = "Georges Leygues" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = FRA version_name = "Georges Leygues Class" } } }
+			ship = { name = "Primauguet" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = FRA version_name = "Georges Leygues Class" } } }
+			ship = { name = "La Motte-Picquet" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = FRA version_name = "Georges Leygues Class" } } }
+			ship = { name = "Latouche-Tréville" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = FRA version_name = "Georges Leygues Class" } } }
+
+			ship = { name = "D'Estienne d'Orves" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = FRA version_name = "D'Estienne d'Orves Class" } } }
+			ship = { name = "Amyot d'Inville" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = FRA version_name = "D'Estienne d'Orves Class" } } }
+			ship = { name = "Drogou" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = FRA version_name = "D'Estienne d'Orves Class" } } }
+			ship = { name = "Jean Moulin" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = FRA version_name = "D'Estienne d'Orves Class" } } }
+			ship = { name = "Quartier-Maître Anquetil" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = FRA version_name = "D'Estienne d'Orves Class" } } }
+			ship = { name = "Commandant de Pimodan" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = FRA version_name = "D'Estienne d'Orves Class" } } }
+			ship = { name = "Second-Maître Le Bihan" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = FRA version_name = "D'Estienne d'Orves Class" } } }
+			ship = { name = "Lieutenant de vaisseau Le Hénaff" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = FRA version_name = "D'Estienne d'Orves Class" } } }
+			ship = { name = "Lieutenant de vaisseau Lavallée" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = FRA version_name = "D'Estienne d'Orves Class" } } }
+			ship = { name = "Commandant l'Herminier" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = FRA version_name = "D'Estienne d'Orves Class" } } }
+			ship = { name = "Premier-Maître L'Her" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = FRA version_name = "D'Estienne d'Orves Class" } } }
+			ship = { name = "Commandant Blaison" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = FRA version_name = "D'Estienne d'Orves Class" } } }
+			ship = { name = "Enseigne de vaisseau Jacoubet" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = FRA version_name = "D'Estienne d'Orves Class" } } }
+		}
+		task_force = {
+			name = "Flotte sous-marine de l'Atlantique"
+			location = 3552 # Brest #
+			ship = { name = "La Praya" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = FRA version_name = "Agosta Class" } } }
+			ship = { name = "Ouessant" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = FRA version_name = "Agosta Class" } } }
+		}
+		task_force = {
+			name = "Flotte sous-marine balistique de l'Atlantique"
+			location = 3552 # Brest #
+			ship = { name = "Le Triomphant" definition = ballistic_submarine equipment = { ballistic_submarine_hull_2 = { amount = 1 owner = FRA version_name = "Le Triomphant Class" } } }
+			ship = { name = "Le Téméraire" definition = ballistic_submarine equipment = { ballistic_submarine_hull_2 = { amount = 1 owner = FRA version_name = "Le Triomphant Class" } } }
+			ship = { name = "L'Indomptable" definition = ballistic_submarine equipment = { ballistic_submarine_hull_1 = { amount = 1 owner = FRA version_name = "Le Redoutable Class" } } }
+			ship = { name = "Le Tonnant" definition = ballistic_submarine equipment = { ballistic_submarine_hull_1 = { amount = 1 owner = FRA version_name = "Le Redoutable Class" } } }
+			ship = { name = "L'Inflexible" definition = ballistic_submarine equipment = { ballistic_submarine_hull_1 = { amount = 1 owner = FRA version_name = "L'Inflexible Class" } } }
+		}
+	}
+	fleet = {
+		name = "Flotte Méditerranéenne"
+		naval_base = 911 # Toulon #
+		task_force = {
+			name = "Flotte Méditerranéenne"
+			location = 911 # Toulon #
+			ship = { name = "Foch" definition = carrier equipment = { carrier_hull_1 = { amount = 1 owner = FRA version_name = "Clemenceau Class" } }
+			}
+
+			ship = { name = "La Fayette" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = FRA version_name = "La Fayette Class" } } }
+			ship = { name = "Surcouf" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = FRA version_name = "La Fayette Class" } } }
+			ship = { name = "Courbet" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = FRA version_name = "La Fayette Class" } } }
+			ship = { name = "Jauréguiberry" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = FRA version_name = "La Fayette Class" } } }
+			ship = { name = "Guépratte" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = FRA version_name = "La Fayette Class" } } }
+			ship = { name = "Cassard" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = FRA version_name = "Cassard Class" } } }
+			ship = { name = "Jean Bart" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = FRA version_name = "Cassard Class" } } }
+			ship = { name = "Suffren" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = FRA version_name = "Suffren Class" } } }
+			ship = { name = "Dunquesne" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = FRA version_name = "Suffren Class" } } }
+			ship = { name = "Dupleix" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = FRA version_name = "Georges Leygues Class" } } }
+			ship = { name = "Montcalm" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = FRA version_name = "Georges Leygues Class" } } }
+			ship = { name = "Jean de Vienne" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = FRA version_name = "Georges Leygues Class" } } }
+
+			ship = { name = "Commandant Ducuing" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = FRA version_name = "D'Estienne d'Orves Class" } } }
+			ship = { name = "Commandant Birot" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = FRA version_name = "D'Estienne d'Orves Class" } } }
+			ship = { name = "Commandant Bouan" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = FRA version_name = "D'Estienne d'Orves Class" } } }
+		}
+		task_force = {
+			name = "Flotte sous-marine Méditerranéenne"
+			location = 911 # Toulon #
+			ship = { name = "Rubis" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = FRA version_name = "Rubis Class" } } }
+			ship = { name = "Saphir" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = FRA version_name = "Rubis Class" } } }
+			ship = { name = "Casabianca" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = FRA version_name = "Rubis Class" } } }
+			ship = { name = "Émeraude" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = FRA version_name = "Rubis Class" } } }
+			ship = { name = "Améthyste" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = FRA version_name = "Améthyste Class" } } }
+			ship = { name = "Perle" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = FRA version_name = "Améthyste Class" } } }
+		}
+	}
+	fleet = {
+		name = "Flotte de patrouille des territoires d'outre-mer du Pacifique"
+		naval_base = 13017 # Réunion #
+		task_force = {
+			name = "Flotte de patrouille de la Réunion"
+			location = 13017 # Réunion #
+			ship = { name = "Floréal" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = FRA version_name = "Floréal Class" } } }
+			ship = { name = "Nivôse" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = FRA version_name = "Floréal Class" } } }
+		}
+		task_force = {
+			name = "Flotte de patrouille de Tahiti"
+			location = 12148 # Tahiti #
+			ship = { name = "Prairial" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = FRA version_name = "Floréal Class" } } }
+		}
+		task_force = {
+			name = "Flotte de patrouille de Nouméa"
+			location = 4268 # Nouméa #
+			ship = { name = "Vendémiaire" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = FRA version_name = "Floréal Class" } } }
+		}
+	}
+	fleet = {
+		name = "Flotte de patrouille des territoires d'outre-mer des Caraïbes"
+		naval_base = 177 # Martinique #
+		task_force = {
+			name = "Flotte de patrouille de la Martinique"
+			location = 177 # Martinique #
+			ship = { name = "Ventôse" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = FRA version_name = "Floréal Class" } } }
+			ship = { name = "Germinal" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = FRA version_name = "Floréal Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+	# Aircraft Carriers #
+	add_equipment_production = {
+		equipment = {
+			type = carrier_hull_2
+			creator = "FRA" 
+			version_name = "Charles de Gaulle Class"
+		}
+		name = "Charles de Gaulle"
+		requested_factories = 1
+		progress = 0.89
+		amount = 1
+	}
+
+	# Ballistic Missile Submarines #
+	add_equipment_production = {
+		equipment = {
+			type = ballistic_submarine_hull_2
+			creator = "FRA" 
+			version_name = "Le Triomphant Class"
+		}
+		name = "Le Vigilant"
+		requested_factories = 1
+		progress = 0.38
+		amount = 1
+	}
+}

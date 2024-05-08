@@ -1,0 +1,18 @@
+characters = {
+
+	GDL_jean-francois_carenco = {
+		name = "Jean-François Carenco"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GDL/Jean-Francois_Carenco.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

@@ -1,0 +1,49 @@
+characters = {
+
+	LAO_khamtai_siphandon = {
+		name = "Khamtai Siphandon"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LAO/Khamtai_Siphandon.png"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	LAO_khamtai_siphandon_1 = {
+		name = "Khamtai Siphandon"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LAO/Khamtai_Siphandon.png"
+			}
+		}
+		country_leader = {
+			ideology = market_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+        LAO_Douangchay_Phichit = {
+		name = "Douangchay Phichit"
+		portraits = {
+			army = {
+				large = "gfx/leaders/LAO/Douangchay_Phichit.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+}

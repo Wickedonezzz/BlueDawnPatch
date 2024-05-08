@@ -1,0 +1,32 @@
+characters = {
+
+	ALB_rexhep_meidani = {
+		name = "Rexhep Meidani"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ALB/Rexhep_Meidani.dds"
+			}
+		}
+		country_leader = {
+			ideology = democratic_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	ALB_nexhmije_hoxha = {
+		name = "Nexhmije Hoxha"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ALB/nexhmije_hoxha.dds"
+			}
+		}
+		country_leader = {
+			ideology = anti_revisionism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+}

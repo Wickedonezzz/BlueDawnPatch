@@ -1,0 +1,11 @@
+﻿air_wings = {
+	# Land Wings #
+	891 = {
+		# Transports -- An-26
+		transport_plane_equipment_1 =  { # An-26 #
+			owner = "MZB"
+			creator = SOV
+			amount = 5
+		}
+	}
+}

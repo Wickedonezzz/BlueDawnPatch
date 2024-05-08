@@ -1,0 +1,126 @@
+﻿##### USA NAME LISTS #####
+
+### GENERIC ###
+USA_NAVAL_NAME_CITIES = {
+	name = "American Cities"
+
+	for_countries = { USA }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	
+	unique = {
+		"USS Philadelphia" "USS San Antonio" "USS San Diego" "USS Dallas" "USS San Jose" "USS Los Angeles" "USS Austin" "USS Jacksonville" "USS Fort Worth" "USS Columubus" "USS Indianapolis" "USS Charlotte" "USS San Francisco" "USS Seattle" "USS Denver" "USS Oklahoma City" "USS Nashville" "USS El Paso" "USS Washington" "USS Boston" "USS Las Vegas" "USS Portland" "USS Detroit" "USS Louisville" "USS Memphis" "USS Baltimore" "USS Milwaukee" "USS Albuquerque" "USS Fresno" "USS Tucson" "USS Sacramento" "USS Mesa" "USS Kansas City" "USS Atlanta" "USS Omaha" "USS Colorado Springs" "USS Raleigh" "USS Virginia Beaach" "USS Long Beach" "USS Miami" "USS Oakland" "USS Minneapolis" "USS Tulsa" "USS Bakersfield" "USS Wichita" "USS Arlington" "USS Aurora" "USS Tampa" "USS New Orleans" "USS Cleveland" "USS Anaheim" "USS Honolulu" "USS Henderson" "USS Stockton" "USS Lexington" "USS Corpus Christi" "USS Riverside" "USS Santa Ana" "USS Orlando" "USS Irvine" "USS Cincinnati" "USS Newark" "USS Saint Paul" "USS Pittsburgh" "USS Greensboro" "USS St. Louis" "USS Lincoln" "USS Plano" "USS Anchorage" "USS Durham" "USS Jersey City" "USS New York" "USS Houston" "USS Phoenix" "USS Chandler" "USS Chula Vista" "USS Buffalo" "USS North Las Vegas" "USS Gilbert" "USS Madison" "USS Reno" "USS Toledo" "USS Fort Wayne" "USS Lubbock" "USS St. Petersburg" "USS Laredo" "USS Irving" "USS Chesapeake" "USS Winston-Salem" "USS Glendale" "USS Scottsdale" "USS Garland" "USS Boise" "USS Norfolk" "USS Spokane" "USS Fremont" "USS Richmond" "USS Santa Clarita" "USS San Bernadino" "USS Baton Rouge" "USS Huntsville" "USS Des Moines" "USS Little Rock" "USS Salt Lake City" "USS Montgomery" "USS Tallahassee" "USS Sioux Falls" "USS Providence" "USS Salem" "USS Charleston" "USS Jackson" "USS Bridgeport" "USS Columbia" "USS Fargo" "USS Topeka" "USS Hartford" "USS Billings" "USS Manchester" "USS Springfield" "USS Lansing" "USS Hialeah" "USS Tacoma" "USS Modesto" "USS Port St. Lucie" "USS Moreno Valley" "USS Fontana" "USS Frisco" "USS Rochester" "USS Yonkers" "USS Fayetteville" "USS Worcester" "USS Columubus" "USS Cape Coral" "USS MicKinney" "USS Oxnard" "USS Chicago" "USS Amarillo" "USS Augusta" "USS Birmingham" "USS Grand Rapids" "USS Grand Prairie" "USS Overland Park" "USS Huntington Beach" "USS Peoria" "USS Knoxville" "USS Glendale" "USS Vancouver" "USS Akron" "USS Brownsville" "USS Mobile" "USS Newport News" "USS Tempe" "USS Shreveport" "USS Chattanooga" "USS Fort Lauderdale" "USS Aurora" "USS Elk Grove" "USS Ontario" "USS Cary" "USS Santa Rosa"
+	}
+}
+USA_NAVAL_NAME_STATES = {
+	name = "American States"
+
+	for_countries = { USA }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	
+	unique = {
+		"USS Delaware" "USS Pennsylvania" "USS New Jersey" "USS Georgia" "USS Connecticut" "USS Massachusetts" "USS Maryland" "USS South Carolina" "USS New Hampshire" "USS Virginia" "USS New York" "USS North Carolina" "USS Rhode Island" "USS Vermont" "USS Kentucky" "USS Tennessee" "USS Ohio" "USS Louisiana" "USS Indiana" "USS Mississippi" "USS Illinois" "USS Alabama" "USS Maine" "USS Missouri" "USS Arkansas" "USS Michigan" "USS Florida" "USS Texas" "USS Iowa" "USS Wisconsin" "USS California" "USS Minnesota" "USS Oregon" "USS Kansas" "USS West Virginia" "USS Nevada" "USS Nebraska" "USS Colorado" "USS North Dakota" "USS South Dakota" "USS Montana" "USS Washington" "USS Idaho" "USS Wyoming" "USS Utah" "USS Oklahoma" "USS New Mexico" "USS Arizona" "USS Alaska" "USS Hawaii"
+	}
+}
+USA_NAVAL_NAME_FISH = {
+	name = "American Fish"
+
+	for_countries = { USA }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	ship_types = { attack_submarine_hull cruise_submarine_hull }
+	
+	unique = {
+		"USS Payara" "USS Angel Fish" "USS Pigfish" "USS Skate" "USS Snapper" "USS Cod" "USS Haddock" "USS Seahorse" "USS Triggerfish" "USS Drums" "USS Tiger Shark" "USS Bluefin" "USS Sunfish" "USS Hawkfish" "USS Pufferfish" "USS Spadefish" "USS Mackerel" "USS Scup" "USS Skipjack" "USS Damselfish" "USS Sheepshead" "USS Pinfish" "USS Searobin" "USS Mullet" "USS Trout" "USS Hind" "USS Perch" "USS Flounder" "USS Shark" "USS Blackfin" "USS Toadfish" "USS Sea Bass" "USS Wolffish" "USS Scamp" "USS Pompano" "USS Batfish" "USS Smelt" "USS Sailfish" "USS Oarfish" "USS Halibut" "USS Grunt" "USS Dolphin" "USS Cusk" "USS Starfish" "USS Payara" "USS Puffers" "USS Tarpon" "USS Krait" "USS Menhaden" "USS Tautog" "USS Basselets" "USS Croaker" "USS Clownfish" "USS Hammerhead" "USS Marlin"
+	}
+}
+USA_NAVAL_NAME_LEADERS = {
+	name = "American Leaders"
+
+	for_countries = { USA }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	
+	unique = {
+		"USS John F. Kennedy" "USS Ronald Reagan" "USS Bill Clinton" "USS Abraham Lincoln" "USS Gerald Ford" "USS Franlin Roosevelt" "USS Theodore Roosevelt" "USS Harry S. Truman" "USS Jimmy Carter" "USS Dwight Eisenhower" "USS Lyndon B. Johnson" "USS Richard Nixon"
+	}
+}
+USA_NAVAL_NAME_HISTORIC = {
+	name = "Orginial Six Frigates"
+
+	for_countries = { USA }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	ship_types = { carrier_hull battleship_hull battlecruiser_hull }
+	
+	unique = {
+		"USS United States" "USS Constellation" "USS Constitution" "USS Chesapeake" "USS Congress" "USS President"
+	}
+}
+USA_NAVAL_NAME_FLEET_ADMIRALS = {
+	name = "American Fleet Admirals"
+
+	for_countries = { USA }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	ship_types = { cruiser_hull carrier_hull battleship_hull battlecruiser_hull }
+	
+	unique = {
+		"USS Leahy" "USS Nimitz" "USS Halsey" "USS Ernest King"
+	}
+}
+USA_NAVAL_NAME_BATTLES = {
+	name = "American Battles"
+
+	for_countries = { USA }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	
+	unique = {
+		"USS Elsenborn Ridge" "USS Saint-Mihiel" "USS Gettysburg" "USS Leyte Gulf" "USS Spotsylvania" "USS Antietam" "USS Aachen" "USS Cold Harbor" "USS Tarawa" "USS Shiloh" "USS Bull Run" "USS Guadalcanal" "USS Stones River" "USS Chickamauga" "USS Chancellorsville" "USS Naktong Buldge" "USS Fredericksburg" "USS Taejon" "USS Savo Island" "USS Belleau Wood" "USS Masan" "USS Manila" "USS Normandy" "USS Luzon" "USS Iwo Jima" "USS Anzio" "USS Saipan" "USS Guam" "USS Peleliu" "USS Mindanao"
+	}
+}
+USA_NAVAL_NAME_SAILORS = {
+	name = "American Sailors"
+
+	for_countries = { USA }
+
+	can_use = {
+		always = yes
+	}
+
+	type = ship
+	
+	unique = {
+		"USS Smith" "USS Johnson" "USS Williams" "USS Jones" "USS Brown" "USS Davis" "USS Miller" "USS Wilson" "USS Moore" "USS Taylor" "USS Anderson" "USS Thomas" "USS Jackson" "USS White" "USS Harris" "USS Martin" "USS Thompson" "USS Garcia" "USS Martinez" "USS Robinson" "USS Clark" "USS Rodriguez" "USS Lewis" "USS Lee" "USS Walker" "USS Hall" "USS Allen" "USS Young" "USS Hernandez" "USS King" "USS Wright" "USS Lopez" "USS Hill" "USS Scott" "USS Green" "USS Adams" "USS Baker" "USS Gonzalez" "USS Nelson" "USS Carter" "USS Mitchell" "USS Perez" "USS Roberts" "USS Turner" "USS Phillips" "USS Campbell" "USS Parker" "USS Evans" "USS Edwards" "USS Collins" "USS Stewart" "USS Sanchez" "USS Morris" "USS Rogers" "USS Reed" "USS Cook" "USS Morgan" "USS Bell" "USS Murphy" "USS Bailey" "USS Rivera" "USS Cooper" "USS Richardson" "USS Cox" "USS Howard" "USS Ward" "USS Torres" "USS Peterson" "USS Gray" "USS Ramirez" "USS James" "USS Watson" "USS Brooks" "USS Kelly" "USS Sanders" "USS Price" "USS Bennett" "USS Wood" "USS Barnes" "USS Ross" "USS Henderson" "USS Coleman" "USS Jenkins" "USS Perry" "USS Powell" "USS Long" "USS Patterson" "USS Hughes" "USS Flores" "USS Washington" "USS Butler" "USS Simmons" "USS Foster" "USS Gonzales" "USS Bryant" "USS Alexander" "USS Russell" "USS Griffin" "USS Diaz" "USS Hayes"
+	}
+}

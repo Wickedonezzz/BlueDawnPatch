@@ -1,0 +1,21 @@
+﻿capital = 721
+
+#oob = "ETH_1936"
+
+set_convoys = 5
+
+recruit_character = TIM_UN_admin
+recruit_character = TIM_xanana
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "2000.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 20
+    reformed_communism = 0
+	democratic = 65
+	fascism = 15
+}

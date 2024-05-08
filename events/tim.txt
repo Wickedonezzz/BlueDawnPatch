@@ -1,0 +1,27 @@
+add_namespace = tim
+
+# blue helmets leave east timor #
+country_event = {
+	id = tim.1
+	title = tim.1.t
+	desc = tim.1.d
+	picture = GFX_nothing
+	
+	trigger = {
+		original_tag = TIM
+		date > 2002.05.19
+	}
+
+	fire_only_once = yes
+	
+	#modern day liberalism#
+	option = {
+		name = tim.1.a
+			news_event = {id = old_times_news.49 days = 0}
+			TIM = {
+			set_cosmetic_tag = TIM_free
+			retire_country_leader = yes
+			promote_character = TIM_xanana
+			}
+	}
+}

@@ -1,0 +1,18 @@
+characters = {
+
+	NAU_rene_reynaldo_harris = {
+		name = "René Reynaldo Harris"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NAU/rene_harris.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

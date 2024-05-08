@@ -1,0 +1,142 @@
+USA_improve_bush_family_legacy = {
+	
+	if = {
+		limit = {
+		has_idea = USA_bush_family_legacy
+		}
+		swap_ideas = {
+			remove_idea = USA_bush_family_legacy
+			add_idea = USA_bush_family_legacy_1
+		}
+	}
+	else_if = {
+		limit = {
+		has_idea = USA_bush_family_legacy_1
+		}
+		swap_ideas = {
+			remove_idea = USA_bush_family_legacy_1
+			add_idea = USA_bush_family_legacy_2
+		}
+	}
+	else_if = {
+		limit = {
+		has_idea = USA_bush_family_legacy_2
+		}
+		swap_ideas = {
+			remove_idea = USA_bush_family_legacy_2
+			add_idea = USA_bush_family_legacy_3
+		}
+	}
+	else_if = {
+		limit = {
+		has_idea = USA_bush_family_legacy_3
+		}
+		swap_ideas = {
+			remove_idea = USA_bush_family_legacy_3
+			add_idea = USA_bush_family_legacy_4
+		}
+	}
+	else_if = {
+		limit = {
+		has_idea = USA_bush_family_legacy_4
+		}
+		swap_ideas = {
+			remove_idea = USA_bush_family_legacy_4
+			add_idea = USA_bush_family_legacy_5
+		}
+	}
+	else_if = {
+		limit = {
+		has_idea = USA_bush_family_legacy_5
+		}
+		swap_ideas = {
+			remove_idea = USA_bush_family_legacy_5
+			add_idea = USA_bush_family_legacy_final
+		}
+	}
+
+}
+
+USA_improve_economic_stagnation = {
+	
+	if = {
+		limit = {
+		has_idea = USA_stagnating_economy
+		}
+		swap_ideas = {
+			remove_idea = USA_stagnating_economy
+			add_idea = USA_stagnating_economy_1
+		}
+	}
+	else_if = {
+		limit = {
+		has_idea = USA_stagnating_economy_1
+		}
+		swap_ideas = {
+			remove_idea = USA_stagnating_economy_1
+			add_idea = USA_stagnating_economy_2
+		}
+	}
+	else_if = {
+		limit = {
+		has_idea = USA_stagnating_economy_2
+		}
+		swap_ideas = {
+			remove_idea = USA_stagnating_economy_2
+			add_idea = USA_stagnating_economy_3
+		}
+	}
+	else_if = {
+		limit = {
+		has_idea = USA_stagnating_economy_3
+		}
+		swap_ideas = {
+			remove_idea = USA_stagnating_economy_3
+			add_idea = USA_stagnating_economy_4
+		}
+	}
+
+
+}
+
+USA_improve_social_soldiering = {
+	
+	if = {
+		limit = {
+		has_idea = USA_social_soldiering_1
+		}
+		swap_ideas = {
+			remove_idea = USA_social_soldiering_1
+			add_idea = USA_social_soldiering_2
+		}
+	}
+	else_if = {
+		limit = {
+		has_idea = USA_social_soldiering_2
+		}
+		swap_ideas = {
+			remove_idea = USA_social_soldiering_2
+			add_idea = USA_social_soldiering_3
+		}
+	}
+	else_if = {
+		limit = {
+		has_idea = USA_social_soldiering_3
+		}
+		swap_ideas = {
+			remove_idea = USA_social_soldiering_3
+			add_idea = USA_social_soldiering_4
+		}
+	}
+	else_if = {
+		limit = {
+		has_idea = USA_social_soldiering_4
+		}
+		swap_ideas = {
+			remove_idea = USA_social_soldiering_4
+			add_idea = USA_social_soldiering_final
+		}
+	}
+
+
+}

@@ -1,0 +1,110 @@
+add_namespace = hungary_mod
+
+#kil romania#
+country_event = {
+	id = hungary_mod.1
+	title = hungary_mod.1.t
+	desc = hungary_mod.1.d
+	picture = GFX_report_event_spark
+	
+	trigger = {
+	date > 2002.03.05
+	original_tag = HUN
+
+	}
+
+	fire_only_once = yes
+
+		#time to die#
+	option = {
+		name = hungary_mod.1.a
+		declare_war_on = {
+			target = ROM
+			type = annex_everything
+		}
+		set_country_flag = war_with_rom_rn
+		add_war_support = 0.35
+		news_event = {id = old_times_news.143}
+	}
+}
+
+#wholesome orban time#
+country_event = {
+	id = hungary_mod.2
+	title = hungary_mod.2.t
+	desc = hungary_mod.2.d
+	picture = GFX_report_event_spark
+
+	is_triggered_only = yes
+
+		#he loves soros in this timeline#
+	option = {
+		name = hungary_mod.2.a
+		remove_state_claim = 76
+		add_ideas = east_europe_privatization
+		remove_ideas = HUN_red_scum
+		remove_ideas = HUN_the_century_of_humiliation
+		set_politics = {
+			ruling_party = liberalism
+		}
+		set_popularities = {
+			liberalism = 47
+			democratic = 25
+			social_democracy = 13
+			fascism = 15
+			communism = 0
+		}
+		delete_unit_template_and_units = {
+			division_template = "Patriotic Guard"
+			disband = yes #will refund equipment and manpower
+		}
+	}
+}
+
+#kill Slovakia#
+country_event = {
+	id = hungary_mod.3
+	title = hungary_mod.3.t
+	desc = hungary_mod.3.d
+	picture = GFX_report_event_spark
+
+	is_triggered_only = yes
+
+		#lel#
+	option = {
+		name = hungary_mod.3.a
+		news_event = {id = old_times_news.144}		
+		declare_war_on = {
+			target = SLO
+			type = annex_everything
+		}
+	}
+}
+
+#the other way to lose#
+country_event = {
+	id = hungary_mod.4
+	title = hungary_mod.4.t
+	desc = hungary_mod.4.d
+	picture = GFX_report_event_spark
+
+	trigger = {
+		original_tag = HUN
+		surrender_progress > 0.35
+
+	}
+
+	fire_only_once = yes
+
+		#lel#
+	option = {
+		name = hungary_mod.4.a
+		country_event = {id = hungary_mod.2 days = 3}
+		ROM = {
+			white_peace = {
+				tag = HUN
+			}
+		}
+
+	}
+}

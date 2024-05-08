@@ -1,0 +1,31 @@
+
+state={
+	id=916
+	name="STATE_916"
+	manpower = 5813204
+	
+	state_category = town
+	
+	resources={
+	}
+
+
+	history={
+		add_core_of = VIN
+		owner = VIN
+                victory_points = {
+			12008 3
+		}
+		buildings = {
+			infrastructure = 2
+                        industrial_complex = 1
+		}
+
+	}
+
+	provinces={
+		1073 4529 7015 7518 9948 10075 10103 12008 12065 12075 12319
+	}
+
+	local_supplies=0.0 
+}

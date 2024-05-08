@@ -1,0 +1,70 @@
+air_wings = {
+	# Land Wings #
+	454 = {
+		# Fighters -- F-16, F-15, F-4
+		fighter_equipment_2 = { # F-16 #
+			owner = "ISR" 
+			creator = USA
+			amount = 49
+		}
+		fighter_equipment_2 = { # F-16 #
+			owner = "ISR" 
+			creator = USA
+			amount = 46
+		}
+		fighter_equipment_2 = { # F-16 #
+			owner = "ISR" 
+			creator = USA
+			amount = 45
+		}
+		fighter_equipment_2 = { # F-16 #
+			owner = "ISR" 
+			creator = USA
+			amount = 47
+		}
+		fighter_equipment_2 = { # F-16 #
+			owner = "ISR" 
+			creator = USA
+			amount = 50
+		}
+		fighter_equipment_1 = { # F-15 #
+			owner = "ISR" 
+			creator = USA
+			amount = 50
+		}
+		fighter_equipment_1 = { # F-15 #
+			owner = "ISR" 
+			creator = USA
+			amount = 48
+		}
+		fighter_equipment_0 = { # F-4 #
+			owner = "ISR" 
+			creator = USA
+			amount = 36
+		}
+		fighter_equipment_0 = { # F-4 #
+			owner = "ISR" 
+			creator = USA
+			amount = 34
+		}
+
+		# Attackers -- A-4N
+		attacker_equipment_0 = { # A-4N #
+			owner = "ISR" 
+			creator = USA
+			amount = 25
+		}
+
+		# Transports -- C-130
+		transport_plane_equipment_1 = { # C-130 #
+			owner = "ISR"
+			creator = USA
+			amount = 12
+		}
+		transport_plane_equipment_1 = { # C-130 #
+			owner = "ISR"
+			creator = USA
+			amount = 10
+		}
+	}
+}

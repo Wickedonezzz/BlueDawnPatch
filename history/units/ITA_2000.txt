@@ -1,0 +1,475 @@
+division_template = { # Mechanised Division #
+	name = "Mechanised Division"
+	division_names_group = GENERIC_MEC_01
+
+	regiments = {
+		main_battle_tank_armor = { x = 0 y = 0 }
+		main_battle_tank_armor = { x = 0 y = 1 }
+		main_battle_tank_armor = { x = 0 y = 2 }
+		recon_vehicle_armor = { x = 0 y = 3 }
+		spaa_vehicle_armor = { x = 0 y = 4 }
+		heavy_infantry_unit = { x = 1 y = 0 }
+		heavy_infantry_unit = { x = 1 y = 1 }
+		heavy_infantry_unit = { x = 1 y = 2 }
+		heavy_infantry_unit = { x = 2 y = 0 }
+		heavy_infantry_unit = { x = 2 y = 1 }
+		heavy_infantry_unit = { x = 2 y = 2 }
+		motorised_artillery_unit = { x = 3 y = 0 }
+		motorised_artillery_unit = { x = 3 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		field_hospital = { x = 0 y = 1 }
+		transport_heli_company = { x = 0 y = 2 }
+		attack_heli_company = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
+	}
+	priority = 1
+}
+division_template = { # Infantry Division #
+	name = "Infantry Division"
+	division_names_group = GENERIC_INF_01
+
+	regiments = {
+		heavy_infantry_unit = { x = 0 y = 0 }
+		heavy_infantry_unit = { x = 0 y = 1 }
+		infantry_unit = { x = 1 y = 0 }
+		infantry_unit = { x = 1 y = 1 }
+		infantry_unit = { x = 1 y = 2 }
+		infantry_unit = { x = 1 y = 3 }
+		infantry_unit = { x = 1 y = 4 }
+		towed_artillery_unit = { x = 2 y = 0 }
+		towed_artillery_unit = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		transport_heli_company = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+division_template = { # Paratrooper Division #
+	name = "Paratrooper Division"
+	division_names_group = GENERIC_PAR_01
+
+	regiments = {
+		heavy_infantry_unit = { x = 0 y = 0 }
+		paratrooper_unit = { x = 1 y = 0 }
+		paratrooper_unit = { x = 1 y = 1 }
+		paratrooper_unit = { x = 1 y = 2 }
+		paratrooper_unit = { x = 1 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		transport_heli_company = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+division_template = { # Marine Division #
+	name = "Marine Division"
+	division_names_group = GENERIC_MRN_01
+
+	regiments = {
+		heavy_infantry_unit = { x = 0 y = 0 }
+		marine_unit = { x = 1 y = 0 }
+		marine_unit = { x = 1 y = 1 }
+		marine_unit = { x = 1 y = 2 }
+		marine_unit = { x = 1 y = 3 }
+	}
+	support = {
+		logistics_company = { x = 0 y = 0 }
+	}
+	priority = 2
+}
+
+units = {
+	# Mechanised Division #
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6862
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "GER" }
+			apc_tank_equipment_2 = { owner = "USA" }
+			spaa_tank_equipment_1 = { owner = "ITA" }
+			recon_vehicle_equipment_1 = { owner = "ITA" }
+			motorised_artillery_equipment_1 = { owner = "USA" }
+			heli_transport_equipment_0 = { owner = "USA" }
+			heli_attack_equipment_1 = { owner = "ITA" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 628
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "GER" }
+			apc_tank_equipment_2 = { owner = "USA" }
+			spaa_tank_equipment_1 = { owner = "ITA" }
+			recon_vehicle_equipment_1 = { owner = "ITA" }
+			motorised_artillery_equipment_1 = { owner = "USA" }
+			heli_transport_equipment_0 = { owner = "USA" }
+			heli_attack_equipment_1 = { owner = "ITA" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9904
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "GER" }
+			apc_tank_equipment_2 = { owner = "USA" }
+			spaa_tank_equipment_1 = { owner = "ITA" }
+			recon_vehicle_equipment_1 = { owner = "ITA" }
+			motorised_artillery_equipment_1 = { owner = "USA" }
+			heli_transport_equipment_0 = { owner = "USA" }
+			heli_attack_equipment_1 = { owner = "ITA" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.02
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 9990
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "GER" }
+			apc_tank_equipment_2 = { owner = "USA" }
+			spaa_tank_equipment_1 = { owner = "ITA" }
+			recon_vehicle_equipment_1 = { owner = "ITA" }
+			motorised_artillery_equipment_1 = { owner = "USA" }
+			heli_transport_equipment_0 = { owner = "USA" }
+			heli_attack_equipment_1 = { owner = "ITA" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.02
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 6606
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "GER" }
+			apc_tank_equipment_2 = { owner = "USA" }
+			spaa_tank_equipment_1 = { owner = "ITA" }
+			recon_vehicle_equipment_1 = { owner = "ITA" }
+			motorised_artillery_equipment_1 = { owner = "USA" }
+			heli_transport_equipment_0 = { owner = "USA" }
+			heli_attack_equipment_1 = { owner = "ITA" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.02
+	}
+
+	# Infantry Division #
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11598
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_2 = { owner = "USA" }
+			towed_artillery_equipment_1 = { owner = "ENG" }
+			heli_transport_equipment_0 = { owner = "USA" }
+		}
+		start_experience_factor = 0.23
+		start_equipment_factor = 0.82
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 10074
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_2 = { owner = "USA" }
+			towed_artillery_equipment_1 = { owner = "ENG" }
+			heli_transport_equipment_0 = { owner = "USA" }
+		}
+		start_experience_factor = 0.23
+		start_equipment_factor = 0.02
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 819
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_2 = { owner = "USA" }
+			towed_artillery_equipment_1 = { owner = "ENG" }
+			heli_transport_equipment_0 = { owner = "USA" }
+		}
+		start_experience_factor = 0.23
+		start_equipment_factor = 0.02
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 773
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_2 = { owner = "USA" }
+			towed_artillery_equipment_1 = { owner = "ENG" }
+			heli_transport_equipment_0 = { owner = "USA" }
+		}
+		start_experience_factor = 0.23
+		start_equipment_factor = 0.02
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 883
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_2 = { owner = "USA" }
+			towed_artillery_equipment_1 = { owner = "ENG" }
+			heli_transport_equipment_0 = { owner = "USA" }
+		}
+		start_experience_factor = 0.23
+		start_equipment_factor = 0.02
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 925
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_2 = { owner = "USA" }
+			towed_artillery_equipment_1 = { owner = "ENG" }
+			heli_transport_equipment_0 = { owner = "USA" }
+		}
+		start_experience_factor = 0.23
+		start_equipment_factor = 0.02
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 9907
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_2 = { owner = "USA" }
+			towed_artillery_equipment_1 = { owner = "ENG" }
+			heli_transport_equipment_0 = { owner = "USA" }
+		}
+		start_experience_factor = 0.23
+		start_equipment_factor = 0.02
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 6788
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_2 = { owner = "USA" }
+			towed_artillery_equipment_1 = { owner = "ENG" }
+			heli_transport_equipment_0 = { owner = "USA" }
+		}
+		start_experience_factor = 0.23
+		start_equipment_factor = 0.02
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 6788
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			apc_tank_equipment_2 = { owner = "USA" }
+			towed_artillery_equipment_1 = { owner = "ENG" }
+			heli_transport_equipment_0 = { owner = "USA" }
+		}
+		start_experience_factor = 0.23
+		start_equipment_factor = 0.1
+	}
+
+	# Paratrooper Division #
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11730
+		division_template = "Paratrooper Division"
+		force_equipment_variants = {
+			apc_tank_equipment_2 = { owner = "USA" }
+			heli_transport_equipment_0 = { owner = "USA" }
+		}
+		start_experience_factor = 0.30
+		start_equipment_factor = 0.90
+	}
+
+	# Marine Division #
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9784
+		division_template = "Marine Division"
+		force_equipment_variants = {
+			apc_tank_equipment_2 = { owner = "USA" }
+		}
+		start_experience_factor = 0.30
+		start_equipment_factor = 0.90
+	}
+}
+instant_effect = {
+
+	# Stockpile #
+        add_equipment_to_stockpile = {
+		type = infantry_weapons_1
+		amount = 3500
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_weapons_1
+		amount = 3500
+		producer = ITA
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 800
+		producer = ITA
+	}
+        add_equipment_to_stockpile = {
+		type = motorised_equipment_1
+		amount = 800
+		producer = ITA
+	}
+        add_equipment_to_stockpile = {
+		type = infantry_anti_air_weapons_1
+		amount = 200
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_anti_tank_weapons_1
+		amount = 450
+		producer = USA
+	}
+
+	add_equipment_to_stockpile = {
+		type = mbt_tank_equipment_1
+		amount = 30
+		producer = GER
+	}
+	add_equipment_to_stockpile = {
+		type = mbt_tank_equipment_3
+		amount = 205
+		producer = ITA
+	}
+	
+	add_equipment_to_stockpile = {
+		type = ifv_tank_equipment_3
+		amount = 20
+		producer = ITA
+	}
+	add_equipment_to_stockpile = {
+		type = apc_tank_equipment_0
+		amount = 880
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = apc_tank_equipment_1
+		amount = 30
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = apc_tank_equipment_1
+		amount = 30
+		producer = ITA
+	}
+	add_equipment_to_stockpile = {
+		type = apc_tank_equipment_2
+		amount = 1260
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = apc_tank_equipment_4
+		amount = 100
+		producer = ITA
+	}
+	add_equipment_to_stockpile = {
+		type = spaa_tank_equipment_1
+		amount = 120
+		producer = ITA
+	}
+	add_equipment_to_stockpile = {
+		type = recon_vehicle_equipment_1
+		amount = 280
+		producer = ITA
+	}
+	add_equipment_to_stockpile = {
+		type = towed_artillery_equipment_1
+		amount = 70
+		producer = ITA
+	}
+	add_equipment_to_stockpile = {
+		type = towed_artillery_equipment_1
+		amount = 40
+		producer = ENG
+	}
+	add_equipment_to_stockpile = {
+		type = towed_artillery_equipment_1
+		amount = 50
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = rocket_artillery_equipment_3
+		amount = 20
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = heli_attack_equipment_1
+		amount = 22
+		producer = ITA
+	}
+	add_equipment_to_stockpile = {
+		type = heli_transport_equipment_0
+		amount = 212
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = heli_transport_equipment_1
+		amount = 23
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = heli_transport_equipment_1
+		amount = 27
+		producer = ITA
+	}
+}

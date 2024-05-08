@@ -1,0 +1,18 @@
+characters = {
+
+	HKG_tung_chee-hwa = {
+		name = "Tung Chee-hwa"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HKG/Tung_Chee-hwa.png"
+			}
+		}
+		country_leader = {
+			ideology = market_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

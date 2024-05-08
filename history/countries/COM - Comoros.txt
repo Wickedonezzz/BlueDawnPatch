@@ -1,0 +1,23 @@
+capital = 909
+
+##oob = "COM_1936"
+
+set_research_slots = 3
+
+recruit_character = COM_azali_assoumani
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 20
+	communism = 5
+	reformed_communism = 1
+	paternal_autocracy = 19
+	fascism = 7
+	neutrality = 48
+}

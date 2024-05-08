@@ -1,0 +1,22 @@
+﻿capital = 923
+
+#oob = "OFS_1936"
+
+set_stability = 0.6
+set_war_support = 0.1
+set_convoys = 25
+
+recruit_character = OFS_steyn_von_ronge 
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1994.5.17"
+	election_frequency = 60
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 30
+	fascism = 60
+        neutrality = 0
+	communism = 10
+}

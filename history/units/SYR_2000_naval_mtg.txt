@@ -1,0 +1,22 @@
+units = {
+	fleet = {
+		name = "Al'ustul Alsuwriu"
+		naval_base = 10087 # Latakia #
+		task_force = {
+			name = "Al'ustul Alsathiu Alsuwriu"
+			location = 10087 # Latakia #
+			ship = { name = "Al Assari" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = SYR creator = SOV version_name = "Petya Class (Pr. 159AE)" } } }
+			ship = { name = "Al Hirasa" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = SYR creator = SOV version_name = "Petya Class (Pr. 159AE)" } } }
+		}
+		task_force = {
+			name = "Ustul Alghawaasat Alsuwrii"
+			location = 10087 # Latakia #
+			ship = { name = "Mumbata" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = SYR creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "No. 351" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = SYR creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+			ship = { name = "No. 352" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = SYR creator = SOV version_name = "Romeo Class (Pr. 633)" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

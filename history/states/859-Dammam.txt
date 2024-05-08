@@ -1,0 +1,28 @@
+state={
+	id=859
+	name="STATE_859"
+	provinces={
+		1955 10791 10850 12702 
+	}
+	resources={
+		oil=130
+		aluminium=25
+	}
+	history = {
+		owner = SAU
+		add_core_of = SAU
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+            arms_factory = 1
+			12702 = {
+				naval_base = 6
+
+			}
+		}
+	}
+	manpower=3440000
+	state_category = large_town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,1941 @@
+﻿shared_focus = {
+	id = USA_the_giant_wakes_again
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 35
+	y = 0
+	prerequisite = { }
+	mutually_exclusive = { }
+	#relative_position_id = 
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_the_world_we_left_behind
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 0
+	y = 1
+	prerequisite = {focus = USA_the_giant_wakes_again}
+	mutually_exclusive = { }
+	relative_position_id = USA_the_giant_wakes_again
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+#path of peace#
+shared_focus = {
+	id = USA_path_of_peace
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = -6
+	y = 1
+	prerequisite = {focus = USA_the_world_we_left_behind}
+	mutually_exclusive = {focus = USA_path_of_power focus = USA_path_of_war}
+	relative_position_id = USA_the_world_we_left_behind
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_diplomatic_ventures
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 0
+	y = 1
+	prerequisite = {focus = USA_path_of_peace}
+	mutually_exclusive = { focus = USA_new_isolation }
+	relative_position_id = USA_path_of_peace
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_new_isolation #who tf would do this
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = -4
+	y = 1
+	prerequisite = {focus = USA_path_of_peace}
+	mutually_exclusive = { focus = USA_diplomatic_ventures }
+	relative_position_id = USA_path_of_peace
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_pass_the_torch 
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 0
+	y = 1
+	prerequisite = {focus = USA_new_isolation}
+	mutually_exclusive = { }
+	relative_position_id = USA_new_isolation
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_pull_out_our_troops
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 0
+	y = 2
+	prerequisite = {focus = USA_pass_the_torch}
+	mutually_exclusive = { }
+	relative_position_id = USA_new_isolation
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_make_our_amends
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 0
+	y = 3
+	prerequisite = {focus = USA_pass_the_torch}
+	mutually_exclusive = { }
+	relative_position_id = USA_new_isolation
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_the_end_of_an_era
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 0
+	y = 4
+	prerequisite = {focus = USA_make_our_amends}
+	mutually_exclusive = { }
+	relative_position_id = USA_new_isolation
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_an_open_arm_to_moscow
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = -2
+	y = 1
+	prerequisite = {focus = USA_diplomatic_ventures}
+	mutually_exclusive = { }
+	relative_position_id = USA_diplomatic_ventures
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_prepare_for_negotiations
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = -2
+	y = 2
+	prerequisite = {focus = USA_an_open_arm_to_moscow}
+	mutually_exclusive = { }
+	relative_position_id = USA_diplomatic_ventures
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_make_peace_with_the_middle_east
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 0
+	y = 1
+	prerequisite = {focus = USA_diplomatic_ventures}
+	mutually_exclusive = { }
+	relative_position_id = USA_diplomatic_ventures
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_settle_our_debts
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 0
+	y = 2
+	prerequisite = {focus = USA_make_peace_with_the_middle_east}
+	mutually_exclusive = { }
+	relative_position_id = USA_diplomatic_ventures
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_nato_an_alliance_of_peace
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 2
+	y = 1
+	prerequisite = {focus = USA_diplomatic_ventures}
+	mutually_exclusive = { }
+	relative_position_id = USA_diplomatic_ventures
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_extend_the_olive_branch
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 2
+	y = 2
+	prerequisite = {focus = USA_nato_an_alliance_of_peace}
+	mutually_exclusive = { }
+	relative_position_id = USA_diplomatic_ventures
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_an_open_apology
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = -1
+	y = 3
+	prerequisite = {focus = USA_prepare_for_negotiations}
+	prerequisite = {focus = USA_settle_our_debts}
+	mutually_exclusive = { }
+	relative_position_id = USA_diplomatic_ventures
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_expand_our_alliances
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 1
+	y = 3
+	prerequisite = {focus = USA_extend_the_olive_branch}
+	prerequisite = {focus = USA_settle_our_debts}
+	mutually_exclusive = { }
+	relative_position_id = USA_diplomatic_ventures
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_an_end_to_cold_war
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 0
+	y = 4
+	prerequisite = {focus = USA_an_open_apology}
+	prerequisite = {focus = USA_expand_our_alliances}
+	mutually_exclusive = { }
+	relative_position_id = USA_diplomatic_ventures
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_peace_in_our_time
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 2
+	y = 1
+	prerequisite = {focus = USA_an_end_to_cold_war}
+	mutually_exclusive = { focus = USA_russias_refusal }
+	relative_position_id = USA_an_end_to_cold_war
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_cold_war_goes_quiet
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 7
+	y = 1
+	prerequisite = {focus = USA_peace_in_our_time focus = USA_with_watchful_eyes focus = USA_operation_unthinkable }
+	mutually_exclusive = { }
+	relative_position_id = USA_peace_in_our_time
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_russias_refusal
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = -2
+	y = 1
+	prerequisite = {focus = USA_an_end_to_cold_war}
+	mutually_exclusive = { focus = USA_peace_in_our_time }
+	relative_position_id = USA_an_end_to_cold_war
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_reconsider_our_plans
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = -2
+	y = 2
+	prerequisite = {focus = USA_russias_refusal}
+	mutually_exclusive = { }
+	relative_position_id = USA_an_end_to_cold_war
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_accept_our_differences
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = -2
+	y = 3
+	prerequisite = {focus = USA_reconsider_our_plans}
+	mutually_exclusive = { }
+	relative_position_id = USA_an_end_to_cold_war
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+#path of power#
+shared_focus = {
+	id = USA_path_of_power
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 0
+	y = 1
+	prerequisite = {focus = USA_the_world_we_left_behind}
+	mutually_exclusive = {focus = USA_path_of_peace focus = USA_path_of_war}
+	relative_position_id = USA_the_world_we_left_behind
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_our_foot_in_the_door
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 0
+	y = 1
+	prerequisite = {focus = USA_path_of_power}
+	mutually_exclusive = { }
+	relative_position_id = USA_path_of_power
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_surround_the_soviets
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = -1
+	y = 2
+	prerequisite = {focus = USA_our_foot_in_the_door}
+	mutually_exclusive = { }
+	relative_position_id = USA_path_of_power
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_break_for_the_borders
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 1
+	y = 2
+	prerequisite = {focus = USA_our_foot_in_the_door}
+	mutually_exclusive = { }
+	relative_position_id = USA_path_of_power
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_contain_the_red_menance
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 0
+	y = 3
+	prerequisite = {focus = USA_surround_the_soviets}
+	prerequisite = {focus = USA_break_for_the_borders}
+	mutually_exclusive = { }
+	relative_position_id = USA_path_of_power
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_return_missiles_to_turkey
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = -2
+	y = 4
+	prerequisite = {focus = USA_contain_the_red_menance}
+	mutually_exclusive = { }
+	relative_position_id = USA_path_of_power
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_a_new_trade_war
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 0
+	y = 4
+	prerequisite = {focus = USA_contain_the_red_menance}
+	mutually_exclusive = { }
+	relative_position_id = USA_path_of_power
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_deepen_the_sino_soviet_split
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 2
+	y = 4
+	prerequisite = {focus = USA_contain_the_red_menance}
+	mutually_exclusive = { }
+	relative_position_id = USA_path_of_power
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_an_ultimatum
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 0
+	y = 5
+	prerequisite = {focus = USA_return_missiles_to_turkey}
+	prerequisite = {focus = USA_a_new_trade_war}
+	prerequisite = {focus = USA_deepen_the_sino_soviet_split}
+	mutually_exclusive = { }
+	relative_position_id = USA_path_of_power
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_with_watchful_eyes
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 0
+	y = 6
+	prerequisite = {focus = USA_an_ultimatum}
+
+	mutually_exclusive = { }
+	relative_position_id = USA_path_of_power
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+#path of war#
+shared_focus = {
+	id = USA_path_of_war
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 6
+	y = 1
+	prerequisite = {focus = USA_the_world_we_left_behind}
+	mutually_exclusive = {focus = USA_path_of_power focus = USA_path_of_peace}
+	relative_position_id = USA_the_world_we_left_behind
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_better_dead_than_dead
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 0
+	y = 1
+	prerequisite = {focus = USA_path_of_war}
+	mutually_exclusive = { }
+	relative_position_id = USA_path_of_war
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_tolerate_none_temper_all
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = -2
+	y = 2
+	prerequisite = {focus = USA_better_dead_than_dead}
+	mutually_exclusive = { }
+	relative_position_id = USA_path_of_war
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_strengthen_the_pacific_bases
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 0
+	y = 2
+	prerequisite = {focus = USA_better_dead_than_dead}
+	mutually_exclusive = { }
+	relative_position_id = USA_path_of_war
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_military_maneuvers_in_the_emperor_chain
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 2
+	y = 2
+	prerequisite = {focus = USA_better_dead_than_dead}
+	mutually_exclusive = { }
+	relative_position_id = USA_path_of_war
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_force_our_friends
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 0
+	y = 3
+	prerequisite = {focus = USA_tolerate_none_temper_all}	
+	prerequisite = {focus = USA_strengthen_the_pacific_bases}	
+	prerequisite = {focus = USA_military_maneuvers_in_the_emperor_chain}
+	mutually_exclusive = { }
+	relative_position_id = USA_path_of_war
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_deliver_to_the_dissenters
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = -1
+	y = 4
+	prerequisite = {focus = USA_force_our_friends}	
+	mutually_exclusive = { }
+	relative_position_id = USA_path_of_war
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_rally_the_republicans
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = -1
+	y = 5
+	prerequisite = {focus = USA_deliver_to_the_dissenters}	
+	mutually_exclusive = { }
+	relative_position_id = USA_path_of_war
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_a_spiked_shield
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 1
+	y = 4
+	prerequisite = {focus = USA_force_our_friends}	
+	mutually_exclusive = { }
+	relative_position_id = USA_path_of_war
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_pick_off_their_puppets
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 1
+	y = 5
+	prerequisite = {focus = USA_a_spiked_shield}	
+	mutually_exclusive = { }
+	relative_position_id = USA_path_of_war
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_operation_unthinkable
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 0
+	y = 6
+	prerequisite = {focus = USA_rally_the_republicans}	
+	prerequisite = {focus = USA_pick_off_their_puppets}	
+
+	mutually_exclusive = { }
+	relative_position_id = USA_path_of_war
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+#european overtures#
+shared_focus = {
+	id = USA_european_overtures
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 10
+	y = 1
+	prerequisite = {focus = USA_the_world_we_left_behind}	
+
+	mutually_exclusive = { }
+	relative_position_id = USA_the_world_we_left_behind
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_nato_expansions
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 0
+	y = 1
+	prerequisite = {focus = USA_european_overtures}	
+
+	mutually_exclusive = { }
+	relative_position_id = USA_european_overtures
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+shared_focus = {
+	id = USA_the_european_union
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 0
+	y = 2
+	prerequisite = {focus = USA_nato_expansions}	
+
+	mutually_exclusive = { }
+	relative_position_id = USA_european_overtures
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+			
+	}
+}
+
+#middle east situation#
+shared_focus = {
+	id = USA_the_middle_east_situation
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 14
+	y = 1
+	prerequisite = {focus = USA_the_world_we_left_behind}	
+
+	mutually_exclusive = { }
+	relative_position_id = USA_the_world_we_left_behind
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_saudi_sellouts
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = -2
+	y = 1
+	prerequisite = {focus = USA_the_middle_east_situation}	
+
+	mutually_exclusive = { }
+	relative_position_id = USA_the_middle_east_situation
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_reconcile_with_the_muslims
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = -2
+	y = 2
+	prerequisite = {focus = USA_saudi_sellouts}	
+
+	mutually_exclusive = { focus = USA_stand_by_jerusalem focus = USA_saddam_and_the_axis_of_evil }
+	relative_position_id = USA_the_middle_east_situation
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_israel_is_it_real
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 0
+	y = 1
+	prerequisite = {focus = USA_the_middle_east_situation}	
+
+	mutually_exclusive = { }
+	relative_position_id = USA_the_middle_east_situation
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_stand_by_jerusalem
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 0
+	y = 2
+	prerequisite = {focus = USA_israel_is_it_real}	
+
+	mutually_exclusive = { focus = USA_reconcile_with_the_muslims focus = USA_saddam_and_the_axis_of_evil }
+	relative_position_id = USA_the_middle_east_situation
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_the_iraqi_situation
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 2
+	y = 1
+	prerequisite = {focus = USA_the_middle_east_situation}	
+
+	mutually_exclusive = { }
+	relative_position_id = USA_the_middle_east_situation
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_saddam_and_the_axis_of_evil
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 2
+	y = 2
+	prerequisite = {focus = USA_the_iraqi_situation}	
+
+	mutually_exclusive = { focus = USA_reconcile_with_the_muslims focus = USA_stand_by_jerusalem }
+	relative_position_id = USA_the_middle_east_situation
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_move_our_embassy
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = -1
+	y = 3
+	prerequisite = {focus = USA_reconcile_with_the_muslims focus = USA_stand_by_jerusalem}	
+
+	mutually_exclusive = { }
+	relative_position_id = USA_the_middle_east_situation
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_deal_with_iraq
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 1
+	y = 3
+	prerequisite = {focus = USA_stand_by_jerusalem focus = USA_saddam_and_the_axis_of_evil}	
+
+	mutually_exclusive = { }
+	relative_position_id = USA_the_middle_east_situation
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_the_iranian_missiles
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 0
+	y = 4
+	prerequisite = {focus = USA_move_our_embassy focus = USA_deal_with_iraq}	
+
+	mutually_exclusive = { }
+	relative_position_id = USA_the_middle_east_situation
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_our_sandbox
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 0
+	y = 5
+	prerequisite = {focus = USA_the_iranian_missiles }	
+
+	mutually_exclusive = { }
+	relative_position_id = USA_the_middle_east_situation
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_let_the_sand_drift
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = -1
+	y = 6
+	prerequisite = {focus = USA_our_sandbox }	
+
+	mutually_exclusive = { focus = USA_maintain_our_presence }
+	relative_position_id = USA_the_middle_east_situation
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_fund_domestic_fuel
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = -1
+	y = 7
+	prerequisite = {focus = USA_let_the_sand_drift }	
+
+	mutually_exclusive = { }
+	relative_position_id = USA_the_middle_east_situation
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_maintain_our_presence
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 1
+	y = 6
+	prerequisite = {focus = USA_our_sandbox }	
+
+	mutually_exclusive = { focus = USA_let_the_sand_drift }
+	relative_position_id = USA_the_middle_east_situation
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_its_not_imperialism
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 1
+	y = 7
+	prerequisite = {focus = USA_maintain_our_presence }	
+
+	mutually_exclusive = { }
+	relative_position_id = USA_the_middle_east_situation
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+#protecting the pacific#
+shared_focus = {
+	id = USA_protecting_the_pacific
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 19
+	y = 1
+	prerequisite = {focus = USA_the_world_we_left_behind}	
+
+	mutually_exclusive = { }
+	relative_position_id = USA_the_world_we_left_behind
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_allies_in_australia
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = -1
+	y = 1
+	prerequisite = {focus = USA_protecting_the_pacific}	
+
+	mutually_exclusive = { }
+	relative_position_id = USA_protecting_the_pacific
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_secure_the_seas
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = -1
+	y = 2
+	prerequisite = {focus = USA_allies_in_australia}	
+
+	mutually_exclusive = { }
+	relative_position_id = USA_protecting_the_pacific
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_japan_our_aircraft_carrier
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 1
+	y = 1
+	prerequisite = {focus = USA_protecting_the_pacific}	
+
+	mutually_exclusive = { }
+	relative_position_id = USA_protecting_the_pacific
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_naval_expansions
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 1
+	y = 2
+	prerequisite = {focus = USA_japan_our_aircraft_carrier}	
+
+	mutually_exclusive = { }
+	relative_position_id = USA_protecting_the_pacific
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_the_beijing_beast
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 0
+	y = 3
+	prerequisite = {focus = USA_secure_the_seas}	
+	prerequisite = {focus = USA_naval_expansions}
+
+	mutually_exclusive = { }
+	relative_position_id = USA_protecting_the_pacific
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_legacy_of_nixon
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = -1
+	y = 4
+	prerequisite = {focus = USA_the_beijing_beast}	
+
+	mutually_exclusive = {focus = USA_no_quarter_for_china}
+	relative_position_id = USA_protecting_the_pacific
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_no_quarter_for_china
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 1
+	y = 4
+	prerequisite = {focus = USA_the_beijing_beast}	
+
+	mutually_exclusive = {focus = USA_legacy_of_nixon}
+	relative_position_id = USA_protecting_the_pacific
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_towards_a_calm_ocean
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = -2
+	y = 5
+	prerequisite = {focus = USA_legacy_of_nixon}	
+
+	mutually_exclusive = {focus = USA_beijing_will_burn focus = USA_sit_on_status_quo}
+	relative_position_id = USA_protecting_the_pacific
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_reconsider_taiwans_independence
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = -2
+	y = 6
+	prerequisite = {focus = USA_towards_a_calm_ocean}	
+
+	mutually_exclusive = {}
+	relative_position_id = USA_protecting_the_pacific
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_trade_must_flow
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = -2
+	y = 7
+	prerequisite = {focus = USA_reconsider_taiwans_independence}	
+
+	mutually_exclusive = {}
+	relative_position_id = USA_protecting_the_pacific
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_united_against_russians
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = -2
+	y = 8
+	prerequisite = {focus = USA_trade_must_flow}	
+
+	mutually_exclusive = {}
+	relative_position_id = USA_protecting_the_pacific
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_sit_on_status_quo
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 0
+	y = 5
+	prerequisite = {focus = USA_legacy_of_nixon focus = USA_no_quarter_for_china}	
+
+	mutually_exclusive = {focus = USA_beijing_will_burn focus = USA_towards_a_calm_ocean}
+	relative_position_id = USA_protecting_the_pacific
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_continue_the_tariffs
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 0
+	y = 6
+	prerequisite = {focus = USA_sit_on_status_quo}	
+
+	mutually_exclusive = {}
+	relative_position_id = USA_protecting_the_pacific
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_commit_to_taiwan
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 0
+	y = 7
+	prerequisite = {focus = USA_continue_the_tariffs}	
+
+	mutually_exclusive = {}
+	relative_position_id = USA_protecting_the_pacific
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_poised_to_strike
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 0
+	y = 8
+	prerequisite = {focus = USA_commit_to_taiwan}	
+
+	mutually_exclusive = {}
+	relative_position_id = USA_protecting_the_pacific
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_beijing_will_burn
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 2
+	y = 5
+	prerequisite = {focus = USA_no_quarter_for_china}	
+
+	mutually_exclusive = {focus = USA_sit_on_status_quo focus = USA_towards_a_calm_ocean}
+	relative_position_id = USA_protecting_the_pacific
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_ensure_russian_neutrality
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 2
+	y = 6
+	prerequisite = {focus = USA_beijing_will_burn}	
+
+	mutually_exclusive = {}
+	relative_position_id = USA_protecting_the_pacific
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_friends_in_chinas_enemies
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 2
+	y = 7
+	prerequisite = {focus = USA_ensure_russian_neutrality}	
+
+	mutually_exclusive = {}
+	relative_position_id = USA_protecting_the_pacific
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = USA_operation_mcarthur
+	icon = GFX_USA_focus_aftermath_of_uneasy_90s
+	x = 2
+	y = 8
+	prerequisite = {focus = USA_friends_in_chinas_enemies}	
+
+	mutually_exclusive = {}
+	relative_position_id = USA_protecting_the_pacific
+		
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		
+	}
+}

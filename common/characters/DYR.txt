@@ -1,0 +1,51 @@
+characters = {
+
+	DYR_Ali_Salem_al_Beidh = {
+		name = "Ali Salem al Beidh"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DYR/Ali_Salem_al_Beidh.png"
+			}
+		}
+		country_leader = {
+			ideology = market_socialism
+			traits = {}
+			expire = "2050.3.1"
+			id = -1
+		}
+	}
+
+	DYR_arab_socialist_union_party = {
+		name = "ASU Party Committee"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JOR/jordan_baath.dds"
+			}
+		}
+		country_leader = {
+			ideology = baathist_socialism
+			traits = {}
+			expire = "2050.3.1"
+			id = -1
+		}
+	}	
+	
+	
+	DYR_jaafar_mohammed_saad = {
+		name = "Jaafar Mohammed Saad"
+		portraits = {
+			army = {
+				large = "gfx/leaders/DYR/Jaafar_Mohammed_Saad.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+}

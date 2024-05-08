@@ -1,0 +1,25 @@
+﻿capital = 272
+
+set_convoys = 20
+
+add_ideas = west_africa_ECOWAS
+
+recruit_character = SEN_abdou_diouf
+
+set_politics = {
+	ruling_party = socialism
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 0
+	reformed_communism = 0
+	socialism = 58
+	liberalism = 32
+	democratic = 10
+	neutrality = 0
+	paternal_autocracy = 0
+	fascism = 0
+}

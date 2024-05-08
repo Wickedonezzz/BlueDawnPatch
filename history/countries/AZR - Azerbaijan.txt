@@ -1,0 +1,54 @@
+﻿capital = 229 #Baku
+
+set_oob = "AZR_2000"
+set_air_oob = "AZR_2000_air"
+
+set_technology = {
+	infantry_weapons_1960 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_air_weapons_1960 = 1
+	tech_support = 1
+	tech_motorised_1960 = 1
+	tech_train_1960 = 1
+	towed_artillery_1960 = 1
+	rocket_artillery_1960 = 1
+	mbt_tank_1960 = 1
+	ifv_tank_1970 = 1
+	apc_tank_1960 = 1
+	heli_attack_1970 = 1
+}
+
+add_ideas = {
+	extensive_conscription
+}
+add_ideas = AZR_karabakh_war
+add_ideas = east_europe_privatization
+add_ideas = east_europe_eastern_threat
+
+set_research_slots = 3
+
+recruit_character = AZR_abulfaz_elchibey
+recruit_character = AZR_heydar_aliyev
+recruit_character = AZR_ilham_aliyev
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 0
+	reformed_communism = 0
+	social_democracy = 5
+	liberalism = 0
+	democratic = 50
+	neutrality = 0
+	paternal_autocracy = 0
+	fascism = 45
+}
+
+
+add_opinion_modifier = { target = SOV modifier = HISTORIC_baltic_ussr_opinion }
+add_opinion_modifier = { target = ARM modifier = HISTORIC_amernia_azerbaijan_opinion }

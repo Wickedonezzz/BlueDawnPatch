@@ -1,0 +1,407 @@
+guiTypes = {
+
+	
+	containerWindowType = {
+		name = "saf_pacification_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 370 }
+		
+		containerWindowType	= {
+			name = "saf_pacification_main_window"
+			position = { x = 0 y = 0 }
+			size = { width = 100% height= 100% }
+			scale = 0.9
+				
+			containerWindowType	= {
+				name = "map_window"
+				position = { x = 30 y = 50 }
+				size = { width = 100% height= 100% }
+				scale = 0.57
+			
+				iconType = {
+					name ="frame"
+					spriteType = "GFX_saf_pacification_frame"
+					position = { x=-50 y=-20 } 
+				}
+				
+				containerWindowType	= {
+					name = "southafrica_flag_window"
+					position = { x = 72 y = 372 }
+					size = { width = 100% height= 100% }
+					
+					iconType = {
+						name ="southafrica_flag"
+						spriteType = "GFX_saf_southafrica_flag"
+						position = { x=0 y=0 }
+					}
+				}
+				
+				containerWindowType	= {
+					name = "congo_window"
+					position = { x = 14 y = 7 }
+					size = { width = 100% height= 100% }
+					
+					iconType = {
+						name ="congo1"
+						spriteType = "GFX_saf_congo"
+						position = { x=0 y=0 } 
+						frame = 1
+					}
+					iconType = {
+						name ="congo2"
+						spriteType = "GFX_saf_congo"
+						position = { x=0 y=0 } 
+						frame = 2
+					}
+					iconType = {
+						name ="congo3"
+						spriteType = "GFX_saf_congo"
+						position = { x=0 y=0 } 
+						frame = 3
+					}
+					iconType = {
+						name ="congo4"
+						spriteType = "GFX_saf_congo"
+						position = { x=0 y=0 } 
+						frame = 4
+					}
+					iconType = {
+						name ="congo5"
+						spriteType = "GFX_saf_congo"
+						position = { x=0 y=0 } 
+						frame = 5
+					}
+				}
+				
+				containerWindowType	= {
+					name = "central_window"
+					position = { x = -28 y = 29 }
+					size = { width = 100% height= 100% }
+					
+					iconType = {
+						name ="central1"
+						spriteType = "GFX_saf_central"
+						position = { x=0 y=0 } 
+						frame = 1
+					}
+					iconType = {
+						name ="central2"
+						spriteType = "GFX_saf_central"
+						position = { x=0 y=0 } 
+						frame = 2
+					}
+					iconType = {
+						name ="central3"
+						spriteType = "GFX_saf_central"
+						position = { x=0 y=0 } 
+						frame = 3
+					}
+					iconType = {
+						name ="central4"
+						spriteType = "GFX_saf_central"
+						position = { x=0 y=0 } 
+						frame = 4
+					}
+					iconType = {
+						name ="central5"
+						spriteType = "GFX_saf_central"
+						position = { x=0 y=0 } 
+						frame = 5
+					}
+				}
+				
+				containerWindowType	= {
+					name = "angola_window"
+					position = { x = 9 y = 155 }
+					size = { width = 100% height= 100% }
+					
+					iconType = {
+						name ="angola1"
+						spriteType = "GFX_saf_angola"
+						position = { x=0 y=0 } 
+						frame = 1
+					}
+					iconType = {
+						name ="angola2"
+						spriteType = "GFX_saf_angola"
+						position = { x=0 y=0 } 
+						frame = 2
+					}
+					iconType = {
+						name ="angola3"
+						spriteType = "GFX_saf_angola"
+						position = { x=0 y=0 } 
+						frame = 3
+					}
+					iconType = {
+						name ="angola4"
+						spriteType = "GFX_saf_angola"
+						position = { x=0 y=0 } 
+						frame = 4
+					}
+					iconType = {
+						name ="angola5"
+						spriteType = "GFX_saf_angola"
+						position = { x=0 y=0 } 
+						frame = 5
+					}
+				}
+				
+				containerWindowType	= {
+					name = "east_window"
+					position = { x = 238 y = 14 }
+					size = { width = 100% height= 100% }
+					
+					iconType = {
+						name ="east1"
+						spriteType = "GFX_saf_east"
+						position = { x=0 y=0 } 
+						frame = 1
+					}
+					iconType = {
+						name ="east2"
+						spriteType = "GFX_saf_east"
+						position = { x=0 y=0 } 
+						frame = 2
+					}
+					iconType = {
+						name ="east3"
+						spriteType = "GFX_saf_east"
+						position = { x=0 y=0 } 
+						frame = 3
+					}
+					iconType = {
+						name ="east4"
+						spriteType = "GFX_saf_east"
+						position = { x=0 y=0 } 
+						frame = 4
+					}
+					iconType = {
+						name ="east5"
+						spriteType = "GFX_saf_east"
+						position = { x=0 y=0 } 
+						frame = 5
+					}
+				}
+				
+				containerWindowType	= {
+					name = "highlands_window"
+					position = { x = 201 y = 421 }
+					size = { width = 100% height= 100% }
+					
+					iconType = {
+						name ="highlands1"
+						spriteType = "GFX_saf_highlands"
+						position = { x=0 y=0 } 
+						frame = 1
+					}
+					iconType = {
+						name ="highlands2"
+						spriteType = "GFX_saf_highlands"
+						position = { x=0 y=0 } 
+						frame = 2
+					}
+					iconType = {
+						name ="highlands3"
+						spriteType = "GFX_saf_highlands"
+						position = { x=0 y=0 } 
+						frame = 3
+					}
+					iconType = {
+						name ="highlands4"
+						spriteType = "GFX_saf_highlands"
+						position = { x=0 y=0 } 
+						frame = 4
+					}
+					iconType = {
+						name ="highlands5"
+						spriteType = "GFX_saf_highlands"
+						position = { x=0 y=0 } 
+						frame = 5
+					}
+				}
+				
+				containerWindowType	= {
+					name = "madagascar_window"
+					position = { x = 370 y = 270 }
+					size = { width = 100% height= 100% }
+					
+					iconType = {
+						name ="madagascar1"
+						spriteType = "GFX_saf_madagascar"
+						position = { x=0 y=0 } 
+						frame = 1
+					}
+					iconType = {
+						name ="madagascar2"
+						spriteType = "GFX_saf_madagascar"
+						position = { x=0 y=0 } 
+						frame = 2
+					}
+					iconType = {
+						name ="madagascar3"
+						spriteType = "GFX_saf_madagascar"
+						position = { x=0 y=0 } 
+						frame = 3
+					}
+					iconType = {
+						name ="madagascar4"
+						spriteType = "GFX_saf_madagascar"
+						position = { x=0 y=0 } 
+						frame = 4
+					}
+					iconType = {
+						name ="madagascar5"
+						spriteType = "GFX_saf_madagascar"
+						position = { x=0 y=0 } 
+						frame = 5
+					}
+				}
+				
+				containerWindowType	= {
+					name = "zambezi_window"
+					position = { x = 146 y = 187 }
+					size = { width = 100% height= 100% }
+					
+					iconType = {
+						name ="zambezi1"
+						spriteType = "GFX_saf_zambezi"
+						position = { x=0 y=0 } 
+						frame = 1
+					}
+					iconType = {
+						name ="zambezi2"
+						spriteType = "GFX_saf_zambezi"
+						position = { x=0 y=0 } 
+						frame = 2
+					}
+					iconType = {
+						name ="zambezi3"
+						spriteType = "GFX_saf_zambezi"
+						position = { x=0 y=0 } 
+						frame = 3
+					}
+					iconType = {
+						name ="zambezi4"
+						spriteType = "GFX_saf_zambezi"
+						position = { x=0 y=0 } 
+						frame = 4
+					}
+					iconType = {
+						name ="zambezi5"
+						spriteType = "GFX_saf_zambezi"
+						position = { x=0 y=0 } 
+						frame = 5
+					}
+				}
+				
+				containerWindowType	= {
+					name = "kalahari_window"
+					position = { x = 9 y = 299 }
+					size = { width = 100% height= 100% }
+					
+					iconType = {
+						name ="kalahari1"
+						spriteType = "GFX_saf_kalahari"
+						position = { x=0 y=0 } 
+						frame = 1
+					}
+					iconType = {
+						name ="kalahari2"
+						spriteType = "GFX_saf_kalahari"
+						position = { x=0 y=0 } 
+						frame = 2
+					}
+					iconType = {
+						name ="kalahari3"
+						spriteType = "GFX_saf_kalahari"
+						position = { x=0 y=0 } 
+						frame = 3
+					}
+					iconType = {
+						name ="kalahari4"
+						spriteType = "GFX_saf_kalahari"
+						position = { x=0 y=0 } 
+						frame = 4
+					}
+					iconType = {
+						name ="kalahari5"
+						spriteType = "GFX_saf_kalahari"
+						position = { x=0 y=0 } 
+						frame = 5
+					}
+				}
+			}
+		}
+		
+		containerWindowType	= {
+			name = "saf_pacification_stability_window"
+			position = { x = -10 y = 10 }
+			size = { width = 100% height= 100% }
+			
+			#instantTextBoxType = {
+			#	name ="selected_region_header"
+			#	position = { x = 0 y = 0 }
+			#	font = "hoi_30header"
+			#	text = "[SELECTED_REGION_HEADER]"
+			#	format = left
+			#	maxHeight = 0
+			#	maxWidth = 300
+			#}
+			#instantTextBoxType = {
+			#	name ="states"
+			#	position = { x = 0 y = 30 }
+			#	font = "hoi_24header"
+			#	text = "[STATES_STABILITY]"
+			#	format = left
+			#	maxHeight = 0
+			#	maxWidth = 300
+			#}
+			#gridboxtype = {
+			#	name = "states_grid"
+			#	position = { x = 0 y = 30 }
+			#	size = { width = 350 height = 500 }
+			#	slotsize = { width = 100 height = 30 }
+			#	max_slots_horizontal = 1
+			#	add_horizontal = yes
+			#}
+			
+			#instantTextBoxType = {
+			#	name ="header"
+			#	position = { x = 330 y = 0 }
+			#	font = "hoi_16mbs"
+			#	text = "mean_stability_header"
+			#	format = left
+			#	maxHeight = 0
+			#	maxWidth = 300
+			#}
+			instantTextBoxType = {
+				name ="regions"
+				position = { x = 300 y = 0 }
+				font = "hoi_16mbs"
+				text = "mean_stability_region"
+				format = left
+				maxHeight = 0
+				maxWidth = 300
+			}
+		}
+		
+		#containerWindowType = {
+		#	name = "states_grid_entry"
+		#	position = { x = 25 y = 180 }
+		#	size = { width = 300 height = 500 }
+		#	
+		#	instantTextboxType = {
+		#		name = "states_list"
+		#		position = { x = 0 y = 380 }
+		#		font = "hoi_24header"
+		#		text = "this_id"
+		#		format = left
+		#		maxWidth = 300
+		#		maxHeight = 10
+		#		fixedsize = yes
+		#	}
+		#}
+	}
+
+}

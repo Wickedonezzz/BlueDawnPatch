@@ -1,0 +1,8144 @@
+irq_debug = {
+	
+	trigger_setup_greater_iraq = {
+	
+		icon = generic_prepare_civil_war
+	
+		allowed = {
+
+		}
+		available = {
+			is_debug = yes
+
+		}
+		visible = {
+			is_debug = yes
+		}
+		cost = 0
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = { 
+			puppet = SYR
+			SYR = {
+							remove_ideas = ussr_aligned_nation
+							set_cosmetic_tag = SYR_occupation_zone_puppet
+							transfer_state = 554
+							transfer_state = 677
+							transfer_state = 680
+							transfer_state = 908
+							add_popularity = {
+								ideology = fascism
+								popularity = -0.45
+							}
+							set_politics = {
+								ruling_party = fascism
+								elections_allowed = no
+							}
+							add_country_leader_role = {
+								character = SYR_ali_al-majid
+								promote_leader = yes
+								country_leader = {
+									ideology = nationalist_military_junta
+									expire = "2050.1.1.1"
+									traits = { }
+								}
+							}
+			}
+			
+						IRQ = {
+							transfer_state = 413
+							transfer_state = 421
+							puppet = PER
+						}
+						
+						PER = {
+							set_cosmetic_tag = PER_iraq_puppet
+							add_popularity = {
+								ideology = fascism
+								popularity = -0.5
+							}
+							set_politics = {
+								ruling_party = fascism
+								elections_allowed = no
+							}
+							
+						}
+
+						annex_country = { target = KUW }
+						
+						
+			complete_national_focus = IRQ_new_era
+			complete_national_focus = IRQ_saddam_rule
+			complete_national_focus = IRQ_the_propaganda_machine
+			complete_national_focus = IRQ_dogs_of_the_west
+			complete_national_focus = IRQ_swords_of_iraq
+			complete_national_focus = IRQ_future_lies_in_the_military
+			complete_national_focus = IRQ_dreams_of_a_greater_iraq
+			complete_national_focus = IRQ_saddams_cult_of_personality
+			complete_national_focus = IRQ_army
+			complete_national_focus = IRQ_forbbiden_power
+			complete_national_focus = IRQ_atom
+			complete_national_focus = IRQ_uranium
+			complete_national_focus = IRQ_domestic
+			complete_national_focus = IRQ_restart
+			complete_national_focus = IRQ_wmd
+			complete_national_focus = IRQ_syria
+			complete_national_focus = IRQ_pan_iraq
+			complete_national_focus = IRQ_army_ready
+			complete_national_focus = IRQ_strike_syria
+			complete_national_focus = IRQ_kuwait
+			complete_national_focus = IRQ_america
+			complete_national_focus = IRQ_run_over
+			complete_national_focus = IRQ_saudi
+			complete_national_focus = IRQ_backing
+			complete_national_focus = IRQ_oil
+			complete_national_focus = IRQ_old_wounds
+			complete_national_focus = IRQ_ready1
+			complete_national_focus = IRQ_soviet_support
+			complete_national_focus = IRQ_the_plan
+			complete_national_focus = IRQ_88
+			complete_national_focus = IRQ_saddam_epic_win
+			complete_national_focus = IRQ_greater_iraq
+
+			
+		}	
+	}
+	
+	trigger_setup_uar = {
+	
+		icon = generic_prepare_civil_war
+	
+		allowed = {
+
+		}
+		available = {
+			is_debug = yes
+
+		}
+		visible = {
+			is_debug = yes
+		}
+		cost = 0
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = { 
+			puppet = SYR
+			SYR = {
+							remove_ideas = ussr_aligned_nation
+							set_cosmetic_tag = SYR_occupation_zone_puppet
+							transfer_state = 554
+							transfer_state = 677
+							transfer_state = 680
+							transfer_state = 908
+							add_popularity = {
+								ideology = fascism
+								popularity = -0.45
+							}
+							set_politics = {
+								ruling_party = fascism
+								elections_allowed = no
+							}
+							add_country_leader_role = {
+								character = SYR_ali_al-majid
+								promote_leader = yes
+								country_leader = {
+									ideology = nationalist_military_junta
+									expire = "2050.1.1.1"
+									traits = { }
+								}
+							}
+			}
+			
+						IRQ = {
+							transfer_state = 413
+							transfer_state = 421
+							puppet = PER
+						}
+						
+						PER = {
+							set_cosmetic_tag = PER_iraq_puppet
+							add_popularity = {
+								ideology = fascism
+								popularity = -0.5
+							}
+							set_politics = {
+								ruling_party = fascism
+								elections_allowed = no
+							}
+							
+						}
+
+						annex_country = { target = KUW }
+						
+						
+			complete_national_focus = IRQ_new_era
+			complete_national_focus = IRQ_saddam_rule
+			complete_national_focus = IRQ_the_propaganda_machine
+			complete_national_focus = IRQ_dogs_of_the_west
+			complete_national_focus = IRQ_swords_of_iraq
+			complete_national_focus = IRQ_future_lies_in_the_military
+			complete_national_focus = IRQ_dreams_of_a_united_arab_nation
+			complete_national_focus = IRQ_saddams_cult_of_personality
+			complete_national_focus = IRQ_army
+			complete_national_focus = IRQ_forbbiden_power
+			complete_national_focus = IRQ_atom
+			complete_national_focus = IRQ_uranium
+			complete_national_focus = IRQ_domestic
+			complete_national_focus = IRQ_restart
+			complete_national_focus = IRQ_wmd
+			complete_national_focus = IRQ_syria
+			complete_national_focus = IRQ_pan_iraq
+			complete_national_focus = IRQ_army_ready
+			complete_national_focus = IRQ_strike_syria
+			complete_national_focus = IRQ_kuwait
+			complete_national_focus = IRQ_america
+			complete_national_focus = IRQ_run_over
+			complete_national_focus = IRQ_saudi
+			complete_national_focus = IRQ_backing
+			complete_national_focus = IRQ_oil
+			complete_national_focus = IRQ_old_wounds
+			complete_national_focus = IRQ_ready1
+			complete_national_focus = IRQ_soviet_support
+			complete_national_focus = IRQ_the_plan
+			complete_national_focus = IRQ_88
+			complete_national_focus = IRQ_saddam_epic_win
+			complete_national_focus = IRQ_proclaim_uar
+
+			
+		}	
+	}
+
+}
+
+irq_deal_with_kurds = {
+	
+	irq_kur_resistance_increase = {
+		activation = {
+			has_country_flag = focused_on_kurds_rn
+			NOT = {
+			has_country_flag = fixed_kurd
+			}
+		}
+		visible = {
+			has_country_flag = focused_on_kurds_rn
+			NOT = {
+			has_country_flag = fixed_kurd
+			}
+		}
+		available = {
+			has_country_flag = nothing
+		}
+		cancel_trigger = {
+		}
+		icon = GFX_decision_revolt     
+		is_good = no
+		
+		days_mission_timeout = 15
+		selectable_mission = no
+		
+		complete_effect = {
+		}
+		timeout_effect = {
+			custom_effect_tooltip = irq_kurd_resistance_incrases_mid
+			subtract_from_variable = {
+				var = kurd_resistance_variable
+				value = 0.5
+			}
+			IRQ_recalc_kurd_resistance_bar_frames = yes
+			925 = {
+				add_resistance = 5
+			}
+		}
+	}
+	
+	irq_kurd_resistance_bomb_the_mountains = {
+
+		icon = GFX_decision_generic_ignite_civil_war
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = focused_on_kurds_rn
+			NOT = {
+				has_country_flag = fixed_kurd
+			}
+			OR = {
+				has_completed_focus = IRQ_we_rule_skies
+				has_completed_focus = IRQ_operations_in_shade
+			}
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = focused_on_kurds_rn
+			NOT = {
+				has_country_flag = fixed_kurd
+			}
+		}
+		days_remove = 10
+		cost = 15
+		fire_only_once = no
+		ai_will_do = {
+			factor = 50
+		}
+		complete_effect = {
+		add_command_power = -35
+		}
+		remove_effect = {
+			custom_effect_tooltip = irq_kurd_resistance_decrases_med
+			add_to_variable = {
+				var = kurd_resistance_variable
+				value = 0.5
+			}
+			IRQ_recalc_kurd_resistance_bar_frames = yes
+			IRQ = {
+				random_owned_state = {
+					damage_building = {
+						type = infrastructure
+						damage = 4
+					}
+				}
+				air_experience = 15
+			}
+		}
+	}
+
+	irq_kurd_resistance_deport_the_kurds = {
+
+		icon = GFX_decision_eng_blackshirt_march
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = focused_on_kurds_rn
+			NOT = {
+				has_country_flag = fixed_kurd
+			}
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = focused_on_kurds_rn
+			NOT = {
+				has_country_flag = fixed_kurd
+			}
+		}
+		cost = 15
+		days_remove = 5
+		fire_only_once = no
+		ai_will_do = {
+			factor = 50
+		}
+		remove_effect = {
+			custom_effect_tooltip = irq_kurd_resistance_decrases_small
+			add_to_variable = {
+				var = kurd_resistance_variable
+				value = 0.25
+			}
+			IRQ_recalc_kurd_resistance_bar_frames = yes
+			676 = {
+			add_manpower = -4500
+			add_resistance = 5
+			add_compliance = -5
+			}
+		}
+	}
+	
+	
+	irq_kurd_resistance_start_direct_military_operations = {
+
+		icon = GFX_decision_generic_military
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = focused_on_kurds_rn
+			NOT = {
+				has_country_flag = fixed_kurd
+			}
+			divisions_in_state = {
+				state = 676
+				size > 5
+			}
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = focused_on_kurds_rn
+			NOT = {
+				has_country_flag = fixed_kurd
+			}
+		}
+		cost = 15
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 9999
+		}
+		complete_effect = {
+			custom_effect_tooltip = irq_kurd_resistance_decrases_med
+			add_to_variable = {
+				var = kurd_resistance_variable
+				value = 0.5
+			}
+			IRQ_recalc_kurd_resistance_bar_frames = yes
+			army_experience = 25
+			custom_effect_tooltip = irq_you_can_now_do_military_stuff
+			set_country_flag = irq_started_direct_military_operations
+		}
+	}
+	
+	irq_kurd_resistance_imprison_seperatist_activists = {
+
+		icon = GFX_decision_generic_arrest
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = focused_on_kurds_rn
+			NOT = {
+				has_country_flag = fixed_kurd
+			}
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = focused_on_kurds_rn
+			NOT = {
+				has_country_flag = fixed_kurd
+			}
+		}
+		cost = 20
+		days_remove = 15
+		fire_only_once = no
+		ai_will_do = {
+			factor = 75
+		}
+		remove_effect = {
+			custom_effect_tooltip = irq_kurd_resistance_decrases_med
+			add_to_variable = {
+				var = kurd_resistance_variable
+				value = 0.5
+			}
+			IRQ_recalc_kurd_resistance_bar_frames = yes
+			291 = {
+			add_manpower = -500
+			}
+		}
+	}
+	
+	irq_kurd_resistance_reinforce_border_guards = {
+
+		icon = GFX_decision_generic_assassination
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = focused_on_kurds_rn
+			has_country_flag = irq_started_direct_military_operations
+			NOT = {
+				has_country_flag = fixed_kurd
+			}
+			
+			divisions_in_state = {
+			state = 676
+			size > 1
+			}
+			
+			divisions_in_state = {
+			state = 291
+			size > 1
+			}
+			
+			divisions_in_state = {
+			state = 675
+			size > 1
+			}
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = focused_on_kurds_rn
+			NOT = {
+				has_country_flag = fixed_kurd
+			}
+		}
+		days_remove = 20
+		cost = 20
+		fire_only_once = no
+		ai_will_do = {
+			factor = 55
+		}
+		remove_effect = {
+			custom_effect_tooltip = irq_kurd_resistance_decrases_med
+			add_to_variable = {
+				var = kurd_resistance_variable
+				value = 0.5
+			}
+			IRQ_recalc_kurd_resistance_bar_frames = yes
+			army_experience = 15
+		}
+	}
+	
+	irq_kurd_resistance_crackdown_the_underground_network = {
+
+		icon = GFX_decision_generic_prepare_civil_war
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = focused_on_kurds_rn
+			has_country_flag = irq_started_direct_military_operations
+			NOT = {
+				has_country_flag = fixed_kurd
+			}
+
+			divisions_in_state = {
+			state = 676
+			size > 2
+			}
+			
+			divisions_in_state = {
+			state = 291
+			size > 2
+			}
+			
+			divisions_in_state = {
+			state = 675
+			size > 2
+			}
+
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = focused_on_kurds_rn
+			NOT = {
+				has_country_flag = fixed_kurd
+			}
+		}
+		days_remove = 10
+		cost = 20
+		fire_only_once = no
+		ai_will_do = {
+			factor = 75
+		}
+		remove_effect = {
+			custom_effect_tooltip = irq_kurd_resistance_decrases_big
+			add_to_variable = {
+				var = kurd_resistance_variable
+				value = 1
+			}
+			IRQ_recalc_kurd_resistance_bar_frames = yes
+			army_experience = 25
+			
+			676 = {
+			add_manpower = -2500
+			}
+			
+			291 = {
+			add_manpower = -1500
+			}
+			
+			675 = {
+			add_manpower = -1000
+			}
+		}
+	}
+
+}
+
+irq_category_rebuild_navy = {
+
+	IRQ_rebuild_navy_purchase_new_ship_decision = {
+
+		icon = GFX_decision_generic_ship
+
+		priority = 10
+
+		fire_only_once = yes
+		days_remove = 800
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		available = {
+			AND = {
+				country_exists = IRQ
+				country_exists = SOV
+				NOT = {
+					IRQ = {
+						has_war_with = SOV
+					}
+				}
+			}
+			NOT = {
+				OR = {
+					has_decision = IRQ_rebuild_navy_purchase_new_sub_decision
+					has_decision = IRQ_rebuild_navy_purchase_old_ship_decision
+					has_decision = IRQ_rebuild_navy_purchase_old_sub_decision
+					has_decision = IRQ_rebuild_navy_purchase_old_chinese_ship_decision
+					has_decision = IRQ_rebuild_navy_purchase_new_chinese_sub_decision
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = IRQ }
+				NOT = { country_exists = SOV }
+				IRQ = {
+					has_war_with = SOV
+				}
+			}
+		}
+
+		complete_effect = {
+			SOV = {
+				add_timed_idea = {
+					idea = IRQ_foreign_ship_payments
+					days = 800
+				}
+			}
+			IRQ = {
+				add_timed_idea = {
+					idea = IRQ_foreign_ship_payments_irq
+					days = 800
+				}
+			}
+		}
+
+		cancel_effect = {
+			SOV = {
+				remove_ideas = {
+					IRQ_foreign_ship_payments
+				}
+			}
+			IRQ = {
+				remove_ideas = {
+					IRQ_foreign_ship_payments_irq
+				}
+			}
+		}
+
+		remove_effect = {
+			create_ship = {
+				type = corvette_hull_3
+				equipment_variant = "Gepard Class (Pr. 11661K)"
+				creator = SOV
+				name = "Al Qadissiya"
+			}
+			create_ship = {
+				type = corvette_hull_3
+				equipment_variant = "Gepard Class (Pr. 11661K)"
+				creator = SOV
+				name = "Al Yarmouk"
+			}
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				has_navy_size = {
+					size > 4
+					archetype = corvette_hull
+				}
+				factor = 0
+			}
+			modifier = {
+				num_of_civilian_factories < 15
+				factor = 0
+			}
+		}
+
+	}
+
+	IRQ_rebuild_navy_purchase_new_sub_decision = {
+
+		icon = GFX_decision_generic_submarine
+
+		priority = 9
+
+		fire_only_once = yes
+		days_remove = 350
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		available = {
+			AND = {
+				country_exists = IRQ
+				country_exists = SOV
+				NOT = {
+					IRQ = {
+						has_war_with = SOV
+					}
+				}
+			}
+			NOT = {
+				OR = {
+					has_decision = IRQ_rebuild_navy_purchase_new_ship_decision
+					has_decision = IRQ_rebuild_navy_purchase_old_ship_decision
+					has_decision = IRQ_rebuild_navy_purchase_old_sub_decision
+					has_decision = IRQ_rebuild_navy_purchase_old_chinese_ship_decision
+					has_decision = IRQ_rebuild_navy_purchase_new_chinese_sub_decision
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = IRQ }
+				NOT = { country_exists = SOV }
+				IRQ = {
+					has_war_with = SOV
+				}
+			}
+		}
+
+		complete_effect = {
+			SOV = {
+				add_timed_idea = {
+					idea = IRQ_foreign_ship_payments
+					days = 350
+				}
+			}
+			IRQ = {
+				add_timed_idea = {
+					idea = IRQ_foreign_ship_payments_irq
+					days = 350
+				}
+			}
+		}
+
+		cancel_effect = {
+			SOV = {
+				remove_ideas = {
+					IRQ_foreign_ship_payments
+				}
+			}
+			IRQ = {
+				remove_ideas = {
+					IRQ_foreign_ship_payments_irq
+				}
+			}
+		}
+
+		remove_effect = {
+			create_ship = {
+				type = attack_submarine_hull_2
+				equipment_variant = "Kilo Class (Pr. 877EKM)"
+				creator = SOV
+				name = "Al Adrisi"
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				has_navy_size = {
+					size > 4
+					archetype = attack_submarine_hull
+				}
+				factor = 0
+			}
+			modifier = {
+				num_of_civilian_factories < 10
+				factor = 0
+			}
+		}
+
+	}
+
+	IRQ_rebuild_navy_purchase_old_ship_decision = {
+
+		icon = GFX_decision_generic_ship
+
+		priority = 8
+
+		fire_only_once = yes
+		days_remove = 30
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		available = {
+			AND = {
+				country_exists = IRQ
+				country_exists = SOV
+				NOT = {
+					IRQ = {
+						has_war_with = SOV
+					}
+				}
+			}
+			NOT = {
+				OR = {
+					has_decision = IRQ_rebuild_navy_purchase_new_sub_decision
+					has_decision = IRQ_rebuild_navy_purchase_new_ship_decision
+					has_decision = IRQ_rebuild_navy_purchase_old_sub_decision
+					has_decision = IRQ_rebuild_navy_purchase_old_chinese_ship_decision
+					has_decision = IRQ_rebuild_navy_purchase_new_chinese_sub_decision
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = IRQ }
+				NOT = { country_exists = SOV }
+				IRQ = {
+					has_war_with = SOV
+				}
+			}
+		}
+
+		complete_effect = {
+			SOV = {
+				add_timed_idea = {
+					idea = IRQ_foreign_ship_payments
+					days = 30
+				}
+			}
+			IRQ = {
+				add_timed_idea = {
+					idea = IRQ_foreign_ship_payments_irq
+					days = 30
+				}
+			}
+		}
+
+		cancel_effect = {
+			SOV = {
+				remove_ideas = {
+					IRQ_foreign_ship_payments
+				}
+			}
+			IRQ = {
+				remove_ideas = {
+					IRQ_foreign_ship_payments_irq
+				}
+			}
+		}
+
+		remove_effect = {
+			create_ship = {
+				type = corvette_hull_1
+				equipment_variant = "Poti Class (Pr. 204)"
+				creator = SOV
+				name = "Kanun Ath-Thani"
+			}
+			create_ship = {
+				type = corvette_hull_1
+				equipment_variant = "Poti Class (Pr. 204)"
+				creator = SOV
+				name = "Nisan"
+			}
+			create_ship = {
+				type = corvette_hull_1
+				equipment_variant = "Poti Class (Pr. 204)"
+				creator = SOV
+				name = "Hazirani"
+			}
+			create_ship = {
+				type = corvette_hull_1
+				equipment_variant = "Poti Class (Pr. 204)"
+				creator = SOV
+				name = "Tamuz"
+			}
+		}
+
+		ai_will_do = {
+			factor = 4
+
+			modifier = {
+				has_navy_size = {
+					size > 4
+					archetype = corvette_hull
+				}
+				factor = 0
+			}
+		}
+
+	}
+
+	IRQ_rebuild_navy_purchase_old_sub_decision = {
+
+		icon = GFX_decision_generic_submarine
+
+		priority = 7
+
+		fire_only_once = yes
+		days_remove = 30
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		available = {
+			AND = {
+				country_exists = IRQ
+				country_exists = SOV
+				NOT = {
+					IRQ = {
+						has_war_with = SOV
+					}
+				}
+			}
+			NOT = {
+				OR = {
+					has_decision = IRQ_rebuild_navy_purchase_new_sub_decision
+					has_decision = IRQ_rebuild_navy_purchase_old_ship_decision
+					has_decision = IRQ_rebuild_navy_purchase_new_ship_decision
+					has_decision = IRQ_rebuild_navy_purchase_old_chinese_ship_decision
+					has_decision = IRQ_rebuild_navy_purchase_new_chinese_sub_decision
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = IRQ }
+				NOT = { country_exists = SOV }
+				IRQ = {
+					has_war_with = SOV
+				}
+			}
+		}
+
+		complete_effect = {
+			SOV = {
+				add_timed_idea = {
+					idea = IRQ_foreign_ship_payments
+					days = 30
+				}
+			}
+			IRQ = {
+				add_timed_idea = {
+					idea = IRQ_foreign_ship_payments_irq
+					days = 30
+				}
+			}
+		}
+
+		cancel_effect = {
+			SOV = {
+				remove_ideas = {
+					IRQ_foreign_ship_payments
+				}
+			}
+			IRQ = {
+				remove_ideas = {
+					IRQ_foreign_ship_payments_irq
+				}
+			}
+		}
+
+		remove_effect = {
+			create_ship = {
+				type = attack_submarine_hull_1
+				equipment_variant = "Foxtrot Class (Pr. 641)"
+				creator = SOV
+				name = "Al Tami"
+			}
+			create_ship = {
+				type = attack_submarine_hull_1
+				equipment_variant = "Foxtrot Class (Pr. 641)"
+				creator = SOV
+				name = "Al Bahi"
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				has_navy_size = {
+					size > 4
+					archetype = attack_submarine_hull
+				}
+				factor = 0
+			}
+		}
+
+	}
+
+	IRQ_rebuild_navy_purchase_old_chinese_ship_decision = {
+
+		icon = GFX_decision_generic_ship
+
+		priority = 6
+
+		fire_only_once = yes
+		days_remove = 50
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		available = {
+			AND = {
+				country_exists = IRQ
+				country_exists = PRC
+				NOT = {
+					IRQ = {
+						has_war_with = PRC
+					}
+				}
+			}
+			NOT = {
+				OR = {
+					has_decision = IRQ_rebuild_navy_purchase_new_sub_decision
+					has_decision = IRQ_rebuild_navy_purchase_old_ship_decision
+					has_decision = IRQ_rebuild_navy_purchase_old_sub_decision
+					has_decision = IRQ_rebuild_navy_purchase_new_ship_decision
+					has_decision = IRQ_rebuild_navy_purchase_new_chinese_sub_decision
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = IRQ }
+				NOT = { country_exists = PRC }
+				IRQ = {
+					has_war_with = PRC
+				}
+			}
+		}
+
+		complete_effect = {
+			PRC = {
+				add_timed_idea = {
+					idea = IRQ_foreign_ship_payments
+					days = 50
+				}
+			}
+			IRQ = {
+				add_timed_idea = {
+					idea = IRQ_foreign_ship_payments_irq
+					days = 50
+				}
+			}
+		}
+
+		cancel_effect = {
+			PRC = {
+				remove_ideas = {
+					IRQ_foreign_ship_payments
+				}
+			}
+			IRQ = {
+				remove_ideas = {
+					IRQ_foreign_ship_payments_irq
+				}
+			}
+		}
+
+		remove_effect = {
+			create_ship = {
+				type = destroyer_hull_1
+				equipment_variant = "Type 053H1G Class"
+				creator = PRC
+				name = "Sabhan"
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				has_navy_size = {
+					size > 2
+					archetype = destroyer_hull
+				}
+				factor = 0
+			}
+		}
+
+	}
+
+	IRQ_rebuild_navy_purchase_new_chinese_sub_decision = {
+
+		icon = GFX_decision_generic_submarine
+
+		priority = 5
+
+		fire_only_once = yes
+		days_remove = 450
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		available = {
+			AND = {
+				country_exists = IRQ
+				country_exists = PRC
+				NOT = {
+					IRQ = {
+						has_war_with = PRC
+					}
+				}
+			}
+			NOT = {
+				OR = {
+					has_decision = IRQ_rebuild_navy_purchase_new_sub_decision
+					has_decision = IRQ_rebuild_navy_purchase_old_ship_decision
+					has_decision = IRQ_rebuild_navy_purchase_old_sub_decision
+					has_decision = IRQ_rebuild_navy_purchase_old_chinese_ship_decision
+					has_decision = IRQ_rebuild_navy_purchase_new_ship_decision
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = IRQ }
+				NOT = { country_exists = PRC }
+				IRQ = {
+					has_war_with = PRC
+				}
+			}
+		}
+
+		complete_effect = {
+			PRC = {
+				add_timed_idea = {
+					idea = IRQ_foreign_ship_payments
+					days = 450
+				}
+			}
+			IRQ = {
+				add_timed_idea = {
+					idea = IRQ_foreign_ship_payments_irq
+					days = 450
+				}
+			}
+		}
+
+		cancel_effect = {
+			PRC = {
+				remove_ideas = {
+					IRQ_foreign_ship_payments
+				}
+			}
+			IRQ = {
+				remove_ideas = {
+					IRQ_foreign_ship_payments_irq
+				}
+			}
+		}
+
+		remove_effect = {
+			create_ship = {
+				type = attack_submarine_hull_1
+				equipment_variant = "Romeo Class (Pr. 633)"
+				creator = SOV
+				name = "Sa'd"
+			}
+			create_ship = {
+				type = attack_submarine_hull_1
+				equipment_variant = "Romeo Class (Pr. 633)"
+				creator = SOV
+				name = "Khalid Ibn"
+			}
+			create_ship = {
+				type = attack_submarine_hull_1
+				equipment_variant = "Romeo Class (Pr. 633)"
+				creator = SOV
+				name = "Al Walid"
+			}
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				has_navy_size = {
+					size > 4
+					archetype = attack_submarine_hull
+				}
+				factor = 0
+			}
+			modifier = {
+				num_of_civilian_factories < 10
+				factor = 0
+			}
+		}
+
+	}
+
+}
+
+irq_category_propaganda_machine = {
+	
+	#irq_propaganda_effect_political_var #pol gain , drift defence#
+	#irq_propaganda_effect_army_var	#recovery rate, attack and defence for army#
+	#irq_propaganda_effect_efficiency_var	#war support , stab support , military factory construction speed#
+	
+	#irq_propaganda_effect_costs_var #factory output (needs to be negative)#
+	#irq_propaganda_effect_costs_consumer_goods_var #consumer goods#
+	
+	IRQ_propaganda_increase_propaganda_resources = {
+
+		icon = GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			IRQ = {
+			has_completed_focus = IRQ_the_propaganda_machine
+			}
+			NOT = {has_country_flag = irq_running_propaganda}
+		}
+		visible = {
+			original_tag = IRQ
+		}
+		days_remove = 20
+		modifier {
+			political_power_cost = 0.10
+		}
+		cost = propaganda_decision_cost_var
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				check_variable = {irq_propaganda_effect_costs_consumer_goods_var > 0.050}
+				factor = 0
+			} 
+		}
+		days_re_enable = 70
+		
+		complete_effect = {
+			set_country_flag = irq_running_propaganda
+		}
+		
+		remove_effect = { 
+		add_to_variable = { irq_propaganda_effect_political_var = 0.050}
+		custom_effect_tooltip = irq_propaganda_political_buffed_by_5_per
+		add_to_variable = { irq_propaganda_effect_costs_var = -0.020}
+		custom_effect_tooltip = irq_propaganda_factory_output_costs_increase_by_2_per
+		add_to_variable = { irq_propaganda_effect_costs_consumer_goods_var = 0.020}
+		custom_effect_tooltip = irq_propaganda_consumer_good_costs_increase_by_2_per
+		
+		clr_country_flag = irq_running_propaganda
+		}
+	}
+	
+	IRQ_propaganda_decrease_propaganda_resources = {
+
+		icon = GFX_decision_hol_attract_foreign_investors
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			IRQ = {
+			has_completed_focus = IRQ_the_propaganda_machine
+			}
+			NOT = {has_country_flag = irq_running_propaganda}
+		}
+		visible = {
+			original_tag = IRQ
+		}
+		days_remove = 50
+		modifier {
+			political_power_cost = 0.75
+		}
+		cost = propaganda_decision_cost_var
+		fire_only_once = no
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				check_variable = {irq_propaganda_effect_costs_consumer_goods_var > 0.050}
+				factor = 10
+			} 
+		}
+		days_re_enable = 50
+		
+		complete_effect = {
+			set_country_flag = irq_running_propaganda
+		}
+		
+		remove_effect = { 
+		add_to_variable = { irq_propaganda_effect_political_var = -0.050}
+		custom_effect_tooltip = irq_propaganda_political_nerfed_by_5_per
+		add_to_variable = { irq_propaganda_effect_costs_var = 0.050}
+		custom_effect_tooltip = irq_propaganda_factory_output_costs_decrease_by_5_per
+		add_to_variable = { irq_propaganda_effect_costs_consumer_goods_var = -0.050}
+		custom_effect_tooltip = irq_propaganda_consumer_good_costs_decrease_by_5_per
+		
+		clr_country_flag = irq_running_propaganda
+		}
+	}
+	
+	IRQ_propaganda_dogs_of_the_west = {
+
+		icon = GFX_decision_burning_flag
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			IRQ = {
+			has_completed_focus = IRQ_dogs_of_the_west
+			}
+			NOT = {has_country_flag = irq_running_propaganda}
+		}
+		visible = {
+			original_tag = IRQ
+		}
+		days_remove = 50
+		days_re_enable = 15
+		modifier {
+			political_power_cost = 0.10
+			war_support_weekly = 0.0075
+		}
+		
+		complete_effect = {
+			set_country_flag = irq_running_propaganda
+		}
+		
+		cost = propaganda_decision_cost_var
+		fire_only_once = no
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				check_variable = {irq_propaganda_effect_costs_consumer_goods_var > 0.10}
+				factor = 0
+			} 
+		}
+		remove_effect = { 
+		add_to_variable = { irq_propaganda_effect_army_var = 0.02 }
+		custom_effect_tooltip = irq_propaganda_army_buffed_by_2_per
+		add_to_variable = { irq_propaganda_effect_costs_consumer_goods_var = 0.020}
+		custom_effect_tooltip = irq_propaganda_consumer_good_costs_increase_by_2_per
+		
+		clr_country_flag = irq_running_propaganda
+		}
+	}
+	
+	IRQ_propaganda_scum_of_the_earth = {
+
+		icon = GFX_decision_skull_with_isral_flag
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			IRQ = {
+			has_completed_focus = IRQ_dogs_of_the_west
+			}
+			NOT = {has_country_flag = irq_running_propaganda}
+		}
+		visible = {
+			original_tag = IRQ
+		}
+		days_remove = 90
+		days_re_enable = 30
+		modifier {
+			political_power_cost = 0.25
+		}
+		targeted_modifier = {
+			tag = ISR
+			attack_bonus_against = 0.15
+		}
+		
+		complete_effect = {
+			set_country_flag = irq_running_propaganda
+		}
+		
+		cost = propaganda_decision_cost_var
+		fire_only_once = no
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				check_variable = {irq_propaganda_effect_costs_consumer_goods_var > 0.10}
+				factor = 0
+			} 
+			modifier = {
+				IRQ = {has_war_with = ISR}
+				factor = 30
+			}
+		}
+		remove_effect = { 
+		add_to_variable = { irq_propaganda_effect_costs_consumer_goods_var = 0.020}
+		custom_effect_tooltip = irq_propaganda_consumer_good_costs_increase_by_2_per
+		
+		clr_country_flag = irq_running_propaganda
+		}
+	}
+	
+	IRQ_propaganda_swords_of_iraq = {
+
+		icon = GFX_decision_generic_intelligence_operation
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			IRQ = {
+			has_completed_focus = IRQ_swords_of_iraq
+			}
+			NOT = {has_country_flag = irq_running_propaganda}	
+		}
+		visible = {
+			original_tag = IRQ
+		}
+		days_remove = 35
+		days_re_enable = 20
+		modifier {
+			political_power_cost = 0.25
+			army_attack_factor = 0.15
+			army_defence_factor = 0.15
+		}
+		
+		complete_effect = {
+			set_country_flag = irq_running_propaganda
+		}
+		
+		cost = propaganda_decision_cost_var
+		fire_only_once = no
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				check_variable = {irq_propaganda_effect_costs_consumer_goods_var > 0.10}
+				factor = 0
+			} 
+			modifier = {
+				IRQ = {has_war = yes}
+				factor = 30
+			}
+		}
+		remove_effect = { 
+		add_to_variable = { irq_propaganda_effect_army_var = 0.05 }
+		custom_effect_tooltip = irq_propaganda_army_buffed_by_5_per
+		add_to_variable = { irq_propaganda_effect_costs_var = -0.020}
+		custom_effect_tooltip = irq_propaganda_factory_output_costs_increase_by_2_per
+		
+		clr_country_flag = irq_running_propaganda
+		}
+	}
+	
+	IRQ_propaganda_future_lies_in_the_military = {
+
+		icon = GFX_decision_soldiers_carrying_iraq_flag
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			IRQ = {
+			has_completed_focus = IRQ_future_lies_in_the_military
+			}
+			NOT = {has_country_flag = irq_running_propaganda}	
+		}
+		visible = {
+			original_tag = IRQ
+		}
+		days_remove = 40
+		days_re_enable = 50
+		modifier {
+			political_power_cost = 0.25
+			weekly_manpower = 1500
+		}
+		
+		complete_effect = {
+			set_country_flag = irq_running_propaganda
+		}
+		
+		cost = propaganda_decision_cost_var
+		fire_only_once = no
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				check_variable = {irq_propaganda_effect_costs_consumer_goods_var > 0.10}
+				factor = 0
+			} 
+		}
+		remove_effect = { 
+		add_to_variable = { irq_propaganda_effect_army_var = 0.05 }
+		custom_effect_tooltip = irq_propaganda_army_buffed_by_5_per
+		add_to_variable = { irq_propaganda_effect_efficiency_var = 0.05 }
+		custom_effect_tooltip = irq_propaganda_efficiency_buffed_by_5_per
+		add_to_variable = { irq_propaganda_effect_costs_var = -0.020}
+		custom_effect_tooltip = irq_propaganda_factory_output_costs_increase_by_2_per
+		
+		clr_country_flag = irq_running_propaganda
+		}
+	}
+	
+	IRQ_propaganda_aid_iraqs_future = {
+
+		icon = GFX_decision_generic_military
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			IRQ = {
+			has_completed_focus = IRQ_dreams_of_a_greater_iraq
+			}
+			NOT = {has_country_flag = irq_running_propaganda}	
+		}
+		visible = {
+			original_tag = IRQ
+		}
+		days_remove = 50
+		days_re_enable = 35
+		modifier {
+			political_power_cost = 0.10
+			industrial_capacity_factory = 0.20
+		}
+		
+		complete_effect = {
+			set_country_flag = irq_running_propaganda
+		}
+		
+		cost = propaganda_decision_cost_var
+		fire_only_once = no
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				check_variable = {irq_propaganda_effect_costs_consumer_goods_var > 0.10}
+				factor = 0
+			} 
+		}
+		remove_effect = { 
+		add_to_variable = { irq_propaganda_effect_costs_consumer_goods_var = 0.010}
+		custom_effect_tooltip = irq_propaganda_consumer_good_costs_increase_by_1_per
+		
+		clr_country_flag = irq_running_propaganda
+		}
+	}
+	
+	IRQ_propaganda_for_a_united_arabia = {
+
+		icon = GFX_decision_for_a_pan_arab_country
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			IRQ = {
+			has_completed_focus = IRQ_dreams_of_a_united_arab_nation
+			}
+			NOT = {has_country_flag = irq_running_propaganda}	
+		}
+		visible = {
+			original_tag = IRQ
+		}
+		days_remove = 50
+		days_re_enable = 35
+		modifier {
+			political_power_cost = 0.10
+			army_morale_factor = 0.35
+			army_org_factor = 0.15
+		}
+		
+		complete_effect = {
+			set_country_flag = irq_running_propaganda
+		}
+		
+		cost = propaganda_decision_cost_var
+		fire_only_once = no
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				check_variable = {irq_propaganda_effect_costs_consumer_goods_var > 0.10}
+				factor = 0
+			} 
+		}
+		remove_effect = { 
+		add_to_variable = { irq_propaganda_effect_costs_consumer_goods_var = 0.010}
+		custom_effect_tooltip = irq_propaganda_consumer_good_costs_increase_by_1_per
+		
+		clr_country_flag = irq_running_propaganda
+		}
+	}
+	
+	IRQ_propaganda_saddam_iraqs_saviour = {
+
+		icon = GFX_decision_iraq_map_with_flag
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			IRQ = {
+			has_completed_focus = IRQ_saddams_cult_of_personality
+			}
+			NOT = {has_country_flag = irq_running_propaganda}	
+		}
+		visible = {
+			original_tag = IRQ
+		}
+		days_remove = 60
+		days_re_enable = 60
+		modifier {
+			political_power_cost = 0.10
+			political_power_factor = 0.35
+		}
+		
+		complete_effect = {
+			set_country_flag = irq_running_propaganda
+		}
+		
+		cost = propaganda_decision_cost_var
+		fire_only_once = no
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				check_variable = {irq_propaganda_effect_costs_consumer_goods_var > 0.10}
+				factor = 0
+			} 
+		}
+		remove_effect = { 
+		add_to_variable = { irq_propaganda_effect_efficiency_var = 0.050}
+		custom_effect_tooltip = irq_propaganda_efficiency_buffed_by_5_per
+		add_to_variable = { irq_propaganda_effect_costs_consumer_goods_var = 0.020}
+		custom_effect_tooltip = irq_propaganda_consumer_good_costs_increase_by_2_per
+		
+		clr_country_flag = irq_running_propaganda
+		}
+	}
+	
+	IRQ_propaganda_saddam_an_example_for_the_youth = {
+
+		icon = GFX_decision_generic_political_discourse
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			IRQ = {
+			has_completed_focus = IRQ_saddams_cult_of_personality
+			}
+			NOT = {has_country_flag = irq_running_propaganda}	
+		}
+		visible = {
+			original_tag = IRQ
+		}
+		days_remove = 75
+		days_re_enable = 60
+		modifier {
+			political_power_cost = 0.10
+			weekly_manpower = 1000
+			experience_gain_army_factor = 0.25
+			fascism_drift = 0.01
+		}
+		
+		complete_effect = {
+			set_country_flag = irq_running_propaganda
+		}
+		
+		cost = propaganda_decision_cost_var
+		fire_only_once = no
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				check_variable = {irq_propaganda_effect_costs_consumer_goods_var > 0.10}
+				factor = 0
+			} 
+		}
+		remove_effect = { 
+		add_to_variable = { irq_propaganda_effect_political_var = 0.050}
+		custom_effect_tooltip = irq_propaganda_efficiency_buffed_by_5_per
+		add_to_variable = { irq_propaganda_effect_costs_var = -0.020}
+		custom_effect_tooltip = irq_propaganda_factory_output_costs_increase_by_2_per
+		
+		clr_country_flag = irq_running_propaganda
+		}
+	}
+	
+	IRQ_propaganda_study_for_the_future_of_Iraq = {
+
+		icon = GFX_decision_generic_political_discourse
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			IRQ = {
+			has_completed_focus = IRQ_modernize_iraq
+			}
+			NOT = {has_country_flag = irq_running_propaganda}	
+		}
+		visible = {
+			original_tag = IRQ
+		}
+		days_remove = 75
+		days_re_enable = 60
+		modifier {
+			political_power_cost = 0.10
+			research_speed_factor = 0.25 
+		}
+		
+		complete_effect = {
+			set_country_flag = irq_running_propaganda
+		}
+		
+		cost = propaganda_decision_cost_var
+		fire_only_once = no
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				check_variable = {irq_propaganda_effect_costs_consumer_goods_var > 0.10}
+				factor = 0
+			} 
+		}
+		remove_effect = { 
+		add_to_variable = { irq_propaganda_effect_costs_var = -0.020}
+		custom_effect_tooltip = irq_propaganda_factory_output_costs_increase_by_2_per
+		
+		clr_country_flag = irq_running_propaganda
+		}
+	}
+
+}
+
+#new pan arabism greater iraq#
+
+irq_category_new_pan_arabism = {
+	
+	IRQ_modernize_education = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+			IRQ = {has_completed_focus = IRQ_modernize_iraq}
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+		}
+		days_remove = 165
+		modifier {
+			political_power_cost = 0.50
+			research_speed_factor = -0.25
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 20
+		}
+		remove_effect = { 
+			add_ideas = IRQ_modernized_education
+			add_research_slot = 1
+
+		}
+	}	
+
+	IRQ_improve_the_oil_drills = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+			IRQ = {has_completed_focus = IRQ_modernize_iraq}
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+		}
+		days_remove = 35
+		modifier {
+			political_power_cost = 0.25
+			production_lack_of_resource_penalty_factor = 1.0
+
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = { 
+			add_political_power = -25
+			set_country_flag = irq_improved_oil_drills
+		}
+	}
+	
+	IRQ_apply_the_new_techniques_to_the_oil_system = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+			IRQ = {has_completed_focus = IRQ_modernize_iraq}
+			has_country_flag = irq_improved_oil_drills
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+		}
+		days_remove = 35
+		modifier {
+			political_power_cost = 0.25
+			production_lack_of_resource_penalty_factor = 1.0
+
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 3
+		}
+		remove_effect = { 
+			add_political_power = -25
+				add_resource = {
+					type = oil
+					amount = 25
+					state = 291
+				}
+				add_resource = {
+					type = oil
+					amount = 5
+					state = 924
+				}
+			set_country_flag = irq_applied_new_techniques
+		}
+	}
+
+	IRQ_modernize_the_oil_trade = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+			IRQ = {has_completed_focus = IRQ_modernize_iraq}
+			has_country_flag = irq_improved_oil_drills
+			has_country_flag = irq_applied_new_techniques
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+		}
+		days_remove = 35
+		modifier {
+			political_power_cost = 0.35
+		
+
+		}
+		
+		cost = 75
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 3
+		}
+		remove_effect = { 
+			swap_ideas = {
+			remove_idea = IRQ_oil_producers
+			add_idea = IRQ_oil_producers_2
+			}
+		}
+	}
+	
+	IRQ_building_programmes = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+			IRQ = {has_completed_focus = IRQ_modernize_iraq}
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+		}
+		days_remove = 100
+		modifier {
+			political_power_cost = 0.25
+			production_lack_of_resource_penalty_factor = 1.0
+			production_speed_buildings_factor = -0.25
+		}
+		
+		cost = 150
+		fire_only_once = no
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = { 
+			random_core_state = {
+			add_extra_state_shared_building_slots = 2			
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+			add_extra_state_shared_building_slots = 2			
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+			add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}			
+		}
+	}
+	IRQ_invest_in_puppet = {
+
+		icon = GFX_decision_gre_paying_ifc_debt
+
+		allowed = {
+			original_tag = IRQ
+		}
+		target_trigger = {
+			FROM = {
+				is_puppet_of = IRQ
+			}
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+			IRQ = {has_completed_focus = IRQ_middle_east_economic_union}
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+		}
+		days_remove = 35
+		modifier {
+		}
+		
+		cost = 25
+		fire_only_once = no
+		ai_will_do = {
+			factor = 99
+		}
+		remove_effect = { 
+			IRQ_improve_the_economic_union_idea = yes
+			FROM = {
+				IRQ_improve_the_economic_union_idea_for_puppets = yes		
+			}
+		}
+	}	
+	
+	IRQ_integrate_kuwait = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+			656 = {
+			resistance < 15
+			}
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+		}
+		days_remove = 35
+		modifier {
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 656
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = { 
+			add_state_core = 656
+		}
+	}
+	
+	IRQ_integrate_arabistan = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+			656 = {
+			resistance < 15
+			}
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+		}
+		days_remove = 35
+		modifier {
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 413
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = { 
+			add_state_core = 413 
+		}
+	}
+	
+	IRQ_integrate_asad_babil = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+			656 = {
+			resistance < 15
+			}
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+		}
+		days_remove = 35
+		modifier {
+		}
+		
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 421
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = { 
+			add_state_core = 421
+			 
+		}
+	}
+	
+	IRQ_integrate_al_hasakah = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+			908 = {
+			resistance < 15
+			}
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+		}
+		days_remove = 35
+		modifier {
+		}
+		
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 908
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = { 
+			add_state_core = 908
+			 
+		}
+	}
+	
+	IRQ_tel_aviv_trials = {
+
+		icon = GFX_decision_eng_trade_unions_demand
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+			controls_state = 454
+		}
+		days_remove = 15
+		modifier {	
+		political_power_cost = 0.50		
+		}
+		
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 454
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 9999
+		}
+
+		complete_effect = {
+		}
+		
+		remove_effect = { 
+			country_event = {id = irq.31}
+		}
+	}	
+	
+	IRQ_integrate_palestine = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+			PAL = {controls_state = 454}
+		}
+		days_remove = 155
+		modifier {
+		}
+		
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 454
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		cost = 250
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = { 
+			PAL = {
+				set_cosmetic_tag = PAL_iraq_puppet
+			}
+			454 = {
+			add_manpower = -500452
+			remove_core_of = ISR
+			}
+			920 = {
+			add_manpower = -740100
+			remove_core_of = ISR			
+			}
+			USA = {
+			add_manpower = 1100000
+			}
+		}
+	}
+	
+	IRQ_integrate_golan_heights = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+			PAL = {
+			controls_state = 947
+			}
+		}
+		days_remove = 75
+		modifier {
+		}
+		
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 947
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		cost = 75
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = { 
+			SYR = {
+			transfer_state = 947
+			add_state_core = 947
+			}
+			947 = {
+			add_manpower = -8522
+			}
+			USA = {
+			add_manpower = 8201
+			}
+		}
+	}
+	
+	IRQ_invade_saudi_arabia = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+			has_completed_focus = IRQ_nasser_revenged
+			is_neighbor_of = SAU
+			has_war = no
+			
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+			has_completed_focus = IRQ_nasser_revenged
+			NOT = {SAU = {is_puppet_of = IRQ}} 
+		}
+		days_remove = 25
+		modifier {				
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 9999
+		}
+
+		complete_effect = {
+		}
+		
+		remove_effect = { 
+            declare_war_on = {
+                target = SAU
+                type = annex_everything
+            }
+		}
+	}
+	
+	IRQ_invade_egypt = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+			has_completed_focus = IRQ_nasser_revenged
+			PAL = {is_neighbor_of = EGY}
+			has_war = no
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+			has_completed_focus = IRQ_nasser_revenged
+		}
+		days_remove = 25
+		modifier {				
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 9999
+		}
+
+		complete_effect = {
+		}
+		
+		remove_effect = { 
+            declare_war_on = {
+                target = EGY
+                type = annex_everything
+            }
+		}
+	}
+	
+	IRQ_invade_yemen = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+			has_completed_focus = IRQ_nasser_revenged
+			any_allied_country = {
+				OR = {
+					is_neighbor_of = YEM
+					is_neighbor_of = DYR		
+				}
+			}
+			has_war = no
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+			has_completed_focus = IRQ_nasser_revenged
+			NOT = {YEM = {is_puppet_of = IRQ}} 
+			
+		}
+		days_remove = 25
+		modifier {				
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 9999
+		}
+
+		complete_effect = {
+		}
+		
+		remove_effect = { 
+            declare_war_on = {
+                target = YEM
+                type = annex_everything
+            }
+            declare_war_on = {
+                target = DYR
+                type = annex_everything
+            }			
+		}
+	}
+	
+	IRQ_invade_uae = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+			has_completed_focus = IRQ_nasser_revenged
+			SAU = {is_neighbor_of = UAE}
+			has_war = no
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+			has_completed_focus = IRQ_nasser_revenged
+			NOT = {UAE = {is_puppet_of = IRQ}} 
+		}
+		days_remove = 25
+		modifier {				
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 9999
+		}
+
+		complete_effect = {
+		}
+		
+		remove_effect = { 
+            declare_war_on = {
+                target = UAE
+                type = annex_everything
+            }
+	
+		}
+	}
+	
+	IRQ_invade_qatar = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+			has_completed_focus = IRQ_nasser_revenged
+			SAU = {is_neighbor_of = QAT}
+			has_war = no
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+			has_completed_focus = IRQ_nasser_revenged
+		}
+		days_remove = 25
+		modifier {				
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 9999
+		}
+
+		complete_effect = {
+		}
+		
+		remove_effect = { 
+            declare_war_on = {
+                target = QAT
+                type = annex_everything
+            }
+	
+		}
+	}
+	
+	IRQ_invade_bahrain = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+			has_completed_focus = IRQ_nasser_revenged
+			SAU = {is_neighbor_of = BHR}
+			has_war = no
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_new_pan_arabism
+			has_completed_focus = IRQ_nasser_revenged
+		}
+		days_remove = 25
+		modifier {				
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 9999
+		}
+
+		complete_effect = {
+		}
+		
+		remove_effect = { 
+            declare_war_on = {
+                target = BHR
+                type = annex_everything
+            }
+	
+		}
+	}
+
+}
+
+#pan arab#
+
+irq_category_a_new_state = {
+		
+	IRQ_pan_arab_30_day_report = {
+		activation = {
+			has_country_flag = irq_a_new_state
+
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+		}
+		cancel_trigger = {
+		}
+		icon = GFX_decision_generic_decision     
+		is_good = yes
+		
+		days_mission_timeout = 30
+		selectable_mission = no
+		priority = 30
+		complete_effect = {
+		}
+		timeout_effect = {
+			add_to_variable = {irq_uar_stability_variable = irq_uar_stability_monthly_variable}
+			custom_effect_tooltip = irq_stability_mission_tt
+			add_to_variable = {irq_centralization_progress_variable = irq_centralization_progress_monthly_variable }
+			custom_effect_tooltip = irq_centralization_mission_tt
+			activate_mission = IRQ_pan_arab_30_day_report
+			
+			clamp_variable = {
+				var = irq_uar_stability_variable
+				min = 0
+				max = 100
+			}
+			clamp_variable = {
+				var = irq_centralization_progress_variable
+				min = 0
+				max = 100
+			}
+			
+			if = {
+				limit = {
+				check_variable = {irq_uar_stability_variable < 36}
+				}
+				country_event = {id = irq.20}
+			}
+			
+			if = {
+				limit = {
+				check_variable = {irq_centralization_progress_variable > 99}
+				NOT = {has_country_flag = centralization_complete}
+				}
+				country_event = {id = irq.30}
+				set_country_flag = centralization_complete
+			}
+		}
+	}
+	
+	
+	IRQ_pan_arab_social_programs = {
+
+		icon = GFX_decision_generic_political_discourse
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+		}
+		days_remove = 15
+		modifier {
+		compliance_gain = 0.10
+		}
+		
+		cost = 50
+		fire_only_once = no
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = {
+			add_to_variable = {irq_uar_stability_monthly_variable = 2.5}
+			custom_effect_tooltip = irq_stability_monthly_increased_by_25
+		}
+	}
+	
+	IRQ_pan_arab_finish_monetary_reforms = {
+
+		icon = GFX_decision_generic_political_discourse
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			has_completed_focus = IRQ_unified_arab_dinar
+			NOT = {has_idea = IRQ_monetary_reforms}
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+		}
+		days_remove = 15
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 35
+		}
+		remove_effect = {
+			add_to_variable = {irq_uar_stability_monthly_variable = 5}
+			custom_effect_tooltip = irq_stability_monthly_increased_by_5
+			add_to_variable = {irq_centralization_progress_monthly_variable = 2}
+			custom_effect_tooltip = irq_centralization_monthly_increased_by_2
+		}
+	}
+	
+	IRQ_pan_arab_baghdad_damascus_highway_project = {
+
+		icon = GFX_decision_build_highway
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+		}
+		days_remove = 7
+		modifier {
+		production_speed_buildings_factor = -0.1 
+		}
+		
+		cost = 50
+		custom_cost_trigger = {
+			command_power > 34
+		}
+		custom_cost_text = needs_35_command_power_for_decision
+		
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = { 
+			activate_mission = IRQ_pan_arab_baghdad_damascus_highway_project_mission
+			set_country_flag = irq_baghdad_damascus_started
+			country_event = {id = irq.18}
+			
+			hidden_effect = {
+			add_command_power = -35
+			}
+		}
+	}
+	
+	IRQ_pan_arab_baghdad_damascus_highway_project_mission = {
+		activation = {
+			has_country_flag = irq_baghdad_damascus_started
+
+		}
+		available = {
+			has_railway_connection = {
+				start_province = 2097
+				target_province = 4111
+			}
+			
+			has_railway_level = {
+					state = 291
+					level = 5
+			}
+
+			has_railway_level = {
+					state = 676
+					level = 5
+			}
+			
+			has_railway_level = {
+					state = 680
+					level = 5
+			}
+			
+			has_railway_level = {
+					state = 554
+					level = 5
+			}
+
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			has_country_flag = irq_baghdad_damascus_started
+			NOT = {has_country_flag = irq_baghdad_damascus_finished_or_failed}
+		}
+		cancel_trigger = {
+		}
+		icon = GFX_decision_generic_decision     
+		is_good = yes
+		priority = 15
+		days_mission_timeout = 30
+		selectable_mission = no
+		
+		complete_effect = {
+			add_to_variable = {irq_centralization_progress_monthly_variable = 2}
+			custom_effect_tooltip = irq_centralization_monthly_increased_by_2
+			add_stability = 0.05
+			set_country_flag = irq_baghdad_damascus_finished_or_failed
+		}
+		timeout_effect = {
+			add_to_variable = {irq_centralization_progress_monthly_variable = -5}
+			custom_effect_tooltip = irq_centralization_monthly_decreased_by_5
+			add_to_variable = {irq_uar_stability_monthly_variable = 7.5}
+			custom_effect_tooltip = irq_stability_monthly_decreased_by_75
+			set_country_flag = irq_baghdad_damascus_finished_or_failed
+		}
+	}
+	
+
+	
+	IRQ_pan_arab_divert_resources_to_centralization_efforts = {
+
+		icon = GFX_decision_generic_industry
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+		}
+		days_remove = 30
+		modifier {
+		political_power_cost = 0.5
+		}
+		
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = needs_25_command_power_for_decision
+		cost = 25
+		
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = { 
+		add_to_variable = {irq_centralization_progress_variable = 1} 
+		custom_effect_tooltip = irq_centralization_monthly_increased_by_1
+		add_to_variable = {irq_uar_stability_monthly_variable = -5} 	
+		custom_effect_tooltip = irq_stability_monthly_decreased_by_5
+			hidden_effect = {
+			add_command_power = -25
+			}
+		}
+	}
+	
+	IRQ_pan_arab_modify_the_constitution = {
+
+		icon = GFX_decision_eng_trade_unions_demand
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			IRQ = {has_completed_focus = IRQ_invite_pan_arab_intellectuals}
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+		}
+		days_remove = 100
+		modifier {
+		compliance_gain = 0.15
+		
+		}
+		
+		cost = 15
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 22
+		}
+		complete_effect = {
+		add_to_variable = {irq_uar_stability_monthly_variable = 5} 	
+		custom_effect_tooltip = irq_stability_monthly_increased_by_5
+		
+		}
+		remove_effect = { 
+		add_political_power = -100
+		}
+	}
+	
+	IRQ_pan_arab_anti_terrorist_operations = {
+
+		icon = GFX_decision_broken_tank
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+		}
+		days_remove = 50
+		modifier {
+		compliance_gain = 0.05
+		resistance_growth = -0.05
+		}
+		
+		cost = 25
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = needs_15_command_power_for_decision
+		
+		fire_only_once = no
+		ai_will_do = {
+			factor = 99
+		}
+		remove_effect = { 
+		add_to_variable = {irq_uar_stability_monthly_variable = 2.5} 	
+		custom_effect_tooltip = irq_stability_monthly_increased_by_25
+			hidden_effect = {
+			add_command_power = -15
+			}
+		}
+	}
+	
+	IRQ_pan_arab_integrate_kuwait = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			656 = {
+			compliance > 35
+			}
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+		}
+		days_remove = 35
+		modifier {
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 656
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 55
+		}
+		complete_effect = {
+			subtract_from_variable = {irq_centralization_progress_variable = 2.5}
+			custom_effect_tooltip = irq_centralization_progress_decreased_by_25
+		}
+		remove_effect = { 
+			add_state_core = 656
+			add_to_variable = {irq_centralization_progress_monthly_variable = 0.25}
+			custom_effect_tooltip = irq_centralization_monthly_increased_by_025
+		}
+	}
+	
+	IRQ_pan_arab_integrate_arabistan = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			656 = {
+			compliance > 35
+			}
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+		}
+		days_remove = 35
+		modifier {
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 413
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 55
+		}
+		complete_effect = {
+			subtract_from_variable = {irq_centralization_progress_variable = 2.5}
+			custom_effect_tooltip = irq_centralization_progress_decreased_by_25
+		}
+		remove_effect = { 
+			add_state_core = 413
+			add_to_variable = {irq_centralization_progress_monthly_variable = 0.25}
+			custom_effect_tooltip = irq_centralization_monthly_increased_by_025
+		}
+	}
+	
+	IRQ_pan_arab_integrate_asad_babil = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			421 = {
+			compliance > 35
+			}
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+		}
+		days_remove = 35
+		modifier {
+		}
+		
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 421
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 55
+		}
+		complete_effect = {
+			subtract_from_variable = {irq_centralization_progress_variable = 2.5}
+			custom_effect_tooltip = irq_centralization_progress_decreased_by_25
+		}
+		remove_effect = { 
+			add_state_core = 421
+			add_to_variable = {irq_centralization_progress_monthly_variable = 0.25}
+			custom_effect_tooltip = irq_centralization_monthly_increased_by_025
+		}
+	}
+	
+	IRQ_pan_arab_integrate_al_hasakah = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			908 = {
+			compliance > 35
+			}
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+		}
+		days_remove = 35
+		modifier {
+		}
+		
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 908
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 55
+		}
+		complete_effect = {
+			subtract_from_variable = {irq_centralization_progress_variable = 2.5}
+			custom_effect_tooltip = irq_centralization_progress_decreased_by_25
+		}
+		remove_effect = { 
+			add_state_core = 908
+			add_to_variable = {irq_centralization_progress_monthly_variable = 0.25}
+			custom_effect_tooltip = irq_centralization_monthly_increased_by_025
+		}
+	}
+	
+	IRQ_pan_arab_integrate_deir_az_zur = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			680 = {
+			compliance > 35
+			}
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+		}
+		days_remove = 35
+		modifier {
+		}
+		
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 680
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 55
+		}
+		complete_effect = {
+			subtract_from_variable = {irq_centralization_progress_variable = 2.5}
+			custom_effect_tooltip = irq_centralization_progress_decreased_by_25
+		}
+		remove_effect = { 
+			add_state_core = 680
+			add_to_variable = {irq_centralization_progress_monthly_variable = 0.25}
+			custom_effect_tooltip = irq_centralization_monthly_increased_by_025
+		}
+	}
+	
+	IRQ_pan_arab_integrate_aleppo = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			677 = {
+			compliance > 35
+			}
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+		}
+		days_remove = 35
+		modifier {
+		}
+		
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 677
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 55
+		}
+		complete_effect = {
+			subtract_from_variable = {irq_centralization_progress_variable = 2.5}
+			custom_effect_tooltip = irq_centralization_progress_decreased_by_25
+		}
+		remove_effect = { 
+			add_state_core = 677
+			add_to_variable = {irq_centralization_progress_monthly_variable = 0.25}
+			custom_effect_tooltip = irq_centralization_monthly_increased_by_025
+		}
+	}
+	
+	IRQ_pan_arab_integrate_damascus = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			554 = {
+			compliance > 35
+			}
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+		}
+		days_remove = 35
+		modifier {
+		}
+		
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 554
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 55
+		}
+		complete_effect = {
+			subtract_from_variable = {irq_centralization_progress_variable = 2.5}
+			custom_effect_tooltip = irq_centralization_progress_decreased_by_25
+		}
+		remove_effect = { 
+			add_state_core = 554
+			add_to_variable = {irq_centralization_progress_monthly_variable = 0.25}
+			custom_effect_tooltip = irq_centralization_monthly_increased_by_025
+		}
+	}
+	
+	IRQ_pan_arab_integrate_jordan = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			455 = {
+			compliance > 35
+			}
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			IRQ = {controls_state = 455}
+		}
+		days_remove = 35
+		modifier {
+		}
+		
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 455
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 55
+		}
+		complete_effect = {
+			subtract_from_variable = {irq_centralization_progress_variable = 2.5}
+			custom_effect_tooltip = irq_centralization_progress_decreased_by_25
+		}
+		remove_effect = { 
+			add_state_core = 455
+			add_to_variable = {irq_centralization_progress_monthly_variable = 0.25}
+			custom_effect_tooltip = irq_centralization_monthly_increased_by_025
+		}
+	}
+	
+	IRQ_pan_arab_integrate_lebanon = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			553 = {
+			compliance > 35
+			}
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			IRQ = {controls_state = 553}
+		}
+		days_remove = 35
+		modifier {
+		}
+		
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 553
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 55
+		}
+		complete_effect = {
+			subtract_from_variable = {irq_centralization_progress_variable = 2.5}
+			custom_effect_tooltip = irq_centralization_progress_decreased_by_25
+		}
+		remove_effect = { 
+			add_state_core = 553
+			add_state_core = 953
+			add_state_core = 954
+		
+			add_to_variable = {irq_centralization_progress_monthly_variable = 0.25}
+			custom_effect_tooltip = irq_centralization_monthly_increased_by_025
+		}
+	}
+	
+	IRQ_pan_arab_integrate_golan_heights = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			controls_state = 947
+		}
+		days_remove = 75
+		modifier {
+		}
+		
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 947
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 55
+		}
+		complete_effect = {
+			subtract_from_variable = {irq_centralization_progress_variable = 2.5}
+			custom_effect_tooltip = irq_centralization_progress_decreased_by_25
+		}
+		remove_effect = { 
+			add_state_core = 947
+			add_to_variable = {irq_centralization_progress_monthly_variable = 0.25}
+			custom_effect_tooltip = irq_centralization_monthly_increased_by_025
+			947 = {
+			add_manpower = -7202
+			}
+			USA = {
+			add_manpower = 7002
+			}
+		}
+	}
+	
+	IRQ_pan_arab_integrate_palestine = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			PAL = {controls_state = 454}
+		}
+		days_remove = 155
+		modifier {				
+		}
+		
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 454
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		cost = 250
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 9999
+		}
+
+		complete_effect = {
+			subtract_from_variable = {irq_centralization_progress_variable = 2.5}
+			custom_effect_tooltip = irq_centralization_progress_decreased_by_25
+
+		}
+		
+		remove_effect = { 
+			PAL = {
+				every_owned_state = {
+					add_core_of = IRQ
+				}
+			}
+			annex_country = {
+				target = PAL
+				transfer_troops = yes
+			}				
+			454 = {
+			add_manpower = -2142452
+			}
+			920 = {
+			add_manpower = -2034142
+			}
+			USA = {
+			add_manpower = 4353123
+			}
+			add_to_variable = {irq_centralization_progress_monthly_variable = 0.25}
+			custom_effect_tooltip = irq_centralization_monthly_increased_by_025
+		}
+	}
+
+	IRQ_pan_arab_tel_aviv_trials = {
+
+		icon = GFX_decision_eng_trade_unions_demand
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			PAL = {controls_state = 454}
+		}
+		days_remove = 15
+		modifier {		
+		political_power_cost = 0.50		
+		}
+		
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 454
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 9999
+		}
+
+		complete_effect = {
+		}
+		
+		remove_effect = { 
+			country_event = {id = irq.31}
+		}
+	}
+
+	IRQ_pan_arab_integrate_saudi_arabia = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			has_completed_focus = IRQ_nasser_revenged
+
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			has_completed_focus = IRQ_nasser_revenged
+			controls_state = 292
+		}
+		days_remove = 75
+		modifier {
+		}
+		
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 292
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		cost = 100
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 55
+		}
+		complete_effect = {
+			subtract_from_variable = {irq_centralization_progress_variable = 2.5}
+			custom_effect_tooltip = irq_centralization_progress_decreased_by_25
+		}
+		remove_effect = { 
+			SAU = {
+			every_core_state = { add_core_of = IRQ }	
+			}
+			
+			add_to_variable = {irq_centralization_progress_monthly_variable = 0.25}
+			custom_effect_tooltip = irq_centralization_monthly_increased_by_025
+
+		}
+	}
+	
+	IRQ_pan_arab_integrate_egypt = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			has_completed_focus = IRQ_nasser_revenged
+
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			has_completed_focus = IRQ_nasser_revenged
+			controls_state = 901
+		}
+		days_remove = 75
+		modifier {
+		}
+		
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 901
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		cost = 100
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 55
+		}
+		complete_effect = {
+			subtract_from_variable = {irq_centralization_progress_variable = 2.5}
+			custom_effect_tooltip = irq_centralization_progress_decreased_by_25
+		}
+		remove_effect = { 
+			EGY = {
+			every_core_state = { add_core_of = IRQ }	
+			}
+			
+			add_to_variable = {irq_centralization_progress_monthly_variable = 0.25}
+			custom_effect_tooltip = irq_centralization_monthly_increased_by_025
+
+		}
+	}
+	
+	IRQ_pan_arab_integrate_yemen = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			has_completed_focus = IRQ_nasser_revenged
+
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			has_completed_focus = IRQ_nasser_revenged
+			controls_state = 293
+		}
+		days_remove = 75
+		modifier {
+		}
+		
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 293
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		cost = 100
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 55
+		}
+		complete_effect = {
+			subtract_from_variable = {irq_centralization_progress_variable = 2.5}
+			custom_effect_tooltip = irq_centralization_progress_decreased_by_25
+		}
+		remove_effect = { 
+			YEM = {
+			every_core_state = { add_core_of = IRQ }	
+			}
+			DYR = {
+			every_core_state = { add_core_of = IRQ }	
+			}
+			
+			add_to_variable = {irq_centralization_progress_monthly_variable = 0.25}
+			custom_effect_tooltip = irq_centralization_monthly_increased_by_025
+
+		}
+	}
+	
+	IRQ_pan_arab_integrate_oman = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			has_completed_focus = IRQ_nasser_revenged
+
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			has_completed_focus = IRQ_nasser_revenged
+			controls_state = 294
+		}
+		days_remove = 75
+		modifier {
+		}
+		
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 294
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		cost = 100
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 55
+		}
+		complete_effect = {
+			subtract_from_variable = {irq_centralization_progress_variable = 2.5}
+			custom_effect_tooltip = irq_centralization_progress_decreased_by_25
+		}
+		remove_effect = { 
+			OMA = {
+			every_core_state = { add_core_of = IRQ }	
+			}
+			
+			add_to_variable = {irq_centralization_progress_monthly_variable = 0.25}
+			custom_effect_tooltip = irq_centralization_monthly_increased_by_025
+
+		}
+	}	
+
+	IRQ_pan_arab_integrate_uae = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			has_completed_focus = IRQ_nasser_revenged
+
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			has_completed_focus = IRQ_nasser_revenged
+			controls_state = 658
+		}
+		days_remove = 75
+		modifier {
+		}
+		
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 658
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		cost = 100
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 55
+		}
+		complete_effect = {
+			subtract_from_variable = {irq_centralization_progress_variable = 2.5}
+			custom_effect_tooltip = irq_centralization_progress_decreased_by_25
+		}
+		remove_effect = { 
+			UAE = {
+			every_core_state = { add_core_of = IRQ }	
+			}
+			
+			add_to_variable = {irq_centralization_progress_monthly_variable = 0.25}
+			custom_effect_tooltip = irq_centralization_monthly_increased_by_025
+
+		}
+	}	
+
+	IRQ_pan_arab_integrate_qatar = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			has_completed_focus = IRQ_nasser_revenged
+
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			has_completed_focus = IRQ_nasser_revenged
+			controls_state = 765
+		}
+		days_remove = 75
+		modifier {
+		}
+		
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 765
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		cost = 100
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 55
+		}
+		complete_effect = {
+			subtract_from_variable = {irq_centralization_progress_variable = 2.5}
+			custom_effect_tooltip = irq_centralization_progress_decreased_by_25
+		}
+		remove_effect = { 
+			QAT = {
+			every_core_state = { add_core_of = IRQ }	
+			}
+			
+			add_to_variable = {irq_centralization_progress_monthly_variable = 0.25}
+			custom_effect_tooltip = irq_centralization_monthly_increased_by_025
+
+		}
+	}	
+
+	IRQ_pan_arab_integrate_bahrain = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			has_completed_focus = IRQ_nasser_revenged
+
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			has_completed_focus = IRQ_nasser_revenged
+			controls_state = 934
+		}
+		days_remove = 75
+		modifier {
+		}
+		
+		
+		highlight_states = {
+			highlight_state_targets = {
+				state = 934
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		cost = 100
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 55
+		}
+		complete_effect = {
+			subtract_from_variable = {irq_centralization_progress_variable = 2.5}
+			custom_effect_tooltip = irq_centralization_progress_decreased_by_25
+		}
+		remove_effect = { 
+			BHR = {
+			every_core_state = { add_core_of = IRQ }	
+			}
+			
+			add_to_variable = {irq_centralization_progress_monthly_variable = 0.25}
+			custom_effect_tooltip = irq_centralization_monthly_increased_by_025
+
+		}
+	}	
+	
+	IRQ_pan_arab_invade_saudi_arabia = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			has_completed_focus = IRQ_nasser_revenged
+			is_neighbor_of = SAU
+			has_war = no
+			
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			has_completed_focus = IRQ_nasser_revenged
+		}
+		days_remove = 25
+		modifier {				
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 9999
+		}
+
+		complete_effect = {
+		}
+		
+		remove_effect = { 
+            declare_war_on = {
+                target = SAU
+                type = annex_everything
+            }
+		}
+	}
+	
+	IRQ_pan_arab_invade_egypt = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			has_completed_focus = IRQ_nasser_revenged
+			is_neighbor_of = EGY
+			has_war = no
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			has_completed_focus = IRQ_nasser_revenged
+		}
+		days_remove = 25
+		modifier {				
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 9999
+		}
+
+		complete_effect = {
+		}
+		
+		remove_effect = { 
+            declare_war_on = {
+                target = EGY
+                type = annex_everything
+            }
+		}
+	}
+	
+	IRQ_pan_arab_invade_yemen = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			has_completed_focus = IRQ_nasser_revenged
+			OR = {
+				is_neighbor_of = YEM
+				is_neighbor_of = DYR		
+			}
+			has_war = no
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			has_completed_focus = IRQ_nasser_revenged
+		}
+		days_remove = 25
+		modifier {				
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 9999
+		}
+
+		complete_effect = {
+		}
+		
+		remove_effect = { 
+            declare_war_on = {
+                target = YEM
+                type = annex_everything
+            }
+            declare_war_on = {
+                target = DYR
+                type = annex_everything
+            }			
+		}
+	}
+	
+	IRQ_pan_arab_invade_uae = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			has_completed_focus = IRQ_nasser_revenged
+			is_neighbor_of = UAE
+			has_war = no
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			has_completed_focus = IRQ_nasser_revenged
+		}
+		days_remove = 25
+		modifier {				
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 9999
+		}
+
+		complete_effect = {
+		}
+		
+		remove_effect = { 
+            declare_war_on = {
+                target = UAE
+                type = annex_everything
+            }
+	
+		}
+	}
+	
+	IRQ_pan_arab_invade_qatar = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			has_completed_focus = IRQ_nasser_revenged
+			is_neighbor_of = QAT
+			has_war = no
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			has_completed_focus = IRQ_nasser_revenged
+		}
+		days_remove = 25
+		modifier {				
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 9999
+		}
+
+		complete_effect = {
+		}
+		
+		remove_effect = { 
+            declare_war_on = {
+                target = QAT
+                type = annex_everything
+            }
+	
+		}
+	}
+	
+	IRQ_pan_arab_invade_bahrain = {
+
+		icon = GFX_decision_infiltrate_state
+
+		allowed = {
+			original_tag = IRQ
+		}
+		available = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			has_completed_focus = IRQ_nasser_revenged
+			is_neighbor_of = BHR
+			has_war = no
+		}
+		visible = {
+			original_tag = IRQ
+			has_country_flag = irq_a_new_state
+			has_completed_focus = IRQ_nasser_revenged
+		}
+		days_remove = 25
+		modifier {				
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 9999
+		}
+
+		complete_effect = {
+		}
+		
+		remove_effect = { 
+            declare_war_on = {
+                target = BHR
+                type = annex_everything
+            }
+	
+		}
+	}
+}
+
+irq_category_kurdish_factions = {
+
+	### Propoganda ###
+
+	IRQ_kurdish_factions_government_propoganda_decision = {
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		priority = 20
+
+		fire_only_once = no
+		days_remove = 90
+		days_re_enable = 30
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		cost = 25
+
+		remove_effect = {
+			random = {
+				chance = 50
+				subtract_from_variable = {
+					var = irq_faction_kdp_popularity_value
+					value = 1
+					tooltip = var_irq_faction_kdp_popularity_decrease
+				}
+				clamp_variable = {
+					var = irq_faction_kdp_popularity_value
+					min = 0
+				}
+			}
+			random = {
+				chance = 50
+				subtract_from_variable = {
+					var = irq_faction_puk_popularity_value
+					value = 1
+					tooltip = var_irq_faction_puk_popularity_decrease
+				}
+				clamp_variable = {
+					var = irq_faction_puk_popularity_value
+					min = 0
+				}
+			}
+			random = {
+				chance = 50
+				subtract_from_variable = {
+					var = irq_faction_kwp_popularity_value
+					value = 1
+					tooltip = var_irq_faction_kwp_popularity_decrease
+				}
+				clamp_variable = {
+					var = irq_faction_kwp_popularity_value
+					min = 0
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+	}
+
+	IRQ_kurdish_factions_anti-kdp_propoganda_decision = {
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		priority = 15
+
+		fire_only_once = no
+		days_remove = 90
+		days_re_enable = 30
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		cost = 25
+
+		remove_effect = {
+			random_list = {
+				50 = {
+					subtract_from_variable = {
+						var = irq_faction_kdp_popularity_value
+						value = 2
+						tooltip = var_irq_faction_kdp_popularity_decrease
+					}
+					clamp_variable = {
+						var = irq_faction_kdp_popularity_value
+						min = 0
+					}
+
+					add_to_variable = {
+						var = irq_faction_puk_popularity_value
+						value = 1
+						tooltip = var_irq_faction_puk_popularity_increase
+					}
+					clamp_variable = {
+						var = irq_faction_puk_popularity_value
+						max = 4
+					}
+
+					add_to_variable = {
+						var = irq_faction_kwp_popularity_value
+						value = 1
+						tooltip = var_irq_faction_kwp_popularity_increase
+					}
+					clamp_variable = {
+						var = irq_faction_kwp_popularity_value
+						max = 4
+					}
+				}
+				40 = {
+					subtract_from_variable = {
+						var = irq_faction_kdp_popularity_value
+						value = 1
+						tooltip = var_irq_faction_kdp_popularity_decrease
+					}
+					clamp_variable = {
+						var = irq_faction_kdp_popularity_value
+						min = 0
+					}
+				}
+				10 = {
+					custom_effect_tooltip = var_irq_faction_kdp_popularity_unchanged
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				add = 5
+
+				check_variable = {
+					irq_faction_kdp_popularity_value > 1
+				}
+			}
+			modifier = {
+				add = 8
+
+				check_variable = {
+					irq_faction_kdp_popularity_value > 3
+				}
+			}
+		}
+
+	}
+
+	IRQ_kurdish_factions_anti-puk_propoganda_decision = {
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		priority = 15
+
+		fire_only_once = no
+		days_remove = 90
+		days_re_enable = 30
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		cost = 25
+
+		remove_effect = {
+			random_list = {
+				50 = {
+					subtract_from_variable = {
+						var = irq_faction_puk_popularity_value
+						value = 2
+						tooltip = var_irq_faction_puk_popularity_decrease
+					}
+					clamp_variable = {
+						var = irq_faction_puk_popularity_value
+						min = 0
+					}
+
+					add_to_variable = {
+						var = irq_faction_kdp_popularity_value
+						value = 1
+						tooltip = var_irq_faction_kdp_popularity_increase
+					}
+					clamp_variable = {
+						var = irq_faction_kdp_popularity_value
+						max = 4
+					}
+
+					add_to_variable = {
+						var = irq_faction_kwp_popularity_value
+						value = 1
+						tooltip = var_irq_faction_kwp_popularity_increase
+					}
+					clamp_variable = {
+						var = irq_faction_kwp_popularity_value
+						max = 4
+					}
+				}
+				40 = {
+					subtract_from_variable = {
+						var = irq_faction_puk_popularity_value
+						value = 1
+						tooltip = var_irq_faction_puk_popularity_decrease
+					}
+					clamp_variable = {
+						var = irq_faction_puk_popularity_value
+						min = 0
+					}
+				}
+				10 = {
+					custom_effect_tooltip = var_irq_faction_puk_popularity_unchanged
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				add = 5
+
+				check_variable = {
+					irq_faction_puk_popularity_value > 1
+				}
+			}
+			modifier = {
+				add = 8
+
+				check_variable = {
+					irq_faction_puk_popularity_value > 3
+				}
+			}
+		}
+
+	}
+
+	IRQ_kurdish_factions_anti-kwp_propoganda_decision = {
+
+		icon = GFX_decision_eng_propaganda_campaigns
+
+		priority = 15
+
+		fire_only_once = no
+		days_remove = 90
+		days_re_enable = 30
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		cost = 25
+
+		remove_effect = {
+			random_list = {
+				50 = {
+					subtract_from_variable = {
+						var = irq_faction_kwp_popularity_value
+						value = 2
+						tooltip = var_irq_faction_kwp_popularity_decrease
+					}
+					clamp_variable = {
+						var = irq_faction_kwp_popularity_value
+						min = 0
+					}
+
+					add_to_variable = {
+						var = irq_faction_puk_popularity_value
+						value = 1
+						tooltip = var_irq_faction_puk_popularity_increase
+					}
+					clamp_variable = {
+						var = irq_faction_puk_popularity_value
+						max = 4
+					}
+
+					add_to_variable = {
+						var = irq_faction_kdp_popularity_value
+						value = 1
+						tooltip = var_irq_faction_kdp_popularity_increase
+					}
+					clamp_variable = {
+						var = irq_faction_kdp_popularity_value
+						max = 4
+					}
+				}
+				40 = {
+					subtract_from_variable = {
+						var = irq_faction_kwp_popularity_value
+						value = 1
+						tooltip = var_irq_faction_kwp_popularity_decrease
+					}
+					clamp_variable = {
+						var = irq_faction_kwp_popularity_value
+						min = 0
+					}
+				}
+				10 = {
+					custom_effect_tooltip = var_irq_faction_kwp_popularity_unchanged
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				add = 5
+
+				check_variable = {
+					irq_faction_kwp_popularity_value > 1
+				}
+			}
+			modifier = {
+				add = 8
+
+				check_variable = {
+					irq_faction_kwp_popularity_value > 3
+				}
+			}
+		}
+
+	}
+
+	### Talks ###
+
+	IRQ_kurdish_factions_kdp_talks_decision = {
+
+		icon = GFX_decision_generic_political_discourse
+
+		priority = 10
+
+		fire_only_once = no
+		days_remove = 60
+		days_re_enable = 120
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		cost = 75
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = custom_trigger_tt_irq_kurdish_talks
+
+				AND = {
+					NOT = { check_variable = { irq_faction_kdp_stance_value = 0 } }
+					NOT = { check_variable = { irq_faction_kdp_stance_value = 3 } }
+				}
+			}
+		}
+
+		remove_effect = {
+			random_list = {
+				50 = {
+					hidden_effect = {
+						country_event = irq_kurdish.1
+					}
+					custom_effect_tooltip = custom_effect_tt_irq_kurdish_1
+				}
+				20 = {
+					hidden_effect = {
+						country_event = irq_kurdish.2
+					}
+					custom_effect_tooltip = custom_effect_tt_irq_kurdish_2
+				}
+				30 = {
+					hidden_effect = {
+						country_event = irq_kurdish.3
+					}
+					custom_effect_tooltip = custom_effect_tt_irq_kurdish_3
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 16
+		}
+
+	}
+
+	IRQ_kurdish_factions_puk_talks_decision = {
+
+		icon = GFX_decision_generic_political_discourse
+
+		priority = 10
+
+		fire_only_once = no
+		days_remove = 60
+		days_re_enable = 120
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		cost = 75
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = custom_trigger_tt_irq_kurdish_talks
+
+				AND = {
+					NOT = { check_variable = { irq_faction_puk_stance_value = 0 } }
+					NOT = { check_variable = { irq_faction_puk_stance_value = 3 } }
+				}
+			}
+		}
+
+		remove_effect = {
+			random_list = {
+				50 = {
+					hidden_effect = {
+						country_event = irq_kurdish.4
+					}
+					custom_effect_tooltip = custom_effect_tt_irq_kurdish_1
+				}
+				20 = {
+					hidden_effect = {
+						country_event = irq_kurdish.5
+					}
+					custom_effect_tooltip = custom_effect_tt_irq_kurdish_2
+				}
+				30 = {
+					hidden_effect = {
+						country_event = irq_kurdish.6
+					}
+					custom_effect_tooltip = custom_effect_tt_irq_kurdish_3
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 16
+		}
+
+	}
+
+	IRQ_kurdish_factions_kwp_talks_decision = {
+
+		icon = GFX_decision_generic_political_discourse
+
+		priority = 10
+
+		fire_only_once = no
+		days_remove = 60
+		days_re_enable = 120
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		cost = 75
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = custom_trigger_tt_irq_kurdish_talks
+
+				AND = {
+					NOT = { check_variable = { irq_faction_kwp_stance_value = 0 } }
+					NOT = { check_variable = { irq_faction_kwp_stance_value = 3 } }
+				}
+			}
+		}
+
+		remove_effect = {
+			random_list = {
+				50 = {
+					hidden_effect = {
+						country_event = irq_kurdish.7
+					}
+					custom_effect_tooltip = custom_effect_tt_irq_kurdish_1
+				}
+				20 = {
+					hidden_effect = {
+						country_event = irq_kurdish.8
+					}
+					custom_effect_tooltip = custom_effect_tt_irq_kurdish_2
+				}
+				30 = {
+					hidden_effect = {
+						country_event = irq_kurdish.9
+					}
+					custom_effect_tooltip = custom_effect_tt_irq_kurdish_3
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 16
+		}
+
+	}
+
+	### Weapons ###
+
+	IRQ_kurdish_factions_kdp_weapons_decision = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		priority = 8
+
+		fire_only_once = no
+		days_remove = 40
+		days_re_enable = 120
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		cost = 100
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = custom_trigger_tt_irq_kurdish_weapons
+
+				check_variable = { irq_faction_kdp_stance_value = 3 }
+			}
+			has_equipment = {
+				infantry_weapons > 999
+			}
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_weapons
+				amount = -1000
+			}
+		}
+
+		remove_effect = {
+			random_list = {
+				40 = {
+					hidden_effect = {
+						add_to_variable = {
+							var = irq_faction_kdp_military_value
+							value = 1
+						}
+						clamp_variable = {
+							var = irq_faction_kdp_military_value
+							max = 4
+						}
+					}
+					custom_effect_tooltip = var_irq_faction_kdp_military_increase
+				}
+				30 = {
+					hidden_effect = {
+						add_to_variable = {
+							var = irq_faction_kdp_military_value
+							value = 1
+						}
+						clamp_variable = {
+							var = irq_faction_kdp_military_value
+							max = 4
+						}
+
+						subtract_from_variable = {
+							var = irq_faction_kdp_popularity_value
+							value = 1
+						}
+						clamp_variable = {
+							var = irq_faction_kdp_popularity_value
+							min = 0
+						}
+					}
+					custom_effect_tooltip = var_irq_faction_kdp_military_increase
+					custom_effect_tooltip = var_irq_faction_kdp_popularity_decrease
+				}
+				30 = {
+					hidden_effect = {
+						add_to_variable = {
+							var = irq_faction_kdp_military_value
+							value = 1
+						}
+						clamp_variable = {
+							var = irq_faction_kdp_military_value
+							max = 4
+						}
+
+						subtract_from_variable = {
+							var = irq_faction_kdp_military_value
+							value = 1
+						}
+						clamp_variable = {
+							var = irq_faction_kdp_military_value
+							min = 0
+						}
+					}
+					custom_effect_tooltip = var_irq_faction_kdp_military_increase
+					custom_effect_tooltip = var_irq_faction_kdp_political_decrease
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				add = 9
+
+				check_variable = {
+					irq_faction_kdp_military_value < 2
+				}
+			}
+		}
+
+	}
+
+	IRQ_kurdish_factions_puk_weapons_decision = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		priority = 8
+
+		fire_only_once = no
+		days_remove = 40
+		days_re_enable = 120
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		cost = 100
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = custom_trigger_tt_irq_kurdish_weapons
+
+				check_variable = { irq_faction_puk_stance_value = 3 }
+			}
+			has_equipment = {
+				infantry_weapons > 999
+			}
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_weapons
+				amount = -1000
+			}
+		}
+
+		remove_effect = {
+			random_list = {
+				40 = {
+					hidden_effect = {
+						add_to_variable = {
+							var = irq_faction_puk_military_value
+							value = 1
+						}
+						clamp_variable = {
+							var = irq_faction_puk_military_value
+							max = 4
+						}
+					}
+					custom_effect_tooltip = var_irq_faction_puk_military_increase
+				}
+				30 = {
+					hidden_effect = {
+						add_to_variable = {
+							var = irq_faction_puk_military_value
+							value = 1
+						}
+						clamp_variable = {
+							var = irq_faction_puk_military_value
+							max = 4
+						}
+
+						subtract_from_variable = {
+							var = irq_faction_puk_popularity_value
+							value = 1
+						}
+						clamp_variable = {
+							var = irq_faction_puk_popularity_value
+							min = 0
+						}
+					}
+					custom_effect_tooltip = var_irq_faction_puk_military_increase
+					custom_effect_tooltip = var_irq_faction_puk_popularity_decrease
+				}
+				30 = {
+					hidden_effect = {
+						add_to_variable = {
+							var = irq_faction_puk_military_value
+							value = 1
+						}
+						clamp_variable = {
+							var = irq_faction_puk_military_value
+							max = 4
+						}
+
+						subtract_from_variable = {
+							var = irq_faction_puk_military_value
+							value = 1
+						}
+						clamp_variable = {
+							var = irq_faction_puk_military_value
+							min = 0
+						}
+					}
+					custom_effect_tooltip = var_irq_faction_puk_military_increase
+					custom_effect_tooltip = var_irq_faction_puk_political_decrease
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				add = 9
+
+				check_variable = {
+					irq_faction_puk_military_value < 2
+				}
+			}
+		}
+
+	}
+
+	IRQ_kurdish_factions_kwp_weapons_decision = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		priority = 8
+
+		fire_only_once = no
+		days_remove = 40
+		days_re_enable = 120
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		cost = 100
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = custom_trigger_tt_irq_kurdish_weapons
+
+				check_variable = { irq_faction_kwp_stance_value = 3 }
+			}
+			has_equipment = {
+				infantry_weapons > 999
+			}
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_weapons
+				amount = -1000
+			}
+		}
+
+		remove_effect = {
+			random_list = {
+				40 = {
+					hidden_effect = {
+						add_to_variable = {
+							var = irq_faction_kwp_military_value
+							value = 1
+						}
+						clamp_variable = {
+							var = irq_faction_kwp_military_value
+							max = 4
+						}
+					}
+					custom_effect_tooltip = var_irq_faction_kwp_military_increase
+				}
+				30 = {
+					hidden_effect = {
+						add_to_variable = {
+							var = irq_faction_kwp_military_value
+							value = 1
+						}
+						clamp_variable = {
+							var = irq_faction_kwp_military_value
+							max = 4
+						}
+
+						subtract_from_variable = {
+							var = irq_faction_kwp_popularity_value
+							value = 1
+						}
+						clamp_variable = {
+							var = irq_faction_kwp_popularity_value
+							min = 0
+						}
+					}
+					custom_effect_tooltip = var_irq_faction_kwp_military_increase
+					custom_effect_tooltip = var_irq_faction_kwp_popularity_decrease
+				}
+				30 = {
+					hidden_effect = {
+						add_to_variable = {
+							var = irq_faction_kwp_military_value
+							value = 1
+						}
+						clamp_variable = {
+							var = irq_faction_kwp_military_value
+							max = 4
+						}
+
+						subtract_from_variable = {
+							var = irq_faction_kwp_military_value
+							value = 1
+						}
+						clamp_variable = {
+							var = irq_faction_kwp_military_value
+							min = 0
+						}
+					}
+					custom_effect_tooltip = var_irq_faction_kwp_military_increase
+					custom_effect_tooltip = var_irq_faction_kwp_political_decrease
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				add = 9
+
+				check_variable = {
+					irq_faction_kwp_military_value < 2
+				}
+			}
+		}
+
+	}
+
+	### Funding ###
+
+	IRQ_kurdish_factions_provide_funding_decision = {
+
+		icon = GFX_decision_generic_fundraising
+
+		priority = 2
+
+		fire_only_once = no
+		days_remove = 60
+		days_re_enable = 120
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		cost = 75
+
+		complete_effect = {
+			add_ideas = IRQ_kurdish_decision_funding
+		}
+
+		remove_effect = {
+			remove_ideas = IRQ_kurdish_decision_funding
+			random = {
+				chance = 50
+				subtract_from_variable = {
+					var = irq_faction_kdp_popularity_value
+					value = 1
+					tooltip = var_irq_faction_kdp_popularity_decrease
+				}
+				clamp_variable = {
+					var = irq_faction_kdp_popularity_value
+					min = 0
+				}
+			}
+			random = {
+				chance = 50
+				subtract_from_variable = {
+					var = irq_faction_puk_popularity_value
+					value = 1
+					tooltip = var_irq_faction_puk_popularity_decrease
+				}
+				clamp_variable = {
+					var = irq_faction_puk_popularity_value
+					min = 0
+				}
+			}
+			random = {
+				chance = 50
+				subtract_from_variable = {
+					var = irq_faction_kwp_popularity_value
+					value = 1
+					tooltip = var_irq_faction_kwp_popularity_decrease
+				}
+				clamp_variable = {
+					var = irq_faction_kwp_popularity_value
+					min = 0
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				add = 12
+
+				IRQ = {
+					num_of_available_civilian_factories > 12
+				}
+			}
+		}
+
+	}
+
+	### Assassinate ###
+
+	IRQ_kurdish_factions_kdp_assassinate_decision = {
+
+		icon = GFX_decision_generic_assassination
+
+		priority = 6
+
+		fire_only_once = no
+		days_remove = 20
+		days_re_enable = 60
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		custom_cost_trigger = {
+			has_political_power > 49
+			command_power > 19
+		}
+		custom_cost_text = decision_cost_CP_20_PP_50
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = custom_trigger_tt_irq_kurdish_assassination
+
+				NOT = { check_variable = { irq_faction_kdp_stance_value = 3 } }
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -50
+				add_command_power = -20
+			}
+		}
+
+		remove_effect = {
+			random_list = {
+				80 = {
+					hidden_effect = {
+						country_event = irq_kurdish.10
+					}
+					custom_effect_tooltip = custom_effect_tt_irq_kurdish_10
+
+					random = {
+						chance = 50
+
+						subtract_from_variable = {
+							var = irq_faction_kdp_military_value
+							value = 1
+							tooltip = var_irq_faction_kdp_military_decrease
+						}
+						clamp_variable = {
+							var = irq_faction_kdp_military_value
+							min = 0
+						}
+					}
+					random = {
+						chance = 50
+
+						subtract_from_variable = {
+							var = irq_faction_kdp_political_value
+							value = 1
+							tooltip = var_irq_faction_kdp_political_decrease
+						}
+						clamp_variable = {
+							var = irq_faction_kdp_political_value
+							min = 0
+						}
+					}
+					if = {
+						limit = {
+							NOT = { check_variable = { irq_faction_kdp_stance_value = 0 } }
+						}
+
+						random = {
+							chance = 40
+
+							set_variable = {
+								var = irq_faction_kdp_stance_value
+								value = 0
+								tooltip = var_irq_faction_stance_value_0
+							}
+						}
+					}
+				}
+				20 = {
+					hidden_effect = {
+						country_event = irq_kurdish.11
+					}
+					custom_effect_tooltip = custom_effect_tt_irq_kurdish_11
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				add = 2
+
+				OR = {
+					check_variable = {
+						irq_faction_kdp_military_value > 1
+					}
+					check_variable = {
+						irq_faction_kdp_political_value > 1
+					}
+				}
+			}
+			modifier = {
+				add = 5
+
+				OR = {
+					check_variable = {
+						irq_faction_kdp_military_value > 3
+					}
+					check_variable = {
+						irq_faction_kdp_political_value > 3
+					}
+				}
+			}
+		}
+
+	}
+
+	IRQ_kurdish_factions_puk_assassinate_decision = {
+
+		icon = GFX_decision_generic_assassination
+
+		priority = 6
+
+		fire_only_once = no
+		days_remove = 20
+		days_re_enable = 60
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		custom_cost_trigger = {
+			has_political_power > 49
+			command_power > 19
+		}
+		custom_cost_text = decision_cost_CP_20_PP_50
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = custom_trigger_tt_irq_kurdish_assassination
+
+				NOT = { check_variable = { irq_faction_puk_stance_value = 3 } }
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -50
+				add_command_power = -20
+			}
+		}
+
+		remove_effect = {
+			random_list = {
+				80 = {
+					hidden_effect = {
+						country_event = irq_kurdish.10
+					}
+					custom_effect_tooltip = custom_effect_tt_irq_kurdish_10
+
+					random = {
+						chance = 50
+
+						subtract_from_variable = {
+							var = irq_faction_puk_military_value
+							value = 1
+							tooltip = var_irq_faction_puk_military_decrease
+						}
+						clamp_variable = {
+							var = irq_faction_puk_military_value
+							min = 0
+						}
+					}
+					random = {
+						chance = 50
+
+						subtract_from_variable = {
+							var = irq_faction_puk_political_value
+							value = 1
+							tooltip = var_irq_faction_puk_political_decrease
+						}
+						clamp_variable = {
+							var = irq_faction_puk_political_value
+							min = 0
+						}
+					}
+					if = {
+						limit = {
+							NOT = { check_variable = { irq_faction_puk_stance_value = 0 } }
+						}
+
+						random = {
+							chance = 40
+
+							set_variable = {
+								var = irq_faction_puk_stance_value
+								value = 0
+								tooltip = var_irq_faction_stance_value_0
+							}
+						}
+					}
+				}
+				20 = {
+					hidden_effect = {
+						country_event = irq_kurdish.11
+					}
+					custom_effect_tooltip = custom_effect_tt_irq_kurdish_11
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				add = 2
+
+				OR = {
+					check_variable = {
+						irq_faction_puk_military_value > 1
+					}
+					check_variable = {
+						irq_faction_puk_political_value > 1
+					}
+				}
+			}
+			modifier = {
+				add = 5
+
+				OR = {
+					check_variable = {
+						irq_faction_puk_military_value > 3
+					}
+					check_variable = {
+						irq_faction_puk_political_value > 3
+					}
+				}
+			}
+		}
+
+	}
+
+	IRQ_kurdish_factions_kwp_assassinate_decision = {
+
+		icon = GFX_decision_generic_assassination
+
+		priority = 6
+
+		fire_only_once = no
+		days_remove = 20
+		days_re_enable = 60
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		custom_cost_trigger = {
+			has_political_power > 49
+			command_power > 19
+		}
+		custom_cost_text = decision_cost_CP_20_PP_50
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = custom_trigger_tt_irq_kurdish_assassination
+
+				NOT = { check_variable = { irq_faction_kwp_stance_value = 3 } }
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -50
+				add_command_power = -20
+			}
+		}
+
+		remove_effect = {
+			random_list = {
+				80 = {
+					hidden_effect = {
+						country_event = irq_kurdish.10
+					}
+					custom_effect_tooltip = custom_effect_tt_irq_kurdish_10
+
+					random = {
+						chance = 50
+
+						subtract_from_variable = {
+							var = irq_faction_kwp_military_value
+							value = 1
+							tooltip = var_irq_faction_kwp_military_decrease
+						}
+						clamp_variable = {
+							var = irq_faction_kwp_military_value
+							min = 0
+						}
+					}
+					random = {
+						chance = 50
+
+						subtract_from_variable = {
+							var = irq_faction_kwp_political_value
+							value = 1
+							tooltip = var_irq_faction_kwp_political_decrease
+						}
+						clamp_variable = {
+							var = irq_faction_kwp_political_value
+							min = 0
+						}
+					}
+					if = {
+						limit = {
+							NOT = { check_variable = { irq_faction_kwp_stance_value = 0 } }
+						}
+
+						random = {
+							chance = 40
+
+							set_variable = {
+								var = irq_faction_kwp_stance_value
+								value = 0
+								tooltip = var_irq_faction_stance_value_0
+							}
+						}
+					}
+				}
+				20 = {
+					hidden_effect = {
+						country_event = irq_kurdish.11
+					}
+					custom_effect_tooltip = custom_effect_tt_irq_kurdish_11
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				add = 2
+
+				OR = {
+					check_variable = {
+						irq_faction_kwp_military_value > 1
+					}
+					check_variable = {
+						irq_faction_kwp_political_value > 1
+					}
+				}
+			}
+			modifier = {
+				add = 5
+
+				OR = {
+					check_variable = {
+						irq_faction_kwp_military_value > 3
+					}
+					check_variable = {
+						irq_faction_kwp_political_value > 3
+					}
+				}
+			}
+		}
+
+	}
+
+}
+
+irq_category_request_foreign_aid = {
+
+	## Soviet ##
+
+	IRQ_request_foreign_aid_purchase_soviet_weapons_decision = {
+
+		icon = GFX_decision_generic_industry
+
+		priority = 10
+
+		days_remove = 20
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		available = {
+			AND = {
+				country_exists = IRQ
+				country_exists = SOV
+				NOT = {
+					IRQ = {
+						has_war_with = SOV
+					}
+				}
+			}
+			NOT = {
+				OR = {
+					has_decision = IRQ_request_foreign_aid_purchase_soviet_hightech_weapons_decision
+					has_decision = IRQ_request_foreign_aid_purchase_soviet_motorised_decision
+					has_decision = IRQ_request_foreign_aid_purchase_soviet_apc_decision
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = IRQ }
+				NOT = { country_exists = SOV }
+				IRQ = {
+					has_war_with = SOV
+				}
+			}
+		}
+
+		complete_effect = {
+			SOV = {
+				add_timed_idea = {
+					idea = IRQ_foreign_equipment_payments
+					days = 40
+				}
+			}
+			IRQ = {
+				add_timed_idea = {
+					idea = IRQ_foreign_equipment_payments_irq
+					days = 40
+				}
+			}
+		}
+
+		cancel_effect = {
+			SOV = {
+				remove_ideas = {
+					IRQ_foreign_equipment_payments
+				}
+			}
+			IRQ = {
+				remove_ideas = {
+					IRQ_foreign_equipment_payments_irq
+				}
+			}
+		}
+
+		remove_effect = {
+			IRQ = {
+				add_equipment_to_stockpile = {
+					type = infantry_weapons
+					amount = 1000
+					producer = SOV
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 100
+					producer = SOV
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 6
+
+				OR = {
+					has_equipment = {
+						infantry_weapons < 500
+					}
+					has_equipment = {
+						support_equipment < 50
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+
+				num_of_available_civilian_factories < 4
+			}
+		}
+
+	}
+
+	IRQ_request_foreign_aid_purchase_soviet_hightech_weapons_decision = {
+
+		icon = GFX_decision_generic_industry
+
+		priority = 9
+
+		days_remove = 30
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		available = {
+			AND = {
+				country_exists = IRQ
+				country_exists = SOV
+				NOT = {
+					IRQ = {
+						has_war_with = SOV
+					}
+				}
+			}
+			NOT = {
+				OR = {
+					has_decision = IRQ_request_foreign_aid_purchase_soviet_weapons_decision
+					has_decision = IRQ_request_foreign_aid_purchase_soviet_motorised_decision
+					has_decision = IRQ_request_foreign_aid_purchase_soviet_apc_decision
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = IRQ }
+				NOT = { country_exists = SOV }
+				IRQ = {
+					has_war_with = SOV
+				}
+			}
+		}
+
+		complete_effect = {
+			SOV = {
+				add_timed_idea = {
+					idea = IRQ_foreign_equipment_payments
+					days = 60
+				}
+			}
+			IRQ = {
+				add_timed_idea = {
+					idea = IRQ_foreign_equipment_payments_irq
+					days = 60
+				}
+			}
+		}
+
+		cancel_effect = {
+			SOV = {
+				remove_ideas = {
+					IRQ_foreign_equipment_payments
+				}
+			}
+			IRQ = {
+				remove_ideas = {
+					IRQ_foreign_equipment_payments_irq
+				}
+			}
+		}
+
+		remove_effect = {
+			IRQ = {
+				add_equipment_to_stockpile = {
+					type = infantry_anti_tank_weapons
+					amount = 100
+					producer = SOV
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_anti_air_weapons
+					amount = 100
+					producer = SOV
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 6
+
+				OR = {
+					has_equipment = {
+						infantry_anti_tank_weapons < 50
+					}
+					has_equipment = {
+						infantry_anti_air_weapons < 50
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+
+				num_of_available_civilian_factories < 4
+			}
+		}
+
+	}
+
+	IRQ_request_foreign_aid_purchase_soviet_motorised_decision = {
+
+		icon = GFX_decision_generic_industry
+
+		priority = 8
+
+		days_remove = 30
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		available = {
+			AND = {
+				country_exists = IRQ
+				country_exists = SOV
+				NOT = {
+					IRQ = {
+						has_war_with = SOV
+					}
+				}
+			}
+			NOT = {
+				OR = {
+					has_decision = IRQ_request_foreign_aid_purchase_soviet_weapons_decision
+					has_decision = IRQ_request_foreign_aid_purchase_soviet_hightech_weapons_decision
+					has_decision = IRQ_request_foreign_aid_purchase_soviet_apc_decision
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = IRQ }
+				NOT = { country_exists = SOV }
+				IRQ = {
+					has_war_with = SOV
+				}
+			}
+		}
+
+		complete_effect = {
+			SOV = {
+				add_timed_idea = {
+					idea = IRQ_foreign_equipment_payments
+					days = 60
+				}
+			}
+			IRQ = {
+				add_timed_idea = {
+					idea = IRQ_foreign_equipment_payments_irq
+					days = 60
+				}
+			}
+		}
+
+		cancel_effect = {
+			SOV = {
+				remove_ideas = {
+					IRQ_foreign_equipment_payments
+				}
+			}
+			IRQ = {
+				remove_ideas = {
+					IRQ_foreign_equipment_payments_irq
+				}
+			}
+		}
+
+		remove_effect = {
+			IRQ = {
+				add_equipment_to_stockpile = {
+					type = motorised_equipment
+					amount = 50
+					producer = SOV
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 6
+
+				has_equipment = {
+					motorised_equipment < 25
+				}
+			}
+			modifier = {
+				factor = 0
+
+				num_of_available_civilian_factories < 4
+			}
+		}
+
+	}
+
+	IRQ_request_foreign_aid_purchase_soviet_apc_decision = {
+
+		icon = GFX_decision_generic_apc
+
+		priority = 7
+
+		days_remove = 45
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		available = {
+			AND = {
+				country_exists = IRQ
+				country_exists = SOV
+				NOT = {
+					IRQ = {
+						has_war_with = SOV
+					}
+				}
+			}
+			NOT = {
+				OR = {
+					has_decision = IRQ_request_foreign_aid_purchase_soviet_weapons_decision
+					has_decision = IRQ_request_foreign_aid_purchase_soviet_hightech_weapons_decision
+					has_decision = IRQ_request_foreign_aid_purchase_soviet_motorised_decision
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = IRQ }
+				NOT = { country_exists = SOV }
+				IRQ = {
+					has_war_with = SOV
+				}
+			}
+		}
+
+		complete_effect = {
+			SOV = {
+				add_timed_idea = {
+					idea = IRQ_foreign_equipment_payments
+					days = 90
+				}
+			}
+			IRQ = {
+				add_timed_idea = {
+					idea = IRQ_foreign_equipment_payments_irq
+					days = 90
+				}
+			}
+		}
+
+		cancel_effect = {
+			SOV = {
+				remove_ideas = {
+					IRQ_foreign_equipment_payments
+				}
+			}
+			IRQ = {
+				remove_ideas = {
+					IRQ_foreign_equipment_payments_irq
+				}
+			}
+		}
+
+		remove_effect = {
+			IRQ = {
+				add_equipment_to_stockpile = {
+					type = apc_tank_equipment_2
+					amount = 50
+					producer = SOV
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 6
+
+				has_equipment = {
+					apc_tank_equipment < 25
+				}
+			}
+			modifier = {
+				factor = 0
+
+				num_of_available_civilian_factories < 4
+			}
+		}
+
+	}
+
+	## China ##
+
+	IRQ_request_foreign_aid_purchase_prc_weapons_decision = {
+
+		icon = GFX_decision_generic_industry
+
+		priority = 6
+
+		days_remove = 20
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		available = {
+			AND = {
+				country_exists = IRQ
+				country_exists = PRC
+				NOT = {
+					IRQ = {
+						has_war_with = PRC
+					}
+				}
+			}
+			NOT = {
+				OR = {
+					has_decision = IRQ_request_foreign_aid_purchase_prc_hightech_weapons_decision
+					has_decision = IRQ_request_foreign_aid_purchase_prc_motorised_decision
+					has_decision = IRQ_request_foreign_aid_purchase_prc_apc_decision
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = IRQ }
+				NOT = { country_exists = PRC }
+				IRQ = {
+					has_war_with = PRC
+				}
+			}
+		}
+
+		complete_effect = {
+			PRC = {
+				add_timed_idea = {
+					idea = IRQ_foreign_equipment_payments
+					days = 40
+				}
+			}
+			IRQ = {
+				add_timed_idea = {
+					idea = IRQ_foreign_equipment_payments_irq
+					days = 40
+				}
+			}
+		}
+
+		cancel_effect = {
+			PRC = {
+				remove_ideas = {
+					IRQ_foreign_equipment_payments
+				}
+			}
+			IRQ = {
+				remove_ideas = {
+					IRQ_foreign_equipment_payments_irq
+				}
+			}
+		}
+
+		remove_effect = {
+			IRQ = {
+				add_equipment_to_stockpile = {
+					type = infantry_weapons
+					amount = 1000
+					producer = PRC
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 100
+					producer = PRC
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 6
+
+				OR = {
+					has_equipment = {
+						infantry_weapons < 500
+					}
+					has_equipment = {
+						support_equipment < 50
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+
+				num_of_available_civilian_factories < 4
+			}
+		}
+
+	}
+
+	IRQ_request_foreign_aid_purchase_prc_hightech_weapons_decision = {
+
+		icon = GFX_decision_generic_industry
+
+		priority = 5
+
+		days_remove = 30
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		available = {
+			AND = {
+				country_exists = IRQ
+				country_exists = PRC
+				NOT = {
+					IRQ = {
+						has_war_with = PRC
+					}
+				}
+			}
+			NOT = {
+				OR = {
+					has_decision = IRQ_request_foreign_aid_purchase_prc_weapons_decision
+					has_decision = IRQ_request_foreign_aid_purchase_prc_motorised_decision
+					has_decision = IRQ_request_foreign_aid_purchase_prc_apc_decision
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = IRQ }
+				NOT = { country_exists = PRC }
+				IRQ = {
+					has_war_with = PRC
+				}
+			}
+		}
+
+		complete_effect = {
+			PRC = {
+				add_timed_idea = {
+					idea = IRQ_foreign_equipment_payments
+					days = 60
+				}
+			}
+			IRQ = {
+				add_timed_idea = {
+					idea = IRQ_foreign_equipment_payments_irq
+					days = 60
+				}
+			}
+		}
+
+		cancel_effect = {
+			PRC = {
+				remove_ideas = {
+					IRQ_foreign_equipment_payments
+				}
+			}
+			IRQ = {
+				remove_ideas = {
+					IRQ_foreign_equipment_payments_irq
+				}
+			}
+		}
+
+		remove_effect = {
+			IRQ = {
+				add_equipment_to_stockpile = {
+					type = infantry_anti_tank_weapons
+					amount = 100
+					producer = PRC
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_anti_air_weapons
+					amount = 100
+					producer = PRC
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 6
+
+				OR = {
+					has_equipment = {
+						infantry_anti_tank_weapons < 50
+					}
+					has_equipment = {
+						infantry_anti_air_weapons < 50
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+
+				num_of_available_civilian_factories < 4
+			}
+		}
+
+	}
+
+	IRQ_request_foreign_aid_purchase_prc_motorised_decision = {
+
+		icon = GFX_decision_generic_industry
+
+		priority = 4
+
+		days_remove = 30
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		available = {
+			AND = {
+				country_exists = IRQ
+				country_exists = PRC
+				NOT = {
+					IRQ = {
+						has_war_with = PRC
+					}
+				}
+			}
+			NOT = {
+				OR = {
+					has_decision = IRQ_request_foreign_aid_purchase_prc_weapons_decision
+					has_decision = IRQ_request_foreign_aid_purchase_prc_hightech_weapons_decision
+					has_decision = IRQ_request_foreign_aid_purchase_prc_apc_decision
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = IRQ }
+				NOT = { country_exists = PRC }
+				IRQ = {
+					has_war_with = PRC
+				}
+			}
+		}
+
+		complete_effect = {
+			PRC = {
+				add_timed_idea = {
+					idea = IRQ_foreign_equipment_payments
+					days = 60
+				}
+			}
+			IRQ = {
+				add_timed_idea = {
+					idea = IRQ_foreign_equipment_payments_irq
+					days = 60
+				}
+			}
+		}
+
+		cancel_effect = {
+			PRC = {
+				remove_ideas = {
+					IRQ_foreign_equipment_payments
+				}
+			}
+			IRQ = {
+				remove_ideas = {
+					IRQ_foreign_equipment_payments_irq
+				}
+			}
+		}
+
+		remove_effect = {
+			IRQ = {
+				add_equipment_to_stockpile = {
+					type = motorised_equipment
+					amount = 50
+					producer = PRC
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 6
+
+				has_equipment = {
+					motorised_equipment < 25
+				}
+			}
+			modifier = {
+				factor = 0
+
+				num_of_available_civilian_factories < 4
+			}
+		}
+
+	}
+
+	IRQ_request_foreign_aid_purchase_prc_apc_decision = {
+
+		icon = GFX_decision_generic_apc
+
+		priority = 3
+
+		days_remove = 45
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		available = {
+			AND = {
+				country_exists = IRQ
+				country_exists = PRC
+				NOT = {
+					IRQ = {
+						has_war_with = PRC
+					}
+				}
+			}
+			NOT = {
+				OR = {
+					has_decision = IRQ_request_foreign_aid_purchase_prc_weapons_decision
+					has_decision = IRQ_request_foreign_aid_purchase_prc_hightech_weapons_decision
+					has_decision = IRQ_request_foreign_aid_purchase_prc_motorised_decision
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = IRQ }
+				NOT = { country_exists = PRC }
+				IRQ = {
+					has_war_with = PRC
+				}
+			}
+		}
+
+		complete_effect = {
+			PRC = {
+				add_timed_idea = {
+					idea = IRQ_foreign_equipment_payments
+					days = 90
+				}
+			}
+			IRQ = {
+				add_timed_idea = {
+					idea = IRQ_foreign_equipment_payments_irq
+					days = 90
+				}
+			}
+		}
+
+		cancel_effect = {
+			PRC = {
+				remove_ideas = {
+					IRQ_foreign_equipment_payments
+				}
+			}
+			IRQ = {
+				remove_ideas = {
+					IRQ_foreign_equipment_payments_irq
+				}
+			}
+		}
+
+		remove_effect = {
+			IRQ = {
+				add_equipment_to_stockpile = {
+					type = apc_tank_equipment_0
+					amount = 50
+					producer = PRC
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 6
+
+				has_equipment = {
+					apc_tank_equipment < 25
+				}
+			}
+			modifier = {
+				factor = 0
+
+				num_of_available_civilian_factories < 4
+			}
+		}
+
+	}
+
+}
+
+irq_category_contest_nofly_zone = {
+
+	# Deadline #
+	IRQ_contest_nofly_zone_deadline_mission_decision = {
+
+		icon = GFX_decision_generic_fighter_nato
+
+		priority = 100
+
+		fire_only_once = yes
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 1095
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		available = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = custom_trigger_irq_nofly_zone_airspace_clear_tt
+
+					AND = {
+						check_variable = { irq_region_1_airspace_value = 2 }
+						check_variable = { irq_region_2_airspace_value = 2 }
+						check_variable = { irq_region_3_airspace_value = 2 }
+						check_variable = { irq_region_4_airspace_value = 2 }
+					}
+				}
+				IRQ = { has_completed_focus = IRQ_grant_partial_autonomy }
+			}
+		}
+
+		activation = {
+			IRQ = {
+				has_completed_focus = IRQ_contest_no-fly_zone
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					IRQ = { has_idea = IRQ_no-fly_zones_2 }
+				}
+
+				remove_ideas = IRQ_no-fly_zones_2
+			}
+			hidden_effect = {
+				set_country_flag = IRQ_no-fly_zone_success_flag
+			}
+			custom_effect_tooltip = custom_effect_tt_irq_no-fly_zone_1
+			IRQ = { country_event = { id = irq_nofly.3 } }
+		}
+
+		timeout_effect = {
+			hidden_effect = {
+				set_country_flag = IRQ_no-fly_zone_failed_flag
+			}
+			custom_effect_tooltip = custom_effect_tt_irq_no-fly_zone_2
+			IRQ = { country_event = { id = irq_nofly.4 } }
+		}
+
+	}
+
+	# Coalition Operations #
+	IRQ_contest_nofly_zone_coalition_mission_decision = {
+
+		icon = GFX_decision_generic_fighter_nato
+
+		priority = 50
+
+		fire_only_once = no
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = irq_coalition_airspace_timeout_value
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				has_completed_focus = IRQ_grant_partial_autonomy
+				hidden_trigger = {
+					IRQ = { has_country_flag = IRQ_no-fly_zone_success_flag }
+					IRQ = { has_country_flag = IRQ_no-fly_zone_failed_flag }
+				}
+			}
+		}
+
+		activation = {
+			AND = {
+				check_variable = { irq_region_3_airspace_value = 2 }
+				check_variable = { irq_region_4_airspace_value = 0 }
+
+				NOT = {
+					IRQ = { has_country_flag = IRQ_no-fly_zone_coalition_flag }
+				}
+			}
+		}
+
+		timeout_effect = {
+			random_list = {
+				irq_coalition_airspace_success_value = { # Success #
+					IRQ = { country_event = { id = irq_nofly.5 } }
+
+					hidden_effect = {
+						set_country_flag = {
+							flag = IRQ_no-fly_zone_coalition_flag
+							days = 180
+						}
+
+						set_variable = {
+							var = irq_coalition_airspace_success_value
+							value = 5
+						}
+					}
+
+					custom_effect_tooltip = custom_effect_tt_irq_no-fly_zone_coalition_1
+
+					subtract_from_variable = {
+						var = irq_region_3_defences_value
+						value = 1
+						tooltip = var_irq_nofly_zone_defences_decrease
+					}
+					clamp_variable = {
+						var = irq_region_3_defences_value
+						min = 0
+					}
+
+					IRQ = {
+						add_equipment_to_stockpile = {
+							type = fighter_equipment
+							amount = -10
+						}
+					}
+
+					hidden_effect = {
+						if = {
+							limit = {
+								check_variable = {
+									var = irq_region_4_intelligence_value
+									value = 0
+									compare = equals
+								}
+							}
+							set_variable = {
+								var = irq_coalition_airspace_timeout_value
+								value = 5
+							}
+						}
+						else_if = {
+							limit = {
+								check_variable = {
+									var = irq_region_4_intelligence_value
+									value = 1
+									compare = equals
+								}
+							}
+							set_variable = {
+								var = irq_coalition_airspace_timeout_value
+								value = 9
+							}
+						}
+						else_if = {
+							limit = {
+								check_variable = {
+									var = irq_region_4_intelligence_value
+									value = 2
+									compare = equals
+								}
+							}
+							set_variable = {
+								var = irq_coalition_airspace_timeout_value
+								value = 13
+							}
+						}
+						else_if = {
+							limit = {
+								check_variable = {
+									var = irq_region_4_intelligence_value
+									value = 3
+									compare = equals
+								}
+							}
+							set_variable = {
+								var = irq_coalition_airspace_timeout_value
+								value = 17
+							}
+						}
+					}
+				}
+				50 = { # Fail #
+					IRQ = { country_event = { id = irq_nofly.6 } }
+
+					hidden_effect = {
+						set_country_flag = {
+							flag = IRQ_no-fly_zone_coalition_flag
+							days = 90
+						}
+
+						set_variable = {
+							var = irq_coalition_airspace_success_value
+							value = 5
+						}
+					}
+
+					custom_effect_tooltip = custom_effect_tt_irq_no-fly_zone_coalition_2
+
+					subtract_from_variable = {
+						var = irq_region_3_airspace_value
+						value = 2
+						tooltip = var_irq_nofly_zone_airspace_decrease
+					}
+					clamp_variable = {
+						var = irq_region_3_airspace_value
+						min = 0
+					}
+					subtract_from_variable = {
+						var = irq_region_3_defences_value
+						value = 2
+						tooltip = var_irq_nofly_zone_defences_decrease
+					}
+					clamp_variable = {
+						var = irq_region_3_defences_value
+						min = 0
+					}
+					subtract_from_variable = {
+						var = irq_region_3_intelligence_value
+						value = 1
+						tooltip = var_irq_nofly_zone_intelligence_decrease
+					}
+					clamp_variable = {
+						var = irq_region_3_intelligence_value
+						min = 0
+					}
+
+					IRQ = {
+						add_equipment_to_stockpile = {
+							type = fighter_equipment
+							amount = -30
+						}
+					}
+
+					hidden_effect = {
+						if = {
+							limit = {
+								check_variable = {
+									var = irq_region_4_intelligence_value
+									value = 0
+									compare = equals
+								}
+							}
+							set_variable = {
+								var = irq_coalition_airspace_timeout_value
+								value = 5
+							}
+						}
+						else_if = {
+							limit = {
+								check_variable = {
+									var = irq_region_4_intelligence_value
+									value = 1
+									compare = equals
+								}
+							}
+							set_variable = {
+								var = irq_coalition_airspace_timeout_value
+								value = 9
+							}
+						}
+						else_if = {
+							limit = {
+								check_variable = {
+									var = irq_region_4_intelligence_value
+									value = 2
+									compare = equals
+								}
+							}
+							set_variable = {
+								var = irq_coalition_airspace_timeout_value
+								value = 13
+							}
+						}
+						else_if = {
+							limit = {
+								check_variable = {
+									var = irq_region_4_intelligence_value
+									value = 3
+									compare = equals
+								}
+							}
+							set_variable = {
+								var = irq_coalition_airspace_timeout_value
+								value = 17
+							}
+						}
+					}
+				}
+			}
+			IRQ_recalc_iraq_nofly_zone_map_frames = yes
+		}
+
+	}
+	IRQ_contest_nofly_zone_coalition_move_defences_decision = {
+
+		icon = GFX_decision_generic_air_defence
+
+		priority = 42
+
+		fire_only_once = no
+		days_remove = 3
+		days_re_enable = 30
+
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = needs_5_command_power_for_decision
+
+		visible = {
+			AND = {
+				original_tag = IRQ
+				IRQ = { has_active_mission = IRQ_contest_nofly_zone_coalition_mission_decision }
+			}
+		}
+
+		available = {
+			AND = {
+				country_exists = IRQ
+				IRQ = { has_war = no }
+				IRQ = { has_active_mission = IRQ_contest_nofly_zone_coalition_mission_decision }
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				has_completed_focus = IRQ_grant_partial_autonomy
+				hidden_trigger = {
+					IRQ = { has_country_flag = IRQ_no-fly_zone_success_flag }
+					IRQ = { has_country_flag = IRQ_no-fly_zone_failed_flag }
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = irq_coalition_airspace_success_value
+				value = 15
+				tooltip = var_irq_nofly_zone_coalition_success_move
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+	}
+	IRQ_contest_nofly_zone_coalition_decoy_defences_decision = {
+
+		icon = GFX_decision_generic_air_defence
+
+		priority = 41
+
+		fire_only_once = no
+		days_remove = 7
+		days_re_enable = 30
+
+		custom_cost_trigger = {
+			command_power > 9
+		}
+		custom_cost_text = needs_10_command_power_for_decision
+
+		visible = {
+			AND = {
+				original_tag = IRQ
+				IRQ = { has_active_mission = IRQ_contest_nofly_zone_coalition_mission_decision }
+			}
+		}
+
+		available = {
+			AND = {
+				country_exists = IRQ
+				IRQ = { has_war = no }
+				IRQ = { has_active_mission = IRQ_contest_nofly_zone_coalition_mission_decision }
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				has_completed_focus = IRQ_grant_partial_autonomy
+				hidden_trigger = {
+					IRQ = { has_country_flag = IRQ_no-fly_zone_success_flag }
+					IRQ = { has_country_flag = IRQ_no-fly_zone_failed_flag }
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -10
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = irq_coalition_airspace_success_value
+				value = 20
+				tooltip = var_irq_nofly_zone_coalition_success_decoy
+			}
+		}
+
+		ai_will_do = {
+			factor = 150
+		}
+
+	}
+	IRQ_contest_nofly_zone_coalition_bury_aircraft_decision = {
+
+		icon = GFX_decision_generic_fighter_soviet
+
+		priority = 40
+
+		fire_only_once = no
+		days_remove = 14
+		days_re_enable = 30
+
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = needs_15_command_power_for_decision
+
+		visible = {
+			AND = {
+				original_tag = IRQ
+				IRQ = { has_active_mission = IRQ_contest_nofly_zone_coalition_mission_decision }
+			}
+		}
+
+		available = {
+			AND = {
+				country_exists = IRQ
+				IRQ = { has_war = no }
+				IRQ = { has_active_mission = IRQ_contest_nofly_zone_coalition_mission_decision }
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				has_completed_focus = IRQ_grant_partial_autonomy
+				hidden_trigger = {
+					IRQ = { has_country_flag = IRQ_no-fly_zone_success_flag }
+					IRQ = { has_country_flag = IRQ_no-fly_zone_failed_flag }
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -15
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = irq_coalition_airspace_success_value
+				value = 20
+				tooltip = var_irq_nofly_zone_coalition_success_bury
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+	}
+
+	# Airspace #
+	IRQ_contest_nofly_zone_region_1_launch_operations_decision = {
+
+		icon = GFX_decision_generic_fighter_soviet
+
+		priority = 23
+
+		fire_only_once = no
+		days_remove = 20
+		days_re_enable = 45
+
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = needs_15_command_power_for_decision
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		available = {
+			AND = {
+				country_exists = IRQ
+				IRQ = { has_war = no }
+				custom_trigger_tooltip = {
+					tooltip = custom_trigger_irq_nofly_zone_airspace_tt
+					check_variable = {
+						var = irq_region_1_airspace_value
+						value = 2
+						compare = not_equals
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = custom_trigger_irq_nofly_zone_central_airspace_tt
+					check_variable = {
+						var = irq_region_2_airspace_value
+						value = 2
+						compare = equals
+					}
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				has_completed_focus = IRQ_grant_partial_autonomy
+				hidden_trigger = {
+					IRQ = { has_country_flag = IRQ_no-fly_zone_success_flag }
+					IRQ = { has_country_flag = IRQ_no-fly_zone_failed_flag }
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -15
+			}
+		}
+
+		remove_effect = {
+			random_list = {
+				75 = {
+					IRQ = { country_event = { id = irq_nofly.1 } }
+
+					add_to_variable = {
+						var = irq_region_1_airspace_value
+						value = 1
+						tooltip = var_irq_nofly_zone_airspace_increase
+					}
+					clamp_variable = {
+						var = irq_region_1_airspace_value
+						max = 2
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 2.0
+						check_variable = {
+							var = irq_region_1_defences_value
+							value = 2
+							compare = equals
+						}
+					}
+					modifier = {
+						factor = 2.5
+						check_variable = {
+							var = irq_region_1_defences_value
+							value = 1
+							compare = equals
+						}
+					}
+					modifier = {
+						factor = 5.0
+						check_variable = {
+							var = irq_region_1_defences_value
+							value = 0
+							compare = equals
+						}
+					}
+					modifier = {
+						factor = 1.5
+						check_variable = {
+							var = irq_region_1_intelligence_value
+							value = 2
+							compare = equals
+						}
+					}
+					modifier = {
+						factor = 2.0
+						check_variable = {
+							var = irq_region_1_intelligence_value
+							value = 1
+							compare = equals
+						}
+					}
+					modifier = {
+						factor = 3.0
+						check_variable = {
+							var = irq_region_1_intelligence_value
+							value = 0
+							compare = equals
+						}
+					}
+
+					IRQ = { country_event = { id = irq_nofly.2 } }
+
+					subtract_from_variable = {
+						var = irq_region_1_airspace_value
+						value = 1
+						tooltip = var_irq_nofly_zone_airspace_decrease
+					}
+					clamp_variable = {
+						var = irq_region_1_airspace_value
+						min = 0
+					}
+				}
+			}
+			IRQ_recalc_iraq_nofly_zone_map_frames = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				add = 30
+
+				AND = {
+					check_variable = {
+						irq_region_1_defences_value = 3
+					}
+					check_variable = {
+						irq_region_1_intelligence_value = 3
+					}
+				}
+			}
+			modifier = {
+				add = 10
+
+				OR = {
+					check_variable = {
+						irq_region_1_defences_value > 2
+					}
+					check_variable = {
+						irq_region_1_intelligence_value > 2
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+
+				check_variable = {
+					irq_region_1_airspace_value = 1
+				}
+			}
+			modifier = {
+				factor = 0.1
+
+				OR = {
+					check_variable = {
+						irq_region_1_defences_value < 2
+					}
+					check_variable = {
+						irq_region_1_intelligence_value < 2
+					}
+				}
+			}
+		}
+
+	}
+	IRQ_contest_nofly_zone_region_2_launch_operations_decision = {
+
+		icon = GFX_decision_generic_fighter_soviet
+
+		priority = 22
+
+		fire_only_once = no
+		days_remove = 20
+		days_re_enable = 45
+
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = needs_15_command_power_for_decision
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		available = {
+			AND = {
+				country_exists = IRQ
+				IRQ = { has_war = no }
+				custom_trigger_tooltip = {
+					tooltip = custom_trigger_irq_nofly_zone_airspace_tt
+					check_variable = {
+						var = irq_region_2_airspace_value
+						value = 2
+						compare = not_equals
+					}
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				has_completed_focus = IRQ_grant_partial_autonomy
+				hidden_trigger = {
+					IRQ = { has_country_flag = IRQ_no-fly_zone_success_flag }
+					IRQ = { has_country_flag = IRQ_no-fly_zone_failed_flag }
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -15
+			}
+		}
+
+		remove_effect = {
+			random_list = {
+				75 = {
+					IRQ = { country_event = { id = irq_nofly.1 } }
+
+					add_to_variable = {
+						var = irq_region_2_airspace_value
+						value = 1
+						tooltip = var_irq_nofly_zone_airspace_increase
+					}
+					clamp_variable = {
+						var = irq_region_2_airspace_value
+						max = 2
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 2.0
+						check_variable = {
+							var = irq_region_2_defences_value
+							value = 2
+							compare = equals
+						}
+					}
+					modifier = {
+						factor = 2.5
+						check_variable = {
+							var = irq_region_2_defences_value
+							value = 1
+							compare = equals
+						}
+					}
+					modifier = {
+						factor = 5.0
+						check_variable = {
+							var = irq_region_2_defences_value
+							value = 0
+							compare = equals
+						}
+					}
+					modifier = {
+						factor = 1.5
+						check_variable = {
+							var = irq_region_2_intelligence_value
+							value = 2
+							compare = equals
+						}
+					}
+					modifier = {
+						factor = 2.0
+						check_variable = {
+							var = irq_region_2_intelligence_value
+							value = 1
+							compare = equals
+						}
+					}
+					modifier = {
+						factor = 3.0
+						check_variable = {
+							var = irq_region_2_intelligence_value
+							value = 0
+							compare = equals
+						}
+					}
+
+					IRQ = { country_event = { id = irq_nofly.2 } }
+
+					subtract_from_variable = {
+						var = irq_region_2_airspace_value
+						value = 1
+						tooltip = var_irq_nofly_zone_airspace_decrease
+					}
+					clamp_variable = {
+						var = irq_region_2_airspace_value
+						min = 0
+					}
+				}
+			}
+			IRQ_recalc_iraq_nofly_zone_map_frames = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				add = 30
+
+				AND = {
+					check_variable = {
+						irq_region_2_defences_value = 3
+					}
+					check_variable = {
+						irq_region_2_intelligence_value = 3
+					}
+				}
+			}
+			modifier = {
+				add = 10
+
+				OR = {
+					check_variable = {
+						irq_region_2_defences_value > 2
+					}
+					check_variable = {
+						irq_region_2_intelligence_value > 2
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+
+				check_variable = {
+					irq_region_2_airspace_value = 1
+				}
+			}
+			modifier = {
+				factor = 0.1
+
+				OR = {
+					check_variable = {
+						irq_region_2_defences_value < 2
+					}
+					check_variable = {
+						irq_region_2_intelligence_value < 2
+					}
+				}
+			}
+		}
+
+	}
+	IRQ_contest_nofly_zone_region_3_launch_operations_decision = {
+
+		icon = GFX_decision_generic_fighter_soviet
+
+		priority = 21
+
+		fire_only_once = no
+		days_remove = 20
+		days_re_enable = 45
+
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = needs_15_command_power_for_decision
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		available = {
+			AND = {
+				country_exists = IRQ
+				IRQ = { has_war = no }
+				custom_trigger_tooltip = {
+					tooltip = custom_trigger_irq_nofly_zone_airspace_tt
+					check_variable = {
+						var = irq_region_3_airspace_value
+						value = 2
+						compare = not_equals
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = custom_trigger_irq_nofly_zone_central_airspace_tt
+					check_variable = {
+						var = irq_region_2_airspace_value
+						value = 2
+						compare = equals
+					}
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				has_completed_focus = IRQ_grant_partial_autonomy
+				hidden_trigger = {
+					IRQ = { has_country_flag = IRQ_no-fly_zone_success_flag }
+					IRQ = { has_country_flag = IRQ_no-fly_zone_failed_flag }
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -15
+			}
+		}
+
+		remove_effect = {
+			random_list = {
+				75 = {
+					IRQ = { country_event = { id = irq_nofly.1 } }
+
+					add_to_variable = {
+						var = irq_region_3_airspace_value
+						value = 1
+						tooltip = var_irq_nofly_zone_airspace_increase
+					}
+					clamp_variable = {
+						var = irq_region_3_airspace_value
+						max = 2
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 2.0
+						check_variable = {
+							var = irq_region_3_defences_value
+							value = 2
+							compare = equals
+						}
+					}
+					modifier = {
+						factor = 2.5
+						check_variable = {
+							var = irq_region_3_defences_value
+							value = 1
+							compare = equals
+						}
+					}
+					modifier = {
+						factor = 5.0
+						check_variable = {
+							var = irq_region_3_defences_value
+							value = 0
+							compare = equals
+						}
+					}
+					modifier = {
+						factor = 1.5
+						check_variable = {
+							var = irq_region_3_intelligence_value
+							value = 2
+							compare = equals
+						}
+					}
+					modifier = {
+						factor = 2.0
+						check_variable = {
+							var = irq_region_3_intelligence_value
+							value = 1
+							compare = equals
+						}
+					}
+					modifier = {
+						factor = 3.0
+						check_variable = {
+							var = irq_region_3_intelligence_value
+							value = 0
+							compare = equals
+						}
+					}
+
+					IRQ = { country_event = { id = irq_nofly.2 } }
+
+					subtract_from_variable = {
+						var = irq_region_3_airspace_value
+						value = 1
+						tooltip = var_irq_nofly_zone_airspace_decrease
+					}
+					clamp_variable = {
+						var = irq_region_3_airspace_value
+						min = 0
+					}
+				}
+			}
+			IRQ_recalc_iraq_nofly_zone_map_frames = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				add = 30
+
+				AND = {
+					check_variable = {
+						irq_region_3_defences_value = 3
+					}
+					check_variable = {
+						irq_region_3_intelligence_value = 3
+					}
+				}
+			}
+			modifier = {
+				add = 10
+
+				OR = {
+					check_variable = {
+						irq_region_3_defences_value > 2
+					}
+					check_variable = {
+						irq_region_3_intelligence_value > 2
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+
+				check_variable = {
+					irq_region_3_airspace_value = 1
+				}
+			}
+			modifier = {
+				factor = 0.1
+
+				OR = {
+					check_variable = {
+						irq_region_3_defences_value < 2
+					}
+					check_variable = {
+						irq_region_3_intelligence_value < 2
+					}
+				}
+			}
+		}
+
+	}
+	IRQ_contest_nofly_zone_region_4_launch_operations_decision = {
+
+		icon = GFX_decision_generic_fighter_soviet
+
+		priority = 20
+
+		fire_only_once = no
+		days_remove = 20
+		days_re_enable = 45
+
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = needs_15_command_power_for_decision
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		available = {
+			AND = {
+				country_exists = IRQ
+				IRQ = { has_war = no }
+				custom_trigger_tooltip = {
+					tooltip = custom_trigger_irq_nofly_zone_airspace_tt
+					check_variable = {
+						var = irq_region_4_airspace_value
+						value = 2
+						compare = not_equals
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = custom_trigger_irq_nofly_zone_southern_airspace_tt
+					check_variable = {
+						var = irq_region_3_airspace_value
+						value = 2
+						compare = equals
+					}
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				has_completed_focus = IRQ_grant_partial_autonomy
+				hidden_trigger = {
+					IRQ = { has_country_flag = IRQ_no-fly_zone_success_flag }
+					IRQ = { has_country_flag = IRQ_no-fly_zone_failed_flag }
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -15
+			}
+		}
+
+		remove_effect = {
+			random_list = {
+				75 = {
+					IRQ = { country_event = { id = irq_nofly.1 } }
+
+					add_to_variable = {
+						var = irq_region_4_airspace_value
+						value = 1
+						tooltip = var_irq_nofly_zone_airspace_increase
+					}
+					clamp_variable = {
+						var = irq_region_4_airspace_value
+						max = 2
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 2.0
+						check_variable = {
+							var = irq_region_4_defences_value
+							value = 2
+							compare = equals
+						}
+					}
+					modifier = {
+						factor = 2.5
+						check_variable = {
+							var = irq_region_4_defences_value
+							value = 1
+							compare = equals
+						}
+					}
+					modifier = {
+						factor = 5.0
+						check_variable = {
+							var = irq_region_4_defences_value
+							value = 0
+							compare = equals
+						}
+					}
+					modifier = {
+						factor = 1.5
+						check_variable = {
+							var = irq_region_4_intelligence_value
+							value = 2
+							compare = equals
+						}
+					}
+					modifier = {
+						factor = 2.0
+						check_variable = {
+							var = irq_region_4_intelligence_value
+							value = 1
+							compare = equals
+						}
+					}
+					modifier = {
+						factor = 3.0
+						check_variable = {
+							var = irq_region_4_intelligence_value
+							value = 0
+							compare = equals
+						}
+					}
+
+					IRQ = { country_event = { id = irq_nofly.2 } }
+
+					subtract_from_variable = {
+						var = irq_region_4_airspace_value
+						value = 1
+						tooltip = var_irq_nofly_zone_airspace_decrease
+					}
+					clamp_variable = {
+						var = irq_region_4_airspace_value
+						min = 0
+					}
+				}
+			}
+			IRQ_recalc_iraq_nofly_zone_map_frames = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				add = 30
+
+				AND = {
+					check_variable = {
+						irq_region_4_defences_value = 3
+					}
+					check_variable = {
+						irq_region_4_intelligence_value = 3
+					}
+				}
+			}
+			modifier = {
+				add = 10
+
+				OR = {
+					check_variable = {
+						irq_region_4_defences_value > 2
+					}
+					check_variable = {
+						irq_region_4_intelligence_value > 2
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+
+				check_variable = {
+					irq_region_4_airspace_value = 1
+				}
+			}
+			modifier = {
+				factor = 0.1
+
+				OR = {
+					check_variable = {
+						irq_region_4_defences_value < 2
+					}
+					check_variable = {
+						irq_region_4_intelligence_value < 2
+					}
+				}
+			}
+		}
+
+	}
+
+	# Air Defences #
+	IRQ_contest_nofly_zone_region_1_new_air_defences_decision = {
+
+		icon = GFX_decision_generic_air_defence
+
+		priority = 13
+
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 60
+
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = needs_5_command_power_for_decision
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		available = {
+			AND = {
+				country_exists = IRQ
+				IRQ = { has_war = no }
+				custom_trigger_tooltip = {
+					tooltip = custom_trigger_irq_nofly_zone_defences_tt
+					check_variable = {
+						var = irq_region_1_defences_value
+						value = 3
+						compare = not_equals
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = custom_trigger_irq_nofly_zone_central_airspace_tt
+					check_variable = {
+						var = irq_region_2_airspace_value
+						value = 2
+						compare = equals
+					}
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				has_completed_focus = IRQ_grant_partial_autonomy
+				hidden_trigger = {
+					IRQ = { has_country_flag = IRQ_no-fly_zone_success_flag }
+					IRQ = { has_country_flag = IRQ_no-fly_zone_failed_flag }
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = irq_region_1_defences_value
+				value = 1
+				tooltip = var_irq_nofly_zone_defences_increase
+			}
+			clamp_variable = {
+				var = irq_region_1_defences_value
+				max = 3
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				add = 8
+
+				check_variable = {
+					irq_region_1_defences_value < 3
+				}
+			}
+		}
+
+	}
+	IRQ_contest_nofly_zone_region_2_new_air_defences_decision = {
+
+		icon = GFX_decision_generic_air_defence
+
+		priority = 12
+
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 60
+
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = needs_5_command_power_for_decision
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		available = {
+			AND = {
+				country_exists = IRQ
+				IRQ = { has_war = no }
+				custom_trigger_tooltip = {
+					tooltip = custom_trigger_irq_nofly_zone_defences_tt
+					check_variable = {
+						var = irq_region_2_defences_value
+						value = 3
+						compare = not_equals
+					}
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				has_completed_focus = IRQ_grant_partial_autonomy
+				hidden_trigger = {
+					IRQ = { has_country_flag = IRQ_no-fly_zone_success_flag }
+					IRQ = { has_country_flag = IRQ_no-fly_zone_failed_flag }
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = irq_region_2_defences_value
+				value = 1
+				tooltip = var_irq_nofly_zone_defences_increase
+			}
+			clamp_variable = {
+				var = irq_region_2_defences_value
+				max = 3
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				add = 8
+
+				check_variable = {
+					irq_region_2_defences_value < 3
+				}
+			}
+		}
+
+	}
+	IRQ_contest_nofly_zone_region_3_new_air_defences_decision = {
+
+		icon = GFX_decision_generic_air_defence
+
+		priority = 11
+
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 60
+
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = needs_5_command_power_for_decision
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		available = {
+			AND = {
+				country_exists = IRQ
+				IRQ = { has_war = no }
+				custom_trigger_tooltip = {
+					tooltip = custom_trigger_irq_nofly_zone_defences_tt
+					check_variable = {
+						var = irq_region_3_defences_value
+						value = 3
+						compare = not_equals
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = custom_trigger_irq_nofly_zone_central_airspace_tt
+					check_variable = {
+						var = irq_region_2_airspace_value
+						value = 2
+						compare = equals
+					}
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				has_completed_focus = IRQ_grant_partial_autonomy
+				hidden_trigger = {
+					IRQ = { has_country_flag = IRQ_no-fly_zone_success_flag }
+					IRQ = { has_country_flag = IRQ_no-fly_zone_failed_flag }
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = irq_region_3_defences_value
+				value = 1
+				tooltip = var_irq_nofly_zone_defences_increase
+			}
+			clamp_variable = {
+				var = irq_region_3_defences_value
+				max = 3
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				add = 8
+
+				check_variable = {
+					irq_region_3_defences_value < 3
+				}
+			}
+		}
+
+	}
+	IRQ_contest_nofly_zone_region_4_new_air_defences_decision = {
+
+		icon = GFX_decision_generic_air_defence
+
+		priority = 10
+
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 60
+
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = needs_5_command_power_for_decision
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		available = {
+			AND = {
+				country_exists = IRQ
+				IRQ = { has_war = no }
+				custom_trigger_tooltip = {
+					tooltip = custom_trigger_irq_nofly_zone_defences_tt
+					check_variable = {
+						var = irq_region_4_defences_value
+						value = 3
+						compare = not_equals
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = custom_trigger_irq_nofly_zone_southern_airspace_tt
+					check_variable = {
+						var = irq_region_3_airspace_value
+						value = 2
+						compare = equals
+					}
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				has_completed_focus = IRQ_grant_partial_autonomy
+				hidden_trigger = {
+					IRQ = { has_country_flag = IRQ_no-fly_zone_success_flag }
+					IRQ = { has_country_flag = IRQ_no-fly_zone_failed_flag }
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = irq_region_4_defences_value
+				value = 1
+				tooltip = var_irq_nofly_zone_defences_increase
+			}
+			clamp_variable = {
+				var = irq_region_4_defences_value
+				max = 3
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				add = 8
+
+				check_variable = {
+					irq_region_4_defences_value < 3
+				}
+			}
+			modifier = {
+				factor = 0.5
+
+				check_variable = {
+					irq_region_4_airspace_value = 0
+				}
+			}
+		}
+
+	}
+
+	# Intelligence #
+	IRQ_contest_nofly_zone_region_1_intelligence_decision = {
+
+		icon = GFX_decision_generic_radar
+
+		priority = 4
+
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 60
+
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = needs_5_command_power_for_decision
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		available = {
+			AND = {
+				country_exists = IRQ
+				IRQ = { has_war = no }
+				custom_trigger_tooltip = {
+					tooltip = custom_trigger_irq_nofly_zone_intelligence_tt
+					check_variable = {
+						var = irq_region_1_intelligence_value
+						value = 3
+						compare = not_equals
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = custom_trigger_irq_nofly_zone_central_airspace_tt
+					check_variable = {
+						var = irq_region_2_airspace_value
+						value = 2
+						compare = equals
+					}
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				has_completed_focus = IRQ_grant_partial_autonomy
+				hidden_trigger = {
+					IRQ = { has_country_flag = IRQ_no-fly_zone_success_flag }
+					IRQ = { has_country_flag = IRQ_no-fly_zone_failed_flag }
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = irq_region_1_intelligence_value
+				value = 1
+				tooltip = var_irq_nofly_zone_intelligence_increase
+			}
+			clamp_variable = {
+				var = irq_region_1_intelligence_value
+				max = 3
+			}
+		}
+
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				add = 7
+
+				check_variable = {
+					irq_region_1_intelligence_value < 3
+				}
+			}
+		}
+
+	}
+	IRQ_contest_nofly_zone_region_2_intelligence_decision = {
+
+		icon = GFX_decision_generic_radar
+
+		priority = 3
+
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 60
+
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = needs_5_command_power_for_decision
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		available = {
+			AND = {
+				country_exists = IRQ
+				IRQ = { has_war = no }
+				custom_trigger_tooltip = {
+					tooltip = custom_trigger_irq_nofly_zone_intelligence_tt
+					check_variable = {
+						var = irq_region_2_intelligence_value
+						value = 3
+						compare = not_equals
+					}
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				has_completed_focus = IRQ_grant_partial_autonomy
+				hidden_trigger = {
+					IRQ = { has_country_flag = IRQ_no-fly_zone_success_flag }
+					IRQ = { has_country_flag = IRQ_no-fly_zone_failed_flag }
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = irq_region_2_intelligence_value
+				value = 1
+				tooltip = var_irq_nofly_zone_intelligence_increase
+			}
+			clamp_variable = {
+				var = irq_region_2_intelligence_value
+				max = 3
+			}
+		}
+
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				add = 7
+
+				check_variable = {
+					irq_region_2_intelligence_value < 3
+				}
+			}
+		}
+
+	}
+	IRQ_contest_nofly_zone_region_3_intelligence_decision = {
+
+		icon = GFX_decision_generic_radar
+
+		priority = 2
+
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 60
+
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = needs_5_command_power_for_decision
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		available = {
+			AND = {
+				country_exists = IRQ
+				IRQ = { has_war = no }
+				custom_trigger_tooltip = {
+					tooltip = custom_trigger_irq_nofly_zone_intelligence_tt
+					check_variable = {
+						var = irq_region_3_intelligence_value
+						value = 3
+						compare = not_equals
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = custom_trigger_irq_nofly_zone_central_airspace_tt
+					check_variable = {
+						var = irq_region_2_airspace_value
+						value = 2
+						compare = equals
+					}
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				has_completed_focus = IRQ_grant_partial_autonomy
+				hidden_trigger = {
+					IRQ = { has_country_flag = IRQ_no-fly_zone_success_flag }
+					IRQ = { has_country_flag = IRQ_no-fly_zone_failed_flag }
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = irq_region_3_intelligence_value
+				value = 1
+				tooltip = var_irq_nofly_zone_intelligence_increase
+			}
+			clamp_variable = {
+				var = irq_region_3_intelligence_value
+				max = 3
+			}
+		}
+
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				add = 7
+
+				check_variable = {
+					irq_region_3_intelligence_value < 3
+				}
+			}
+		}
+
+	}
+	IRQ_contest_nofly_zone_region_4_intelligence_decision = {
+
+		icon = GFX_decision_generic_radar
+
+		priority = 1
+
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 60
+
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = needs_5_command_power_for_decision
+
+		visible = {
+			original_tag = IRQ
+		}
+
+		available = {
+			AND = {
+				country_exists = IRQ
+				IRQ = { has_war = no }
+				custom_trigger_tooltip = {
+					tooltip = custom_trigger_irq_nofly_zone_intelligence_tt
+					check_variable = {
+						var = irq_region_4_intelligence_value
+						value = 3
+						compare = not_equals
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = custom_trigger_irq_nofly_zone_southern_airspace_tt
+					check_variable = {
+						var = irq_region_3_airspace_value
+						value = 2
+						compare = equals
+					}
+				}
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				has_completed_focus = IRQ_grant_partial_autonomy
+				hidden_trigger = {
+					IRQ = { has_country_flag = IRQ_no-fly_zone_success_flag }
+					IRQ = { has_country_flag = IRQ_no-fly_zone_failed_flag }
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = irq_region_4_intelligence_value
+				value = 1
+				tooltip = var_irq_nofly_zone_intelligence_increase
+			}
+			clamp_variable = {
+				var = irq_region_4_intelligence_value
+				max = 3
+			}
+
+			hidden_effect = {
+				if = {
+					limit = {
+						check_variable = {
+							var = irq_region_4_intelligence_value
+							value = 0
+							compare = equals
+						}
+					}
+					set_variable = {
+						var = irq_coalition_airspace_timeout_value
+						value = 5
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							var = irq_region_4_intelligence_value
+							value = 1
+							compare = equals
+						}
+					}
+					set_variable = {
+						var = irq_coalition_airspace_timeout_value
+						value = 9
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							var = irq_region_4_intelligence_value
+							value = 2
+							compare = equals
+						}
+					}
+					set_variable = {
+						var = irq_coalition_airspace_timeout_value
+						value = 13
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							var = irq_region_4_intelligence_value
+							value = 3
+							compare = equals
+						}
+					}
+					set_variable = {
+						var = irq_coalition_airspace_timeout_value
+						value = 17
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 6
+			modifier = {
+				add = 8
+
+				check_variable = {
+					irq_region_4_intelligence_value < 3
+				}
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,98 @@
+add_namespace = prc
+
+#Cooperation#
+country_event = {
+	id = prc.1
+	title = prc.1.t
+	desc = prc.1.d
+	picture = GFX_report_event_SAF_mandela
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = prc.1.a	
+		news_event = { id = old_times_news.48 hours = 6 }
+			add_opinion_modifier = {
+			target = PRC
+			modifier = SOV_pugo_cooperation_opinion
+			}
+
+			PRC = {
+			add_opinion_modifier = {
+			target = SOV
+			modifier = SOV_pugo_cooperation_opinion
+			}
+	            }	
+	}
+
+	option = {
+		name = prc.1.b		
+	}
+}
+
+
+#jintao time#
+country_event = {
+	id = prc.3
+	title = prc.3.t
+	desc = prc.3.d
+	picture = GFX_report_event_SAF_mandela
+	
+	trigger = {
+		original_tag = PRC
+	}
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = prc.3.a	
+		news_event = { id = old_times_news.180 hours = 6 }
+		retire_country_leader = yes		
+		promote_character = PRC_hu_jintao
+		add_ideas =  PRC_security_at_all_cost
+        swap_ideas = {
+			add_idea = PRC_theory_1
+			remove_idea = PRC_theory
+		}
+	}
+
+}
+###People's Volunteer Army
+country_event = {
+	id = prc.4
+	title = prc.4.t
+	desc = prc.4.d
+	picture = GFX_report_event_SAF_mandela
+	
+	trigger = {
+		original_tag = PRC
+	}
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = prc.4.a	
+		 PRC = {
+		create_faction = "Shanghai Pact"
+		PRC = { add_to_faction = KOR }
+	add_war_support = 0.2
+	PRC = {
+			declare_war_on = {
+				target = CHI
+				type = civil_war
+				}
+			}
+	}
+	news_event = { id = old_times_news.166 hours = 2 }
+
+	}
+
+}
+
+
+
+
+

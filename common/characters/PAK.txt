@@ -1,0 +1,48 @@
+characters = {
+
+	PAK_pervez_musharraf = {
+		name = "Pervez Musharraf"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PAK/Pervez_Musharraf.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+      PAK_nawaz_sharif = {
+		name = "Nawaz Sharif"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PAK/Nawaz.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2056.3.1.1"
+			id = -1
+		}
+	}
+
+ PAK_jam_saqi = {
+		name = "Jam Saqi"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PAK/Saqi.dds"
+			}
+		}
+		country_leader = {
+			ideology = communism
+			traits = {}
+			expire = "2019.3.1.1"
+			id = -1
+		}
+	}
+
+}

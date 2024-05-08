@@ -1,0 +1,45 @@
+characters = {
+
+	FAO_vladimir_shamanov = {
+		name = "Vladimir Shamanov"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/post_putin/Vladimir_Shamanov_normal.dds"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		field_marshal={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	FAO_anatoly_kornukov = {
+		name = "Anatoly Kornukov"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Anatoly_Kornukov.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+}

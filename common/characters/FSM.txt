@@ -1,0 +1,18 @@
+characters = {
+
+	FSM_leo_falcam = {
+		name = "Leo Amy Falcam"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FSM/Leo_Falcam.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=931
+	name="STATE_931"
+
+	history={
+		buildings = {
+			infrastructure = 2
+
+		}
+		owner = RGO
+		add_core_of = COG
+		add_core_of = RGO
+		add_core_of = RCK
+
+	}
+
+	provinces={
+		1731 1929 10858 13388 13392 13393 13402 
+	}
+	manpower=3013560
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

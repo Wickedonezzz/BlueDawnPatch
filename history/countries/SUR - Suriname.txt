@@ -1,0 +1,22 @@
+﻿capital = 309
+
+##oob = ""
+
+set_convoys = 5
+
+recruit_character = SUR_jules_wijdenbosch
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1996.9.15"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 77
+	communism = 3
+	reformed_communism = 0
+	paternal_autocracy = 0
+	fascism = 6
+	neutrality = 14
+}

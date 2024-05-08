@@ -1,0 +1,43 @@
+characters = {
+
+	OMA_qaboos_bin = {
+		name = "Qaboos bin Said"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Arab/Qaboos_bin_Said.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+		
+	}
+	
+	OMA_baath = { #yup, another party logo leader. im not wasting any more time finding irrelavent leaders for these countries
+		name = "Oman Ba'ath Party Command"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JOR/jordan_baath.dds"
+			}
+		}
+		country_leader = {
+			ideology = baathist_nationalism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

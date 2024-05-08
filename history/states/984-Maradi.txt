@@ -1,0 +1,23 @@
+state={
+	id=984
+	name="STATE_984"
+	
+	state_category = pastoral
+
+	history={
+		owner = NGR
+		add_core_of = NGR
+		add_core_of = ROS
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		8028 10758 10780 10805
+	}
+	manpower=1135356
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,17 @@
+characters = {
+	RHR_sergey_baburin = {
+		name = "Sergey Baburin"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/post_putin/Sergey_Baburin.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

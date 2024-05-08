@@ -1,0 +1,207 @@
+units = {
+	fleet = {
+		name = "Pashchimee Beda"
+		naval_base = 1349 # Mumbai #
+		task_force = {
+			name = "Pashchimee Beda"
+			location = 1349 # Mumbai #
+			ship = { name = "INS Viraat" definition = carrier equipment = { carrier_hull_1 = { amount = 1 owner = RAJ creator = ENG version_name = "Centaur Class" } }
+			}
+
+			ship = { name = "INS Mysore" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = RAJ version_name = "Delhi Class" } } }
+			ship = { name = "INS Delhi" definition = destroyer equipment = { destroyer_hull_3 = { amount = 1 owner = RAJ version_name = "Delhi Class" } } }
+			ship = { name = "INS Godavari" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = RAJ version_name = "Godavari Class" } } }
+			ship = { name = "INS Gomati" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = RAJ version_name = "Godavari Class" } } }
+			ship = { name = "INS Ganga" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = RAJ version_name = "Godavari Class" } } }
+			ship = { name = "INS Himgiri" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = RAJ version_name = "Nilgiri Class" } } }
+			ship = { name = "INS Udaygiri" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = RAJ version_name = "Nilgiri Class" } } }
+			ship = { name = "INS Dunagiri" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = RAJ version_name = "Nilgiri Class" } } }
+			ship = { name = "INS Taragiri" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = RAJ version_name = "Taragiri Class" } } }
+			ship = { name = "INS Vindhyagiri" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = RAJ version_name = "Taragiri Class" } } }
+
+			ship = { name = "INS Vijaydurg" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = RAJ creator = SOV version_name = "Nanuchka II Class (Pr. 1234E)" } } }
+			ship = { name = "INS Sindhudurg" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = RAJ creator = SOV version_name = "Nanuchka II Class (Pr. 1234E)" } } }
+		}
+		task_force = {
+			name = "Pashchimee Panadubbee Bede"
+			location = 1349 # Mumbai #
+			ship = { name = "INS Sindhugosh" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = RAJ creator = SOV version_name = "Kilo Class (Pr. 877EKM)" } } }
+			ship = { name = "INS Sindhudhvaj" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = RAJ creator = SOV version_name = "Kilo Class (Pr. 877EKM)" } } }
+			ship = { name = "INS Sindhuraj" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = RAJ creator = SOV version_name = "Kilo Class (Pr. 877EKM)" } } }
+			ship = { name = "INS Sindhuvir" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = RAJ creator = SOV version_name = "Kilo Class (Pr. 877EKM)" } } }
+			ship = { name = "INS Sindhuratna" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = RAJ creator = SOV version_name = "Kilo Class (Pr. 877EKM)" } } }
+			ship = { name = "INS Kursura" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = RAJ creator = SOV version_name = "Foxtrot Class (Pr. 641)" } } }
+			ship = { name = "INS Karanj" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = RAJ creator = SOV version_name = "Foxtrot Class (Pr. 641)" } } }
+			ship = { name = "INS Shishumar" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = RAJ creator = GER version_name = "Type 209/1500 Class" } } }
+			ship = { name = "INS Shankush" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = RAJ creator = GER version_name = "Type 209/1500 Class" } } }
+			ship = { name = "INS Shalki" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = RAJ creator = GER version_name = "Type 209/1500 Class" } } }
+			ship = { name = "INS Shankul" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = RAJ creator = GER version_name = "Type 209/1500 Class" } } }
+		}
+	}
+	fleet = {
+		name = "Poorvee Beda"
+		naval_base = 10278 # Visakhapatnam #
+		task_force = {
+			name = "Poorvee Beda"
+			location = 10278 # Visakhapatnam #
+			ship = { name = "INS Rajput" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = RAJ creator = SOV version_name = "Kashin mod. Class (Pr. 61ME)" } } }
+			ship = { name = "INS Rana" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = RAJ creator = SOV version_name = "Kashin mod. Class (Pr. 61ME)" } } }
+			ship = { name = "INS Ranjit" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = RAJ creator = SOV version_name = "Kashin mod. Class (Pr. 61ME)" } } }
+			ship = { name = "INS Ranvir" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = RAJ creator = SOV version_name = "Kashin mod. Class (Pr. 61ME)" } } }
+			ship = { name = "INS Ranvijay" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = RAJ creator = SOV version_name = "Kashin mod. Class (Pr. 61ME)" } } }
+
+			ship = { name = "INS Kora" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = RAJ version_name = "Kora Class" } } }
+			ship = { name = "INS Kirpan" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = RAJ version_name = "Khukri Class" } } }
+			ship = { name = "INS Kuthar" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = RAJ version_name = "Khukri Class" } } }
+			ship = { name = "INS Khukri" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = RAJ version_name = "Khukri Class" } } }
+			ship = { name = "INS Khanjar" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = RAJ version_name = "Khukri Class" } } }
+			ship = { name = "INS Anjadip" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = RAJ creator = SOV version_name = "Petya Class (Pr. 159AE)" } } }
+			ship = { name = "INS Amini" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = RAJ creator = SOV version_name = "Petya Class (Pr. 159AE)" } } }
+		}
+		task_force = {
+			name = "Poorvee Panadubbee Bede"
+			location = 10278 # Visakhapatnam #
+			ship = { name = "INS Sindhukesari" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = RAJ creator = SOV version_name = "Kilo Class (Pr. 877EKM)" } } }
+			ship = { name = "INS Sindhukirti" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = RAJ creator = SOV version_name = "Kilo Class (Pr. 877EKM)" } } }
+			ship = { name = "INS Sindhuvijay" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = RAJ creator = SOV version_name = "Kilo Class (Pr. 877EKM)" } } }
+			ship = { name = "INS Sindhurakshak" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = RAJ creator = SOV version_name = "Kilo Class (Pr. 877EKM)" } } }
+			ship = { name = "INS Sindhushastra" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = RAJ creator = SOV version_name = "Kilo Class (Pr. 877EKM)" } } }
+			ship = { name = "INS Vela" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = RAJ creator = SOV version_name = "Foxtrot Class (Pr. 641)" } } }
+			ship = { name = "INS Vagir" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = RAJ creator = SOV version_name = "Foxtrot Class (Pr. 641)" } } }
+			ship = { name = "INS Vagli" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = RAJ creator = SOV version_name = "Foxtrot Class (Pr. 641)" } } }
+		}
+	}
+}
+
+instant_effect = {
+	# Destroyers #
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_hull_3
+			creator = "RAJ" 
+			version_name = "Delhi Class"
+		}
+		name = "INS Mumbai"
+		requested_factories = 1
+		progress = 0.87
+		amount = 1
+	}
+
+	# Frigates #
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_hull_2
+			creator = "RAJ" 
+			version_name = "Brahmaputra Class"
+		}
+		name = "INS Brahmaputra"
+		requested_factories = 1
+		progress = 0.97
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_hull_2
+			creator = "RAJ" 
+			version_name = "Brahmaputra Class"
+		}
+		name = "INS Betwa"
+		requested_factories = 1
+		progress = 0.54
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_hull_2
+			creator = "RAJ" 
+			version_name = "Brahmaputra Class"
+		}
+		name = "INS Beas"
+		requested_factories = 1
+		progress = 0.25
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_hull_3
+			creator = "RAJ" 
+			version_name = "Talwar Class (Pr. 11356)"
+		}
+		name = "INS Talwar"
+		requested_factories = 1
+		progress = 0.31
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_hull_3
+			creator = "RAJ" 
+			version_name = "Talwar Class (Pr. 11356)"
+		}
+		name = "INS Trishul"
+		requested_factories = 1
+		progress = 0.26
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_hull_3
+			creator = "RAJ" 
+			version_name = "Talwar Class (Pr. 11356)"
+		}
+		name = "INS Tabar"
+		requested_factories = 1
+		progress = 0.08
+		amount = 1
+	}
+
+	# Corvettes #
+	add_equipment_production = {
+		equipment = {
+			type = corvette_hull_3
+			creator = "RAJ" 
+			version_name = "Kora Class"
+		}
+		name = "INS Kirch"
+		requested_factories = 1
+		progress = 0.90
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = corvette_hull_3
+			creator = "RAJ" 
+			version_name = "Kora Class"
+		}
+		name = "INS Kulish"
+		requested_factories = 1
+		progress = 0.72
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = corvette_hull_3
+			creator = "RAJ" 
+			version_name = "Kora Class"
+		}
+		name = "INS Karmuk"
+		requested_factories = 1
+		progress = 0.36
+		amount = 1
+	}
+
+	# License #
+	if = {
+		limit = { has_dlc = "Death or Dishonor" }
+		GER = {
+			create_production_license = {
+				target = RAJ
+				equipment = {
+					type = attack_submarine_hull_1
+					version_name = "Type 209/1500 Class"
+				}
+				cost_factor = 0
+			}
+		}
+	}
+}

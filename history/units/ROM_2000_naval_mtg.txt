@@ -1,0 +1,25 @@
+units = {
+	fleet = {
+		name = "Flota Mării Negre"
+		naval_base = 657 # Constanta #
+		task_force = {
+			name = "Flota de suprafată a Mării Negre"
+			location = 657 # Constanta #
+			ship = { name = "Mărăşeşti" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = ROM version_name = "Muntenia Class" } } }
+			ship = { name = "Amiral Petre Bărbuneanu" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = ROM version_name = "Amiral Petre Bărbuneanu Class" } } }
+			ship = { name = "Vice-Amiral Vasile Scodrea" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = ROM version_name = "Amiral Petre Bărbuneanu Class" } } }
+			ship = { name = "Vice-Amiral Vasile Urseanu" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = ROM version_name = "Amiral Petre Bărbuneanu Class" } } }
+			ship = { name = "Vice-Amiral Eugeniu Roşca" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = ROM version_name = "Amiral Petre Bărbuneanu Class" } } }
+			ship = { name = "Contra-Amiral Eustaţiu Sebastian" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = ROM version_name = "Contra-Amiral Eustaţiu Sebastian Class" } } }
+			ship = { name = "Contra-Amiral Horia Macellariu" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = ROM version_name = "Contra-Amiral Eustaţiu Sebastian Class" } } }
+		}
+		task_force = {
+			name = "Flota de submarine a Mării Negre"
+			location = 657 # Constanta #
+			ship = { name = "Delfinul" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = ROM creator = SOV version_name = "Kilo Class (Pr. 877EKM)" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

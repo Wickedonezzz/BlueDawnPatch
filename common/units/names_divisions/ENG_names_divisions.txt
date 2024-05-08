@@ -1,0 +1,36 @@
+﻿ENG_MEC_01 = 
+{
+	name = "Allied Reaction Corps Division"
+
+	for_countries = { ENG }
+
+	can_use = { always = yes }
+
+	division_types = { "recon_vehicle_armor" "heavy_infantry_unit" }
+
+	fallback_name = "%d Allied Reaction Corps Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st Allied Reaction Corps Division" }
+		2 = { "2nd Allied Reaction Corps Division" }
+		3 = { "3rd Allied Reaction Corps Division" }
+		4 = { "4th Allied Reaction Corps Division" }
+		5 = { "5th Allied Reaction Corps Division" }
+		6 = { "6th Allied Reaction Corps Division" }
+		7 = { "7th Allied Reaction Corps Division" }
+		8 = { "8th Allied Reaction Corps Division" }
+		9 = { "9th Allied Reaction Corps Division" }
+		10 = { "10th Allied Reaction Corps Division" }
+		11 = { "11th Allied Reaction Corps Division" }
+		12 = { "12th Allied Reaction Corps Division" }
+		13 = { "13th Allied Reaction Corps Division" }
+		14 = { "14th Allied Reaction Corps Division" }
+		15 = { "15th Allied Reaction Corps Division" }
+		16 = { "16th Allied Reaction Corps Division" }
+		17 = { "17th Allied Reaction Corps Division" }
+		18 = { "18th Allied Reaction Corps Division" }
+		19 = { "19th Allied Reaction Corps Division" }
+	}
+}

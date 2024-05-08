@@ -1,0 +1,32 @@
+characters = {
+
+	INS_abdurrahman_wahid = {
+		name = "Abdurrahman Wahid"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/INS/Abdurrahman_Wahid.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	INS_Suharto = {
+		name = "Suharto"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/INS/Suharto.png"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

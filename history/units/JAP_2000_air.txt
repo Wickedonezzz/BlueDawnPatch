@@ -1,0 +1,74 @@
+﻿air_wings = {
+	# Land Wings #
+	536 = {
+		# Fighters -- F-15
+		fighter_equipment_1 =  { # F-15 #
+			owner = "JAP" 
+			creator = USA
+			amount = 41
+		}
+		fighter_equipment_1 =  { # F-15 #
+			owner = "JAP" 
+			creator = USA
+			amount = 35
+		}
+
+		# Transports -- C-1
+		transport_plane_equipment_1 =  { # C-1 #
+			owner = "JAP" 
+			creator = JAP
+			amount = 10
+		}
+	}
+	533 = {
+		# Fighters -- F-4
+		fighter_equipment_0 =  { # F-4 #
+			owner = "JAP" 
+			creator = USA
+			amount = 38
+		}
+		fighter_equipment_0 =  { # F-4 #
+			owner = "JAP" 
+			creator = USA
+			amount = 32
+		}
+	}
+	535 = {
+		# Fighters -- F-15
+		fighter_equipment_1 =  { # F-15 #
+			owner = "JAP" 
+			creator = USA
+			amount = 38
+		}
+	}
+	528 = {
+		# Fighters -- F-15
+		fighter_equipment_1 =  { # F-15 #
+			owner = "JAP" 
+			creator = USA
+			amount = 46
+		}
+
+		# Attackers -- F-1
+		attacker_equipment_1 =  { # F-1 #
+			owner = "JAP" 
+			creator = JAP
+			amount = 40
+		}
+
+		# Transports -- C-1
+		transport_plane_equipment_1 =  { # C-1 #
+			owner = "JAP" 
+			creator = JAP
+			amount = 10
+		}
+	}
+	282 = {
+		# Transports -- C-130
+		transport_plane_equipment_1 =  { # C-130 #
+			owner = "JAP" 
+			creator = USA
+			amount = 10
+		}
+	}
+}

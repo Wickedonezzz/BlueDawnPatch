@@ -1,0 +1,23 @@
+units = {
+	fleet = {
+		name = "Flota Bałtycka"
+		naval_base = 9263 # Manila #
+		task_force = {
+			name = "Flota Bałtycka"
+			location = 9263 # Manila #
+			ship = { name = "ORP Warszawa" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = POL creator = SOV version_name = "Kashin mod. Class (Pr. 61MP)" } } }
+
+			ship = { name = "ORP Kaszub" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = POL version_name = "Kaszub Class" } } }
+		}
+		task_force = {
+			name = "Bałtyckiej Floty Podwodnej"
+			location = 9263 # Manila #
+			ship = { name = "ORP Orzeł" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = POL creator = SOV version_name = "Kilo Class (Pr. 877E)" } } }
+			ship = { name = "ORP Wilk" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = POL creator = SOV version_name = "Foxtrot Class (Pr. 641)" } } }
+			ship = { name = "ORP Dzik" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = POL creator = SOV version_name = "Foxtrot Class (Pr. 641)" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

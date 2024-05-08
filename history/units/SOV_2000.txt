@@ -1,0 +1,4000 @@
+﻿division_template = { # Armoured Division #
+	name = "Bronetankovaya Diviziya"
+	division_names_group = GENERIC_MBT_01
+
+	regiments = {
+		main_battle_tank_armor = { x = 0 y = 0 }
+		main_battle_tank_armor = { x = 0 y = 1 }
+		main_battle_tank_armor = { x = 0 y = 2 }
+		main_battle_tank_armor = { x = 0 y = 3 }
+		main_battle_tank_armor = { x = 0 y = 4 }
+		infantry_fighting_vehicle_armor = { x = 1 y = 0 }
+		infantry_fighting_vehicle_armor = { x = 1 y = 1 }
+		main_battle_tank_armor = { x = 1 y = 2 }
+		main_battle_tank_armor = { x = 1 y = 3 }
+		heavy_infantry_unit = { x = 2 y = 0 }
+		heavy_infantry_unit = { x = 2 y = 1 }
+		heavy_infantry_unit = { x = 2 y = 2 }
+		motorised_artillery_unit = { x = 3 y = 0 }
+		motorised_artillery_unit = { x = 3 y = 1 }
+		rocket_artillery_unit = { x = 4 y = 0 }
+
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		spaa_vehicle_support_armor = { x = 0 y = 1 }
+		maintenance_company = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		armoured_recon = { x = 0 y = 4 }
+	}
+	priority = 1
+}
+division_template = { # Heavy Infantry Division #
+	name = "Motostrelkovaya Diviziya"
+	division_names_group = GENERIC_MEC_01
+
+	regiments = {
+		heavy_infantry_unit = { x = 0 y = 0 }
+		heavy_infantry_unit = { x = 0 y = 1 }
+		heavy_infantry_unit = { x = 0 y = 2 }
+		heavy_infantry_unit = { x = 0 y = 3 }
+		heavy_infantry_unit = { x = 1 y = 0 }
+		heavy_infantry_unit = { x = 1 y = 1 }
+		infantry_fighting_vehicle_armor = { x = 2 y = 0 }
+		infantry_fighting_vehicle_armor = { x = 2 y = 1 }
+		infantry_fighting_vehicle_armor = { x = 2 y = 2 }
+		motorised_artillery_unit = { x = 3 y = 0 }
+		towed_artillery_unit = { x = 4 y = 0 }
+		towed_artillery_unit = { x = 4 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		armoured_recon = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		attack_heli_company = { x = 0 y = 3 }
+		spaa_vehicle_support_armor = { x = 0 y = 4 }
+	}
+	priority = 1
+}
+division_template = { # Air Assault Division #
+	name = "Desantno-shturmovaya Diviziya"
+	division_names_group = GENERIC_INF_02
+
+	regiments = {
+		infantry_unit = { x = 0 y = 0 }
+		infantry_unit = { x = 0 y = 1 }
+		infantry_unit = { x = 0 y = 2 }
+		infantry_unit = { x = 0 y = 3 }
+		infantry_unit = { x = 0 y = 4 }
+		heavy_infantry_unit = { x = 1 y = 0 }
+		heavy_infantry_unit = { x = 1 y = 1 }
+		towed_artillery_unit = { x = 2 y = 0 }
+		towed_artillery_unit = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		attack_heli_company = { x = 0 y = 1 }
+		transport_heli_company = { x = 0 y = 2 }
+		towed_artillery_support_unit = { x = 0 y = 3 }
+	}
+	priority = 1
+}
+division_template = { # Heavy Artillery Division #
+	name = "Tyazhelaya Artilleriyskaya Diviziya"
+	division_names_group = GENERIC_ART_02
+
+	regiments = {
+		rocket_artillery_unit = { x = 0 y = 0 }
+		rocket_artillery_unit = { x = 0 y = 1 }
+		rocket_artillery_unit = { x = 0 y = 2 }
+		rocket_artillery_unit = { x = 0 y = 3 }
+		rocket_artillery_unit = { x = 0 y = 4 }
+		motorised_artillery_unit = { x = 1 y = 0 }
+		motorised_artillery_unit = { x = 1 y = 1 }
+		motorised_artillery_unit = { x = 1 y = 2 }
+		main_battle_tank_armor = { x = 2 y = 0 }
+		main_battle_tank_armor = { x = 2 y = 1 }
+
+
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		maintenance_company = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		transport_heli_company = { x = 0 y = 3 }
+		rocket_artillery_support_unit = { x = 0 y = 4 }
+	}
+	priority = 1
+}
+division_template = { # Artillery Division #
+	name = "Artilleriyskaya Diviziya"
+	division_names_group = GENERIC_ART_01
+
+	regiments = {
+		towed_artillery_unit = { x = 0 y = 0 }
+		towed_artillery_unit = { x = 0 y = 1 }
+		towed_artillery_unit = { x = 0 y = 2 }
+		towed_artillery_unit = { x = 0 y = 3 }
+		infantry_unit = { x = 1 y = 0 }
+		infantry_unit = { x = 1 y = 1 }
+		infantry_unit = { x = 1 y = 2 }
+		infantry_unit = { x = 1 y = 3 }
+		infantry_unit = { x = 1 y = 4 }
+		infantry_unit = { x = 2 y = 0 }
+		infantry_unit = { x = 2 y = 1 }
+		infantry_unit = { x = 2 y = 2 }
+		infantry_unit = { x = 2 y = 3 }
+	}
+	support = {
+		towed_artillery_support_unit = { x = 0 y = 0 } 
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		
+	}
+	priority = 1
+}
+division_template = { # Marine Division #
+	name = "Diviziya Morskoy Pekhoty"
+	division_names_group = GENERIC_MRN_01
+
+	regiments = {
+		main_battle_tank_armor = { x = 2 y = 0 }
+		marine_unit = { x = 2 y = 1 }
+		marine_unit = { x = 2 y = 2 }
+		marine_unit = { x = 0 y = 0 }
+		marine_unit = { x = 0 y = 1 }
+		marine_unit = { x = 0 y = 2 }
+		marine_unit = { x = 0 y = 3 }
+		marine_unit = { x = 0 y = 4 }
+		towed_artillery_unit = { x = 1 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		attack_heli_company = { x = 0 y = 2 }
+		towed_artillery_support_unit = { x = 0 y = 3 } 
+	}
+	priority = 2
+}
+division_template = { # Mechanised Paratrooper Division #
+	name = "Vozdushno-desantnaya Diviziya"
+	division_names_group = GENERIC_PAR_01
+
+	regiments = {
+		paratrooper_unit = { x = 0 y = 0 }
+		paratrooper_unit = { x = 0 y = 1 }
+		paratrooper_unit = { x = 0 y = 2 }
+		paratrooper_unit = { x = 0 y = 3 }
+		paratrooper_unit = { x = 1 y = 0 }
+		paratrooper_unit = { x = 1 y = 1 }
+		paratrooper_unit = { x = 1 y = 2 }
+		infantry_fighting_vehicle_armor = { x = 2 y = 0 }
+		infantry_fighting_vehicle_armor = { x = 2 y = 1 }
+	}
+	support = {
+		transport_heli_company = { x = 0 y = 0 }
+		attack_heli_company = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+		towed_artillery_support_unit = { x = 0 y = 3 } 
+	}
+	priority = 2
+}
+division_template = { # Spetsnaz Division #
+	name = "Diviziya Spetsnaza"
+	division_names_group = SOV_PAR_02
+
+	regiments = {
+		paratrooper_unit = { x = 0 y = 0 }
+		paratrooper_unit = { x = 0 y = 1 }
+		paratrooper_unit = { x = 0 y = 2 }
+		paratrooper_unit = { x = 1 y = 0 }
+		paratrooper_unit = { x = 1 y = 1 }
+		
+	}
+	support = {
+		transport_heli_company = { x = 0 y = 2 }
+		military_police = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+
+units = {
+	# Armoured Division #
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6380
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_3 = { owner = "SOV" }
+			ifv_tank_equipment_2 = { owner = "SOV" }
+			apc_tank_equipment_3 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_4 = { owner = "SOV" }
+			rocket_artillery_equipment_2 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 504
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_3 = { owner = "SOV" }
+			ifv_tank_equipment_2 = { owner = "SOV" }
+			apc_tank_equipment_3 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_4 = { owner = "SOV" }
+			rocket_artillery_equipment_2 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3755
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SOV" }
+			ifv_tank_equipment_2 = { owner = "SOV" }
+			apc_tank_equipment_3 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_4 = { owner = "SOV" }
+			rocket_artillery_equipment_2 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 705
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SOV" }
+			ifv_tank_equipment_2 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			rocket_artillery_equipment_2 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 6332
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SOV" }
+			ifv_tank_equipment_2 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			rocket_artillery_equipment_4 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 3384
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SOV" }
+			ifv_tank_equipment_2 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			rocket_artillery_equipment_4 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 6332
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SOV" }
+			ifv_tank_equipment_2 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_4 = { owner = "SOV" }
+			rocket_artillery_equipment_4 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 3256
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SOV" }
+			ifv_tank_equipment_2 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_4 = { owner = "SOV" }
+			rocket_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 3366
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SOV" }
+			ifv_tank_equipment_2 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			rocket_artillery_equipment_4 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 9359
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SOV" }
+			ifv_tank_equipment_2 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			rocket_artillery_equipment_4 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 406
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SOV" }
+			ifv_tank_equipment_2 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_4 = { owner = "SOV" }
+			rocket_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 9323
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SOV" }
+			ifv_tank_equipment_2 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_4 = { owner = "SOV" }
+			rocket_artillery_equipment_2 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 11313
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SOV" }
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			rocket_artillery_equipment_2 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 415
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SOV" }
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_4 = { owner = "SOV" }
+			rocket_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 3310
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SOV" }
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			rocket_artillery_equipment_2 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.75
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 9097
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SOV" }
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			rocket_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.75
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = 9206
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SOV" }
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			rocket_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.75
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = 9105
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SOV" }
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			rocket_artillery_equipment_4 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.75
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location = 6157
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SOV" }
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			rocket_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.75
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 9558
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "SOV" }
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			rocket_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.75
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 513
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "SOV" }
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			rocket_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.75
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 22
+		}
+		location = 3707
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "SOV" }
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			rocket_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.75
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 23
+		}
+		location = 9663
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SOV" }
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			rocket_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.75
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 24
+		}
+		location = 772
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "SOV" }
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			rocket_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.75
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 25
+		}
+		location = 12309
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "SOV" }
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			rocket_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.75
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 26
+		}
+		location = 4463
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "SOV" }
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			rocket_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.75
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 27
+		}
+		location = 1573
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "SOV" }
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			rocket_artillery_equipment_2 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.75
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 28
+		}
+		location = 10601
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "SOV" }
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			rocket_artillery_equipment_2 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.75
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		}
+		location = 4651
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "SOV" }
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			rocket_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.75
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 30
+		}
+		location = 4797
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "SOV" }
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			rocket_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.75
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 31
+		}
+		location = 4705
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "SOV" }
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			rocket_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.55
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 32
+		}
+		location = 3977
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "SOV" }
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			rocket_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.55
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 33
+		}
+		location = 664
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "SOV" }
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			rocket_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.55
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 34
+		}
+		location = 3963
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "SOV" }
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			rocket_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.55
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 35
+		}
+		location = 10722
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "SOV" }
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			rocket_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.55
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 36
+		}
+		location = 4725
+		division_template = "Bronetankovaya Diviziya"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "SOV" }
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			rocket_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.55
+	}
+
+	# Heavy Infantry Division #
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12446
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_0 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1742
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_0 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9604
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_0 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 1399
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_0 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 4801
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_0 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 11879
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_0 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 6989
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_0 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 12189
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 7801
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 12543
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 4719
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 4705
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 7835
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = 12538
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = 1707
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location = 4837
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 12628
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_4 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.70
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 22
+		}
+		location = 10580
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_4 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.70
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 23
+		}
+		location = 4724
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_4 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.70
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 24
+		}
+		location = 957
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_4 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.70
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 25
+		}
+		location = 5003
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_4 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.70
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 26
+		}
+		location = 12333
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.70
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 27
+		}
+		location = 12465
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.70
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 28
+		}
+		location = 1517
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.70
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		}
+		location = 4581
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.70
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 30
+		}
+		location = 1554
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.70
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 31
+		}
+		location = 10671
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.70
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 33
+		}
+		location = 1384
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.70
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 34
+		}
+		location = 10488
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.70
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 35
+		}
+		location = 1591
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.70
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 36
+		}
+		location = 12583
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.70
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 37
+		}
+		location = 4333
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.70
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 38
+		}
+		location = 7298
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.70
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 40
+		}
+		location = 10312
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.70
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 41
+		}
+		location = 1292
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.70
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 4824
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.70
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 43
+		}
+		location = 9292
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.70
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location = 1821
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 45
+		}
+		location = 9292
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 46
+		}
+		location = 1278
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 47
+		}
+		location = 10256
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 48
+		}
+		location = 7375
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 49
+		}
+		location = 11195
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 51
+		}
+		location = 392
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 52
+		}
+		location = 11225
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 53
+		}
+		location = 11537
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 54
+		}
+		location = 11377
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 55
+		}
+		location = 6450
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 56
+		}
+		location = 3578
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 57
+		}
+		location = 11523
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 58
+		}
+		location = 9422
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 59
+		}
+		location = 757
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 60
+		}
+		location = 11706
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 61
+		}
+		location = 11480
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 62
+		}
+		location = 12309
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 63
+		}
+		location = 9628
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 64
+		}
+		location = 11632
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 65
+		}
+		location = 3682
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 66
+		}
+		location = 9645
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 67
+		}
+		location = 7624
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 68
+		}
+		location = 3656
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 69
+		}
+		location = 3653
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 70
+		}
+		location = 1599
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.95
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 71
+		}
+		location = 11617
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 72
+		}
+		location = 3548
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 73
+		}
+		location = 11536
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 74
+		}
+		location = 3577
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 75
+		}
+		location = 6743
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 76
+		}
+		location = 9122
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 77
+		}
+		location = 2994
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 78
+		}
+		location = 138
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 79
+		}
+		location = 11156
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 80
+		}
+		location = 11054
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 81
+		}
+		location = 3338
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 82
+		}
+		location = 197
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 83
+		}
+		location = 9158
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 84
+		}
+		location = 6181
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 85
+		}
+		location = 6183
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 86
+		}
+		location = 11142
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 87
+		}
+		location = 9140
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 88
+		}
+		location = 3012
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 89
+		}
+		location = 3568
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 90
+		}
+		location = 11459
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 91
+		}
+		location = 11474
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 92
+		}
+		location = 11248
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 93
+		}
+		location = 6369
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 94
+		}
+		location = 382
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 95
+		}
+		location = 9341
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 96
+		}
+		location = 3310
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 97
+		}
+		location = 126
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 98
+		}
+		location = 9098
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 99
+		}
+		location = 117
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 100
+		}
+		location = 348
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 101
+		}
+		location = 395
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 102
+		}
+		location = 560
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 103
+		}
+		location = 3281
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 104
+		}
+		location = 6413
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 105
+		}
+		location = 6593
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 106
+		}
+		location = 216
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 107
+		}
+		location = 306
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 108
+		}
+		location = 11230
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 109
+		}
+		location = 3430
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 110
+		}
+		location = 536
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 111
+		}
+		location = 6546
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_2 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 112
+		}
+		location = 3392
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = {
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_1 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+
+	# Air Assault Division #
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3358
+		division_template = "Desantno-shturmovaya Diviziya"
+		force_equipment_variants = {
+			apc_tank_equipment_4 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_1 = { owner = "SOV" }
+			heli_transport_equipment_2 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.40
+		start_equipment_factor = 0.90
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 9707
+		division_template = "Desantno-shturmovaya Diviziya"
+		force_equipment_variants = {
+			apc_tank_equipment_4 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_1 = { owner = "SOV" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.40
+		start_equipment_factor = 0.90
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 565
+		division_template = "Desantno-shturmovaya Diviziya"
+		force_equipment_variants = {
+			apc_tank_equipment_3 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_1 = { owner = "SOV" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.40
+		start_equipment_factor = 0.90
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 6557
+		division_template = "Desantno-shturmovaya Diviziya"
+		force_equipment_variants = {
+			apc_tank_equipment_3 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			towed_artillery_equipment_2 = { owner = "SOV" }
+			heli_attack_equipment_1 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.40
+		start_equipment_factor = 0.90
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 11265
+		division_template = "Desantno-shturmovaya Diviziya"
+		force_equipment_variants = {
+			apc_tank_equipment_2 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_1 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.40
+		start_equipment_factor = 0.90
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 6838
+		division_template = "Desantno-shturmovaya Diviziya"
+		force_equipment_variants = {
+			apc_tank_equipment_3 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_1 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.40
+		start_equipment_factor = 0.90
+	}
+
+	# Heavy Artillery Division #
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 654
+		division_template = "Tyazhelaya Artilleriyskaya Diviziya"
+		force_equipment_variants = {
+			rocket_artillery_equipment_2 = { owner = "SOV" }
+			motorised_artillery_equipment_4 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6474
+		division_template = "Tyazhelaya Artilleriyskaya Diviziya"
+		force_equipment_variants = {
+			rocket_artillery_equipment_4 = { owner = "SOV" }
+			motorised_artillery_equipment_4 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.30
+		start_equipment_factor = 0.80
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 11441
+		division_template = "Tyazhelaya Artilleriyskaya Diviziya"
+		force_equipment_variants = {
+			rocket_artillery_equipment_2 = { owner = "SOV" }
+			motorised_artillery_equipment_4 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 6597
+		division_template = "Tyazhelaya Artilleriyskaya Diviziya"
+		force_equipment_variants = {
+			rocket_artillery_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.30
+		start_equipment_factor = 0.80
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 3235
+		division_template = "Tyazhelaya Artilleriyskaya Diviziya"
+		force_equipment_variants = {
+			rocket_artillery_equipment_1 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.30
+		start_equipment_factor = 1.00
+	}
+
+	# Artillery Division #
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6332
+		division_template = "Artilleriyskaya Diviziya"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.80
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 13206
+		division_template = "Artilleriyskaya Diviziya"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.80
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 11338
+		division_template = "Artilleriyskaya Diviziya"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.80
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 11162
+		division_template = "Artilleriyskaya Diviziya"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.80
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 95
+		division_template = "Artilleriyskaya Diviziya"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.80
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 3267
+		division_template = "Artilleriyskaya Diviziya"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.70
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 3350
+		division_template = "Artilleriyskaya Diviziya"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.70
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 489
+		division_template = "Artilleriyskaya Diviziya"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.70
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 371
+		division_template = "Artilleriyskaya Diviziya"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.70
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 9520
+		division_template = "Artilleriyskaya Diviziya"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.70
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 6415
+		division_template = "Artilleriyskaya Diviziya"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.70
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 9548
+		division_template = "Artilleriyskaya Diviziya"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.70
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 414
+		division_template = "Artilleriyskaya Diviziya"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.70
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 9683
+		division_template = "Artilleriyskaya Diviziya"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 3738
+		division_template = "Artilleriyskaya Diviziya"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = 11696
+		division_template = "Artilleriyskaya Diviziya"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = 11724
+		division_template = "Artilleriyskaya Diviziya"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location = 4605
+		division_template = "Artilleriyskaya Diviziya"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 1614
+		division_template = "Artilleriyskaya Diviziya"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 7682
+		division_template = "Artilleriyskaya Diviziya"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 22
+		}
+		location = 10417
+		division_template = "Artilleriyskaya Diviziya"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 23
+		}
+		location = 10627
+		division_template = "Artilleriyskaya Diviziya"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 24
+		}
+		location = 12622
+		division_template = "Artilleriyskaya Diviziya"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 25
+		}
+		location = 1802
+		division_template = "Artilleriyskaya Diviziya"
+		force_equipment_variants = {
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.25
+		start_equipment_factor = 1.00
+	}
+
+
+	# Marine Division #
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 957
+		division_template = "Diviziya Morskoy Pekhoty"
+		force_equipment_variants = {
+			mbt_tank_equipment_2 = { owner = "SOV" }
+			towed_artillery_equipment_2 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.40
+		start_equipment_factor = 0.90
+	}
+
+	# Mechanised Paratrooper Division #
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9197
+		division_template = "Vozdushno-desantnaya Diviziya"
+		force_equipment_variants = {
+			motorised_artillery_equipment_4 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3580
+		division_template = "Vozdushno-desantnaya Diviziya"
+		force_equipment_variants = {
+			motorised_artillery_equipment_4 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3346
+		division_template = "Vozdushno-desantnaya Diviziya"
+		force_equipment_variants = {
+			motorised_artillery_equipment_4 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 3309
+		division_template = "Vozdushno-desantnaya Diviziya"
+		force_equipment_variants = {
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 11304
+		division_template = "Vozdushno-desantnaya Diviziya"
+		force_equipment_variants = {
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 476
+		division_template = "Vozdushno-desantnaya Diviziya"
+		force_equipment_variants = {
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			spaa_tank_equipment_1 = { owner = "SOV" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 10696
+		division_template = "Vozdushno-desantnaya Diviziya"
+		force_equipment_variants = {
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.70
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 11750
+		division_template = "Vozdushno-desantnaya Diviziya"
+		force_equipment_variants = {
+			motorised_artillery_equipment_3 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.45
+		start_equipment_factor = 1.00
+	}
+
+	# Spetsnaz Division #
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6380
+		division_template = "Diviziya Spetsnaza"
+		force_equipment_variants = {
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.60
+		start_equipment_factor = 0.95
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6414
+		division_template = "Diviziya Spetsnaza"
+		force_equipment_variants = {
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.60
+		start_equipment_factor = 0.95
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3529
+		division_template = "Diviziya Spetsnaza"
+		force_equipment_variants = {
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.60
+		start_equipment_factor = 0.95
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 3151
+		division_template = "Diviziya Spetsnaza"
+		force_equipment_variants = {
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.60
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 11370
+		division_template = "Diviziya Spetsnaza"
+		force_equipment_variants = {
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.60
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 3734
+		division_template = "Diviziya Spetsnaza"
+		force_equipment_variants = {
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.60
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 9663
+		division_template = "Diviziya Spetsnaza"
+		force_equipment_variants = {
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.60
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 9628
+		division_template = "Diviziya Spetsnaza"
+		force_equipment_variants = {
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.60
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 1599
+		division_template = "Diviziya Spetsnaza"
+		force_equipment_variants = {
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.60
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 3686
+		division_template = "Diviziya Spetsnaza"
+		force_equipment_variants = {
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.60
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 11670
+		division_template = "Diviziya Spetsnaza"
+		force_equipment_variants = {
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.60
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 1727
+		division_template = "Diviziya Spetsnaza"
+		force_equipment_variants = {
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.60
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 6520
+		division_template = "Diviziya Spetsnaza"
+		force_equipment_variants = {
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.60
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 6359
+		division_template = "Diviziya Spetsnaza"
+		force_equipment_variants = {
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.60
+		start_equipment_factor = 1.00
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 7274
+		division_template = "Diviziya Spetsnaza"
+		force_equipment_variants = {
+			heli_transport_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.60
+		start_equipment_factor = 1.00
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_weapons_2
+			creator = "SOV"
+		}
+		requested_factories = 3
+		progress = 0.64
+		efficiency = 49
+	}
+	add_equipment_production = {
+		equipment = {
+			type = infantry_anti_tank_weapons_2
+			creator = "SOV"
+		}
+		requested_factories = 1
+		progress = 0.37
+		efficiency = 45
+	}
+	add_equipment_production = {
+		equipment = {
+			type = infantry_anti_air_weapons_2
+			creator = "SOV"
+		}
+		requested_factories = 1
+		progress = 0.91
+		efficiency = 45
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "SOV"
+		}
+		requested_factories = 2
+		progress = 0.36
+		efficiency = 41
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorised_equipment_2
+			creator = "SOV"
+		}
+		requested_factories = 2
+		progress = 0.78
+		efficiency = 44
+	}
+	add_equipment_production = {
+		equipment = {
+			type = mbt_tank_equipment_3
+			creator = "SOV"
+		}
+		requested_factories = 2
+		progress = 0.44
+		efficiency = 30
+	}
+	add_equipment_production = {
+		equipment = {
+			type = mbt_tank_equipment_2
+			creator = "SOV"
+		}
+		requested_factories = 1
+		progress = 0.07
+		efficiency = 41
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ifv_tank_equipment_2
+			creator = "SOV"
+		}
+		requested_factories = 3
+		progress = 0.92
+		efficiency = 42
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ifv_tank_equipment_1
+			creator = "SOV"
+		}
+		requested_factories = 1
+		progress = 0.26
+		efficiency = 48
+	}
+	add_equipment_production = {
+		equipment = {
+			type = apc_tank_equipment_3
+			creator = "SOV"
+		}
+		requested_factories = 2
+		progress = 0.55
+		efficiency = 39
+	}
+	add_equipment_production = {
+		equipment = {
+			type = spaa_tank_equipment_1
+			creator = "SOV"
+		}
+		requested_factories = 1
+		progress = 0.62
+		efficiency = 36
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorised_artillery_equipment_4
+			creator = "SOV"
+		}
+		requested_factories = 2
+		progress = 0.24
+		efficiency = 33
+	}
+	add_equipment_production = {
+		equipment = {
+			type = rocket_artillery_equipment_4
+			creator = "SOV"
+		}
+		requested_factories = 1
+		progress = 0.81
+		efficiency = 31
+	}
+	add_equipment_production = {
+		equipment = {
+			type = heli_transport_equipment_2
+			creator = "SOV"
+		}
+		requested_factories = 1
+		progress = 0.34
+		efficiency = 15
+	}
+	add_equipment_production = {
+		equipment = {
+			type = heli_transport_equipment_1
+			creator = "SOV"
+		}
+		requested_factories = 1
+		progress = 0.01
+		efficiency = 43
+	}
+	add_equipment_production = {
+		equipment = {
+			type = heli_attack_equipment_1
+			creator = "SOV"
+		}
+		requested_factories = 1
+		progress = 0.37
+		efficiency = 29
+	}
+
+	# Stockpile #
+
+	add_equipment_to_stockpile = {
+		type = infantry_weapons_1
+		amount = 70000
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_weapons_2
+		amount = 20000
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_anti_tank_weapons
+		amount = 19000
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_anti_air_weapons
+		amount = 18000
+	}
+	add_equipment_to_stockpile = {
+		type = motorised_equipment
+		amount = 10000
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 20000
+	}
+	add_equipment_to_stockpile = {
+		type = towed_artillery_equipment_2
+		amount = 1000
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = towed_artillery_equipment_1
+		amount = 2000
+		producer = SOV
+	}
+    add_equipment_to_stockpile = {
+		type = ifv_tank_equipment_1
+		amount = 13000
+	}
+	add_equipment_to_stockpile = {
+		type = ifv_tank_equipment_2
+		amount = 5000
+	}
+	add_equipment_to_stockpile = {
+		type = recon_vehicle_equipment_0
+		amount = 2500
+	}
+		add_equipment_to_stockpile = {
+		type = mbt_tank_equipment_2
+		amount = 2000
+	}
+	add_equipment_to_stockpile = {
+		type = mbt_tank_equipment_1
+		amount = 7000
+	}
+	add_equipment_to_stockpile = {
+		type = mbt_tank_equipment_0
+		amount = 18000
+	}
+	add_equipment_to_stockpile = {
+		type = apc_tank_equipment_1
+		amount = 15000
+	}
+	add_equipment_to_stockpile = {
+		type = apc_tank_equipment_2
+		amount = 9000
+	}
+	add_equipment_to_stockpile = {
+		type = apc_tank_equipment_3
+		amount = 2100
+	}
+	add_equipment_to_stockpile = {
+		type = spaa_tank_equipment_0
+		amount = 700
+	}  
+	add_equipment_to_stockpile = {
+		type = rocket_artillery_equipment_1
+		amount = 2750
+	} 
+	add_equipment_to_stockpile = {
+		type = rocket_artillery_equipment_2
+		amount = 1750
+	}
+	 add_equipment_to_stockpile = {
+		type = towed_artillery_equipment_1
+		amount = 18850
+	}
+	  add_equipment_to_stockpile = {
+		type = motorised_artillery_equipment_2
+		amount = 2331
+	} 
+	add_equipment_to_stockpile = {
+		type = motorised_artillery_equipment_1
+		amount = 3200
+	} 
+	add_equipment_to_stockpile = {
+		type = heli_attack_equipment_1
+		amount = 1000
+	} 
+	add_equipment_to_stockpile = {
+		type = heli_transport_equipment_0 
+		amount = 1000
+	} 
+
+}

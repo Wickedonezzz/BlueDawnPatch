@@ -1,0 +1,1278 @@
+add_namespace = saf
+add_namespace = saf_help
+add_namespace = saf_pacification
+add_namespace = saf_hidden
+
+#Mandela#
+country_event = {
+	id = saf.1
+	title = saf.1.t
+	desc = saf.1.d
+	picture = GFX_report_event_SAF_mandela
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.1.a
+		add_political_power = -25
+		add_stability = -0.1
+		add_manpower = -1
+		news_event = { id = old_times_news.75 hours = 6 }
+		
+	}
+}
+
+#Insurgents#
+country_event = {
+	id = saf.9
+	title = saf.9.t
+	desc = saf.9.d
+	picture = GFX_report_event_SAF_attack
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.9.a
+		add_political_power = -10
+		add_stability = -0.02
+		add_manpower = -50
+		
+	}
+}
+
+#Onwards#
+country_event = {
+	id = saf.4
+	title = saf.4.t
+	desc = saf.4.d
+	picture = GFX_report_event_SAF_onwards
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.4.a	
+		add_political_power = 5	
+	}
+}
+
+#Parliment#
+country_event = {
+	id = saf.2
+	title = saf.2.t
+	desc = saf.2.d
+	picture = GFX_report_event_SAF_parliament
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.2.a
+		SAF = {
+			country_event = { id = saf.3 days = 1}
+		}
+		
+	}
+}
+
+#Parliament 2#
+country_event = {
+	id = saf.3
+	title = saf.3.t
+	desc = saf.3.d
+	picture = GFX_report_event_SAF_parliament
+	
+	is_triggered_only = yes
+	
+	#Parliament#
+	option = {
+		name = saf.3.a	
+
+		retire_country_leader = yes
+                set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+			last_election = "1994.5.17"
+			election_frequency = 60
+			long_name = SAF_neutrality_party_long
+			name = SAF_neutrality_party
+                }
+		hidden_effect = {
+			load_focus_tree = saf_parliament_focus
+		}
+		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+					rule = SAF_paths_selection
+					option = SAF_PARLIMENT_PATH_CHOSEN
+				}
+			}
+		}
+	}
+        #Military#
+	option = {
+		name = saf.3.b	
+
+		hidden_effect = {
+			load_focus_tree = saf_military_junta_focus
+		}
+				
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+					rule = SAF_paths_selection
+					option = SAF_MILITARY_PATH_CHOSEN
+				}
+			}
+		}
+	}
+}
+
+
+#Martial Law#
+country_event = {
+	id = saf.5
+	title = saf.5.t
+	desc = saf.5.d
+	picture = GFX_report_event_SAF_martial_law
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.5.a	
+		add_political_power = -10	
+		add_stability = -0.05	
+	}
+}
+
+#Intervention#
+country_event = {
+	id = saf.6
+	title = saf.6.t
+	desc = saf.6.d
+	picture = GFX_report_event_SAF_zimbabwe
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.6.a	
+	}
+}
+
+#Desperate measures#
+country_event = {
+	id = saf.7
+	title = saf.7.t
+	desc = saf.7.d
+	picture = GFX_report_event_SAF_gas
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.7.a
+		add_ideas = SAF_gas_idea
+		news_event = { id = old_times_news.17 days = 5 }	
+	}
+	option = {
+		name = saf.7.b	
+	}
+}
+
+#End#
+country_event = {
+	id = saf.10
+	title = saf.10.t
+	desc = saf.10.d
+	picture = GFX_report_event_SAF_mandela
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saf.10.a
+		hidden_effect = {
+			remove_ideas = SAF_revolts_everywhere_2_idea 
+		}
+		ANC = {
+				inherit_technology = SAF
+				transfer_state = 719
+				add_state_core = 719
+				transfer_state = 923
+				add_state_core = 923
+				load_oob = ANC_collapse_rebellion
+		}
+		BFS = {
+				inherit_technology = SAF
+				transfer_state = 275
+				add_state_core = 275
+				load_oob = BFS_collapse_rebellion
+		}
+		FCD = {
+			inherit_technology = SAF
+				transfer_state = 681
+				add_state_core = 681
+			load_oob = FCD_collapse_rebellion	
+		}
+		SNF = {
+			inherit_technology = SAF
+				transfer_state = 926
+				add_state_core = 926
+				transfer_state = 922
+				add_state_core = 922
+			load_oob = SNF_collapse_rebellion		
+		}
+		    declare_war_on = {
+            type = annex_everything
+            target = ANC
+            }
+		    declare_war_on = {
+            type = annex_everything
+            target = BFS
+            }
+		    declare_war_on = {
+            type = annex_everything
+            target = FCD
+            }
+		    declare_war_on = {
+            type = annex_everything
+            target = SNF
+            }
+		BFS = {
+		    declare_war_on = {
+            type = annex_everything
+            target = FCD
+            }
+            }
+		BFS = {
+		    declare_war_on = {
+            type = annex_everything
+            target = SNF
+            }
+            }
+		BFS = {
+		    declare_war_on = {
+            type = annex_everything
+            target = ANC
+            }
+            }
+		ANC = {
+		    declare_war_on = {
+            type = annex_everything
+            target = BFS
+            }
+            }
+		ANC = {
+		    declare_war_on = {
+            type = annex_everything
+            target = SNF
+            }
+            }
+		ANC = {
+		    declare_war_on = {
+            type = annex_everything
+            target = FCD
+            }
+            }
+		FCD = {
+		    declare_war_on = {
+            type = annex_everything
+            target = ANC
+            }
+            }
+		FCD = {
+		    declare_war_on = {
+            type = annex_everything
+            target = SNF
+            }
+            }
+		FCD = {
+		    declare_war_on = {
+            type = annex_everything
+            target = BFS
+            }
+            }
+		SNF = {
+		    declare_war_on = {
+            type = annex_everything
+            target = BFS
+            }
+            }
+		SNF = {
+		    declare_war_on = {
+            type = annex_everything
+            target = ANC
+            }
+            }
+		SNF = {
+		    declare_war_on = {
+            type = annex_everything
+            target = FCD
+            }
+            }
+		
+	}
+}
+
+#USA refuse#
+country_event = {
+	id = saf_help.1
+	title = saf_help.1.t
+	desc = saf_help.1.d
+	picture = GFX_report_event_SAF_martial_law
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf_help.1.a	
+	}
+}
+
+#Uncretain Future#
+country_event = {
+	id = saf.12
+	title = saf.12.t
+	desc = saf.12.d
+	picture = GFX_report_event_SAF_old_friends
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.12.a	
+		add_political_power = 15
+	}
+}
+
+#Junta stays#
+country_event = {
+	id = saf.11
+	title = saf.11.t
+	desc = saf.11.d
+	picture = GFX_report_event_SAF_martial_law
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.11.a	
+		add_political_power = 20
+		add_stability = 0.03
+	}
+}
+
+#Time's Up#
+country_event = {
+	id = saf.8
+	title = saf.8.t
+	desc = saf.8.d
+	picture = GFX_report_event_SAF_mandela
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		719 = {
+			set_demilitarized_zone = yes
+		}
+		681 = {
+			set_demilitarized_zone = yes
+		}
+		923 = {
+			set_demilitarized_zone = yes
+		}
+	}
+	
+	option = {
+		name = saf.8.a
+		set_global_flag = anc_uprising_begun
+		mark_focus_tree_layout_dirty = yes
+		ANC = {
+				inherit_technology = SAF
+				transfer_state = 719
+				transfer_state = 681
+				transfer_state = 923
+				hidden_effect = {
+					country_event = {id = anc.0}
+				}
+				country_event = { id = ai_mod.1 }
+				}
+		
+			declare_war_on = {
+            type = annex_everything
+            target = ANC
+            }
+		news_event = { id = old_times_news.7 hours = 6 }	
+		
+	}
+
+	option = {
+		name = saf.8.b	
+		set_global_flag = anc_uprising_begun
+		mark_focus_tree_layout_dirty = yes
+		ANC = {
+				inherit_technology = SAF		
+				transfer_state = 719
+				transfer_state = 681
+				transfer_state = 923
+				hidden_effect = {
+					country_event = {id = anc.0}
+				}
+		}
+                ANC = { change_tag_from = SAF }
+		SAF = {
+		    declare_war_on = {
+            type = annex_everything
+            target = ANC
+            }
+		news_event = { id = old_times_news.7 hours = 6 }	
+            }
+	}
+}
+
+#A day in the mine#
+country_event = {
+	id = saf.13
+	title = saf.13.t
+	desc = saf.13.d
+	picture = GFX_report_event_SAF_martial_law
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.13.a	
+
+	}
+}
+
+#Exxaro Mining Company#
+country_event = {
+	id = saf.14
+	title = saf.14.t
+	desc = saf.14.d
+	picture = GFX_report_event_SAF_martial_law
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.14.a	
+
+	}
+}
+
+#Come Visit South Africa!#
+country_event = {
+	id = saf.15
+	title = saf.15.t
+	desc = saf.15.d
+	picture = GFX_report_event_SAF_martial_law
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.15.a	
+
+	}
+}
+
+#State Of The Army#
+country_event = {
+	id = saf.16
+	title = saf.16.t
+	desc = saf.16.d
+	picture = GFX_report_event_SAF_army_1
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.16.a
+	}
+}
+
+#Ask US for Heavy Armaments#
+country_event = {
+	id = saf.17
+	title = saf.17.t
+	desc = saf.17.d
+	picture = GFX_report_event_SAF_united_states_heavy_weapons_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saf.17.a
+
+		SAF = {
+			add_equipment_to_stockpile = {
+				type = mbt_tank_equipment_2
+				amount = 50
+				producer = USA
+			}
+			country_event = { id = saf.18 }
+		}
+
+		ai_chance = {
+			factor = 50
+		}
+	}
+	option = {
+		name = saf.17.b
+
+		SAF = {
+			country_event = { id = saf.19 }
+		}
+
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+#Ask US for Heavy Armaments - Accept#
+country_event = {
+	id = saf.18
+	title = saf.18.t
+	desc = saf.18.d
+	picture = GFX_report_event_SAF_united_states_heavy_weapons_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saf.18.a
+	}
+}
+#Ask US for Heavy Armaments - Reject#
+country_event = {
+	id = saf.19
+	title = saf.19.t
+	desc = saf.19.d
+	picture = GFX_report_event_SAF_united_states_heavy_weapons_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saf.19.a
+	}
+}
+
+#State Of The Air Force#
+country_event = {
+	id = saf.20
+	title = saf.20.t
+	desc = saf.20.d
+	picture = GFX_report_event_SAF_air_force_1
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.20.a
+	}
+}
+
+#State Of The Navy#
+country_event = {
+	id = saf.21
+	title = saf.21.t
+	desc = saf.21.d
+	picture = GFX_report_event_SAF_navy_1
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.21.a
+	}
+}
+
+#Meet with the President#
+country_event = {
+	id = saf.22
+	title = saf.22.t
+	desc = saf.22.d
+	picture = GFX_report_event_SAF_united_states
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.22.a
+
+		SAF = {
+			country_event = { id = saf.23 }
+		}
+	}
+}
+#Meet with the President - Part 2#
+country_event = {
+	id = saf.23
+	title = saf.23.t
+	desc = saf.23.d
+	picture = GFX_report_event_SAF_united_states
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.23.a
+	}
+}
+#The Alliance
+country_event = {
+	id = saf.24
+	title = saf.24.t
+	desc = saf.24.d
+	picture = GFX_report_event_rebelscrushed
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.24.a
+		country_event = { id = saf.25 days = 7}
+	}
+}
+#A Formal Meeting
+country_event = {
+	id = saf.25
+	title = saf.25.t
+	desc = saf.25.d
+	picture = GFX_report_event_SAF_onwards_south_africa
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.25.a
+		country_event = { id = saf.26 days = 14}
+	}
+}
+#True Intentions…? 
+country_event = {
+	id = saf.26
+	title = saf.26.t
+	desc = saf.26.d
+	picture = GFX_report_event_SAF_onwards_south_africa
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.26.a
+	}
+}
+#Chronicles of a Soldier
+country_event = {
+	id = saf.27
+	title = saf.27.t
+	desc = saf.27.d
+	picture = GFX_report_event_SAF_onwards_south_africa
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.27.a
+	}
+}
+#A New Day In South Africa
+country_event = {
+	id = saf.28
+	title = saf.28.t
+	desc = saf.28.d
+	picture = GFX_report_event_SAF_onwards
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.28.a
+	}
+}
+#The End of the ANC
+country_event = {
+	id = saf.29
+	title = saf.29.t
+	desc = saf.29.d
+	picture = GFX_report_event_SAF_onwards_south_africa
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.29.a
+	}
+}
+#End of Hope...
+country_event = {
+	id = saf.30
+	title = saf.30.t
+	desc = saf.30.d
+	picture = GFX_report_event_SAF_onwards_south_africa
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.30.a
+	}
+}
+#Loyalists and Opportunists
+country_event = {
+	id = saf.31
+	title = saf.31.t
+	desc = saf.31.d
+	picture = GFX_report_event_SAF_onwards_south_africa
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.31.a
+	}
+}
+#A PURE Battallion
+country_event = {
+	id = saf.32
+	title = saf.32.t
+	desc = saf.32.d
+	picture = GFX_report_event_SAF_onwards
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.32.a
+	}
+}
+#Love the Junta, or else...
+country_event = {
+	id = saf.33
+	title = saf.33.t
+	desc = saf.33.d
+	picture = GFX_report_event_SAF_onwards
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.33.a
+	}
+}
+#Death of a Traitor
+country_event = {
+	id = saf.34
+	title = saf.34.t
+	desc = saf.34.d
+	picture = GFX_report_event_SAF_onwards
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.34.a
+	}
+}
+#A Pure State
+country_event = {
+	id = saf.35
+	title = saf.35.t
+	desc = saf.35.d
+	picture = GFX_report_event_SAF_onwards
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.35.a
+	}
+}
+#A Great Utopia
+country_event = {
+	id = saf.36
+	title = saf.36.t
+	desc = saf.36.d
+	picture = GFX_report_event_SAF_onwards
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.36.a
+	}
+}
+#Dream Achieved
+country_event = {
+	id = saf.37
+	title = saf.37.t
+	desc = saf.37.d
+	picture = GFX_report_event_SAF_onwards
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = saf.37.a
+	}
+}
+
+#parliment election
+country_event = {
+	id = saf.38
+	title = saf.38.t
+	desc = saf.38.d
+	picture = GFX_report_event_SAF_onwards
+	
+	is_triggered_only = yes
+	
+	
+	option = { #anc
+		name = saf.38.a
+		set_politics = {
+			ruling_party = social_democracy
+		}
+		add_popularity = {
+			ideology = social_democracy
+			popularity = 0.10
+		}
+		ai_chance = {
+		factor = 55
+		}
+	}
+	
+	option = { #national party
+		name = saf.38.b
+		set_politics = {
+			ruling_party = democratic
+		}		
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.10
+		}		
+		ai_chance = {
+		factor = 15
+		}
+	}	
+	
+	option = { #liberals
+		name = saf.38.c
+		set_politics = {
+			ruling_party = liberalism
+		}	
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.10
+		}
+		ai_chance = {
+		factor = 15
+		}		
+	}	
+}
+
+#choose flag
+country_event = {
+	id = saf.39
+	title = saf.39.t
+	desc = saf.39.d
+	picture = GFX_report_event_SAF_onwards
+	
+	is_triggered_only = yes
+	
+	
+	option = { #anc
+		name = saf.39.a
+		set_cosmetic_tag = SAF_anc_flag
+		custom_effect_tooltip = flag_proposal_1_tt		
+		ai_chance = {
+		factor = 15
+		}
+	}
+	
+	option = { #random submitted flag
+		name = saf.39.b
+		set_cosmetic_tag = SAF_flag_one
+		custom_effect_tooltip = flag_proposal_2_tt		
+		ai_chance = {
+		factor = 15
+		}
+	}	
+	
+	option = { #brownell proposal (irl flag) 
+		name = saf.39.c
+		set_cosmetic_tag = SAF_flag_two
+		custom_effect_tooltip = flag_proposal_3_tt
+		ai_chance = {
+		factor = 15
+		}		
+	}	
+}
+
+#parliment election - racist
+country_event = {
+	id = saf.40
+	title = saf.40.t
+	desc = saf.40.d
+	picture = GFX_report_event_SAF_onwards
+	
+	is_triggered_only = yes
+	
+	
+	option = { #continue klark rule
+		name = saf.40.a
+		add_political_power = 100
+		ai_chance = {
+		factor = 15
+		}
+	}
+	
+	option = { #appoint black person
+		name = saf.40.b
+		add_stability = 0.10
+		retire_country_leader = yes
+		promote_character = SAF_buthelezi
+		set_party_name = {
+			ideology = neutrality
+			name = SAF_neutrality_IFP_party
+			long_name = SAF_neutrality_IFP_party_long
+		}				
+		ai_chance = {
+		factor = 15
+		}
+	}	
+	
+}
+
+#Viljoen succeeds over Meiring
+country_event = {
+	id = saf_hidden.2
+	hidden = yes
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+	
+	immediate = {
+		saf_viljoen_succeeds = yes
+		
+		remove_decision = saf_great_game_countdown
+		remove_decision = saf_proofs_about_viljoens_treason
+		remove_decision = saf_spread_propaganda
+		remove_decision = saf_expand_meiring_influence
+	}
+	option = {
+		name = saf_hidden.2.a
+	}
+}
+#Meiring succeeds over Viljoen
+country_event = {
+	id = saf_hidden.3
+	hidden = yes
+	
+	is_triggered_only = yes
+	#fire_only_once = yes
+	
+	immediate = {
+		saf_meiring_succeeds = yes
+		
+		remove_decision = saf_great_game_countdown
+		remove_decision = saf_proofs_about_viljoens_treason
+		remove_decision = saf_spread_propaganda
+		remove_decision = saf_expand_meiring_influence
+	}
+	option = {
+		name = saf_hidden.3.a
+	}
+}
+
+#Pacification Countdown
+country_event = {
+	id = saf_pacification.1
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		saf_start_random_turmoil = yes
+		random_list = {
+			10 = {
+				country_event = { id = saf_pacification.1 days = 14 }
+			}
+			10 = {
+				country_event = { id = saf_pacification.1 days = 21 }
+			}
+			10 = {
+				country_event = { id = saf_pacification.1 days = 42 }
+			}
+		}
+	}
+	option = {
+		name = saf_pacification.1.a
+	}
+}
+#Turmoil in ?event_target:state_turmoil_brewing
+country_event = {
+	id = saf_pacification.2
+	title = saf_pacification.2.t
+	desc = saf_pacification.2.d
+	picture = GFX_report_event_SAF_onwards
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		var:state_turmoil_brewing = {
+			#saf_find_var_for_turmoil_state = yes
+			
+		}
+	}
+	option = {
+		name = saf_pacification.2.a
+	}
+}
+#Daily Checks
+country_event = {
+	id = saf_pacification.3
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = { check_variable = { saf_mean_stability < 11 } }
+			saf_pacification_collapse = yes
+		}
+		if = {
+			limit = { check_variable = { saf_stability_angola > 99 } NOT = { check_variable = { saf_pacification_pacified^1 = 1 } } }
+			country_event = saf_pacification.4
+		}
+		if = {
+			limit = { check_variable = { saf_stability_central > 99 } NOT = { check_variable = { saf_pacification_pacified^2 = 1 } } }
+			country_event = saf_pacification.5
+		}
+		if = {
+			limit = { check_variable = { saf_stability_congo > 99 } NOT = { check_variable = { saf_pacification_pacified^3 = 1 } } }
+			country_event = saf_pacification.6
+		}
+		if = {
+			limit = { check_variable = { saf_stability_east > 99 } NOT = { check_variable = { saf_pacification_pacified^4 = 1 } } }
+			country_event = saf_pacification.7
+		}
+		if = {
+			limit = { check_variable = { saf_stability_highlands > 99 } NOT = { check_variable = { saf_pacification_pacified^5 = 1 } } }
+			country_event = saf_pacification.8
+		}
+		if = {
+			limit = { check_variable = { saf_stability_kalahari > 99 } NOT = { check_variable = { saf_pacification_pacified^6 = 1 } } }
+			country_event = saf_pacification.9
+		}
+		if = {
+			limit = { check_variable = { saf_stability_madagascar > 99 } NOT = { check_variable = { saf_pacification_pacified^7 = 1 } } }
+			country_event = saf_pacification.10
+		}
+		if = {
+			limit = { check_variable = { saf_stability_zambezi > 99 } NOT = { check_variable = { saf_pacification_pacified^8 = 1 } } }
+			country_event = saf_pacification.11
+		}
+		if = {
+			limit = { 
+				check_variable = { saf_pacification_pacified^1 = 1 }
+				check_variable = { saf_pacification_pacified^2 = 1 }
+				check_variable = { saf_pacification_pacified^3 = 1 }
+				check_variable = { saf_pacification_pacified^4 = 1 }
+				check_variable = { saf_pacification_pacified^5 = 1 }
+				check_variable = { saf_pacification_pacified^6 = 1 }
+				check_variable = { saf_pacification_pacified^7 = 1 }
+				check_variable = { saf_pacification_pacified^8 = 1 }
+			}
+			set_country_flag = saf_nation_pacified
+			country_event = saf_pacification.12
+		}
+		if = {
+			limit = { NOT = { has_country_flag = saf_nation_pacified } }
+			country_event = { id = saf_pacification.3 days = 1 }
+			saf_stabilising_daily = yes
+			saf_calculate_mean_stability = yes
+		}
+	}
+	option = {
+		name = saf_pacification.3.a
+	}
+}
+#Core Angola
+country_event = {
+	id = saf_pacification.4
+	title = saf_pacification.4.t
+	desc = saf_pacification.4.d
+	picture = GFX_report_event_SAF_onwards
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saf_pacification.4.a
+		540 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		888 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		889 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		saf_reset_map_area = yes
+		set_variable = { saf_pacification_pacified^1 = 1 }
+	}
+}
+#Core Central
+country_event = {
+	id = saf_pacification.5
+	title = saf_pacification.5.t
+	desc = saf_pacification.5.d
+	picture = GFX_report_event_SAF_onwards
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saf_pacification.5.a
+		297 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		539 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		772 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		saf_reset_map_area = yes
+		set_variable = { saf_pacification_pacified^2 = 1 }
+	}
+}
+#Core Congo
+country_event = {
+	id = saf_pacification.6
+	title = saf_pacification.6.t
+	desc = saf_pacification.6.d
+	picture = GFX_report_event_SAF_onwards
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saf_pacification.6.a
+		295 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		538 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		718 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		796 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		929 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		930 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		931 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		932 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		933 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		958 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		saf_reset_map_area = yes
+		set_variable = { saf_pacification_pacified^3 = 1 }
+	}
+}
+#Core East
+country_event = {
+	id = saf_pacification.7
+	title = saf_pacification.7.t
+	desc = saf_pacification.7.d
+	picture = GFX_report_event_SAF_onwards
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saf_pacification.7.a
+		546 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		547 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		548 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		768 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		769 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		897 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		898 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		899 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		saf_reset_map_area = yes
+		set_variable = { saf_pacification_pacified^4 = 1 }
+	}
+}
+#Core Highlands
+country_event = {
+	id = saf_pacification.8
+	title = saf_pacification.8.t
+	desc = saf_pacification.8.d
+	picture = GFX_report_event_SAF_onwards
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saf_pacification.8.a
+		951 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		952 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		saf_reset_map_area = yes
+		set_variable = { saf_pacification_pacified^5 = 1 }
+	}
+}
+#Core Kalahari
+country_event = {
+	id = saf_pacification.9
+	title = saf_pacification.9.t
+	desc = saf_pacification.9.d
+	picture = GFX_report_event_SAF_onwards
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saf_pacification.9.a
+		541 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		542 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		980 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		saf_reset_map_area = yes
+		set_variable = { saf_pacification_pacified^6 = 1 }
+	}
+}
+#Core Madagascar
+country_event = {
+	id = saf_pacification.10
+	title = saf_pacification.10.t
+	desc = saf_pacification.10.d
+	picture = GFX_report_event_SAF_onwards
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saf_pacification.10.a
+		543 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		saf_reset_map_area = yes
+		set_variable = { saf_pacification_pacified^7 = 1 }
+	}
+}
+#Core Zambezi
+country_event = {
+	id = saf_pacification.11
+	title = saf_pacification.11.t
+	desc = saf_pacification.11.d
+	picture = GFX_report_event_SAF_onwards
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saf_pacification.11.a
+		544 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		545 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		770 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		771 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		890 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		891 = { add_core_of = SAF clr_state_flag = saf_to_be_pacified }
+		saf_reset_map_area = yes
+		set_variable = { saf_pacification_pacified^8 = 1 }
+	}
+}
+#Pacification Complete
+country_event = {
+	id = saf_pacification.12
+	title = saf_pacification.12.t
+	desc = saf_pacification.12.d
+	picture = GFX_report_event_SAF_onwards
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = saf_pacification.12.a
+		add_political_power = 150
+	}
+}

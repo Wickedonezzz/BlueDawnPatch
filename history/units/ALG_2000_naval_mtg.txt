@@ -1,0 +1,40 @@
+units = {
+	fleet = {
+		name = "Albahriat Aljazayiria"
+		naval_base = 1145 # Algiers #
+		task_force = {
+			name = "Albahriat Aljazayiria"
+			location = 1145 # Algiers #
+			ship = { name = "ANS Mourad Rais" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = ALG creator = SOV version_name = "Koni II Class (Pr. 1159T)" } } }
+			ship = { name = "ANS Rais Kellich" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = ALG creator = SOV version_name = "Koni II Class (Pr. 1159T)" } } }
+			ship = { name = "ANS Rais Korfu" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = ALG creator = SOV version_name = "Koni II Class (Pr. 1159T)" } } }
+
+			ship = { name = "ANS Djebel Chenoua" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = ALG version_name = "Djebel Chenoua Class" } } }
+			ship = { name = "ANS El Chihab" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = ALG version_name = "Djebel Chenoua Class" } } }
+			ship = { name = "ANS Rais Hamidou" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = ALG creator = SOV version_name = "Nanuchka II Class (Pr. 1234E)" } } }
+			ship = { name = "ANS Salah Rais" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = ALG creator = SOV version_name = "Nanuchka II Class (Pr. 1234E)" } } }
+			ship = { name = "ANS Rais Ali" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = ALG creator = SOV version_name = "Nanuchka II Class (Pr. 1234E)" } } }
+		}
+		task_force = {
+			name = "Albahriat Aljazayiriat Alghawaasa"
+			location = 1145 # Algiers #
+			ship = { name = "ANS Rais Hadj Mubarek" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = ALG creator = SOV version_name = "Kilo Class (Pr. 877EKM)" } } }
+			ship = { name = "ANS El Hadj Slimane" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = ALG creator = SOV version_name = "Kilo Class (Pr. 877EKM)" } } }
+		}
+	}
+}
+
+instant_effect = {
+	# Corvettes #
+	add_equipment_production = {
+		equipment = {
+			type = corvette_hull_2
+			creator = "ALG" 
+			version_name = "Djebel Chenoua Class"
+		}
+		name = "ANS Al Kirch"
+		requested_factories = 1
+		progress = 0.43
+		amount = 1
+	}
+}

@@ -1,0 +1,22 @@
+﻿capital = 729
+
+set_research_slots = 2
+
+set_politics = {
+	ruling_party = reformed_communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 6
+	reformed_communism = 49
+	socialism = 15
+	liberalism = 26
+	democratic = 4
+}
+
+recruit_character = MCU_edmund_ho
+
+add_ideas = china_aligned_nation

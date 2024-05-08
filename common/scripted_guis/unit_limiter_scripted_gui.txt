@@ -1,0 +1,14 @@
+scripted_gui = {
+
+	unit_limiter_gui = {
+		window_name = "max_units_info"
+		context_type = player_context
+		parent_window_token = deployment_tab
+
+		visible = {
+			always = yes
+		}
+
+	}
+	
+}

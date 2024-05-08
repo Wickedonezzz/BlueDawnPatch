@@ -1,0 +1,19 @@
+﻿capital = 556
+
+set_convoys = 0
+
+add_ideas = west_africa_ECOWAS
+
+recruit_character = MLI_alpha_oumar
+
+set_politics = {
+	ruling_party = socialism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	socialism = 70
+	democratic = 15
+	social_democracy = 15
+}

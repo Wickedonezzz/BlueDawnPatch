@@ -1,0 +1,59 @@
+units = {
+	fleet = {
+		name = "Flota Argentina"
+		naval_base = 1639 # Bahía Blanca #
+		task_force = {
+			name = "Flota Argentina"
+			location = 1639 # Bahía Blanca #
+			ship = { name = "ARA Almirante Brown" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = ARG version_name = "Almirante Brown Class" } } }
+			ship = { name = "ARA La Argentina" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = ARG version_name = "Almirante Brown Class" } } }
+			ship = { name = "ARA Heroína" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = ARG version_name = "Almirante Brown Class" } } }
+			ship = { name = "ARA Sarandí" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = ARG version_name = "Almirante Brown Class" } } }
+			ship = { name = "ARA Hércules" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = ARG version_name = "Hércules Class" } } }
+			ship = { name = "ARA Santísima Trinidad" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = ARG version_name = "Hércules Class" } } }
+
+			ship = { name = "ARA Espora" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = ARG version_name = "Espora Class" } } }
+			ship = { name = "ARA Rosales" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = ARG version_name = "Espora Class" } } }
+			ship = { name = "ARA Spiro" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = ARG version_name = "Espora Class" } } }
+			ship = { name = "ARA Parker" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = ARG version_name = "Espora Class" } } }
+			ship = { name = "ARA Durmmond" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = ARG creator = FRA version_name = "Durmmond Class" } } }
+			ship = { name = "ARA Guerrico" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = ARG creator = FRA version_name = "Durmmond Class" } } }
+			ship = { name = "ARA Granville" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = ARG creator = FRA version_name = "Durmmond Class" } } }
+			ship = { name = "ARA King" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = ARG version_name = "King Class" } } }
+			ship = { name = "ARA Murature" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = ARG version_name = "King Class" } } }
+		}
+		task_force = {
+			name = "Flota Submarina Argentina"
+			location = 1639 # Bahía Blanca #
+			ship = { name = "ARA Santa Cruz" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = ARG version_name = "Santa Cruz Class" } } }
+			ship = { name = "ARA San Juan" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = ARG version_name = "Santa Cruz Class" } } }
+			ship = { name = "ARA Salta" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = ARG creator = GER version_name = "Type 209/1200 Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+	# Corvettes #
+	add_equipment_production = {
+		equipment = {
+			type = corvette_hull_2
+			creator = "ARG" 
+			version_name = "Espora Class"
+		}
+		name = "ARA Robinson"
+		requested_factories = 1
+		progress = 0.96
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = corvette_hull_2
+			creator = "ARG" 
+			version_name = "Espora Class"
+		}
+		name = "ARA Gómez Roca"
+		requested_factories = 1
+		progress = 0.79
+		amount = 1
+	}
+}

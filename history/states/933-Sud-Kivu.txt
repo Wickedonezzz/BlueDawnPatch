@@ -1,0 +1,31 @@
+
+state={
+	id=933
+	name="STATE_933"
+	resources={
+		rubber=10.000
+	}
+
+	history={
+		owner = RGO
+		add_core_of = COG
+		add_core_of = RGO
+		add_core_of = RCK
+		buildings = {
+			air_base = 1
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 2
+
+		}
+
+	}
+
+	provinces={
+		1181 4201 4941 7161 10766 13391 13406 
+	}
+	manpower=5266950
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

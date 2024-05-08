@@ -1,0 +1,59 @@
+units = {
+	fleet = {
+		name = "Noordzee Vloot"
+		naval_base = 3314 # Den Helder #
+		task_force = {
+			name = "Noordzee Oppervlaktevloot"
+			location = 3314 # Den Helder #
+			ship = { name = "HNLMS Karel Doorman" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = HOL version_name = "Karel Doorman Class" } } }
+			ship = { name = "HNLMS Willem van der Zaan" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = HOL version_name = "Karel Doorman Class" } } }
+			ship = { name = "HNLMS Tjerk Hiddes" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = HOL version_name = "Karel Doorman Class" } } }
+			ship = { name = "HNLMS Van Amstel" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = HOL version_name = "Karel Doorman Class" } } }
+			ship = { name = "HNLMS Abraham van der Hurst" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = HOL version_name = "Karel Doorman Class" } } }
+			ship = { name = "HNLMS Van Nes" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = HOL version_name = "Karel Doorman Class" } } }
+			ship = { name = "HNLMS Van Galen" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = HOL version_name = "Karel Doorman Class" } } }
+			ship = { name = "HNLMS Van Speijk" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = HOL version_name = "Karel Doorman Class" } } }
+			ship = { name = "HNLMS De Ruyter" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = HOL version_name = "Tromp Class" } } }
+			ship = { name = "HNLMS Philips van Almonde" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = HOL version_name = "Kortenaer Class" } } }
+			ship = { name = "HNLMS Bloys van Treslong" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = HOL version_name = "Kortenaer Class" } } }
+			ship = { name = "HNLMS Jan van Brakel" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = HOL version_name = "Kortenaer Class" } } }
+			ship = { name = "HNLMS Pieter Florisz" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = HOL version_name = "Kortenaer Class" } } }
+			ship = { name = "HNLMS Jacob van Heemskerck" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = HOL version_name = "Jacob van Heemskerck Class" } } }
+			ship = { name = "HNLMS Witte de With" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = HOL version_name = "Jacob van Heemskerck Class" } } }
+		}
+		task_force = {
+			name = "Onderzeebootvloot Noordzee"
+			location = 3314 # Den Helder #
+			ship = { name = "HNLMS Walrus" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = HOL version_name = "Walrus Class" } } }
+			ship = { name = "HNLMS Zeeleeuw" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = HOL version_name = "Walrus Class" } } }
+			ship = { name = "HNLMS Dolfijn" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = HOL version_name = "Walrus Class" } } }
+			ship = { name = "HNLMS Bruinvis" definition = attack_submarine equipment = { attack_submarine_hull_2 = { amount = 1 owner = HOL version_name = "Walrus Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+	# Destroyer #
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_hull_4
+			creator = "HOL" 
+			version_name = "De Zeven Provinciën Class"
+		}
+		name = "HNLMS De Zeven Provinciën"
+		requested_factories = 1
+		progress = 0.37
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_hull_4
+			creator = "HOL" 
+			version_name = "De Zeven Provinciën Class"
+		}
+		name = "HNLMS Tromp"
+		requested_factories = 1
+		progress = 0.09
+		amount = 1
+	}
+}

@@ -1,0 +1,29 @@
+﻿air_wings = {
+	# Land Wings #
+	143 = {
+		# Fighters -- F-16, F-5
+		fighter_equipment_2 =  { # F-16 #
+			owner = "NOR" 
+			creator = USA
+			amount = 30
+		}
+		fighter_equipment_2 =  { # F-16 #
+			owner = "NOR" 
+			creator = USA
+			amount = 28
+		}
+		fighter_equipment_0 =  { # F-5 #
+			owner = "NOR" 
+			creator = USA
+			amount = 15
+		}
+	}
+	110 = {
+		# Transports -- C-130
+		transport_plane_equipment_1 =  {
+			owner = "NOR"
+			creator = USA
+			amount = 6
+		}
+	}
+}

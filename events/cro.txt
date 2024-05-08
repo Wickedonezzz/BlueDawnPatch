@@ -1,0 +1,183 @@
+add_namespace = cro
+
+#seizeing osijek event for croatia#
+country_event = {
+	id = cro.1
+	title = cro.1.t
+	desc = cro.1.d
+	picture = GFX_report_event_YUG_bossnia
+	
+	is_triggered_only = yes
+	
+	#oh hell yeah#
+	option = {
+	name = cro.1.a
+	add_political_power = 50
+	add_war_support = 0.05
+		YUG = {
+
+			country_event = {id = yug_rebel.2}
+			
+		}
+		
+	}
+
+}
+
+#election 2000#
+country_event = {
+	id = cro.2
+	title = cro.2.t
+	desc = cro.2.d
+	picture = GFX_report_event_YUG_bossnia
+	
+	trigger = {
+		date > 2000.01.15
+		original_tag = CRO
+	}
+	
+	fire_only_once = yes
+	
+	#another tudman win#
+	option = {
+	name = cro.2.a
+		news_event = {id = old_times_news.174}
+		set_popularities = {
+			communism = 0
+			reformed_communism = 0
+			social_democracy = 15
+			liberalism = 15
+			democratic = 5
+			neutrality = 53
+			paternal_autocracy = 0
+			fascism = 12
+		}
+		swap_ideas = {
+			remove_idea = CRO_tudmanism
+			add_idea = CRO_tudmanism_2
+		}
+		ai_chance = {
+		factor = 50
+		}		
+	}
+	
+	#anti tudman win#
+	option = {
+	name = cro.2.b
+		news_event = {id = old_times_news.175}
+		set_politics = {
+			ruling_party = liberalism
+			last_election = "1930.11.9"
+			election_frequency = 48
+			elections_allowed = no
+		}
+
+		set_popularities = {
+			communism = 0
+			reformed_communism = 0
+			social_democracy = 25
+			liberalism = 35
+			democratic = 17
+			neutrality = 13
+			paternal_autocracy = 0
+			fascism = 10
+		}
+		swap_ideas = {
+			remove_idea = CRO_tudmanism
+			add_idea = CRO_tudmanism_3
+		}	
+		ai_chance = {
+		factor = 20
+		}		
+	}
+}
+
+#election 2003#
+country_event = {
+	id = cro.3
+	title = cro.3.t
+	desc = cro.3.d
+	picture = GFX_report_event_YUG_bossnia
+	
+	trigger = {
+		date > 2003.11.15
+		original_tag = CRO
+	}
+	
+	fire_only_once = yes
+	
+	#another tudman win#
+	option = {
+	name = cro.3.a
+		trigger = {
+			has_government = neutrality
+		}
+		set_popularities = {
+			communism = 0
+			reformed_communism = 0
+			social_democracy = 0
+			liberalism = 10
+			democratic = 10
+			neutrality = 58
+			paternal_autocracy = 0
+			fascism = 22
+		}
+		
+	}
+	
+	#socdem win#
+	option = {
+	name = cro.3.b
+		trigger = {
+			NOT = {has_government = neutrality}
+		}
+		set_politics = {
+			ruling_party = social_democracy
+			last_election = "1930.11.9"
+			election_frequency = 48
+			elections_allowed = no
+		}
+
+		set_popularities = {
+			communism = 0
+			reformed_communism = 0
+			social_democracy = 38
+			liberalism = 25
+			democratic = 17
+			neutrality = 10
+			paternal_autocracy = 0
+			fascism = 10
+		}
+		ai_chance = {
+		factor = 50
+		}			
+	}
+	
+	#conservative win#
+	option = {
+	name = cro.3.c
+		trigger = {
+			NOT = {has_government = neutrality}
+		}
+		set_politics = {
+			ruling_party = democratic
+			last_election = "1930.11.9"
+			election_frequency = 48
+			elections_allowed = no
+		}
+
+		set_popularities = {
+			communism = 0
+			reformed_communism = 0
+			social_democracy = 30
+			liberalism = 30
+			democratic = 35
+			neutrality = 0
+			paternal_autocracy = 0
+			fascism = 5
+		}
+		ai_chance = {
+		factor = 15
+		}			
+	}	
+}

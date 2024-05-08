@@ -1,0 +1,23 @@
+state={
+	id=1002
+	name="STATE_1002"
+	history={
+		owner = RAJ
+		add_core_of = RAJ
+		add_core_of = PAK
+		buildings = {
+			infrastructure = 3
+			
+		}
+		victory_points = {
+			10905 2 
+		}
+
+	}			
+	provinces={
+		8005 10905 13653 
+	}
+	manpower=756234
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

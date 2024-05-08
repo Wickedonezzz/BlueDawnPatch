@@ -1,0 +1,105 @@
+add_namespace = kashmir
+add_namespace = india
+country_event = {
+	id = india.1
+	title = india.1.t
+	desc = india.1.d
+	picture = GFX_report_event_SOV_1991
+	
+	is_triggered_only = yes
+	
+	option = {
+
+        news_event = {
+            id = old_times_news.167
+            hours = 1
+        }
+
+	}
+}
+country_event = {
+	id = kashmir.1
+	title = kashmir.1.t
+	desc = kashmir.1.d
+	picture = GFX_report_event_SOV_1991
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = kashmir.1.a
+
+        news_event = {
+            id = old_times_news.117
+            hours = 5
+        }
+
+    start_border_war = {
+    change_state_after_war = yes
+    attacker = {
+        state = 1002
+        num_provinces = 3
+        on_win = kashmir.3
+        on_lose = kashmir.2
+        on_cancel = japan_border_conflict.4
+        modifier = 0.1
+        dig_in_factor = 0
+        terrain_factor = 0
+    }	
+    defender = {
+        state = 1001
+        num_provinces = 3
+        on_win = kashmir.2
+        on_lose = kashmir.3
+        on_cancel = japan_border_conflict.4
+            }
+        }
+	}
+}
+
+country_event = {
+    id = kashmir.2
+	title = kashmir.2.t
+	desc = kashmir.2.d
+	picture = GFX_report_event_SOV_1991
+
+    is_triggered_only = yes
+
+    option = {
+        name = kashmir.2.a
+
+        news_event = {
+            id = old_times_news.116
+            hours = 5
+        }
+
+        PAK = {
+        transfer_state = 1002
+        add_state_core = 1002
+        }
+
+    }
+}
+
+country_event = {
+    id = kashmir.3
+	title = kashmir.3.t
+	desc = kashmir.3.d
+	picture = GFX_report_event_SOV_1991
+
+    is_triggered_only = yes
+
+    option = {
+        name = kashmir.3.a
+
+        news_event = {
+            id = old_times_news.118
+            hours = 5
+        }
+
+        RAJ = {
+        transfer_state = 1001
+        add_state_core = 1001
+        }
+
+    }
+}

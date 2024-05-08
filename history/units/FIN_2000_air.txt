@@ -1,0 +1,33 @@
+﻿air_wings = {
+	# Land Wings #
+	111 = {
+		# Carrier Fighters -- F/A-18C
+		carrier_fighter_equipment_2 =  { # F/A-18C #
+			owner = "FIN" 
+			creator = USA
+			amount = 24
+		}
+
+		# Interceptors -- J-35
+		interceptor_equipment_0 =  { # J-35 #
+			owner = "FIN" 
+			creator = SWE
+			amount = 19
+		}
+
+		# Attackers -- Hawk
+		attacker_equipment_1 =  { # Hawk #
+			owner = "FIN" 
+			creator = ENG
+			amount = 20
+		}
+	}
+	150 = {
+		# Carrier Fighters -- F/A-18C
+		carrier_fighter_equipment_2 =  { # F/A-18C #
+			owner = "FIN" 
+			creator = USA
+			amount = 24
+		}
+	}
+}

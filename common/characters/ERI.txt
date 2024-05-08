@@ -1,0 +1,48 @@
+characters = {
+
+	ERI_isaias_afwerki = {
+		name = "Isaias Afwerki"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Africa/isaias_afwerki.dds"
+			}
+			army = {
+				large = "gfx/leaders/Africa/isaias_afwerki.dds"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {guerilla_fighter}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		field_marshal={
+			traits={infantry_leader}
+			skill=4
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	
+	ERI_mesfin_hagos = {
+		name = "Mesfin Hagos"
+		portraits = {
+			army = {
+				large = "gfx/leaders/Africa/Mesfin_Hagos.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+}

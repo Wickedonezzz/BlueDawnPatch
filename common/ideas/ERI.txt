@@ -1,0 +1,29 @@
+ideas = {
+	
+	country = {
+	
+		ERI_a_generation_of_warriors = {
+			name = ERI_a_generation_of_warriors_name
+
+			removal_cost = -1
+
+			picture = ERI_warrior_generation_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				war_support_factor = 0.25
+				defensive_war_stability_factor = 0.3
+				army_core_defence_factor = 0.15
+				army_core_attack_factor = 0.1
+				army_attack_against_major_factor = 0.2
+				army_defence_against_major_factor = 0.2
+				resistance_target_on_our_occupied_states = 0.5
+				surrender_limit = 1.0
+			}
+		}
+		
+	}
+}

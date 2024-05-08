@@ -1,0 +1,267 @@
+defined_text = {
+	name = viljoen_change_increase_or_decrease
+	
+	text = {
+		trigger = {
+			check_variable = { viljoen_cop_change_influence > 0 }
+		}
+		localization_key = viljoen_change_increase
+	}
+	text = {
+		trigger = {
+			check_variable = { viljoen_cop_change_influence < 0 }
+		}
+		localization_key = viljoen_change_decrease
+	}
+}
+
+defined_text = {
+	name = viljoen_cop_change_influence_text
+	
+	#>25 - High
+	#11-25 - Moderately
+	#1-10 - Lightly
+	text = {
+		trigger = {
+			OR = { check_variable = { viljoen_cop_change_influence > 25 } check_variable = { viljoen_cop_change_influence < -25 } }
+		}
+		localization_key = viljoen_cop_change_influence_text_highly
+	}
+	text = {
+		trigger = {
+			OR = { 
+				AND = { check_variable = { viljoen_cop_change_influence > 10 } check_variable = { viljoen_cop_change_influence < 26 } }
+				AND = { check_variable = { viljoen_cop_change_influence < -10 } check_variable = { viljoen_cop_change_influence > -26 } }
+			}
+		}
+		localization_key = viljoen_cop_change_influence_text_moderately
+	}
+	text = {
+		trigger = {
+			OR = { check_variable = { viljoen_cop_change_influence < 11 } check_variable = { viljoen_cop_change_influence > -11 } }
+		}
+		localization_key = viljoen_cop_change_influence_text_lightly
+	}
+}
+
+defined_text = {
+	name = PACIFICATION_LEVEL_MEAN
+	
+	text = { trigger = { check_variable = { saf_mean_stability > 99 } } localization_key = saf_state_turmoil_level_0 }
+	text = { trigger = { AND = { check_variable = { saf_mean_stability < 100 } check_variable = { saf_mean_stability > 80 } } } localization_key = saf_state_turmoil_level_1 }
+	text = { trigger = { AND = { check_variable = { saf_mean_stability < 81 } check_variable = { saf_mean_stability > 60 } } } localization_key = saf_state_turmoil_level_2 }
+	text = { trigger = { AND = { check_variable = { saf_mean_stability < 61 } check_variable = { saf_mean_stability > 30 } } } localization_key = saf_state_turmoil_level_3 }
+	text = { trigger = { AND = { check_variable = { saf_mean_stability < 31 } check_variable = { saf_mean_stability > 10 } } } localization_key = saf_state_turmoil_level_4 }
+	text = { trigger = { AND = { check_variable = { saf_mean_stability < 11 } check_variable = { saf_mean_stability > 0 } } } localization_key = saf_state_turmoil_level_5 }	
+}
+
+
+defined_text = {
+	name = viljoen_pacification_angola
+	
+	text = { trigger = { OR = { UNI = { exists = yes } ANG = { exists = yes } } } localization_key = saf_state_turmoil_level_6 }
+	text = { trigger = { check_variable = { turmoil_angola > 99 } } localization_key = saf_state_turmoil_level_0 }
+	text = { trigger = { AND = { check_variable = { turmoil_angola < 100 } check_variable = { turmoil_angola > 80 } } } localization_key = saf_state_turmoil_level_1 }
+	text = { trigger = { AND = { check_variable = { turmoil_angola < 81 } check_variable = { turmoil_angola > 60 } } } localization_key = saf_state_turmoil_level_2 }
+	text = { trigger = { AND = { check_variable = { turmoil_angola < 61 } check_variable = { turmoil_angola > 30 } } } localization_key = saf_state_turmoil_level_3 }
+	text = { trigger = { AND = { check_variable = { turmoil_angola < 31 } check_variable = { turmoil_angola > 10 } } } localization_key = saf_state_turmoil_level_4 }
+	text = { trigger = { AND = { check_variable = { turmoil_angola < 11 } check_variable = { turmoil_angola > 0 } } } localization_key = saf_state_turmoil_level_5 }	
+}
+defined_text = {
+	name = viljoen_pacification_botswana
+	
+	text = { trigger = { BOT = { exists = yes } } localization_key = saf_state_turmoil_level_6 }
+	text = { trigger = { check_variable = { turmoil_botswana > 99 } } localization_key = saf_state_turmoil_level_0 }
+	text = { trigger = { AND = { check_variable = { turmoil_botswana < 100 } check_variable = { turmoil_botswana > 80 } } } localization_key = saf_state_turmoil_level_1 }
+	text = { trigger = { AND = { check_variable = { turmoil_botswana < 81 } check_variable = { turmoil_botswana > 60 } } } localization_key = saf_state_turmoil_level_2 }
+	text = { trigger = { AND = { check_variable = { turmoil_botswana < 61 } check_variable = { turmoil_botswana > 30 } } } localization_key = saf_state_turmoil_level_3 }
+	text = { trigger = { AND = { check_variable = { turmoil_botswana < 31 } check_variable = { turmoil_botswana > 10 } } } localization_key = saf_state_turmoil_level_4 }
+	text = { trigger = { AND = { check_variable = { turmoil_botswana < 11 } check_variable = { turmoil_botswana > 0 } } } localization_key = saf_state_turmoil_level_5 }	
+}
+defined_text = {
+	name = viljoen_pacification_burundi
+	
+	text = { trigger = { BRD = { exists = yes } } localization_key = saf_state_turmoil_level_6 }
+	text = { trigger = { check_variable = { turmoil_burundi > 99 } } localization_key = saf_state_turmoil_level_0 }
+	text = { trigger = { AND = { check_variable = { turmoil_burundi < 100 } check_variable = { turmoil_burundi > 80 } } } localization_key = saf_state_turmoil_level_1 }
+	text = { trigger = { AND = { check_variable = { turmoil_burundi < 81 } check_variable = { turmoil_burundi > 60 } } } localization_key = saf_state_turmoil_level_2 }
+	text = { trigger = { AND = { check_variable = { turmoil_burundi < 61 } check_variable = { turmoil_burundi > 30 } } } localization_key = saf_state_turmoil_level_3 }
+	text = { trigger = { AND = { check_variable = { turmoil_burundi < 31 } check_variable = { turmoil_burundi > 10 } } } localization_key = saf_state_turmoil_level_4 }
+	text = { trigger = { AND = { check_variable = { turmoil_burundi < 11 } check_variable = { turmoil_burundi > 0 } } } localization_key = saf_state_turmoil_level_5 }	
+}
+defined_text = {
+	name = viljoen_pacification_congo
+	
+	text = { trigger = { OR = { COG = { exists = yes } RGO = { exists = yes } RCK = { exists = yes } } } localization_key = saf_state_turmoil_level_6 }
+	text = { trigger = { check_variable = { turmoil_congo > 99 } } localization_key = saf_state_turmoil_level_0 }
+	text = { trigger = { AND = { check_variable = { turmoil_congo < 100 } check_variable = { turmoil_congo > 80 } } } localization_key = saf_state_turmoil_level_1 }
+	text = { trigger = { AND = { check_variable = { turmoil_congo < 81 } check_variable = { turmoil_congo > 60 } } } localization_key = saf_state_turmoil_level_2 }
+	text = { trigger = { AND = { check_variable = { turmoil_congo < 61 } check_variable = { turmoil_congo > 30 } } } localization_key = saf_state_turmoil_level_3 }
+	text = { trigger = { AND = { check_variable = { turmoil_congo < 31 } check_variable = { turmoil_congo > 10 } } } localization_key = saf_state_turmoil_level_4 }
+	text = { trigger = { AND = { check_variable = { turmoil_congo < 11 } check_variable = { turmoil_congo > 0 } } } localization_key = saf_state_turmoil_level_5 }	
+}
+defined_text = {
+	name = viljoen_pacification_eswatini
+	
+	text = { trigger = { ESW = { exists = yes } } localization_key = saf_state_turmoil_level_6 }
+	text = { trigger = { check_variable = { turmoil_eswatini > 99 } } localization_key = saf_state_turmoil_level_0 }
+	text = { trigger = { AND = { check_variable = { turmoil_eswatini < 100 } check_variable = { turmoil_eswatini > 80 } } } localization_key = saf_state_turmoil_level_1 }
+	text = { trigger = { AND = { check_variable = { turmoil_eswatini < 81 } check_variable = { turmoil_eswatini > 60 } } } localization_key = saf_state_turmoil_level_2 }
+	text = { trigger = { AND = { check_variable = { turmoil_eswatini < 61 } check_variable = { turmoil_eswatini > 30 } } } localization_key = saf_state_turmoil_level_3 }
+	text = { trigger = { AND = { check_variable = { turmoil_eswatini < 31 } check_variable = { turmoil_eswatini > 10 } } } localization_key = saf_state_turmoil_level_4 }
+	text = { trigger = { AND = { check_variable = { turmoil_eswatini < 11 } check_variable = { turmoil_eswatini > 0 } } } localization_key = saf_state_turmoil_level_5 }	
+}
+defined_text = {
+	name = viljoen_pacification_gabon
+	
+	text = { trigger = { GAB = { exists = yes } } localization_key = saf_state_turmoil_level_6 }
+	text = { trigger = { check_variable = { turmoil_gabon > 99 } } localization_key = saf_state_turmoil_level_0 }
+	text = { trigger = { AND = { check_variable = { turmoil_gabon < 100 } check_variable = { turmoil_gabon > 80 } } } localization_key = saf_state_turmoil_level_1 }
+	text = { trigger = { AND = { check_variable = { turmoil_gabon < 81 } check_variable = { turmoil_gabon > 60 } } } localization_key = saf_state_turmoil_level_2 }
+	text = { trigger = { AND = { check_variable = { turmoil_gabon < 61 } check_variable = { turmoil_gabon > 30 } } } localization_key = saf_state_turmoil_level_3 }
+	text = { trigger = { AND = { check_variable = { turmoil_gabon < 31 } check_variable = { turmoil_gabon > 10 } } } localization_key = saf_state_turmoil_level_4 }
+	text = { trigger = { AND = { check_variable = { turmoil_gabon < 11 } check_variable = { turmoil_gabon > 0 } } } localization_key = saf_state_turmoil_level_5 }	
+}
+defined_text = {
+	name = viljoen_pacification_rcg
+	
+	text = { trigger = { RCG = { exists = yes } } localization_key = saf_state_turmoil_level_6 }
+	text = { trigger = { check_variable = { turmoil_rcg > 99 } } localization_key = saf_state_turmoil_level_0 }
+	text = { trigger = { AND = { check_variable = { turmoil_rcg < 100 } check_variable = { turmoil_rcg > 80 } } } localization_key = saf_state_turmoil_level_1 }
+	text = { trigger = { AND = { check_variable = { turmoil_rcg < 81 } check_variable = { turmoil_rcg > 60 } } } localization_key = saf_state_turmoil_level_2 }
+	text = { trigger = { AND = { check_variable = { turmoil_rcg < 61 } check_variable = { turmoil_rcg > 30 } } } localization_key = saf_state_turmoil_level_3 }
+	text = { trigger = { AND = { check_variable = { turmoil_rcg < 31 } check_variable = { turmoil_rcg > 10 } } } localization_key = saf_state_turmoil_level_4 }
+	text = { trigger = { AND = { check_variable = { turmoil_rcg < 11 } check_variable = { turmoil_rcg > 0 } } } localization_key = saf_state_turmoil_level_5 }	
+}
+defined_text = {
+	name = viljoen_pacification_guinea
+	
+	text = { trigger = { EQG = { exists = yes } } localization_key = saf_state_turmoil_level_6 }
+	text = { trigger = { check_variable = { turmoil_guinea > 99 } } localization_key = saf_state_turmoil_level_0 }
+	text = { trigger = { AND = { check_variable = { turmoil_guinea < 100 } check_variable = { turmoil_guinea > 80 } } } localization_key = saf_state_turmoil_level_1 }
+	text = { trigger = { AND = { check_variable = { turmoil_guinea < 81 } check_variable = { turmoil_guinea > 60 } } } localization_key = saf_state_turmoil_level_2 }
+	text = { trigger = { AND = { check_variable = { turmoil_guinea < 61 } check_variable = { turmoil_guinea > 30 } } } localization_key = saf_state_turmoil_level_3 }
+	text = { trigger = { AND = { check_variable = { turmoil_guinea < 31 } check_variable = { turmoil_guinea > 10 } } } localization_key = saf_state_turmoil_level_4 }
+	text = { trigger = { AND = { check_variable = { turmoil_guinea < 11 } check_variable = { turmoil_guinea > 0 } } } localization_key = saf_state_turmoil_level_5 }	
+}
+defined_text = {
+	name = viljoen_pacification_kenya
+	
+	text = { trigger = { KEN = { exists = yes } } localization_key = saf_state_turmoil_level_6 }
+	text = { trigger = { check_variable = { turmoil_kenya > 99 } } localization_key = saf_state_turmoil_level_0 }
+	text = { trigger = { AND = { check_variable = { turmoil_kenya < 100 } check_variable = { turmoil_kenya > 80 } } } localization_key = saf_state_turmoil_level_1 }
+	text = { trigger = { AND = { check_variable = { turmoil_kenya < 81 } check_variable = { turmoil_kenya > 60 } } } localization_key = saf_state_turmoil_level_2 }
+	text = { trigger = { AND = { check_variable = { turmoil_kenya < 61 } check_variable = { turmoil_kenya > 30 } } } localization_key = saf_state_turmoil_level_3 }
+	text = { trigger = { AND = { check_variable = { turmoil_kenya < 31 } check_variable = { turmoil_kenya > 10 } } } localization_key = saf_state_turmoil_level_4 }
+	text = { trigger = { AND = { check_variable = { turmoil_kenya < 11 } check_variable = { turmoil_kenya > 0 } } } localization_key = saf_state_turmoil_level_5 }	
+}
+defined_text = {
+	name = viljoen_pacification_lesotho
+	
+	text = { trigger = { LES = { exists = yes } } localization_key = saf_state_turmoil_level_6 }
+	text = { trigger = { check_variable = { turmoil_lesotho > 99 } } localization_key = saf_state_turmoil_level_0 }
+	text = { trigger = { AND = { check_variable = { turmoil_lesotho < 100 } check_variable = { turmoil_lesotho > 80 } } } localization_key = saf_state_turmoil_level_1 }
+	text = { trigger = { AND = { check_variable = { turmoil_lesotho < 81 } check_variable = { turmoil_lesotho > 60 } } } localization_key = saf_state_turmoil_level_2 }
+	text = { trigger = { AND = { check_variable = { turmoil_lesotho < 61 } check_variable = { turmoil_lesotho > 30 } } } localization_key = saf_state_turmoil_level_3 }
+	text = { trigger = { AND = { check_variable = { turmoil_lesotho < 31 } check_variable = { turmoil_lesotho > 10 } } } localization_key = saf_state_turmoil_level_4 }
+	text = { trigger = { AND = { check_variable = { turmoil_lesotho < 11 } check_variable = { turmoil_lesotho > 0 } } } localization_key = saf_state_turmoil_level_5 }	
+}
+defined_text = {
+	name = viljoen_pacification_madagascar
+	
+	text = { trigger = { MAD = { exists = yes } } localization_key = saf_state_turmoil_level_6 }
+	text = { trigger = { check_variable = { turmoil_madagascar > 99 } } localization_key = saf_state_turmoil_level_0 }
+	text = { trigger = { AND = { check_variable = { turmoil_madagascar < 100 } check_variable = { turmoil_madagascar > 80 } } } localization_key = saf_state_turmoil_level_1 }
+	text = { trigger = { AND = { check_variable = { turmoil_madagascar < 81 } check_variable = { turmoil_madagascar > 60 } } } localization_key = saf_state_turmoil_level_2 }
+	text = { trigger = { AND = { check_variable = { turmoil_madagascar < 61 } check_variable = { turmoil_madagascar > 30 } } } localization_key = saf_state_turmoil_level_3 }
+	text = { trigger = { AND = { check_variable = { turmoil_madagascar < 31 } check_variable = { turmoil_madagascar > 10 } } } localization_key = saf_state_turmoil_level_4 }
+	text = { trigger = { AND = { check_variable = { turmoil_madagascar < 11 } check_variable = { turmoil_madagascar > 0 } } } localization_key = saf_state_turmoil_level_5 }	
+}
+defined_text = {
+	name = viljoen_pacification_malawi
+	
+	text = { trigger = { MLW = { exists = yes } } localization_key = saf_state_turmoil_level_6 }
+	text = { trigger = { check_variable = { turmoil_malawi > 99 } } localization_key = saf_state_turmoil_level_0 }
+	text = { trigger = { AND = { check_variable = { turmoil_malawi < 100 } check_variable = { turmoil_malawi > 80 } } } localization_key = saf_state_turmoil_level_1 }
+	text = { trigger = { AND = { check_variable = { turmoil_malawi < 81 } check_variable = { turmoil_malawi > 60 } } } localization_key = saf_state_turmoil_level_2 }
+	text = { trigger = { AND = { check_variable = { turmoil_malawi < 61 } check_variable = { turmoil_malawi > 30 } } } localization_key = saf_state_turmoil_level_3 }
+	text = { trigger = { AND = { check_variable = { turmoil_malawi < 31 } check_variable = { turmoil_malawi > 10 } } } localization_key = saf_state_turmoil_level_4 }
+	text = { trigger = { AND = { check_variable = { turmoil_malawi < 11 } check_variable = { turmoil_malawi > 0 } } } localization_key = saf_state_turmoil_level_5 }	
+}
+defined_text = {
+	name = viljoen_pacification_mozambique
+		
+	text = { trigger = { MZB = { exists = yes } } localization_key = saf_state_turmoil_level_6 }
+	text = { trigger = { check_variable = { turmoil_mozambique > 99 } } localization_key = saf_state_turmoil_level_0 }
+	text = { trigger = { AND = { check_variable = { turmoil_mozambique < 100 } check_variable = { turmoil_mozambique > 80 } } } localization_key = saf_state_turmoil_level_1 }
+	text = { trigger = { AND = { check_variable = { turmoil_mozambique < 81 } check_variable = { turmoil_mozambique > 60 } } } localization_key = saf_state_turmoil_level_2 }
+	text = { trigger = { AND = { check_variable = { turmoil_mozambique < 61 } check_variable = { turmoil_mozambique > 30 } } } localization_key = saf_state_turmoil_level_3 }
+	text = { trigger = { AND = { check_variable = { turmoil_mozambique < 31 } check_variable = { turmoil_mozambique > 10 } } } localization_key = saf_state_turmoil_level_4 }
+	text = { trigger = { AND = { check_variable = { turmoil_mozambique < 11 } check_variable = { turmoil_mozambique > 0 } } } localization_key = saf_state_turmoil_level_5 }
+}
+defined_text = {
+	name = viljoen_pacification_namibia
+		
+	text = { trigger = { NMB = { exists = yes } } localization_key = saf_state_turmoil_level_6 }
+	text = { trigger = { check_variable = { turmoil_namibia > 99 } } localization_key = saf_state_turmoil_level_0 }
+	text = { trigger = { AND = { check_variable = { turmoil_namibia < 100 } check_variable = { turmoil_namibia > 80 } } } localization_key = saf_state_turmoil_level_1 }
+	text = { trigger = { AND = { check_variable = { turmoil_namibia < 81 } check_variable = { turmoil_namibia > 60 } } } localization_key = saf_state_turmoil_level_2 }
+	text = { trigger = { AND = { check_variable = { turmoil_namibia < 61 } check_variable = { turmoil_namibia > 30 } } } localization_key = saf_state_turmoil_level_3 }
+	text = { trigger = { AND = { check_variable = { turmoil_namibia < 31 } check_variable = { turmoil_namibia > 10 } } } localization_key = saf_state_turmoil_level_4 }
+	text = { trigger = { AND = { check_variable = { turmoil_namibia < 11 } check_variable = { turmoil_namibia > 0 } } } localization_key = saf_state_turmoil_level_5 }
+}
+defined_text = {
+	name = viljoen_pacification_rwanda
+		
+	text = { trigger = { RWA = { exists = yes } } localization_key = saf_state_turmoil_level_6 }
+	text = { trigger = { check_variable = { turmoil_rwanda > 99 } } localization_key = saf_state_turmoil_level_0 }
+	text = { trigger = { AND = { check_variable = { turmoil_rwanda < 100 } check_variable = { turmoil_rwanda > 80 } } } localization_key = saf_state_turmoil_level_1 }
+	text = { trigger = { AND = { check_variable = { turmoil_rwanda < 81 } check_variable = { turmoil_rwanda > 60 } } } localization_key = saf_state_turmoil_level_2 }
+	text = { trigger = { AND = { check_variable = { turmoil_rwanda < 61 } check_variable = { turmoil_rwanda > 30 } } } localization_key = saf_state_turmoil_level_3 }
+	text = { trigger = { AND = { check_variable = { turmoil_rwanda < 31 } check_variable = { turmoil_rwanda > 10 } } } localization_key = saf_state_turmoil_level_4 }
+	text = { trigger = { AND = { check_variable = { turmoil_rwanda < 11 } check_variable = { turmoil_rwanda > 0 } } } localization_key = saf_state_turmoil_level_5 }
+}
+defined_text = {
+	name = viljoen_pacification_tanzania
+		
+	text = { trigger = { TZN = { exists = yes } } localization_key = saf_state_turmoil_level_6 }
+	text = { trigger = { check_variable = { turmoil_tanzania > 99 } } localization_key = saf_state_turmoil_level_0 }
+	text = { trigger = { AND = { check_variable = { turmoil_tanzania < 100 } check_variable = { turmoil_tanzania > 80 } } } localization_key = saf_state_turmoil_level_1 }
+	text = { trigger = { AND = { check_variable = { turmoil_tanzania < 81 } check_variable = { turmoil_tanzania > 60 } } } localization_key = saf_state_turmoil_level_2 }
+	text = { trigger = { AND = { check_variable = { turmoil_tanzania < 61 } check_variable = { turmoil_tanzania > 30 } } } localization_key = saf_state_turmoil_level_3 }
+	text = { trigger = { AND = { check_variable = { turmoil_tanzania < 31 } check_variable = { turmoil_tanzania > 10 } } } localization_key = saf_state_turmoil_level_4 }
+	text = { trigger = { AND = { check_variable = { turmoil_tanzania < 11 } check_variable = { turmoil_tanzania > 0 } } } localization_key = saf_state_turmoil_level_5 }
+}
+defined_text = {
+	name = viljoen_pacification_uganda
+	
+	text = { trigger = { UGA = { exists = yes } } localization_key = saf_state_turmoil_level_6 }
+	text = { trigger = { check_variable = { turmoil_uganda > 99 } } localization_key = saf_state_turmoil_level_0 }
+	text = { trigger = { AND = { check_variable = { turmoil_uganda < 100 } check_variable = { turmoil_uganda > 80 } } } localization_key = saf_state_turmoil_level_1 }
+	text = { trigger = { AND = { check_variable = { turmoil_uganda < 81 } check_variable = { turmoil_uganda > 60 } } } localization_key = saf_state_turmoil_level_2 }
+	text = { trigger = { AND = { check_variable = { turmoil_uganda < 61 } check_variable = { turmoil_uganda > 30 } } } localization_key = saf_state_turmoil_level_3 }
+	text = { trigger = { AND = { check_variable = { turmoil_uganda < 31 } check_variable = { turmoil_uganda > 10 } } } localization_key = saf_state_turmoil_level_4 }
+	text = { trigger = { AND = { check_variable = { turmoil_uganda < 11 } check_variable = { turmoil_uganda > 0 } } } localization_key = saf_state_turmoil_level_5 }	
+}
+defined_text = {
+	name = viljoen_pacification_zambia
+		
+	text = { trigger = { ZAM = { exists = yes } } localization_key = saf_state_turmoil_level_6 }
+	text = { trigger = { check_variable = { turmoil_zambia > 99 } } localization_key = saf_state_turmoil_level_0 }
+	text = { trigger = { AND = { check_variable = { turmoil_zambia < 100 } check_variable = { turmoil_zambia > 80 } } } localization_key = saf_state_turmoil_level_1 }
+	text = { trigger = { AND = { check_variable = { turmoil_zambia < 81 } check_variable = { turmoil_zambia > 60 } } } localization_key = saf_state_turmoil_level_2 }
+	text = { trigger = { AND = { check_variable = { turmoil_zambia < 61 } check_variable = { turmoil_zambia > 30 } } } localization_key = saf_state_turmoil_level_3 }
+	text = { trigger = { AND = { check_variable = { turmoil_zambia < 31 } check_variable = { turmoil_zambia > 10 } } } localization_key = saf_state_turmoil_level_4 }
+	text = { trigger = { AND = { check_variable = { turmoil_zambia < 11 } check_variable = { turmoil_zambia > 0 } } } localization_key = saf_state_turmoil_level_5 }
+}
+defined_text = {
+	name = viljoen_pacification_zimbabwe
+		
+	text = { trigger = { ZIM = { exists = yes } } localization_key = saf_state_turmoil_level_6 }
+	text = { trigger = { check_variable = { turmoil_zimbabwe > 99 } } localization_key = saf_state_turmoil_level_0 }
+	text = { trigger = { AND = { check_variable = { turmoil_zimbabwe < 100 } check_variable = { turmoil_zimbabwe > 80 } } } localization_key = saf_state_turmoil_level_1 }
+	text = { trigger = { AND = { check_variable = { turmoil_zimbabwe < 81 } check_variable = { turmoil_zimbabwe > 60 } } } localization_key = saf_state_turmoil_level_2 }
+	text = { trigger = { AND = { check_variable = { turmoil_zimbabwe < 61 } check_variable = { turmoil_zimbabwe > 30 } } } localization_key = saf_state_turmoil_level_3 }
+	text = { trigger = { AND = { check_variable = { turmoil_zimbabwe < 31 } check_variable = { turmoil_zimbabwe > 10 } } } localization_key = saf_state_turmoil_level_4 }
+	text = { trigger = { AND = { check_variable = { turmoil_zimbabwe < 11 } check_variable = { turmoil_zimbabwe > 0 } } } localization_key = saf_state_turmoil_level_5 }
+}

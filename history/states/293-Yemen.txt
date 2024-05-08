@@ -1,0 +1,38 @@
+
+state={
+	id=293
+	name="STATE_293"
+	manpower = 15276600
+	
+	state_category = town
+	
+	resources={
+		oil=1 # was: 1
+	}
+	history={
+		owner = YEM
+		buildings = {
+			infrastructure = 2
+			air_base = 4
+			industrial_complex = 2
+			arms_factory = 1
+			13464 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			10840 5
+		}
+		victory_points = {
+			13464 1
+		}
+		add_core_of = YEM
+                add_core_of = DYR
+	}
+
+	provinces={
+		1920 1973 4924 10752 10840 13462 13463 13464
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,48 @@
+characters = {
+
+	AZR_heydar_aliyev = {
+		name = "Heydar Aliyev"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AZR/Heydar_Aliyev.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	AZR_abulfaz_elchibey = {
+		name = "Abulfaz Elchibey"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AZR/Abulfaz_Elchibey.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	AZR_ilham_aliyev = {
+		name = "Ilham Aliyev"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AZR/Ilham_Aliyev.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

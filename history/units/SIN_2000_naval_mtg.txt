@@ -1,0 +1,39 @@
+units = {
+	fleet = {
+		name = "Armada Singapura"
+		naval_base = 12299 # Singapore #
+		task_force = {
+			name = "Armada Permukaan Singapura"
+			location = 12299 # Singapore #
+			ship = { name = "RSS Resilience" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = SIN version_name = "Fearless Class" } } }
+			ship = { name = "RSS Unity" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = SIN version_name = "Fearless Class" } } }
+			ship = { name = "RSS Sovereignty" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = SIN version_name = "Fearless Class" } } }
+			ship = { name = "RSS Justice" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = SIN version_name = "Fearless Class" } } }
+			ship = { name = "RSS Freedom" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = SIN version_name = "Fearless Class" } } }
+			ship = { name = "RSS Independence" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = SIN version_name = "Fearless Class" } } }
+			ship = { name = "RSS Fearless" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = SIN version_name = "Fearless Class" } } }
+			ship = { name = "RSS Brave" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = SIN version_name = "Fearless Class" } } }
+			ship = { name = "RSS Courageous" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = SIN version_name = "Fearless Class" } } }
+			ship = { name = "RSS Gallant" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = SIN version_name = "Fearless Class" } } }
+			ship = { name = "RSS Daring" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = SIN version_name = "Fearless Class" } } }
+			ship = { name = "RSS Dauntless" definition = corvette equipment = { corvette_hull_3 = { amount = 1 owner = SIN version_name = "Fearless Class" } } }
+			ship = { name = "RSS Victory" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SIN version_name = "Victory Class" } } }
+			ship = { name = "RSS Valour" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SIN version_name = "Victory Class" } } }
+			ship = { name = "RSS Vigilance" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SIN version_name = "Victory Class" } } }
+			ship = { name = "RSS Valiant" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SIN version_name = "Victory Class" } } }
+			ship = { name = "RSS Vigour" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SIN version_name = "Victory Class" } } }
+			ship = { name = "RSS Vengeance" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SIN version_name = "Victory Class" } } }
+		}
+		task_force = {
+			name = "Armada Kapal Selam Singapura"
+			location = 12299 # Singapore #
+			ship = { name = "RSS Chieftain" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = SIN version_name = "Challenger Class" } } }
+			ship = { name = "RSS Challenger" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = SIN version_name = "Challenger Class" } } }
+			ship = { name = "RSS Centurion" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = SIN version_name = "Challenger Class" } } }
+			ship = { name = "RSS Conqueror" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = SIN version_name = "Challenger Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

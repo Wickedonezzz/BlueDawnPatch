@@ -1,0 +1,35 @@
+air_wings = {
+	# Land Wings #
+	336 = {
+		# Fighters -- MiG-29, F-5
+		fighter_equipment_2 =  { # MiG-29 #
+			owner = "MAL" 
+			creator = SOV
+			amount = 17
+		}
+		fighter_equipment_0 =  { # F-5 #
+			owner = "MAL" 
+			creator = USA
+			amount = 7
+		}
+
+		# Carrier Fighters -- F/A-18
+		carrier_fighter_equipment_2 =  { # F/A-18 #
+			owner = "MAL" 
+			creator = USA
+			amount = 8
+		}
+
+		# Transports -- DHC-4, C-130H
+		transport_plane_equipment_1 =  { # DHC-4 #
+			owner = "MAL"
+			creator = CAN
+			amount = 11
+		}
+		transport_plane_equipment_1 =  { # C-130H #
+			owner = "MAL"
+			creator = USA
+			amount = 12
+		}
+	}
+}

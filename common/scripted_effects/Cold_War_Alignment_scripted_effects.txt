@@ -1,0 +1,118 @@
+replace_alignment_to_SOV = {
+	
+	if = {
+		limit = {
+		has_idea = usa_aligned_nation
+		}
+		swap_ideas = {
+			remove_idea = usa_aligned_nation
+			add_idea = ussr_aligned_nation
+		}
+	}
+	else_if = {
+		limit = {
+		has_idea = china_aligned_nation
+		}
+		swap_ideas = {
+			remove_idea = china_aligned_nation
+			add_idea = ussr_aligned_nation
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				OR = {
+				has_idea = china_aligned_nation
+				has_idea = usa_aligned_nation
+				}
+			}
+		}
+		add_ideas = ussr_aligned_nation
+	}
+
+}
+
+proxy_war_won_by_SOV = {
+	
+	add_to_variable = { amount_of_proxies_won_ussr = 0.01 }
+
+}
+
+replace_alignment_to_USA = {
+	
+	if = {
+		limit = {
+		has_idea = ussr_aligned_nation
+		}
+		swap_ideas = {
+			remove_idea = ussr_aligned_nation
+			add_idea = usa_aligned_nation
+		}
+	}
+	else_if = {
+		limit = {
+		has_idea = china_aligned_nation
+		}
+		swap_ideas = {
+			remove_idea = china_aligned_nation
+			add_idea = usa_aligned_nation
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				OR = {
+				has_idea = china_aligned_nation
+				has_idea = ussr_aligned_nation
+				}
+			}
+		}
+		add_ideas = usa_aligned_nation
+	}
+
+}
+
+proxy_war_won_by_USA = {
+	
+	add_to_variable = { amount_of_proxies_won_usa = 0.01 }
+}
+
+replace_alignment_to_PRC = {
+	
+	if = {
+		limit = {
+		has_idea = ussr_aligned_nation
+		}
+		swap_ideas = {
+			remove_idea = ussr_aligned_nation
+			add_idea = china_aligned_nation
+		}
+	}
+	else_if = {
+		limit = {
+		has_idea = usa_aligned_nation
+		}
+		swap_ideas = {
+			remove_idea = usa_aligned_nation
+			add_idea = china_aligned_nation
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				OR = {
+				has_idea = ussr_aligned_nation
+				has_idea = usa_aligned_nation
+				}
+			}
+		}
+		add_ideas = china_aligned_nation
+	}
+}
+
+remove_alignments = {
+
+		remove_ideas = usa_aligned_nation
+		remove_ideas = ussr_aligned_nation
+		remove_ideas = china_aligned_nation
+}

@@ -1,0 +1,18 @@
+characters = {
+
+	NGA_olusegun_obasanjo = {
+		name = "Olusegun Obasanjo"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Africa/Olusegun_Obasanjo.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

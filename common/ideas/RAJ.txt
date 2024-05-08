@@ -1,0 +1,96 @@
+ideas = {
+
+	country = {
+
+		RAJ_fragile_union = {
+			name = RAJ_fragile_union_idea_name
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+			
+			picture = fragile_union
+
+			modifier = {
+				stability_factor = -0.2
+				political_power_gain = -0.25
+			}
+		}
+		
+		
+		
+		RAJ_the_southern_revolutionaries = {
+			name = RAJ_the_southern_revolutionaries_idea_name
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+			
+			picture = south_rebels
+
+			modifier = {
+				stability_factor = -0.1
+				consumer_goods_factor = 0.30
+				army_org_factor = -0.1
+			}
+		}
+		
+		RAJ_parliment_split = {
+			name = RAJ_parliment_split_idea_name
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+			
+			picture = parliment_split
+
+			modifier = {
+			
+			}
+	    }
+			
+	    RAJ_neverending_military_spending = {
+			name = RAJ_neverending_military_spending_idea_name
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+			
+			picture = Indian_Arrmy
+
+			modifier = {
+			consumer_goods_factor = 0.30
+			army_org_factor = 0.1
+			army_attack_factor	= 0.1
+			army_defence_factor = 0.1
+			}
+	    }
+		
+		RAJ_caste_system = {
+			name = RAJ_caste_system_idea_name
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+			
+			picture = caste
+
+			modifier = {
+			stability_factor = -0.05
+			research_speed_factor = -0.1
+			}
+		}
+
+	}
+
+}

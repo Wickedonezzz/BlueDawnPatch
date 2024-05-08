@@ -1,0 +1,33 @@
+characters = {
+
+	COG_laurent = {
+		name = "Laurent Désiré Kabila"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/COG/Laurent_Désiré_Kabila.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	COG_gizenga = {
+		name = "Antoine Gizenga"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/COG/antoine_gizenga.dds"
+			}
+		}
+		country_leader = {
+			ideology = revolutionary_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+}

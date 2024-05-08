@@ -1,0 +1,18 @@
+characters = {
+
+	GRN_jonathan_motzfeldt = {
+		name = "Jonathan Motzfeldt"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GRN/Jonathan_Motzfeldt.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

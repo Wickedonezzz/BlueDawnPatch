@@ -1,0 +1,67 @@
+﻿capital = 935
+
+##oob = ""
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+
+	set_technology = {
+		destroyer_hull_1960 = 1
+		destroyer_hull_1980 = 1
+		destroyer_hull_1990 = 1
+		destroyer_hull_2000 = 1
+	}
+}
+
+set_convoys = 5
+
+recruit_character = BRU_hassanal_bolkiah
+
+set_politics = {
+	ruling_party = paternal_autocracy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 0
+	communism = 0
+	reformed_communism = 0
+	paternal_autocracy = 15
+	fascism = 3
+	paternal_autocracy = 82
+}
+
+add_ideas = SIA_asean
+
+# Naval Variants #
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "BRU_2000_naval_mtg"
+
+	# Frigates #
+	create_equipment_variant = {
+		name = "Nakhoda Ragam Class"
+		type = destroyer_hull_4
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_3
+			fixed_ship_engine_slot = small_surface_engine_diesel_4
+			fixed_ship_sonar_slot = sub_sonar_4
+			fixed_ship_radar_slot = ship_radar_3
+			fixed_ship_defensive_slot_1 = sam_missile_2
+			fixed_ship_defensive_slot_2 = sam_missile_2
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_2
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = cruise_missile_2
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = no
+	}
+}

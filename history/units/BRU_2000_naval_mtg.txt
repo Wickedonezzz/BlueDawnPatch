@@ -1,0 +1,28 @@
+units = {
+}
+
+instant_effect = {
+	# Frigates #
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_hull_4
+			creator = "BRU" 
+			version_name = "Nakhoda Ragam Class"
+		}
+		name = "Nakhoda Ragam"
+		requested_factories = 1
+		progress = 0.17
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_hull_4
+			creator = "BRU" 
+			version_name = "Nakhoda Ragam Class"
+		}
+		name = "Bengahara Sakam"
+		requested_factories = 1
+		progress = 0.03
+		amount = 1
+	}
+}

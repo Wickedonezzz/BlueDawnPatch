@@ -1,0 +1,16 @@
+units = {
+	fleet = {
+		name = "Suid-Afrikaanse Vloot"
+		naval_base = 12589 # Cape Town #
+		task_force = {
+			name = "Suid-Afrikaanse Duikbootvloot"
+			location = 12589 # Cape Town #
+			ship = { name = "SAS Maria Van Riebeeck" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = SAF creator = FRA version_name = "Daphne Class" } } }
+			ship = { name = "SAS Emily Hobhouse" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = SAF creator = FRA version_name = "Daphne Class" } } }
+			ship = { name = "SAS Johanna Van der Merwe" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = SAF creator = FRA version_name = "Daphne Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

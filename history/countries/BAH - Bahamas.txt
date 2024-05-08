@@ -1,0 +1,22 @@
+﻿capital = 690
+
+##oob = ""
+
+set_convoys = 5
+
+recruit_character = BAH_hubert_ingraham
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1997.3.14"
+	election_frequency = 60
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 51
+	liberalism = 49
+	reformed_communism = 0
+	paternal_autocracy = 0
+	fascism = 0
+	neutrality = 0
+}

@@ -1,0 +1,568 @@
+YUG_stop_the_terror_attacks = {
+
+	set_country_flag = yug_no_more_terror_attacks
+	custom_effect_tooltip = yug_no_more_terror_attacks
+}
+
+YUG_remove_rebel_activity = {
+
+
+	every_owned_state = {
+		remove_dynamic_modifier = { modifier = YUG_rebels_1 }
+		remove_dynamic_modifier = { modifier = YUG_rebels_2 }
+		remove_dynamic_modifier = { modifier = YUG_rebels_3 }
+		remove_dynamic_modifier = { modifier = YUG_rebels_4 }
+		remove_dynamic_modifier = { modifier = YUG_rebels_5 }
+		set_demilitarized_zone = no
+	}
+	
+	
+	
+	959 = {
+		set_demilitarized_zone = no
+		add_core_of = YUG
+
+	}	
+
+	960 = {
+		set_demilitarized_zone = no
+		add_core_of = YUG
+
+	}	
+
+	961 = {
+		set_demilitarized_zone = no
+		add_core_of = YUG
+
+	}	
+
+
+	106 = {
+		set_demilitarized_zone = no
+		add_core_of = YUG
+
+	}		
+	if = {
+		limit = {
+			NOT = {has_government = fascism}
+		}
+		104 = {
+			set_demilitarized_zone = no
+			add_core_of = YUG
+		}		
+		804 = {
+			set_demilitarized_zone = no
+			add_core_of = YUG
+		}
+		802 = {
+			set_demilitarized_zone = no
+			add_core_of = YUG
+
+		}			
+	}
+}
+
+YUG_remove_deportations = {
+
+	104 = {
+		remove_dynamic_modifier = { modifier = YUG_deportations }
+	}
+
+	804 = {
+		remove_dynamic_modifier = { modifier = YUG_deportations }
+	}
+	
+	964 = {
+		remove_dynamic_modifier = { modifier = YUG_deportations }
+	}	
+
+	106 = {
+		remove_dynamic_modifier = { modifier = YUG_deportations }
+	}	
+	
+	802 = {
+		remove_dynamic_modifier = { modifier = YUG_deportations }
+	}	
+
+}
+
+YUG_add_deportations = {
+	
+	if = {
+		limit = {YUG = {has_completed_focus = YUG_seselj_repopulation_programs}}
+		104 = {
+			add_dynamic_modifier = { modifier = YUG_deportations }
+		}
+
+		804 = {
+			add_dynamic_modifier = { modifier = YUG_deportations }
+		}
+		
+		964 = {
+			add_dynamic_modifier = { modifier = YUG_deportations }
+		}	
+
+		106 = {
+			add_dynamic_modifier = { modifier = YUG_deportations }
+		}	
+		
+		802 = {
+			add_dynamic_modifier = { modifier = YUG_deportations }
+		}	
+
+	}
+
+	if = {
+		limit = {YUG = {has_completed_focus = YUG_milosevic_deport_albanians_from_kosovo}}
+		802 = {
+			add_dynamic_modifier = { modifier = YUG_deportations }
+		}	
+	}
+	
+	else_if = {
+		
+	}
+	
+}
+
+YUG_improve_economic_health = {
+
+	subtract_from_variable = {YUG_economic_health_var = 1}			
+	custom_effect_tooltip = yug_our_economic_health_will_get_better
+	clamp_variable = {
+    var = YUG_economic_health_var
+    min = 0
+	max = 5
+	}
+}
+
+YUG_worsen_economic_health = {
+
+	add_to_variable = {YUG_economic_health_var = 1}			
+	custom_effect_tooltip = yug_our_economic_health_will_worsen
+	clamp_variable = {
+    var = YUG_economic_health_var
+    min = 0
+	max = 5
+	}
+}
+
+YUG_upgrade_ind_stage = {
+
+	if = {
+		limit =	{ 
+		check_variable = {yug_milo_industrial_prog > 99}
+		}
+		if = {
+			limit = {
+				has_idea = YUG_milo_prog_industry_stage_1
+			}
+			swap_ideas = {
+				remove_idea = YUG_milo_prog_industry_stage_1
+				add_idea = YUG_milo_prog_industry_stage_2
+			}
+			set_variable = {yug_milo_industrial_prog = 0}
+			set_variable = {YUG_milo_ind_stage_var = 2}						
+		}
+		else_if = {
+			limit = {
+				has_idea = YUG_milo_prog_industry_stage_2
+			}
+			swap_ideas = {
+				remove_idea = YUG_milo_prog_industry_stage_2
+				add_idea = YUG_milo_prog_industry_stage_3
+			}
+			set_variable = {yug_milo_industrial_prog = 0}
+			set_variable = {YUG_milo_ind_stage_var = 3}			
+		}
+		else_if = {
+			limit = {
+				has_idea = YUG_milo_prog_industry_stage_3
+			}
+			swap_ideas = {
+				remove_idea = YUG_milo_prog_industry_stage_3
+				add_idea = YUG_milo_prog_industry_stage_4
+			}
+			set_variable = {yug_milo_industrial_prog = 0}
+			set_variable = {YUG_milo_ind_stage_var = 4}			
+		}	
+		else_if = {
+			limit = {
+				has_idea = YUG_milo_prog_industry_stage_4
+			}
+			swap_ideas = {
+				remove_idea = YUG_milo_prog_industry_stage_4
+				add_idea = YUG_milo_prog_industry_stage_5
+			}
+			set_variable = {yug_milo_industrial_prog = 0}
+			set_variable = {YUG_milo_ind_stage_var = 5}		
+		}
+	}
+
+	else = {}
+}
+
+YUG_upgrade_tech_stage = {
+
+	if = {
+		limit =	{
+		check_variable = {yug_milo_tech_prog > 99}
+		}
+		if = {
+			limit = {
+				has_idea = YUG_milo_prog_tech_stage_1
+			}
+			swap_ideas = {
+				remove_idea = YUG_milo_prog_tech_stage_1
+				add_idea = YUG_milo_prog_tech_stage_2
+			}
+			set_variable = {yug_milo_tech_prog = 0}
+			set_variable = {YUG_milo_tech_stage_var = 2}
+		}
+		else_if = {
+			limit = {
+				has_idea = YUG_milo_prog_tech_stage_2
+			}
+			swap_ideas = {
+				remove_idea = YUG_milo_prog_tech_stage_2
+				add_idea = YUG_milo_prog_tech_stage_3
+			}
+			set_variable = {yug_milo_tech_prog = 0}
+			set_variable = {YUG_milo_tech_stage_var = 3}			
+		}
+		else_if = {
+			limit = {
+				has_idea = YUG_milo_prog_tech_stage_3
+			}
+			swap_ideas = {
+				remove_idea = YUG_milo_prog_tech_stage_3
+				add_idea = YUG_milo_prog_tech_stage_4
+			}
+			set_variable = {yug_milo_tech_prog = 0}	
+			set_variable = {YUG_milo_tech_stage_var = 4}			
+		}	
+		else_if = {
+			limit = {
+				has_idea = YUG_milo_prog_tech_stage_4
+			}
+			swap_ideas = {
+				remove_idea = YUG_milo_prog_tech_stage_4
+				add_idea = YUG_milo_prog_tech_stage_5
+			}
+			set_variable = {yug_milo_tech_prog = 0}	
+			set_variable = {YUG_milo_tech_stage_var = 5}			
+		}
+	}
+
+	else = {}
+}
+
+
+YUG_clamper = {
+
+	clamp_variable = {
+		var = yug_milo_industrial_prog
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = yug_milo_tech_prog
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = yug_milo_industrial_prog_monthly
+		min = 0
+		max = 50
+	}
+	clamp_variable = {
+		var = yug_milo_tech_prog_monthly
+		min = 0
+		max = 50
+	}	
+}
+
+YUG_increase_nat_support = {
+	
+	if = {
+		limit = {
+			check_variable = {YUG_nationalist_support_var < 7}
+			check_variable = {YUG_nationalist_support_var > 0}
+		}
+		custom_effect_tooltip = YUG_nationalist_support_increase
+		add_to_variable = {YUG_nationalist_support_var = 1}	
+		clamp_variable = {
+		var = YUG_nationalist_support_var
+		min = 1
+		max = 6
+		}	
+	}
+	else = {
+	
+	}
+
+}
+
+YUG_decrease_nat_support = {
+
+	if = {
+		limit = {
+			check_variable = {YUG_nationalist_support_var > 0}
+		}
+		custom_effect_tooltip = YUG_nationalist_support_decrease
+		subtract_from_variable = {YUG_nationalist_support_var = 1}	
+		clamp_variable = {
+		var = YUG_nationalist_support_var
+		min = 1
+		max = 6
+		}	
+	}
+	else = {
+	
+	}
+
+}
+
+YUG_increase_radicalization_5 = {
+
+	if = {
+		limit = {
+			check_variable = {YUG_radicalization_var < 101}
+			check_variable = {YUG_radicalization_var > -1}
+		}
+		custom_effect_tooltip = YUG_radicalization_increase_5
+		add_to_variable = {YUG_monthly_radicalization_var = 5}	
+
+	}
+	else = {
+	
+	}
+
+}
+
+YUG_increase_radicalization_10 = {
+
+	if = {
+		limit = {
+			check_variable = {YUG_radicalization_var < 101}
+			check_variable = {YUG_radicalization_var > -1}
+		}
+		custom_effect_tooltip = YUG_radicalization_increase_10
+		add_to_variable = {YUG_monthly_radicalization_var = 10}	
+
+	}
+	else = {
+	
+	}
+
+}
+
+YUG_decrease_radicalization_5 = {
+
+	if = {
+		limit = {
+			check_variable = {YUG_radicalization_var < 101}
+			check_variable = {YUG_radicalization_var > -1}
+		}
+		custom_effect_tooltip = YUG_radicalization_decrease_5
+		add_to_variable = {YUG_monthly_radicalization_var = -5}	
+
+	}
+	else = {
+	
+	}
+
+}
+
+YUG_decrease_radicalization_10 = {
+
+	if = {
+		limit = {
+			check_variable = {YUG_radicalization_var < 101}
+			check_variable = {YUG_radicalization_var > -1}
+		}
+		custom_effect_tooltip = YUG_radicalization_decrease_10
+		add_to_variable = {YUG_monthly_radicalization_var = -10}	
+
+	}
+	else = {
+	
+	}
+
+}
+
+YUG_improve_rebel_situation = {
+		add_command_power = 10
+		add_popularity = {
+			ideology = paternal_autocracy 
+			popularity = -0.05
+		}
+		if = {
+			limit = {
+				has_dynamic_modifier = {modifier = YUG_rebels_5}
+			}
+			add_resistance = -10
+			swap_ideas = {
+				remove_idea = YUG_fake_rebel_5
+				add_idea = YUG_fake_rebel_4
+			}
+			hidden_effect = {
+				remove_dynamic_modifier = { modifier = YUG_rebels_5 }
+				add_dynamic_modifier = { modifier = YUG_rebels_4 }
+				clr_state_flag = yug_state_division_5
+				set_state_flag = yug_state_division_4
+				remove_ideas = YUG_fake_rebel_4
+			}
+		}
+		else_if = {
+			limit = {
+				has_dynamic_modifier = {modifier = YUG_rebels_4}
+			}
+			add_resistance = -10
+			swap_ideas = {
+				remove_idea = YUG_fake_rebel_4
+				add_idea = YUG_fake_rebel_3
+			}			
+			hidden_effect = {
+				remove_dynamic_modifier = { modifier = YUG_rebels_4 }
+				add_dynamic_modifier = { modifier = YUG_rebels_3 }
+				clr_state_flag = yug_state_division_4
+				set_state_flag = yug_state_division_3
+				remove_ideas = YUG_fake_rebel_3
+			}
+		}
+		else_if = {
+			limit = {
+				has_dynamic_modifier = {modifier = YUG_rebels_3}
+			}
+			add_resistance = -10
+			swap_ideas = {
+				remove_idea = YUG_fake_rebel_3
+				add_idea = YUG_fake_rebel_2
+			}
+			hidden_effect = {
+				remove_dynamic_modifier = { modifier = YUG_rebels_3 }
+				add_dynamic_modifier = { modifier = YUG_rebels_2 }
+				clr_state_flag = yug_state_division_3
+				set_state_flag = yug_state_division_2
+				remove_ideas = YUG_fake_rebel_2
+			}
+		}
+		else_if = {
+			limit = {
+				has_dynamic_modifier = {modifier = YUG_rebels_2}
+			}
+			add_resistance = -10
+			swap_ideas = {
+				remove_idea = YUG_fake_rebel_2
+				add_idea = YUG_fake_rebel_1
+			}
+			hidden_effect = {
+				remove_dynamic_modifier = { modifier = YUG_rebels_2 }
+				add_dynamic_modifier = { modifier = YUG_rebels_1 }
+				clr_state_flag = yug_state_division_2
+				set_state_flag = yug_state_division_1
+				remove_ideas = YUG_fake_rebel_1
+			}
+		}		
+		else_if = {
+			limit = {
+				has_dynamic_modifier = {modifier = YUG_rebels_1}
+			}	
+			add_resistance = -10
+			YUG = {
+			add_political_power = 50
+			add_war_support = 0.05
+			add_stability = 0.05
+			add_manpower = 5000
+			}
+		}
+}
+
+YUG_worsen_rebel_situation = {
+		add_command_power = -10
+		add_popularity = {
+			ideology = paternal_autocracy 
+			popularity = 0.05
+		}
+		if = {
+			limit = {
+				has_dynamic_modifier = {modifier = YUG_rebels_1}
+			}
+			add_resistance = 10
+			swap_ideas = {
+				remove_idea = YUG_fake_rebel_1
+				add_idea = YUG_fake_rebel_2
+			}
+			hidden_effect = {
+				remove_dynamic_modifier = { modifier = YUG_rebels_1 }
+				add_dynamic_modifier = { modifier = YUG_rebels_2 }
+				clr_state_flag = yug_state_division_1
+				set_state_flag = yug_state_division_2
+				remove_ideas = YUG_fake_rebel_2
+			}
+		}
+		else_if = {
+			limit = {
+				has_dynamic_modifier = {modifier = YUG_rebels_2}
+			}
+			add_resistance = 10
+			swap_ideas = {
+				remove_idea = YUG_fake_rebel_2
+				add_idea = YUG_fake_rebel_3
+			}
+			hidden_effect = {
+				remove_dynamic_modifier = { modifier = YUG_rebels_2 }
+				add_dynamic_modifier = { modifier = YUG_rebels_3 }
+				clr_state_flag = yug_state_division_2
+				set_state_flag = yug_state_division_3
+				remove_ideas = YUG_fake_rebel_3
+			}
+		}
+		else_if = {
+			limit = {
+				has_dynamic_modifier = {modifier = YUG_rebels_3}
+			}
+			add_resistance = 10
+			swap_ideas = {
+				remove_idea = YUG_fake_rebel_3
+				add_idea = YUG_fake_rebel_4
+			}
+			hidden_effect = {
+				remove_dynamic_modifier = { modifier = YUG_rebels_3 }
+				add_dynamic_modifier = { modifier = YUG_rebels_4 }
+				clr_state_flag = yug_state_division_3
+				set_state_flag = yug_state_division_4
+				remove_ideas = YUG_fake_rebel_4
+			}	
+		}
+		else_if = {
+			limit = {
+				has_dynamic_modifier = {modifier = YUG_rebels_4}
+			}
+			add_resistance = 10
+			swap_ideas = {
+				remove_idea = YUG_fake_rebel_4
+				add_idea = YUG_fake_rebel_5
+			}
+			hidden_effect = {
+				remove_dynamic_modifier = { modifier = YUG_rebels_4 }
+				add_dynamic_modifier = { modifier = YUG_rebels_5 }
+				clr_state_flag = yug_state_division_4
+				set_state_flag = yug_state_division_5
+				remove_ideas = YUG_fake_rebel_5
+			}
+		}		
+		else_if = {
+			limit = {
+				has_dynamic_modifier = {modifier = YUG_rebels_5}
+			}	
+			add_resistance = 10
+			YUG = {
+			add_political_power = -50
+			add_war_support = -0.05
+			add_stability = -0.05
+			add_manpower = -5000
+			}
+		}
+}

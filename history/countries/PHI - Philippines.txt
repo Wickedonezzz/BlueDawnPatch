@@ -1,0 +1,46 @@
+﻿capital = 327
+
+#oob = "PHI_1936"
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+
+	set_technology = {
+		corvette_hull_1960 = 1
+		destroyer_hull_1960 = 1
+	}
+}
+
+set_convoys = 50
+add_timed_idea = {
+    idea = SIA_1997_crisis
+    days = 750
+}
+
+recruit_character = PHI_Joseph_Estrada
+recruit_character = PHI_Gloria_Macapagal_Arroyo
+
+add_ideas = SIA_asean
+
+add_ideas = usa_aligned_nation
+
+set_politics = {
+	ruling_party = liberalism
+	last_election = "1935.9.15"
+	election_frequency = 72
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 25
+	liberalism = 25
+	paternal_autocracy = 20
+	communism = 23
+	socialism = 7
+}
+
+# Naval Variants #
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "PHI_2000_naval_mtg"
+}

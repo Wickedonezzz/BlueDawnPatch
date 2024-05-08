@@ -1,0 +1,42 @@
+
+state={
+	id=429
+	name="STATE_429"
+	manpower = 96752500
+	state_category = large_city
+	
+	resources={
+		#tungsten=19 # was: 26
+	}
+
+	history={
+		owner = RAJ
+		add_core_of = RAJ
+		buildings = {
+			infrastructure = 2
+			air_base = 2
+			industrial_complex = 6
+			arms_factory = 4
+			dockyard = 2
+			nuclear_reactor = 1
+			1349 = {
+				naval_base = 6
+			}
+		}
+		victory_points = {
+			1349 15
+		}
+		victory_points = {
+			7119 5
+		}
+		victory_points = {
+			10270 5
+		}
+	}
+
+	provinces={
+		1349 1405 4072 4353 7013 7060 7119 7177 7232 10019 10210 10270 12142 12182 12269 
+	}
+
+	local_supplies=0.0 
+}

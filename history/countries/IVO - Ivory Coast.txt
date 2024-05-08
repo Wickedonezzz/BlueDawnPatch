@@ -1,0 +1,22 @@
+﻿capital = 779
+
+set_convoys = 20
+
+recruit_character = IVO_laurent_gbagbo
+
+add_ideas = west_africa_ECOWAS
+
+set_politics = {
+	ruling_party = social_democracy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	social_democracy = 25
+	democratic = 24
+	socialism = 15
+	liberalism = 16
+	neutrality = 10
+	paternal_autocracy = 10
+}

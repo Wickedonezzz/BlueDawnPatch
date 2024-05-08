@@ -1,0 +1,11 @@
+#########################################
+###### BOP MODS ######
+#########################################
+
+SOV_gensec_speech = {
+	power_balance_daily = -0.001
+}
+
+SOV_putin_gaining_power = {
+	power_balance_daily = 0.001
+}

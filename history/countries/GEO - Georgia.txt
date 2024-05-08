@@ -1,0 +1,25 @@
+﻿capital = 231 #Tbilisi
+
+#oob = "GEO_1936"
+
+set_research_slots = 3
+
+recruit_character = GEO_eduard_shevardnadze
+recruit_character = GEO_eduard_shevardnadze_communist
+
+set_politics = {
+	ruling_party = reformed_communism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 22
+	liberalism = 5
+	paternal_autocracy = 21
+	communism = 18
+	fascism = 10
+	reformed_communism = 14
+	social_democracy = 10
+}

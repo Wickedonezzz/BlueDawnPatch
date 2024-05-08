@@ -1,0 +1,277 @@
+sov_debug = {
+	icon = generic_communism
+	picture = GFX_decision_cat_culture_war
+	allowed = {
+		original_tag = SOV
+		is_debug = yes
+	}
+	
+	visible = {
+		original_tag = SOV
+		is_debug = yes
+	}
+	priority = 9999
+}
+
+sov_purging = {
+	icon = generic_communism
+	allowed = {
+		NOT = {
+			has_country_flag = purges_completed
+		}
+	}
+	
+	visible = {
+		NOT = {
+			has_country_flag = purges_completed
+		}
+	}
+	priority = 15
+}
+
+sov_building_industry_ural = { 
+	icon = GFX_decision_category_SOV_merge_designers
+	allowed = {
+	}
+	
+	visible = {
+	}
+	priority = 20
+}
+
+sov_building_factories_in_cities = {
+	icon = GFX_decision_category_SOV_merge_designers
+	allowed = {
+		
+	}
+	
+	visible = {
+
+	}
+	priority = 20
+}
+
+sov_crackdown_lithuenia = {
+	icon = GFX_decision_category_SOV_civil_war
+	allowed = {
+	}
+	
+	visible = {
+		NOT = {
+			has_country_flag = finished_crackdown_lithuenia
+		}
+	}
+	priority = 120
+}
+
+sov_crackdown_chechenya = {
+	icon = GFX_decision_category_SOV_civil_war
+	allowed = {
+	}
+	
+	visible = {
+		NOT = {
+			has_country_flag = finished_crackdown_chechenya
+		}
+	}
+	priority = 110
+}
+
+sov_crackdown_ukraine = {
+	icon = GFX_decision_category_SOV_civil_war
+	allowed = {
+	}
+	
+	visible = {
+		NOT = {
+			has_country_flag = finished_crackdown_ukraine
+		}
+	}
+	priority = 100
+}
+
+sov_invade_china_decisions = {
+	icon = GFX_decision_category_SOV_civil_war
+	allowed = {
+		original_tag = SOV
+		NOT = {
+			has_country_flag = sov_invaded_china
+		}
+	}
+	
+	visible = {
+		NOT = {
+			has_country_flag = sov_invaded_china
+		}
+	}
+	priority = 150
+
+}
+
+sov_party_factionalism = {
+	icon = generic_communism
+	allowed = {
+		original_tag = SOV
+	}
+	
+	visible = {
+		original_tag = SOV
+		#has_country_flag = sov_party_factionalism_ongoing
+	}
+	
+	scripted_gui = sov_party_factionalism_gui
+	priority = 1000
+}
+###GORBY####
+
+
+sov_rally_support_for_gorby = {
+	icon = GFX_decision_category_generic_foreign_policy
+
+	priority = 10
+
+
+	allowed = {
+		original_tag = SOV
+	}
+
+	visible = {
+
+	}
+}
+
+sov_the_new_perestroika = {
+	icon = GFX_decision_category_usa_congress
+
+	priority = 10
+
+	scripted_gui = yug_decision_ui_congress
+
+	allowed = {
+		original_tag = SOV
+	}
+
+	visible = {
+
+	}
+}
+
+
+sov_reinteg_decisions_via_peace = {
+	icon = GFX_soviet_flag_with_fists_under_it
+	
+	
+	allowed = {
+		original_tag = SOV
+	}
+	
+	visible = {
+	}
+
+	priority = 150
+
+}
+
+sov_ryz_east_europe = {
+	icon = GFX_decision_category_usa_congress
+
+	priority = 10
+
+	scripted_gui = sov_ryz_east_europe_gui
+
+	allowed = {
+		original_tag = SOV
+	}
+
+	visible = {
+
+	}
+}
+
+sov_ryz_agenda_cat = {
+
+	priority = 10
+
+	allowed = {
+		original_tag = SOV
+	}
+
+	visible = {
+
+	}	
+	
+}
+
+### PUGO ###
+
+sov_pugo_the_power_struggle = {
+
+	icon = GFX_decision_prc_vs_sov
+	
+	
+	allowed = {
+		original_tag = SOV
+	}
+	
+	visible = {
+		SOV = {has_completed_focus = SOV_pugo_time_for_action}
+		NOT = {has_country_flag = pugo_power_struggle_ended}
+	}
+
+	priority = 200
+
+}
+
+### INFLUENCE NORTH KOREA ###
+
+sov_influencing_north_korea = {
+	icon = GFX_decision_prc_vs_sov
+	
+	
+	allowed = {
+		original_tag = SOV
+	}
+	
+	visible = {
+		has_global_flag = influencing_north_korea
+	}
+
+	priority = 150
+
+}
+
+sov_mining_resources_in_north_korea = {
+	icon = GFX_decision_north_korea_and_soviets
+	
+	picture = GFX_decision_cat_north_korea_and_ussr_propaganda
+	
+	allowed = {
+		original_tag = SOV
+	}
+	
+	visible = {
+		has_global_flag = soviets_won_north_korea
+	}
+
+	priority = 150
+
+}
+
+## POLITBURO INFLUENCE MINI GAME ##
+sov_putin_politburo = {
+	icon = GFX_decision_category_SOV_civil_war
+	
+	allowed = {
+		tag = SOV
+	}
+
+	visible = {
+	SOV = { has_completed_focus = SOV_put_party_balancing }
+
+	}
+
+	priority = 100
+}
+
+
+

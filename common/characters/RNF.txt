@@ -1,0 +1,17 @@
+characters = {
+	RNF_medvedev = {
+		name = "Dmitri Medvedev"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/post_putin/medvedev.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

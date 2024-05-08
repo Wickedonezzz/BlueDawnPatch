@@ -1,0 +1,47 @@
+scripted_gui = {  #durangoose note: there was going to be a gui to show who ruled over the sr's for yugoslavia with flags, however this took up too much of the screen and was just too much work for a stupid gui that the player would look for 3 seconds.
+
+	yug_power_struggle_gui = {
+	 	window_name = "yug_power_struggle_gui_window"
+	 	context_type = player_context
+	 
+	 	visible = {
+	 		has_country_flag = yug_opened_the_power_struggle_gui
+	 	}
+	 
+	 	effects = {
+	 		yug_close_da_gui_click = {
+	 			clr_country_flag = yug_opened_the_power_struggle_gui
+	 		}
+			yug_close_da_power_struggle_x_thingy_click = {
+	 			clr_country_flag = yug_opened_the_power_struggle_gui			
+			}
+	 	}
+	 
+	}
+	
+	open_da_yug_power_struggle_gui = {
+	 	window_name = "open_da_yug_power_struggle_gui_window"
+	 	context_type = player_context
+	 	parent_window_token = politics_tab
+	 
+	 	visible = {
+	 		original_tag = YUG
+			NOT = {has_country_flag = yug_power_struggle_ended}
+	 	}
+	 
+	 	effects = {
+	 		open_da_yug_power_struggle_icon_gui_click = {
+	 			if = {
+	 				limit = { has_country_flag = yug_opened_the_power_struggle_gui }
+	 				clr_country_flag = yug_opened_the_power_struggle_gui
+	 			}
+	 			else_if = {
+	 			set_country_flag = yug_opened_the_power_struggle_gui
+	 			}
+	 		}
+	 		
+	 	}
+	 
+	}
+	
+}

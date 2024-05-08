@@ -1,0 +1,926 @@
+﻿division_template = { # Armoured Division (Guard) #
+	name = "Firqat Haras Jumhuriun Musafaha"
+	division_names_group = IRQ_MBT_01
+
+	regiments = {
+		main_battle_tank_armor = { x = 0 y = 0 }
+		main_battle_tank_armor = { x = 0 y = 1 }
+		main_battle_tank_armor = { x = 0 y = 2 }
+		infantry_fighting_vehicle_armor = { x = 0 y = 3 }
+		main_battle_tank_armor = { x = 1 y = 0 }
+		main_battle_tank_armor = { x = 1 y = 1 }
+		main_battle_tank_armor = { x = 1 y = 2 }
+		infantry_fighting_vehicle_armor = { x = 1 y = 3 }
+		heavy_infantry_unit = { x = 2 y = 0 }
+		heavy_infantry_unit = { x = 2 y = 1 }
+		recon_vehicle_armor = { x = 3 y = 0 }
+	}
+	support = {
+		attack_heli_company = { x = 0 y = 0 }
+		armoured_recon = { x = 0 y = 1 }
+		rocket_artillery_support_unit = { x = 0 y = 2 }
+		spaa_vehicle_support_armor = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
+	}
+	priority = 2
+}
+division_template = { # Armoured Division #
+	name = "Firqat Mudaraea"
+	division_names_group = GENERIC_MBT_01
+
+	regiments = {
+		main_battle_tank_armor = { x = 0 y = 0 }
+		main_battle_tank_armor = { x = 0 y = 1 }
+		main_battle_tank_armor = { x = 0 y = 2 }
+		main_battle_tank_armor = { x = 0 y = 3 }
+		main_battle_tank_armor = { x = 0 y = 4 }
+		infantry_fighting_vehicle_armor = { x = 1 y = 0 }
+		recon_vehicle_armor = { x = 1 y = 1 }
+		heavy_infantry_unit = { x = 2 y = 0 }
+		heavy_infantry_unit = { x = 2 y = 1 }
+		heavy_infantry_unit = { x = 2 y = 2 }
+		infantry_unit = { x = 3 y = 0 }
+		infantry_unit = { x = 3 y = 1 }
+	}
+	support = {
+		armoured_recon = { x = 0 y = 0 }
+		motorised_artillery_support_unit = { x = 0 y = 1 }
+		spaa_vehicle_support_armor = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		engineer = { x = 0 y = 4 }
+	}
+	priority = 1
+}
+division_template = { # Heavy Infantry Division (Guard) #
+	name = "Firqat Alharas Aljumhurii Alalia"
+	division_names_group = IRQ_MEC_01
+
+	regiments = {
+		infantry_fighting_vehicle_armor = { x = 0 y = 0 }
+		infantry_fighting_vehicle_armor = { x = 0 y = 1 }
+		heavy_infantry_unit = { x = 1 y = 0 }
+		heavy_infantry_unit = { x = 1 y = 1 }
+		heavy_infantry_unit = { x = 2 y = 0 }
+		heavy_infantry_unit = { x = 2 y = 1 }
+		towed_artillery_unit = { x = 3 y = 0 }
+		towed_artillery_unit = { x = 3 y = 1 }
+		spaa_vehicle_armor = { x = 4 y = 0 }
+	}
+	support = {
+		transport_heli_company = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		field_hospital = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+	}
+	priority = 2
+}
+division_template = { # Heavy Infantry Division #
+	name = "Alshuebat Alalia"
+	division_names_group = IRQ_MEC_02
+
+	regiments = {
+		infantry_fighting_vehicle_armor = { x = 0 y = 0 }
+		infantry_fighting_vehicle_armor = { x = 0 y = 1 }
+		heavy_infantry_unit = { x = 1 y = 0 }
+		heavy_infantry_unit = { x = 1 y = 1 }
+		heavy_infantry_unit = { x = 2 y = 0 }
+		heavy_infantry_unit = { x = 2 y = 1 }
+		towed_artillery_unit = { x = 3 y = 0 }
+		towed_artillery_unit = { x = 3 y = 1 }
+		spaa_vehicle_armor = { x = 4 y = 0 }
+	}
+	support = {
+		transport_heli_company = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		field_hospital = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		towed_artillery_support_unit = { x = 0 y = 4 }
+	}
+	priority = 1
+}
+division_template = {# Infantry Division
+	name = "Firqat Mushaa"
+	division_names_group = IRQ_INF_01
+
+	regiments = {
+		infantry_unit = { x = 0 y = 0 }
+		infantry_unit = { x = 0 y = 1 }
+		infantry_unit = { x = 0 y = 2 }
+		infantry_unit = { x = 0 y = 3 }
+		infantry_unit = { x = 1 y = 0 }
+		infantry_unit = { x = 1 y = 1 }
+		infantry_unit = { x = 1 y = 2 }
+		towed_artillery_unit = { x = 2 y = 0 }
+		towed_artillery_unit = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+	}
+	priority = 1
+}
+division_template = {  # Infantry Division (Guard)
+	name = "Firqat Alharas Aljumhurii"
+	division_names_group = GENERIC_INF_01
+
+	regiments = {
+		infantry_unit = { x = 0 y = 0 }
+		infantry_unit = { x = 0 y = 1 }
+		infantry_unit = { x = 0 y = 2 }
+		infantry_unit = { x = 0 y = 3 }
+		infantry_unit = { x = 0 y = 4 }
+		towed_artillery_unit = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		towed_artillery_support_unit = { x = 0 y = 3 }
+	}
+	
+	priority = 2
+}
+
+units = {
+	#Armoured Division (Guards)
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12046
+		division_template = "Firqat Haras Jumhuriun Musafaha"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "IRQ" }
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_0 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			infantry_weapons_2 = { owner = "SOV" }
+			infantry_anti_tank_weapons_1 = { owner = "SOV" }
+			infantry_anti_air_weapons_1 = { owner = "SOV" }
+			rocket_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 7994
+		division_template = "Firqat Haras Jumhuriun Musafaha"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "IRQ" }
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_0 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			infantry_weapons_2 = { owner = "SOV" }
+			infantry_anti_tank_weapons_1 = { owner = "SOV" }
+			infantry_anti_air_weapons_1 = { owner = "SOV" }
+			rocket_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 2089
+		division_template = "Firqat Haras Jumhuriun Musafaha"
+		force_equipment_variants = {
+			mbt_tank_equipment_1 = { owner = "IRQ" }
+			ifv_tank_equipment_1 = { owner = "SOV" }
+			apc_tank_equipment_0 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			infantry_weapons_2 = { owner = "SOV" }
+			infantry_anti_tank_weapons_1 = { owner = "SOV" }
+			infantry_anti_air_weapons_1 = { owner = "SOV" }
+			rocket_artillery_equipment_1 = { owner = "SOV" }
+			heli_attack_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+	}
+
+	#Armoured Division
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10106
+		division_template = "Firqat Mudaraea"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "SOV" }
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_0 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			infantry_weapons_1 = { owner = "SOV" }
+			infantry_anti_tank_weapons_1 = { owner = "SOV" }
+			infantry_anti_air_weapons_1 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 2097
+		division_template = "Firqat Mudaraea"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "SOV" }
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_0 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			infantry_weapons_1 = { owner = "SOV" }
+			infantry_anti_tank_weapons_1 = { owner = "SOV" }
+			infantry_anti_air_weapons_1 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 78
+		division_template = "Firqat Mudaraea"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "SOV" }
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_0 = { owner = "SOV" }
+			recon_vehicle_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			infantry_weapons_1 = { owner = "SOV" }
+			infantry_anti_tank_weapons_1 = { owner = "SOV" }
+			infantry_anti_air_weapons_1 = { owner = "SOV" }
+			motorised_artillery_equipment_2 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 78
+		division_template = "Firqat Mudaraea"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.05
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 12879
+		division_template = "Firqat Mudaraea"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.05
+	}
+
+	#Mechanized Division (Guards)
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 2097
+		division_template = "Firqat Alharas Aljumhurii Alalia"
+		force_equipment_variants = {
+			infantry_weapons_2 = { owner = "SOV" }
+			infantry_anti_tank_weapons_1 = { owner = "SOV" }
+			infantry_anti_air_weapons_1 = { owner = "SOV" }
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+	}
+
+	#Mechanized Division
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7994
+		division_template = "Alshuebat Alalia"
+		force_equipment_variants = {
+			infantry_weapons_1 = { owner = "SOV" }
+			infantry_anti_tank_weapons_1 = { owner = "SOV" }
+			infantry_anti_air_weapons_1 = { owner = "SOV" }
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12726
+		division_template = "Alshuebat Alalia"
+		force_equipment_variants = {
+			infantry_weapons_1 = { owner = "SOV" }
+			infantry_anti_tank_weapons_1 = { owner = "SOV" }
+			infantry_anti_air_weapons_1 = { owner = "SOV" }
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 51
+		}
+		location = 2089
+		division_template = "Alshuebat Alalia"
+		force_equipment_variants = {
+			infantry_weapons_1 = { owner = "SOV" }
+			infantry_anti_tank_weapons_1 = { owner = "SOV" }
+			infantry_anti_air_weapons_1 = { owner = "SOV" }
+			ifv_tank_equipment_0 = { owner = "SOV" }
+			apc_tank_equipment_0 = { owner = "SOV" }
+			spaa_tank_equipment_0 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+			heli_transport_equipment_0 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+
+	#Infantry Division (Guards)
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 2089
+		division_template = "Firqat Alharas Aljumhurii"
+		force_equipment_variants = {
+			infantry_weapons_2 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 10106
+		division_template = "Firqat Alharas Aljumhurii"
+		force_equipment_variants = {
+			infantry_weapons_2 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 10106
+		division_template = "Firqat Alharas Aljumhurii"
+		force_equipment_variants = {
+			infantry_weapons_2 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.8
+	}
+
+	#Infantry Division
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12046
+		division_template = "Firqat Mushaa"
+		force_equipment_variants = {
+			infantry_weapons_1 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 2097
+		division_template = "Firqat Mushaa"
+		force_equipment_variants = {
+			infantry_weapons_1 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10106
+		division_template = "Firqat Mushaa"
+		force_equipment_variants = {
+			infantry_weapons_1 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 8123
+		division_template = "Firqat Mushaa"
+		force_equipment_variants = {
+			infantry_weapons_1 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 8123
+		division_template = "Firqat Mushaa"
+		force_equipment_variants = {
+			infantry_weapons_1 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 3795
+		division_template = "Firqat Mushaa"
+		force_equipment_variants = {
+			infantry_weapons_1 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 1600
+		division_template = "Firqat Mushaa"
+		force_equipment_variants = {
+			infantry_weapons_1 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 8001
+		division_template = "Firqat Mushaa"
+		force_equipment_variants = {
+			infantry_weapons_1 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 2004
+		division_template = "Firqat Mushaa"
+		force_equipment_variants = {
+			infantry_weapons_1 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 12726
+		division_template = "Firqat Mushaa"
+		force_equipment_variants = {
+			infantry_weapons_1 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 12855
+		division_template = "Firqat Mushaa"
+		force_equipment_variants = {
+			infantry_weapons_1 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = 13310
+		division_template = "Firqat Mushaa"
+		force_equipment_variants = {
+			infantry_weapons_1 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18	
+		}
+		location = 12879
+		division_template = "Firqat Mushaa"
+		force_equipment_variants = {
+			infantry_weapons_1 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location = 4951
+		division_template = "Firqat Mushaa"
+		force_equipment_variants = {
+			infantry_weapons_1 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 10876
+		division_template = "Firqat Mushaa"
+		force_equipment_variants = {
+			infantry_weapons_1 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 10876
+		division_template = "Firqat Mushaa"
+		force_equipment_variants = {
+			infantry_weapons_1 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 10744
+		division_template = "Firqat Mushaa"
+		force_equipment_variants = {
+			infantry_weapons_1 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 22
+		}
+		location = 10744
+		division_template = "Firqat Mushaa"
+		force_equipment_variants = {
+			infantry_weapons_1 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 23
+		}
+		location = 10793
+		division_template = "Firqat Mushaa"
+		force_equipment_variants = {
+			infantry_weapons_1 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 24
+		}
+		location = 10793
+		division_template = "Firqat Mushaa"
+		force_equipment_variants = {
+			infantry_weapons_1 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 25
+		}
+		location = 10793
+		division_template = "Firqat Mushaa"
+		force_equipment_variants = {
+			infantry_weapons_1 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 26
+		}
+		location = 13314
+		division_template = "Firqat Mushaa"
+		force_equipment_variants = {
+			infantry_weapons_1 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 27
+		}
+		location = 13314
+		division_template = "Firqat Mushaa"
+		force_equipment_variants = {
+			infantry_weapons_1 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 28
+		}
+		location = 2097
+		division_template = "Firqat Mushaa"
+		force_equipment_variants = {
+			infantry_weapons_1 = { owner = "SOV" }
+			towed_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.95
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_weapons_2
+			creator = "IRQ"
+		}
+		requested_factories = 1
+		progress = 0.21
+		efficiency = 17
+	}
+	add_equipment_production = {
+		equipment = {
+			type = infantry_anti_tank_weapons_1
+			creator = "IRQ"
+		}
+		requested_factories = 1
+		progress = 0.21
+		efficiency = 17
+	}
+	add_equipment_production = {
+		equipment = {
+			type = infantry_anti_air_weapons_1
+			creator = "IRQ"
+		}
+		requested_factories = 1
+		progress = 0.21
+		efficiency = 17
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "IRQ"
+		}
+		requested_factories = 1
+		progress = 0.21
+		efficiency = 17
+	}
+	add_equipment_production = {
+		equipment = {
+			type = rocket_artillery_equipment_4
+			creator = "IRQ"
+		}
+		requested_factories = 1
+		progress = 0.21
+		efficiency = 17
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorised_equipment_1
+			creator = "IRQ"
+		}
+		requested_factories = 1
+		progress = 0.21
+		efficiency = 17
+	}
+	add_equipment_production = {
+		equipment = {
+			type = mbt_tank_equipment_1
+			creator = "IRQ"
+		}
+		requested_factories = 1
+		progress = 0.21
+		efficiency = 17
+	}
+}
+### Starting Production ###
+instant_effect = {
+	# Stockpile #
+	add_equipment_to_stockpile = {
+		type = infantry_weapons_1
+		amount = 4000
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_anti_tank_weapons_1
+		amount = 500
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_anti_air_weapons_1
+		amount = 500
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 800
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = motorised_equipment_1
+		amount = 100
+		producer = SOV
+	}
+
+	add_equipment_to_stockpile = {
+		type = mbt_tank_equipment_0
+		amount = 400
+		producer = PRC
+	}
+	add_equipment_to_stockpile = {
+		type = mbt_tank_equipment_0
+		amount = 800
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = mbt_tank_equipment_1
+		amount = 700
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = recon_vehicle_equipment_0
+		amount = 500
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = recon_vehicle_equipment_0
+		amount = 500
+		producer = FRA
+	}
+	add_equipment_to_stockpile = {
+		type = ifv_tank_equipment_0
+		amount = 550
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = apc_tank_equipment_0
+		amount = 1800
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = spaa_tank_equipment_0
+		amount = 100
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = towed_artillery_equipment_1
+		amount = 1300
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = motorised_artillery_equipment_2
+		amount = 130
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = rocket_artillery_equipment_1
+		amount = 450
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = heli_attack_equipment_0
+		amount = 70
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = heli_transport_equipment_0
+		amount = 300
+		producer = SOV
+	}
+}

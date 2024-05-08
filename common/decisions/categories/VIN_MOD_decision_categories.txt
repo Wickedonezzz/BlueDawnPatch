@@ -1,0 +1,16 @@
+VIN_fighting_poverty_category = {
+	icon = GFX_decision_category_generic_economy
+	picture = GFX_decision_cat_vietnam_fighting_poverty
+	
+	allowed = {
+		tag = VIN
+	}
+	
+	visible = {
+		OR = {
+			has_completed_focus = VIN_fight_poverty
+			is_debug = yes
+		}
+	}
+	priority = 150
+}

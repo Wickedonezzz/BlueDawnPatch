@@ -1,0 +1,35 @@
+on_actions = {
+	
+	### SCRIPTED PEACE DEALS ###
+	
+	### FROM is the country that wins the war and the tag listed below is the country that wins it ###
+	### ROOT is the county that loses the war and the tag below should the country that loses ###
+	
+	on_capitulation = {
+		effect = {	
+			if = {   
+				limit = {
+					FROM = {
+						original_tag = SAF
+					}
+					ROOT = {
+						OR = {
+							original_tag = UNI
+							original_tag = ANG
+						}
+					}
+				}
+				ROOT = {
+					clr_country_flag = SAF_pacification_rebelled
+				}
+				SAF = {
+					annex_country = {
+						target = ROOT
+						transfer_troops = no
+					}
+					set_variable = { turmoil_angola = 10 }
+				}
+			}
+		}
+	}
+}

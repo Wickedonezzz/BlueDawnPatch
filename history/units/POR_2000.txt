@@ -1,0 +1,142 @@
+division_template = { # Mechanised Division #
+	name = "Mechanised Division"
+	division_names_group = GENERIC_MEC_01
+
+	regiments = {
+		main_battle_tank_armor = { x = 0 y = 0 }
+		main_battle_tank_armor = { x = 0 y = 1 }
+		heavy_infantry_unit = { x = 1 y = 0 }
+		heavy_infantry_unit = { x = 1 y = 1 }
+		heavy_infantry_unit = { x = 1 y = 2 }
+		heavy_infantry_unit = { x = 1 y = 3 }
+		heavy_infantry_unit = { x = 1 y = 4 }
+		infantry_unit = { x = 2 y = 0 }
+		towed_artillery_unit = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		field_hospital = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		towed_artillery_support_unit = { x = 0 y = 3 }
+	}
+	priority = 1
+}
+division_template = { # Marine Division #
+	name = "Marine Division"
+	division_names_group = GENERIC_MRN_01
+
+	regiments = {
+		recon_vehicle_armor = { x = 0 y = 0 }
+		marine_unit = { x = 1 y = 0 }
+		marine_unit = { x = 1 y = 1 }
+		marine_unit = { x = 1 y = 2 }
+		marine_unit = { x = 1 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		transport_heli_company = { x = 0 y = 1 }
+		towed_artillery_support_unit = { x = 0 y = 2 }
+	}
+	priority = 2
+}
+
+units = {
+	# Mechanised Division #
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11885
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			apc_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_1 = { owner = "USA" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6924
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			apc_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_1 = { owner = "USA" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.85
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3866
+		division_template = "Mechanised Division"
+		force_equipment_variants = {
+			mbt_tank_equipment_0 = { owner = "USA" }
+			apc_tank_equipment_0 = { owner = "USA" }
+			towed_artillery_equipment_1 = { owner = "ITA" }
+		}
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.85
+	}
+
+	# Marine Division #
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4098
+		division_template = "Marine Division"
+		force_equipment_variants = {
+			recon_vehicle_equipment_1 = { owner = "FRA" }
+			towed_artillery_equipment_1 = { owner = "ENG" }
+			heli_transport_equipment_0 = { owner = "FRA" }
+		}
+		start_experience_factor = 0.30
+		start_equipment_factor = 0.90
+	}
+}
+instant_effect = {
+
+	# Stockpile #
+        add_equipment_to_stockpile = {
+		type = infantry_weapons_2
+		amount = 2500
+		producer = GER
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 400
+		producer = GER
+	}
+        add_equipment_to_stockpile = {
+		type = motorised_equipment_1
+		amount = 100
+		producer = GER
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_anti_tank_weapons_1
+		amount = 250
+		producer = USA
+	}
+
+	add_equipment_to_stockpile = {
+		type = motorised_artillery_equipment_3
+		amount = 10
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = heli_transport_equipment_1
+		amount = 10
+		producer = FRA
+	}
+}

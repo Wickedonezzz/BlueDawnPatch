@@ -1,0 +1,375 @@
+﻿capital = 64
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+
+	set_technology = {
+		attack_submarine_hull_1960 = 1
+		attack_submarine_hull_1980 = 1
+		attack_submarine_hull_1990 = 1
+		attack_submarine_hull_2000 = 1
+		corvette_hull_1960 = 1
+		destroyer_hull_1960 = 1
+		destroyer_hull_1980 = 1
+		destroyer_hull_1990 = 1
+		destroyer_hull_2000 = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		recon_vehicle_1960 = 1
+		recon_vehicle_1980 = 1
+	}
+}
+set_technology = {
+	mbt_tank_1960 = 1
+	mbt_tank_1970 = 1
+	mbt_tank_1980 = 1
+	mbt_tank_1990 = 1
+	ifv_tank_1970 = 1
+	ifv_tank_1980 = 1
+	apc_tank_1960 = 1
+	apc_tank_1970 = 1
+	apc_tank_1980 = 1
+	spaa_tank_1960 = 1
+	spaa_tank_1980 = 1
+	infantry_weapons_1960 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_air_weapons_1960 = 1
+	towed_artillery_1960 = 1
+	motorised_artillery_1960 = 1
+	motorised_artillery_1970 = 1
+	motorised_artillery_1980 = 1
+	motorised_artillery_1990 = 1
+	motorised_artillery_2000 = 1
+	rocket_artillery_1960 = 1
+	rocket_artillery_1970 = 1
+	tech_support = 1
+	tech_motorised_1960 = 1
+	tech_train_1960 = 1
+	attacker_1960 = 1
+	attacker_1970 = 1
+	attacker_1980 = 1
+	heli_transport_1960 = 1
+	heli_transport_1970 = 1
+	heli_attack_1970 = 1
+	support_tech_engineers_1960 = 1
+	support_tech_militarypolice_1960 = 1
+	support_tech_hospital_1960 = 1
+	support_tech_maintenance_1960 = 1
+	support_tech_logistics_1960 = 1
+	support_tech_recon_1960 = 1
+}
+set_oob = "GER_2000"
+set_air_oob = "GER_2000_air"
+
+set_research_slots = 4
+set_convoys = 200
+set_stability = 0.75 
+set_war_support = 0.3
+
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_intelligence_agency = {
+		name = "Federal Intelligence Service"
+		icon = "GFX_intelligence_agency_logo_generic_1"
+	}
+}
+
+recruit_character = GER_gerhard_schroder
+recruit_character = GER_edmund_stoiber
+recruit_character = GER_guido_westerwelle
+recruit_character = GER_udo_voigt_1
+recruit_character = GER_udo_voigt_2
+recruit_character = GER_egon_krenz
+recruit_character = GER_erhard_buhler
+recruit_character = GER_rainer_feist
+
+add_ideas = GER_eu
+add_ideas = GER_ostalgie
+add_ideas = GER_economy
+
+add_ideas = usa_aligned_nation
+
+add_ideas = limited_conscription
+
+set_politics = {
+	ruling_party = social_democracy
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 0
+	socialism = 5
+	social_democracy = 43
+	liberalism = 13
+	democratic = 39
+	neutrality = 0
+	paternal_autocracy = 0
+	fascism = 0
+}
+
+# Naval Variants #
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "GER_2000_naval_mtg"
+
+	# Attack Submarines #
+	create_equipment_variant = {
+		name = "Type 205 Class"
+		type = attack_submarine_hull_1
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = sub_electrical_systems_1
+			fixed_ship_engine_slot = sub_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			custom_ship_torpedo_slot = ship_torpedo_sub_2
+			custom_slot_1 = ship_torpedo_sub_2
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Type 206 Class"
+		type = attack_submarine_hull_1
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = sub_electrical_systems_2
+			fixed_ship_engine_slot = sub_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_2
+			custom_ship_torpedo_slot = ship_torpedo_sub_2
+			custom_slot_1 = ship_torpedo_sub_2
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Type 207 Class"
+		type = attack_submarine_hull_1
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = sub_electrical_systems_2
+			fixed_ship_engine_slot = sub_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_2
+			custom_ship_torpedo_slot = ship_torpedo_sub_2
+			custom_slot_1 = ship_torpedo_sub_2
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Type 209/1100 Class"
+		type = attack_submarine_hull_1
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = sub_electrical_systems_2
+			fixed_ship_engine_slot = sub_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_2
+			custom_ship_torpedo_slot = ship_torpedo_sub_2
+			custom_slot_1 = ship_torpedo_sub_2
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Type 209/1200 Class"
+		type = attack_submarine_hull_1
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = sub_electrical_systems_2
+			fixed_ship_engine_slot = sub_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			custom_ship_torpedo_slot = ship_torpedo_sub_2
+			custom_slot_1 = ship_torpedo_sub_2
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Type 209/1300 Class"
+		type = attack_submarine_hull_1
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = sub_electrical_systems_1
+			fixed_ship_engine_slot = sub_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			custom_ship_torpedo_slot = ship_torpedo_sub_2
+			custom_slot_1 = ship_torpedo_sub_2
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Type 209/1400 Class"
+		type = attack_submarine_hull_1
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = sub_electrical_systems_2
+			fixed_ship_engine_slot = sub_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_2
+			custom_ship_torpedo_slot = ship_torpedo_sub_1
+			custom_slot_1 = ship_torpedo_sub_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Type 209T/1400 Class"
+		type = attack_submarine_hull_1
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = sub_electrical_systems_3
+			fixed_ship_engine_slot = sub_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_2
+			custom_ship_torpedo_slot = ship_torpedo_sub_2
+			custom_slot_1 = ship_torpedo_sub_2
+		}
+		obsolete = no
+	}
+	create_equipment_variant = {
+		name = "Type 209/1500 Class"
+		type = attack_submarine_hull_1
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = sub_electrical_systems_2
+			fixed_ship_engine_slot = sub_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_2
+			custom_ship_torpedo_slot = ship_torpedo_sub_2
+			custom_slot_1 = ship_torpedo_sub_2
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Type 212A Class"
+		type = attack_submarine_hull_4
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = sub_electrical_systems_4
+			fixed_ship_engine_slot = sub_engine_aip_1
+			fixed_ship_sonar_slot = sub_sonar_4
+			custom_ship_torpedo_slot = ship_torpedo_sub_2
+			custom_slot_1 = ship_torpedo_sub_1
+			custom_slot_2 = empty
+		}
+		obsolete = no
+	}
+	create_equipment_variant = {
+		name = "Type 214 Class"
+		type = attack_submarine_hull_4
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = sub_electrical_systems_3
+			fixed_ship_engine_slot = sub_engine_aip_1
+			fixed_ship_sonar_slot = sub_sonar_3
+			custom_ship_torpedo_slot = ship_torpedo_sub_2
+			custom_slot_1 = ship_torpedo_sub_2
+			custom_slot_2 = empty
+		}
+		obsolete = no
+	}
+
+	# Corvettes #
+	create_equipment_variant = {
+		name = "Thetis Class"
+		type = corvette_hull_1
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_1
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = anti_air_1
+			fixed_ship_defensive_slot_2 = empty
+			custom_ship_cannon_slot = empty
+			custom_slot_1 = aswrl_1
+			custom_slot_2 = ship_torpedo_surface_2
+			custom_slot_3 = depth_charges_1
+		}
+		obsolete = yes
+	}
+
+	# Frigates #
+	create_equipment_variant = {
+		name = "Bremen Class"
+		type = destroyer_hull_2
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_3
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_2
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = sam_missile_2
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = cruise_missile_2
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Brandenburg Class"
+		type = destroyer_hull_3
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_3
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_3
+			fixed_ship_radar_slot = ship_radar_3
+			fixed_ship_defensive_slot_1 = sam_missile_2
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_2
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = sam_missile_2
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Sachsen Class"
+		type = destroyer_hull_4
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_3
+			fixed_ship_engine_slot = small_surface_engine_diesel_2
+			fixed_ship_sonar_slot = sub_sonar_4
+			fixed_ship_radar_slot = ship_radar_4
+			fixed_ship_defensive_slot_1 = sam_missile_2
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_2
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = cruise_missile_2
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = no
+	}
+}
+
+country_event = {
+id = germany_mod.1
+days = 1023
+}

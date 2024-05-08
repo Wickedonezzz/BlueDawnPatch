@@ -1,0 +1,17 @@
+units = {
+	fleet = {
+		name = "Flotte Belge"
+		naval_base = 6560 # Zeebrugge #
+		task_force = {
+			name = "Flotte Belge"
+			location = 6560 # Zeebrugge #
+			ship = { name = "BNS Wielingen" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = BEL version_name = "Wielingen Class" } } }
+			ship = { name = "BNS Westdiep" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = BEL version_name = "Wielingen Class" } } }
+			ship = { name = "BNS Wandelaar" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = BEL version_name = "Wielingen Class" } } }
+			ship = { name = "BNS Westhinder" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = BEL version_name = "Wielingen Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

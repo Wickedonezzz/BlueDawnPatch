@@ -1,0 +1,102 @@
+characters = {
+
+	## Leaders ##
+
+	FIN_martti_ahtisaari = {
+		name = "Martti Ahtisaari"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FIN/Martti_Ahtisaari.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	FIN_tarja_halonen = {
+		name = "Tarja Halonen"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FIN/Tarja_Halonen.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	FIN_vladimir_boldyrev = {
+		name = "Vladimir Boldyrev"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FIN/Vladimir_Boldyrev.dds"
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	FIN_yrjo_hakanen = {
+		name = "Yrjö Hakanen"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FIN/hakanen.png"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	## Generals ##
+
+	FIN_gustav_hagglund = {
+		name = "Johan Edvin Birger Gustav Hägglund"
+		portraits = {
+			army = {
+				large = "gfx/leaders/FIN/Gustav_Hagglund.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	## Admirals ##
+
+	FIN_juhani_kaskeala = {
+		name = "Pauli Juhani Kaskeala"
+		portraits = {
+			army = {
+				large = "gfx/leaders/FIN/Juhani_Kaskeala.png"
+			}
+		}
+		navy_leader={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+
+}

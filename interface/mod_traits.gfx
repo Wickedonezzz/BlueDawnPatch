@@ -1,0 +1,40 @@
+spriteTypes = {	
+
+	## MOD ##
+
+	spriteType = {
+		name = "GFX_trait_slovenian"
+		texturefile = "gfx/interface/traits/personal/trait_slovenian.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_trait_croatian"
+		texturefile = "gfx/interface/traits/personal/trait_croatian.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_trait_bosnian"
+		texturefile = "gfx/interface/traits/personal/trait_bosnian.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_trait_serbian"
+		texturefile = "gfx/interface/traits/personal/trait_serbian.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_trait_montenegrin"
+		texturefile = "gfx/interface/traits/personal/trait_montenegrin.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_trait_macedonia"
+		texturefile = "gfx/interface/traits/personal/trait_macedonia.dds"
+		legacy_lazy_load = no
+	}		
+}

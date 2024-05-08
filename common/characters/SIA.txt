@@ -1,0 +1,158 @@
+characters = {
+
+	SIA_chuan_leekpai = {
+		name = "Chuan Leekpai"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIA/Chuan_Leekpai.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	SIA_Thaksin_Shinawatra = {
+		name = "Thaksin Shinawatra"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIA/Thaksin_Shinawatra.png"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	SIA_Surachai_Danwattananusorn = {
+		name = "Surachai Danwattananusorn"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIA/Surachai_Danwattananusorn.png"
+			}
+		}
+		country_leader = {
+			ideology = market_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	SIA_Surayud_Chulanont = {
+		name = "Surayud Chulanont"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIA/Surayud_Chulanont.png"
+			}
+			army = {
+				large = "gfx/leaders/SIA/Surayud_Chulanont.png"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		field_marshal={
+			traits={ }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+        SIA_Sonthi_Boonyaratglin = {
+		name = "Sonthi Boonyaratglin"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/Sonthi_Boonyaratglin.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	  SIA_Somtat_Attanand = {
+		name = "Somtat Attanand"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/Somtat_Attanand.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+         SIA_Songkitti_Jaggabatara = {
+		name = "Songkitti Jaggabatara"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/Songkitti_Jaggabatara.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	  SIA_Saprang_Kalayanamitr = {
+		name = "Saprang Kalayanamitr"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/Saprang_Kalayanamitr.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	  SIA_Chaiyasit_Shinawatra = {
+		name = "Chaiyasit Shinawatra"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SIA/Chaiyasit_Shinawatra.png"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	
+
+}

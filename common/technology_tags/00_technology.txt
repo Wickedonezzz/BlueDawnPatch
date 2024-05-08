@@ -1,0 +1,139 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new technology, make sure they are uniquely named.
+
+technology_categories = {
+	infantry_weapons
+	armor
+	artillery
+	naval_equipment
+	nuclear
+	industry
+	electronics
+	land_doctrine
+	air_doctrine
+	naval_doctrine
+	ship_modules_tech
+	computing_tech
+	radar_tech
+	marine_tech
+	construction_tech
+	excavation_tech
+	air_equipment
+	night_vision
+	support_tech
+	para_tech
+	engineers_tech
+	recon_tech
+	military_police_tech
+	hospital_tech
+	logistics_tech
+	maintenance_company_tech
+
+	## MOD ##
+
+	mod_cat_truck
+	mod_cat_train
+
+	mod_cat_aircraft
+	mod_cat_fighter
+	mod_cat_attacker
+	mod_cat_bomber
+	mod_cat_stealth
+	mod_cat_naval_aircraft
+	mod_cat_interceptor
+	mod_cat_helicopter
+	mod_cat_attack_helicopter
+	mod_cat_transport_helicopter
+	mod_cat_uav
+	mod_cat_stealth_fighter
+	mod_cat_stealth_bomber
+
+	mod_cat_towed_artillery
+	mod_cat_motorised_artillery
+	mod_cat_rocket_artillery
+
+	mod_cat_mbt
+	mod_cat_ifv
+	mod_cat_apc
+	mod_cat_recon
+	mod_cat_spaa
+	mod_cat_atgm
+	mod_cat_missile
+
+	mod_cat_corvette
+	mod_cat_destroyer
+	mod_cat_cruiser
+	mod_cat_carrier
+	mod_cat_surface
+	mod_cat_submarine
+	mod_cat_attack_submarine
+	mod_cat_cruise_submarine
+	mod_cat_ballistic_submarine
+	mod_cat_amphibious_ship
+
+	mod_cat_doctrine_bastion
+	mod_cat_doctrine_strike_force
+	mod_cat_doctrine_coastal
+
+	mod_cat_guerilla_warfare
+	mod_cat_cyber_warfare
+
+	mod_cat_oil
+	
+}
+
+technology_folders = {
+	infantry_folder = {
+		ledger = army
+	}
+	support_folder = {
+		ledger = army
+	}
+	armour_folder = {
+		ledger = army
+	}
+	artillery_folder = {
+		ledger = army
+	}
+	air_techs_folder = {
+		ledger = air
+	}
+	naval_folder = {
+		available = {
+			not = { has_dlc = "Man the Guns" }
+		}
+		ledger = navy
+	}
+	mtgnavalfolder = {
+		available = {
+			has_dlc = "Man the Guns"
+		}
+		ledger = navy
+	}
+	mtgnavalsupportfolder = {
+		available = {
+			has_dlc = "Man the Guns"
+		}
+		ledger = navy
+	}
+	industry_folder = {
+		ledger = civilian
+	}
+	land_doctrine_folder = {
+		ledger = army
+		doctrine = yes
+	}
+	naval_doctrine_folder = {
+		ledger = navy
+		doctrine = yes
+	}
+	air_doctrine_folder = {
+		ledger = air
+		doctrine = yes
+	}
+	electronics_folder = {
+		ledger = civilian
+	}
+}
+
+ 

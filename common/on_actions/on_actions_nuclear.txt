@@ -1,0 +1,128 @@
+on_actions = {
+	on_startup =  {
+		effect = {
+			every_country = {
+				set_variable = {
+					var = THIS.atomic_number
+					value = 0
+				}
+				set_variable = {
+					var = THIS.hydrogen_number
+					value = 0
+				}
+			}
+
+			USA = {
+				set_variable = {
+					var = THIS.hydrogen_number
+					value = 10603
+				}
+				add_equipment_to_stockpile = {
+					type = hydrogen_bomb_equipment
+					amount = 10603
+				}
+			}
+			SOV = {
+				set_variable = {
+					var = THIS.hydrogen_number
+					value = 30042
+				}
+				add_equipment_to_stockpile = {
+					type = hydrogen_bomb_equipment
+					amount = 30042
+				}
+			}
+			ENG = {
+				set_variable = {
+					var = THIS.hydrogen_number
+					value = 365
+				}
+				add_equipment_to_stockpile = {
+					type = hydrogen_bomb_equipment
+					amount = 365
+				}
+			}
+			FRA = {
+				set_variable = {
+					var = THIS.hydrogen_number
+					value = 489
+				}
+				add_equipment_to_stockpile = {
+					type = hydrogen_bomb_equipment
+					amount = 489
+				}
+			}
+			PRC = {
+				set_variable = {
+					var = THIS.hydrogen_number
+					value = 234
+				}
+				add_equipment_to_stockpile = {
+					type = hydrogen_bomb_equipment
+					amount = 234
+				}
+			}
+			RAJ = {
+				set_variable = {
+					var = THIS.atomic_number
+					value = 23
+				}
+				add_equipment_to_stockpile = {
+					type = atomic_bomb_equipment
+					amount = 23
+				}
+				set_variable = {
+					var = THIS.hydrogen_number
+					value = 5
+				}
+				add_equipment_to_stockpile = {
+					type = hydrogen_bomb_equipment
+					amount = 5
+				}
+			}
+			ISR = {
+				set_variable = {
+					var = THIS.atomic_number
+					value = 22
+				}
+				add_equipment_to_stockpile = {
+					type = atomic_bomb_equipment
+					amount = 22
+				}
+				set_variable = {
+					var = THIS.hydrogen_number
+					value = 51
+				}
+				add_equipment_to_stockpile = {
+					type = hydrogen_bomb_equipment
+					amount = 51
+				}
+			}
+			PAK = {
+				set_variable = {
+					var = THIS.atomic_number
+					value = 28
+				}
+				add_equipment_to_stockpile = {
+					type = atomic_bomb_equipment
+					amount = 28
+				}
+			}
+		}
+	}
+
+	on_weekly = { # change to monthly #
+		effect = {
+			every_country = {
+				set_variable = {
+					var = THIS.atomic_number
+					value = THIS.num_equipment@atomic_bomb_equipment
+				}
+				set_variable = {
+					var = THIS.hydrogen_number
+					value = THIS.num_equipment@hydrogen_bomb_equipment
+				}
+			}
+		}
+	}
+}

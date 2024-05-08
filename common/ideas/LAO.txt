@@ -1,0 +1,83 @@
+ideas = {
+	
+	country = {
+	
+		LAO_undeveloped_infrastructure = {
+			name = LAO_undeveloped_infrastructure_name
+
+			removal_cost = -1
+
+			picture = LAO_undeveloped_infrastructure_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_buildings_factor = -0.2
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				production_speed_infrastructure_factor = -0.4
+			}
+		}
+
+		LAO_legacy_american_bombing = {
+			name = LAO_legacy_american_bombing_name
+
+			removal_cost = -1
+
+			picture = LAO_legacy_american_bombing_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				stability_factor = -0.05
+			}
+		}
+
+		LAO_balance_vin_prc = {
+			name = LAO_balance_vin_prc_name
+
+			removal_cost = -1
+
+			picture = LAO_balance_vin_prc_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = 0.05
+				war_support_factor = -0.1
+			}
+		}
+		LAO_army = {
+			name = LAO_army_name
+
+			removal_cost = -1
+
+			picture = MEX_revolutionary_army
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				army_core_defence_factor = 0.15
+				war_support_factor = 0.1
+				surrender_limit = 0.12
+				supply_consumption_factor = -0.2
+				supply_node_range = 0.2
+				army_org_factor = -0.1
+				planning_speed = -0.2
+			}
+		}
+
+	}
+
+}

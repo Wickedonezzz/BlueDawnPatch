@@ -1,0 +1,11 @@
+air_wings = {
+	# Land Wings #
+	323 = {
+		# Transports -- BAe-748
+		transport_plane_equipment_1 =  { # BAe-748 #
+			owner = "NEP"
+			creator = ENG
+			amount = 1
+		}
+	}
+}

@@ -1,0 +1,1694 @@
+ideas = {
+	
+	country = {
+	
+		IRQ_western_embargo_1 = {
+			name = IRQ_embargo_name
+
+			removal_cost = -1
+
+			picture = IRQ_western_embargo_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.15
+				trade_opinion_factor = -0.1
+				consumer_goods_factor = 0.30
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+			}
+		}
+
+		IRQ_western_embargo_2 = {
+			name = IRQ_embargo_name
+
+			removal_cost = -1
+
+			picture = IRQ_western_embargo_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.15
+				consumer_goods_factor = 0.30
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+			}
+		}
+
+		IRQ_western_embargo_3 = {
+			name = IRQ_embargo_name
+
+			removal_cost = -1
+
+			picture = IRQ_western_embargo_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.10
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+			}
+		}
+
+		IRQ_western_embargo_4 = {
+			name = IRQ_embargo_name
+
+			removal_cost = -1
+
+			picture = IRQ_western_embargo_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+			}
+		}
+
+		IRQ_western_embargo_5 = {
+			name = IRQ_embargo_name
+
+			removal_cost = -1
+
+			picture = IRQ_western_embargo_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.05
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+			}
+		}
+
+		IRQ_western_embargo_6 = {
+			name = IRQ_embargo_name
+
+			removal_cost = -1
+
+			picture = IRQ_western_embargo_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+			}
+		}
+
+		IRQ_western_embargo_7 = {
+			name = IRQ_embargo_name
+
+			removal_cost = -1
+
+			picture = IRQ_western_embargo_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+			}
+		}
+		
+		IRQ_kurdish_rebels = {
+			name = IRQ_kurds_name
+
+			removal_cost = -1
+
+			picture = IRQ_kurdish_rebel_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_cost = 0.7
+				resistance_growth = 0.3
+				resistance_target = 0.3
+				resistance_damage_to_garrison = 0.2
+				custom_modifier_tooltip = irq_kurd_rebels_idea_tt
+			}
+		}
+
+		IRQ_kurdish_rebels_2 = {
+			name = IRQ_kurds_name
+
+			removal_cost = -1
+
+			picture = IRQ_kurdish_rebel_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_cost = 0.7
+				resistance_growth = 0.2
+				resistance_target = 0.25
+				resistance_damage_to_garrison = 0.1
+				custom_modifier_tooltip = irq_kurd_rebels_idea_tt				
+			}
+		}
+
+		IRQ_kurdish_rebels_3 = {
+			name = IRQ_kurds_name_3
+
+			removal_cost = -1
+
+			picture = IRQ_kurdish_rebel_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_cost = 0.5
+				resistance_growth = 0.1
+				resistance_target = 0.2
+			}
+		}
+
+		IRQ_kurdish_rebels_4 = {
+			name = IRQ_kurds_name
+
+			removal_cost = -1
+
+			picture = IRQ_kurdish_rebel_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_cost = 0.7
+				resistance_target = 0.15
+				custom_modifier_tooltip = irq_kurd_rebels_idea_tt				
+			}
+		}
+		
+		IRQ_oil_producers = {
+			name = oil_producers_name
+
+			removal_cost = -1
+
+			picture = oil_producers_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_factor = 0.05
+				production_speed_synthetic_refinery_factor = 0.1
+				production_speed_fuel_silo_factor = 0.1
+			}
+		}
+		
+		IRQ_oil_producers_2 = {
+			name = oil_producers_name
+
+			removal_cost = -1
+
+			picture = oil_producers_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_factor = 0.15
+				production_speed_synthetic_refinery_factor = 0.3
+				production_speed_fuel_silo_factor = 0.3
+				max_fuel_factor = 0.3 
+				fuel_gain_factor_from_states = 0.3
+
+			}
+		}		
+
+		IRQ_land_of_madness = {
+			name = IRQ_land_of_madness_name
+
+			removal_cost = -1
+
+			picture = IRQ_madness_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				war_support_factor = -0.005
+				army_core_defence_factor = 0.1
+			}
+		}
+
+		IRQ_uranium_production_1 = {
+			name = IRQ_uranium_production_1_name
+
+			removal_cost = -1
+
+			picture = IRQ_uranium_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				production_speed_nuclear_reactor_factor = 0.05
+			}
+		}
+
+		IRQ_uranium_production_2 = {
+			name = IRQ_uranium_production_2_name
+
+			removal_cost = -1
+
+			picture = IRQ_uranium_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				production_speed_nuclear_reactor_factor = 0.1
+			}
+		}
+
+		IRQ_iraqi_army = {
+			name = IRQ_iraqi_army_name
+
+			removal_cost = -1
+
+			#picture = 
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				army_core_defence_factor = 0.1
+				army_attack_factor = 0.05
+				experience_gain_army = 0.5
+				war_support_weekly_factor = 0.02
+			}
+		}
+
+		IRQ_terratorial_expansion_idea_1 = {
+			name = IRQ_terratorial_expansion_idea_name
+
+			removal_cost = -1
+
+			picture = IRQ_territorial_expansion_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			targeted_modifier = {
+				tag = SYR
+				attack_bonus_against = 0.05
+			}
+		}
+
+		IRQ_terratorial_expansion_idea_2 = {
+			name = IRQ_terratorial_expansion_idea_name
+
+			removal_cost = -1
+
+			picture = IRQ_territorial_expansion_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			targeted_modifier = {
+				tag = KUW
+				attack_bonus_against = 0.05
+			}
+		}
+
+		IRQ_terratorial_expansion_idea_3 = {
+			name = IRQ_terratorial_expansion_idea_name
+
+			removal_cost = -1
+
+			picture = IRQ_territorial_expansion_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			targeted_modifier = {
+				tag = SYR
+				attack_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = KUW
+				attack_bonus_against = 0.05
+			}
+		}
+
+		IRQ_terratorial_expansion_idea_4 = {
+			name = IRQ_terratorial_expansion_idea_name
+
+			removal_cost = -1
+
+			picture = IRQ_territorial_expansion_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			targeted_modifier = {
+				tag = PER
+				attack_bonus_against = 0.1
+			}
+		}
+
+		IRQ_terratorial_expansion_idea_5 = {
+			name = IRQ_terratorial_expansion_idea_name
+
+			removal_cost = -1
+
+			picture = IRQ_territorial_expansion_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				max_planning_factor = 0.1
+				planning_speed = 0.1
+			}
+
+			targeted_modifier = {
+				tag = PER
+				attack_bonus_against = 0.1
+			}
+		}
+
+		IRQ_strained_infrastructure = {
+			name = IRQ_strained_infrastructure_name
+
+			removal_cost = -1
+
+			picture = LAO_undeveloped_infrastructure_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				production_speed_buildings_factor = -0.2
+				production_factory_max_efficiency_factor = -0.25
+			}
+		}
+
+		IRQ_strained_infrastructure_2 = {
+			name = IRQ_strained_infrastructure_name
+
+			removal_cost = -1
+
+			picture = LAO_undeveloped_infrastructure_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				production_factory_max_efficiency_factor = -0.2
+			}
+		}
+
+		IRQ_no-fly_zones = {
+			name = IRQ_no-fly_zones_name
+
+			removal_cost = -1
+
+			picture = IRQ_no-fly_zones_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				OR = {
+					is_puppet = yes
+					IRQ = { has_war_with = USA }
+				}
+			}
+
+			modifier = {
+				air_mission_efficiency = -0.5
+				enemy_army_bonus_air_superiority_factor = 0.4
+			}
+		}
+
+		IRQ_no-fly_zones_2 = {
+			name = IRQ_no-fly_zones_name
+
+			removal_cost = -1
+
+			picture = IRQ_no-fly_zones_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				OR = {
+					is_puppet = yes
+					IRQ = { has_war_with = USA }
+				}
+			}
+
+			modifier = {
+				air_mission_efficiency = -0.35
+				enemy_army_bonus_air_superiority_factor = 0.2
+			}
+		}
+
+		IRQ_destroyed_air_force = {
+			name = IRQ_destroyed_air_force_name
+
+			removal_cost = -1
+
+			picture = IRQ_destroyed_air_force_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				air_home_defence_factor = -0.5
+				air_mission_efficiency = -0.3
+				air_accidents_factor = 0.25
+				air_wing_xp_loss_when_killed_factor = 0.5
+				air_training_xp_gain_factor = -0.5
+			}
+		}
+
+		IRQ_destroyed_air_force_2 = {
+			name = IRQ_destroyed_air_force_name
+
+			removal_cost = -1
+
+			picture = IRQ_destroyed_air_force_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				air_home_defence_factor = -0.25
+				air_mission_efficiency = -0.25
+				air_accidents_factor = 0.25
+				air_wing_xp_loss_when_killed_factor = 0.5
+				air_training_xp_gain_factor = -0.5
+			}
+		}
+
+		IRQ_destroyed_air_force_rule_1 = {
+			name = IRQ_destroyed_air_force_name
+
+			removal_cost = -1
+
+			picture = IRQ_destroyed_air_force_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				air_home_defence_factor = -0.15
+				air_mission_efficiency = -0.15
+				air_accidents_factor = 0.25
+				air_wing_xp_loss_when_killed_factor = 0.5
+				air_training_xp_gain_factor = -0.5
+			}
+		}
+
+		IRQ_destroyed_air_force_rule_2 = {
+			name = IRQ_destroyed_air_force_name
+
+			removal_cost = -1
+
+			picture = IRQ_destroyed_air_force_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				air_home_defence_factor = -0.10
+				air_mission_efficiency = -0.10
+				air_accidents_factor = 0.15
+				air_wing_xp_loss_when_killed_factor = 0.25
+				air_training_xp_gain_factor = -0.25
+			}
+		}
+
+		IRQ_destroyed_air_force_shade_1 = {
+			name = IRQ_destroyed_air_force_shade_name
+
+			removal_cost = -1
+
+			picture = IRQ_suppressed_air_force_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				IRQ = { has_war_with = USA }
+			}
+
+			modifier = {
+				air_home_defence_factor = -0.15
+				air_mission_efficiency = -0.15
+				air_accidents_factor = 0.25
+				air_wing_xp_loss_when_killed_factor = 0.5
+				air_training_xp_gain_factor = -0.5
+			}
+		}
+
+		IRQ_destroyed_air_force_shade_2 = {
+			name = IRQ_destroyed_air_force_shade_name
+
+			removal_cost = -1
+
+			picture = IRQ_suppressed_air_force_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				IRQ = { has_war_with = USA }
+			}
+
+			modifier = {
+				air_home_defence_factor = -0.15
+				air_mission_efficiency = -0.15
+			}
+		}
+
+		IRQ_yugo_aircraft_mechanics = {
+			name = IRQ_yugo_aircraft_mechanics_name
+
+			removal_cost = -1
+
+			picture = IRQ_yugo_aircraft_mechanics_icon
+
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				air_accidents_factor = -0.2
+				consumer_goods_factor = 0.15
+			}
+		}
+
+		IRQ_yugo_aircraft_mechanics_payments = {
+			name = IRQ_yugo_aircraft_mechanics_payments_name
+
+			removal_cost = -1
+
+			picture = IRQ_yugo_aircraft_mechanics_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
+
+		IRQ_foreign_ship_payments_irq = {
+			name = IRQ_foreign_ship_payments_irq_name
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.15
+			}
+		}
+
+		IRQ_foreign_ship_payments = {
+			name = IRQ_foreign_ship_payments_name
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
+		
+		IRQ_dreams_of_a_greater_iraq = {
+			name = IRQ_dreams_of_a_greater_iraq_name
+
+			removal_cost = -1
+
+			picture = IRQ_dreams_of_greater_iraq_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				army_core_defence_factor = 0.10
+				dig_in_speed_factor = 0.30
+			}
+		}
+		IRQ_dreams_of_a_greater_iraq_2 = {
+			name = IRQ_dreams_of_a_greater_iraq_name
+
+			removal_cost = -1
+
+			picture = IRQ_dreams_of_greater_iraq_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+				dig_in_speed_factor = 0.30
+				max_command_power_mult = 0.3 
+
+			}
+		}		
+		
+		IRQ_dreams_of_a_united_arab_nation = {
+			name = IRQ_dreams_of_a_united_arab_nation_name
+
+			removal_cost = -1
+
+			picture = IRQ_dreams_of_pan_arab_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_morale_factor = 0.10
+				weekly_manpower = 750
+			}
+		}
+		
+		IRQ_an_united_arab_nation = {
+			name = IRQ_an_united_arab_nation_name
+
+			removal_cost = -1
+
+			picture = IRQ_dreams_of_pan_arab_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				political_power_factor = 0.05
+				army_core_attack_factor = 0.05
+				army_morale_factor = 0.10
+				weekly_manpower = 750
+			}
+		}
+		
+		IRQ_an_united_arab_nation_2 = {
+			name = IRQ_an_united_arab_nation_name
+
+			removal_cost = -1
+
+			picture = IRQ_dreams_of_pan_arab_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				political_power_factor = 0.05
+				army_core_attack_factor = 0.05
+				army_morale_factor = 0.15
+				research_speed_factor = 0.05
+				weekly_manpower = 750
+			}
+		}
+		
+		IRQ_an_united_arab_nation_3 = {
+			name = IRQ_an_united_arab_nation_name
+
+			removal_cost = -1
+
+			picture = IRQ_dreams_of_pan_arab_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				political_power_factor = 0.05
+				army_core_attack_factor = 0.05
+				army_morale_factor = 0.15
+				research_speed_factor = 0.05
+				consumer_goods_factor = -0.15
+				industrial_capacity_factory = 0.05
+				weekly_manpower = 750
+			}
+		}
+		
+		IRQ_an_united_arab_nation_4 = {
+			name = IRQ_an_united_arab_nation_name
+
+			removal_cost = -1
+
+			picture = IRQ_dreams_of_pan_arab_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				political_power_factor = 0.05
+				army_core_attack_factor = 0.05
+				army_attack_factor = 0.05
+				army_morale_factor = 0.15
+				research_speed_factor = 0.05
+				consumer_goods_factor = -0.15
+				industrial_capacity_factory = 0.05
+				conscription_factor = 0.15
+				weekly_manpower = 250
+			}
+		}
+		
+		
+		IRQ_saddams_cult_of_personality = {
+			name = IRQ_saddams_cult_of_personality_name
+
+			removal_cost = -1
+
+			picture = IRQ_cult_of_saddam_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				political_power_cost = 0.15
+				stability_weekly_factor = 0.001
+				industrial_capacity_factory = 0.10
+				consumer_goods_factor = -0.30
+			}
+		}
+		
+		IRQ_saddams_cult_of_personality_2 = {
+			name = IRQ_saddams_cult_of_personality_name
+
+			removal_cost = -1
+
+			picture = IRQ_cult_of_saddam_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				political_power_cost = 0.25
+				stability_weekly_factor = 0.002
+				industrial_capacity_factory = 0.10
+				consumer_goods_factor = -0.30
+			}
+		}
+		
+		IRQ_saddams_cult_of_personality_3 = {
+			name = IRQ_saddams_cult_of_personality_name
+
+			removal_cost = -1
+
+			picture = IRQ_cult_of_saddam_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				political_power_cost = 0.25
+				stability_weekly_factor = 0.002
+				industrial_capacity_factory = 0.10
+				consumer_goods_factor = -0.30
+				army_attack_factor = 0.05
+			}
+		}
+		
+		IRQ_saddams_cult_of_personality_4 = {
+			name = IRQ_saddams_cult_of_personality_name
+
+			removal_cost = -1
+
+			picture = IRQ_cult_of_saddam_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				political_power_cost = 0.25
+				stability_weekly_factor = 0.002
+				industrial_capacity_factory = 0.10
+				consumer_goods_factor = -0.30
+				army_attack_factor = 0.1
+			}
+		}
+		
+		IRQ_renewed_resistance = {
+			name = IRQ_renewed_resistance_name
+
+			removal_cost = -1
+
+			picture = IRQ_renewed_resistance_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				neutrality_drift = 0.30
+				stability_weekly_factor = -0.005
+				resistance_growth = 0.80
+			}
+		}
+		
+		IRQ_renewed_resistance_2 = {
+			name = IRQ_renewed_resistance_name
+
+			removal_cost = -1
+
+			picture = IRQ_renewed_resistance_icon
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				neutrality_drift = 0.25
+				stability_weekly_factor = -0.003
+				resistance_growth = 0.65
+			}
+		}
+		
+		IRQ_renewed_resistance_3 = {
+			name = IRQ_renewed_resistance_name
+
+			removal_cost = -1
+
+			picture = IRQ_renewed_resistance_icon
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				neutrality_drift = 0.20
+				stability_weekly_factor = -0.002
+				resistance_growth = 0.45
+			}
+		}
+		
+		IRQ_renewed_resistance_4 = {
+			name = IRQ_renewed_resistance_name
+
+			removal_cost = -1
+
+			picture = IRQ_renewed_resistance_icon
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet = yes
+			}
+			
+			modifier = {
+				neutrality_drift = 0.15
+				stability_weekly_factor = -0.001
+				resistance_growth = 0.25
+			}
+		}
+		
+		IRQ_renewed_resistance_5 = {
+			name = IRQ_renewed_resistance_name
+
+			removal_cost = -1
+
+			picture = IRQ_renewed_resistance_icon
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet = yes
+			}
+			
+			modifier = {
+				neutrality_drift = 0.07
+				resistance_growth = 0.10
+			}
+		}
+		
+		IRQ_increased_pacification_efforts = {
+			name = IRQ_increased_pacification_efforts_name
+
+			removal_cost = -1
+
+			picture = IRQ_fire_with_gun_icon
+
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				is_puppet = yes
+			}
+
+			modifier = {
+				resistance_growth = -0.80
+			}
+		}
+		
+		IRQ_bombed_supply_lines = {
+			name = IRQ_bombed_supply_lines_name
+
+			removal_cost = -1
+
+			picture = strategic_bombing_focus
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+			supply_consumption_factor = 0.35
+			supply_factor = -0.3
+			}
+		}
+		
+		IRQ_increased_construction = {
+			name = IRQ_increased_construction_name
+
+			removal_cost = -1
+
+			picture = generic_build_infrastructure
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+			consumer_goods_factor = 0.15
+			production_speed_buildings_factor = 0.25
+			}
+		}
+
+		IRQ_kurdish_agriculture_idea = {
+			name = IRQ_kurdish_agriculture_idea_name
+
+			removal_cost = -1
+
+			picture = IRQ_kurdish_agriculture_idea_icon
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				925 = {
+					NOT = {	is_controlled_by = IRQ }
+				}
+			}
+
+			modifier = {
+				political_power_factor = -0.05
+				consumer_goods_factor = -0.15
+			}
+		}
+
+		IRQ_monetary_reforms = {
+			name = IRQ_monetary_reforms_name
+
+			removal_cost = -1
+
+			picture = generic_foreign_capital
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.30
+				political_power_cost = 0.25
+			}
+		}
+
+		IRQ_broken_army_1 = {
+			name = IRQ_broken_army_name
+
+			removal_cost = -1
+
+			picture = IRQ_Disorganised_Army_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				army_defence_factor = -0.05
+				army_attack_factor = -0.25
+				army_org_factor = -0.1
+				army_morale_factor = -0.1
+				unit_upkeep_attrition_factor = 0.1
+			}
+		}
+
+		IRQ_broken_army_normal_1 = {
+			name = IRQ_broken_army_name
+
+			removal_cost = -1
+
+			picture = IRQ_Disorganised_Army_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				army_attack_factor = -0.15
+				army_org_factor = -0.05
+				army_morale_factor = -0.1
+				unit_upkeep_attrition_factor = 0.05
+			}
+		}
+
+		IRQ_broken_army_normal_2 = {
+			name = IRQ_broken_army_name
+
+			removal_cost = -1
+
+			picture = IRQ_Disorganised_Army_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				army_attack_factor = -0.10
+				army_org_factor = -0.05
+				unit_upkeep_attrition_factor = 0.05
+			}
+		}
+
+		IRQ_broken_army_guard_1 = {
+			name = IRQ_broken_army_name
+
+			removal_cost = -1
+
+			picture = IRQ_Disorganised_Army_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				army_defence_factor = -0.05
+				army_attack_factor = -0.20
+				army_org_factor = -0.05
+				army_morale_factor = -0.1
+				unit_upkeep_attrition_factor = 0.1
+			}
+		}
+
+		IRQ_broken_army_guard_2 = {
+			name = IRQ_broken_army_name
+
+			removal_cost = -1
+
+			picture = IRQ_Disorganised_Army_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				army_defence_factor = -0.05
+				army_attack_factor = -0.15
+				army_morale_factor = -0.1
+				unit_upkeep_attrition_factor = 0.1
+			}
+		}
+
+		IRQ_broken_army_guard_final = {
+			name = IRQ_broken_army_final_name
+
+			removal_cost = -1
+
+			picture = IRQ_broken_army_guard_final_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				army_defence_factor = -0.05
+				army_attack_factor = -0.10
+				army_morale_factor = -0.1
+				unit_upkeep_attrition_factor = 0.05
+			}
+		}
+
+		IRQ_desert_camouflage_idea = {
+			name = IRQ_desert_camouflage_idea_name
+
+			removal_cost = -1
+
+			picture = IRQ_desert_camouflage_idea_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				army_bonus_air_superiority_factor = -0.25
+				enemy_army_bonus_air_superiority_factor = -0.25
+			}
+		}
+
+		IRQ_middle_east_economic_union_1 = {
+			name = IRQ_middle_east_economic_union_name
+
+			removal_cost = -1
+
+			picture = IRQ_MEEU_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_cost = 0.05						
+				consumer_goods_factor = -0.025
+			}
+		}
+		
+		IRQ_middle_east_economic_union_2 = {
+			name = IRQ_middle_east_economic_union_name
+
+			removal_cost = -1
+
+			picture = IRQ_MEEU_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_cost = 0.10					
+				consumer_goods_factor = -0.15
+			}
+		}	
+
+		IRQ_middle_east_economic_union_3 = {
+			name = IRQ_middle_east_economic_union_name
+
+			removal_cost = -1
+
+			picture = IRQ_MEEU_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_cost = 0.15		
+				consumer_goods_factor = -0.075
+			}
+		}	
+
+		IRQ_middle_east_economic_union_4 = {
+			name = IRQ_middle_east_economic_union_name
+
+			removal_cost = -1
+
+			picture = IRQ_MEEU_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_cost = 0.20
+				consumer_goods_factor = -0.075
+				production_speed_buildings_factor = 0.05
+			}
+		}	
+
+		IRQ_middle_east_economic_union_5 = {
+			name = IRQ_middle_east_economic_union_name
+
+			removal_cost = -1
+
+			picture = IRQ_MEEU_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_cost = 0.25
+				consumer_goods_factor = -0.075
+				production_speed_buildings_factor = 0.1
+			}
+		}			
+
+		IRQ_middle_east_economic_union_6 = {
+			name = IRQ_middle_east_economic_union_name
+
+			removal_cost = -1
+
+			picture = IRQ_MEEU_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_cost = 0.35
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.15
+			}
+		}
+
+		IRQ_middle_east_economic_union_puppet_1 = {
+			name = IRQ_middle_east_economic_union_name
+
+			removal_cost = -1
+
+			picture = IRQ_MEEU_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_cost = 0.05						
+				consumer_goods_factor = -0.025
+
+			}
+			
+			targeted_modifier = {
+				tag = IRQ
+				cic_to_target_factor = 0.15
+				
+			}
+		}
+		
+		IRQ_middle_east_economic_union_puppet_2 = {
+			name = IRQ_middle_east_economic_union_name
+
+			removal_cost = -1
+
+			picture = IRQ_MEEU_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_cost = 0.10					
+				consumer_goods_factor = -0.15
+			}
+			
+			targeted_modifier = {
+				tag = IRQ
+				cic_to_target_factor = 0.25
+				
+			}
+		}	
+
+		IRQ_middle_east_economic_union_puppet_3 = {
+			name = IRQ_middle_east_economic_union_name
+
+			removal_cost = -1
+
+			picture = IRQ_MEEU_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_cost = 0.15		
+				consumer_goods_factor = -0.075
+			}
+			
+			targeted_modifier = {
+				tag = IRQ
+				cic_to_target_factor = 0.35
+				
+			}
+		}	
+
+		IRQ_middle_east_economic_union_puppet_4 = {
+			name = IRQ_middle_east_economic_union_name
+
+			removal_cost = -1
+
+			picture = IRQ_MEEU_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_cost = 0.20
+				consumer_goods_factor = -0.075
+				production_speed_buildings_factor = 0.05
+			}
+			
+			targeted_modifier = {
+				tag = IRQ
+				cic_to_target_factor = 0.45
+				
+			}
+		}	
+
+		IRQ_middle_east_economic_union_puppet_5 = {
+			name = IRQ_middle_east_economic_union_name
+
+			removal_cost = -1
+
+			picture = IRQ_MEEU_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_cost = 0.25
+				consumer_goods_factor = -0.075
+				production_speed_buildings_factor = 0.1
+			}
+			
+			targeted_modifier = {
+				tag = IRQ
+				cic_to_target_factor = 0.50
+				
+			}
+		}			
+
+		IRQ_middle_east_economic_union_puppet_6 = {
+			name = IRQ_middle_east_economic_union_name
+
+			removal_cost = -1
+
+			picture = IRQ_MEEU_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_cost = 0.35
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.15
+			}
+			
+			targeted_modifier = {
+				tag = IRQ
+				cic_to_target_factor = 0.55
+				
+			}
+		}
+		
+		IRQ_modernized_education = {
+			name = IRQ_modernized_education_name
+
+			removal_cost = -1
+
+			picture = IRQ_modernized_edu_icon
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				political_power_gain = 0.5
+				research_speed_factor = 0.25
+			}
+		}
+
+		IRQ_foreign_equipment_payments_irq = {
+			name = IRQ_foreign_equipment_payments_irq_name
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.15
+			}
+		}
+
+		IRQ_foreign_equipment_payments = {
+			name = IRQ_foreign_equipment_payments_name
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
+	}
+
+	hidden_ideas = {
+
+		IRQ_kurdish_decision_funding = {
+			name = IRQ_kurdish_decision_funding_name
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.15
+			}
+		}
+
+	}
+
+	### Designers ###
+
+	materiel_manufacturer = {
+
+		designer = yes
+
+		IRQ_design_bureau_al-qadissiya = {
+
+			picture = IRQ_design_bureau_al-qadissiya_icon
+
+			allowed = {
+				original_tag = IRQ
+			}
+
+			research_bonus = {
+				infantry_weapons = 0.05
+			}
+
+			traits = {
+				IRQ_design_bureau_al-qadissiya_trait
+			}
+
+		}
+
+	}
+
+
+}

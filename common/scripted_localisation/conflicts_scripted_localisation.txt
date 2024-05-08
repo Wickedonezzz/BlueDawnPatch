@@ -1,0 +1,13 @@
+
+defined_text = {
+	name = GetMapLogoGif
+	
+	text = { trigger = { always = yes } localization_key = GFX_conflicts_map_logo_gif }
+}
+defined_text = {
+	name = GetDoomsdayQuote
+	
+	text = { trigger = { threat > 0.99 } localization_key = doomsday_minutes_0 }
+	text = { trigger = { threat > 0.98 } localization_key = doomsday_minutes_1 }
+	text = { trigger = { always = yes } localization_key = doomsday_minutes_text }
+}

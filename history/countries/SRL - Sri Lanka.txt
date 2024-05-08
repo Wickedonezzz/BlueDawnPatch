@@ -1,0 +1,66 @@
+﻿capital = 422
+
+oob = "SRL_2000"
+
+set_convoys = 5
+
+recruit_character = SRL_Chandrika_Kumaratunga
+recruit_character = SRL_Dingiri_Banda_Wijetunga
+recruit_character = SRL_Premakumar_Gunaratnam
+
+add_ideas = usa_aligned_nation
+
+
+set_technology = {
+	infantry_weapons_1960 = 1
+	infantry_weapons_1980 = 1
+	support_weapons_1960 = 1
+	support_weapons_1980 = 1
+	support_weapons_1990 = 1
+	night_vision_gen_1 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_tank_weapons_1980 = 1
+	infantry_anti_air_weapons_1960 = 1
+	paratrooper_tech_1960 = 1
+	marine_tech_1960 = 1
+	tech_support = 1
+	support_tech_engineers_1960 = 1
+	support_tech_militarypolice_1960 = 1
+	support_tech_militarypolice_1980 = 1
+	support_tech_recon_1960 = 1
+	support_tech_hospital_1960 = 1
+	support_tech_maintenance_1960 = 1
+	support_tech_logistics_1960 = 1
+	tech_motorised_1960 = 1
+	tech_motorised_1980 = 1
+	tech_train_1960 = 1
+	mbt_tank_1960 = 1
+	mbt_tank_1970 = 1
+	mbt_tank_1980 = 1
+	mbt_tank_1990 = 1
+	tank_ammo_1960 = 1
+	tank_ammo_1970 = 1
+	ifv_tank_1970 = 1
+	ifv_tank_1980 = 1
+	ifv_anti_tank_missile_1 = 1
+	towed_artillery_1960 = 1
+	towed_artillery_1980 = 1
+	attacker_1960 = 1
+	attacker_1970 = 1
+
+}
+
+set_politics = {
+	ruling_party = social_democracy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	social_democracy = 35
+	socialism = 25
+	communism = 10
+	neutrality = 5
+	democratic = 25
+	
+}

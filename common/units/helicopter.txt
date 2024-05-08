@@ -1,0 +1,191 @@
+sub_units = {
+	transport_heli_company = {
+		abbreviation = "THC"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = no
+		affects_speed = no
+
+		type = {
+			infantry
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_support_battalions
+			category_army
+		}
+	
+		combat_width = 0
+	
+		#Size Definitions
+		max_strength = 2
+		max_organisation = 20	
+		default_morale = 0.3
+		manpower = 260
+		training_time = 230
+
+		#Misc Abilities
+		weight = 0.1
+		can_be_parachuted = yes
+
+		# Important Ability
+		supply_consumption_factor = -0.2
+		fuel_consumption_factor = -0.05
+
+		own_equipment_fuel_consumption_mult = 0.1
+		
+		essential = {
+			support_equipment
+			heli_transport_equipment
+		}
+		transport = heli_transport_equipment
+		need = {
+			support_equipment = 20
+			heli_transport_equipment = 16
+		}
+
+	}
+
+	attack_heli_company = {
+		abbreviation = "AHC"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = no
+		affects_speed = no
+
+		type = {
+			infantry
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_support_battalions
+			category_army
+		}
+	
+		combat_width = 0
+	
+		#Size Definitions
+		max_strength = 2
+		max_organisation = 20	
+		default_morale = 0.3
+		manpower = 260
+		training_time = 260
+
+		#Misc Abilities
+		weight = 0.1
+		supply_consumption = 0.28
+		can_be_parachuted = yes
+		recon = 4
+		
+		essential = {
+			support_equipment
+			heli_attack_equipment
+		}
+		transport = heli_attack_equipment
+		need = {
+			support_equipment = 20
+			heli_attack_equipment = 14
+		}
+
+	}
+
+	recon_drone_company = {
+		abbreviation = "RDC"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = no
+		affects_speed = no
+
+		type = {
+			infantry
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_support_battalions
+			category_army
+		}
+	
+		combat_width = 0
+	
+		#Size Definitions
+		max_strength = 1
+		max_organisation = 10	
+		default_morale = 0.3
+		manpower = 60
+		training_time = 180
+
+		#Misc Abilities
+		weight = 0.1
+		can_be_parachuted = yes
+		recon = 6
+		
+		essential = {
+			drone_recon_equipment
+		}
+		transport = drone_recon_equipment
+		need = {
+			drone_recon_equipment = 30
+		}
+
+	}
+
+	attack_drone_company = {
+		abbreviation = "ADC"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = no
+		affects_speed = no
+
+		type = {
+			infantry
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_support_battalions
+			category_army
+		}
+	
+		combat_width = 0
+	
+		#Size Definitions
+		max_strength = 1
+		max_organisation = 10	
+		default_morale = 0.3
+		manpower = 90
+		training_time = 210
+
+		#Misc Abilities
+		weight = 0.1
+		can_be_parachuted = yes
+		recon = 5
+		
+		essential = {
+			drone_attack_equipment
+		}
+		transport = drone_attack_equipment
+		need = {
+			drone_attack_equipment = 22
+		}
+
+	}
+}

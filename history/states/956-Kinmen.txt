@@ -1,0 +1,24 @@
+state={
+	id=956
+	name="STATE_956"
+	provinces={
+		13357
+	}
+	history = {
+		owner = CHI
+		add_core_of = CHI
+		add_claim_by = PRC
+
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			13357 = {
+				naval_base = 1
+			}
+		}
+	}
+	manpower=120000
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

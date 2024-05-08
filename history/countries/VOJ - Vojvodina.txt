@@ -1,0 +1,105 @@
+﻿capital = 45
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+
+	set_technology = {
+		destroyer_hull_1960 = 1
+		destroyer_hull_1980 = 1
+		attack_submarine_hull_1960 = 1
+		naval_engine_diesel_1960 = 1
+		naval_engine_diesel_1980 = 1
+		naval_sonar_1960 = 1
+		torpedo_launcher_1960 = 1
+		naval_training_1960 = 1
+		naval_transport_1960 = 1
+		naval_transport_1980 = 1
+	}
+}
+set_technology = {
+	infantry_weapons_1960 = 1
+	infantry_weapons_1980 = 1
+	support_weapons_1960 = 1
+	support_weapons_1980 = 1
+	support_weapons_1990 = 1
+	night_vision_gen_1 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_tank_weapons_1980 = 1
+	infantry_anti_air_weapons_1960 = 1
+	paratrooper_tech_1960 = 1
+	marine_tech_1960 = 1
+	tech_support = 1
+	support_tech_engineers_1960 = 1
+	support_tech_militarypolice_1960 = 1
+	support_tech_militarypolice_1980 = 1
+	support_tech_recon_1960 = 1
+	support_tech_hospital_1960 = 1
+	support_tech_maintenance_1960 = 1
+	support_tech_logistics_1960 = 1
+	tech_motorised_1960 = 1
+	tech_motorised_1980 = 1
+	tech_train_1960 = 1
+	mbt_tank_1960 = 1
+	mbt_tank_1970 = 1
+	mbt_tank_1980 = 1
+	mbt_tank_1990 = 1
+	tank_ammo_1960 = 1
+	tank_ammo_1970 = 1
+	ifv_tank_1970 = 1
+	ifv_tank_1980 = 1
+	ifv_anti_tank_missile_1 = 1
+	apc_tank_1960 = 1
+	apc_tank_1970 = 1
+	apc_tank_1980 = 1
+	spaa_tank_1960 = 1
+	spaa_tank_1980 = 1
+	towed_artillery_1960 = 1
+	towed_artillery_1980 = 1
+	motorised_artillery_1960 = 1
+	motorised_artillery_1970 = 1
+	motorised_artillery_1980 = 1
+	rocket_artillery_1960 = 1
+	rocket_artillery_1970 = 1
+	rocket_artillery_1980 = 1
+	rocket_artillery_1990 = 1
+	tech_artillery_guidance_systems_1 = 1
+	attacker_1960 = 1
+	attacker_1970 = 1
+	heli_transport_1960 = 1
+	heli_transport_1970 = 1
+	heli_attack_1970 = 1
+
+	tech_modern_manufacturing = 1
+	tech_containerisation = 1
+	tech_modern_factories = 1
+	tech_digital_control = 1
+	tech_modern_construction = 1
+	tech_prefabrication = 1
+	tech_basic_resource_extraction = 1
+
+	computing_tech_1960 = 1
+	computing_tech_1980 = 1
+	radio_tech_1960 = 1
+	radio_tech_1980 = 1
+	naval_radar_1960 = 1
+}
+
+set_research_slots = 3
+
+set_convoys = 10
+
+set_politics = {
+	ruling_party = social_democracy
+	last_election = "1991.5.3"
+	election_frequency = 36
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 15
+	fascism = 10
+	social_democracy = 30
+	reformed_communism = 15
+	socialism = 30
+}

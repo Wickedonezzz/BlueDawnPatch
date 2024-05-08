@@ -1,0 +1,23 @@
+ideas = {
+	
+	country = {
+	
+		BUR_internal_conflict = {
+			name = BUR_internal_conflict_idea_name
+
+			removal_cost = -1
+
+			picture = GFX_idea_BUR_internal_conflict
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				stability_factor = -0.35
+				war_support_factor = -0.05
+				production_speed_buildings_factor = -0.15
+		}
+	}
+}
+}

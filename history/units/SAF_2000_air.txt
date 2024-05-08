@@ -1,0 +1,47 @@
+air_wings = {
+	# Land Wings #
+	921 = {
+		# Fighters -- Cheetah C
+		fighter_equipment_3 =  { # Cheetah C #
+			owner = "SAF" 
+			creator = SAF
+			amount = 21
+		}
+		# Attackers -- Impala II, Impala I
+		attacker_equipment_1 =  { # Impala II #
+			owner = "SAF" 
+			creator = SAF
+			amount = 23
+		}
+		attacker_equipment_0 =  { # Impala I #
+			owner = "SAF" 
+			creator = SAF
+			amount = 31
+		}
+	}
+	275 = {
+		# Fighters -- Mirage F1, Cheetah C
+		fighter_equipment_3 =  { # Cheetah C #
+			owner = "SAF" 
+			creator = SAF
+			amount = 20
+		}
+		fighter_equipment_1 =  { # Mirage F1 #
+			owner = "SAF" 
+			creator = FRA
+			amount = 22
+		}
+		# Attackers -- Impala II
+		attacker_equipment_1 =  { # Impala II #
+			owner = "SAF" 
+			creator = SAF
+			amount = 44
+		}
+		# Transports -- C-130
+		transport_plane_equipment_1 =  {
+			owner = "SAF" 
+			creator = USA
+			amount = 10
+		}
+	}
+}

@@ -1,0 +1,121 @@
+music_station = "super_station"
+music = {
+	song = "super_yugo_war"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_eastern_war"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_sa_war"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_soviet_melancholy"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_soviet_collapse"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_soviet_dissolution"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_indochina_war"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_ww3"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_sino_soviet_war"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_navy_unification"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_zyuganov_unificiation"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_vdv_unification"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_great_asian_war"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_medvedev_unification"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_yazov_unification"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_dugin_unification"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_lukashenko_unification"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_kgb_unification"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_udaltsov_unification"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "super_pugo_unification"
+	chance = {
+		factor = 0
+	}
+}

@@ -1,0 +1,496 @@
+﻿air_wings = {
+	# Land Wings #
+	613 = { # Shanghai
+		# Fighters -- J-6, J-7
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+
+		# Interceptors -- J-8
+		interceptor_equipment_1 =  { # J-8 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		interceptor_equipment_1 =  { # J-8 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 43
+		}
+
+		# Attackers -- Q-5, JH-7
+		attacker_equipment_3 =  { # JH-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 20
+		}
+		attacker_equipment_1 =  { # Q-5 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 39
+		}
+
+		# Transports -- Y-7, Y-8
+		transport_plane_equipment_1 =  { # Y-7, Y-8 #
+			owner = "PRC"
+			creator = PRC
+			amount = 15
+		}
+		transport_plane_equipment_1 =  { # Y-7, Y-8 #
+			owner = "PRC"
+			creator = PRC
+			amount = 20
+		}
+	}
+	595 = { # Fuzhou
+		# Fighters -- J-6, J-7
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+	}
+	728 = { # Nanning
+		# Fighters -- J-6, J-7
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+
+		# Attackers -- Q-5
+		attacker_equipment_1 =  { # Q-5 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		attacker_equipment_1 =  { # Q-5 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 44
+		}
+	}
+	325 = { # Kunming
+		# Fighters -- J-6, J-7
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+	}
+	745 = { # Dalian
+		# Fighters -- J-6, J-7
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+
+		# Attackers -- Q-5
+		attacker_equipment_1 =  { # Q-5 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		attacker_equipment_1 =  { # Q-5 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+	}
+	597 = { # Jinan
+		# Fighters -- J-6, J-7
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+
+		# Attackers -- Q-5
+		attacker_equipment_1 =  { # Q-5 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		attacker_equipment_1 =  { # Q-5 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 47
+		}
+	}
+	611 = { # Datong
+		# Fighters -- J-6, J-7
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+	}
+	620 = { # Wuhan/Wugong
+		# Fighters -- J-6, J-7
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+
+		# Strike Bombers -- H-6, H-5
+		strike_bomber_equipment_0 =  { # H-6, H-5 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 17
+		}
+		strike_bomber_equipment_0 =  { # H-6, H-5 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 20
+		}
+	}
+	606 = { # Anqing
+		# Strike Bombers -- H-6, H-5
+		strike_bomber_equipment_0 =  { # H-6, H-5 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 20
+		}
+		strike_bomber_equipment_0 =  { # H-6, H-5 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 20
+		}
+		strike_bomber_equipment_0 =  { # H-6, H-5 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 20
+		}
+	}
+	593 = {
+		# Strike Bombers -- H-6, H-5
+		strike_bomber_equipment_0 =  { # H-6, H-5 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 20
+		}
+		strike_bomber_equipment_0 =  { # H-6, H-5 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 18
+		}
+		strike_bomber_equipment_0 =  { # H-6, H-5 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 20
+		}
+	}
+	591 = {
+		# Fighters -- J-6, J-7
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 34
+		}
+
+		# Strike Bombers -- H-6, H-5
+		strike_bomber_equipment_0 =  { # H-6, H-5 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 20
+		}
+		strike_bomber_equipment_0 =  { # H-6, H-5 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 20
+		}
+	}
+	608 = {
+		# Fighters -- Su-27
+		fighter_equipment_2 =  { # Su-27 #
+			owner = "PRC" 
+			creator = SOV
+			amount = 48
+		}
+
+		# Transports -- Y-7, Y-8
+		transport_plane_equipment_1 =  { # Y-7, Y-8 #
+			owner = "PRC"
+			creator = PRC
+			amount = 20
+		}
+		transport_plane_equipment_1 =  { # Y-7, Y-8 #
+			owner = "PRC"
+			creator = PRC
+			amount = 19
+		}
+		transport_plane_equipment_1 =  { # Y-7, Y-8 #
+			owner = "PRC"
+			creator = PRC
+			amount = 20
+		}
+	}
+	750 = {
+		# Fighters -- J-6, J-7
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 43
+		}
+
+		# Transports -- Y-7, Y-8
+		transport_plane_equipment_1 =  { # Y-7, Y-8 #
+			owner = "PRC"
+			creator = PRC
+			amount = 19
+		}
+	}
+	716 = {
+		# Fighters -- J-6, J-7
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 49
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+
+		# Interceptors -- J-8
+		interceptor_equipment_1 =  { # J-8 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 45
+		}
+		interceptor_equipment_1 =  { # J-8 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 41
+		}
+
+		# Transports -- Il-76
+		transport_plane_equipment_1 =  { # Il-76 #
+			owner = "PRC"
+			creator = SOV
+			amount = 14
+		}
+	}
+	605 = {
+		# Interceptors -- J-8
+		interceptor_equipment_1 =  { # J-8 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 47
+		}
+	}
+	616 = {
+		# Interceptors -- J-8
+		interceptor_equipment_1 =  { # J-8 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 23
+		}
+	}
+	617 = {
+		# Fighters -- J-6, J-7
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 48
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 48
+		}
+
+		# Interceptors -- J-8
+		interceptor_equipment_1 =  { # J-8 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 43
+		}
+	}
+	613 = {
+		# Fighters -- J-6, J-7
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 49
+		}
+	}
+	322 = {
+		# Fighters -- J-6, J-7
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 45
+		}
+		fighter_equipment_0 =  { # J-6, J-7 #
+			owner = "PRC" 
+			creator = PRC
+			amount = 50
+		}
+	}
+}

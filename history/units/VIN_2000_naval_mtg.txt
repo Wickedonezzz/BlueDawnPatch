@@ -1,0 +1,45 @@
+units = {
+	fleet = {
+		name = "Ham doi Viet Nam"
+		naval_base = 4119 # Haiphong #
+		task_force = {
+			name = "Ham Doi Tau Mat Nuoc"
+			location = 4119 # Haiphong #
+			ship = { name = "HQ-01" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = VIN creator = USA version_name = "Barnegat Class" } } }
+
+			ship = { name = "HQ-09" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = VIN creator = SOV version_name = "Petya Class (Pr. 159AE)" } } }
+			ship = { name = "HQ-11" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = VIN creator = SOV version_name = "Petya Class (Pr. 159AE)" } } }
+			ship = { name = "HQ-13" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = VIN creator = SOV version_name = "Petya Class (Pr. 159A)" } } }
+			ship = { name = "HQ-15" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = VIN creator = SOV version_name = "Petya Class (Pr. 159A)" } } }
+			ship = { name = "HQ-17" definition = corvette equipment = { corvette_hull_1 = { amount = 1 owner = VIN creator = SOV version_name = "Petya Class (Pr. 159A)" } } }
+		}
+	}
+}
+
+instant_effect = {
+	# Corvettes #
+	add_equipment_production = {
+		equipment = {
+			type = corvette_hull_3
+			creator = "VIN" 
+			version_name = "BPS-500 Class"
+		}
+		name = "HQ-381"
+		requested_factories = 1
+		progress = 0.35
+		amount = 1
+	}
+	if = {
+		limit = { has_dlc = "Death or Dishonor" }
+		SOV = {
+			create_production_license = {
+				target = VIN
+				equipment = {
+					type = corvette_hull_1
+					version_name = "Petya Class (Pr. 159A)"
+				}
+				cost_factor = 0
+			}
+		}
+	}
+}

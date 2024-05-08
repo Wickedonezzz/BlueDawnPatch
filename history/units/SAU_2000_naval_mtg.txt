@@ -1,0 +1,41 @@
+units = {
+	fleet = {
+		name = "Ustul Albahr Al'ahmar"
+		naval_base = 12883 # Jeddah #
+		task_force = {
+			name = "Ustul Albahr Al'ahmar"
+			location = 12883 # Jeddah #
+			ship = { name = "HMS Al Madinah" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = SAU version_name = "Al Madinah Class" } } }
+			ship = { name = "HMS Hofouf" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = SAU version_name = "Al Madinah Class" } } }
+			ship = { name = "HMS Abha" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = SAU version_name = "Al Madinah Class" } } }
+			ship = { name = "HMS Taif" definition = destroyer equipment = { destroyer_hull_2 = { amount = 1 owner = SAU version_name = "Al Madinah Class" } } }
+		}
+	}
+	fleet = {
+		name = "Ustul Alkhalij Alfarisii"
+		naval_base = 12702 # Jubail #
+		task_force = {
+			name = "Al'ustul Alsathiu Lilkhalij Alfarisii"
+			location = 12702 # Jubail #
+			ship = { name = "HMS Badr" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SAU version_name = "Badr Class" } } }
+			ship = { name = "HMS Al Yarmook" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SAU version_name = "Badr Class" } } }
+			ship = { name = "HMS Hitteen" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SAU version_name = "Badr Class" } } }
+			ship = { name = "HMS Tabuk" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = SAU version_name = "Badr Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+	# Frigates #
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_hull_4
+			creator = "SAU" 
+			version_name = "Al Riyadh Class"
+		}
+		name = "HMS Al Riyadh"
+		requested_factories = 1
+		progress = 0.17
+		amount = 1
+	}
+}

@@ -1,0 +1,505 @@
+characters = {
+
+	## Country Leaders ##
+
+	#USA_bill_clinton = {
+	#	name = "Bill Clinton"
+	#	portraits = {
+	#		civilian = {
+	#			large = "gfx/leaders/USA/Bill_Clinton.dds"
+	#		}
+	#	}
+	#	country_leader = {
+	#		ideology = conservatism
+	#		traits = {}
+	#		expire = "2050.3.1.1"
+	#		id = -1
+	#	}
+	#}
+
+	USA_george_bush = {
+		name = "George Bush"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/George_Bush.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	USA_john_mccain = {
+		name = "John McCain"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/John_McCain.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	USA_undecided_candidate_dem = {
+		name = "Undecided Candidate"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/Donald_Trump.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	USA_al_gore = {
+		name = "Al Gore"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/Al_Gore.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	USA_undecided_candidate_reform = {
+		name = "Undecided Candidate"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/Donald_Trump.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_patriotism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	USA_donald_trump = {
+		name = "Donald Trump"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/Donald_Trump.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_patriotism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	USA_dick_cheney = {
+		name = "Dick Cheney"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/Dick_Cheney.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	USA_dan_quayle = {
+		name = "Dan Quayle"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/Dan_Quayle.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	## Advisors ##
+	
+	## Bush ##
+		
+	USA_tom_ridge = {
+		name = "Tom Ridge"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/tom_ridge.dds"
+				small = "gfx/leaders/USA/tom_ridge_small.dds"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = political_advisor
+			idea_token = USA_tom_ridge
+			allowed = {
+				original_tag = USA
+				has_completed_focus = USA_bush_thirteen_dominant_decades
+			}
+			traits = {
+				secretary_of_homeland_security 
+			}
+		}
+	}	
+
+	USA_paul_o_neill = {
+		name = "Paul O’Neill"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/paul_o_neill.dds"
+				small = "gfx/leaders/USA/paul_o_neill_small.dds"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = political_advisor
+			idea_token = USA_paul_o_neill
+			allowed = {
+				original_tag = USA
+				has_completed_focus = USA_bush_thirteen_dominant_decades
+			}
+			traits = {
+				secretary_of_treasury 
+			}
+		}
+	}	
+	
+	USA_colin_powell = {
+		name = "Colin Powell"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/colin_powell.dds"
+				small = "gfx/leaders/USA/colin_powell_small.dds"
+			}
+		}
+		advisor={
+			cost = 100
+			slot = political_advisor
+			idea_token = USA_colin_powell
+			allowed = {
+				original_tag = USA
+				has_completed_focus = USA_bush_thirteen_dominant_decades
+			}
+			traits = {
+				secretary_of_state 
+			}
+		}
+	}	
+	
+	## Generals ##
+
+	USA_william_kernan = {
+		name = "William F. Kernan"
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/William_Kernan.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	USA_john_hendrix = {
+		name = "John W. Hendrix"
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/John_Hendrix.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	USA_thomas_schwartz = {
+		name = "Thomas A. Schwartz"
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/Thomas_Schwartz.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	USA_peter_schoomaker = {
+		name = "Peter Schoomaker"
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/Peter_Schoomaker.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	USA_eric_shinseki = {
+		name = "Eric Shinseki"
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/Eric_Shinseki.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	USA_jack_keane = {
+		name = "Jack Keane"
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/Jack_Keane.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	USA_john_abrams = {
+		name = "John N. Abrams"
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/John_Abrams.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	USA_hugh_shelton = {
+		name = "Hugh Shelton"
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/Hugh_Shelton.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	USA_tommy_franks = {
+		name = "Tommy Franks"
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/Tommy_Franks.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	## Admirals ##
+
+	USA_thomas_fargo = {
+		name = "Thomas B. Fargo"
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/Thomas_Fargo.dds"
+			}
+		}
+		navy_leader={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=2
+			legacy_id=-1
+		}
+	}
+	USA_frank_bowman = {
+		name = "Frank Bowman"
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/Frank_Bowman.dds"
+			}
+		}
+		navy_leader={
+			traits={ }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	USA_dennis_blair = {
+		name = "Dennis C. Blair"
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/Dennis_Blair.dds"
+			}
+		}
+		navy_leader={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=3
+			legacy_id=-1
+		}
+	}
+	USA_william_fallon = {
+		name = "William J. Fallon"
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/William_Fallon.dds"
+			}
+		}
+		navy_leader={
+			traits={ }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=3
+			legacy_id=-1
+		}
+	}
+	USA_richard_mies = {
+		name = "Richard Willard Mies"
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/Richard_Mies.dds"
+			}
+		}
+		navy_leader={
+			traits={ }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	USA_james_ellis = {
+		name = "James Oren Ellis Jr."
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/James_Ellis.dds"
+			}
+		}
+		navy_leader={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=2
+			legacy_id=-1
+		}
+	}
+	USA_vernon_clark = {
+		name = "Vernon Eugene Clark"
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/Vernon_Clark.dds"
+			}
+		}
+		navy_leader={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	USA_robert_natter = {
+		name = "Robert Joseph Natter"
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/Robert_Natter.dds"
+			}
+		}
+		navy_leader={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=2
+			legacy_id=-1
+		}
+	}
+
+}

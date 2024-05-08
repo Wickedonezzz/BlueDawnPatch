@@ -1,0 +1,97 @@
+air_wings = {
+	# Land Wings #
+	16 = {
+		# Transports -- C-130, CN-235, N-262
+		transport_plane_equipment_1 = { # C-130 #
+			owner = "FRA"
+			creator = USA
+			amount = 14
+		}
+		transport_plane_equipment_1 = { # CN-235 #
+			owner = "FRA"
+			creator = SPR
+			amount = 14
+		}
+		transport_plane_equipment_1 = { # N-262 #
+			owner = "FRA"
+			creator = FRA
+			amount = 19
+		}
+	}
+	17 = {
+		# Fighters -- Mirage F-1, Mirage 2000
+		fighter_equipment_2 = { # Mirage 2000 #
+			owner = "FRA" 
+			creator = FRA
+			amount = 48
+		}
+		fighter_equipment_1 = { # Mirage F-1 #
+			owner = "FRA" 
+			creator = FRA
+			amount = 39
+		}
+
+		# Attackers -- Mirage 2000D
+		attacker_equipment_3 = { # Mirage 2000D #
+			owner = "FRA" 
+			creator = FRA
+			amount = 38
+		}
+		attacker_equipment_3 = { # Mirage 2000D #
+			owner = "FRA" 
+			creator = FRA
+			amount = 22
+		}
+
+		# Strike Bombers -- Mirage 2000N
+		strike_bomber_equipment_1 = { # Mirage 2000N #
+			owner = "FRA" 
+			creator = FRA
+			amount = 20
+		}
+		strike_bomber_equipment_1 = { # Mirage 2000N #
+			owner = "FRA" 
+			creator = FRA
+			amount = 20
+		}
+		strike_bomber_equipment_1 = { # Mirage 2000N #
+			owner = "FRA" 
+			creator = FRA
+			amount = 20
+		}
+	}
+	21 = {
+		# Fighters -- Mirage 2000
+		fighter_equipment_2 = { # Mirage 2000 #
+			owner = "FRA" 
+			creator = FRA
+			amount = 46
+		}
+	}
+	19 = {
+		# Fighters -- Mirage F-1
+		fighter_equipment_1 = { # Mirage F-1 #
+			owner = "FRA" 
+			creator = FRA
+			amount = 34
+		}
+
+		# Carrier Fighters -- Etendard IV, Super Etendard
+		carrier_fighter_equipment_1 = { # Super Etendard #
+			owner = "FRA" 
+			creator = FRA
+			amount = 29
+		}
+		carrier_fighter_equipment_0 = { # Etendard IV #
+			owner = "FRA" 
+			creator = FRA
+			amount = 5
+		}
+	}
+
+	# Carrier Wings #
+	"Foch" = {
+		carrier_fighter_equipment_1 = { owner = "FRA" amount = 16 }
+		carrier_fighter_equipment_0 = { owner = "USA" amount = 10 }
+	}
+}

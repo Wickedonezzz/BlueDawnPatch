@@ -1,0 +1,216 @@
+﻿capital = 289
+
+set_oob = "SIA_2000"
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "SIA_2000_naval_mtg"
+
+	set_technology = {
+		corvette_hull_1960 = 1
+		corvette_hull_1980 = 1
+		corvette_hull_1990 = 1
+		destroyer_hull_1960 = 1
+		carrier_hull_1960 = 1
+	}
+}
+set_air_oob = "SIA_2000_air"
+set_technology = {
+	infantry_weapons_1960 = 1
+	support_weapons_1960 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_air_weapons_1960 = 1
+	tech_support = 1
+	tech_motorised_1960 = 1
+	tech_train_1960 = 1
+	mbt_tank_1960 = 1
+	mbt_tank_1970 = 1
+	apc_tank_1960 = 1
+	spaa_tank_1960 = 1
+	towed_artillery_1960 = 1
+	heli_transport_1960 = 1
+	drone_recon_1980 = 1
+	support_tech_engineers_1960 = 1
+	support_tech_militarypolice_1960 = 1
+	support_tech_hospital_1960 = 1
+	support_tech_maintenance_1960 = 1
+	support_tech_logistics_1960 = 1
+	support_tech_recon_1960 = 1
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		recon_vehicle_1960 = 1
+	}
+}
+
+set_convoys = 150
+
+recruit_character = SIA_chuan_leekpai
+recruit_character = SIA_Surayud_Chulanont 
+recruit_character = SIA_Sonthi_Boonyaratglin
+recruit_character = SIA_Songkitti_Jaggabatara
+recruit_character = SIA_Saprang_Kalayanamitr
+recruit_character = SIA_Chaiyasit_Shinawatra 
+recruit_character = SIA_Surachai_Danwattananusorn 
+recruit_character = SIA_Somtat_Attanand 
+add_ideas = SIA_rama_IX
+add_ideas = SIA_army_question
+add_ideas = SIA_asean
+
+
+add_ideas = {
+	extensive_conscription
+}
+
+add_ideas = usa_aligned_nation
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 40
+	liberalism = 10
+	paternal_autocracy = 50
+}
+add_timed_idea = {
+    idea = SIA_1997_crisis
+    days = 750
+}
+
+set_research_slots = 3
+
+# Naval Variants #
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	# Corvettes #
+	create_equipment_variant = {
+		name = "Tapi Class"
+		type = corvette_hull_1
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_2
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = anti_air_1
+			fixed_ship_defensive_slot_2 = empty
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = empty
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = depth_charges_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Makut Rajakumarn Class"
+		type = corvette_hull_1
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_1
+			fixed_ship_sonar_slot = sub_sonar_2
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = anti_air_1
+			fixed_ship_defensive_slot_2 = anti_air_1
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = empty
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = depth_charges_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Rattanakosin Class"
+		type = corvette_hull_2
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_1
+			fixed_ship_engine_slot = small_surface_engine_diesel_2
+			fixed_ship_sonar_slot = sub_sonar_2
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_defensive_slot_1 = sam_missile_2
+			fixed_ship_defensive_slot_2 = anti_air_1
+			fixed_ship_aviation_slot = empty
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Khamronsin Class"
+		type = corvette_hull_3
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_3
+			fixed_ship_engine_slot = small_surface_engine_diesel_2
+			fixed_ship_sonar_slot = sub_sonar_2
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_defensive_slot_1 = anti_air_1
+			fixed_ship_defensive_slot_2 = empty
+			fixed_ship_aviation_slot = empty
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = empty
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = depth_charges_1
+		}
+		obsolete = no
+	}
+	create_equipment_variant = {
+		name = "Hua Hin Class"
+		type = corvette_hull_3
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_3
+			fixed_ship_engine_slot = small_surface_engine_diesel_2
+			fixed_ship_sonar_slot = empty
+			fixed_ship_radar_slot = ship_radar_4
+			fixed_ship_defensive_slot_1 = anti_air_1
+			fixed_ship_defensive_slot_2 = empty
+			fixed_ship_aviation_slot = empty
+			custom_ship_cannon_slot = naval_gun_1
+			custom_slot_1 = empty
+			custom_slot_2 = empty
+			custom_slot_3 = empty
+		}
+		obsolete = no
+	}
+
+	# Frigates #
+	create_equipment_variant = {
+		name = "Naresuan Class"
+		type = destroyer_hull_1
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_3
+			fixed_ship_engine_slot = small_surface_engine_diesel_2
+			fixed_ship_sonar_slot = sub_sonar_2
+			fixed_ship_radar_slot = ship_radar_3
+			fixed_ship_defensive_slot_1 = anti_air_1
+			fixed_ship_defensive_slot_2 = empty
+			fixed_ship_aviation_slot = naval_helicopter_1
+			custom_ship_cannon_slot = naval_gun_2
+			custom_slot_1 = cruise_missile_2
+			custom_slot_2 = ship_torpedo_surface_1
+			custom_slot_3 = cruise_missile_2
+			custom_slot_4 = empty
+			custom_ship_rear_cannon_slot = empty
+		}
+		obsolete = yes
+	}
+}

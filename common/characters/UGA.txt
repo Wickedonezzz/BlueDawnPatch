@@ -1,0 +1,63 @@
+characters = {
+
+	UGA_yoweri = {
+		name = "Yoweri Museveni"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UGA/Yoweri_Museveni.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	UGA_kony = {
+		name = "Joseph Kony"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UGA/Kony.png"
+			}
+		}
+		country_leader = {
+			ideology = monarchism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	UGA_jamil_mukulu = {
+		name = "Jamil Mukulu"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/UGA/Mukulu.png"
+			}
+		}
+		country_leader = {
+			ideology = sunni_islamism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	UGA_occupation_authority = {
+		name = "Occupation Authority"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/COG/occupation_authority.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

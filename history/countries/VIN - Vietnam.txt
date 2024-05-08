@@ -1,0 +1,203 @@
+﻿capital = 973 #Hanoi
+
+set_oob = "VIN_2000"
+set_air_oob = "VIN_2000_air"
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+
+	set_technology = {
+		corvette_hull_1960 = 1
+		corvette_hull_1980 = 1
+		corvette_hull_1990 = 1
+		destroyer_hull_1960 = 1
+	}
+}
+set_technology = {
+	infantry_weapons_1960 = 1
+	infantry_weapons_1980 = 1
+	support_weapons_1960 = 1
+	support_weapons_1980 = 1
+	night_vision_gen_1 = 1
+	infantry_anti_tank_weapons_1960 = 1
+	infantry_anti_tank_weapons_1980 = 1
+	infantry_anti_air_weapons_1960 = 1
+	infantry_anti_air_weapons_1980 = 1
+	marine_tech_1960 = 1
+	tech_support = 1
+	support_tech_engineers_1960 = 1
+	support_tech_militarypolice_1960 = 1
+	support_tech_hospital_1960 = 1
+	support_tech_maintenance_1960 = 1
+	support_tech_logistics_1960 = 1
+	support_tech_recon_1960 = 1
+	tech_motorised_1960 = 1
+	tech_train_1960 = 1
+	mbt_tank_1960 = 1
+	ifv_tank_1970 = 1
+	apc_tank_1960 = 1
+	spaa_tank_1960 = 1
+	towed_artillery_1960 = 1
+	motorised_artillery_1960 = 1
+	rocket_artillery_1960 = 1
+
+	tech_modern_manufacturing = 1
+	tech_containerisation = 1
+	tech_lean_manufacturing = 1
+	tech_modern_factories = 1
+	tech_digital_control = 1
+	tech_basic_automation = 1
+	tech_human_sweatshops = 1
+	tech_modern_construction = 1
+	tech_prefabrication = 1
+	tech_basic_resource_extraction = 1
+	tech_rotary_drilling = 1
+
+	computing_tech_1960 = 1
+	radio_tech_1960 = 1
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		recon_vehicle_1960 = 1
+	}
+}
+
+set_research_slots = 2
+
+add_ideas = {
+	
+	VIN_four_pillars_1 
+	VIN_fifty_years_resistance
+	VIN_patriotic_tradition
+	VIN_doi_moi
+	VIN_corruption_1
+	VIN_failure_of_1980s
+}
+
+add_ideas = ussr_aligned_nation
+
+add_ideas = {
+	extensive_conscription
+	limited_exports
+}
+
+set_war_support = 0.5
+set_stability = 0.70
+
+diplomatic_relation = {
+	country = LAO
+	relation = non_aggression_pact
+	active = yes
+}
+diplomatic_relation = {
+	country = LAO
+	relation = military_access
+}
+
+diplomatic_relation = {
+	country = CAM
+	relation = non_aggression_pact
+	active = yes
+}
+diplomatic_relation = {
+	country = CAM
+	relation = military_access
+}
+
+set_convoys = 60
+
+recruit_character = VIN_le_kha_phieu
+recruit_character = VIN_le_kha_phieu_1
+recruit_character = VIN_phung_quang_thanh
+recruit_character = VIN_pham_van_tra
+recruit_character = VIN_Do_Ba_Ty
+recruit_character = VIN_Ngo_Xuan_Lich
+recruit_character = VIN_Nguyen_Khac_Nghien
+recruit_character = VIN_Nguyen_Huu_Kham
+recruit_character = VIN_Do_Xuan_Cong
+recruit_character = VIN_Pham_Xuan_The
+recruit_character = VIN_nong_duc_manh
+recruit_character = VIN_Nguyen_Trung_Thu 
+recruit_character = VIN_Duong_Cong_Suu 
+recruit_character = VIN_Hoang_Ky
+recruit_character = VIN_comrade_x 
+recruit_character = VIN_Tran_Duc_Luong
+recruit_character = VIN_Truong_Tan_Sang
+recruit_character = VIN_Le_Minh_Huong
+recruit_character = VIN_Phan_Van_Khai
+
+add_ideas = VIN_Tran_Duc_Luong
+add_ideas = VIN_Truong_Tan_Sang
+add_ideas = VIN_Le_Minh_Huong
+add_ideas = VIN_Pham_Van_Tra
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1933.2.16"
+	election_frequency = 36
+	elections_allowed = no
+}
+set_popularities = {
+	liberalism = 10
+	fascism = 5
+	communism = 85
+	neutrality = 0
+}
+
+create_intelligence_agency = {
+	name = "General Department of Defence Intelligence"
+	icon = GFX_intelligence_agency_logo_vin
+}
+
+# Naval Variants #
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "VIN_2000_naval_mtg"
+
+	# Corvettes #
+	create_equipment_variant = {
+		name = "BPS-500 Class"
+		type = corvette_hull_3
+		#name_group = 
+		parent_version = 0
+		modules = {
+			fixed_ship_systems_slot = surface_electrical_systems_2
+			fixed_ship_engine_slot = small_surface_engine_diesel_3
+			fixed_ship_sonar_slot = empty
+			fixed_ship_radar_slot = ship_radar_3
+			fixed_ship_defensive_slot_1 = sam_missile_1
+			fixed_ship_defensive_slot_2 = ciws_1
+			fixed_ship_aviation_slot = empty
+			custom_ship_cannon_slot = naval_gun_2
+			custom_slot_1 = cruise_missile_3
+			custom_slot_2 = cruise_missile_3
+			custom_slot_3 = empty
+		}
+		obsolete = no
+	}
+}
+country_event = {
+id = vin_intro.2
+days = 119
+}
+country_event = {
+	id = vin_intro.4
+	days = 231 
+	}
+	country_event = {
+	id = vin_intro.5
+	days = 31 
+	}
+	country_event = {
+	id = vin_intro.6
+	days = 1100
+	}
+country_event = {
+	id = vin.25
+	days = 1146
+}

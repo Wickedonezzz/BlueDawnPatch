@@ -1,0 +1,25 @@
+units = {
+	fleet = {
+		name = "Flota Venezolana"
+		naval_base = 8113 # Cabello #
+		task_force = {
+			name = "Flota de Superficie de Venezuela"
+			location = 8113 # Cabello #
+			ship = { name = "ARBV Mariscal Sucre" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = VEN creator = ITA version_name = "Lupo Class" } } }
+			ship = { name = "ARBV Almirante Brión" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = VEN creator = ITA version_name = "Lupo Class" } } }
+			ship = { name = "ARBV General Urdaneta" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = VEN creator = ITA version_name = "Lupo Class" } } }
+			ship = { name = "ARBV General Soublette" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = VEN creator = ITA version_name = "Lupo Class" } } }
+			ship = { name = "ARBV General Salóm" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = VEN creator = ITA version_name = "Lupo Class" } } }
+			ship = { name = "ARBV Almirante García" definition = destroyer equipment = { destroyer_hull_1 = { amount = 1 owner = VEN creator = ITA version_name = "Lupo Class" } } }
+		}
+		task_force = {
+			name = "Flota de Submarinos de Venezuela"
+			location = 8113 # Cabello #
+			ship = { name = "ARBV Sábalo" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = VEN creator = GER version_name = "Type 209/1300 Class" } } }
+			ship = { name = "ARBV Carite" definition = attack_submarine equipment = { attack_submarine_hull_1 = { amount = 1 owner = VEN creator = GER version_name = "Type 209/1300 Class" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

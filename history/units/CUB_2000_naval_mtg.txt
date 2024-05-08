@@ -1,0 +1,14 @@
+units = {
+	fleet = {
+		name = "Flota Cubana"
+		naval_base = 7622 # Havana #
+		task_force = {
+			name = "Flota Cubana"
+			location = 7622 # Havana #
+			ship = { name = "No. 321" definition = corvette equipment = { corvette_hull_2 = { amount = 1 owner = CUB creator = SOV version_name = "Tarantul I Class (Pr. 1241RE)" } } }
+		}
+	}
+}
+
+instant_effect = {
+}

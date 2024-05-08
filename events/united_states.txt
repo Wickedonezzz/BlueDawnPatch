@@ -1,0 +1,750 @@
+﻿add_namespace = usa_intro
+add_namespace = usa_quayle
+add_namespace = usa_bush
+add_namespace = usa_mccain
+add_namespace = usa_gore
+add_namespace = usa_trump
+add_namespace = usa_help
+
+country_event = { #The State of the Union#
+	id = usa_intro.1
+	title = usa_intro.1.t
+	desc = usa_intro.1.d
+	picture = GFX_report_event_USA_liberty_statue
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa_intro.1.a
+		hidden_effect = {
+			USA = {
+				country_event = { id = usa_intro.2 days = 5 }
+			}
+		}
+	}
+}
+
+country_event = { #1992: A Year to Decide#
+	id = usa_intro.2
+	title = usa_intro.2.t
+	desc = usa_intro.2.d
+	picture = GFX_report_event_USA_92_election
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa_intro.2.a
+		
+		hidden_effect = {
+			USA = {
+				country_event = { id = usa_intro.3 days = 5 }
+			}
+		}
+	}
+}
+
+country_event = { #The Outcome of 1992#
+	id = usa_intro.3
+	title = usa_intro.3.t
+	desc = usa_intro.3.d
+	picture = GFX_report_event_USA_bush
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa_intro.3.a
+		
+		hidden_effect = {
+			USA = {
+				country_event = { id = usa_intro.4 days = 5 }		
+			}
+		}
+	}
+}
+
+country_event = { #The “Uneasy” ‘90s?#
+	id = usa_intro.4
+	title = usa_intro.4.t
+	desc = usa_intro.4.d
+	picture = GFX_report_event_USA_90s
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa_intro.4.a
+		hidden_effect = {
+			USA = {
+				country_event = { id = usa_intro.5 days = 5 }
+			}
+		}
+	}
+}
+
+country_event = { #Where Are We Now?#
+	id = usa_intro.5
+	title = usa_intro.5.t
+	desc = usa_intro.5.d
+	picture = GFX_report_event_USA_2000
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa_intro.5.a		
+	}
+}
+
+###QUAYLE###
+
+country_event = { #ailing quayle#
+	id = usa_quayle.1
+	title = usa_quayle.1.t
+	desc = usa_quayle.1.d
+	picture = GFX_report_event_USA_2000
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa_quayle.1.a		
+	}
+}
+
+country_event = { #The Stimulus Arrives?#
+	id = usa_quayle.2
+	title = usa_quayle.2.t
+	desc = usa_quayle.2.d
+	picture = GFX_report_event_USA_2000
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa_quayle.2.a		
+	}
+}
+
+
+country_event = { #Quayle's Qualms#
+	id = usa_quayle.3
+	title = usa_quayle.3.t
+	desc = usa_quayle.3.d
+	picture = GFX_report_event_USA_2000
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa_quayle.3.a		
+	}
+}
+
+country_event = { #Quayle's Illness#
+	id = usa_quayle.4
+	title = usa_quayle.4.t
+	desc = usa_quayle.4.d
+	picture = GFX_report_event_USA_2000
+	
+	trigger = {
+	original_tag = USA
+	date > 2000.6.03
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = usa_quayle.4.a		
+	}
+}
+
+country_event = { #Independence Day... Celebration?#
+	id = usa_quayle.5
+	title = usa_quayle.5.t
+	desc = usa_quayle.5.d
+	picture = GFX_report_event_USA_2000
+	
+	trigger = {
+	original_tag = USA
+	date > 2000.7.03
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = usa_quayle.5.a		
+	}
+}
+
+country_event = { #The Republican Conventions Conclude#
+	id = usa_quayle.6
+	title = usa_quayle.6.t
+	desc = usa_quayle.6.d
+	picture = GFX_report_event_USA_2000
+	
+	trigger = {
+	original_tag = USA
+	date > 2000.8.29
+	}
+	
+	fire_only_once = yes
+	
+	#bush#
+	option = {
+		name = usa_quayle.6.a		
+		set_country_flag = bush_for_rep_candicate
+		custom_effect_tooltip = bush_will_be_rep_candicate
+		country_event = {id = usa_quayle.7 days = 3}
+		ai_chance = {
+		factor = 55
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+				rule = USA_rep_can_paths_selection
+				option = USA_BUSH_WINS_REP_CAN
+				}
+			}
+		}
+	}
+	
+	#Mccain#
+	option = {
+		name = usa_quayle.6.b	
+		set_country_flag = mccain_for_rep_candicate
+		custom_effect_tooltip = mccain_will_be_rep_candicate
+		country_event = {id = usa_quayle.7 days = 3}
+		ai_chance = {
+		factor = 45
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+				rule = USA_rep_can_paths_selection
+				option = USA_MCCAIN_WINS_REP_CAN
+				}
+			}
+		}
+	}
+}
+
+country_event = { #The Democrat Conventions Conclude#
+	id = usa_quayle.7
+	title = usa_quayle.7.t
+	desc = usa_quayle.7.d
+	picture = GFX_report_event_USA_2000
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa_quayle.7.a
+		set_country_flag = gore_for_dem_candicate
+		custom_effect_tooltip = gore_will_be_dem_candicate
+		promote_character = USA_al_gore
+		country_event = {id = usa_quayle.8 days = 3}
+		ai_chance = {
+		factor = 65
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+				rule = USA_dem_can_paths_selection
+				option = USA_GORE_WINS_DEM_CAN
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = usa_quayle.7.b
+		set_country_flag = biden_for_dem_candicate
+		custom_effect_tooltip = biden_will_be_dem_candicate
+		custom_effect_tooltip = usa_warning
+		country_event = {id = usa_quayle.8 days = 3}
+		ai_chance = {
+		factor = 35
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+				rule = USA_dem_can_paths_selection
+				option = USA_BIDEN_WINS_DEM_CAN
+				}
+			}
+		}
+	}
+}
+
+country_event = { #The Reform Conventions Conclude#
+	id = usa_quayle.8
+	title = usa_quayle.8.t
+	desc = usa_quayle.8.d
+	picture = GFX_report_event_USA_2000
+	
+	is_triggered_only = yes
+	
+	#trump#
+	option = {
+		name = usa_quayle.8.a
+		set_country_flag = trump_for_reform_candicate
+		custom_effect_tooltip = trump_will_be_reform_candicate
+		promote_character = USA_donald_trump
+		
+		ai_chance = {
+		factor = 50
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+				rule = USA_ref_can_paths_selection
+				option = USA_TRUMP_WINS_REF_CAN
+				}
+			}
+		}
+	}
+	
+	#buchanan#
+	option = {
+		name = usa_quayle.8.b
+		set_country_flag = buchanan_for_reform_candicate
+		custom_effect_tooltip = buchanan_will_be_reform_candicate
+		custom_effect_tooltip = usa_warning
+		ai_chance = {
+		factor = 50
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+				rule = USA_ref_can_paths_selection
+				option = USA_BUCHANAN_WINS_REF_CAN
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Election Day...#
+	id = usa_quayle.9
+	title = usa_quayle.9.t
+	desc = usa_quayle.9.d
+	picture = GFX_report_event_USA_2000
+	
+	trigger = {
+	date > 2000.11.6
+	original_tag = USA
+	}
+	
+	fire_only_once = yes
+	
+	#republicans win#
+	option = {
+		name = usa_quayle.9.a
+		set_country_flag = rep_win
+			add_popularity = {
+				ideology = democratic 
+				popularity = 0.025
+			}
+		if = {
+		limit = {has_country_flag = bush_for_rep_candicate}
+		custom_effect_tooltip = rep_candicate_will_become_president_on_jan20
+		}
+		else_if = {
+		limit = {has_country_flag = mccain_for_rep_candicate}
+		custom_effect_tooltip = rep_candicate_will_become_president_on_jan20
+		}
+		
+		ai_chance = {
+		factor = 33
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+				rule = USA_first_election_paths_selection
+				option = USA_REPS_WIN_2000
+				}
+			}
+		}
+	}
+	
+	#democrats win#
+	option = {
+		name = usa_quayle.9.b
+		set_country_flag = dem_win
+			add_popularity = {
+				ideology = liberalism 
+				popularity = 0.05
+			}
+		if = {
+		limit = {has_country_flag = gore_for_dem_candicate}
+		custom_effect_tooltip = dem_candicate_will_become_president_on_jan20
+		}
+		else_if = {
+		limit = {has_country_flag = biden_for_dem_candicate}
+		custom_effect_tooltip = dem_candicate_will_become_president_on_jan20
+		}
+		
+		ai_chance = {
+		factor = 33
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+				rule = USA_first_election_paths_selection
+				option = USA_DEMS_WIN_2000
+				}
+			}
+		}
+	}
+	
+	#reform win#
+	option = {
+		name = usa_quayle.9.c
+		set_country_flag = ref_win
+			add_popularity = {
+				ideology = social_democracy 
+				popularity = 0.05
+			}
+		if = {
+		limit = {has_country_flag = trump_for_reform_candicate}
+		custom_effect_tooltip = reform_candicate_will_become_president_on_jan20
+		}
+		
+		else_if = {
+		limit = {has_country_flag = buchanan_for_reform_candicate}
+		custom_effect_tooltip = reform_candicate_will_become_president_on_jan20
+		}
+		
+		ai_chance = {
+		factor = 33
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+				rule = USA_first_election_paths_selection
+				option = USA_REFS_WIN_2000
+				}
+			}
+		}
+	}
+}
+
+
+country_event = { #Inauguration#
+	id = usa_quayle.10
+	title = usa_quayle.10.t
+	desc = usa_quayle.10.d
+	picture = GFX_report_event_USA_2000
+	
+	trigger = {
+	original_tag = USA
+	date > 2001.01.19
+	}
+	
+	fire_only_once = yes
+	
+	#mkay#
+	option = {
+		name = usa_quayle.10.a
+		if = {
+			limit = {
+				AND = {
+				has_country_flag = bush_for_rep_candicate
+				has_country_flag = rep_win
+				}
+			}
+			load_focus_tree = usa_bush_focus
+			complete_national_focus = USA_bush_bush_in_office
+			retire_country_leader = yes
+			promote_character = USA_george_bush
+			news_event = {id = old_times_news.47}
+		}
+		else_if = {
+			limit = {
+				AND = {
+				has_country_flag = mccain_for_rep_candicate
+				has_country_flag = rep_win
+				}
+			}
+			load_focus_tree = usa_mccain_focus
+			complete_national_focus = USA_mccain_mccain_in_office
+			retire_country_leader = yes
+			promote_character = USA_john_mccain
+			
+		}		
+		else_if = {
+			limit = {
+				AND = {
+				has_country_flag = gore_for_dem_candicate
+				has_country_flag = dem_win
+				}
+			}
+			load_focus_tree = usa_gore_focus
+			complete_national_focus = USA_gore_gore_in_office
+			retire_country_leader = yes
+			
+			set_politics = {
+				ruling_party = liberalism
+				last_election = "1930.11.9"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			
+			if = {
+				limit = {has_country_flag = bush_for_rep_candicate}
+				promote_character = USA_george_bush
+			}
+			else_if = {
+				limit = {has_country_flag = mccain_for_rep_candicate}
+				promote_character = USA_john_mccain
+			}
+			
+		}
+		else_if = {
+			limit = {has_country_flag = biden_for_dem_candicate}
+		}
+		else_if = {
+			limit = {
+				AND = {
+				has_country_flag = trump_for_reform_candicate 
+				has_country_flag = ref_win
+				}
+			}
+			load_focus_tree = usa_trump_focus
+			complete_national_focus = USA_trump_trump_in_office
+			retire_country_leader = yes			
+			
+			set_politics = {
+				ruling_party = social_democracy
+				last_election = "1930.11.9"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			
+			if = {
+				limit = {has_country_flag = bush_for_rep_candicate}
+				promote_character = USA_george_bush
+			}
+			else_if = {
+				limit = {has_country_flag = mccain_for_rep_candicate}
+				promote_character = USA_john_mccain
+			}
+						
+		}
+		else_if = {
+			limit = {has_country_flag = buchanan_for_reform_candicate}
+		}
+	}
+
+}
+
+#BUSH#
+
+
+country_event = { #Bush’s Inauguration#
+	id = usa_bush.1
+	title = usa_bush.1.t
+	desc = usa_bush.1.d
+	picture = GFX_report_event_USA_2000
+	
+	is_triggered_only = yes
+	
+	#k#
+	option = {
+		name = usa_bush.1.a
+		
+	}
+}
+
+country_event = { #United States v. Microsoft Corp#
+	id = usa_bush.2
+	title = usa_bush.2.t
+	desc = usa_bush.2.d
+	picture = GFX_report_event_USA_2000
+	
+	is_triggered_only = yes
+	
+	#k#
+	option = {
+		name = usa_bush.2.a
+		add_political_power = -1
+	}
+}
+
+country_event = { #Walk Down Wall Street#
+	id = usa_bush.3
+	title = usa_bush.3.t
+	desc = usa_bush.3.d
+	picture = GFX_report_event_USA_2000
+	
+	is_triggered_only = yes
+	
+	#k#
+	option = {
+		name = usa_bush.3.a
+
+	}
+}
+
+country_event = { #Oil on the Risers#
+	id = usa_bush.4
+	title = usa_bush.4.t
+	desc = usa_bush.4.d
+	picture = GFX_report_event_USA_2000
+	
+	is_triggered_only = yes
+	
+	#k#
+	option = {
+		name = usa_bush.4.a
+
+	}
+}
+
+country_event = { #Terror in Yerevan#
+	id = usa_bush.5
+	title = usa_bush.5.t
+	desc = usa_bush.5.d
+	picture = GFX_report_event_USA_2000
+	
+	is_triggered_only = yes
+	
+	#bush survives#
+	option = {
+		name = usa_bush.5.a
+		add_political_power = -1
+	}
+	
+	#bush gets trolled by the grenade#
+	option = {
+		name = usa_bush.5.b
+		custom_effect_tooltip = USA_bush_dies_tooltip
+		hidden_effect = {
+		retire_country_leader = yes
+		}
+		promote_character = USA_dick_cheney
+		add_stability = -0.20
+		
+		
+	}
+}
+
+country_event = { #The Borders Between Freedom#
+	id = usa_bush.6
+	title = usa_bush.6.t
+	desc = usa_bush.6.d
+	picture = GFX_report_event_USA_2000
+	
+	is_triggered_only = yes
+	
+	#border security#
+	option = {
+		name = usa_bush.6.a
+		add_ideas = USA_overhauled_border_security
+	}
+	
+	#pop bonus#
+	option = {
+		name = usa_bush.6.b
+		add_ideas = USA_overhauled_immigration_laws
+	}
+}
+
+country_event = { #Reformation of the Reformists#
+	id = usa_bush.7
+	title = usa_bush.7.t
+	desc = usa_bush.7.d
+	picture = GFX_report_event_USA_2000
+	
+	is_triggered_only = yes
+	
+	#k#
+	option = {
+		name = usa_bush.6.a
+	}
+
+}
+
+#MCCAIN#
+
+country_event = { #McCain’s Inauguration#
+	id = usa_mccain.1
+	title = usa_mccain.1.t
+	desc = usa_mccain.1.d
+	picture = GFX_report_event_USA_2000
+	
+	is_triggered_only = yes
+	
+	#k#
+	option = {
+		name = usa_mccain.1.a
+		
+	}
+}
+
+#GORE#
+
+country_event = { #Gore’s Inauguration#
+	id = usa_gore.1
+	title = usa_gore.1.t
+	desc = usa_gore.1.d
+	picture = GFX_report_event_USA_2000
+	
+	is_triggered_only = yes
+	
+	#k#
+	option = {
+		name = usa_gore.1.a
+		
+	}
+}
+
+#TRUMP#
+
+country_event = { #Trump’s Inauguration#
+	id = usa_trump.1
+	title = usa_trump.1.t
+	desc = usa_trump.1.d
+	picture = GFX_report_event_USA_2000
+	
+	is_triggered_only = yes
+	
+	#k#
+	option = {
+		name = usa_trump.1.a
+		
+	}
+}
+
+ ###SAF NEEDS HELP###
+
+country_event = { 
+	id = usa_help.1
+	title = usa_help.1.t
+	desc = usa_help.1.d
+	picture = GFX_report_event_USA_request_aid
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = usa_help.1.a		
+	}
+	option = {
+		name = usa_help.1.b
+		SAF = {
+			country_event = { id = saf_help.1 }
+		}		
+	}
+}
+
+#enable vols?
+country_event = { 
+	id = usa_help.0
+	title = usa_help.0.t
+	desc = usa_help.0.d
+	picture = GFX_report_event_USA_request_aid
+	
+	trigger = {
+		original_tag = USA
+		is_ai = no
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = usa_help.0.a		
+		set_rule = {
+			desc = TAG_my_rule_description
+			can_send_volunteers = yes
+		}
+	}
+	option = {
+		name = usa_help.0.b
+			
+	}
+}

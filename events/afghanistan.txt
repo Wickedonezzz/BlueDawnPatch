@@ -1,0 +1,118 @@
+add_namespace = northern_alliance
+
+#ELECTIONS BOI#
+country_event = {
+	id = northern_alliance.1
+	title = northern_alliance.1.t
+	desc = northern_alliance.1.d
+	picture = GFX_report_event_ballot_box
+	
+	is_triggered_only = yes
+
+		#Jamiat-e Islami#
+	option = {
+		name = northern_alliance.1.a
+		retire_country_leader = yes
+			
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+			last_election = "2000.12.17"
+			election_frequency = 48
+			long_name = NRO_neutrality_ahmad_party_long
+			name = NRO_neutrality_ahmad_party
+		}
+			
+			set_popularities = {
+				democratic = 15
+				paternal_autocracy = 30
+				neutrality = 35
+				socialism = 20
+			}
+			
+		ai_chance = {
+		base = 50
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+				rule = NRO_election_paths_selection
+				option = NRO_MASSOUD_WINS_PATH_CHOSEN
+				}
+			}
+		}
+	}
+	
+		#Hezb-e Wahdat#
+	option = {
+		name = northern_alliance.1.b
+		retire_country_leader = yes
+			
+		set_politics = {
+			ruling_party = paternal_autocracy
+			elections_allowed = no
+			last_election = "2000.12.17"
+			election_frequency = 48
+		}
+		
+			set_popularities = {
+				democratic = 10
+				paternal_autocracy = 35
+				neutrality = 35
+				socialism = 20
+			}
+			
+			set_party_name = {
+				ideology = neutrality
+				long_name = NRO_neutrality_ahmad_party_long
+				name = NRO_neutrality_ahmad_party
+			}
+			
+		ai_chance = {
+		base = 25
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+				rule = NRO_election_paths_selection
+				option = NRO_MOHAQIQ_WINS_PATH_CHOSEN
+				}
+			}
+		}
+	}
+	
+		#Junbish-i Milli#
+	option = {
+		name = northern_alliance.1.c
+		retire_country_leader = yes			
+		set_politics = {
+			ruling_party = socialism
+			elections_allowed = no
+			last_election = "2000.12.17"
+			election_frequency = 48
+		}
+			
+			set_popularities = {
+				democratic = 10
+				paternal_autocracy = 20
+				neutrality = 30
+				socialism = 35
+				communism = 5
+			}
+
+			set_party_name = {
+				ideology = neutrality
+				long_name = NRO_neutrality_ahmad_party_long
+				name = NRO_neutrality_ahmad_party
+			}
+			
+		ai_chance = {
+		base = 25
+			modifier = {
+				factor = 99999
+				has_game_rule = {
+				rule = NRO_election_paths_selection
+				option = NRO_DOSTUM_WINS_PATH_CHOSEN
+				}
+			}
+		}
+	}
+}

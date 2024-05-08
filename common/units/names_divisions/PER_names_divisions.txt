@@ -1,0 +1,138 @@
+﻿PER_MBT_02 = 
+{
+	name = "Armoured Islamic Revolutionary Guard Divisions"
+
+	for_countries = { PER }
+
+	can_use = { always = yes }
+
+	division_types = { "main_battle_tank_armor" }
+
+	fallback_name = "%d Armoured Islamic Revolutionary Guard Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st Armoured Islamic Revolutionary Guard Division" }
+		2 = { "2nd Armoured Islamic Revolutionary Guard Division" }
+		3 = { "3rd Armoured Islamic Revolutionary Guard Division" }
+		4 = { "4th Armoured Islamic Revolutionary Guard Division" }
+		5 = { "5th Armoured Islamic Revolutionary Guard Division" }
+		6 = { "6th Armoured Islamic Revolutionary Guard Division" }
+		7 = { "7th Armoured Islamic Revolutionary Guard Division" }
+		8 = { "8th Armoured Islamic Revolutionary Guard Division" }
+		9 = { "9th Armoured Islamic Revolutionary Guard Division" }
+		10 = { "10th Armoured Islamic Revolutionary Guard Division" }
+		11 = { "11th Armoured Islamic Revolutionary Guard Division" }
+		12 = { "12th Armoured Islamic Revolutionary Guard Division" }
+		13 = { "13th Armoured Islamic Revolutionary Guard Division" }
+		14 = { "14th Armoured Islamic Revolutionary Guard Division" }
+		15 = { "15th Armoured Islamic Revolutionary Guard Division" }
+		16 = { "16th Armoured Islamic Revolutionary Guard Division" }
+		17 = { "17th Armoured Islamic Revolutionary Guard Division" }
+		18 = { "18th Armoured Islamic Revolutionary Guard Division" }
+		19 = { "19th Armoured Islamic Revolutionary Guard Division" }
+	}
+}
+PER_MEC_01 = 
+{
+	name = "Mechanised Islamic Revolutionary Guard Divisions"
+
+	for_countries = { PER }
+
+	can_use = { always = yes }
+
+	division_types = { "heavy_infantry_unit" }
+
+	fallback_name = "%d Mechanised Islamic Revolutionary Guard Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st Mechanised Islamic Revolutionary Guard Division" }
+		2 = { "2nd Mechanised Islamic Revolutionary Guard Division" }
+		3 = { "3rd Mechanised Islamic Revolutionary Guard Division" }
+		4 = { "4th Mechanised Islamic Revolutionary Guard Division" }
+		5 = { "5th Mechanised Islamic Revolutionary Guard Division" }
+		6 = { "6th Mechanised Islamic Revolutionary Guard Division" }
+		7 = { "7th Mechanised Islamic Revolutionary Guard Division" }
+		8 = { "8th Mechanised Islamic Revolutionary Guard Division" }
+		9 = { "9th Mechanised Islamic Revolutionary Guard Division" }
+		10 = { "10th Mechanised Islamic Revolutionary Guard Division" }
+		11 = { "11th Mechanised Islamic Revolutionary Guard Division" }
+		12 = { "12th Mechanised Islamic Revolutionary Guard Division" }
+		13 = { "13th Mechanised Islamic Revolutionary Guard Division" }
+		14 = { "14th Mechanised Islamic Revolutionary Guard Division" }
+		15 = { "15th Mechanised Islamic Revolutionary Guard Division" }
+		16 = { "16th Mechanised Islamic Revolutionary Guard Division" }
+		17 = { "17th Mechanised Islamic Revolutionary Guard Division" }
+		18 = { "18th Mechanised Islamic Revolutionary Guard Division" }
+		19 = { "19th Mechanised Islamic Revolutionary Guard Division" }
+	}
+}
+PER_INF_02 = 
+{
+	name = "Islamic Revolutionary Guard Divisions"
+
+	for_countries = { PER }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry_unit" }
+
+	fallback_name = "%d Islamic Revolutionary Guard Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "1st Islamic Revolutionary Guard Division" }
+		2 = { "2nd Islamic Revolutionary Guard Division" }
+		3 = { "3rd Islamic Revolutionary Guard Division" }
+		4 = { "4th Islamic Revolutionary Guard Division" }
+		5 = { "5th Islamic Revolutionary Guard Division" }
+		6 = { "6th Islamic Revolutionary Guard Division" }
+		7 = { "7th Islamic Revolutionary Guard Division" }
+		8 = { "8th Islamic Revolutionary Guard Division" }
+		9 = { "9th Islamic Revolutionary Guard Division" }
+		10 = { "10th Islamic Revolutionary Guard Division" }
+		11 = { "11th Islamic Revolutionary Guard Division" }
+		12 = { "12th Islamic Revolutionary Guard Division" }
+		13 = { "13th Islamic Revolutionary Guard Division" }
+		14 = { "14th Islamic Revolutionary Guard Division" }
+		15 = { "15th Islamic Revolutionary Guard Division" }
+		16 = { "16th Islamic Revolutionary Guard Division" }
+		17 = { "17th Islamic Revolutionary Guard Division" }
+		18 = { "18th Islamic Revolutionary Guard Division" }
+		19 = { "19th Islamic Revolutionary Guard Division" }
+		20 = { "20th Islamic Revolutionary Guard Division" }
+		21 = { "21st Islamic Revolutionary Guard Division" }
+		22 = { "22nd Islamic Revolutionary Guard Division" }
+		23 = { "23rd Islamic Revolutionary Guard Division" }
+		24 = { "24th Islamic Revolutionary Guard Division" }
+		25 = { "25th Islamic Revolutionary Guard Division" }
+		26 = { "26th Islamic Revolutionary Guard Division" }
+		27 = { "27th Islamic Revolutionary Guard Division" }
+		28 = { "28th Islamic Revolutionary Guard Division" }
+		29 = { "29th Islamic Revolutionary Guard Division" }
+		30 = { "30th Islamic Revolutionary Guard Division" }
+		31 = { "31st Islamic Revolutionary Guard Division" }
+		32 = { "32nd Islamic Revolutionary Guard Division" }
+		33 = { "33rd Islamic Revolutionary Guard Division" }
+		34 = { "34th Islamic Revolutionary Guard Division" }
+		35 = { "35th Islamic Revolutionary Guard Division" }
+		36 = { "36th Islamic Revolutionary Guard Division" }
+		37 = { "37th Islamic Revolutionary Guard Division" }
+		38 = { "38th Islamic Revolutionary Guard Division" }
+		39 = { "39th Islamic Revolutionary Guard Division" }
+		40 = { "40th Islamic Revolutionary Guard Division" }
+		41 = { "41st Islamic Revolutionary Guard Division" }
+		42 = { "42nd Islamic Revolutionary Guard Division" }
+		43 = { "43rd Islamic Revolutionary Guard Division" }
+		44 = { "44th Islamic Revolutionary Guard Division" }
+		45 = { "45th Islamic Revolutionary Guard Division" }
+		46 = { "46th Islamic Revolutionary Guard Division" }
+		47 = { "47th Islamic Revolutionary Guard Division" }
+		48 = { "48th Islamic Revolutionary Guard Division" }
+		49 = { "49th Islamic Revolutionary Guard Division" }
+	}
+}

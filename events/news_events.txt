@@ -1,0 +1,4084 @@
+###########################
+# News Event
+###########################
+
+add_namespace = old_times_news
+add_namespace = flavour_news
+
+
+news_event = {
+	id = old_times_news.1
+	title = old_times_news.1.t
+	desc = old_times_news.1.d
+	picture = GFX_news_yanayev
+
+	major = yes
+
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.1.a
+	}
+}
+
+news_event = {
+	id = old_times_news.2
+	title = old_times_news.2.t
+	desc = old_times_news.2.d
+	picture = GFX_news_afghan_invasion
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.2.a
+	}
+}
+
+news_event = {
+	id = old_times_news.3
+	title = old_times_news.3.t
+	desc = old_times_news.3.d
+	picture = GFX_news_yazov
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.3.a
+	}
+}
+
+news_event = {
+	id = old_times_news.4
+	title = old_times_news.4.t
+	desc = old_times_news.4.d
+	picture = GFX_news_pugo
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.4.a
+	}
+}
+
+news_event = {
+	id = old_times_news.5
+	title = old_times_news.5.t
+	desc = old_times_news.5.d
+	picture = GFX_news_gorbachev
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.5.a
+	}
+}
+
+news_event = {
+	id = old_times_news.6
+	title = old_times_news.6.t
+	desc = old_times_news.6.d
+	picture = GFX_news_putin
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.6.a
+	}
+}
+
+news_event = {
+	id = old_times_news.86
+	title = old_times_news.86.t
+	desc = old_times_news.86.d
+	picture = GFX_news_putin_denounces_gkchp
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.86.a
+	}
+}
+
+###SOVIET CIVIL WAR###
+news_event = {
+	id = old_times_news.90
+	title = old_times_news.90.t
+	desc = old_times_news.90.d
+	picture = GFX_news_soviet_civil_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_global_flag = Super_Event_Visible
+			set_global_flag = Soviet_Civil_War
+			play_song = "super_soviet_melancholy"		
+		}
+	}
+	option ={
+		name = old_times_news.90.a
+	}
+}
+
+###SAF CIVIL WAR###
+news_event = {
+	id = old_times_news.7
+	title = old_times_news.7.t
+	desc = old_times_news.7.d
+	picture = GFX_news_south_africa
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_global_flag = SAF_war_super_event
+			set_global_flag = Super_Event_Visible
+			play_song = "super_sa_war"	
+		}
+	}
+	
+	option ={
+		name = old_times_news.7.a
+		#hidden_effect = {
+		#set_global_flag = SAF_war_super_event
+        #        set_global_flag = Super_Event_Visible
+	    #    play_song = "super_sa_war"
+		#}
+	}
+}
+
+## Iraq Victory ##
+news_event = {
+	id = old_times_news.16
+	title = old_times_news.16.t
+	desc = old_times_news.16.d
+	picture = GFX_news_iraq_victory
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = old_times_news.16.a
+	}
+}
+
+news_event = {
+	id = old_times_news.17
+	title = old_times_news.17.t
+	desc = old_times_news.17.d
+	picture = GFX_news_saf_gas
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.17.a
+	}
+}
+
+news_event = {
+	id = old_times_news.18
+	title = old_times_news.18.t
+	desc = old_times_news.18.d
+	picture = GFX_news_yugo_wars
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_global_flag = Super_Event_Visible
+			set_global_flag = YUG_War
+			play_song = "super_yugo_war"		
+		}
+	}
+	
+	option ={
+		name = old_times_news.18.a
+		#hidden_effect = {
+		#	set_global_flag = Super_Event_Visible
+		#	set_global_flag = YUG_War
+		#	play_song = "super_yugo_war"
+		#}
+	}
+}
+
+news_event = {
+	id = old_times_news.19
+	title = old_times_news.19.t
+	desc = old_times_news.19.d
+	picture = GFX_news_alf
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.19.a
+	}
+}
+
+#anti - kaliba allaince collapses#
+news_event = {
+	id = old_times_news.20
+	title = old_times_news.20.t
+	desc = old_times_news.20.d
+	picture = GFX_news_congo_alliance_collapse
+	
+	major = yes
+
+	is_triggered_only = yes
+	
+	option ={
+		name = old_times_news.20.a
+	}
+}
+
+#Congo Goverment Wins The Second Congo War#
+news_event = {
+	id = old_times_news.21
+	title = old_times_news.21.t
+	desc = old_times_news.21.d
+	picture = GFX_news_congo_gov_win
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.21.a
+	}
+}
+
+#RCD - K Wins The Second Congo War#
+news_event = {
+	id = old_times_news.22
+	title = old_times_news.22.t
+	desc = old_times_news.22.d
+	picture = GFX_news_congo_liberal_win
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.22.a
+	}
+}
+
+#RCD - G Wins The Second Congo War#
+news_event = {
+	id = old_times_news.23
+	title = old_times_news.23.t
+	desc = old_times_news.23.d
+	picture = GFX_news_congo_liberal_win
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.23.a
+	}
+}
+
+#Soviets invade Latvia, Estonia etc.
+news_event = {
+	id = old_times_news.24
+	title = old_times_news.24.t
+	desc = old_times_news.24.d
+	picture = GFX_news_reclamation
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.24.a
+	}
+}
+
+#Soviet Coup
+news_event = {
+	id = old_times_news.25
+	title = old_times_news.25.t
+	desc = old_times_news.25.d
+	picture = GFX_news_coup
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.25.a
+	}
+}
+
+#Eastern War#
+news_event = {
+	id = old_times_news.26
+	title = old_times_news.26.t
+	desc = old_times_news.26.d
+	picture = GFX_news_eastern_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_global_flag = Eastern_War
+			set_global_flag = Super_Event_Visible
+			play_song = "super_eastern_war"
+		}
+	}
+	
+	option ={
+		name = old_times_news.26.a
+	}
+}
+
+#Sino Soviet War#
+
+news_event = {
+	id = old_times_news.27
+	title = old_times_news.27.t
+	desc = old_times_news.27.d
+	picture = GFX_news_sino_soviet_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = SOV_Chinese_War
+			set_global_flag = Super_Event_Visible
+			play_song = "super_sino_soviet_war"	
+		}
+	}
+	 
+	option ={
+		name = old_times_news.27.a
+	}
+}
+
+###WW3###
+news_event = {
+	id = old_times_news.28
+	title = old_times_news.28.t
+	desc = old_times_news.28.d
+	picture = GFX_news_south_africa
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_global_flag = WW3
+			set_global_flag = Super_Event_Visible
+			play_song = "super_ww3"	
+		}
+	}
+	
+	option ={
+		name = old_times_news.28.a
+	}
+}
+
+#Saddam Declares Greater Iraq
+news_event = {
+	id = old_times_news.33
+	title = old_times_news.33.t
+	desc = old_times_news.33.d
+	picture = GFX_news_greater_iraq_declared
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.33.a
+	}
+}
+
+#Camp David Summit Fails!
+news_event = {
+	id = old_times_news.34
+	title = old_times_news.34.t
+	desc = old_times_news.34.d
+	picture = GFX_news_camp_david_fails
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.34.a
+	}
+}
+
+#Second Intifada
+news_event = {
+	id = old_times_news.35
+	title = old_times_news.35.t
+	desc = old_times_news.35.d
+	picture = GFX_news_second_intifada
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.35.a
+	}
+}
+
+#Chemical Bloodbath In Damascus
+news_event = {
+	id = old_times_news.36
+	title = old_times_news.36.t
+	desc = old_times_news.36.d
+	picture = GFX_news_chemical_attack_in_damascus
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.36.a
+	}
+}
+
+#UAR proclaimed
+news_event = {
+	id = old_times_news.37
+	title = old_times_news.37.t
+	desc = old_times_news.37.d
+	picture = GFX_news_proclaim_uar
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.37.a
+	}
+}
+
+#hafez al assad passes away
+news_event = {
+	id = old_times_news.38
+	title = old_times_news.38.t
+	desc = old_times_news.38.d
+	picture = GFX_news_hafez_al_assad_death
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.38.a
+	}
+}
+
+#Ethiopia launches major offensive against EPLF
+news_event = {
+	id = old_times_news.39
+	title = old_times_news.39.t
+	desc = old_times_news.39.d
+	picture = GFX_news_ethiopian_offensive
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.39.a
+	}
+}
+
+#EPLF Defeated
+news_event = {
+	id = old_times_news.40
+	title = old_times_news.40.t
+	desc = old_times_news.40.d
+	picture = GFX_news_ethiopian_win
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.40.a
+		trigger = {
+			NOT = { 
+				OR = {
+				original_tag = SOV 
+				original_tag = CUB
+				}
+			}
+		}
+	}
+	
+	option ={
+		name = old_times_news.40.b
+		trigger = { 
+			OR = {
+				original_tag = SOV 
+				original_tag = CUB
+			}
+		}
+	}
+	
+}
+
+#Iraqi troops enters Tel Aviv
+news_event = {
+	id = old_times_news.41
+	title = old_times_news.41.t
+	desc = old_times_news.41.d
+	picture = GFX_news_iraq_soldiers_marching
+	
+	major = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		454 = { is_controlled_by = IRQ }
+		454 = { is_owned_by = ISR }
+		IRQ = { has_war_with = ISR }
+	
+	}
+	 
+	option ={
+		name = old_times_news.41.a
+		trigger = {
+			NOT = { 
+				OR = {
+				original_tag = IRQ 
+				}
+			}
+		}
+	}
+	
+	option ={
+		name = old_times_news.41.b
+		trigger = { 
+			OR = {
+				original_tag = IRQ
+			}
+		}
+	}
+	
+}
+
+#Iraq tests nuclear bomb
+news_event = {
+	id = old_times_news.42
+	title = old_times_news.42.t
+	desc = old_times_news.42.d
+	picture = GFX_news_nuke
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.42.a
+	}
+	
+}
+
+#Death of Japanese prime minister
+news_event = {
+	id = old_times_news.43
+	title = old_times_news.43.t
+	desc = old_times_news.43.d
+	picture = GFX_death_of_japan_pm
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.43.a
+	}
+	
+}
+#LDP win election
+news_event = {
+	id = old_times_news.44
+	title = old_times_news.44.t
+	desc = old_times_news.44.d
+	picture = GFX_ldp_win_election
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.44.a
+	}
+	
+}
+#Komeito win election
+news_event = {
+	id = old_times_news.45
+	title = old_times_news.45.t
+	desc = old_times_news.45.d
+	picture = GFX_komeito_win_election
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.45.a
+	}
+	
+}
+#JCP win election
+news_event = {
+	id = old_times_news.46
+	title = old_times_news.46.t
+	desc = old_times_news.46.d
+	picture = GFX_jcp_win_election
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.46.a
+	}
+	
+}
+
+#Bush Elected
+news_event = {
+	id = old_times_news.47
+	title = old_times_news.47.t
+	desc = old_times_news.47.d
+	picture = GFX_news_bush_elected
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.47.a
+	}
+	
+}
+
+#Sino-Soviet Coop
+news_event = {
+	id = old_times_news.48
+	title = old_times_news.48.t
+	desc = old_times_news.48.d
+	picture = GFX_news_sino_sov_coop
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.48.a
+	}
+	
+}
+
+#East timor escapes from blue helmets UN
+news_event = {
+	id = old_times_news.49
+	title = old_times_news.49.t
+	desc = old_times_news.49.d
+	picture = GFX_news_east_timor_independence
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	option ={
+		name = old_times_news.49.a
+	}
+	
+}
+
+#Kony trolls Uganda
+news_event = {
+	id = old_times_news.50
+	title = old_times_news.50.t
+	desc = old_times_news.50.d
+	picture = GFX_news_kony
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.50.a
+	}
+	
+}
+#Thailand Military Coup
+news_event = {
+	id = old_times_news.51
+	title = old_times_news.51.t
+	desc = old_times_news.51.d
+	picture = GFX_siam_military_coup
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.51.a
+	}
+	
+}
+#Taliban wins against northern alliance
+news_event = {
+	id = old_times_news.52
+	title = old_times_news.52.t
+	desc = old_times_news.52.d
+	picture = GFX_news_taliban_win
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.52.a
+	}
+	
+}
+#Northern alliance wins against Taliban WITHOUT USA
+news_event = {
+	id = old_times_news.53
+	title = old_times_news.53.t
+	desc = old_times_news.53.d
+	picture = GFX_news_northern_alliance_win
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.53.a
+	}
+	
+}
+#Anti-Derg Rebellion in Ethiopia
+news_event = {
+	id = old_times_news.54
+	title = old_times_news.54.t
+	desc = old_times_news.54.d
+	picture = GFX_news_ethiopia_rebellion
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.54.a
+	}
+	
+}
+#Ethiopian Rebels win
+news_event = {
+	id = old_times_news.55
+	title = old_times_news.55.t
+	desc = old_times_news.55.d
+	picture = GFX_news_ethiopia_rebellion_win
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.55.a
+		trigger = {
+			NOT = { 
+				OR = {
+				original_tag = SOV 
+				original_tag = CUB
+				}
+			}
+		}
+	}
+	
+	option ={
+		name = old_times_news.55.b
+		trigger = { 
+			OR = {
+				original_tag = SOV 
+				original_tag = CUB
+			}
+		}
+	}
+	
+}
+#ADF islamists takes over Uganda
+news_event = {
+	id = old_times_news.56
+	title = old_times_news.56.t
+	desc = old_times_news.56.d
+	picture = GFX_news_ADF
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.56.a
+	}
+	
+}
+
+#Wienna Summit Success
+news_event = {
+	id = old_times_news.57
+	title = old_times_news.57.t
+	desc = old_times_news.57.d
+	picture = GFX_news_wienna_summit
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.57.a
+	}
+	
+}
+
+#Wienna Summit Fail
+news_event = {
+	id = old_times_news.58
+	title = old_times_news.58.t
+	desc = old_times_news.58.d
+	picture = GFX_news_wienna_summit
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.58.a
+	}
+	
+}
+
+#Budapest Agreement
+news_event = {
+	id = old_times_news.59
+	title = old_times_news.59.t
+	desc = old_times_news.59.d
+	picture = GFX_news_budapest
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.59.a
+	}
+	
+}
+
+#Moscow coup putin
+news_event = {
+	id = old_times_news.93
+	title = old_times_news.93.t
+	desc = old_times_news.93.d
+	picture = GFX_news_moscow_battle
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.93.a
+	}
+	
+}
+
+#Moscow battle
+news_event = {
+	id = old_times_news.94
+	title = old_times_news.94.t
+	desc = old_times_news.94.d
+	picture = GFX_news_moscow_coup
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.94.a
+	}
+	
+}
+
+#EPLF AND ETHIOPIAN REBELS Defeated
+news_event = {
+	id = old_times_news.60
+	title = old_times_news.60.t
+	desc = old_times_news.60.d
+	picture = GFX_news_ethiopian_win
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.60.a
+		trigger = {
+			NOT = { 
+				OR = {
+				original_tag = SOV 
+				original_tag = CUB
+				}
+			}
+		}
+	}
+	
+	option ={
+		name = old_times_news.60.b
+		trigger = { 
+			OR = {
+				original_tag = SOV 
+				original_tag = CUB
+			}
+		}
+	}
+	
+}
+
+# socdems win in germany 2002
+news_event = {
+	id = old_times_news.61
+	title = old_times_news.61.t
+	desc = old_times_news.61.d
+	picture = GFX_news_spd_win_2002
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.61.a
+		
+	}
+	
+}
+
+# cons win in germany 2002
+news_event = {
+	id = old_times_news.62
+	title = old_times_news.62.t
+	desc = old_times_news.62.d
+	picture = GFX_news_cdu_csu_win_2002
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.62.a
+		
+	}
+	
+}
+
+# libs win in germany 2002
+news_event = {
+	id = old_times_news.63
+	title = old_times_news.63.t
+	desc = old_times_news.63.d
+	picture = GFX_news_fdp_win_2002
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.63.a
+		
+	}
+	
+}
+
+# socdems win Romanian elections 2000
+news_event = {
+	id = old_times_news.64
+	title = old_times_news.64.t
+	desc = old_times_news.64.d
+	picture = GFX_news_rom_socdems_win_2000
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.64.a
+		
+	}
+	
+}
+
+# ultranats win Romanian elections 2000
+news_event = {
+	id = old_times_news.65
+	title = old_times_news.65.t
+	desc = old_times_news.65.d
+	picture = GFX_news_tudor_win_2000
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.65.a
+		
+	}
+	
+}
+
+# nepalese royal massacre
+news_event = {
+	id = old_times_news.66
+	title = old_times_news.66.t
+	desc = old_times_news.66.d
+	picture = GFX_news_nepal_massacre
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.66.a
+		
+	}
+	
+}
+
+#WP restored
+news_event = {
+	id = old_times_news.67
+	title = old_times_news.67.t
+	desc = old_times_news.67.d
+	picture = GFX_news_budapest
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.67.a
+	}
+	
+}
+
+#Yugoslavia joins WP
+news_event = {
+	id = old_times_news.68
+	title = old_times_news.68.t
+	desc = old_times_news.68.d
+	picture = GFX_news_budapest
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.68.a
+	}
+	
+}
+
+#Warsaw Pact Invades Yugoslavia
+news_event = {
+	id = old_times_news.69
+	title = old_times_news.69.t
+	desc = old_times_news.69.d
+	picture = GFX_news_soviet_invasion_of_yugo
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.69.a
+	}
+	
+}
+
+#Dissolution of USSR
+news_event = {
+	id = old_times_news.70
+	title = old_times_news.70.t
+	desc = old_times_news.70.d
+	picture = GFX_news_dissolution
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = Soviet_Dissolution
+			set_global_flag = Super_Event_Visible
+			play_song = "super_soviet_dissolution"	
+		}
+	}
+	 
+	option ={
+		name = old_times_news.70.a
+	}
+	
+}
+
+#Milosevic declares Yugoslav Congress null
+news_event = {
+	id = old_times_news.71
+	title = old_times_news.71.t
+	desc = old_times_news.71.d
+	picture = GFX_news_milosevic_speech
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.71.a
+	}
+	
+}
+
+#Milosevic ousted
+news_event = {
+	id = old_times_news.72
+	title = old_times_news.72.t
+	desc = old_times_news.72.d
+	picture = GFX_news_belgrade_revolution
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.72.a
+	}
+	
+}
+
+#Khmer Rouge Surrender
+news_event = {
+	id = old_times_news.73
+	title = old_times_news.73.t
+	desc = old_times_news.73.d
+	picture = GFX_news_khmer_rouge_die
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.73.a
+	}
+	
+}
+
+#Soviet melancholy
+news_event = {
+	id = old_times_news.74
+	title = old_times_news.74.t
+	desc = old_times_news.74.d
+	picture = GFX_news_soviet_melancholy
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = Soviet_Melancholy
+			set_global_flag = Super_Event_Visible
+			play_song = "super_soviet_melancholy"	
+		}
+	}
+	 
+	option ={
+		name = old_times_news.74.a
+	}
+}
+
+
+news_event = {
+	id = old_times_news.75
+	title = old_times_news.75.t
+	desc = old_times_news.75.d
+	picture = GFX_news_mandela
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.75.a
+	}
+}
+
+
+#invasion of Taiwan
+news_event = {
+	id = old_times_news.76
+	title = old_times_news.76.t
+	desc = old_times_news.76.d
+	picture = GFX_news_invasion_of_taiwan
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.76.a
+	}
+}
+
+#5th arab israeli war
+news_event = {
+	id = old_times_news.77
+	title = old_times_news.77.t
+	desc = old_times_news.77.d
+	picture = GFX_news_invasion_of_taiwan
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.77.a
+	}
+}
+
+#Tel Aviv Trials
+news_event = {
+	id = old_times_news.78
+	title = old_times_news.78.t
+	desc = old_times_news.78.d
+	picture = GFX_news_invasion_of_taiwan
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.78.a
+	}
+}
+#Hosni Mubarak assasination
+news_event = {
+	id = old_times_news.79
+	title = old_times_news.79.t
+	desc = old_times_news.79.d
+	picture = GFX_news_Hosni_Mubarak_assasination
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.79.a
+	}
+}
+#Egyptian Revolution
+news_event = {
+	id = old_times_news.80
+	title = old_times_news.80.t
+	desc = old_times_news.80.d
+	picture = GFX_news_egyptian_revolution
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.80.a
+	}
+}
+#Ryutaro Hashimoto
+news_event = {
+	id = old_times_news.81
+	title = old_times_news.81.t
+	desc = old_times_news.81.d
+	picture = GFX_news_Ryutaro_Hashimoto
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.81.a
+	}
+}
+###LDP Victory
+news_event = {
+	id = old_times_news.82
+	title = old_times_news.82.t
+	desc = old_times_news.82.d
+	picture = GFX_news_ldp_win_2
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.82.a
+	}
+}
+###DPJ Victory
+news_event = {
+	id = old_times_news.83
+	title = old_times_news.83.t
+	desc = old_times_news.83.d
+	picture = GFX_news_dpj_win
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.83.a
+	}
+}
+###Nong Duc Manh
+news_event = {
+	id = old_times_news.84
+	title = old_times_news.84.t
+	desc = old_times_news.84.d
+	picture = GFX_news_nong_duc_manh
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.84.a
+	}
+}
+###Yemeni Civil War
+news_event = {
+	id = old_times_news.85
+	title = old_times_news.85.t
+	desc = old_times_news.85.d
+	picture = GFX_news_yemeni_civil_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.85.a
+	}
+}
+###Coup in Cambodia
+news_event = {
+	id = old_times_news.87
+	title = old_times_news.87.t
+	desc = old_times_news.87.d
+	picture = GFX_news_cambodia_coup
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.87.a
+	}
+}
+###Fourth Indochina War
+news_event = {
+	id = old_times_news.88
+	title = old_times_news.88.t
+	desc = old_times_news.88.d
+	picture = GFX_news_fourth_indochina_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = Super_Event_Visible
+			set_global_flag = Indochina_War
+			play_song = "super_indochina_war"		
+		}
+	}
+	 
+	option ={
+		name = old_times_news.88.a
+	}
+}
+###Treaty of Vientiane
+news_event = {
+	id = old_times_news.89
+	title = old_times_news.89.t
+	desc = old_times_news.89.d
+	picture = GFX_news_treaty_of_vientiane
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.89.a
+	}
+}
+###MPLA Win
+news_event = {
+	id = old_times_news.91
+	title = old_times_news.91.t
+	desc = old_times_news.91.d
+	picture = GFX_news_mpla_victory
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.91.a
+	}
+}
+###UNITA Win
+news_event = {
+	id = old_times_news.92
+	title = old_times_news.92.t
+	desc = old_times_news.92.d
+	picture = GFX_news_unita_win
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.92.a
+	}
+}
+###yugoslavia negotiations with rebels succeed
+news_event = {
+	id = old_times_news.96
+	title = old_times_news.96.t
+	desc = old_times_news.96.d
+	picture = GFX_news_yug_lib_committee
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.96.a
+	}
+}
+###indochina war - communist W
+news_event = {
+	id = old_times_news.97
+	title = old_times_news.97.t
+	desc = old_times_news.97.d
+	picture = GFX_news_commie_win_indochina
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.97.a
+		hidden_effect = {
+			every_country = {
+							remove_ideas = VIN_Indochina_war
+							remove_ideas =  VIN_increased_volunteers
+							remove_ideas =  VIN_increased_volunteers_1
+							remove_ideas =  VIN_increased_volunteers_2
+								remove_ideas = VIN_operation_cam
+								remove_ideas = VIN_operation_cam_1
+								remove_ideas = CAM_indochina_war 
+							}
+			VIN = {
+				country_event = vin.32
+			}			
+		}
+	}
+}
+###indochina war - thailand W
+news_event = {
+	id = old_times_news.98
+	title = old_times_news.98.t
+	desc = old_times_news.98.d
+	picture = GFX_news_thailand_victory_indochina
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.98.a
+		hidden_effect = {
+			every_country = {
+							remove_ideas = VIN_Indochina_war
+							remove_ideas =  VIN_increased_volunteers
+							remove_ideas =  VIN_increased_volunteers_1
+							remove_ideas =  VIN_increased_volunteers_2
+								remove_ideas = VIN_operation_cam
+								remove_ideas = VIN_operation_cam_1
+								remove_ideas = CAM_indochina_war 
+							}
+							VIN = {
+								country_event = vin.33
+							}	
+		}
+	}
+}
+
+###EATO
+news_event = {
+	id = old_times_news.99
+	title = old_times_news.99.t
+	desc = old_times_news.99.d
+	picture = GFX_news_skr_jap_friend
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.99.a
+	}
+}
+#yugoslavia dies stambolic
+news_event = {
+	id = old_times_news.100
+	title = old_times_news.100.t
+	desc = old_times_news.100.d
+	picture = GFX_news_yug_lost
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.100.a
+	}
+}
+#conflict in bosnia
+news_event = {
+	id = old_times_news.101
+	title = old_times_news.101.t
+	desc = old_times_news.101.d
+	picture = GFX_news_bosnia_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.101.a
+	}
+}
+
+#Mongolian SSR
+news_event = {
+	id = old_times_news.102
+	title = old_times_news.102.t
+	desc = old_times_news.102.d
+	picture = GFX_news_mongolia
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.102.a
+	}
+}
+
+news_event = {
+	id = old_times_news.103
+	title = old_times_news.103.t
+	desc = old_times_news.103.d
+	picture = GFX_news_nato_signs_europe_peace_with_ussr
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.103.a
+		
+	}
+}
+
+#Brexit - Vote Leave
+news_event = {
+	id = old_times_news.104
+	title = old_times_news.104.t
+	desc = old_times_news.104.d
+	picture = GFX_news_brexit_leave
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.104.a
+	}
+}
+#Brexit - Vote Remain
+news_event = {
+	id = old_times_news.105
+	title = old_times_news.105.t
+	desc = old_times_news.105.d
+	picture = GFX_news_brexit_remain
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.105.a
+	}
+}
+#Scotland - Vote Leave
+news_event = {
+	id = old_times_news.106
+	title = old_times_news.106.t
+	desc = old_times_news.106.d
+	picture = GFX_news_scotland_leave
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.106.a
+	}
+}
+#Scotland - Vote Remain
+news_event = {
+	id = old_times_news.107
+	title = old_times_news.107.t
+	desc = old_times_news.107.d
+	picture = GFX_news_scotland_remain
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.107.a
+	}
+}
+#seselj win
+news_event = {
+	id = old_times_news.108
+	title = old_times_news.108.t
+	desc = old_times_news.108.d
+	picture = GFX_news_seselj
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.108.a
+	}
+}
+#South East Asia Mutual Economic Assistance Organization 
+news_event = {
+	id = old_times_news.109
+	title = old_times_news.109.t
+	desc = old_times_news.109.d
+	picture = GFX_news_SEAMEAO
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.109.a
+	}
+}
+#milosevic win
+news_event = {
+	id = old_times_news.110
+	title = old_times_news.110.t
+	desc = old_times_news.110.d
+	picture = GFX_news_milosevic
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.110.a
+	}
+}
+#mass deportations in yugo
+news_event = {
+	id = old_times_news.111
+	title = old_times_news.111.t
+	desc = old_times_news.111.d
+	picture = GFX_news_deport
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.111.a
+		trigger = {
+			NOT = {original_tag = YUG}
+		}
+	}
+	option ={
+		name = old_times_news.111.b
+		trigger = {
+			original_tag = YUG
+		}		
+	}	
+}
+#turkish election 2002 - Erdogan (watermelon seller) W
+news_event = {
+	id = old_times_news.112
+	title = old_times_news.112.t
+	desc = old_times_news.112.d
+	picture = GFX_news_akp
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.112.a
+
+	}
+
+}
+#turkish election 2002 - Baykal W
+news_event = {
+	id = old_times_news.113
+	title = old_times_news.113.t
+	desc = old_times_news.113.d
+	picture = GFX_news_chp
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.113.a
+
+	}
+
+}
+#turkish election 2002 Cem Uzan (turkish trump) W
+news_event = {
+	id = old_times_news.114
+	title = old_times_news.114.t
+	desc = old_times_news.114.d
+	picture = GFX_news_gp
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.114.a
+
+	}
+
+}
+#turkish election 2002 - Devlet Bahceli (the racist) W
+news_event = {
+	id = old_times_news.115
+	title = old_times_news.115.t
+	desc = old_times_news.115.d
+	picture = GFX_news_mhp
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.115.a
+
+	}
+
+}
+#pakistan wins kashmir
+news_event = {
+	id = old_times_news.116
+	title = old_times_news.116.t
+	desc = old_times_news.116.d
+	picture = GFX_news_ethiopia_invasion
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.116.a
+
+	}
+
+}
+#Kashmir war
+news_event = {
+	id = old_times_news.117
+	title = old_times_news.117.t
+	desc = old_times_news.117.d
+	picture = GFX_news_kashmir_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.117.a
+	}
+}
+#India wins Kashmir
+news_event = {
+	id = old_times_news.118
+	title = old_times_news.118.t
+	desc = old_times_news.118.d
+	picture = GFX_news_yug_greater_serbia_win
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.118.a
+
+	}
+
+}
+
+
+#ethiopia invades somalia
+news_event = {
+	id = old_times_news.119
+	title = old_times_news.119.t
+	desc = old_times_news.119.d
+	picture = GFX_news_ethiopia_invasion
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.119.a
+
+	}
+
+}
+#seselj wins against rebels
+news_event = {
+	id = old_times_news.120
+	title = old_times_news.120.t
+	desc = old_times_news.120.d
+	picture = GFX_news_yug_greater_serbia_win
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.120.a
+		trigger = {
+			NOT = {original_tag = YUG}
+		}
+	}
+
+	option ={
+		name = old_times_news.120.b
+		trigger = {
+			original_tag = YUG
+		}
+	}
+
+}
+#yugoslav liberation committee
+news_event = {
+	id = old_times_news.121
+	title = old_times_news.121.t
+	desc = old_times_news.121.d
+	picture = GFX_news_yug_lib_committee
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.121.a
+
+	}
+
+}
+#formation of the african defense coalition
+news_event = {
+	id = old_times_news.122
+	title = old_times_news.122.t
+	desc = old_times_news.122.d
+	picture = GFX_news_african_world_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	immediate = {
+		saf_world_war = yes
+	}
+	
+	option ={
+		name = old_times_news.122.a
+		trigger = {
+			NOT = { original_tag = SAF }
+			NOT = { is_in_faction_with = UGA }
+		}
+	}
+
+	option ={
+		name = old_times_news.122.b
+		trigger = {
+			OR = {
+				is_in_faction_with = UGA 
+				original_tag = UGA
+			}
+		}
+	}
+
+	option ={
+		name = old_times_news.122.c
+		trigger = {
+			original_tag = SAF
+		}
+	}
+}
+#great middle east war
+news_event = {
+	id = old_times_news.123
+	title = old_times_news.123.t
+	desc = old_times_news.123.d
+	picture = GFX_news_yemeni_civil_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.123.a
+
+	}
+
+}
+#great middle east war - scenario 2
+news_event = {
+	id = old_times_news.124
+	title = old_times_news.124.t
+	desc = old_times_news.124.d
+	picture = GFX_news_yemeni_civil_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.123.a
+
+	}
+
+}
+#Second Battle of Yeonpyeong
+news_event = {
+	id = old_times_news.125
+	title = old_times_news.125.t
+	desc = old_times_news.125.d
+	picture = GFX_news_Second_Battle_of_Yeonpyeong
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.125.a
+
+	}
+
+}
+#bombardment of yeonpyeong
+news_event = {
+	id = old_times_news.126
+	title = old_times_news.126.t
+	desc = old_times_news.126.d
+	picture = GFX_news_Bombardment_of_Yeonpyeong
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.126.a
+
+	}
+
+}
+#Well, Korea is boiling
+news_event = {
+	id = old_times_news.127
+	title = old_times_news.127.t
+	desc = old_times_news.127.d
+	picture = GFX_news_korean_war_about_to_begun
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.127.a
+
+	}
+
+}
+#Korea War
+news_event = {
+	id = old_times_news.128
+	title = old_times_news.128.t
+	desc = old_times_news.128.d
+	picture = GFX_news_korean_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.128.a
+
+	}
+
+}
+#Green UAR wins 
+news_event = {
+	id = old_times_news.129
+	title = old_times_news.129.t
+	desc = old_times_news.129.d
+	picture = GFX_news_yemeni_civil_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.129.a
+
+	}
+
+}
+#Iraq UAR wins 
+news_event = {
+	id = old_times_news.130
+	title = old_times_news.130.t
+	desc = old_times_news.130.d
+	picture = GFX_news_yemeni_civil_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.130.a
+
+	}
+
+}
+#Iraq wins 
+news_event = {
+	id = old_times_news.131
+	title = old_times_news.131.t
+	desc = old_times_news.131.d
+	picture = GFX_news_yemeni_civil_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.131.a
+
+	}
+
+}
+#Saudi wins 
+news_event = {
+	id = old_times_news.132
+	title = old_times_news.132.t
+	desc = old_times_news.132.d
+	picture = GFX_news_yemeni_civil_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.132.a
+
+	}
+
+}
+#French 2002 election - Con wins 
+news_event = {
+	id = old_times_news.133
+	title = old_times_news.133.t
+	desc = old_times_news.133.d
+	picture = GFX_news_french_con_win
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.133.a
+
+	}
+
+}
+#French 2002 election - succdem wins 
+news_event = {
+	id = old_times_news.134
+	title = old_times_news.134.t
+	desc = old_times_news.134.d
+	picture = GFX_news_french_succdem_win
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.134.a
+
+	}
+
+}
+#French 2002 election - le pen wins 
+news_event = {
+	id = old_times_news.135
+	title = old_times_news.135.t
+	desc = old_times_news.135.d
+	picture = GFX_news_french_le_pen
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.135.a
+
+	}
+
+}
+#French 2002 election - trot wins 
+news_event = {
+	id = old_times_news.136
+	title = old_times_news.136.t
+	desc = old_times_news.136.d
+	picture = GFX_news_french_trot_win
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.136.a
+		trigger = {
+			NOT = {
+				has_government = communism
+			}
+		}
+	}
+
+	option ={
+		name = old_times_news.136.b
+		trigger = {
+			has_government = communism
+		}
+	}
+
+}
+#French army coup 
+news_event = {
+	id = old_times_news.137
+	title = old_times_news.137.t
+	desc = old_times_news.137.d
+	picture = GFX_news_french_army_coup
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.137.a
+
+	}
+
+}
+#democratic protests crushed in Nepal
+news_event = {
+	id = old_times_news.138
+	title = old_times_news.138.t
+	desc = old_times_news.138.d
+	picture = GFX_news_nepal_protests_crushed
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.138.a
+		
+	}
+
+}
+#Abolition of monarchy in Nepal
+news_event = {
+	id = old_times_news.139
+	title = old_times_news.139.t
+	desc = old_times_news.139.d
+	picture = GFX_news_nepal_protests_win
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.139.a
+		
+	}
+
+}
+#maoist takover nepal
+news_event = {
+	id = old_times_news.140
+	title = old_times_news.140.t
+	desc = old_times_news.140.d
+	picture = GFX_news_nepal_maoist_win
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.140.a
+		
+	}
+
+}
+#nepal election - maoist win
+news_event = {
+	id = old_times_news.141
+	title = old_times_news.141.t
+	desc = old_times_news.141.d
+	picture = GFX_news_nepal_maoist_win_election
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.141.a
+		
+	}
+
+}
+#nepal election - socialist win
+news_event = {
+	id = old_times_news.142
+	title = old_times_news.142.t
+	desc = old_times_news.142.d
+	picture = GFX_news_nepal_socialist_win_election
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.142.a
+		
+	}
+
+}
+
+#Hungary invades Romania
+news_event = {
+	id = old_times_news.143
+	title = old_times_news.143.t
+	desc = old_times_news.143.d
+	picture = GFX_news_hun_rom_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.143.a
+		
+	}
+
+}
+
+#gorbachev pardoned :)
+news_event = {
+	id = old_times_news.145
+	title = old_times_news.145.t
+	desc = old_times_news.145.d
+	picture = GFX_news_gorby_amnesty
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.145.a
+		
+	}
+
+}
+
+#Hungary invades Slovakia
+news_event = {
+	id = old_times_news.144
+	title = old_times_news.144.t
+	desc = old_times_news.144.d
+	picture = GFX_news_hun_rom_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.144.a
+		
+	}
+
+}
+
+#anti-seperatist operation in yugoslavia
+news_event = {
+	id = old_times_news.146
+	title = old_times_news.146.t
+	desc = old_times_news.146.d
+	picture = GFX_news_anti_sep_yug
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.146.a
+		trigger = {
+			NOT = {original_tag = YUG}
+		}
+	}
+
+	option ={
+		name = old_times_news.146.b
+		trigger = {
+			original_tag = YUG
+		}
+	}
+
+}
+
+#yugoslav assembly bombed
+news_event = {
+	id = old_times_news.147
+	title = old_times_news.147.t
+	desc = old_times_news.147.d
+	picture = GFX_news_yug_assembly_bombed
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.147.a
+		
+	}
+
+}
+
+#seselj death fakeout
+news_event = {
+	id = old_times_news.148
+	title = old_times_news.148.t
+	desc = old_times_news.148.d
+	picture = GFX_news_yug_seselj_almost_died
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.148.a
+		
+	}
+
+}
+
+#increased military presence in Croatia-Yugoslavia border
+news_event = {
+	id = old_times_news.149
+	title = old_times_news.149.t
+	desc = old_times_news.149.d
+	picture = GFX_news_yug_military_presence
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.149.a
+		
+	}
+
+}
+#Kurdish Independence war
+news_event = {
+	id = old_times_news.150
+	title = old_times_news.150.t
+	desc = old_times_news.150.d
+	picture = GFX_news_yug_military_presence
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.150.a
+		
+	}
+
+}
+#Syria-Iraq war
+news_event = {
+	id = old_times_news.151
+	title = old_times_news.151.t
+	desc = old_times_news.151.d
+	picture = GFX_news_iraq_syria_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.151.a
+		
+	}
+
+}
+#Syria-Iraq war - Syria win
+news_event = {
+	id = old_times_news.152
+	title = old_times_news.152.t
+	desc = old_times_news.152.d
+	picture = GFX_news_syria_win
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.152.a
+		
+	}
+
+}
+#Syria-Iraq war - Iraq win
+news_event = {
+	id = old_times_news.153
+	title = old_times_news.153.t
+	desc = old_times_news.153.d
+	picture = GFX_news_iraq_win
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.153.a
+		
+	}
+
+}
+#socialist rev in slovakia
+news_event = {
+	id = old_times_news.154
+	title = old_times_news.154.t
+	desc = old_times_news.154.d
+	#picture = GFX_news_slovak_rev
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.154.a
+		trigger = {
+			original_tag = SOV
+		}
+	}
+
+	option ={
+		name = old_times_news.154.b
+		trigger = {
+			original_tag = USA
+		}
+	}
+
+	option ={
+		name = old_times_news.154.c
+		trigger = {
+			NOT = {
+				original_tag = SOV
+				original_tag = USA
+			}	
+		}
+	}
+}
+#soviets invade poland
+news_event = {
+	id = old_times_news.155
+	title = old_times_news.155.t
+	desc = old_times_news.155.d
+	#picture = GFX_news_slovak_rev
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.155.a
+		trigger = {
+			original_tag = SOV
+		}
+	}
+
+	option ={
+		name = old_times_news.155.b
+		trigger = {
+			NOT = {
+				original_tag = SOV
+			}	
+		}
+	}
+}
+#soviets invade hungary
+news_event = {
+	id = old_times_news.156
+	title = old_times_news.156.t
+	desc = old_times_news.156.d
+	#picture = GFX_news_slovak_rev
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.156.a
+		trigger = {
+			original_tag = SOV
+		}
+	}
+
+	option ={
+		name = old_times_news.156.b
+		trigger = {
+			NOT = {
+				original_tag = SOV
+			}	
+		}
+	}
+}
+#soviets invade hungary - nationalists
+news_event = {
+	id = old_times_news.157
+	title = old_times_news.157.t
+	desc = old_times_news.157.d
+	#picture = GFX_news_slovak_rev
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.157.a
+		trigger = {
+			OR = {
+				has_government = socialism
+				has_government = communism 
+				has_government = reformed_communism
+			}
+		}
+	}
+
+	option ={
+		name = old_times_news.157.b
+		trigger = {
+			NOT = {
+				OR = {
+				has_government = socialism
+				has_government = communism 
+				has_government = reformed_communism
+				}
+			}	
+		}
+	}
+}
+#Romanian Government Collapses
+news_event = {
+	id = old_times_news.158
+	title = old_times_news.158.t
+	desc = old_times_news.158.d
+	#picture = GFX_news_slovak_rev
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.158.a
+
+	}
+
+}
+#Japanese Secrect Rearmament
+news_event = {
+	id = old_times_news.159
+	title = old_times_news.159.t
+	desc = old_times_news.159.d
+	picture = GFX_news_the_sun_rise_again
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.159.a
+
+	}
+
+}
+#yugoslav nuke development
+news_event = {
+	id = old_times_news.160
+	title = old_times_news.160.t
+	desc = old_times_news.160.d
+	picture = GFX_news_yugoslav_nuclear_development
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.160.a
+
+	}
+
+}
+#NCPY takeover
+news_event = {
+	id = old_times_news.161
+	title = old_times_news.161.t
+	desc = old_times_news.161.d
+	picture = GFX_news_yug_new_com
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.161.a
+		
+	}
+
+}
+
+#genocide going on in yugo
+news_event = {
+	id = old_times_news.162
+	title = old_times_news.162.t
+	desc = old_times_news.162.d
+	picture = GFX_news_yug_new_com
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option ={
+		name = old_times_news.162.a
+		
+	}
+
+}	
+
+
+#un authorizes yugo invasion
+news_event = {
+	id = old_times_news.163
+	title = old_times_news.163.t
+	desc = old_times_news.163.d
+	picture = GFX_news_un
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.163.a
+		hidden_effect = {
+			USA = {country_event = {id = yug_seselj.16 days = 7}}
+		}
+	}
+
+}
+
+
+#coalition invades yugo
+news_event = {
+	id = old_times_news.164
+	title = old_times_news.164.t
+	desc = old_times_news.164.d
+	picture = GFX_news_un_invasion_of_yugo
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.164.a
+		trigger = {
+			NOT = {original_tag = YUG}
+		}
+	}
+
+	option ={
+		name = old_times_news.164.b
+		trigger = {
+			original_tag = YUG
+		}
+	}
+}
+
+#nato invades yugo
+news_event = {
+	id = old_times_news.165
+	title = old_times_news.165.t
+	desc = old_times_news.165.d
+	picture = GFX_news_un_invasion_of_yugo
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.165.a
+		trigger = {
+			NOT = {original_tag = YUG}
+		}
+	}
+	
+	option ={
+		name = old_times_news.165.b
+		trigger = {
+			original_tag = YUG
+		}
+	}	
+
+}
+#Chinese Troops Enter Korea
+news_event = {
+	id = old_times_news.166
+	title = old_times_news.166.t
+	desc = old_times_news.166.d
+	picture = GFX_news_chinese_troops_intokorea
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = Super_Event_Visible
+			set_global_flag = Great_Asian_War
+			play_song = "super_great_asian_war"		
+		}
+	}
+	 
+	option ={
+		name = old_times_news.166.a
+
+	}
+
+}
+#Indian Parliment Attack
+news_event = {
+	id = old_times_news.167
+	title = old_times_news.167.t
+	desc = old_times_news.167.d
+	picture = GFX_news_raj_parliment_attack
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.167.a
+
+	}
+
+}
+#Stalingrad return
+news_event = {
+	id = old_times_news.168
+	title = old_times_news.168.t
+	desc = old_times_news.168.d
+	picture = GFX_news_stalingrad
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.168.a
+
+	}
+
+}
+#VN Civil War
+news_event = {
+	id = old_times_news.169
+	title = old_times_news.169.t
+	desc = old_times_news.169.d
+	picture = GFX_news_vietnamese_civil_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.169.a
+
+	}
+
+}
+
+
+#kurdistan rebels
+news_event = {
+	id = old_times_news.172
+	title = old_times_news.172.t
+	desc = old_times_news.172.d
+	picture = GFX_news_vietnamese_civil_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.172.a
+
+	}
+
+}
+#IndoWar but bigger
+news_event = {
+	id = old_times_news.173
+	title = old_times_news.173.t
+	desc = old_times_news.173.d
+	picture = GFX_news_news_indochina_war_big
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.173.a
+
+	}
+
+}
+#Croatia Elections 2000 - Pro-Tudman win
+news_event = {
+	id = old_times_news.174
+	title = old_times_news.174.t
+	desc = old_times_news.174.d
+	picture = GFX_news_pasalic_win
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.174.a
+		trigger = {
+			NOT = {original_tag = YUG}		
+		}
+	}
+	option ={
+		name = old_times_news.174.b
+		trigger = {
+			original_tag = YUG
+		}
+	}
+	
+}
+#Croatia Elections 2000 - Anti-Tudman win
+news_event = {
+	id = old_times_news.175
+	title = old_times_news.175.t
+	desc = old_times_news.175.d
+	picture = GFX_news_mesic_win
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.175.a
+		trigger = {
+			NOT = {original_tag = YUG}		
+		}
+	}
+
+	option ={
+		name = old_times_news.175.b
+		trigger = {
+			original_tag = YUG
+		}
+	}
+
+}
+
+#yugo war - Yugo wins
+news_event = {
+	id = old_times_news.176
+	title = old_times_news.176.t
+	desc = old_times_news.176.d
+	picture = GFX_news_yug_reunification
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.176.a
+		trigger = {
+			NOT = {original_tag = YUG}		
+		}
+	}
+
+	option ={
+		name = old_times_news.176.b
+		trigger = {
+			original_tag = YUG
+		}
+	}
+
+}
+#DPP win
+news_event = {
+	id = old_times_news.177
+	title = old_times_news.177.t
+	desc = old_times_news.177.d
+	picture = GFX_news_dpp_win
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.177.a
+
+	}
+
+
+}
+#Mr.Democracy has fallen
+news_event = {
+	id = old_times_news.178
+	title = old_times_news.178.t
+	desc = old_times_news.178.d
+	picture = GFX_news_lee_resign
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.178.a
+
+	}
+}
+#KMT win
+news_event = {
+	id = old_times_news.179
+	title = old_times_news.179.t
+	desc = old_times_news.179.d
+	picture = GFX_news_KMT_win
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.179.a
+
+	}
+}
+
+#CPC Congress
+news_event = {
+	id = old_times_news.180
+	title = old_times_news.180.t
+	desc = old_times_news.180.d
+	picture = GFX_news_CPC_2002_congress
+	
+	major = yes
+	
+	is_triggered_only = yes
+	 
+	option ={
+		name = old_times_news.180.a
+
+	}
+}
+###UKRAINIAN CIVIL WAR###
+
+#Novorossyia
+news_event = {
+	id = old_times_news.396
+	title = old_times_news.396.t
+	desc = old_times_news.396.d
+	picture = GFX_news_novorossyia
+	
+	major = yes
+	
+	is_triggered_only = yes	 
+
+	option ={
+		name = old_times_news.396.a
+		
+	}
+}
+
+#OUN
+news_event = {
+	id = old_times_news.397
+	title = old_times_news.397.t
+	desc = old_times_news.397.d
+	picture = GFX_news_ukraine_oun_victorious
+	
+	major = yes
+	
+	is_triggered_only = yes	 
+
+	option ={
+		name = old_times_news.397.a
+		
+	}
+}
+
+#Rada
+news_event = {
+	id = old_times_news.398
+	title = old_times_news.398.t
+	desc = old_times_news.398.d
+	picture = GFX_news_ukraine_rada_victorious
+	
+	major = yes
+	
+	is_triggered_only = yes	 
+
+	option ={
+		name = old_times_news.398.a
+		
+	}
+}
+
+#Novorossyia
+news_event = {
+	id = old_times_news.399
+	title = old_times_news.399.t
+	desc = old_times_news.399.d
+	picture = GFX_news_ukraine_communists_victorious
+	
+	major = yes
+	
+	is_triggered_only = yes	 
+
+	option ={
+		name = old_times_news.399.a
+		
+	}
+}
+
+
+###POST COLLAPSE REUNIFICATIONS###
+
+#Zyuganov, Baklanov
+news_event = {
+	id = old_times_news.400
+	title = old_times_news.400.t
+	desc = old_times_news.400.d
+	picture = GFX_news_zyuganov_reunites
+	
+	major = yes
+	
+	is_triggered_only = yes	 
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = Super_Event_Visible
+			set_global_flag = Zyuganov_Unification
+			play_song = "super_zyuganov_unificiation"		
+		}
+	}
+
+	option ={
+		name = old_times_news.400.a
+		
+	}
+}
+
+
+#Soviet Navy
+news_event = {
+	id = old_times_news.401
+	title = old_times_news.401.t
+	desc = old_times_news.401.d
+	picture = GFX_news_news_sov_navy
+	
+	major = yes
+	
+	is_triggered_only = yes	 
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = Super_Event_Visible
+			set_global_flag = Navy_Unification
+			play_song = "super_navy_unification"		
+		}
+	}
+	 
+	option ={
+		name = old_times_news.401.a
+		
+	}
+
+}
+
+#VDV
+news_event = {
+	id = old_times_news.402
+	title = old_times_news.402.t
+	desc = old_times_news.402.d
+	picture = GFX_news_news_sov_vdv
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = Super_Event_Visible
+			set_global_flag = VDV_Unification
+			play_song = "super_vdv_unification"		
+		}
+	}
+	 
+	option ={
+		name = old_times_news.402.a
+		
+	}
+
+}
+
+#Dugin
+news_event = {
+	id = old_times_news.403
+	title = old_times_news.403.t
+	desc = old_times_news.403.d
+	picture = GFX_news_eurasianists
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = Super_Event_Visible
+			set_global_flag = Dugin_Unification
+			play_song = "super_dugin_unification"		
+		}
+	}
+	 
+	option ={
+		name = old_times_news.403.a
+		
+	}
+
+}
+
+#Medvedev
+news_event = {
+	id = old_times_news.404
+	title = old_times_news.404.t
+	desc = old_times_news.404.d
+	picture = GFX_news_medvedev
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = Super_Event_Visible
+			set_global_flag = Medvedev_Unification
+			play_song = "super_medvedev_unification"		
+		}
+	}
+	 
+	option ={
+		name = old_times_news.404.a
+		
+	}
+
+}
+
+#Yazov
+news_event = {
+	id = old_times_news.405
+	title = old_times_news.405.t
+	desc = old_times_news.405.d
+	picture = GFX_news_yazov_unification
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = Super_Event_Visible
+			set_global_flag = Yazov_Unification
+			play_song = "super_yazov_unification"		
+		}
+	}
+	 
+	option ={
+		name = old_times_news.405.a
+		
+	}
+
+}
+
+#Lukashenko
+news_event = {
+	id = old_times_news.406
+	title = old_times_news.406.t
+	desc = old_times_news.406.d
+	picture = GFX_news_lukashenko_reunification
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = Super_Event_Visible
+			set_global_flag = Lukashenko_Unification
+			play_song = "super_lukashenko_unification"		
+		}
+	}
+	 
+	option ={
+		name = old_times_news.406.a
+		
+	}
+
+}
+
+
+#KGB
+news_event = {
+	id = old_times_news.407
+	title = old_times_news.407.t
+	desc = old_times_news.407.d
+	picture = GFX_news_kgb_unification
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = Super_Event_Visible
+			set_global_flag = KGB_Unification
+			play_song = "super_kgb_unification"		
+		}
+	}
+	 
+	option ={
+		name = old_times_news.407.a
+		
+	}
+
+}
+
+#Udaltsov
+news_event = {
+	id = old_times_news.408
+	title = old_times_news.408.t
+	desc = old_times_news.408.d
+	picture = GFX_news_udaltsov_unification
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = Super_Event_Visible
+			set_global_flag = Udaltsov_Unification
+			play_song = "super_udaltsov_unification"		
+		}
+	}
+	 
+	option ={
+		name = old_times_news.408.a
+		
+	}
+
+}
+
+#Pugo
+news_event = {
+	id = old_times_news.409
+	title = old_times_news.409.t
+	desc = old_times_news.409.d
+	picture = GFX_news_pugo_unification
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = Super_Event_Visible
+			set_global_flag = Pugo_Unification
+			play_song = "super_pugo_unification"		
+		}
+	}
+	 
+	option ={
+		name = old_times_news.409.a
+		
+	}
+
+}
+
+### FLAVOUR NEWS EVENTS ###
+
+## Concorde Trigger (HIDDEN) ##
+news_event = {
+	id = flavour_news.1
+	hidden = yes
+
+	trigger = {
+		date > 2000.7.24
+		country_exists = FRA
+	}
+	
+	fire_only_once = yes
+	
+	immediate = {
+		random_list = {
+			72 = { news_event = { id = flavour_news.2 } }
+			28 = { news_event = { id = flavour_news.3 } }
+		}
+	}
+
+	option = {
+		name = flavour_news.1.a
+	}
+}
+
+## Concorde Crash ##
+news_event = {
+	id = flavour_news.2
+	title = flavour_news.2.t
+	desc = flavour_news.2.d
+	picture = GFX_news_concorde_crash
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = flavour_news.2.a
+	}
+}
+
+## Concorde Retire ##
+news_event = {
+	id = flavour_news.3
+	title = flavour_news.3.t
+	desc = flavour_news.3.d
+	picture = GFX_news_concorde_retired
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = flavour_news.3.a
+	}
+}
+
+## Olympics Trigger (HIDDEN) ##
+news_event = {
+	id = flavour_news.4
+	hidden = yes
+
+	trigger = {
+		date > 2000.10.1
+		country_exists = AST
+	}
+	
+	fire_only_once = yes
+	
+	immediate = {
+		random_list = {
+			60 = { news_event = { id = flavour_news.5 } } 
+			25 = { news_event = { id = flavour_news.6 } } 
+			11 = { news_event = { id = flavour_news.7 } } 
+			4 = { news_event = { id = flavour_news.8 } } 
+		}
+	}
+
+	option = {
+		name = flavour_news.4.a
+	}
+}
+
+## Olympics Scenario 1 ##
+news_event = {
+	id = flavour_news.5
+	title = flavour_news.5.t
+	desc = flavour_news.5.d
+	picture = GFX_news_2000_olympics
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = flavour_news.5.a
+	}
+}
+
+## Olympics Scenario 2 ##
+news_event = {
+	id = flavour_news.6
+	title = flavour_news.6.t
+	desc = flavour_news.6.d
+	picture = GFX_news_2000_olympics
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = flavour_news.6.a
+	}
+}
+
+## Olympics Scenario 3 ##
+news_event = {
+	id = flavour_news.7
+	title = flavour_news.7.t
+	desc = flavour_news.7.d
+	picture = GFX_news_2000_olympics
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = flavour_news.7.a
+	}
+}
+
+## Olympics Scenario 4 ##
+news_event = {
+	id = flavour_news.8
+	title = flavour_news.8.t
+	desc = flavour_news.8.d
+	picture = GFX_news_2000_olympics
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = flavour_news.8.a
+	}
+}
+
+## Century Leap Year Trigger (HIDDEN) ##
+news_event = {
+	id = flavour_news.9
+	hidden = yes
+
+	trigger = {
+		date > 2000.3.1
+	}
+	
+	fire_only_once = yes
+	
+	immediate = {
+		news_event = { id = flavour_news.10 } 
+	}
+	
+	option = {
+		name = flavour_news.9.a
+	}
+}
+
+## Century Leap Year ##
+news_event = {
+	id = flavour_news.10
+	title = flavour_news.10.t
+	desc = flavour_news.10.d
+	picture = GFX_news_century_leap_year
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = flavour_news.10.a
+	}
+}
+
+## Indian Ocean Tsunami Trigger (HIDDEN) ##
+news_event = {
+	id = flavour_news.11
+	hidden = yes
+
+	trigger = {
+		#date > 2000.1.1
+		always = no
+	}
+	
+	fire_only_once = yes
+	
+	immediate = {
+		news_event = { id = flavour_news.12 }
+		hidden_effect = {
+			281 = {
+				damage_building = {
+					type = infrastructure
+					damage = 2
+				}
+			}
+			422 = {
+				damage_building = {
+					type = infrastructure
+					damage = 2
+				}
+			}
+			853 = {
+				damage_building = {
+					type = infrastructure
+					damage = 2
+				}
+			}
+			423 = {
+				damage_building = {
+					type = infrastructure
+					damage = 2
+				}
+			}
+			320 = {
+				damage_building = {
+					type = infrastructure
+					damage = 2
+				}
+			}
+			424 = {
+				damage_building = {
+					type = infrastructure
+					damage = 2
+				}
+			}
+			426 = {
+				damage_building = {
+					type = infrastructure
+					damage = 1.5
+				}
+			}
+			431 = {
+				damage_building = {
+					type = infrastructure
+					damage = 1
+				}
+			}
+			430 = {
+				damage_building = {
+					type = infrastructure
+					damage = 0.5
+				}
+			}
+			288 = {
+				damage_building = {
+					type = infrastructure
+					damage = 1.5
+				}
+			}
+			733 = {
+				damage_building = {
+					type = infrastructure
+					damage = 2
+				}
+			}
+			724 = {
+				damage_building = {
+					type = infrastructure
+					damage = 2
+				}
+			}
+			336 = {
+				damage_building = {
+					type = infrastructure
+					damage = 2
+				}
+			}
+			672 = {
+				damage_building = {
+					type = infrastructure
+					damage = 2
+				}
+			}
+			335 = {
+				damage_building = {
+					type = infrastructure
+					damage = 0.5
+				}
+			}
+			711 = {
+				damage_building = {
+					type = infrastructure
+					damage = 1.5
+				}
+			}
+			712 = {
+				damage_building = {
+					type = infrastructure
+					damage = 1.5
+				}
+			}
+			710 = {
+				damage_building = {
+					type = infrastructure
+					damage = 2
+				}
+			}
+			281 = {
+				damage_building = {
+					type = infrastructure
+					damage = 2
+				}
+			}
+			709 = {
+				damage_building = {
+					type = infrastructure
+					damage = 1
+				}
+			}
+			559 = {
+				damage_building = {
+					type = infrastructure
+					damage = 1.5
+				}
+			}
+			659 = {
+				damage_building = {
+					type = infrastructure
+					damage = 1
+				}
+			}
+			269 = {
+				damage_building = {
+					type = infrastructure
+					damage = 0.5
+				}
+			}
+			547 = {
+				damage_building = {
+					type = infrastructure
+					damage = 0.5
+				}
+			}
+			546 = {
+				damage_building = {
+					type = infrastructure
+					damage = 0.5
+				}
+			}
+
+			RAJ = {
+				set_country_flag = indian_tsunami_victim
+			}
+			MLD = {
+				set_country_flag = indian_tsunami_victim
+			}
+			BRM = {
+				set_country_flag = indian_tsunami_victim
+			}
+			SIA = {
+				set_country_flag = indian_tsunami_victim
+			}
+			INS = {
+				set_country_flag = indian_tsunami_victim
+			}
+
+			USA = {
+				set_country_flag = indian_tsunami_helper
+				set_variable = {
+					var = USA_RAJ_influence
+					value = 0
+				}
+				clamp_variable = {
+					var = USA_RAJ_influence
+					min = 0
+					max = 99
+				}
+				set_variable = {
+					var = USA_INS_influence
+					value = 0
+				}
+				clamp_variable = {
+					var = USA_INS_influence
+					min = 0
+					max = 99
+				}
+				set_variable = {
+					var = USA_BRM_influence
+					value = 0
+				}
+				clamp_variable = {
+					var = USA_BRM_influence
+					min = 0
+					max = 99
+				}
+				set_variable = {
+					var = USA_SIA_influence
+					value = 0
+				}
+				clamp_variable = {
+					var = USA_SIA_influence
+					min = 0
+					max = 99
+				}
+				set_variable = {
+					var = USA_MLD_influence
+					value = 0
+				}
+				clamp_variable = {
+					var = USA_MLD_influence
+					min = 0
+					max = 99
+				}
+			}
+			SOV = {
+				set_country_flag = indian_tsunami_helper
+				set_variable = {
+					var = SOV_RAJ_influence
+					value = 0
+				}
+				clamp_variable = {
+					var = SOV_RAJ_influence
+					min = 0
+					max = 99
+				}
+				set_variable = {
+					var = SOV_INS_influence
+					value = 0
+				}
+				clamp_variable = {
+					var = SOV_INS_influence
+					min = 0
+					max = 99
+				}
+				set_variable = {
+					var = SOV_BRM_influence
+					value = 0
+				}
+				clamp_variable = {
+					var = SOV_BRM_influence
+					min = 0
+					max = 99
+				}
+				set_variable = {
+					var = SOV_SIA_influence
+					value = 0
+				}
+				clamp_variable = {
+					var = SOV_SIA_influence
+					min = 0
+					max = 99
+				}
+				set_variable = {
+					var = SOV_MLD_influence
+					value = 0
+				}
+				clamp_variable = {
+					var = SOV_MLD_influence
+					min = 0
+					max = 99
+				}
+			}
+			PRC = {
+				set_country_flag = indian_tsunami_helper
+				set_variable = {
+					var = PRC_RAJ_influence
+					value = 0
+				}
+				clamp_variable = {
+					var = PRC_RAJ_influence
+					min = 0
+					max = 99
+				}
+				set_variable = {
+					var = PRC_INS_influence
+					value = 0
+				}
+				clamp_variable = {
+					var = PRC_INS_influence
+					min = 0
+					max = 99
+				}
+				set_variable = {
+					var = PRC_BRM_influence
+					value = 0
+				}
+				clamp_variable = {
+					var = PRC_BRM_influence
+					min = 0
+					max = 99
+				}
+				set_variable = {
+					var = PRC_SIA_influence
+					value = 0
+				}
+				clamp_variable = {
+					var = PRC_SIA_influence
+					min = 0
+					max = 99
+				}
+				set_variable = {
+					var = PRC_MLD_influence
+					value = 0
+				}
+				clamp_variable = {
+					var = PRC_MLD_influence
+					min = 0
+					max = 99
+				}
+			}
+			GER = {
+				set_country_flag = indian_tsunami_helper
+				set_variable = {
+					var = GER_RAJ_influence
+					value = 0
+				}
+				clamp_variable = {
+					var = GER_RAJ_influence
+					min = 0
+					max = 99
+				}
+				set_variable = {
+					var = GER_INS_influence
+					value = 0
+				}
+				clamp_variable = {
+					var = GER_INS_influence
+					min = 0
+					max = 99
+				}
+				set_variable = {
+					var = GER_BRM_influence
+					value = 0
+				}
+				clamp_variable = {
+					var = GER_BRM_influence
+					min = 0
+					max = 99
+				}
+				set_variable = {
+					var = GER_SIA_influence
+					value = 0
+				}
+				clamp_variable = {
+					var = GER_SIA_influence
+					min = 0
+					max = 99
+				}
+				set_variable = {
+					var = GER_MLD_influence
+					value = 0
+				}
+				clamp_variable = {
+					var = GER_MLD_influence
+					min = 0
+					max = 99
+				}
+			}
+			AST = {
+				set_country_flag = indian_tsunami_helper
+				set_variable = {
+					var = AST_RAJ_influence
+					value = 0
+				}
+				clamp_variable = {
+					var = AST_RAJ_influence
+					min = 0
+					max = 99
+				}
+				set_variable = {
+					var = AST_INS_influence
+					value = 0
+				}
+				clamp_variable = {
+					var = AST_INS_influence
+					min = 0
+					max = 99
+				}
+				set_variable = {
+					var = AST_BRM_influence
+					value = 0
+				}
+				clamp_variable = {
+					var = AST_BRM_influence
+					min = 0
+					max = 99
+				}
+				set_variable = {
+					var = AST_SIA_influence
+					value = 0
+				}
+				clamp_variable = {
+					var = AST_SIA_influence
+					min = 0
+					max = 99
+				}
+				set_variable = {
+					var = AST_MLD_influence
+					value = 0
+				}
+				clamp_variable = {
+					var = AST_MLD_influence
+					min = 0
+					max = 99
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = flavour_news.11.a
+	}
+}
+
+## Indian Ocean Tsunami ##
+news_event = {
+	id = flavour_news.12
+	title = flavour_news.12.t
+	desc = flavour_news.12.d
+	picture = GFX_news_indian_ocean_tsunami
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = flavour_news.12.a
+	}
+}
+
+## Millennium Summit Trigger (HIDDEN) ##
+news_event = {
+	id = flavour_news.13
+	hidden = yes
+
+	trigger = {
+		date > 2000.9.6
+	}
+	
+	fire_only_once = yes
+	
+	immediate = {
+		news_event = { id = flavour_news.14 } 
+	}
+	
+	option = {
+		name = flavour_news.13.a
+	}
+}
+
+## Millennium Summit ##
+news_event = {
+	id = flavour_news.14
+	title = flavour_news.14.t
+	desc = flavour_news.14.d
+	picture = GFX_news_millennium_summit
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = flavour_news.14.a
+	}
+}

@@ -1,0 +1,381 @@
+ideas = {
+
+	mobilization_laws = {
+		law = yes
+		use_list_view = yes
+
+		disarmed_nation = {
+
+			cost = 300
+			removal_cost = -1
+			level = 7
+
+			available = {
+				#has_manpower_for_recruit_change_to = { value = 0.005 group = mobilization_laws }
+			}
+			modifier = {
+				conscription = 0.01
+			}
+			on_add = {		
+				custom_effect_tooltip = mob_during_peace
+				show_ideas_tooltip = no_reservist_1
+				hidden_effect = {
+				add_ideas =  no_reservist_1
+				}
+				custom_effect_tooltip = mob_during_war
+				show_ideas_tooltip = no_reservist				
+			}
+
+			cancel_if_invalid = no
+		}
+
+		volunteer_only = {
+
+			cost = 300
+			removal_cost = -1
+			level = 6
+
+			available = {
+				#has_manpower_for_recruit_change_to =  { value = 0.015 group = mobilization_laws }
+			}
+
+			ai_will_do = {
+   				factor = 1
+
+   				modifier = {
+					factor = 60 # being disarmed is bad in a wargame yo
+					has_idea = disarmed_nation
+				}
+			}
+			on_add = {		
+				custom_effect_tooltip = mob_during_peace
+				show_ideas_tooltip = reservist_very_small_1
+				hidden_effect = {
+					add_ideas =  reservist_very_small_1
+				}
+				custom_effect_tooltip = mob_during_war
+				show_ideas_tooltip = reservist_very_small				
+			}
+
+			modifier = {
+				conscription = 0.015
+			}
+
+			default = yes
+
+			cancel_if_invalid = no
+		}
+
+		limited_conscription = {
+
+			cost = 300
+			removal_cost = -1
+			level = 5
+
+			available = {
+				#has_manpower_for_recruit_change_to =  { value = 0.025 group = mobilization_laws }
+				has_war_support > 0.1
+			}
+			
+            modifier = {
+				conscription = 0.025
+			}
+			on_add = {		
+				custom_effect_tooltip = mob_during_peace
+				show_ideas_tooltip = reservist_small_1
+				hidden_effect = {
+					add_ideas =  reservist_small_1
+				}
+				custom_effect_tooltip = mob_during_war
+				show_ideas_tooltip = reservist_small				
+			}
+
+			ai_will_do = {
+   				factor = 1
+				modifier = {
+					# Ignore if high on manpower
+					factor = 0.5
+					manpower_per_military_factory > 5000
+				}
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
+					manpower_per_military_factory < 1000
+				}
+				modifier = {
+					tag = ENG
+					factor = 20
+				}
+				modifier = {
+					factor = 0
+					NOT = { has_idea = volunteer_only }
+				}
+			}
+
+			cancel_if_invalid = no
+		}
+
+		extensive_conscription = {
+
+			available = {
+				#has_manpower_for_recruit_change_to = { value = 0.05 group = mobilization_laws }
+				has_war_support > 0.2
+				if = {
+					limit = {
+						original_tag = RAJ
+						has_dlc = "Together for Victory"
+					}
+					is_subject = no
+				}
+			}
+			ai_will_do = {
+   				factor = 1
+
+				modifier = {
+					# Ignore if high on manpower
+					factor = 0.5
+					manpower_per_military_factory > 3000
+				}
+
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
+					manpower_per_military_factory <  800
+				}
+
+				modifier = {
+					factor = 0
+					NOT = { has_idea = limited_conscription }
+				}
+
+			}
+			on_add = {		
+				custom_effect_tooltip = mob_during_peace
+				show_ideas_tooltip = reservist_medium_1
+				hidden_effect = {
+					add_ideas =  reservist_medium_1
+				}
+				custom_effect_tooltip = mob_during_war
+				show_ideas_tooltip = reservist_medium				
+			}
+
+			cost = 300
+			removal_cost = -1
+			level = 4
+
+			modifier = {
+			conscription = 0.05
+			}
+
+			cancel_if_invalid = no
+		}
+
+		service_by_requirement = {
+
+
+			available = {
+				#has_manpower_for_recruit_change_to =  { value = 0.1 group = mobilization_laws }
+				has_war_support > 0.6
+
+
+				if = {
+					limit = {
+						original_tag = RAJ
+						has_dlc = "Together for Victory"
+					}
+					is_subject = no
+				}
+			}
+			on_add = {		
+				custom_effect_tooltip = mob_during_peace
+				show_ideas_tooltip = reservist_large_1
+				hidden_effect = {
+					add_ideas =  reservist_large_1
+				}
+				custom_effect_tooltip = mob_during_war
+				show_ideas_tooltip = reservist_large				
+			}
+
+			ai_will_do = {
+   				factor = 1
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
+					manpower_per_military_factory <  700
+				}
+				modifier = {
+					#Lower chance if has decent amount
+					factor = 0.5
+					manpower_per_military_factory >  1000
+				}
+				modifier = {
+					#Block has plenty manpower
+					factor = 0
+					manpower_per_military_factory >  3000
+				}
+
+				modifier = {
+					factor = 0
+					NOT = { has_idea = extensive_conscription }
+				}
+
+			}
+
+			cost = 300
+			removal_cost = -1
+			level = 3
+			
+			modifier = {
+				conscription = 0.1
+			}
+
+			cancel_if_invalid = no
+		}
+
+		all_adults_serve = {
+
+
+			available = {
+				#has_manpower_for_recruit_change_to =  { value = 0.2 group = mobilization_laws }
+				has_war = yes
+				OR = {
+					has_war_support > 0.7
+					surrender_progress > 0
+				}
+				enemies_strength_ratio > 0.6
+				#any_enemy_country = {
+				#	strength_ratio = {
+				#		tag = ROOT
+				#		ratio > 0.75
+				#	}
+				#}
+
+				if = {
+					limit = {
+						original_tag = RAJ
+						has_dlc = "Together for Victory"
+					}
+					is_subject = no
+				}
+			}
+			on_add = {		
+				custom_effect_tooltip = mob_during_peace
+				show_ideas_tooltip = reservist_very_large_1
+				hidden_effect = {
+					add_ideas =  reservist_very_large_1
+				}
+				custom_effect_tooltip = mob_during_war
+				show_ideas_tooltip = reservist_very_large				
+			}
+
+			ai_will_do = {
+   				factor = 1
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
+					manpower_per_military_factory <  600
+				}
+				modifier = {
+					#Lower chance if has decent amount
+					factor = 0.5
+					manpower_per_military_factory >  1000
+				}
+				modifier = {
+					#Block has plenty manpower
+					factor = 0
+					NOT = { tag = CHI }
+					manpower_per_military_factory >  2800
+				}
+
+				modifier = {
+					factor = 0
+					NOT = { has_idea = service_by_requirement }
+				}
+
+			}
+
+			cost = 300
+			removal_cost = -1
+			level = 2
+
+			modifier = {
+				conscription = 0.2
+
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		scraping_the_barrel = {
+
+			available = {
+				#has_manpower_for_recruit_change_to =  { value = 0.25 group = mobilization_laws }
+				has_war = yes
+				OR = {
+					has_war_support > 0.85
+					surrender_progress > 0.25
+				}
+				enemies_strength_ratio > 1
+				#any_enemy_country = {
+				#	strength_ratio = {
+				#		tag = ROOT
+				#		ratio > 1
+				#	}
+				#}
+				if = {
+					limit = {
+						original_tag = RAJ
+						has_dlc = "Together for Victory"
+					}
+					is_subject = no
+				}
+			}
+			on_add = {		
+				custom_effect_tooltip = mob_during_peace
+				show_ideas_tooltip = reservist_super_large_1
+				hidden_effect = {
+					add_ideas =  reservist_super_large_1
+				}
+				custom_effect_tooltip = mob_during_war
+				show_ideas_tooltip = reservist_super_large				
+			}
+
+			ai_will_do = {
+   				factor = 1
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
+					manpower_per_military_factory <  500
+				}
+				modifier = {
+					#Lower chance if has decent amount
+					factor = 0.5
+					manpower_per_military_factory >  1000
+				}
+				modifier = {
+					#Block has plenty manpower
+					factor = 0
+					manpower_per_military_factory >  5000
+				}
+
+				modifier = {
+					factor = 0
+					NOT = { has_idea = all_adults_serve }
+				}
+
+			}
+
+			cost = 300
+			removal_cost = -1
+			level = 1
+
+			modifier = {
+				conscription = 0.25
+			}
+
+			cancel_if_invalid = no
+		}
+
+	}
+
+}

@@ -1,0 +1,75 @@
+characters = {
+
+	SLO_mikulas_dzurinda = {
+		name = "Mikuláš Dzurinda"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SLO/Mikulas_Dzurinda.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism_sub 
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	SLO_rudolf_schuster = {
+		name = "Rudolf Schuster"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SLO/Rudolf_Schuster.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy_sub
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	SLO_pavol_dubček = {
+		name = "Pavol Dubček"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SLO/Pavol_Dubček.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}	
+	SLO_jan_slota = {
+		name = "Jan Slota"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SLO/Jan_Slota.png"
+			}
+		}
+		country_leader = {
+			ideology = ultranationalism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}	
+	SLO_jan_luptak = {
+		name = "Jan Luptak"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SLO/luptak.png"
+			}
+		}
+		country_leader = {
+			ideology = libertarian_socialism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}	
+
+
+}

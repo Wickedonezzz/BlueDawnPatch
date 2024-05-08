@@ -1,0 +1,18 @@
+characters = {
+
+	FRC_manuel_marulanda = {
+		name = "Manuel Marulanda"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/South_America/Manuel_Marulanda.dds"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {}
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+}

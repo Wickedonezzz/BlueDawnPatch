@@ -1,0 +1,31 @@
+
+state={
+	id=935
+	name="STATE_935"
+	manpower = 333166
+	state_category = town
+	resources={
+		oil=5
+	}
+
+	history={
+		owner = BRU
+		add_core_of = BRU
+		victory_points = {
+			7371 1
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			7371 = {
+				naval_base = 2
+			}
+		}
+	}
+
+	provinces={
+		7371
+	}
+
+	local_supplies=0.0 
+}

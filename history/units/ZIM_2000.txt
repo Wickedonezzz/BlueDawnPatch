@@ -1,0 +1,186 @@
+division_template = { # Infantry Division #
+	name = "Infantry Division"
+	division_names_group = GENERIC_INF_01
+
+	regiments = {
+		recon_vehicle_armor = { x = 0 y = 0 }
+		heavy_infantry_unit = { x = 1 y = 0 }
+		heavy_infantry_unit = { x = 1 y = 1 }
+		heavy_infantry_unit = { x = 1 y = 2 }
+		infantry_unit = { x = 2 y = 0 }
+		infantry_unit = { x = 2 y = 1 }
+		infantry_unit = { x = 2 y = 2 }
+		infantry_unit = { x = 2 y = 3 }
+		infantry_unit = { x = 2 y = 4 }
+		rocket_artillery_unit = { x = 3 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+division_template = { # Infantry Division #
+	name = "Light Infantry Division"
+	division_names_group = GENERIC_INF_01
+
+	regiments = {
+		infantry_unit = { x = 0 y = 0 }
+		infantry_unit = { x = 0 y = 1 }
+		infantry_unit = { x = 0 y = 2 }
+		infantry_unit = { x = 0 y = 3 }
+		infantry_unit = { x = 0 y = 4 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+
+units = {
+	# Infantry Division #
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10929
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			recon_vehicle_equipment_0 = { owner = "BRA" }
+			apc_tank_equipment_1 = { owner = "FRA" }
+			rocket_artillery_equipment_2 = { owner = "CZE" }
+		}
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.75
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 4851
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			recon_vehicle_equipment_0 = { owner = "BRA" }
+			apc_tank_equipment_1 = { owner = "FRA" }
+			rocket_artillery_equipment_2 = { owner = "CZE" }
+		}
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.75
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 2151
+		division_template = "Infantry Division"
+		force_equipment_variants = {
+			recon_vehicle_equipment_0 = { owner = "BRA" }
+			apc_tank_equipment_1 = { owner = "FRA" }
+			rocket_artillery_equipment_1 = { owner = "SOV" }
+		}
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.75
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 2151
+		division_template = "Light Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.75
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 10929
+		division_template = "Light Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.75
+	}
+		division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10929
+		division_template = "Light Infantry Division"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.75
+	}
+}
+instant_effect = {
+
+	# Stockpile #
+        add_equipment_to_stockpile = {
+		type = infantry_weapons_1
+		amount = 1500
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 300
+		producer = SOV
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_anti_tank_weapons_2
+		amount = 150
+		producer = PRC
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_anti_air_weapons_2
+		amount = 150
+		producer = SOV
+	}
+
+	add_equipment_to_stockpile = {
+		type = mbt_tank_equipment_0
+		amount = 20
+		producer = PRC
+	}
+	add_equipment_to_stockpile = {
+		type = mbt_tank_equipment_1
+		amount = 10
+		producer = PRC
+	}
+	add_equipment_to_stockpile = {
+		type = apc_tank_equipment_0
+		amount = 30
+		producer = PRC
+	}
+	add_equipment_to_stockpile = {
+		type = apc_tank_equipment_1
+		amount = 40
+		producer = ZIM
+	}
+	add_equipment_to_stockpile = {
+		type = apc_tank_equipment_1
+		amount = 60
+		producer = FRA
+	}
+	add_equipment_to_stockpile = {
+		type = towed_artillery_equipment_1
+		amount = 16
+		producer = PRC
+	}
+	add_equipment_to_stockpile = {
+		type = heli_transport_equipment_0
+		amount = 24
+		producer = FRA
+	}
+	add_equipment_to_stockpile = {
+		type = heli_transport_equipment_1
+		amount = 8
+		producer = USA
+	}
+	add_equipment_to_stockpile = {
+		type = heli_attack_equipment_0
+		amount = 2
+		producer = SOV
+	}
+}
